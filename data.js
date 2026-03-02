@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-02T17:47:56.052Z",
+    "lastUpdated": "2026-03-02T18:37:02.787Z",
     "casualties": {
         "killed": 12,
         "injured": 135
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 3 (March 2): Iran's retaliatory strikes continue for third consecutive day. Major escalation: Qatar shot down 2 Iranian Su-24 fighter jets — first air-to-air combat of the conflict. QatarEnergy halted all LNG production (~20% of global supply) after drone strikes on Ras Laffan and Mesaieed. Saudi Aramco Ras Tanura refinery shut down. Three US F-15Es downed by Kuwait in friendly fire. 4th US service member confirmed killed. UAE MoD tallies 174 ballistic missiles, 8 cruise missiles, and 689 drones fired at the UAE alone.",
-    "totalBarrage": "UAE alone: 174 ballistic missiles, 8 cruise missiles, 689 drones. Kuwait: 97 ballistic missiles, 283 drones. Qatar: 66+ missiles, 12+ drones, 2 Su-24 fighter jets. Bahrain: 45 missiles, 9 drones. (Per respective defense ministries via Breaking Defense, Al Jazeera, QNA, CNN)",
-    "intercepted": "UAE: 161 ballistic missiles, 645 drones, 8 cruise missiles intercepted (>90% rate). Qatar: all missiles intercepted before targets, 2 Su-24 jets shot down. Kuwait: majority of drones intercepted. Bahrain: 45 missiles and 9 drones intercepted. (Per respective MoDs)"
+    "summary": "Day 3 (March 2): Iranian retaliatory strikes continue for a third consecutive day. MAJOR ESCALATION — Qatar shoots down two Iranian Su-24 fighter jets, the first confirmed air-to-air engagement of the conflict. QatarEnergy halts LNG production at Ras Laffan (~20% of global supply). Saudi Arabia shuts down Ras Tanura refinery. Explosions continue in Dubai, Doha, Kuwait, and Erbil. Iraq formally enters the theater as Iran-backed militias launch drone attacks on US bases in Erbil and Baghdad. IRGC claims strikes on 3 US/British oil tankers (unconfirmed by CENTCOM). Dubai airports announce limited resumption of operations.",
+    "totalBarrage": "UAE MOD cumulative: 165 ballistic missiles, 2 cruise missiles, 541 drones. Qatar March 2 alone: 2 Su-24 jets, 7 ballistic missiles, 5 drones. Kuwait cumulative: 97 ballistic missiles, 283 drones intercepted. Bahrain cumulative: 45 missiles, 9 drones.",
+    "intercepted": "Qatar March 2: 2 Su-24 jets shot down + 7 BMs + 5 drones intercepted. Qatar deploying fighter aircraft over Gulf waters to intercept threats before reaching land."
 };
 
 const LOCATIONS = [
@@ -1054,7 +1054,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Largest US Base in ME — 2 Missiles Hit, Radar Destroyed",
-            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar. March 2: Explosions heard in Doha for third day. Qatar FM spokesperson: 'Iran has to pay a price for this blatant attack on our people. An attack like this cannot be left without retaliation.' On March 2, Qatar shot down two Iranian Su-24 fighter jets — the first shoot-down of manned aircraft in the conflict — and intercepted 7 missiles and 5 drones. Qatar MoD stated its armed forces possess 'full capabilities to safeguard the state's sovereignty.'",
+            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar. March 2: Explosions heard in Doha for third day. Qatar FM spokesperson: 'Iran has to pay a price for this blatant attack on our people. An attack like this cannot be left without retaliation.' On March 2, Qatar shot down two Iranian Su-24 fighter jets — the first shoot-down of manned aircraft in the conflict — and intercepted 7 missiles and 5 drones. Qatar MoD stated its armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar Emiri Air Force shot down two Iranian Su-24 fighter jets and intercepted 7 ballistic missiles + 5 drones — the first confirmed air-to-air engagement of the conflict. Qatar MOD stated threats were addressed immediately upon detection per operational plans.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1083,6 +1083,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Qatar MoD announces air force 'successfully shot down' two Iranian Su-24 Fencer fighter-bomber jets incoming from Iran — the first air-to-air shoot-down of manned aircraft in the conflict. Also intercepted 7 ballistic missiles and 5 drones targeting multiple areas. All projectiles neutralized before reaching targets."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "MAJOR ESCALATION: Qatar Emiri Air Force shot down two Iranian Su-24 Fencer attack jets incoming from Iran. Air defenses also intercepted 7 ballistic missiles and 5 drones targeting several areas of Qatar. Qatar MOD confirmed all missiles shot down before reaching targets. First confirmed air-to-air engagement of the conflict."
                     }
             ],
             "sources": [
@@ -1133,6 +1137,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/2/qatar-says-it-downed-two-iranian-fighter-jets-as-conflict-widens"
+                    },
+                    {
+                            "name": "Defence Blog",
+                            "url": "https://defence-blog.com/qatar-shoots-down-two-iranian-su-24-fencer-attack-jets/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1286,7 +1294,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Energy Infrastructure Strike",
-            "detail": "Iranian drone struck QatarEnergy facility in Ras Laffan Industrial City on March 2, causing QatarEnergy to halt all LNG production. Ras Laffan supplies roughly 20% of global LNG exports. No human casualties reported but damage assessment is underway. March 2: Iranian drone confirmed struck QatarEnergy facility in Ras Laffan. QatarEnergy halted all LNG production — an unprecedented shutdown affecting ~20% of global LNG supply. European gas prices surged ~45–50%.",
+            "detail": "Iranian drone struck QatarEnergy facility in Ras Laffan Industrial City on March 2, causing QatarEnergy to halt all LNG production. Ras Laffan supplies roughly 20% of global LNG exports. No human casualties reported but damage assessment is underway. March 2: Iranian drone confirmed struck QatarEnergy facility in Ras Laffan. QatarEnergy halted all LNG production — an unprecedented shutdown affecting ~20% of global LNG supply. European gas prices surged ~45–50%. March 2: QatarEnergy halted all natural gas production. Ras Laffan supplies approximately one-fifth of global LNG exports. Combined with Strait of Hormuz closure, this represents a major disruption to global energy markets.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1295,6 +1303,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Qatar MoD confirmed an Iranian drone targeted an energy facility in Ras Laffan Industrial City belonging to QatarEnergy. QatarEnergy announced a complete halt of LNG production and associated products, threatening ~20% of global LNG supply. European gas prices surged ~45%."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "QatarEnergy halted natural gas production at Ras Laffan, the world's largest LNG export facility, after Iranian drone strikes. The facility supplies ~20% of global LNG. Gas prices surged worldwide as a result."
                     }
             ],
             "sources": [
@@ -1321,6 +1333,10 @@ const LOCATIONS = [
                     {
                             "name": "CNN",
                             "url": "https://edition.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
+                    },
+                    {
+                            "name": "Middle East Eye",
+                            "url": "https://www.middleeasteye.net/live/live-us-and-israel-attack-iran"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1962,7 +1978,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Oil Facility Strike",
-            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown.",
+            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1975,6 +1991,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Saudi MoD reported two drones 'attempted to attack' the Ras Tanura refinery; both intercepted and destroyed. Debris caused a 'small' fire. Saudi Energy Ministry confirmed some operational units shut down as a precautionary measure. Reuters reported refinery production suspended."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Saudi energy ministry formally confirmed partial operational shutdown of Ras Tanura refinery following attack that caused a fire. Fire was brought under control. Saudi officials clarified damage was from intercepted Iranian missile debris, not a direct drone strike."
                     }
             ],
             "sources": [
@@ -2009,6 +2029,10 @@ const LOCATIONS = [
                     {
                             "name": "NPR",
                             "url": "https://www.npr.org/2026/03/02/g-s1-112151/iran-war-widens-threatens-to-engulf-lebanon"
+                    },
+                    {
+                            "name": "The Peninsula Qatar",
+                            "url": "https://thepeninsulaqatar.com/article/02/03/2026/live-updates:-rising-concerns-as-missiles-continue-to-be-intercepted-across-gulf-"
                     }
             ],
             "dateAdded": "2026-03-02"
