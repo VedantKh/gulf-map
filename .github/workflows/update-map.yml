@@ -1,0 +1,40 @@
+name: Auto-update strike data
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Run without writing changes'
+        type: boolean
+        default: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - id: update
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+        run: node scripts/update.mjs
+
+      - name: Commit and push
+        if: steps.update.outputs.has_changes == 'true'
+        run: |
+          git config user.name "gulf-map-bot"
+          git config user.email "gulf-map-bot@users.noreply.github.com"
+          git add data.js
+          git diff --staged --quiet && exit 0
+          git commit -m "${{ steps.update.outputs.commit_message }}"
+          git push

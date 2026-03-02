@@ -12,6 +12,19 @@
         watchlist: '#6b7280'
     };
 
+    // ═══ Severity display labels ═══
+    const SEV_LABEL = {
+        critical: 'HIT',
+        high: 'DEBRIS',
+        watchlist: 'WATCH'
+    };
+
+    const SEV_LABEL_LONG = {
+        critical: 'HIT — Confirmed strike/impact',
+        high: 'FALLING DEBRIS — Minor damage',
+        watchlist: 'WATCHLIST — Elevated threat'
+    };
+
     // ═══ State ═══
     const state = {
         map: null,
@@ -36,7 +49,7 @@
 
         L.control.zoom({ position: 'bottomleft' }).addTo(state.map);
 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
             subdomains: 'abcd',
             maxZoom: 19
@@ -78,7 +91,7 @@
             L.marker([l.lat, l.lng], {
                 icon: L.divIcon({
                     className: '',
-                    html: `<div style="color:rgba(255,255,255,0.12);font-size:13px;font-weight:700;letter-spacing:3px;white-space:nowrap;pointer-events:none">${l.name}</div>`,
+                    html: `<div style="color:rgba(0,0,0,0.15);font-size:13px;font-weight:700;letter-spacing:3px;white-space:nowrap;pointer-events:none">${l.name}</div>`,
                     iconAnchor: [30, 8]
                 }),
                 interactive: false
@@ -99,7 +112,7 @@
                 const pulseR = loc.severity === 'critical' ? 20 : 16;
                 const pulse = L.circleMarker([loc.lat, loc.lng], {
                     radius: pulseR, color: color, fillColor: color,
-                    fillOpacity: 0.12, weight: 1.5, opacity: 0.35,
+                    fillOpacity: 0.15, weight: 1.5, opacity: 0.4,
                     className: 'pulse-ring'
                 });
                 state.pulseGroup.addLayer(pulse);
@@ -107,7 +120,7 @@
 
             // Main marker
             const markerR = loc.severity === 'critical' ? 11 : loc.severity === 'high' ? 9 : 6;
-            const fillOp = loc.severity === 'watchlist' ? 0.6 : 0.85;
+            const fillOp = loc.severity === 'watchlist' ? 0.6 : 0.9;
             const marker = L.circleMarker([loc.lat, loc.lng], {
                 radius: markerR, color: color, fillColor: color,
                 fillOpacity: fillOp, weight: 2, opacity: 1
@@ -144,7 +157,7 @@
         return `
             <div>
                 <div class="popup-title">${loc.icon} ${loc.name}</div>
-                <span class="popup-category sev-${loc.severity}">${loc.severity.toUpperCase()}</span>
+                <span class="popup-category sev-${loc.severity}">${SEV_LABEL[loc.severity]}</span>
                 <div class="popup-detail"><strong>Type:</strong> ${loc.type}</div>
                 <div class="popup-detail"><strong>Country:</strong> ${loc.country}${loc.city ? ' — ' + loc.city : ''}</div>
                 <div class="popup-detail"><strong>Coordinates:</strong> ${loc.lat.toFixed(4)}°N, ${loc.lng.toFixed(4)}°E</div>
@@ -192,8 +205,8 @@
             sevSelect.id = 'filter-severity';
             [
                 { value: 'all', label: 'All Severity' },
-                { value: 'critical', label: 'Critical' },
-                { value: 'high', label: 'High' },
+                { value: 'critical', label: 'Hit' },
+                { value: 'high', label: 'Falling Debris' },
                 { value: 'watchlist', label: 'Watchlist' }
             ].forEach(s => {
                 const opt = document.createElement('option');
@@ -254,7 +267,7 @@
                         <div class="inc-name">${loc.icon} ${loc.name}</div>
                         <div class="inc-type">${loc.type}</div>
                     </div>
-                    <div class="inc-sev" style="color:${color}">${loc.severity === 'critical' ? 'CRIT' : loc.severity === 'high' ? 'HIGH' : 'WATCH'}</div>
+                    <div class="inc-sev" style="color:${color}">${SEV_LABEL[loc.severity]}</div>
                 `;
                 item.addEventListener('click', () => {
                     const zoom = loc.severity === 'watchlist' ? 10 : 12;
@@ -280,9 +293,9 @@
             div.innerHTML = '<h4>Legend</h4>';
 
             const items = [
-                { key: 'critical', color: '#dc2626', label: 'CRITICAL — Confirmed strike' },
-                { key: 'high', color: '#ea580c', label: 'HIGH — Debris/damage confirmed' },
-                { key: 'watchlist', color: '#6b7280', label: 'WATCHLIST — Elevated threat' }
+                { key: 'critical', color: '#dc2626', label: SEV_LABEL_LONG.critical },
+                { key: 'high', color: '#ea580c', label: SEV_LABEL_LONG.high },
+                { key: 'watchlist', color: '#6b7280', label: SEV_LABEL_LONG.watchlist }
             ];
 
             items.forEach(item => {
@@ -302,9 +315,9 @@
             });
 
             div.innerHTML += `
-                <div style="margin-top:8px;padding-top:8px;border-top:1px solid #2a2f3d;font-size:11px;color:#888">
+                <div style="margin-top:8px;padding-top:8px;border-top:1px solid #e5e7eb;font-size:11px;color:#6b7280">
                     Click severity to toggle visibility<br>
-                    <span style="color:#f87171">${MAP_META.casualties.killed} killed · ${MAP_META.casualties.injured} injured · Airspace CLOSED</span>
+                    <span style="color:#b91c1c">${MAP_META.casualties.killed} killed · ${MAP_META.casualties.injured} injured · Airspace CLOSED</span>
                 </div>
             `;
 
@@ -321,16 +334,16 @@
             const div = L.DomUtil.create('div', 'summary-panel');
 
             div.innerHTML = `
-                <h4 style="color:#f87171">Conflict Summary</h4>
+                <h4 style="color:#b91c1c">Conflict Summary</h4>
                 <div class="summary-detail"><strong>Conflict:</strong> ${MAP_META.conflict}</div>
                 <div class="summary-detail">${MAP_META.summary}</div>
                 <div style="margin-top:8px">
-                    <span class="summary-stat" style="background:rgba(220,38,38,0.15);color:#f87171">UAE barrage: ${MAP_META.totalBarrage.split(';')[0]}</span>
+                    <span class="summary-stat" style="background:rgba(220,38,38,0.08);color:#b91c1c">UAE barrage: ${MAP_META.totalBarrage.split(';')[0]}</span>
                 </div>
                 <div style="margin-top:4px">
-                    <span class="summary-stat" style="background:rgba(99,102,241,0.15);color:#818cf8">Qatar: 65 missiles + 12 drones intercepted</span>
+                    <span class="summary-stat" style="background:rgba(79,70,229,0.08);color:#4f46e5">Qatar: 65 missiles + 12 drones intercepted</span>
                 </div>
-                <div style="margin-top:8px;padding:6px;background:rgba(248,113,113,0.1);border:1px solid rgba(248,113,113,0.3);border-radius:6px;font-size:10px;color:#f87171;text-align:center">
+                <div style="margin-top:8px;padding:6px;background:rgba(185,28,28,0.05);border:1px solid rgba(185,28,28,0.2);border-radius:6px;font-size:10px;color:#991b1b;text-align:center">
                     Sources: UAE MOD/WAM, CENTCOM, Reuters, CNN, Al Jazeera<br>
                     Stars and Stripes, Anadolu Agency, Breaking Defense<br>
                     Last updated: ${MAP_META.lastUpdated} | Strikes may be ongoing
@@ -385,7 +398,6 @@
         ['critical', 'high', 'watchlist'].forEach(sev => {
             const el = document.getElementById('legend-count-' + sev);
             if (el) {
-                // Show total count from all locations (not filtered by legend toggle)
                 let base = state.allLocations;
                 if (state.countryFilter !== 'all') base = base.filter(l => l.country === state.countryFilter);
                 if (state.severityFilter !== 'all') base = base.filter(l => l.severity === state.severityFilter);
@@ -398,7 +410,7 @@
     function addPulseAnimation() {
         const style = document.createElement('style');
         style.textContent = `
-            @keyframes pulse { 0% { opacity: 0.35; } 50% { opacity: 0.1; } 100% { opacity: 0.35; } }
+            @keyframes pulse { 0% { opacity: 0.4; } 50% { opacity: 0.1; } 100% { opacity: 0.4; } }
             .pulse-ring { animation: pulse 2.5s ease-in-out infinite; }
         `;
         document.head.appendChild(style);
