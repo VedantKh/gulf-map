@@ -430,17 +430,12 @@ async function main() {
 
     // Start building the email report
     const report = [];
-    report.push(`GULF MAP — AUTO-UPDATE REPORT`);
-    report.push(`Date: ${new Date().toISOString()}`);
-    report.push(`Previous locations: ${LOCATIONS.length} across ${new Set(LOCATIONS.map(l => l.country)).size} countries`);
-    report.push(``);
-    report.push(`RESEARCH SUMMARY`);
-    report.push(result.searchSummary || 'No summary available');
-    report.push(``);
+    const SEV_DISPLAY = { critical: 'HIT', high: 'DEBRIS', watchlist: 'WATCHLIST' };
 
     if (!result.hasNewData && (!result.newLocations?.length) && (!result.updatedLocations?.length)) {
         console.log('\n  No new data found. Exiting.');
-        report.push(`RESULT: No new verified data found.`);
+        report.push(`No new verified data since last update.`);
+        report.push(`Locations on map: ${LOCATIONS.length}`);
         setOutput('has_changes', 'false');
         setOutput('report', report.join('\n'));
         return;
@@ -460,7 +455,6 @@ async function main() {
             const errors = validateLocation(newLoc);
             if (errors.length) {
                 console.log(`  REJECTED "${newLoc.name}": ${errors.join(', ')}`);
-                report.push(`REJECTED: ${newLoc.name} — ${errors.join(', ')}`);
                 continue;
             }
 
@@ -468,7 +462,6 @@ async function main() {
             const dupName = isDuplicate(newLoc, updatedLocations);
             if (dupName) {
                 console.log(`  DUPLICATE "${newLoc.name}" matches existing "${dupName}" — skipping`);
-                report.push(`DUPLICATE: ${newLoc.name} (matches ${dupName})`);
                 continue;
             }
 
@@ -481,13 +474,11 @@ async function main() {
             updatedLocations.push(newLoc);
             changeCount++;
             changeDescriptions.push(`Add ${newLoc.name} (${newLoc.country})`);
-            report.push(``);
-            report.push(`+ NEW: ${newLoc.name} [${newLoc.severity.toUpperCase()}]`);
-            report.push(`  Country: ${newLoc.country} | City: ${newLoc.city}`);
-            report.push(`  Type: ${newLoc.type}`);
-            report.push(`  Detail: ${newLoc.detail}`);
-            for (const inc of newLoc.incidents || []) report.push(`  Incident (${inc.date}): ${inc.text}`);
-            for (const src of newLoc.sources || []) report.push(`  Source: ${src.name} — ${src.url}`);
+            const sev = SEV_DISPLAY[newLoc.severity] || newLoc.severity;
+            const latestInc = newLoc.incidents?.[newLoc.incidents.length - 1];
+            report.push(`+ ${newLoc.name}, ${newLoc.country} [${sev}]`);
+            if (latestInc) report.push(`  ${latestInc.date}: ${latestInc.text}`);
+            report.push(`  ${(newLoc.sources || []).map(s => s.name).join(', ')}`);
         }
     }
 
@@ -547,16 +538,13 @@ async function main() {
                 console.log(`  UPDATED: ${existing.name}`);
                 changeCount++;
                 changeDescriptions.push(`Update ${existing.name}`);
-                report.push(``);
-                report.push(`~ UPDATED: ${existing.name} [${existing.severity.toUpperCase()}]`);
+                const sev = SEV_DISPLAY[existing.severity] || existing.severity;
+                report.push(`~ ${existing.name} [${sev}]`);
+                if (update.severityChange && update.severityChange !== 'null' && update.severityChange !== existing.severity) {
+                    report.push(`  Escalated → ${SEV_DISPLAY[update.severityChange] || update.severityChange}`);
+                }
                 if (update.newIncidents?.length) {
-                    for (const inc of update.newIncidents) report.push(`  New incident (${inc.date}): ${inc.text}`);
-                }
-                if (update.newSources?.length) {
-                    for (const src of update.newSources) report.push(`  New source: ${src.name} — ${src.url}`);
-                }
-                if (update.severityChange && update.severityChange !== 'null') {
-                    report.push(`  Severity escalated to: ${update.severityChange.toUpperCase()}`);
+                    for (const inc of update.newIncidents) report.push(`  ${inc.date}: ${inc.text}`);
                 }
             }
         }
@@ -567,17 +555,12 @@ async function main() {
         const cu = result.casualtyUpdate;
         if (typeof cu.killed === 'number' && cu.killed > updatedMeta.casualties.killed) {
             console.log(`  CASUALTIES: killed ${updatedMeta.casualties.killed} → ${cu.killed}`);
-            report.push(``);
-            report.push(`CASUALTIES: Killed ${updatedMeta.casualties.killed} → ${cu.killed}`);
-            if (cu.source) report.push(`  Source: ${cu.source}`);
             updatedMeta.casualties.killed = cu.killed;
             changeCount++;
             changeDescriptions.push(`Killed count: ${cu.killed}`);
         }
         if (typeof cu.injured === 'number' && cu.injured > updatedMeta.casualties.injured) {
             console.log(`  CASUALTIES: injured ${updatedMeta.casualties.injured} → ${cu.injured}`);
-            report.push(`CASUALTIES: Injured ${updatedMeta.casualties.injured} → ${cu.injured}`);
-            if (cu.source) report.push(`  Source: ${cu.source}`);
             updatedMeta.casualties.injured = cu.injured;
             changeCount++;
             changeDescriptions.push(`Injured count: ${cu.injured}`);
@@ -605,16 +588,15 @@ async function main() {
     // Write or dry-run
     if (changeCount === 0) {
         console.log('\n  No validated changes to write.');
-        report.push(`\nRESULT: No validated changes after dedup/validation.`);
+        report.push(`No new changes after validation.`);
+        report.push(`${LOCATIONS.length} locations | ${updatedMeta.casualties.killed} killed | ${updatedMeta.casualties.injured} injured`);
         setOutput('has_changes', 'false');
         setOutput('report', report.join('\n'));
         return;
     }
 
     report.push(``);
-    report.push(`════════════════════════════════`);
-    report.push(`TOTAL: ${changeCount} changes | ${updatedLocations.length} locations now on map`);
-    report.push(`Casualties: ${updatedMeta.casualties.killed} killed, ${updatedMeta.casualties.injured} injured`);
+    report.push(`${updatedLocations.length} locations | ${updatedMeta.casualties.killed} killed | ${updatedMeta.casualties.injured} injured`);
 
     console.log(`\n  Total changes: ${changeCount}`);
 

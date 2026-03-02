@@ -233,54 +233,48 @@
     }
 
     // ═══ Update incident list ═══
+    function getLatestDate(loc) {
+        if (!loc.incidents || loc.incidents.length === 0) return loc.dateAdded || '2000-01-01';
+        return loc.incidents.reduce((latest, inc) => inc.date > latest ? inc.date : latest, '2000-01-01');
+    }
+
     function updateIncidentList(locations) {
         const listDiv = document.getElementById('incident-list');
         if (!listDiv) return;
         listDiv.innerHTML = '';
 
-        // Group by country
-        const byCountry = {};
-        locations.forEach(loc => {
-            if (!byCountry[loc.country]) byCountry[loc.country] = [];
-            byCountry[loc.country].push(loc);
+        // Sort all locations by most recent incident date, then severity
+        const sevOrder = { critical: 0, high: 1, watchlist: 2 };
+        const sorted = [...locations].sort((a, b) => {
+            const dateA = getLatestDate(a);
+            const dateB = getLatestDate(b);
+            if (dateB !== dateA) return dateB.localeCompare(dateA);
+            return (sevOrder[a.severity] - sevOrder[b.severity]) || a.name.localeCompare(b.name);
         });
 
-        // Sort countries alphabetically, render groups
-        Object.keys(byCountry).sort().forEach(country => {
-            const locs = byCountry[country];
-            // Sort by severity then name
-            const sevOrder = { critical: 0, high: 1, watchlist: 2 };
-            locs.sort((a, b) => (sevOrder[a.severity] - sevOrder[b.severity]) || a.name.localeCompare(b.name));
-
-            const header = document.createElement('div');
-            header.className = 'country-header';
-            header.innerHTML = `${country} <span class="count">(${locs.length})</span>`;
-            listDiv.appendChild(header);
-
-            locs.forEach(loc => {
-                const color = SEV_COLOR[loc.severity];
-                const item = document.createElement('div');
-                item.className = 'inc-item';
-                item.innerHTML = `
-                    <div class="inc-dot" style="background:${color}"></div>
-                    <div class="inc-info">
-                        <div class="inc-name">${loc.icon} ${loc.name}</div>
-                        <div class="inc-type">${loc.type}</div>
-                    </div>
-                    <div class="inc-sev" style="color:${color}">${SEV_LABEL[loc.severity]}</div>
-                `;
-                item.addEventListener('click', () => {
-                    const zoom = loc.severity === 'watchlist' ? 10 : 12;
-                    state.map.flyTo([loc.lat, loc.lng], zoom);
-                    // Find and open the marker popup
-                    state.markerGroup.eachLayer(layer => {
-                        if (layer.getLatLng && layer.getLatLng().lat === loc.lat && layer.getLatLng().lng === loc.lng) {
-                            layer.openPopup();
-                        }
-                    });
+        sorted.forEach(loc => {
+            const color = SEV_COLOR[loc.severity];
+            const latestDate = getLatestDate(loc);
+            const item = document.createElement('div');
+            item.className = 'inc-item';
+            item.innerHTML = `
+                <div class="inc-dot" style="background:${color}"></div>
+                <div class="inc-info">
+                    <div class="inc-name">${loc.icon} ${loc.name}</div>
+                    <div class="inc-type">${latestDate} · ${loc.country}</div>
+                </div>
+                <div class="inc-sev" style="color:${color}">${SEV_LABEL[loc.severity]}</div>
+            `;
+            item.addEventListener('click', () => {
+                const zoom = loc.severity === 'watchlist' ? 10 : 12;
+                state.map.flyTo([loc.lat, loc.lng], zoom);
+                state.markerGroup.eachLayer(layer => {
+                    if (layer.getLatLng && layer.getLatLng().lat === loc.lat && layer.getLatLng().lng === loc.lng) {
+                        layer.openPopup();
+                    }
                 });
-                listDiv.appendChild(item);
             });
+            listDiv.appendChild(item);
         });
     }
 
