@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-02T20:28:54.382Z",
+    "lastUpdated": "2026-03-02T21:29:06.760Z",
     "casualties": {
-        "killed": 13,
-        "injured": 148
+        "killed": 15,
+        "injured": 150
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 3: Iran continues retaliatory strikes across 9+ countries. Qatar shot down two Iranian Su-24 bombers — first manned aircraft downed in conflict. QatarEnergy halts all LNG production. UAE now reports 689 drones launched (645 intercepted, 44 landed). Saudi Ras Tanura refinery shut. US/Israel have struck 1,200+ targets across 24 of Iran's 31 provinces. Iran's ability to fire ballistic missiles expected to be significantly impacted within 24 hours per Israeli officials. IRGC has claimed 12 waves of attacks.",
-    "totalBarrage": "UAE: 689 drones (645 intercepted, 44 landed), 165+ ballistic missiles (152 destroyed), 8 cruise missiles destroyed. Qatar (March 2 alone): 2 Su-24 bombers, 7 ballistic missiles, 5 drones — all neutralized. Kuwait total: 97 ballistic missiles, 283 drones intercepted. Bahrain total: 45 missiles, 9 drones intercepted.",
-    "intercepted": "UAE: 645/689 drones, 152/165 ballistic missiles, 8/8 cruise missiles. Qatar: All March 2 threats neutralized before reaching targets. Kuwait: All ballistic missiles intercepted per MOD. Bahrain: 45 missiles and 9 drones shot down."
+    "summary": "DAY 3 (Mar 2): Iran continues retaliatory strikes across Gulf for third consecutive day. MAJOR: Qatar shoots down 2 Iranian Su-24 Fencer bombers — first Gulf state to down Iranian aircraft. QatarEnergy suspends all LNG production. CENTCOM confirms 6 US KIA total. UAE reports 863 total attacks (174 ballistic missiles, 689 drones — 44 drones landed in country). US Embassy Kuwait hit by drone causing fire. Erbil Iraq hit by 70+ projectiles. 3 US F-15Es lost to Kuwaiti friendly fire. Explosions continue in Dubai, Abu Dhabi, Doha, Kuwait City, Manama, Muscat. Limited flights resuming at DXB.",
+    "totalBarrage": "UAE: 174 ballistic missiles + 2 cruise missiles + 689 drones (865 total). Qatar: 65+ missiles + 12+ drones + 2 Su-24 jets. Bahrain: 45 missiles + 9 drones. Kuwait: 97 ballistic missiles + 283 drones. Erbil/Iraq: 70+ missiles/drones. Jordan: 49 drones/missiles intercepted.",
+    "intercepted": "UAE: 161/174 ballistic missiles intercepted, 645/689 drones intercepted (44 landed in country). Qatar: all intercepted including 2 Su-24s, 7 BMs, 5 drones on Mar 2 alone. Bahrain: most of 45 missiles + 9 drones intercepted, some impacts confirmed. Kuwait: majority intercepted near Rumaithiya/Salwa neighborhoods."
 };
 
 const LOCATIONS = [
@@ -104,7 +104,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "World's Busiest Intl Airport — Hit Twice",
-            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports. March 2: Third day of explosions heard across Dubai. UAE airspace remains closed. Etihad flights suspended until March 3. Dubai Airports announced limited flight resumption from DXB and DWC starting evening of March 2, three days after initial shutdown.",
+            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports. March 2: Third day of explosions heard across Dubai. UAE airspace remains closed. Etihad flights suspended until March 3. Dubai Airports announced limited flight resumption from DXB and DWC starting evening of March 2, three days after initial shutdown. Mar 2: Dubai Airports announced limited resumption of flights from DXB and DWC starting Monday evening after 3 days shutdown. Thousands of passengers remain stranded.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -129,6 +129,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Dubai Airports announced limited resumption of flights from DXB and Al Maktoum International (DWC) starting Monday evening March 2, three days after initial closure."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Dubai Airports announced limited flight resumption from DXB and Al Maktoum (DWC) starting Monday evening March 2, after 3 days of closure. Operations remain heavily restricted."
                     }
             ],
             "sources": [
@@ -990,7 +994,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Interceptor debris / vessel fire",
-            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2.",
+            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2. Mar 2: UKMTO confirmed vessel struck by 2 projectiles. Bahrain Interior Ministry: 1 Asian worker killed, 2 seriously injured from interceptor debris falling on foreign ship at Salman Industrial City.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1011,6 +1015,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Bahrain Interior Ministry confirmed an Asian worker killed when debris from an intercepted missile fell onto a foreign vessel undergoing maintenance in Salman Industrial City. Two others sustained serious injuries."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "UKMTO confirms vessel at Bahrain port struck by two unknown projectiles causing fire. Bahrain Interior Ministry confirms debris from intercepted Iranian missile fell on a foreign ship at Salman Industrial City, killing 1 Asian worker and seriously injuring 2 others. Fire extinguished, crew evacuated."
                     }
             ],
             "sources": [
@@ -1061,6 +1069,10 @@ const LOCATIONS = [
                     {
                             "name": "Wikipedia (2026 Israeli-US strikes on Iran)",
                             "url": "https://en.wikipedia.org/wiki/2026_Israeli%E2%80%93United_States_strikes_on_Iran"
+                    },
+                    {
+                            "name": "PBS NewsHour",
+                            "url": "https://www.pbs.org/newshour/world/live-updates-u-s-israel-conflict-with-iran-widens"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1078,7 +1090,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Largest US Base in ME — 2 Missiles Hit, Radar Destroyed",
-            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar. March 2: Explosions heard in Doha for third day. Qatar FM spokesperson: 'Iran has to pay a price for this blatant attack on our people. An attack like this cannot be left without retaliation.' On March 2, Qatar shot down two Iranian Su-24 fighter jets — the first shoot-down of manned aircraft in the conflict — and intercepted 7 missiles and 5 drones. Qatar MoD stated its armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar Emiri Air Force shot down two Iranian Su-24 fighter jets and intercepted 7 ballistic missiles + 5 drones — the first confirmed air-to-air engagement of the conflict. Qatar MOD stated threats were addressed immediately upon detection per operational plans. On March 2, Qatar Emiri Air Force shot down two Iranian Su-24 fighter-bombers — the first manned aircraft destroyed in combat during the conflict. Qatar also intercepted 7 ballistic missiles and 5 drones in the same engagement. Qatar MOD stressed armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar shot down two Iranian Su-24 bombers — the first manned Iranian aircraft downed since the conflict began — while intercepting 7 ballistic missiles and 5 drones. IRGC has claimed 12 waves of attacks since war began.",
+            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar. March 2: Explosions heard in Doha for third day. Qatar FM spokesperson: 'Iran has to pay a price for this blatant attack on our people. An attack like this cannot be left without retaliation.' On March 2, Qatar shot down two Iranian Su-24 fighter jets — the first shoot-down of manned aircraft in the conflict — and intercepted 7 missiles and 5 drones. Qatar MoD stated its armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar Emiri Air Force shot down two Iranian Su-24 fighter jets and intercepted 7 ballistic missiles + 5 drones — the first confirmed air-to-air engagement of the conflict. Qatar MOD stated threats were addressed immediately upon detection per operational plans. On March 2, Qatar Emiri Air Force shot down two Iranian Su-24 fighter-bombers — the first manned aircraft destroyed in combat during the conflict. Qatar also intercepted 7 ballistic missiles and 5 drones in the same engagement. Qatar MOD stressed armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar shot down two Iranian Su-24 bombers — the first manned Iranian aircraft downed since the conflict began — while intercepting 7 ballistic missiles and 5 drones. IRGC has claimed 12 waves of attacks since war began. Mar 2: Qatar Air Force shot down 2 Iranian Su-24 Fencer tactical bombers and intercepted 7 ballistic missiles and 5 drones — first confirmed aerial kill of Iranian aircraft by a Gulf state. QatarEnergy suspends all LNG production following drone strikes on Ras Laffan and Mesaieed facilities.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1115,6 +1127,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Qatar Air Force shot down two Iranian Su-24 Fencer bombers approaching from Iran — first manned aircraft downed in conflict. Also intercepted 7 ballistic missiles and 5 drones targeting several areas of Qatar. Qatar MOD confirmed all threats neutralized before reaching targets."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Qatar MOD announces shootdown of 2 Iranian Su-24 Fencer bombers approaching from Iran — first confirmed aerial shootdown of Iranian aircraft by a Gulf state. Also intercepted 7 ballistic missiles via air defenses and 5 drones via QEAF and Qatari Navy. All projectiles destroyed before reaching targets. Qatar now deploying fighter jets to intercept threats over Gulf waters instead of relying solely on Patriot systems."
                     }
             ],
             "sources": [
@@ -1185,6 +1201,10 @@ const LOCATIONS = [
                     {
                             "name": "The National",
                             "url": "https://www.thenationalnews.com/news/gulf/2026/03/02/qatar-shoots-down-two-iranian-bombers/"
+                    },
+                    {
+                            "name": "The Aviationist",
+                            "url": "https://theaviationist.com/2026/03/02/qatar-shot-down-two-iranian-su-24s/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1338,7 +1358,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Energy Infrastructure Strike",
-            "detail": "Iranian drone struck QatarEnergy facility in Ras Laffan Industrial City on March 2, causing QatarEnergy to halt all LNG production. Ras Laffan supplies roughly 20% of global LNG exports. No human casualties reported but damage assessment is underway. March 2: Iranian drone confirmed struck QatarEnergy facility in Ras Laffan. QatarEnergy halted all LNG production — an unprecedented shutdown affecting ~20% of global LNG supply. European gas prices surged ~45–50%. March 2: QatarEnergy halted all natural gas production. Ras Laffan supplies approximately one-fifth of global LNG exports. Combined with Strait of Hormuz closure, this represents a major disruption to global energy markets. QatarEnergy confirmed full halt of LNG production on March 2, citing military attacks on operating facilities. European gas prices surged ~45%. Qatar is one of the world's top LNG producers. QatarEnergy announced a full halt to LNG and associated products production citing military attacks. European TTF gas benchmark jumped ~45% to over €46.",
+            "detail": "Iranian drone struck QatarEnergy facility in Ras Laffan Industrial City on March 2, causing QatarEnergy to halt all LNG production. Ras Laffan supplies roughly 20% of global LNG exports. No human casualties reported but damage assessment is underway. March 2: Iranian drone confirmed struck QatarEnergy facility in Ras Laffan. QatarEnergy halted all LNG production — an unprecedented shutdown affecting ~20% of global LNG supply. European gas prices surged ~45–50%. March 2: QatarEnergy halted all natural gas production. Ras Laffan supplies approximately one-fifth of global LNG exports. Combined with Strait of Hormuz closure, this represents a major disruption to global energy markets. QatarEnergy confirmed full halt of LNG production on March 2, citing military attacks on operating facilities. European gas prices surged ~45%. Qatar is one of the world's top LNG producers. QatarEnergy announced a full halt to LNG and associated products production citing military attacks. European TTF gas benchmark jumped ~45% to over €46. Mar 2: QatarEnergy halted all LNG production — one of the world's largest LNG exporters. European gas prices surged 50%+. Qatar MOD confirmed Iranian missile hit energy facility at Ras Laffan.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1359,6 +1379,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "QatarEnergy announces full halt of LNG production following Iranian drone strikes on operating facilities at Ras Laffan and Mesaieed. Qatar Defence Ministry confirmed one drone targeted an energy facility belonging to QatarEnergy at Ras Laffan. Dutch TTF gas benchmark surged ~45%."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "QatarEnergy suspends all LNG production following Iranian drone strikes on Ras Laffan and Mesaieed facilities. European natural gas prices surged more than 50%. Qatar MOD confirmed Iranian missiles struck energy facility in Ras Laffan affiliated with QatarEnergy."
                     }
             ],
             "sources": [
@@ -1397,6 +1421,10 @@ const LOCATIONS = [
                     {
                             "name": "France24 / AFP",
                             "url": "https://www.france24.com/en/live-news/20260302-qatar-downs-iran-warplanes-halts-lng-production-as-gulf-crisis-deepens"
+                    },
+                    {
+                            "name": "Euronews",
+                            "url": "https://www.euronews.com/2026/03/02/war-widens-as-israel-us-strike-iran-and-clash-with-hezbollah"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1614,7 +1642,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Military Base — Confirmed Strike, US KIA",
-            "detail": "Three US Army soldiers from a sustainment unit were killed and five seriously wounded in an Iranian drone strike at Camp Buehring in northwestern Kuwait on March 1. CENTCOM confirmed the casualties. Additional troops sustained minor shrapnel injuries and concussions. CENTCOM confirmed March 1 that three US service members were killed and five seriously wounded — the first US combat fatalities in Operation Epic Fury. Identified as part of a sustainment unit in Kuwait. CENTCOM confirmed 3 US Army soldiers killed and 5 seriously wounded. Soldiers were part of an Army sustainment unit based at Camp Buehring. Video confirmed Iranian Arash-2 pattern kamikaze drone impact.",
+            "detail": "Three US Army soldiers from a sustainment unit were killed and five seriously wounded in an Iranian drone strike at Camp Buehring in northwestern Kuwait on March 1. CENTCOM confirmed the casualties. Additional troops sustained minor shrapnel injuries and concussions. CENTCOM confirmed March 1 that three US service members were killed and five seriously wounded — the first US combat fatalities in Operation Epic Fury. Identified as part of a sustainment unit in Kuwait. CENTCOM confirmed 3 US Army soldiers killed and 5 seriously wounded. Soldiers were part of an Army sustainment unit based at Camp Buehring. Video confirmed Iranian Arash-2 pattern kamikaze drone impact. Mar 2 UPDATE: CENTCOM confirms total of 6 US service members killed. Defense Secretary Hegseth confirmed 4 died when Iranian munition hit tactical operations center. Remains of 2 additional service members recovered from struck facility.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -1627,6 +1655,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "CENTCOM confirmed 3 US Army soldiers from sustainment unit were killed and 5 seriously wounded in Iranian drone strike at Camp Buehring. Video shows Iranian Arash-2 kamikaze drone impacting a vehicle on base (CBS, AP, Al Jazeera)."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "CENTCOM confirms US death toll at this facility has risen to 6 total KIA. Defense Secretary Hegseth revealed 4 were killed when incoming munition hit a tactical operations center. CENTCOM recovered remains of 2 additional previously unaccounted-for service members from the struck facility."
                     }
             ],
             "sources": [
@@ -1665,6 +1697,14 @@ const LOCATIONS = [
                     {
                             "name": "The Maritime Executive",
                             "url": "https://maritime-executive.com/article/three-u-s-servicemembers-killed-in-iranian-strikes-on-kuwait"
+                    },
+                    {
+                            "name": "ABC News",
+                            "url": "https://abcnews.com/International/live-updates/iran-live-updates-israel-launches-preemptive-strike-iran/?id=130301492"
+                    },
+                    {
+                            "name": "CBS News",
+                            "url": "https://www.cbsnews.com/live-updates/iran-us-war-day-3-american-deaths-israel-gulf-allies-hit-missile-strikes/"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1678,7 +1718,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🏛️",
             "type": "Embassy Area / Debris Zone",
-            "detail": "AFP photos show smoke rising from the area near the US Embassy in Kuwait City on March 2. Kuwait's air defenses intercepted hostile drones near Rumaithiya and Salwa neighborhoods in Hawalli Governorate where the embassy is located. US Embassy issued security alert urging people to stay away. Firefighters and ambulances were seen in the area. March 2: Reuters witness and AFP photos confirm smoke rising near US Embassy area. Active air defense interceptions ongoing over central Kuwait. March 2: Smoke seen near US Embassy. Kuwaiti air defenses intercepted hostile drones at dawn near Rumaithiya and Salwa neighborhoods in Hawalli Governorate. Kuwait Civil Defense confirmed explosions heard in residential areas were from successful interceptions. March 2: AP confirmed fire and smoke inside embassy compound after Iranian attack. No confirmed casualties. Embassy warned of continuing threat and ordered shelter-in-place. March 2: Fire and black smoke from inside US Embassy compound. CBS News reported 'apparent Iranian missile strike.' Embassy closed and issued emergency shelter-in-place. No immediate casualty reports but compound visibly damaged. March 2: Smoke confirmed near US Embassy compound. Embassy closed. US warned of 'continuing threat of missile and UAV attacks' and urged Americans to take cover.",
+            "detail": "AFP photos show smoke rising from the area near the US Embassy in Kuwait City on March 2. Kuwait's air defenses intercepted hostile drones near Rumaithiya and Salwa neighborhoods in Hawalli Governorate where the embassy is located. US Embassy issued security alert urging people to stay away. Firefighters and ambulances were seen in the area. March 2: Reuters witness and AFP photos confirm smoke rising near US Embassy area. Active air defense interceptions ongoing over central Kuwait. March 2: Smoke seen near US Embassy. Kuwaiti air defenses intercepted hostile drones at dawn near Rumaithiya and Salwa neighborhoods in Hawalli Governorate. Kuwait Civil Defense confirmed explosions heard in residential areas were from successful interceptions. March 2: AP confirmed fire and smoke inside embassy compound after Iranian attack. No confirmed casualties. Embassy warned of continuing threat and ordered shelter-in-place. March 2: Fire and black smoke from inside US Embassy compound. CBS News reported 'apparent Iranian missile strike.' Embassy closed and issued emergency shelter-in-place. No immediate casualty reports but compound visibly damaged. March 2: Smoke confirmed near US Embassy compound. Embassy closed. US warned of 'continuing threat of missile and UAV attacks' and urged Americans to take cover. Mar 2: Large fire confirmed inside US Embassy compound from suspected Iranian drone. No injuries. Embassy had pre-emptively ordered staff to residences. All appointments canceled until further notice.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1757,6 +1797,14 @@ const LOCATIONS = [
                     {
                             "name": "Times of Israel",
                             "url": "https://www.timesofisrael.com/kuwait-says-several-us-warplanes-crashed-in-the-country-all-crew-survived/"
+                    },
+                    {
+                            "name": "PBS NewsHour",
+                            "url": "https://www.pbs.org/newshour/world/live-updates-u-s-israel-conflict-with-iran-widens"
+                    },
+                    {
+                            "name": "ABC News",
+                            "url": "https://abcnews.com/International/live-updates/iran-live-updates-israel-launches-preemptive-strike-iran/?id=130301492"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1802,7 +1850,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🎯",
             "type": "Military Aircraft Crash (Under Investigation)",
-            "detail": "Kuwait's Ministry of Defense confirmed 'several United States military aircraft crashed' on Monday March 2 with all crew surviving. CNN geolocated video of an F-15E Strike Eagle crashing within 10km of Ali Al Salem Air Base near Al Jahra. Crew ejected safely and were recovered by Kuwaiti forces. Cause remains under investigation — Iran claims shootdown, some analysts suspect friendly fire. Kuwait's Defence Ministry later confirmed 'several' US warplanes crashed in the country, with all crew surviving. This is an escalation from the initial single F-15E crash report. Kuwait MOD confirmed 'several' US warplanes crashed (not just one), all crew survived. Friendly fire confirmed for at least one F-15. Crews stable after hospital evaluation. CENTCOM confirmed 3 F-15E Strike Eagles (not 1) were shot down by Kuwaiti air defenses in friendly fire incident. Confirmed crash debris in Al Jahra district. All 6 crew survived. First confirmed air-to-air friendly fire incident of the conflict. CENTCOM officially confirmed 3 F-15Es downed by Kuwaiti air defenses in friendly fire at 11:03 PM ET Mar 1. All 6 crew ejected safely. Investigation underway.",
+            "detail": "Kuwait's Ministry of Defense confirmed 'several United States military aircraft crashed' on Monday March 2 with all crew surviving. CNN geolocated video of an F-15E Strike Eagle crashing within 10km of Ali Al Salem Air Base near Al Jahra. Crew ejected safely and were recovered by Kuwaiti forces. Cause remains under investigation — Iran claims shootdown, some analysts suspect friendly fire. Kuwait's Defence Ministry later confirmed 'several' US warplanes crashed in the country, with all crew surviving. This is an escalation from the initial single F-15E crash report. Kuwait MOD confirmed 'several' US warplanes crashed (not just one), all crew survived. Friendly fire confirmed for at least one F-15. Crews stable after hospital evaluation. CENTCOM confirmed 3 F-15E Strike Eagles (not 1) were shot down by Kuwaiti air defenses in friendly fire incident. Confirmed crash debris in Al Jahra district. All 6 crew survived. First confirmed air-to-air friendly fire incident of the conflict. CENTCOM officially confirmed 3 F-15Es downed by Kuwaiti air defenses in friendly fire at 11:03 PM ET Mar 1. All 6 crew ejected safely. Investigation underway. Mar 2: CENTCOM confirmed friendly fire — 3 F-15Es shot down by Kuwaiti air defenses during active combat. All 6 aircrew safe. Kuwait acknowledged incident. Shows chaotic nature of air defense operations under sustained Iranian barrage.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1823,6 +1871,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "CENTCOM officially confirmed three US F-15E Strike Eagles were shot down at 11:03 PM ET March 1 by Kuwaiti air defenses in a friendly fire incident during active Iranian attacks. All six aircrew ejected safely and are in stable condition. CNN geolocated one crash within 10 km of Ali Al Salem base. Kuwait acknowledged the incident."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "CENTCOM confirms 3 US F-15E Strike Eagles 'mistakenly shot down by Kuwaiti air defenses' during active combat involving Iranian aircraft, ballistic missiles and drones. All 6 aircrew ejected safely, recovered in stable condition. Kuwait acknowledged the incident."
                     }
             ],
             "sources": [
@@ -1873,6 +1925,10 @@ const LOCATIONS = [
                     {
                             "name": "CBS News",
                             "url": "https://www.cbsnews.com/news/us-f-15-jets-mistakenly-shot-down-kuwait-riendly-fire-crew-safe/"
+                    },
+                    {
+                            "name": "Axios",
+                            "url": "https://www.axios.com/2026/03/02/3-us-fighter-jets-friendly-fire-kuwait"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2050,7 +2106,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Oil Facility Strike",
-            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire.",
+            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -2071,6 +2127,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Saudi state TV confirmed authorities temporarily shut down Ras Tanura refinery near Dammam. Saudi MOD said two drones intercepted; debris caused small contained fire. No civilian casualties reported."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Saudi authorities temporarily shut down Ras Tanura refinery near Dammam after drone attack. Saudi MOD said two drones attempting to attack were intercepted and destroyed; small debris fire resulted. No civilian casualties reported."
                     }
             ],
             "sources": [
