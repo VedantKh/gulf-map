@@ -188,43 +188,52 @@ CRITICAL RULES:
 // ═══════════════════════════════════════════════════════════════
 // Call Claude API with web search
 // ═══════════════════════════════════════════════════════════════
+async function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function callClaudeWithRetry(client, params, maxRetries = 3) {
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+        try {
+            return await client.messages.create(params);
+        } catch (err) {
+            if (err.status === 429 && attempt < maxRetries - 1) {
+                const delay = Math.min(30000 * (2 ** attempt), 120000);
+                console.log(`  Rate limited. Retrying in ${delay / 1000}s (attempt ${attempt + 1}/${maxRetries})...`);
+                await sleep(delay);
+                continue;
+            }
+            throw err;
+        }
+    }
+}
+
 async function callClaude(prompt) {
     const client = new Anthropic();
 
-    const response = await client.messages.create({
+    const params = {
         model: 'claude-opus-4-6',
         max_tokens: 16000,
         thinking: { type: 'adaptive' },
         tools: [{ type: 'web_search_20250305', name: 'web_search' }],
         messages: [{ role: 'user', content: prompt }]
-    });
+    };
 
-    // The response may require multiple turns if Claude uses web search
-    // Handle the agentic loop for server-side tools
-    let currentResponse = response;
+    let currentResponse = await callClaudeWithRetry(client, params);
     let messages = [{ role: 'user', content: prompt }];
 
     while (currentResponse.stop_reason === 'tool_use' || currentResponse.stop_reason === 'pause_turn') {
         messages.push({ role: 'assistant', content: currentResponse.content });
-
-        // For server-side tools (web_search), we just send the response back
-        // The API handles tool execution server-side
         messages.push({ role: 'user', content: [{ type: 'text', text: 'Continue.' }] });
 
-        currentResponse = await client.messages.create({
-            model: 'claude-opus-4-6',
-            max_tokens: 16000,
-            thinking: { type: 'adaptive' },
-            tools: [{ type: 'web_search_20250305', name: 'web_search' }],
+        currentResponse = await callClaudeWithRetry(client, {
+            ...params,
             messages
         });
     }
 
-    // Extract text from the final response
     const textBlocks = currentResponse.content.filter(b => b.type === 'text');
-    const fullText = textBlocks.map(b => b.text).join('\n');
-
-    return fullText;
+    return textBlocks.map(b => b.text).join('\n');
 }
 
 // ═══════════════════════════════════════════════════════════════
