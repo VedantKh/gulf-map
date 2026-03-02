@@ -39,9 +39,8 @@ Assign FALLING DEBRIS when:
 
 ### WATCHLIST (internal key: "watchlist") — Credible threat, near-miss, elevated alert
 Assign WATCHLIST when:
-- The location is a high-value target that has been explicitly threatened or named by a belligerent
+- The location is a high-value target that is on elevated security alert due to the conflict
 - OR interceptions occurred nearby but no confirmed debris/damage AT this specific location
-- OR the location is on elevated security alert due to the conflict
 - OR it was previously attacked in a related conflict and conditions suggest re-targeting
 - Examples: oil facility on high alert, military base with no confirmed impacts, embassy issuing security warnings
 
