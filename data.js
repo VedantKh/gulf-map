@@ -14,9 +14,9 @@ const MAP_META = {
         "injured": 116
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 3 of conflict. Iran has launched strikes across 8 countries. IRGC claims 27 US bases targeted in 6+ waves. Suspected drone struck RAF Akrotiri in Cyprus (March 2) — first confirmed strike outside Middle East. 3 US soldiers KIA in Kuwait confirmed. Saudi Arabia authorized military action. Joint US-GCC statement condemning Iran's strikes issued. Strait of Hormuz closed to shipping.",
-    "totalBarrage": "UAE: 165 ballistic missiles, 2 cruise missiles, 541 drones. Kuwait: 97 ballistic missiles, 283 drones. Bahrain: 45 missiles, 9 drones. Qatar: 66 missiles, 12 drones. Jordan: 49 drones and ballistic missiles. Saudi Arabia: undisclosed but confirmed attacks on Riyadh and Eastern Province.",
-    "intercepted": "UAE: 152/165 BMs, 506/541 drones destroyed. Kuwait: 97 BMs + 283 drones intercepted. Bahrain: 45 missiles + 9 drones. Qatar: claims all missiles intercepted before reaching territory. Jordan: 49 threats intercepted."
+    "summary": "Day 3 of Iran-US/Israel conflict. IRGC claimed strikes on 27 US bases across the region. All six GCC states now targeted including mediator Oman. First strike on UK sovereign territory (RAF Akrotiri, Cyprus) confirmed by UK MoD on March 2. Commercial shipping in Strait of Hormuz effectively halted after tanker attack and IRGC closure warnings. Iran later declared Hormuz 'open until further notice' but US warships remain declared targets. Maersk suspended all Hormuz transits.",
+    "totalBarrage": "UAE: 165 ballistic missiles, 2 cruise missiles, 541 drones (UAE MOD). Qatar: 66 missiles, 12 drones. Kuwait: 97 ballistic missiles, 283 drones. Bahrain: 45 missiles, 9 drones intercepted. IRGC claimed 6+ waves of strikes on 27 US bases.",
+    "intercepted": "Majority intercepted. UAE: 506 of 541 drones intercepted (35 fell within territory); 152 of 165 ballistic missiles destroyed (13 fell into sea). Kuwait: all 97 ballistic missiles intercepted. Qatar: claims all missiles intercepted. Bahrain: 45 missiles and 9 drones shot down."
 };
 
 const LOCATIONS = [
@@ -236,7 +236,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "City Port — Drone Strike + Missile Near-Miss",
-            "detail": "Abu Dhabi's main city port, cruise terminal, AND Al Salam Naval Base (French military). Directly struck by at least 2 Shahed-136 drones targeting the French naval base. A missile also landed in the water meters from the German cruise ship Mein Schiff 4 (2,500 passengers). Two Iranian drones struck warehouse at Al Salam Naval Base. French Defense Minister confirmed hangar hosting French forces was hit with limited damage. No casualties.",
+            "detail": "Abu Dhabi's main city port, cruise terminal, AND Al Salam Naval Base (French military). Directly struck by at least 2 Shahed-136 drones targeting the French naval base. A missile also landed in the water meters from the German cruise ship Mein Schiff 4 (2,500 passengers). Two Iranian drones struck warehouse at Al Salam Naval Base. French Defense Minister confirmed hangar hosting French forces was hit with limited damage. No casualties. On March 1, UAE MOD confirmed two Iranian drones hit a warehouse at the Al Salam Naval Base (Camp de la Paix), which hosts French forces. Fire in two containers; no casualties. French Defence Minister confirmed limited material damage.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -271,6 +271,10 @@ const LOCATIONS = [
                     {
                             "name": "Channels Television / AFP",
                             "url": "https://www.channelstv.com/2026/03/01/iran-drone-attack-caused-fire-at-uae-base-hosting-french-forces/amp/"
+                    },
+                    {
+                            "name": "Wikipedia (citing UAE MOD, France Info)",
+                            "url": "https://en.wikipedia.org/wiki/2026_Israeli%E2%80%93United_States_strikes_on_Iran"
                     }
             ],
             "dateAdded": "2026-03-01"
@@ -625,6 +629,34 @@ const LOCATIONS = [
             ],
             "dateAdded": "2026-03-01"
     },
+    {
+            "name": "Strait of Hormuz — Maritime Incidents (off Sharjah/Mina Saqr, UAE)",
+            "lat": 25.9,
+            "lng": 56.1,
+            "country": "UAE",
+            "city": "Sharjah / Ras Al Khaimah coastal waters",
+            "severity": "critical",
+            "icon": "⚓",
+            "type": "Projectile attacks on commercial vessels",
+            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters.",
+            "incidents": [
+                    {
+                            "date": "2026-03-01",
+                            "text": "UKMTO reported three separate maritime attacks: vessel hit west of Sharjah, tanker struck north of Muscat, and vessel hit near Mina Saqr. Fires aboard multiple ships. GPS jamming widespread."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Fox News",
+                            "url": "https://www.foxnews.com/world/strait-hormuz-maritime-incidents-follow-us-israeli-operation-epic-fury-strikes-iran"
+                    },
+                    {
+                            "name": "Argus Media",
+                            "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2794562-tanker-hit-near-hormuz-strait-as-iran-conflict-widens"
+                    }
+            ],
+            "dateAdded": "2026-03-02"
+    },
 
     // ═══════════════════════════════════════════════════════════
     // Bahrain
@@ -638,7 +670,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Naval Base — Missile & Drone Strike",
-            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon.",
+            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -655,6 +687,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "Bahrain Defense Force confirmed air defenses intercepted 45 missiles and 9 drones including Shahed-136 types. Navy base sustained damage to a large building and at least one other structure. Limited debris reported across multiple areas."
+                    },
+                    {
+                            "date": "2026-03-01",
+                            "text": "Bahrain reported intercepting 45 missiles and 9 drones including Shahed-136 kamikaze drones. Multiple fires reported burning at the 5th Fleet base following continued drone strikes overnight into March 1-2. Video confirmed parts of 5th Fleet headquarters were hit."
                     }
             ],
             "sources": [
@@ -681,6 +717,10 @@ const LOCATIONS = [
                     {
                             "name": "Breaking Defense",
                             "url": "https://breakingdefense.com/2026/03/iran-attacks-uae-saudi-missiles-drones-gcc-air-defense/"
+                    },
+                    {
+                            "name": "Washington Post",
+                            "url": "https://www.washingtonpost.com/investigations/2026/03/01/where-iran-strikes-middle-east-images-video/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -953,6 +993,30 @@ const LOCATIONS = [
             ],
             "dateAdded": "2026-03-02"
     },
+    {
+            "name": "Northern Qatar Early Warning Radar Site",
+            "lat": 25.95,
+            "lng": 51.35,
+            "country": "Qatar",
+            "city": "Northern Qatar",
+            "severity": "watchlist",
+            "icon": "🎯",
+            "type": "Reported missile targeting of radar facility",
+            "detail": "A long-range early warning radar in northern Qatar was targeted by an Iranian missile, according to sources who spoke to Al Jazeera on Feb 28. No injuries were reported. The IRGC separately claimed destruction of the AN/FPS-132 Block 5 US missile warning radar in Qatar, though this claim has not been independently verified.",
+            "incidents": [
+                    {
+                            "date": "2026-02-28",
+                            "text": "Iranian missile reportedly targeted long-range early warning radar in northern Qatar. No confirmed injuries or damage assessment available from Qatari authorities."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/2/28/multiple-gulf-arab-states-that-host-us-assets-targeted-in-iran-retaliation"
+                    }
+            ],
+            "dateAdded": "2026-03-02"
+    },
 
     // ═══════════════════════════════════════════════════════════
     // Kuwait
@@ -1066,11 +1130,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Military Base — Confirmed Strike, US KIA",
-            "detail": "Three US Army soldiers from a sustainment unit were killed and five seriously wounded in an Iranian drone strike at Camp Buehring in northwestern Kuwait on March 1. CENTCOM confirmed the casualties. Additional troops sustained minor shrapnel injuries and concussions.",
+            "detail": "Three US Army soldiers from a sustainment unit were killed and five seriously wounded in an Iranian drone strike at Camp Buehring in northwestern Kuwait on March 1. CENTCOM confirmed the casualties. Additional troops sustained minor shrapnel injuries and concussions. CENTCOM confirmed March 1 that three US service members were killed and five seriously wounded — the first US combat fatalities in Operation Epic Fury. Identified as part of a sustainment unit in Kuwait.",
             "incidents": [
                     {
                             "date": "2026-03-01",
                             "text": "Iranian drone strike killed 3 US Army soldiers and seriously wounded 5 others at Camp Buehring. CENTCOM confirmed first US combat deaths of Operation Epic Fury."
+                    },
+                    {
+                            "date": "2026-03-01",
+                            "text": "CENTCOM confirmed three US service members killed in action and five seriously wounded during Iranian attacks. WaPo identified them as part of a sustainment unit in Kuwait. First US combat deaths of Operation Epic Fury."
                     }
             ],
             "sources": [
@@ -1089,6 +1157,14 @@ const LOCATIONS = [
                     {
                             "name": "CBS News",
                             "url": "https://www.cbs17.com/news/national-news/us-service-members-in-kuwait-were-killed-in-military-operation-against-iran/"
+                    },
+                    {
+                            "name": "NPR",
+                            "url": "https://www.npr.org/2026/03/01/nx-s1-5731365/us-israeli-strikes-region"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1238,11 +1314,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "💥",
             "type": "Omani Port — Struck by 2 Iranian Drones",
-            "detail": "Major Omani port on the Arabian Sea coast. Targeted by 2 Iranian drones on Mar 1. One struck foreign workers' residences, injuring 1. Iran FM claimed 'not our choice.' This shatters Oman's traditional neutrality.",
+            "detail": "Major Omani port on the Arabian Sea coast. Targeted by 2 Iranian drones on Mar 1. One struck foreign workers' residences, injuring 1. Iran FM claimed 'not our choice.' This shatters Oman's traditional neutrality. Oman News Agency confirmed two drones hit Duqm port on March 1, injuring one expatriate worker. First attack on Oman. GCC condemned the strike on the mediator state.",
             "incidents": [
                     {
                             "date": "2026-03-01",
                             "text": "2 Iranian drones targeted Duqm Port. One struck foreign workers' residences — 1 injured. Oman neutrality compromised."
+                    },
+                    {
+                            "date": "2026-03-01",
+                            "text": "Oman News Agency confirmed Duqm commercial port was struck by two drones. One expatriate worker injured. First attack on Oman, which had been mediating US-Iran talks. Condemned by the Gulf Cooperation Council."
                     }
             ],
             "sources": [
@@ -1253,9 +1333,53 @@ const LOCATIONS = [
                     {
                             "name": "UAE MOFA",
                             "url": "https://www.mofa.gov.ae/en/MediaHub/News/2026/3/1/UAE-Oman"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/1/more-blasts-rock-dubai-doha-and-manama-as-iran-targets-us-assets-in-gulf"
+                    },
+                    {
+                            "name": "Argus Media",
+                            "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2794562-tanker-hit-near-hormuz-strait-as-iran-conflict-widens"
                     }
             ],
             "dateAdded": "2026-03-01"
+    },
+    {
+            "name": "Strait of Hormuz — Tanker SKYLIGHT (off Khasab, Oman)",
+            "lat": 26.25,
+            "lng": 56.27,
+            "country": "Oman",
+            "city": "Khasab (Musandam)",
+            "severity": "critical",
+            "icon": "🛢️",
+            "type": "Iranian strike on oil tanker in Strait of Hormuz",
+            "detail": "Palau-flagged oil tanker SKYLIGHT struck approximately 5 nautical miles north of Khasab Port in Oman's Musandam Governorate on March 1. All 20 crew (15 Indian, 5 Iranian nationals) evacuated; four sustained injuries. Iranian state TV claimed tanker was sinking. This was the first confirmed attack on a commercial vessel in the Strait of Hormuz during this conflict.",
+            "incidents": [
+                    {
+                            "date": "2026-03-01",
+                            "text": "Oil tanker SKYLIGHT struck 5nm north of Khasab port. 20 crew evacuated, 4 injured. Iranian state TV claimed tanker sinking after attempting to pass through Strait of Hormuz."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Euronews",
+                            "url": "https://www.euronews.com/business/2026/03/01/first-oil-tanker-attacked-in-the-strait-of-hormuz-according-to-oman"
+                    },
+                    {
+                            "name": "Argus Media",
+                            "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2794562-tanker-hit-near-hormuz-strait-as-iran-conflict-widens"
+                    },
+                    {
+                            "name": "Middle East Monitor",
+                            "url": "https://www.middleeastmonitor.com/20260301-iran-confirms-attack-on-oil-tanker-for-defying-orders-not-to-cross-strait-of-hormuz/"
+                    },
+                    {
+                            "name": "Fox News",
+                            "url": "https://www.foxnews.com/world/strait-hormuz-maritime-incidents-follow-us-israeli-operation-epic-fury-strikes-iran"
+                    }
+            ],
+            "dateAdded": "2026-03-02"
     },
 
 ];
