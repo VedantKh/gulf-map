@@ -8,14 +8,14 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-02T10:40:08.952Z",
+    "lastUpdated": "2026-03-02T11:30:18.013Z",
     "casualties": {
         "killed": 10,
         "injured": 122
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 3 of Iranian retaliatory strikes. Explosions continue across Dubai, Doha, Kuwait and Erbil for third consecutive day. Hezbollah entered the conflict from Lebanon on March 2, launching rockets/drones at Israeli targets; Israel responded with strikes on Beirut killing 31. Iran's IRGC claims attacks on 27 US bases. Iran's National Security Council says Tehran will not negotiate with Washington. Fresh Iranian ballistic missile launches detected toward Israel on Monday morning. Conflict has now spread to Lebanon in addition to Gulf states and Iraq.",
-    "totalBarrage": "Cumulative interceptions by country — UAE: 165 ballistic missiles + 2 cruise missiles + 541 drones (UAE MOD); Kuwait: 97 ballistic missiles + 283 drones (Kuwait govt); Qatar: ~65 missiles + 12 drones (Qatar officials); Bahrain: 61 missiles + 34 drones (updated Bahrain BDF total); Jordan: 49 drones and ballistic missiles. Over 1,300 munitions intercepted across the region. UAE MOD says 35 drones fell within the country despite interceptions.",
+    "summary": "Day 3 (March 2): Iran's retaliatory strikes continue for third consecutive day across the Gulf. Conflict has expanded to Iraq (Iranian & militia strikes on US bases in Erbil; militia drone attack claimed at Baghdad airport) and Europe (drone strike on RAF Akrotiri, Cyprus). Hezbollah fires rockets at Israel from Lebanon, prompting Israeli strikes on Beirut. Qatar's $1B early warning radar confirmed struck. IRGC claims attacks on 27 US bases. Gulf states issued joint statement with US condemning Iran's 'indiscriminate and reckless' attacks and reserving right to respond.",
+    "totalBarrage": "Confirmed regional launch totals — UAE intercepted: 165 ballistic missiles, 2 cruise missiles, 541 drones (UAE MOD); Kuwait: 97 ballistic missiles, 283 drones; Qatar: 65 missiles, 12 drones; Bahrain: 45 missiles, 9 drones; Saudi Arabia: confirmed strikes repelled, no hard figures; Jordan: 13 ballistic missiles, 49 drones intercepted. Additional Iraqi militia drone/rocket attacks on Erbil and Baghdad.",
     "intercepted": "Per Breaking Defense analysis: despite decades of defense spending, GCC air defenses are being tested at scale. UAE intercepted ~93% of ballistic missiles (152/165) and most drones but 35 fell within the country. Saturation attacks remain a serious concern."
 };
 
@@ -104,7 +104,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "World's Busiest Intl Airport — Hit Twice",
-            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations.",
+            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -113,6 +113,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "SECOND attack struck the airport in the early morning hours. Operations remain suspended."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Day 3: CNN team heard 'two back-to-back blasts,' jets overhead and apparent interceptors in Dubai on Monday morning"
                     }
             ],
             "sources": [
@@ -127,6 +131,10 @@ const LOCATIONS = [
                     {
                             "name": "Simple Flying",
                             "url": "https://simpleflying.com/dubai-international-airport-hit-by-drone/"
+                    },
+                    {
+                            "name": "CNN (March 2 Live)",
+                            "url": "https://us.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -970,7 +978,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Largest US Base in ME — 2 Missiles Hit, Radar Destroyed",
-            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious).",
+            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -987,6 +995,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "Second wave of missiles intercepted and neutralized by Qatar's Ministry of Defence. Qatar confirmed 66 missiles total fired at the country, with 114 reports of falling shrapnel nationwide and 16 people injured."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Day 3: Explosions heard near Al Udeid area as Iranian retaliatory strikes continue; CNN photojournalist filmed apparent missile interceptions in Doha skies Monday morning"
                     }
             ],
             "sources": [
@@ -1009,6 +1021,14 @@ const LOCATIONS = [
                     {
                             "name": "CNN Live",
                             "url": "https://www.cnn.com/world/live-news/israel-iran-attack-02-28-26-hnk-intl"
+                    },
+                    {
+                            "name": "CNN (March 2 Live)",
+                            "url": "https://us.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
+                    },
+                    {
+                            "name": "Al Jazeera (Day 3)",
+                            "url": "https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1071,20 +1091,32 @@ const LOCATIONS = [
             "lng": 51.35,
             "country": "Qatar",
             "city": "Northern Qatar",
-            "severity": "watchlist",
+            "severity": "critical",
             "icon": "🎯",
             "type": "Reported missile targeting of radar facility",
-            "detail": "A long-range early warning radar in northern Qatar was targeted by an Iranian missile, according to sources who spoke to Al Jazeera on Feb 28. No injuries were reported. The IRGC separately claimed destruction of the AN/FPS-132 Block 5 US missile warning radar in Qatar, though this claim has not been independently verified.",
+            "detail": "A long-range early warning radar in northern Qatar was targeted by an Iranian missile, according to sources who spoke to Al Jazeera on Feb 28. No injuries were reported. The IRGC separately claimed destruction of the AN/FPS-132 Block 5 US missile warning radar in Qatar, though this claim has not been independently verified. UPGRADE: Qatari officials confirmed in joint briefing that 'a drone targeted an early warning radar system.' Reuters confirmed the $1B AN/FPS-132 Block 5 radar was struck and damaged. Satellite imagery analyzed by NPR shows possible burn scarring near the radar installation. Iran claimed the radar was destroyed; US has not publicly confirmed extent of damage.",
             "incidents": [
                     {
                             "date": "2026-02-28",
                             "text": "Iranian missile reportedly targeted long-range early warning radar in northern Qatar. No confirmed injuries or damage assessment available from Qatari authorities."
+                    },
+                    {
+                            "date": "2026-02-28",
+                            "text": "Qatari officials confirmed in joint defense/interior/foreign affairs briefing that a drone struck the AN/FPS-132 early warning radar system; Reuters source confirmed radar struck and damaged"
                     }
             ],
             "sources": [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/2/28/multiple-gulf-arab-states-that-host-us-assets-targeted-in-iran-retaliation"
+                    },
+                    {
+                            "name": "Euronews (Qatar briefing)",
+                            "url": "https://www.euronews.com/2026/03/01/qatar-intercepts-iranian-missile-waves-on-day-two-of-retaliation-as-doha-fire-contained"
+                    },
+                    {
+                            "name": "Reuters (via MarketScreener)",
+                            "url": "https://uk.marketscreener.com/news/an-early-warning-radar-in-the-north-of-qatar-was-struck-and-damaged-by-an-iranian-attack-official-ce7e5cdcd988fe2c"
                     }
             ],
             "dateAdded": "2026-03-02"
