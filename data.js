@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-02T08:37:46.299Z",
+    "lastUpdated": "2026-03-02T10:40:08.952Z",
     "casualties": {
         "killed": 10,
         "injured": 122
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 3 of Iran-US/Israel conflict. Iran continues to strike US assets across the Gulf. First confirmed death in Bahrain (Mina Salman debris). Several US F-15E aircraft crashed in Kuwait (cause under investigation). Fresh explosions reported in Dubai, Abu Dhabi, and Doha on Monday morning. Kuwait air defenses intercepted hostile drones at dawn. Bahrain updated defense totals to 61 missiles and 34 drones intercepted. Al Jazeera reports Iraq and Kuwait experiencing further Iranian raids. IRGC claims 27 US bases targeted across the region. Iran says it will not negotiate with the US.",
-    "totalBarrage": "UAE: 165 ballistic missiles, 2 cruise missiles, 541 drones. Bahrain: 61 missiles, 34 drones. Kuwait: 97 ballistic missiles, 283 drones. Qatar: 65 missiles, 12 drones (Saturday only). Totals continuing to rise with ongoing waves.",
-    "intercepted": "UAE: 152 BMs destroyed, 506 drones intercepted (35 fell within territory). Bahrain: 61 missiles and 34 drones intercepted (updated from 45/9). Kuwait: 97 BMs and 283 drones intercepted. Qatar: majority intercepted. Jordan: 13 BMs, 49 drones. UK RAF Typhoon downed 1 Iranian drone bound for Qatar."
+    "summary": "Day 3 of Iranian retaliatory strikes. Explosions continue across Dubai, Doha, Kuwait and Erbil for third consecutive day. Hezbollah entered the conflict from Lebanon on March 2, launching rockets/drones at Israeli targets; Israel responded with strikes on Beirut killing 31. Iran's IRGC claims attacks on 27 US bases. Iran's National Security Council says Tehran will not negotiate with Washington. Fresh Iranian ballistic missile launches detected toward Israel on Monday morning. Conflict has now spread to Lebanon in addition to Gulf states and Iraq.",
+    "totalBarrage": "Cumulative interceptions by country — UAE: 165 ballistic missiles + 2 cruise missiles + 541 drones (UAE MOD); Kuwait: 97 ballistic missiles + 283 drones (Kuwait govt); Qatar: ~65 missiles + 12 drones (Qatar officials); Bahrain: 61 missiles + 34 drones (updated Bahrain BDF total); Jordan: 49 drones and ballistic missiles. Over 1,300 munitions intercepted across the region. UAE MOD says 35 drones fell within the country despite interceptions.",
+    "intercepted": "Per Breaking Defense analysis: despite decades of defense spending, GCC air defenses are being tested at scale. UAE intercepted ~93% of ballistic missiles (152/165) and most drones but 35 fell within the country. Saturation attacks remain a serious concern."
 };
 
 const LOCATIONS = [
@@ -1362,11 +1362,15 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🎯",
             "type": "Military Aircraft Crash (Under Investigation)",
-            "detail": "Kuwait's Ministry of Defense confirmed 'several United States military aircraft crashed' on Monday March 2 with all crew surviving. CNN geolocated video of an F-15E Strike Eagle crashing within 10km of Ali Al Salem Air Base near Al Jahra. Crew ejected safely and were recovered by Kuwaiti forces. Cause remains under investigation — Iran claims shootdown, some analysts suspect friendly fire.",
+            "detail": "Kuwait's Ministry of Defense confirmed 'several United States military aircraft crashed' on Monday March 2 with all crew surviving. CNN geolocated video of an F-15E Strike Eagle crashing within 10km of Ali Al Salem Air Base near Al Jahra. Crew ejected safely and were recovered by Kuwaiti forces. Cause remains under investigation — Iran claims shootdown, some analysts suspect friendly fire. Kuwait's Defence Ministry later confirmed 'several' US warplanes crashed in the country, with all crew surviving. This is an escalation from the initial single F-15E crash report.",
             "incidents": [
                     {
                             "date": "2026-03-02",
                             "text": "Multiple US F-15E Strike Eagles crash west of Al Jahra, Kuwait. Kuwait MOD confirms all crew survived. Pilots ejected safely and were recovered by locals then transferred to Kuwaiti authorities. Cause under investigation."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Kuwait's Defence Ministry confirmed 'several' US fighter jets crashed in Kuwait (not just one); all crew members survived. Unconfirmed reports suggest possible friendly fire incident (Al Jazeera, Euronews)"
                     }
             ],
             "sources": [
@@ -1385,6 +1389,14 @@ const LOCATIONS = [
                     {
                             "name": "Türkiye Today",
                             "url": "https://www.turkiyetoday.com/region/us-f-15-crashes-in-kuwait-3215419"
+                    },
+                    {
+                            "name": "Al Jazeera (several US jets crash in Kuwait)",
+                            "url": "https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue"
+                    },
+                    {
+                            "name": "Euronews (F-15E crash, friendly fire reports)",
+                            "url": "https://www.euronews.com/2026/03/02/drones-hit-saudi-ras-tanura-refinery-as-iran-strikes-targets-across-region"
                     }
             ],
             "dateAdded": "2026-03-02"
