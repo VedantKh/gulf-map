@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-02T12:40:26.507Z",
+    "lastUpdated": "2026-03-02T14:00:01.821Z",
     "casualties": {
         "killed": 11,
         "injured": 124
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 3 of Iran retaliatory strikes. Conflict expands to Iraq (Erbil, Baghdad). First targeted strike on Gulf energy infrastructure (Ras Tanura refinery shut down). Bahrain reports first fatality. Qatar signals potential retaliation. Iran continues strikes on 9+ countries. 19,000+ flights disrupted across Middle East.",
-    "totalBarrage": "UAE: 165 ballistic missiles, 2 cruise missiles, 541 drones. Qatar: 65 missiles, 12 drones. Bahrain: 45 missiles, 9 drones. Kuwait: 97 ballistic missiles, 283 drones intercepted. IRGC claims attacks on 27 US military bases region-wide.",
-    "intercepted": "UAE intercepted 152 of 165 ballistic missiles (13 fell into sea), 506 of 541 drones (35 fell within country, 21 hit civilian targets). Qatar claims all intercepted. Kuwait intercepted 97 ballistic missiles, 283 drones. Bahrain shot down 45 missiles, 9 drones."
+    "summary": "Day 3 (March 2) of Iranian retaliatory strikes continues. Pentagon briefed press: DefSec Hegseth outlined 'Operation Epic Fury' mission to destroy Iranian military/nuclear capabilities. CENTCOM confirmed 4th US service member KIA. Iraq now active theater — pro-Iran militias (Saraya Awliya al-Dam, Islamic Resistance in Iraq) launching drones at US bases in Erbil and Baghdad. Hezbollah entered conflict from Lebanon on March 2 with strikes on Haifa. Qatar FM warned of potential retaliation against Iran. All Gulf airspace remains closed/restricted. Iran has struck targets in at least 9 countries.",
+    "totalBarrage": "UAE MOD: 165 ballistic missiles, 2 cruise missiles, 541 drones detected. Qatar: 66 missiles, 12 drones. Kuwait: 97 ballistic missiles, 283 drones. Bahrain: 45 missiles, 9 drones. IRGC claims strikes on 27 US bases across region.",
+    "intercepted": "UAE: intercepted majority but 35 drones struck within country (21 hitting civilian targets). Qatar: claims all intercepted. Kuwait: intercepted majority including March 2 dawn wave near Rumaithiya/Salwa. Bahrain: 45 missiles, 9 drones shot down. March 2 Kuwait dawn interceptions confirmed with no injuries."
 };
 
 const LOCATIONS = [
@@ -104,7 +104,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "World's Busiest Intl Airport — Hit Twice",
-            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports.",
+            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports. March 2: Third day of explosions heard across Dubai. UAE airspace remains closed. Etihad flights suspended until March 3.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -121,6 +121,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Loud explosions heard in Dubai for a third consecutive day as Iranian retaliatory strikes continue. Airport remains closed with 2,000+ flights cancelled across Gulf hubs."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Loud blasts heard for third consecutive day in Dubai shortly after 9 AM local time. CNBC team in UAE confirmed explosions. UAE airspace closures extended. Etihad suspended all Abu Dhabi flights until 14:00 UAE time March 3."
                     }
             ],
             "sources": [
@@ -147,6 +151,10 @@ const LOCATIONS = [
                     {
                             "name": "Euronews",
                             "url": "https://www.euronews.com/2026/03/02/us-and-israeli-strikes-on-iran-disrupt-regional-and-international-flights"
+                    },
+                    {
+                            "name": "CNBC",
+                            "url": "https://www.cnbc.com/2026/03/02/us-iran-live-updates-trump-oil-gold.html"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -698,7 +706,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Naval Base — Missile & Drone Strike",
-            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted.",
+            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted. March 2: Bahrain activated new air raid alerts, closed Shaikh Khalifa bridge. US Embassy closed, warned Americans to avoid Manama hotels.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -735,6 +743,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Bahrain MOI activated air raid alerts Monday and urged residents to head to nearest safe place. Shaikh Khalifa bin Salman Bridge closed. Residents urged to use main roads only when necessary."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Bahrain Ministry of Interior activated fresh air raid alerts, urged residents to seek nearest shelter. Shaikh Khalifa bin Salman Bridge closed. US Embassy in Bahrain closed for March 2; warned US citizens to avoid hotels in Manama as potential targets."
                     }
             ],
             "sources": [
@@ -785,6 +797,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue"
+                    },
+                    {
+                            "name": "US Embassy Bahrain",
+                            "url": "https://bh.usembassy.gov/security-alert-update-6-u-s-embassy-manama-bahrain-u-s-embassy-closure-march-1-2026/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1178,11 +1194,15 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "✈️",
             "type": "Airport — Targeted, Attacks Intercepted",
-            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded.",
+            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded. March 2: Qatar FM confirmed airport was directly targeted by Iranian attacks; all intercepted. Qatar warned Iran must 'pay a price' and retaliation cannot be ruled out.",
             "incidents": [
                     {
                             "date": "2026-03-02",
                             "text": "Qatar FM spokesperson confirms Iranian attacks targeted civilian infrastructure including Hamad International Airport; all attacks intercepted. Airport remains closed with all movements suspended."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Qatar FM spokesperson Majed Al Ansari confirmed to CNN that Iran targeted civilian infrastructure including Hamad International Airport; attacks intercepted. Qatar FM separately warned Iran must 'pay a price' for the attacks and that they 'cannot be left without retaliation.'"
                     }
             ],
             "sources": [
@@ -1193,6 +1213,10 @@ const LOCATIONS = [
                     {
                             "name": "Euronews",
                             "url": "https://www.euronews.com/2026/03/02/us-and-israeli-strikes-on-iran-disrupt-regional-and-international-flights"
+                    },
+                    {
+                            "name": "Euronews",
+                            "url": "https://www.euronews.com/2026/03/02/drones-hit-saudi-ras-tanura-refinery-as-iran-strikes-targets-across-region"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1210,7 +1234,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Coalition Air Base — Major Missile Strike",
-            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation).",
+            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation). March 2: CENTCOM confirmed 4th US service member died from injuries sustained in Iran's initial attacks on Kuwait. 'Major combat operations continue.'",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1235,6 +1259,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Kuwait Air Defence Force intercepted 'a number of hostile aerial targets at dawn' approaching via maritime routes over central Kuwait. No casualties reported from interceptions. Separately, several US F-15E aircraft crashed nearby (~10km west); cause under investigation."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "CENTCOM confirmed 4th US service member killed in action at 7:30 AM ET — succumbed to injuries from Iran's initial attacks in Kuwait. Total: 4 US KIA, 4+ seriously wounded in Kuwait."
                     }
             ],
             "sources": [
@@ -1277,6 +1305,10 @@ const LOCATIONS = [
                     {
                             "name": "Middle East Eye",
                             "url": "https://www.middleeasteye.net/news/breaking-us-fighter-jet-crashes-kuwait"
+                    },
+                    {
+                            "name": "CBS News",
+                            "url": "https://www.cbsnews.com/news/iran-military-operation-american-service-members-killed-centcom/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1402,7 +1434,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🏛️",
             "type": "Embassy Area / Debris Zone",
-            "detail": "AFP photos show smoke rising from the area near the US Embassy in Kuwait City on March 2. Kuwait's air defenses intercepted hostile drones near Rumaithiya and Salwa neighborhoods in Hawalli Governorate where the embassy is located. US Embassy issued security alert urging people to stay away. Firefighters and ambulances were seen in the area. March 2: Reuters witness and AFP photos confirm smoke rising near US Embassy area. Active air defense interceptions ongoing over central Kuwait. March 2: Smoke seen near US Embassy. Kuwaiti air defenses intercepted hostile drones at dawn near Rumaithiya and Salwa neighborhoods in Hawalli Governorate. Kuwait Civil Defense confirmed explosions heard in residential areas were from successful interceptions.",
+            "detail": "AFP photos show smoke rising from the area near the US Embassy in Kuwait City on March 2. Kuwait's air defenses intercepted hostile drones near Rumaithiya and Salwa neighborhoods in Hawalli Governorate where the embassy is located. US Embassy issued security alert urging people to stay away. Firefighters and ambulances were seen in the area. March 2: Reuters witness and AFP photos confirm smoke rising near US Embassy area. Active air defense interceptions ongoing over central Kuwait. March 2: Smoke seen near US Embassy. Kuwaiti air defenses intercepted hostile drones at dawn near Rumaithiya and Salwa neighborhoods in Hawalli Governorate. Kuwait Civil Defense confirmed explosions heard in residential areas were from successful interceptions. March 2: AP confirmed fire and smoke inside embassy compound after Iranian attack. No confirmed casualties. Embassy warned of continuing threat and ordered shelter-in-place.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1415,6 +1447,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Loud bangs and sirens heard in Kuwait early Monday morning; Reuters witness reports smoke seen rising near the US embassy. Kuwaiti Air Defense intercepted hostile drones approaching via maritime routes near Rumaithiya and Salwa neighborhoods in Hawalli Governorate. No injuries reported from interception operations."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "AP video confirmed fire and smoke inside the US Embassy compound after Iranian attack Monday morning. Embassy issued shelter-in-place alert: 'Do not come to the embassy. There is a continuing threat of missile and UAV attacks over Kuwait.' Embassy did not confirm direct projectile hit; fire may be from interception debris."
                     }
             ],
             "sources": [
@@ -1441,6 +1477,14 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue"
+                    },
+                    {
+                            "name": "AP via ABC News",
+                            "url": "https://abcnews.com/International/wireStory/fire-smoke-inside-us-embassy-compound-kuwait-after-130667966"
+                    },
+                    {
+                            "name": "Euronews",
+                            "url": "https://www.euronews.com/2026/03/02/drones-hit-saudi-ras-tanura-refinery-as-iran-strikes-targets-across-region"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1486,7 +1530,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🎯",
             "type": "Military Aircraft Crash (Under Investigation)",
-            "detail": "Kuwait's Ministry of Defense confirmed 'several United States military aircraft crashed' on Monday March 2 with all crew surviving. CNN geolocated video of an F-15E Strike Eagle crashing within 10km of Ali Al Salem Air Base near Al Jahra. Crew ejected safely and were recovered by Kuwaiti forces. Cause remains under investigation — Iran claims shootdown, some analysts suspect friendly fire. Kuwait's Defence Ministry later confirmed 'several' US warplanes crashed in the country, with all crew surviving. This is an escalation from the initial single F-15E crash report.",
+            "detail": "Kuwait's Ministry of Defense confirmed 'several United States military aircraft crashed' on Monday March 2 with all crew surviving. CNN geolocated video of an F-15E Strike Eagle crashing within 10km of Ali Al Salem Air Base near Al Jahra. Crew ejected safely and were recovered by Kuwaiti forces. Cause remains under investigation — Iran claims shootdown, some analysts suspect friendly fire. Kuwait's Defence Ministry later confirmed 'several' US warplanes crashed in the country, with all crew surviving. This is an escalation from the initial single F-15E crash report. Kuwait MOD confirmed 'several' US warplanes crashed (not just one), all crew survived. Friendly fire confirmed for at least one F-15. Crews stable after hospital evaluation.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1495,6 +1539,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Kuwait's Defence Ministry confirmed 'several' US fighter jets crashed in Kuwait (not just one); all crew members survived. Unconfirmed reports suggest possible friendly fire incident (Al Jazeera, Euronews)"
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Kuwait Defense Ministry confirmed 'several' US warplanes crashed Monday morning, not just one. All crew members survived and were evacuated to hospital. US official confirmed at least one F-15 downed by apparent friendly fire. Al Jazeera reported footage showing at least two separate crash instances."
                     }
             ],
             "sources": [
@@ -1521,6 +1569,10 @@ const LOCATIONS = [
                     {
                             "name": "Euronews (F-15E crash, friendly fire reports)",
                             "url": "https://www.euronews.com/2026/03/02/drones-hit-saudi-ras-tanura-refinery-as-iran-strikes-targets-across-region"
+                    },
+                    {
+                            "name": "CNBC",
+                            "url": "https://www.cnbc.com/2026/03/02/us-iran-live-updates-trump-oil-gold.html"
                     }
             ],
             "dateAdded": "2026-03-02"
