@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-02T21:29:06.760Z",
+    "lastUpdated": "2026-03-02T22:24:57.953Z",
     "casualties": {
-        "killed": 15,
-        "injured": 150
+        "killed": 17,
+        "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "DAY 3 (Mar 2): Iran continues retaliatory strikes across Gulf for third consecutive day. MAJOR: Qatar shoots down 2 Iranian Su-24 Fencer bombers — first Gulf state to down Iranian aircraft. QatarEnergy suspends all LNG production. CENTCOM confirms 6 US KIA total. UAE reports 863 total attacks (174 ballistic missiles, 689 drones — 44 drones landed in country). US Embassy Kuwait hit by drone causing fire. Erbil Iraq hit by 70+ projectiles. 3 US F-15Es lost to Kuwaiti friendly fire. Explosions continue in Dubai, Abu Dhabi, Doha, Kuwait City, Manama, Muscat. Limited flights resuming at DXB.",
-    "totalBarrage": "UAE: 174 ballistic missiles + 2 cruise missiles + 689 drones (865 total). Qatar: 65+ missiles + 12+ drones + 2 Su-24 jets. Bahrain: 45 missiles + 9 drones. Kuwait: 97 ballistic missiles + 283 drones. Erbil/Iraq: 70+ missiles/drones. Jordan: 49 drones/missiles intercepted.",
-    "intercepted": "UAE: 161/174 ballistic missiles intercepted, 645/689 drones intercepted (44 landed in country). Qatar: all intercepted including 2 Su-24s, 7 BMs, 5 drones on Mar 2 alone. Bahrain: most of 45 missiles + 9 drones intercepted, some impacts confirmed. Kuwait: majority intercepted near Rumaithiya/Salwa neighborhoods."
+    "summary": "Day 3 of conflict: Iran continues retaliatory strikes across Gulf region. Major escalations include IRGC declaring Strait of Hormuz closed and threatening to set passing vessels on fire, QatarEnergy halting all LNG production (20% of global supply) after drone strikes on Ras Laffan and Mesaieed, Qatar shooting down 2 Iranian SU-24 bombers (first ever air-to-air engagement), US death toll at Shuaiba Port rising to 6, and Iraqi militias opening a new front with drone attacks on US bases in Erbil and Baghdad. Hezbollah has joined the war, launching strikes on Israel from Lebanon. Oil prices surged 13%, European gas prices jumped ~50%.",
+    "totalBarrage": "UAE: 174 ballistic missiles, 8 cruise missiles, 689 drones detected (UAE MOD updated figures via The National). Qatar: 2 SU-24 bombers + 7 BMs + 5 drones on March 2 alone (Qatar MOD via QNA/Gulf News). Kuwait: 97 BMs + 283 drones (Breaking Defense). Bahrain: 61 missiles + 34 drones (Bahrain Defence Force). Total region-wide: well over 1,500 projectiles launched by Iran since Feb 28.",
+    "intercepted": "UAE intercepted 161 of 174 BMs, all 8 CMs, 645 of 689 drones (93%+ rate). Qatar intercepted all threats on March 2 including 2 manned aircraft. Kuwait intercepted majority near Rumaithiya/Salwa. Bahrain intercepted 61 missiles and 34 drones. 44 Iranian drones fell within UAE territory causing material damage."
 };
 
 const LOCATIONS = [
@@ -576,7 +576,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🛢️",
             "type": "Oil Fuel Depot — Previously Attacked in 2022",
-            "detail": "ADNOC pipeline terminal and fuel hub. Previously struck by Houthi drones in Jan 2022 — 3 killed, 6 injured. With Houthis announcing resumed attacks, high-risk repeat target. Upgraded to FALLING DEBRIS: Abu Dhabi authorities confirmed debris from drone interception caused minor building damage at ICAD warehouse and Mussafah commercial facility. March 2: Abu Dhabi authorities confirmed and responded to drone attack on Musaffah fuel terminal. Fire controlled, no injuries or operational disruption.",
+            "detail": "ADNOC pipeline terminal and fuel hub. Previously struck by Houthi drones in Jan 2022 — 3 killed, 6 injured. With Houthis announcing resumed attacks, high-risk repeat target. Upgraded to FALLING DEBRIS: Abu Dhabi authorities confirmed debris from drone interception caused minor building damage at ICAD warehouse and Mussafah commercial facility. March 2: Abu Dhabi authorities confirmed and responded to drone attack on Musaffah fuel terminal. Fire controlled, no injuries or operational disruption. On March 2, intercepted drone debris damaged a warehouse in ICAD and a commercial site in Mussaffah. A separate drone strike caused a fire at a fuel tank terminal in Musaffah, which Abu Dhabi authorities contained. No injuries reported.",
             "incidents": [
                     {
                             "date": "2022-01-17",
@@ -593,6 +593,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Drone attack on Musaffah fuel terminal confirmed by Abu Dhabi Media Office. Fire quickly brought under control. No injuries reported and operations not affected."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Debris from intercepted drones damaged a warehouse in ICAD and a commercial site in Mussaffah. Abu Dhabi authorities later contained a fire caused by a drone strike on a fuel tank terminal in Musaffah. No injuries reported."
                     }
             ],
             "sources": [
@@ -611,6 +615,10 @@ const LOCATIONS = [
                     {
                             "name": "PBS NewsHour",
                             "url": "https://www.pbs.org/newshour/world/live-updates-u-s-israel-conflict-with-iran-widens"
+                    },
+                    {
+                            "name": "The National (UAE)",
+                            "url": "https://www.thenationalnews.com/news/uae/2026/03/01/iran-missile-attacks-uae-deaths/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -694,11 +702,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Projectile attacks on commercial vessels",
-            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters.",
+            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones.",
             "incidents": [
                     {
                             "date": "2026-03-01",
                             "text": "UKMTO reported three separate maritime attacks: vessel hit west of Sharjah, tanker struck north of Muscat, and vessel hit near Mina Saqr. Fires aboard multiple ships. GPS jamming widespread."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "IRGC commander General Ebrahim Jabbari declared the Strait of Hormuz closed to all traffic, stating on state TV: vessels attempting to pass will be 'set on fire.' Traffic through the waterway has effectively stopped. IRGC struck tanker ATHE NOVA with 2 drones (separate map entry)."
                     }
             ],
             "sources": [
@@ -709,6 +721,38 @@ const LOCATIONS = [
                     {
                             "name": "Argus Media",
                             "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2794562-tanker-hit-near-hormuz-strait-as-iran-conflict-widens"
+                    },
+                    {
+                            "name": "CNN Live",
+                            "url": "https://edition.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
+                    },
+                    {
+                            "name": "Daily Sabah",
+                            "url": "https://www.dailysabah.com/world/mid-east/iran-says-strait-of-hormuz-closed-will-torch-ships-trying-to-pass"
+                    }
+            ],
+            "dateAdded": "2026-03-02"
+    },
+    {
+            "name": "Al Hamra Village, Ras Al Khaimah (Intercepted Drone Debris)",
+            "lat": 25.7167,
+            "lng": 55.7833,
+            "country": "UAE",
+            "city": "Ras Al Khaimah",
+            "severity": "high",
+            "icon": "💥",
+            "type": "Intercepted drone debris damage",
+            "detail": "Debris from an intercepted Iranian drone caused damage in Al Hamra Village in Ras Al Khaimah on Monday, per the UAE Ministry of Defense via The National. No injuries were reported. This represents a geographic widening of debris impacts beyond Abu Dhabi and Dubai into the northern emirate of Ras Al Khaimah.",
+            "incidents": [
+                    {
+                            "date": "2026-03-02",
+                            "text": "Intercepted Iranian drone debris caused damage in Al Hamra Village, Ras Al Khaimah. No injuries reported. Confirmed by UAE MOD."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "The National (UAE)",
+                            "url": "https://www.thenationalnews.com/news/uae/2026/03/01/iran-missile-attacks-uae-deaths/"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -994,7 +1038,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Interceptor debris / vessel fire",
-            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2. Mar 2: UKMTO confirmed vessel struck by 2 projectiles. Bahrain Interior Ministry: 1 Asian worker killed, 2 seriously injured from interceptor debris falling on foreign ship at Salman Industrial City.",
+            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2. Mar 2: UKMTO confirmed vessel struck by 2 projectiles. Bahrain Interior Ministry: 1 Asian worker killed, 2 seriously injured from interceptor debris falling on foreign ship at Salman Industrial City. On March 2, Bahrain's Ministry of Interior confirmed 1 Asian worker killed and 2 seriously injured from intercepted missile debris falling on a foreign vessel. Bahrain Defence Force reports total of 61 missiles and 34 drones intercepted since the start of the conflict.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1019,6 +1063,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "UKMTO confirms vessel at Bahrain port struck by two unknown projectiles causing fire. Bahrain Interior Ministry confirms debris from intercepted Iranian missile fell on a foreign ship at Salman Industrial City, killing 1 Asian worker and seriously injuring 2 others. Fire extinguished, crew evacuated."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Bahrain MOI confirmed falling debris from an intercepted missile caused fire on a foreign ship undergoing maintenance in Salman Industrial City. One Asian worker killed, two others seriously injured. Fire was brought under control."
                     }
             ],
             "sources": [
@@ -1073,6 +1121,14 @@ const LOCATIONS = [
                     {
                             "name": "PBS NewsHour",
                             "url": "https://www.pbs.org/newshour/world/live-updates-u-s-israel-conflict-with-iran-widens"
+                    },
+                    {
+                            "name": "WAM (via Iraq Sun)",
+                            "url": "http://www.iraqsun.com/news/278896783/bahrain-announces-one-killed-two-injured-by-falling-debris-from-intercepted-missile"
+                    },
+                    {
+                            "name": "ARN News Centre",
+                            "url": "https://www.arnnewscentre.ae/en/news/international/fire-from-missile-debris-kills-one-in-bahrain/"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1306,7 +1362,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "✈️",
             "type": "Airport — Targeted, Attacks Intercepted",
-            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded. March 2: Qatar FM confirmed airport was directly targeted by Iranian attacks; all intercepted. Qatar warned Iran must 'pay a price' and retaliation cannot be ruled out. Qatar FM spokesman confirmed on March 2 that Iranian attacks targeted civilian infrastructure including the international airport. Attacks intercepted but severity elevated given confirmed targeting. Flights remain suspended pending airspace reopening.",
+            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded. March 2: Qatar FM confirmed airport was directly targeted by Iranian attacks; all intercepted. Qatar warned Iran must 'pay a price' and retaliation cannot be ruled out. Qatar FM spokesman confirmed on March 2 that Iranian attacks targeted civilian infrastructure including the international airport. Attacks intercepted but severity elevated given confirmed targeting. Flights remain suspended pending airspace reopening. On March 2, Qatar MOD confirmed shooting down 2 Iranian SU-24 Fencer bombers — the first time Qatar has downed manned aircraft. Also intercepted 7 ballistic missiles and 5 drones on the same day. All projectiles neutralized before reaching targets.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1319,6 +1375,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Qatar FM spokesman confirmed Iran targeted Hamad International Airport; attacks intercepted by air defenses. Over 100 missiles and scores of drones launched at Qatar targeting civilian and military infrastructure. Flights remain suspended."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Qatar confirmed interception of Iranian attacks targeting civilian infrastructure including Doha International Airport. Qatar MOD reported shooting down 2 Iranian SU-24 bombers, 7 ballistic missiles, and 5 drones on March 2. All threats intercepted before reaching targets."
                     }
             ],
             "sources": [
@@ -1345,6 +1405,18 @@ const LOCATIONS = [
                     {
                             "name": "Khaleej Times",
                             "url": "https://www.khaleejtimes.com/world/gulf/qatarenergy-stops-lng-production-after-attacks-on-ras-laffan-mesaieed-facilities"
+                    },
+                    {
+                            "name": "Gulf News",
+                            "url": "https://gulfnews.com/world/gulf/qatar/qatar-shoots-down-two-iranian-su-24-jets-intercepts-missiles-1.500461182"
+                    },
+                    {
+                            "name": "QNA (Qatar)",
+                            "url": "https://qna.org.qa/en/News-Area/News/2026-3/2/qatar-shoots-down-two-iranian-jets-intercepts-12-missiles-and-drones"
+                    },
+                    {
+                            "name": "JPost",
+                            "url": "https://www.jpost.com/middle-east/article-888568"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1358,7 +1430,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Energy Infrastructure Strike",
-            "detail": "Iranian drone struck QatarEnergy facility in Ras Laffan Industrial City on March 2, causing QatarEnergy to halt all LNG production. Ras Laffan supplies roughly 20% of global LNG exports. No human casualties reported but damage assessment is underway. March 2: Iranian drone confirmed struck QatarEnergy facility in Ras Laffan. QatarEnergy halted all LNG production — an unprecedented shutdown affecting ~20% of global LNG supply. European gas prices surged ~45–50%. March 2: QatarEnergy halted all natural gas production. Ras Laffan supplies approximately one-fifth of global LNG exports. Combined with Strait of Hormuz closure, this represents a major disruption to global energy markets. QatarEnergy confirmed full halt of LNG production on March 2, citing military attacks on operating facilities. European gas prices surged ~45%. Qatar is one of the world's top LNG producers. QatarEnergy announced a full halt to LNG and associated products production citing military attacks. European TTF gas benchmark jumped ~45% to over €46. Mar 2: QatarEnergy halted all LNG production — one of the world's largest LNG exporters. European gas prices surged 50%+. Qatar MOD confirmed Iranian missile hit energy facility at Ras Laffan.",
+            "detail": "Iranian drone struck QatarEnergy facility in Ras Laffan Industrial City on March 2, causing QatarEnergy to halt all LNG production. Ras Laffan supplies roughly 20% of global LNG exports. No human casualties reported but damage assessment is underway. March 2: Iranian drone confirmed struck QatarEnergy facility in Ras Laffan. QatarEnergy halted all LNG production — an unprecedented shutdown affecting ~20% of global LNG supply. European gas prices surged ~45–50%. March 2: QatarEnergy halted all natural gas production. Ras Laffan supplies approximately one-fifth of global LNG exports. Combined with Strait of Hormuz closure, this represents a major disruption to global energy markets. QatarEnergy confirmed full halt of LNG production on March 2, citing military attacks on operating facilities. European gas prices surged ~45%. Qatar is one of the world's top LNG producers. QatarEnergy announced a full halt to LNG and associated products production citing military attacks. European TTF gas benchmark jumped ~45% to over €46. Mar 2: QatarEnergy halted all LNG production — one of the world's largest LNG exporters. European gas prices surged 50%+. Qatar MOD confirmed Iranian missile hit energy facility at Ras Laffan. QatarEnergy ceased all LNG production on March 2 after Iranian drone struck the facility, affecting ~20% of global LNG supply. European benchmark gas prices surged nearly 50%. QatarEnergy's Ras Laffan plant operates 14 LNG trains with 77M tonnes annual capacity.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1425,6 +1497,14 @@ const LOCATIONS = [
                     {
                             "name": "Euronews",
                             "url": "https://www.euronews.com/2026/03/02/war-widens-as-israel-us-strike-iran-and-clash-with-hezbollah"
+                    },
+                    {
+                            "name": "QNA (Qatar)",
+                            "url": "https://qna.org.qa/en/News-Area/News/2026-3/2/qatar-shoots-down-two-iranian-jets-intercepts-12-missiles-and-drones"
+                    },
+                    {
+                            "name": "The National (UAE)",
+                            "url": "https://www.thenationalnews.com/business/energy/2026/03/02/qatar-halts-gas-output-after-iran-strikes-top-facility/"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1438,7 +1518,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚡",
             "type": "Energy Infrastructure Strike",
-            "detail": "Iranian drone struck a water storage tank at Mesaieed Energy power plant on March 2. Qatar MOD confirmed the strike; no human casualties reported. QatarEnergy halted production citing attacks on both Mesaieed and Ras Laffan facilities. March 2: Iranian drone struck a water storage tank at Mesaieed Energy power plant. No casualties. QatarEnergy halted operations at Mesaieed facilities. Qatar MOD confirmed drone targeted a water tank at a Mesaieed power plant on March 2. QatarEnergy has ceased all LNG production.",
+            "detail": "Iranian drone struck a water storage tank at Mesaieed Energy power plant on March 2. Qatar MOD confirmed the strike; no human casualties reported. QatarEnergy halted production citing attacks on both Mesaieed and Ras Laffan facilities. March 2: Iranian drone struck a water storage tank at Mesaieed Energy power plant. No casualties. QatarEnergy halted operations at Mesaieed facilities. Qatar MOD confirmed drone targeted a water tank at a Mesaieed power plant on March 2. QatarEnergy has ceased all LNG production. On March 2, Qatar Defence Ministry confirmed an Iranian drone targeted a water tank at a Mesaieed power plant. QatarEnergy ceased all LNG production across both Mesaieed and Ras Laffan.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1489,6 +1569,18 @@ const LOCATIONS = [
                     {
                             "name": "France24 / AFP",
                             "url": "https://www.france24.com/en/live-news/20260302-qatar-downs-iran-warplanes-halts-lng-production-as-gulf-crisis-deepens"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/economy/2026/3/2/why-qatarenergys-lng-production-halt-could-shake-up-global-gas-markets"
+                    },
+                    {
+                            "name": "Eurasian Times",
+                            "url": "https://www.eurasiantimes.com/historic-kill-qatar-shoots-down-two-iranian-su-24-fighter-bombers-after-tehrans-massive-strikes-on-energy-facility/"
+                    },
+                    {
+                            "name": "Qatar Tribune",
+                            "url": "https://www.qatar-tribune.com/article/222248/latest-news/qatarenergy-stops-production-oflng-following-attacks-on-its-facilities"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1965,6 +2057,38 @@ const LOCATIONS = [
             ],
             "dateAdded": "2026-03-02"
     },
+    {
+            "name": "Shuaiba Port (US Tactical Operations Center Strike)",
+            "lat": 29.0374,
+            "lng": 48.1564,
+            "country": "Kuwait",
+            "city": "Shuaiba",
+            "severity": "critical",
+            "icon": "⚓",
+            "type": "Direct Iranian strike on US military facility",
+            "detail": "Six US service members killed when an Iranian projectile scored a direct hit on a makeshift tactical operations center at the civilian port of Shuaiba on Sunday morning local time. Defense Secretary Hegseth confirmed one projectile penetrated air defenses and struck a fortified triple-wide trailer used as an operations center. No warning or siren preceded the strike. CENTCOM confirmed the death toll rose to 6 on Monday afternoon after two additional remains were recovered.",
+            "incidents": [
+                    {
+                            "date": "2026-03-01",
+                            "text": "Iranian projectile (suspected drone) directly struck a US Army sustainment unit's makeshift tactical operations center at Shuaiba Port. 6 US service members killed. Defense Secretary Hegseth confirmed one projectile got through air defenses."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "CNN",
+                            "url": "https://www.cnn.com/2026/03/02/politics/six-soldiers-killed-in-iranian-strike-kuwait"
+                    },
+                    {
+                            "name": "CNN Live",
+                            "url": "https://edition.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
+                    },
+                    {
+                            "name": "KVIA (CNN Wire)",
+                            "url": "https://kvia.com/politics/cnn-us-politics/2026/03/02/no-warning-no-siren-six-us-service-members-killed-in-iranian-strike-that-hit-makeshift-operations-center-in-kuwait/"
+                    }
+            ],
+            "dateAdded": "2026-03-02"
+    },
 
     // ═══════════════════════════════════════════════════════════
     // Saudi Arabia
@@ -2106,7 +2230,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Oil Facility Strike",
-            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties.",
+            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -2131,6 +2255,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Saudi authorities temporarily shut down Ras Tanura refinery near Dammam after drone attack. Saudi MOD said two drones attempting to attack were intercepted and destroyed; small debris fire resulted. No civilian casualties reported."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Saudi state television confirmed authorities temporarily shut down the Ras Tanura refinery (550,000 bpd capacity) after a fire broke out from debris during interception of attacking drones. Saudi MOD said two drones were intercepted and destroyed, with a 'small' fire resulting from falling debris. No civilian casualties."
                     }
             ],
             "sources": [
@@ -2169,6 +2297,10 @@ const LOCATIONS = [
                     {
                             "name": "The Peninsula Qatar",
                             "url": "https://thepeninsulaqatar.com/article/02/03/2026/live-updates:-rising-concerns-as-missiles-continue-to-be-intercepted-across-gulf-"
+                    },
+                    {
+                            "name": "ABC News (AP)",
+                            "url": "https://abcnews.com/International/wireStory/saudi-arabia-intercepted-drones-targeting-ras-tanura-oil-130667464"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2281,6 +2413,42 @@ const LOCATIONS = [
                     {
                             "name": "Euronews",
                             "url": "https://www.euronews.com/2026/03/02/war-widens-as-israel-us-strike-iran-and-clash-with-hezbollah"
+                    }
+            ],
+            "dateAdded": "2026-03-02"
+    },
+
+    // ═══════════════════════════════════════════════════════════
+    // International Waters (Strait of Hormuz)
+    // ═══════════════════════════════════════════════════════════
+    {
+            "name": "Oil Tanker ATHE NOVA (IRGC Drone Strike, Strait of Hormuz)",
+            "lat": 26.55,
+            "lng": 56.25,
+            "country": "International Waters (Strait of Hormuz)",
+            "city": "Strait of Hormuz",
+            "severity": "critical",
+            "icon": "🛢️",
+            "type": "IRGC drone strike on commercial tanker",
+            "detail": "The IRGC claimed it struck the Honduran-flagged bitumen tanker ATHE NOVA with two drones in the Strait of Hormuz on March 2. The vessel, UAE-managed, was reported on fire and disabled. Maritime analytics firm Kpler and Reuters confirmed the attack. Part of IRGC's campaign to enforce declared closure of the Strait of Hormuz to all shipping.",
+            "incidents": [
+                    {
+                            "date": "2026-03-02",
+                            "text": "IRGC struck Honduran-flagged tanker ATHE NOVA with 2 drones in Strait of Hormuz. Vessel on fire and disabled per Reuters and maritime sources. IRGC described vessel as linked to US allies."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Reuters via Al-Monitor",
+                            "url": "https://www.al-monitor.com/originals/2026/03/fuel-tanker-ablaze-strait-hormuz-after-drone-strike-iran-revolutionary-guards-say"
+                    },
+                    {
+                            "name": "The Maritime Executive",
+                            "url": "https://maritime-executive.com/article/iran-claims-strike-on-iran-linked-bitumen-tanker"
+                    },
+                    {
+                            "name": "Times of Israel",
+                            "url": "https://www.timesofisrael.com/liveblog_entry/irans-revolutionary-guards-claim-drone-attack-on-oil-tanker-in-strait-of-hormuz/"
                     }
             ],
             "dateAdded": "2026-03-02"
