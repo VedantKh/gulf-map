@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-02",
+    "lastUpdated": "2026-03-02T04:53:42.248Z",
     "casualties": {
-        "killed": 7,
-        "injured": 116
+        "killed": 8,
+        "injured": 118
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 3 of Iran-US/Israel conflict. IRGC claimed strikes on 27 US bases across the region. All six GCC states now targeted including mediator Oman. First strike on UK sovereign territory (RAF Akrotiri, Cyprus) confirmed by UK MoD on March 2. Commercial shipping in Strait of Hormuz effectively halted after tanker attack and IRGC closure warnings. Iran later declared Hormuz 'open until further notice' but US warships remain declared targets. Maersk suspended all Hormuz transits.",
-    "totalBarrage": "UAE: 165 ballistic missiles, 2 cruise missiles, 541 drones (UAE MOD). Qatar: 66 missiles, 12 drones. Kuwait: 97 ballistic missiles, 283 drones. Bahrain: 45 missiles, 9 drones intercepted. IRGC claimed 6+ waves of strikes on 27 US bases.",
-    "intercepted": "Majority intercepted. UAE: 506 of 541 drones intercepted (35 fell within territory); 152 of 165 ballistic missiles destroyed (13 fell into sea). Kuwait: all 97 ballistic missiles intercepted. Qatar: claims all missiles intercepted. Bahrain: 45 missiles and 9 drones shot down."
+    "summary": "Day 3 of conflict (March 2): Iran continues retaliatory strikes on US assets across the Gulf. Bahrain reports first fatality (1 killed at Mina Salman Port from interceptor debris). Kuwait intercepts new wave of hostile drones approaching via maritime routes. Hezbollah has entered the conflict, launching rockets and drones at Israel from Lebanon in retaliation for Khamenei's killing. IRGC threatens 'most intense offensive operation' against US/Israeli installations. EU3 (UK, France, Germany) signal readiness for 'defensive action' to destroy Iranian missile launch capability. Conflict expanding to Lebanon and Iraq with proxy militia attacks on US forces in Erbil.",
+    "totalBarrage": "UAE: 165 ballistic missiles, 2 cruise missiles, 541 drones. Qatar: 66 missiles, 12 drones. Bahrain: 45 missiles, 9 drones intercepted. Kuwait: 97 ballistic missiles, 283 drones intercepted. IRGC claims attacks on 27 US bases across 8 countries.",
+    "intercepted": "UAE intercepted 152 of 165 ballistic missiles and 506 of 541 drones. Qatar intercepted ~65 missiles and 12 drones. Bahrain intercepted 45 missiles and 9 drones. Kuwait intercepted 97 missiles and 283 drones. Jordan intercepted 49 drones and ballistic missiles. UK RAF Typhoon downed 1 Iranian drone bound for Qatar."
 };
 
 const LOCATIONS = [
@@ -670,7 +670,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Naval Base — Missile & Drone Strike",
-            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack.",
+            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -691,6 +691,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "Bahrain reported intercepting 45 missiles and 9 drones including Shahed-136 kamikaze drones. Multiple fires reported burning at the 5th Fleet base following continued drone strikes overnight into March 1-2. Video confirmed parts of 5th Fleet headquarters were hit."
+                    },
+                    {
+                            "date": "2026-03-01",
+                            "text": "Bahrain confirmed intercepting 45 missiles and 9 drones including Shahed-136 kamikaze drones since start of Iranian attacks. CNN geolocated video shows Shahed drone directly impacting radar dome at the facility. US Navy had pre-evacuated many personnel."
                     }
             ],
             "sources": [
@@ -721,6 +725,10 @@ const LOCATIONS = [
                     {
                             "name": "Washington Post",
                             "url": "https://www.washingtonpost.com/investigations/2026/03/01/where-iran-strikes-middle-east-images-video/"
+                    },
+                    {
+                            "name": "Stars and Stripes",
+                            "url": "https://www.stripes.com/theaters/middle_east/2026-02-28/strikes-on-bahrain-iran-israel-20902624.html"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -885,6 +893,34 @@ const LOCATIONS = [
             ],
             "dateAdded": "2026-03-02"
     },
+    {
+            "name": "Mina Salman Port (Vessel Fire), Bahrain",
+            "lat": 26.2094,
+            "lng": 50.6,
+            "country": "Bahrain",
+            "city": "Manama",
+            "severity": "high",
+            "icon": "⚓",
+            "type": "Interceptor debris / vessel fire",
+            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.'",
+            "incidents": [
+                    {
+                            "date": "2026-03-02",
+                            "text": "Interceptor debris caused fire on foreign vessel at Mina Salman port industrial zone. 1 killed, 2 seriously injured (Bahrain Interior Ministry)."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Middle East Eye (Live)",
+                            "url": "https://www.middleeasteye.net/live/live-us-and-israel-attack-iran"
+                    },
+                    {
+                            "name": "Al Jazeera (Live Blog Mar 2)",
+                            "url": "https://www.aljazeera.com/news/liveblog/2026/3/2/us-israel-attack-iran-live"
+                    }
+            ],
+            "dateAdded": "2026-03-02"
+    },
 
     // ═══════════════════════════════════════════════════════════
     // Qatar
@@ -1030,7 +1066,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Coalition Air Base — Major Missile Strike",
-            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total.",
+            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1043,6 +1079,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-02-28",
                             "text": "Kuwait defense ministry confirmed 3 soldiers sustained minor injuries and minimal material damage from Iranian ballistic missile attack. Operational readiness unaffected. Kuwait intercepted 97 ballistic missiles and 283 drones total."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Kuwait air defenses intercepted hostile drones approaching via 'maritime routes' early Monday local time. Kuwaiti Air Defense forces shot down 'the majority' of incoming drones (CNN/Kuwait state media KUNA). No confirmed ground impacts reported."
                     }
             ],
             "sources": [
@@ -1069,6 +1109,10 @@ const LOCATIONS = [
                     {
                             "name": "Breaking Defense",
                             "url": "https://breakingdefense.com/2026/03/iran-attacks-uae-saudi-missiles-drones-gcc-air-defense/"
+                    },
+                    {
+                            "name": "CNN (Live Updates Mar 2)",
+                            "url": "https://www.cnn.com/world/live-news/us-israel-iran-attack-03-01-26-intl"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1130,7 +1174,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Military Base — Confirmed Strike, US KIA",
-            "detail": "Three US Army soldiers from a sustainment unit were killed and five seriously wounded in an Iranian drone strike at Camp Buehring in northwestern Kuwait on March 1. CENTCOM confirmed the casualties. Additional troops sustained minor shrapnel injuries and concussions. CENTCOM confirmed March 1 that three US service members were killed and five seriously wounded — the first US combat fatalities in Operation Epic Fury. Identified as part of a sustainment unit in Kuwait.",
+            "detail": "Three US Army soldiers from a sustainment unit were killed and five seriously wounded in an Iranian drone strike at Camp Buehring in northwestern Kuwait on March 1. CENTCOM confirmed the casualties. Additional troops sustained minor shrapnel injuries and concussions. CENTCOM confirmed March 1 that three US service members were killed and five seriously wounded — the first US combat fatalities in Operation Epic Fury. Identified as part of a sustainment unit in Kuwait. CENTCOM confirmed 3 US Army soldiers killed and 5 seriously wounded. Soldiers were part of an Army sustainment unit based at Camp Buehring. Video confirmed Iranian Arash-2 pattern kamikaze drone impact.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -1139,6 +1183,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "CENTCOM confirmed three US service members killed in action and five seriously wounded during Iranian attacks. WaPo identified them as part of a sustainment unit in Kuwait. First US combat deaths of Operation Epic Fury."
+                    },
+                    {
+                            "date": "2026-03-01",
+                            "text": "CENTCOM confirmed 3 US Army soldiers from sustainment unit were killed and 5 seriously wounded in Iranian drone strike at Camp Buehring. Video shows Iranian Arash-2 kamikaze drone impacting a vehicle on base (CBS, AP, Al Jazeera)."
                     }
             ],
             "sources": [
@@ -1165,6 +1213,18 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker"
+                    },
+                    {
+                            "name": "CBS News",
+                            "url": "https://www.cbsnews.com/news/iran-military-operation-american-service-members-killed-centcom/"
+                    },
+                    {
+                            "name": "Al Jazeera (Drone Strike Video)",
+                            "url": "https://www.aljazeera.com/video/newsfeed/2026/3/1/iranian-drone-strikes-us-military-facility-in-kuwait"
+                    },
+                    {
+                            "name": "The Maritime Executive",
+                            "url": "https://maritime-executive.com/article/three-u-s-servicemembers-killed-in-iranian-strikes-on-kuwait"
                     }
             ],
             "dateAdded": "2026-03-02"
