@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-02T11:30:18.013Z",
+    "lastUpdated": "2026-03-02T12:40:26.507Z",
     "casualties": {
-        "killed": 10,
-        "injured": 122
+        "killed": 11,
+        "injured": 124
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 3 (March 2): Iran's retaliatory strikes continue for third consecutive day across the Gulf. Conflict has expanded to Iraq (Iranian & militia strikes on US bases in Erbil; militia drone attack claimed at Baghdad airport) and Europe (drone strike on RAF Akrotiri, Cyprus). Hezbollah fires rockets at Israel from Lebanon, prompting Israeli strikes on Beirut. Qatar's $1B early warning radar confirmed struck. IRGC claims attacks on 27 US bases. Gulf states issued joint statement with US condemning Iran's 'indiscriminate and reckless' attacks and reserving right to respond.",
-    "totalBarrage": "Confirmed regional launch totals — UAE intercepted: 165 ballistic missiles, 2 cruise missiles, 541 drones (UAE MOD); Kuwait: 97 ballistic missiles, 283 drones; Qatar: 65 missiles, 12 drones; Bahrain: 45 missiles, 9 drones; Saudi Arabia: confirmed strikes repelled, no hard figures; Jordan: 13 ballistic missiles, 49 drones intercepted. Additional Iraqi militia drone/rocket attacks on Erbil and Baghdad.",
-    "intercepted": "Per Breaking Defense analysis: despite decades of defense spending, GCC air defenses are being tested at scale. UAE intercepted ~93% of ballistic missiles (152/165) and most drones but 35 fell within the country. Saturation attacks remain a serious concern."
+    "summary": "Day 3 of Iran retaliatory strikes. Conflict expands to Iraq (Erbil, Baghdad). First targeted strike on Gulf energy infrastructure (Ras Tanura refinery shut down). Bahrain reports first fatality. Qatar signals potential retaliation. Iran continues strikes on 9+ countries. 19,000+ flights disrupted across Middle East.",
+    "totalBarrage": "UAE: 165 ballistic missiles, 2 cruise missiles, 541 drones. Qatar: 65 missiles, 12 drones. Bahrain: 45 missiles, 9 drones. Kuwait: 97 ballistic missiles, 283 drones intercepted. IRGC claims attacks on 27 US military bases region-wide.",
+    "intercepted": "UAE intercepted 152 of 165 ballistic missiles (13 fell into sea), 506 of 541 drones (35 fell within country, 21 hit civilian targets). Qatar claims all intercepted. Kuwait intercepted 97 ballistic missiles, 283 drones. Bahrain shot down 45 missiles, 9 drones."
 };
 
 const LOCATIONS = [
@@ -104,7 +104,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "World's Busiest Intl Airport — Hit Twice",
-            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead.",
+            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -117,6 +117,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Day 3: CNN team heard 'two back-to-back blasts,' jets overhead and apparent interceptors in Dubai on Monday morning"
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Loud explosions heard in Dubai for a third consecutive day as Iranian retaliatory strikes continue. Airport remains closed with 2,000+ flights cancelled across Gulf hubs."
                     }
             ],
             "sources": [
@@ -135,6 +139,14 @@ const LOCATIONS = [
                     {
                             "name": "CNN (March 2 Live)",
                             "url": "https://us.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue"
+                    },
+                    {
+                            "name": "Euronews",
+                            "url": "https://www.euronews.com/2026/03/02/us-and-israeli-strikes-on-iran-disrupt-regional-and-international-flights"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -541,10 +553,10 @@ const LOCATIONS = [
             "lng": 54.4907,
             "country": "UAE",
             "city": "Abu Dhabi",
-            "severity": "watchlist",
+            "severity": "high",
             "icon": "🛢️",
             "type": "Oil Fuel Depot — Previously Attacked in 2022",
-            "detail": "ADNOC pipeline terminal and fuel hub. Previously struck by Houthi drones in Jan 2022 — 3 killed, 6 injured. With Houthis announcing resumed attacks, high-risk repeat target.",
+            "detail": "ADNOC pipeline terminal and fuel hub. Previously struck by Houthi drones in Jan 2022 — 3 killed, 6 injured. With Houthis announcing resumed attacks, high-risk repeat target. Upgraded to FALLING DEBRIS: Abu Dhabi authorities confirmed debris from drone interception caused minor building damage at ICAD warehouse and Mussafah commercial facility.",
             "incidents": [
                     {
                             "date": "2022-01-17",
@@ -553,6 +565,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-02-28",
                             "text": "Not directly struck. Houthis announced resumption of attacks in support of Iran."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Abu Dhabi authorities confirmed falling debris from drone interception struck a warehouse in Industrial City of Abu Dhabi (ICAD) and a commercial facility in Mussafah area, causing minor building damage."
                     }
             ],
             "sources": [
@@ -563,6 +579,10 @@ const LOCATIONS = [
                     {
                             "name": "Shafaq News",
                             "url": "https://shafaq.com/en/Middle-East/Houthis-to-resume-Red-Sea-Israel-attacks-in-support-of-Iran"
+                    },
+                    {
+                            "name": "Radio Shoma (Abu Dhabi authorities)",
+                            "url": "https://www.radioshoma934.ae/news/international-news/fire-from-missile-debris-kills-one-in-bahrain/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -678,7 +698,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Naval Base — Missile & Drone Strike",
-            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area.",
+            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -711,6 +731,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones destroyed (up from earlier 45 missiles and 9 drones). Ongoing strikes and fires reported at or near 5th Fleet headquarters."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Bahrain MOI activated air raid alerts Monday and urged residents to head to nearest safe place. Shaikh Khalifa bin Salman Bridge closed. Residents urged to use main roads only when necessary."
                     }
             ],
             "sources": [
@@ -757,6 +781,10 @@ const LOCATIONS = [
                     {
                             "name": "The Star (Bernama-QNA)",
                             "url": "https://www.thestar.com.my/news/nation/2026/03/02/bahrain-announces-one-killed-two-injured-by-falling-debris-from-intercepted-missile"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -930,7 +958,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Interceptor debris / vessel fire",
-            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain.",
+            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -939,6 +967,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Bahrain MOI confirmed: debris from an intercepted Iranian missile fell on a foreign vessel undergoing maintenance in Salman Industrial City, causing a fire that killed 1 Asian worker and seriously injured 2 others. Fire brought under control. First confirmed death in Bahrain from Iranian strikes."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Bahrain MOI confirms 1 Asian worker killed and 2 seriously injured after debris from an intercepted missile fell onto a foreign vessel undergoing maintenance in Salman Industrial City, causing a fire. Emergency teams extinguished the blaze."
                     }
             ],
             "sources": [
@@ -961,6 +993,14 @@ const LOCATIONS = [
                     {
                             "name": "Gulf Insider",
                             "url": "https://www.gulf-insider.com/first-death-reported-in-bahrain-amid-rising/"
+                    },
+                    {
+                            "name": "Sharjah24 / BNA",
+                            "url": "https://sharjah24.ae/en/Articles/2026/03/02/kmr37"
+                    },
+                    {
+                            "name": "Al Jazeera (Casualty Tracker)",
+                            "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -978,7 +1018,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Largest US Base in ME — 2 Missiles Hit, Radar Destroyed",
-            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar.",
+            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar. March 2: Explosions heard in Doha for third day. Qatar FM spokesperson: 'Iran has to pay a price for this blatant attack on our people. An attack like this cannot be left without retaliation.'",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -999,6 +1039,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Day 3: Explosions heard near Al Udeid area as Iranian retaliatory strikes continue; CNN photojournalist filmed apparent missile interceptions in Doha skies Monday morning"
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Third consecutive day of Iranian strikes targeting Qatar. Loud explosions heard in Doha on Monday. Qatar FM spokesperson says Iran must 'pay a price' for attacks on Qatari people, signaling potential retaliation."
                     }
             ],
             "sources": [
@@ -1029,6 +1073,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera (Day 3)",
                             "url": "https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue"
+                    },
+                    {
+                            "name": "Euronews",
+                            "url": "https://www.euronews.com/2026/03/02/drones-hit-saudi-ras-tanura-refinery-as-iran-strikes-targets-across-region"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1117,6 +1165,34 @@ const LOCATIONS = [
                     {
                             "name": "Reuters (via MarketScreener)",
                             "url": "https://uk.marketscreener.com/news/an-early-warning-radar-in-the-north-of-qatar-was-struck-and-damaged-by-an-iranian-attack-official-ce7e5cdcd988fe2c"
+                    }
+            ],
+            "dateAdded": "2026-03-02"
+    },
+    {
+            "name": "Hamad International Airport (DOH), Qatar",
+            "lat": 25.2731,
+            "lng": 51.6081,
+            "country": "Qatar",
+            "city": "Doha",
+            "severity": "watchlist",
+            "icon": "✈️",
+            "type": "Airport — Targeted, Attacks Intercepted",
+            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded.",
+            "incidents": [
+                    {
+                            "date": "2026-03-02",
+                            "text": "Qatar FM spokesperson confirms Iranian attacks targeted civilian infrastructure including Hamad International Airport; all attacks intercepted. Airport remains closed with all movements suspended."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue"
+                    },
+                    {
+                            "name": "Euronews",
+                            "url": "https://www.euronews.com/2026/03/02/us-and-israeli-strikes-on-iran-disrupt-regional-and-international-flights"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1326,7 +1402,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🏛️",
             "type": "Embassy Area / Debris Zone",
-            "detail": "AFP photos show smoke rising from the area near the US Embassy in Kuwait City on March 2. Kuwait's air defenses intercepted hostile drones near Rumaithiya and Salwa neighborhoods in Hawalli Governorate where the embassy is located. US Embassy issued security alert urging people to stay away. Firefighters and ambulances were seen in the area. March 2: Reuters witness and AFP photos confirm smoke rising near US Embassy area. Active air defense interceptions ongoing over central Kuwait.",
+            "detail": "AFP photos show smoke rising from the area near the US Embassy in Kuwait City on March 2. Kuwait's air defenses intercepted hostile drones near Rumaithiya and Salwa neighborhoods in Hawalli Governorate where the embassy is located. US Embassy issued security alert urging people to stay away. Firefighters and ambulances were seen in the area. March 2: Reuters witness and AFP photos confirm smoke rising near US Embassy area. Active air defense interceptions ongoing over central Kuwait. March 2: Smoke seen near US Embassy. Kuwaiti air defenses intercepted hostile drones at dawn near Rumaithiya and Salwa neighborhoods in Hawalli Governorate. Kuwait Civil Defense confirmed explosions heard in residential areas were from successful interceptions.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1335,6 +1411,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Reuters witness reported smoke rising from the vicinity of the US Embassy in Kuwait City on March 2. AFP photo shows smoke in the embassy area. Kuwait air defenses were active intercepting hostile drones over central Kuwait at dawn."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Loud bangs and sirens heard in Kuwait early Monday morning; Reuters witness reports smoke seen rising near the US embassy. Kuwaiti Air Defense intercepted hostile drones approaching via maritime routes near Rumaithiya and Salwa neighborhoods in Hawalli Governorate. No injuries reported from interception operations."
                     }
             ],
             "sources": [
@@ -1349,6 +1429,18 @@ const LOCATIONS = [
                     {
                             "name": "The Nightly (Australia)",
                             "url": "https://thenightly.com.au/politics/australia/australian-news-and-politics-live-wong-says-us-israel-will-need-to-explain-legal-basis-for-iran-strikes-c-21800817"
+                    },
+                    {
+                            "name": "KUNA (Kuwait News Agency)",
+                            "url": "https://www.kuna.net.kw/ArticleDetails.aspx?id=3278534&language=en"
+                    },
+                    {
+                            "name": "Reuters (via Al-Monitor)",
+                            "url": "https://www.al-monitor.com/originals/2026/03/kuwait-intercepts-hostile-drones-third-day-iran-retaliatory-strikes"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1574,11 +1666,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Oil Facility Strike",
-            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported.",
+            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure.",
             "incidents": [
                     {
                             "date": "2026-03-02",
                             "text": "Iranian drone struck Ras Tanura refinery causing fire; Aramco shut down operations as precautionary measure"
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Saudi Aramco shut down the 550,000 bpd Ras Tanura refinery as a precautionary measure after Iranian drones targeted the facility. Saudi MOD said two drones were intercepted and debris caused a small, contained fire. No casualties reported. Brent crude surged to ~$80/barrel on the news."
                     }
             ],
             "sources": [
@@ -1593,6 +1689,18 @@ const LOCATIONS = [
                     {
                             "name": "Times of Israel Liveblog",
                             "url": "https://www.timesofisrael.com/liveblog-march-02-2026/"
+                    },
+                    {
+                            "name": "Reuters (via Business Recorder)",
+                            "url": "https://www.brecorder.com/news/40409699/saudi-aramcos-ras-tanura-refinery-hit-by-drone-shut-as-precautionary-measure"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue"
+                    },
+                    {
+                            "name": "The National",
+                            "url": "https://www.thenationalnews.com/business/2026/03/02/saudi-aramco-shuts-down-ras-tanura-refinery-following-drone-attack/"
                     }
             ],
             "dateAdded": "2026-03-02"
