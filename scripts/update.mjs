@@ -580,9 +580,9 @@ async function main() {
         }
     }
 
-    // Update lastUpdated
+    // Update lastUpdated (full ISO timestamp in UTC)
     if (changeCount > 0) {
-        updatedMeta.lastUpdated = new Date().toISOString().split('T')[0];
+        updatedMeta.lastUpdated = new Date().toISOString();
     }
 
     // Write or dry-run

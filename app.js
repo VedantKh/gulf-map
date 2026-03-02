@@ -340,7 +340,7 @@
                 <div style="margin-top:8px;padding:6px;background:rgba(185,28,28,0.05);border:1px solid rgba(185,28,28,0.2);border-radius:6px;font-size:10px;color:#991b1b;text-align:center">
                     Sources: UAE MOD/WAM, CENTCOM, Reuters, CNN, Al Jazeera<br>
                     Stars and Stripes, Anadolu Agency, Breaking Defense<br>
-                    Last updated: ${MAP_META.lastUpdated} | Strikes may be ongoing
+                    Last updated: ${formatLastUpdated(MAP_META.lastUpdated)} GMT | Strikes may be ongoing
                 </div>
             `;
 
@@ -375,6 +375,19 @@
         updateLegendCounts(filtered);
     }
 
+    // ═══ Format last-updated timestamp ═══
+    function formatLastUpdated(dateStr) {
+        if (!dateStr) return '—';
+        const d = new Date(dateStr);
+        if (isNaN(d.getTime())) return dateStr;
+        const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        const mon = months[d.getUTCMonth()];
+        const day = d.getUTCDate();
+        const h = String(d.getUTCHours()).padStart(2, '0');
+        const m = String(d.getUTCMinutes()).padStart(2, '0');
+        return `${mon} ${day}, ${h}:${m}`;
+    }
+
     // ═══ Update Stats ═══
     function updateStats(locations) {
         document.getElementById('stat-critical').textContent = locations.filter(l => l.severity === 'critical').length;
@@ -385,6 +398,10 @@
 
         const countries = new Set(locations.map(l => l.country));
         document.getElementById('stat-countries').textContent = countries.size;
+
+        // Last updated timestamp
+        const updatedEl = document.getElementById('stat-updated');
+        if (updatedEl) updatedEl.textContent = formatLastUpdated(MAP_META.lastUpdated);
     }
 
     // ═══ Update legend counts based on current filter ═══
