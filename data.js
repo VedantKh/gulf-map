@@ -8,14 +8,14 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-02T04:53:42.248Z",
+    "lastUpdated": "2026-03-02T05:59:20.072Z",
     "casualties": {
         "killed": 8,
         "injured": 118
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 3 of conflict (March 2): Iran continues retaliatory strikes on US assets across the Gulf. Bahrain reports first fatality (1 killed at Mina Salman Port from interceptor debris). Kuwait intercepts new wave of hostile drones approaching via maritime routes. Hezbollah has entered the conflict, launching rockets and drones at Israel from Lebanon in retaliation for Khamenei's killing. IRGC threatens 'most intense offensive operation' against US/Israeli installations. EU3 (UK, France, Germany) signal readiness for 'defensive action' to destroy Iranian missile launch capability. Conflict expanding to Lebanon and Iraq with proxy militia attacks on US forces in Erbil.",
-    "totalBarrage": "UAE: 165 ballistic missiles, 2 cruise missiles, 541 drones. Qatar: 66 missiles, 12 drones. Bahrain: 45 missiles, 9 drones intercepted. Kuwait: 97 ballistic missiles, 283 drones intercepted. IRGC claims attacks on 27 US bases across 8 countries.",
+    "summary": "Day 3 (March 2): Iran continues retaliatory strikes. Pro-Iran Iraqi militia Saraya Awliya al-Dam has entered the conflict, launching drone attacks on US bases in Erbil. Iran's top security official Ali Larijani says Tehran 'will not negotiate' with the US. Kuwait reports new drone interceptions via maritime routes. Hezbollah claims attacks on Israel 'in revenge' for Khamenei's killing. Al Jazeera reports 1 killed in Bahrain, continuing raids on Iraq and Kuwait.",
+    "totalBarrage": "Confirmed barrage totals per government statements — UAE: 165 ballistic missiles, 2 cruise missiles, 541 drones (35 drones penetrated). Kuwait: 97 ballistic missiles, 283 drones. Qatar: 66 missiles, 12 drones. Bahrain: 45 missiles, 9 drones. Saudi Arabia: confirmed attacks on Riyadh and Eastern Province (figures not released). Iraq: multiple militia drone/missile attacks on US bases in Erbil and Harir.",
     "intercepted": "UAE intercepted 152 of 165 ballistic missiles and 506 of 541 drones. Qatar intercepted ~65 missiles and 12 drones. Bahrain intercepted 45 missiles and 9 drones. Kuwait intercepted 97 missiles and 283 drones. Jordan intercepted 49 drones and ballistic missiles. UK RAF Typhoon downed 1 Iranian drone bound for Qatar."
 };
 
@@ -1066,7 +1066,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Coalition Air Base — Major Missile Strike",
-            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media.",
+            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics.",
             "incidents": [
                     {
                             "date": "2026-02-28",
