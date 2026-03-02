@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulf Region — Iranian Strikes & Threats — Active Conflict Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0a0e17; color: #e0e0e0; }
+        #map { width: 100%; height: 100vh; }
+
+        /* Title overlay */
+        .title-overlay {
+            position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
+            z-index: 1000; background: rgba(10, 14, 23, 0.94);
+            border: 1px solid #2a2f3d; border-radius: 10px;
+            padding: 12px 24px; text-align: center;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+            pointer-events: none; white-space: nowrap;
+        }
+        .title-overlay h1 { font-size: 17px; font-weight: 700; color: #f87171; letter-spacing: 0.5px; }
+        .title-overlay p { font-size: 11px; color: #888; margin-top: 3px; }
+
+        /* Legend */
+        .legend {
+            background: rgba(10, 14, 23, 0.95);
+            border: 1px solid #2a2f3d;
+            border-radius: 8px;
+            padding: 14px 16px;
+            font-size: 13px;
+            line-height: 1.7;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            max-width: 260px;
+        }
+        .legend h4 {
+            font-size: 13px; margin-bottom: 8px; color: #fff;
+            border-bottom: 1px solid #2a2f3d; padding-bottom: 6px;
+        }
+        .legend-item { display: flex; align-items: center; gap: 8px; margin: 3px 0; cursor: pointer; padding: 2px 4px; border-radius: 4px; user-select: none; }
+        .legend-item:hover { background: rgba(255,255,255,0.05); }
+        .legend-item.disabled { opacity: 0.3; text-decoration: line-through; }
+        .legend-dot { width: 13px; height: 13px; border-radius: 50%; flex-shrink: 0; border: 2px solid rgba(255,255,255,0.3); }
+        .legend-label { font-size: 12px; }
+        .legend-count { font-size: 11px; color: #888; margin-left: auto; }
+
+        /* Incident panel */
+        .incident-panel {
+            background: rgba(10, 14, 23, 0.95);
+            border: 1px solid #2a2f3d;
+            border-radius: 8px;
+            padding: 14px 16px;
+            font-size: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            max-width: 320px;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        .incident-panel h4 {
+            font-size: 13px; margin-bottom: 8px; color: #fff;
+            border-bottom: 1px solid #2a2f3d; padding-bottom: 6px;
+        }
+        .filter-row {
+            display: flex; gap: 6px; margin-bottom: 10px;
+        }
+        .filter-row select {
+            flex: 1; background: #1a1f2e; color: #e0e0e0; border: 1px solid #2a2f3d;
+            border-radius: 5px; padding: 5px 8px; font-size: 11px; cursor: pointer;
+            appearance: auto;
+        }
+        .filter-row select:focus { outline: 1px solid #4a5568; }
+        .country-group { margin-bottom: 8px; }
+        .country-header {
+            font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+            color: #888; margin: 8px 0 4px; font-weight: 600;
+            display: flex; align-items: center; gap: 6px;
+        }
+        .country-header .count { color: #555; font-size: 10px; }
+        .inc-item {
+            display: flex; align-items: center; gap: 8px;
+            padding: 5px 4px; border-bottom: 1px solid rgba(255,255,255,0.05);
+            cursor: pointer; border-radius: 4px;
+        }
+        .inc-item:hover { background: rgba(255,255,255,0.05); }
+        .inc-item:last-child { border-bottom: none; }
+        .inc-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+        .inc-info { flex: 1; min-width: 0; }
+        .inc-name { font-size: 12px; font-weight: 600; color: #e0e0e0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .inc-type { font-size: 10px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .inc-sev { font-size: 10px; font-weight: 700; text-align: right; min-width: 40px; text-transform: uppercase; }
+
+        /* Summary panel */
+        .summary-panel {
+            background: rgba(10, 14, 23, 0.95);
+            border: 1px solid #2a2f3d;
+            border-radius: 8px;
+            padding: 14px 16px;
+            font-size: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            max-width: 300px;
+            max-height: 50vh;
+            overflow-y: auto;
+        }
+        .summary-panel h4 {
+            font-size: 13px; margin-bottom: 8px; color: #fff;
+            border-bottom: 1px solid #2a2f3d; padding-bottom: 6px;
+        }
+        .summary-detail { font-size: 11px; color: #999; line-height: 1.6; margin-bottom: 6px; }
+        .summary-detail strong { color: #ccc; }
+        .summary-stat { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; margin: 2px 2px; }
+
+        /* Popup styling */
+        .leaflet-popup-content-wrapper {
+            background: rgba(15, 19, 30, 0.97) !important;
+            color: #e0e0e0 !important;
+            border: 1px solid #2a2f3d !important;
+            border-radius: 10px !important;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.6) !important;
+        }
+        .leaflet-popup-tip { background: rgba(15, 19, 30, 0.97) !important; }
+        .leaflet-popup-content { margin: 14px 16px !important; font-size: 13px; line-height: 1.5; max-width: 360px; }
+        .popup-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+        .popup-category { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; padding: 2px 8px; border-radius: 4px; display: inline-block; }
+        .popup-detail { margin: 4px 0; font-size: 12px; color: #b0b0b0; }
+        .popup-detail strong { color: #d0d0d0; }
+        .popup-country { margin-top: 6px; padding: 4px 10px; background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.3); border-radius: 6px; display: inline-block; font-size: 12px; color: #818cf8; font-weight: 600; }
+        .popup-incidents { margin-top: 8px; padding-top: 8px; border-top: 1px solid #2a2f3d; font-size: 12px; color: #c0c0c0; }
+        .popup-incidents li { margin: 3px 0; margin-left: 14px; }
+        .popup-sources { margin-top: 8px; padding-top: 8px; border-top: 1px solid #2a2f3d; }
+        .popup-sources-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 4px; }
+        .popup-sources-list { font-size: 11px; color: #60a5fa; }
+        .popup-sources-list a { color: #60a5fa; text-decoration: none; }
+        .popup-sources-list a:hover { text-decoration: underline; }
+        .sev-critical { background: #dc2626; color: #fff; }
+        .sev-high { background: #ea580c; color: #fff; }
+        .sev-watchlist { background: #6b7280; color: #fff; }
+
+        /* Stats bar */
+        .stats-bar {
+            position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);
+            z-index: 1000; background: rgba(10, 14, 23, 0.92);
+            border: 1px solid #2a2f3d; border-radius: 10px;
+            padding: 10px 20px; display: flex; gap: 28px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            font-size: 12px;
+        }
+        .stat-item { text-align: center; }
+        .stat-value { font-size: 20px; font-weight: 700; color: #fff; }
+        .stat-label { color: #888; font-size: 11px; }
+
+        /* Scrollbar styling */
+        .incident-panel::-webkit-scrollbar,
+        .summary-panel::-webkit-scrollbar { width: 4px; }
+        .incident-panel::-webkit-scrollbar-track,
+        .summary-panel::-webkit-scrollbar-track { background: transparent; }
+        .incident-panel::-webkit-scrollbar-thumb,
+        .summary-panel::-webkit-scrollbar-thumb { background: #2a2f3d; border-radius: 2px; }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .incident-panel { display: none !important; }
+            .legend { display: none !important; }
+            .summary-panel { display: none !important; }
+            .title-overlay { white-space: normal; max-width: 90vw; padding: 8px 14px; }
+            .title-overlay h1 { font-size: 14px; }
+            .stats-bar { gap: 14px; padding: 8px 14px; }
+            .stat-value { font-size: 16px; }
+            .stat-label { font-size: 9px; }
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <div class="title-overlay">
+        <h1>GULF REGION — Iranian Strikes & Threats</h1>
+        <p>Active conflict | Verified strike sites across Gulf states | Updated Mar 2, 2026</p>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat-item"><div class="stat-value" style="color:#dc2626" id="stat-critical">0</div><div class="stat-label">Struck</div></div>
+        <div class="stat-item"><div class="stat-value" style="color:#ea580c" id="stat-high">0</div><div class="stat-label">High</div></div>
+        <div class="stat-item"><div class="stat-value" style="color:#6b7280" id="stat-watchlist">0</div><div class="stat-label">Watchlist</div></div>
+        <div class="stat-item"><div class="stat-value" style="color:#f87171" id="stat-killed">0</div><div class="stat-label">Killed</div></div>
+        <div class="stat-item"><div class="stat-value" style="color:#fbbf24" id="stat-injured">0</div><div class="stat-label">Injured</div></div>
+        <div class="stat-item"><div class="stat-value" style="color:#818cf8" id="stat-countries">0</div><div class="stat-label">Countries</div></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
