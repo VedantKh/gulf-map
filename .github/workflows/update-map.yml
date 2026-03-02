@@ -41,3 +41,22 @@ jobs:
           git diff --staged --quiet && exit 0
           git commit -m "${{ steps.update.outputs.commit_message }}"
           git push
+
+      - name: Email notification
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.GMAIL_USER }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          subject: "Gulf Map [${{ job.status }}] — ${{ steps.update.outputs.has_changes == 'true' && steps.update.outputs.commit_message || 'No changes' }}"
+          to: vedantkhanna@gmail.com
+          from: Gulf Map Bot <${{ secrets.GMAIL_USER }}>
+          body: |
+            ${{ steps.update.outputs.report || 'Script did not produce a report. Check the run logs.' }}
+
+            ────────────────────────────────
+            Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            Map: https://gulf-map.vercel.app

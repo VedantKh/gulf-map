@@ -360,12 +360,17 @@ function generateDataJS(meta, locations) {
 }
 
 // ═══════════════════════════════════════════════════════════════
-// Set GitHub Actions outputs
+// Set GitHub Actions outputs (supports multiline via delimiter)
 // ═══════════════════════════════════════════════════════════════
 function setOutput(key, value) {
     const outputFile = process.env.GITHUB_OUTPUT;
     if (outputFile) {
-        appendFileSync(outputFile, `${key}=${value}\n`);
+        if (value.includes('\n')) {
+            const delim = 'GHEOF' + Date.now();
+            appendFileSync(outputFile, `${key}<<${delim}\n${value}\n${delim}\n`);
+        } else {
+            appendFileSync(outputFile, `${key}=${value}\n`);
+        }
     }
 }
 
@@ -423,9 +428,21 @@ async function main() {
     console.log(`  New locations: ${result.newLocations?.length || 0}`);
     console.log(`  Updated locations: ${result.updatedLocations?.length || 0}`);
 
+    // Start building the email report
+    const report = [];
+    report.push(`GULF MAP — AUTO-UPDATE REPORT`);
+    report.push(`Date: ${new Date().toISOString()}`);
+    report.push(`Previous locations: ${LOCATIONS.length} across ${new Set(LOCATIONS.map(l => l.country)).size} countries`);
+    report.push(``);
+    report.push(`RESEARCH SUMMARY`);
+    report.push(result.searchSummary || 'No summary available');
+    report.push(``);
+
     if (!result.hasNewData && (!result.newLocations?.length) && (!result.updatedLocations?.length)) {
         console.log('\n  No new data found. Exiting.');
+        report.push(`RESULT: No new verified data found.`);
         setOutput('has_changes', 'false');
+        setOutput('report', report.join('\n'));
         return;
     }
 
@@ -443,6 +460,7 @@ async function main() {
             const errors = validateLocation(newLoc);
             if (errors.length) {
                 console.log(`  REJECTED "${newLoc.name}": ${errors.join(', ')}`);
+                report.push(`REJECTED: ${newLoc.name} — ${errors.join(', ')}`);
                 continue;
             }
 
@@ -450,6 +468,7 @@ async function main() {
             const dupName = isDuplicate(newLoc, updatedLocations);
             if (dupName) {
                 console.log(`  DUPLICATE "${newLoc.name}" matches existing "${dupName}" — skipping`);
+                report.push(`DUPLICATE: ${newLoc.name} (matches ${dupName})`);
                 continue;
             }
 
@@ -462,6 +481,13 @@ async function main() {
             updatedLocations.push(newLoc);
             changeCount++;
             changeDescriptions.push(`Add ${newLoc.name} (${newLoc.country})`);
+            report.push(``);
+            report.push(`+ NEW: ${newLoc.name} [${newLoc.severity.toUpperCase()}]`);
+            report.push(`  Country: ${newLoc.country} | City: ${newLoc.city}`);
+            report.push(`  Type: ${newLoc.type}`);
+            report.push(`  Detail: ${newLoc.detail}`);
+            for (const inc of newLoc.incidents || []) report.push(`  Incident (${inc.date}): ${inc.text}`);
+            for (const src of newLoc.sources || []) report.push(`  Source: ${src.name} — ${src.url}`);
         }
     }
 
@@ -521,6 +547,17 @@ async function main() {
                 console.log(`  UPDATED: ${existing.name}`);
                 changeCount++;
                 changeDescriptions.push(`Update ${existing.name}`);
+                report.push(``);
+                report.push(`~ UPDATED: ${existing.name} [${existing.severity.toUpperCase()}]`);
+                if (update.newIncidents?.length) {
+                    for (const inc of update.newIncidents) report.push(`  New incident (${inc.date}): ${inc.text}`);
+                }
+                if (update.newSources?.length) {
+                    for (const src of update.newSources) report.push(`  New source: ${src.name} — ${src.url}`);
+                }
+                if (update.severityChange && update.severityChange !== 'null') {
+                    report.push(`  Severity escalated to: ${update.severityChange.toUpperCase()}`);
+                }
             }
         }
     }
@@ -530,12 +567,17 @@ async function main() {
         const cu = result.casualtyUpdate;
         if (typeof cu.killed === 'number' && cu.killed > updatedMeta.casualties.killed) {
             console.log(`  CASUALTIES: killed ${updatedMeta.casualties.killed} → ${cu.killed}`);
+            report.push(``);
+            report.push(`CASUALTIES: Killed ${updatedMeta.casualties.killed} → ${cu.killed}`);
+            if (cu.source) report.push(`  Source: ${cu.source}`);
             updatedMeta.casualties.killed = cu.killed;
             changeCount++;
             changeDescriptions.push(`Killed count: ${cu.killed}`);
         }
         if (typeof cu.injured === 'number' && cu.injured > updatedMeta.casualties.injured) {
             console.log(`  CASUALTIES: injured ${updatedMeta.casualties.injured} → ${cu.injured}`);
+            report.push(`CASUALTIES: Injured ${updatedMeta.casualties.injured} → ${cu.injured}`);
+            if (cu.source) report.push(`  Source: ${cu.source}`);
             updatedMeta.casualties.injured = cu.injured;
             changeCount++;
             changeDescriptions.push(`Injured count: ${cu.injured}`);
@@ -563,9 +605,16 @@ async function main() {
     // Write or dry-run
     if (changeCount === 0) {
         console.log('\n  No validated changes to write.');
+        report.push(`\nRESULT: No validated changes after dedup/validation.`);
         setOutput('has_changes', 'false');
+        setOutput('report', report.join('\n'));
         return;
     }
+
+    report.push(``);
+    report.push(`════════════════════════════════`);
+    report.push(`TOTAL: ${changeCount} changes | ${updatedLocations.length} locations now on map`);
+    report.push(`Casualties: ${updatedMeta.casualties.killed} killed, ${updatedMeta.casualties.injured} injured`);
 
     console.log(`\n  Total changes: ${changeCount}`);
 
@@ -573,7 +622,9 @@ async function main() {
         console.log('\n  DRY RUN — not writing data.js');
         console.log('  Changes that would be made:');
         for (const desc of changeDescriptions) console.log(`    - ${desc}`);
+        report.push(`\nMODE: DRY RUN — no changes written.`);
         setOutput('has_changes', 'false');
+        setOutput('report', report.join('\n'));
         return;
     }
 
@@ -586,6 +637,7 @@ async function main() {
     const commitMsg = `Update map: ${changeDescriptions.slice(0, 3).join(', ')}${changeDescriptions.length > 3 ? ` (+${changeDescriptions.length - 3} more)` : ''}`;
     setOutput('has_changes', 'true');
     setOutput('commit_message', commitMsg);
+    setOutput('report', report.join('\n'));
 
     console.log(`\n  Commit message: ${commitMsg}`);
     console.log('═══ Done ═══');
