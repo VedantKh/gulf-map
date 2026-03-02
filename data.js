@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-02T05:59:20.072Z",
+    "lastUpdated": "2026-03-02T07:45:12.049Z",
     "casualties": {
-        "killed": 8,
-        "injured": 118
+        "killed": 9,
+        "injured": 120
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 3 (March 2): Iran continues retaliatory strikes. Pro-Iran Iraqi militia Saraya Awliya al-Dam has entered the conflict, launching drone attacks on US bases in Erbil. Iran's top security official Ali Larijani says Tehran 'will not negotiate' with the US. Kuwait reports new drone interceptions via maritime routes. Hezbollah claims attacks on Israel 'in revenge' for Khamenei's killing. Al Jazeera reports 1 killed in Bahrain, continuing raids on Iraq and Kuwait.",
-    "totalBarrage": "Confirmed barrage totals per government statements — UAE: 165 ballistic missiles, 2 cruise missiles, 541 drones (35 drones penetrated). Kuwait: 97 ballistic missiles, 283 drones. Qatar: 66 missiles, 12 drones. Bahrain: 45 missiles, 9 drones. Saudi Arabia: confirmed attacks on Riyadh and Eastern Province (figures not released). Iraq: multiple militia drone/missile attacks on US bases in Erbil and Harir.",
-    "intercepted": "UAE intercepted 152 of 165 ballistic missiles and 506 of 541 drones. Qatar intercepted ~65 missiles and 12 drones. Bahrain intercepted 45 missiles and 9 drones. Kuwait intercepted 97 missiles and 283 drones. Jordan intercepted 49 drones and ballistic missiles. UK RAF Typhoon downed 1 Iranian drone bound for Qatar."
+    "summary": "Day 3: Iran continues strikes on US assets and Gulf infrastructure. New targets include Aramco's Ras Tanura refinery (Saudi Arabia), Erbil Airport (Iraq), and the US Embassy area in Kuwait City. Hezbollah has entered the conflict from Lebanon. Fighter jet downed near Ali Al Salem. UK's RAF Akrotiri in Cyprus hit by suspected drone overnight. Iran says it will not negotiate.",
+    "totalBarrage": "UAE MoD reports dealing with 165 ballistic missiles, 2 cruise missiles, and 541 Iranian drones since start of attack. Qatar intercepted 18 missiles/cruise missiles/drones. Iran has struck targets across 8+ countries.",
+    "intercepted": "UAE: 165 ballistic missiles + 2 cruise missiles + 541 drones engaged (35 drones made impact per CNN). Qatar: 18 intercepted. Kuwait: multiple dawn interceptions on March 2. Jordan: 49 drones/ballistic missiles intercepted."
 };
 
 const LOCATIONS = [
@@ -670,7 +670,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Naval Base — Missile & Drone Strike",
-            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week.",
+            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -695,6 +695,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "Bahrain confirmed intercepting 45 missiles and 9 drones including Shahed-136 kamikaze drones since start of Iranian attacks. CNN geolocated video shows Shahed drone directly impacting radar dome at the facility. US Navy had pre-evacuated many personnel."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Air-raid sirens sounded again over Bahrain on March 2. Al Jazeera liveblog reports 1 person killed in Bahrain from Iranian attacks. New drone strikes reported against the naval base overnight."
                     }
             ],
             "sources": [
@@ -729,6 +733,14 @@ const LOCATIONS = [
                     {
                             "name": "Stars and Stripes",
                             "url": "https://www.stripes.com/theaters/middle_east/2026-02-28/strikes-on-bahrain-iran-israel-20902624.html"
+                    },
+                    {
+                            "name": "Al Jazeera Live (March 2)",
+                            "url": "https://www.aljazeera.com/news/liveblog/2026/3/2/us-israel-attack-iran-live"
+                    },
+                    {
+                            "name": "CNN Live Updates",
+                            "url": "https://edition.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1066,7 +1078,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Coalition Air Base — Major Missile Strike",
-            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics.",
+            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1083,6 +1095,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Kuwait air defenses intercepted hostile drones approaching via 'maritime routes' early Monday local time. Kuwaiti Air Defense forces shot down 'the majority' of incoming drones (CNN/Kuwait state media KUNA). No confirmed ground impacts reported."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Fighter jet (consistent with F-15E/F-18) crashed within 10km of base; pilot ejected; CNN geolocated crash site near Al Jahra. Kuwait state media reported dawn interceptions of hostile drones approaching via maritime routes."
                     }
             ],
             "sources": [
@@ -1113,6 +1129,14 @@ const LOCATIONS = [
                     {
                             "name": "CNN (Live Updates Mar 2)",
                             "url": "https://www.cnn.com/world/live-news/us-israel-iran-attack-03-01-26-intl"
+                    },
+                    {
+                            "name": "CNN Live Updates",
+                            "url": "https://edition.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
+                    },
+                    {
+                            "name": "Free Press Journal",
+                            "url": "https://www.freepressjournal.in/world/us-embassy-in-kuwait-allegedly-attacked-by-iranian-drone-f-15-fighter-jet-crashes-amid-rising-middle-east-tensions-videos"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1225,6 +1249,66 @@ const LOCATIONS = [
                     {
                             "name": "The Maritime Executive",
                             "url": "https://maritime-executive.com/article/three-u-s-servicemembers-killed-in-iranian-strikes-on-kuwait"
+                    }
+            ],
+            "dateAdded": "2026-03-02"
+    },
+    {
+            "name": "US Embassy Area (Hawalli), Kuwait City",
+            "lat": 29.2858,
+            "lng": 48.0575,
+            "country": "Kuwait",
+            "city": "Kuwait City",
+            "severity": "high",
+            "icon": "🏛️",
+            "type": "Embassy Area / Debris Zone",
+            "detail": "AFP photos show smoke rising from the area near the US Embassy in Kuwait City on March 2. Kuwait's air defenses intercepted hostile drones near Rumaithiya and Salwa neighborhoods in Hawalli Governorate where the embassy is located. US Embassy issued security alert urging people to stay away. Firefighters and ambulances were seen in the area.",
+            "incidents": [
+                    {
+                            "date": "2026-03-02",
+                            "text": "Smoke and interception debris near US Embassy in Hawalli; Kuwait intercepted hostile drones at dawn; US Embassy issued shelter-in-place alert"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "CNN Live Updates",
+                            "url": "https://edition.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
+                    },
+                    {
+                            "name": "Times of Israel Liveblog (AFP photo)",
+                            "url": "https://www.timesofisrael.com/liveblog-march-02-2026/"
+                    },
+                    {
+                            "name": "The Nightly (Australia)",
+                            "url": "https://thenightly.com.au/politics/australia/australian-news-and-politics-live-wong-says-us-israel-will-need-to-explain-legal-basis-for-iran-strikes-c-21800817"
+                    }
+            ],
+            "dateAdded": "2026-03-02"
+    },
+    {
+            "name": "Mina Al-Ahmadi Refinery (Shrapnel Impact), Kuwait",
+            "lat": 29.0608,
+            "lng": 48.1501,
+            "country": "Kuwait",
+            "city": "Al-Ahmadi",
+            "severity": "high",
+            "icon": "🛢️",
+            "type": "Oil Refinery / Debris Impact",
+            "detail": "Falling shrapnel from interceptions hit Kuwait's Mina Al-Ahmadi petroleum plant on March 2 morning, injuring two workers who were transferred to hospital with minor injuries. Confirmed by KUNA (state news agency).",
+            "incidents": [
+                    {
+                            "date": "2026-03-02",
+                            "text": "Interceptor debris/shrapnel fell on Mina Al-Ahmadi refinery; 2 workers wounded with minor injuries"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "CNN (citing KUNA)",
+                            "url": "https://edition.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
+                    },
+                    {
+                            "name": "The Nightly (Australia)",
+                            "url": "https://thenightly.com.au/politics/australia/australian-news-and-politics-live-wong-says-us-israel-will-need-to-explain-legal-basis-for-iran-strikes-c-21800817"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1360,6 +1444,38 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-02-28"
+    },
+    {
+            "name": "Aramco Ras Tanura Refinery (Drone Strike)",
+            "lat": 26.64,
+            "lng": 50.15,
+            "country": "Saudi Arabia",
+            "city": "Ras Tanura",
+            "severity": "critical",
+            "icon": "🛢️",
+            "type": "Oil Facility Strike",
+            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported.",
+            "incidents": [
+                    {
+                            "date": "2026-03-02",
+                            "text": "Iranian drone struck Ras Tanura refinery causing fire; Aramco shut down operations as precautionary measure"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Bloomberg",
+                            "url": "https://www.bloomberg.com/news/articles/2026-03-02/saudi-arabia-s-ras-tanura-refinery-shuts-down-after-drone-attack"
+                    },
+                    {
+                            "name": "Reuters (via Ynetnews)",
+                            "url": "https://www.ynetnews.com/article/r6m4n4jxc"
+                    },
+                    {
+                            "name": "Times of Israel Liveblog",
+                            "url": "https://www.timesofisrael.com/liveblog-march-02-2026/"
+                    }
+            ],
+            "dateAdded": "2026-03-02"
     },
 
     // ═══════════════════════════════════════════════════════════
