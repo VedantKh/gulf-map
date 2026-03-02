@@ -371,6 +371,7 @@
         state.filteredLocations = filtered;
         renderMarkers(filtered);
         updateIncidentList(filtered);
+        updateMobileSheet(filtered);
         updateStats(filtered);
         updateLegendCounts(filtered);
     }
@@ -427,7 +428,74 @@
         document.head.appendChild(style);
     }
 
+    // ═══ Mobile bottom sheet ═══
+    function initMobileSheet() {
+        const sheet = document.getElementById('mobile-sheet');
+        const handle = document.getElementById('mobile-sheet-handle');
+        if (!sheet || !handle) return;
+
+        handle.addEventListener('click', () => {
+            sheet.classList.toggle('open');
+        });
+
+        // Close when map is tapped
+        state.map.on('click', () => {
+            sheet.classList.remove('open');
+        });
+    }
+
+    function updateMobileSheet(locations) {
+        const content = document.getElementById('mobile-sheet-content');
+        const label = document.getElementById('mobile-sheet-label');
+        if (!content) return;
+
+        if (label) label.textContent = `${locations.length} Incidents`;
+
+        content.innerHTML = '';
+        const sevOrder = { critical: 0, high: 1, watchlist: 2 };
+        const sorted = [...locations].sort((a, b) => {
+            const dateA = getLatestDate(a);
+            const dateB = getLatestDate(b);
+            if (dateB !== dateA) return dateB.localeCompare(dateA);
+            return (sevOrder[a.severity] - sevOrder[b.severity]) || a.name.localeCompare(b.name);
+        });
+
+        sorted.forEach(loc => {
+            const color = SEV_COLOR[loc.severity];
+            const latestDate = getLatestDate(loc);
+            const item = document.createElement('div');
+            item.className = 'inc-item';
+            item.innerHTML = `
+                <div class="inc-dot" style="background:${color}"></div>
+                <div class="inc-info">
+                    <div class="inc-name">${loc.icon} ${loc.name}</div>
+                    <div class="inc-type">${latestDate} · ${loc.country}</div>
+                </div>
+                <div class="inc-sev" style="color:${color}">${SEV_LABEL[loc.severity]}</div>
+            `;
+            item.addEventListener('click', () => {
+                document.getElementById('mobile-sheet').classList.remove('open');
+                const zoom = loc.severity === 'watchlist' ? 10 : 12;
+                state.map.flyTo([loc.lat, loc.lng], zoom);
+                state.markerGroup.eachLayer(layer => {
+                    if (layer.getLatLng && layer.getLatLng().lat === loc.lat && layer.getLatLng().lng === loc.lng) {
+                        layer.openPopup();
+                    }
+                });
+            });
+            content.appendChild(item);
+        });
+    }
+
+    // ═══ Update mobile top bar ═══
+    function updateMobileTopbar() {
+        const el = document.getElementById('mobile-updated');
+        if (el) el.textContent = formatLastUpdated(MAP_META.lastUpdated) + ' GMT';
+    }
+
     // ═══ Boot ═══
     initMap();
+    initMobileSheet();
+    updateMobileTopbar();
 
 })();

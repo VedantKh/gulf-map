@@ -177,15 +177,112 @@
         .incident-panel::-webkit-scrollbar-thumb,
         .summary-panel::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
 
+        /* Mobile top bar */
+        .mobile-topbar { display: none; }
+        /* Mobile mini legend */
+        .mobile-legend { display: none; }
+        /* Mobile bottom sheet */
+        .mobile-sheet { display: none; }
+
         /* Mobile */
         @media (max-width: 768px) {
             .incident-panel { display: none !important; }
             .legend { display: none !important; }
             .summary-panel { display: none !important; }
             .title-overlay { display: none !important; }
-            .stats-bar { gap: 14px; padding: 8px 14px; }
-            .stat-value { font-size: 16px; }
+            #stat-updated-item { display: none !important; }
+
+            /* Slim stats bar: only show key stats */
+            .stats-bar {
+                bottom: 0; left: 0; right: 0; width: 100%;
+                transform: none; border-radius: 0;
+                padding: 8px 0; gap: 0;
+                justify-content: space-evenly;
+                border-left: none; border-right: none; border-bottom: none;
+            }
+            .stat-item { flex: 1; }
+            .stat-item:nth-child(2),
+            .stat-item:nth-child(3),
+            .stat-item:nth-child(6) { display: none; }
+            .stat-value { font-size: 18px; }
             .stat-label { font-size: 9px; }
+
+            /* Mobile top bar */
+            .mobile-topbar {
+                display: flex; position: absolute; top: 0; left: 0; right: 0;
+                z-index: 1000; background: rgba(255,255,255,0.96);
+                border-bottom: 1px solid #e5e7eb;
+                padding: 10px 14px; align-items: center; justify-content: space-between;
+                box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+            }
+            .mobile-topbar-title {
+                font-size: 13px; font-weight: 700; color: #b91c1c;
+                letter-spacing: 0.3px;
+            }
+            .mobile-topbar-updated {
+                font-size: 10px; color: #6b7280;
+            }
+
+            /* Mobile mini legend */
+            .mobile-legend {
+                display: flex; position: absolute; top: 42px; left: 0; right: 0;
+                z-index: 1000; background: rgba(255,255,255,0.92);
+                border-bottom: 1px solid #e5e7eb;
+                padding: 5px 14px; gap: 16px; justify-content: center;
+                font-size: 10px; color: #374151;
+            }
+            .mobile-legend-item {
+                display: flex; align-items: center; gap: 4px;
+            }
+            .mobile-legend-dot {
+                width: 8px; height: 8px; border-radius: 50%;
+                border: 1.5px solid rgba(0,0,0,0.1);
+            }
+
+            /* Mobile bottom sheet */
+            .mobile-sheet {
+                display: block; position: fixed; bottom: 46px; left: 0; right: 0;
+                z-index: 1001; background: #fff;
+                border-top-left-radius: 14px; border-top-right-radius: 14px;
+                box-shadow: 0 -2px 16px rgba(0,0,0,0.12);
+                max-height: 55vh;
+                transform: translateY(calc(100%));
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .mobile-sheet.open {
+                transform: translateY(0);
+            }
+            .mobile-sheet-handle {
+                display: flex; align-items: center; justify-content: center;
+                gap: 8px; padding: 10px 16px; cursor: pointer;
+                border-bottom: 1px solid #f3f4f6;
+                -webkit-tap-highlight-color: transparent;
+            }
+            .mobile-sheet-bar {
+                width: 32px; height: 4px; border-radius: 2px;
+                background: #d1d5db;
+            }
+            .mobile-sheet-label {
+                font-size: 12px; font-weight: 600; color: #374151;
+            }
+            .mobile-sheet-content {
+                overflow-y: auto; max-height: calc(55vh - 44px);
+                padding: 4px 12px 12px;
+                -webkit-overflow-scrolling: touch;
+            }
+            .mobile-sheet-content .inc-item {
+                padding: 8px 4px;
+            }
+            .mobile-sheet-content .inc-name {
+                font-size: 13px;
+            }
+            .mobile-sheet-content .inc-dot {
+                width: 12px; height: 12px;
+            }
+
+            /* Popup sizing */
+            .leaflet-popup-content { max-width: 80vw !important; font-size: 12px; }
+            .popup-title { font-size: 14px; }
         }
     </style>
 </head>
@@ -195,6 +292,28 @@
     <div class="title-overlay">
         <h1>GULF CONFLICT UPDATES</h1>
         <p>Live map of verified Iranian strikes & threats across Gulf states</p>
+    </div>
+
+    <!-- Mobile top bar -->
+    <div class="mobile-topbar">
+        <span class="mobile-topbar-title">GULF CONFLICT UPDATES</span>
+        <span class="mobile-topbar-updated" id="mobile-updated"></span>
+    </div>
+
+    <!-- Mobile mini legend -->
+    <div class="mobile-legend">
+        <div class="mobile-legend-item"><div class="mobile-legend-dot" style="background:#dc2626"></div>Hit</div>
+        <div class="mobile-legend-item"><div class="mobile-legend-dot" style="background:#ea580c"></div>Debris</div>
+        <div class="mobile-legend-item"><div class="mobile-legend-dot" style="background:#6b7280"></div>Watch</div>
+    </div>
+
+    <!-- Mobile bottom sheet -->
+    <div class="mobile-sheet" id="mobile-sheet">
+        <div class="mobile-sheet-handle" id="mobile-sheet-handle">
+            <div class="mobile-sheet-bar"></div>
+            <span class="mobile-sheet-label" id="mobile-sheet-label">Incidents</span>
+        </div>
+        <div class="mobile-sheet-content" id="mobile-sheet-content"></div>
     </div>
 
     <div class="stats-bar">
