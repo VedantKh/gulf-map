@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T01:18:49.571Z",
+    "lastUpdated": "2026-03-03T04:08:54.350Z",
     "casualties": {
         "killed": 20,
         "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 (Mar 3): IRGC formally declares Strait of Hormuz closed — commander Jabari warns any vessel attempting passage will be attacked and 'set ablaze.' US Embassy in Riyadh struck by 2 Shahed-136 drones (no casualties). CENTCOM confirms 6 US KIA at Shuaiba Port. Al Minhad Air Base (coalition HQ) confirmed hit. New wave of incoming Iranian missiles detected by UAE/Israel as of Mar 3 (CNN). JMIC maritime threat: CRITICAL. 150+ ships stranded near Strait. Major insurers cancel war-risk coverage. Etihad suspends Abu Dhabi flights until Mar 3 14:00 local. UAE schools shifted to distance learning through Mar 4.",
-    "totalBarrage": "UAE reports 165 ballistic missiles, 2 cruise missiles, 541 drones total since Feb 28. Qatar: 65+ missiles, 12+ drones. Kuwait: 97 ballistic missiles, 283 drones. Bahrain: 45 missiles, 9 drones. At least 5 commercial vessels struck in Strait of Hormuz area. Jordan intercepted 13 ballistic missiles and 49 drones.",
-    "intercepted": "UAE: intercepted most but 35 drones fell within country (21 hitting civilian targets, 3 killed). Kuwait: majority of drones intercepted; 3 US jets mistakenly downed by Kuwaiti air defenses. Qatar: initially used Patriot systems, now deploying fighter jets to intercept over Gulf waters. Bahrain: shot down 45 missiles and 9 drones. JMIC advisory: 'All merchant vessels, regardless of flag or nationality, are at risk.'"
+    "summary": "Day 4 (Tue Mar 3): Iran continues retaliatory strikes across the Gulf. IRGC formally declares Strait of Hormuz 'closed' and announces campaign to destroy 'American political centers.' US Embassy in Riyadh struck by drones. Explosions heard in Erbil, Dubai, Abu Dhabi, and Doha. Bahrain sirens activated. Qatar shoots down two Iranian Su-24 bombers. Trump says campaign could last ~4 weeks. IRGC threatens to attack oil pipelines and prevent any oil from leaving the region.",
+    "totalBarrage": "Updated interception totals as of Tue Mar 3 (CNN/state media): Kuwait: 178 ballistic missiles + 384 drones intercepted. UAE: 169/182 missiles intercepted + 645 drones (44 hit territory). Bahrain: 70 missiles + 76 drones intercepted. Qatar: 101/104 missiles + 24/39 drones intercepted + 2 Iranian Su-24 bombers shot down.",
+    "intercepted": "Combined confirmed interceptions across Gulf states exceed 1,300 missiles/drones. Significant leakage continues — UAE reports 44 drones penetrated territory, Qatar reports 15 drones reached territory, multiple confirmed impacts across all GCC states."
 };
 
 const LOCATIONS = [
@@ -702,7 +702,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Projectile attacks on commercial vessels",
-            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3.",
+            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -719,6 +719,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "Tanker OCEAN ELECTRA reported near-miss ~35nm west of Sharjah, UAE; unknown projectile exploded in close proximity; crew safe, no damage"
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "IRGC senior adviser Ebrahim Jabari formally declared the Strait of Hormuz 'closed,' warning any vessel attempting passage would be attacked. IRGC also threatened to target oil pipelines to prevent any oil from leaving the region."
                     }
             ],
             "sources": [
@@ -749,6 +753,14 @@ const LOCATIONS = [
                     {
                             "name": "UKMTO / Fox News",
                             "url": "https://www.foxnews.com/world/iran-starts-indiscriminate-strikes-gulf-oman-hits-shadow-tanker-tied-regime"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/2/iran-says-will-attack-any-ship-trying-to-pass-through-strait-of-hormuz"
+                    },
+                    {
+                            "name": "Al Jazeera Live Blog (March 3)",
+                            "url": "https://www.aljazeera.com/news/liveblog/2026/3/3/iran-live-news-israel-bombs-tehran-beirut-trump-says-war-to-last-4-weeks"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2414,11 +2426,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🏛️",
             "type": "Drone Strike on US Embassy",
-            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region.",
+            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter.",
             "incidents": [
                     {
                             "date": "2026-03-02",
                             "text": "Two Iranian Shahed-136 drones struck the US Embassy roof and perimeter; limited fire and minor material damage; no casualties (embassy had been evacuated); IRGC claimed responsibility"
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Two Iranian drones struck the US Embassy compound early Tuesday, causing a 'limited fire' and 'minor material damage' per Saudi MOD. Embassy was empty; no casualties. Additional drones targeted Riyadh's Diplomatic Quarter with two more explosions heard. IRGC claimed the attack as part of campaign to destroy 'American political centers' in the region."
                     }
             ],
             "sources": [
@@ -2433,6 +2449,14 @@ const LOCATIONS = [
                     {
                             "name": "Axios",
                             "url": "https://www.axios.com/2026/03/03/iran-us-embassy-riyadh-saudi-arabia-drones"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/3/us-embassy-in-saudi-capital-riyadh-hit-by-drones-fire-reported-ministry"
+                    },
+                    {
+                            "name": "CNN Live Blog",
+                            "url": "https://www.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
                     }
             ],
             "dateAdded": "2026-03-03"
