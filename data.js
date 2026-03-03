@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-02T23:20:23.443Z",
+    "lastUpdated": "2026-03-03T01:18:49.571Z",
     "casualties": {
-        "killed": 17,
+        "killed": 20,
         "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 3 (March 2): Iran's retaliatory strikes continue across all GCC states and Iraq. Major escalation as Qatar Air Force shoots down two Iranian Su-24 bombers — first Gulf state to down Iranian manned aircraft. QatarEnergy halts all LNG production (~20% of global supply) after drone strikes on Ras Laffan and Mesaieed. Iran-backed militias in Iraq actively attacking US forces in Erbil and Baghdad. IRGC claims cruise missile strikes on Ali al-Salem Air Base in Kuwait. US death toll rises to 6 killed, 18 wounded. State Dept urges all US citizens to depart 15 Middle Eastern countries immediately. Saudi source warns of military response if Iran mounts concerted attack on Aramco. GCC pledges 'all necessary measures including responding to aggression.'",
-    "totalBarrage": "UAE MOD reports intercepting 165 ballistic missiles, 2 cruise missiles, 541 drones (35 drones penetrated). Kuwait: 97 ballistic missiles and 283 drones intercepted. Bahrain: 45 missiles and 9 drones intercepted. Qatar: 18+ missiles/cruise missiles/drones intercepted plus 2 Su-24 aircraft shot down. UAE confirms 137 missiles and 209 drones fired at UAE on Day 1 alone.",
-    "intercepted": "Majority of projectiles intercepted across all GCC states. UAE: 35 of 541 drones penetrated defenses. Qatar: All ballistic missiles intercepted before reaching targets. Kuwait: Majority of drones near Rumaithiya/Salwa intercepted. Breaking Defense notes structural vulnerability — air defenses effective but saturation attacks remain serious concern."
+    "summary": "Day 4 (Mar 3): IRGC formally declares Strait of Hormuz closed — commander Jabari warns any vessel attempting passage will be attacked and 'set ablaze.' US Embassy in Riyadh struck by 2 Shahed-136 drones (no casualties). CENTCOM confirms 6 US KIA at Shuaiba Port. Al Minhad Air Base (coalition HQ) confirmed hit. New wave of incoming Iranian missiles detected by UAE/Israel as of Mar 3 (CNN). JMIC maritime threat: CRITICAL. 150+ ships stranded near Strait. Major insurers cancel war-risk coverage. Etihad suspends Abu Dhabi flights until Mar 3 14:00 local. UAE schools shifted to distance learning through Mar 4.",
+    "totalBarrage": "UAE reports 165 ballistic missiles, 2 cruise missiles, 541 drones total since Feb 28. Qatar: 65+ missiles, 12+ drones. Kuwait: 97 ballistic missiles, 283 drones. Bahrain: 45 missiles, 9 drones. At least 5 commercial vessels struck in Strait of Hormuz area. Jordan intercepted 13 ballistic missiles and 49 drones.",
+    "intercepted": "UAE: intercepted most but 35 drones fell within country (21 hitting civilian targets, 3 killed). Kuwait: majority of drones intercepted; 3 US jets mistakenly downed by Kuwaiti air defenses. Qatar: initially used Patriot systems, now deploying fighter jets to intercept over Gulf waters. Bahrain: shot down 45 missiles and 9 drones. JMIC advisory: 'All merchant vessels, regardless of flag or nationality, are at risk.'"
 };
 
 const LOCATIONS = [
@@ -702,7 +702,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Projectile attacks on commercial vessels",
-            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones.",
+            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -711,6 +711,14 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "IRGC commander General Ebrahim Jabbari declared the Strait of Hormuz closed to all traffic, stating on state TV: vessels attempting to pass will be 'set on fire.' Traffic through the waterway has effectively stopped. IRGC struck tanker ATHE NOVA with 2 drones (separate map entry)."
+                    },
+                    {
+                            "date": "2026-03-01",
+                            "text": "Gibraltar-flagged tanker HERCULES STAR struck by unknown projectile ~17nm NW of Mina Saqr, UAE; fire broke out and was extinguished; no injuries; vessel continued voyage under own power"
+                    },
+                    {
+                            "date": "2026-03-01",
+                            "text": "Tanker OCEAN ELECTRA reported near-miss ~35nm west of Sharjah, UAE; unknown projectile exploded in close proximity; crew safe, no damage"
                     }
             ],
             "sources": [
@@ -729,6 +737,18 @@ const LOCATIONS = [
                     {
                             "name": "Daily Sabah",
                             "url": "https://www.dailysabah.com/world/mid-east/iran-says-strait-of-hormuz-closed-will-torch-ships-trying-to-pass"
+                    },
+                    {
+                            "name": "Seatrade Maritime",
+                            "url": "https://www.seatrade-maritime.com/security/seafarer-killed-as-three-tankers-hit-in-middle-east"
+                    },
+                    {
+                            "name": "gCaptain",
+                            "url": "https://gcaptain.com/strait-of-hormuz-enters-active-crisis-five-ships-hit-traffic-collapses-tanker-markets-brace-for-historic-shock/"
+                    },
+                    {
+                            "name": "UKMTO / Fox News",
+                            "url": "https://www.foxnews.com/world/iran-starts-indiscriminate-strikes-gulf-oman-hits-shadow-tanker-tied-regime"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -756,6 +776,34 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-02"
+    },
+    {
+            "name": "Al Minhad Air Base (Coalition HQ), Dubai",
+            "lat": 25.0268,
+            "lng": 55.3614,
+            "country": "UAE",
+            "city": "Dubai",
+            "severity": "critical",
+            "icon": "🎯",
+            "type": "Military Base Drone Strike",
+            "detail": "Iranian drones struck Al Minhad Air Base, located 24km south of Dubai, which hosts US, Australian, and coalition military forces. Australian Defense Minister Richard Marles confirmed the base was hit on the first night of attacks (Feb 28). All Australian staff at the base were reported safe and accounted for. Al Minhad has hosted Australian forces since 2003 and serves as the primary hub for coalition operations in the Middle East.",
+            "incidents": [
+                    {
+                            "date": "2026-02-28",
+                            "text": "Iranian drones struck Al Minhad Air Base on the first night of attacks; confirmed by Australian Defense Minister Marles; all coalition staff safe and accounted for"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "AFP via SpaceWar",
+                            "url": "https://www.spacewar.com/afp/260302234435.o89e9bqh.html"
+                    },
+                    {
+                            "name": "Times of Israel",
+                            "url": "https://www.timesofisrael.com/liveblog_entry/australia-says-its-mideast-military-hq-was-hit-by-iranian-drone-attack-over-weekend/"
+                    }
+            ],
+            "dateAdded": "2026-03-03"
     },
 
     // ═══════════════════════════════════════════════════════════
@@ -1038,7 +1086,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Interceptor debris / vessel fire",
-            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2. Mar 2: UKMTO confirmed vessel struck by 2 projectiles. Bahrain Interior Ministry: 1 Asian worker killed, 2 seriously injured from interceptor debris falling on foreign ship at Salman Industrial City. On March 2, Bahrain's Ministry of Interior confirmed 1 Asian worker killed and 2 seriously injured from intercepted missile debris falling on a foreign vessel. Bahrain Defence Force reports total of 61 missiles and 34 drones intercepted since the start of the conflict. March 2: US-flagged tanker Stena Imperative struck by two projectiles in Port of Bahrain per Reuters/Vanguard Tech. Fire broke out and was extinguished; crew evacuated. UKMTO confirmed the vessel fire incident.",
+            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2. Mar 2: UKMTO confirmed vessel struck by 2 projectiles. Bahrain Interior Ministry: 1 Asian worker killed, 2 seriously injured from interceptor debris falling on foreign ship at Salman Industrial City. On March 2, Bahrain's Ministry of Interior confirmed 1 Asian worker killed and 2 seriously injured from intercepted missile debris falling on a foreign vessel. Bahrain Defence Force reports total of 61 missiles and 34 drones intercepted since the start of the conflict. March 2: US-flagged tanker Stena Imperative struck by two projectiles in Port of Bahrain per Reuters/Vanguard Tech. Fire broke out and was extinguished; crew evacuated. UKMTO confirmed the vessel fire incident. US-flagged tanker Stena Imperative (part of US MARAD Tanker Security Program) struck by 2 projectiles at Bahrain port shipyard on Mar 2. One shoreside shipyard worker killed, two others injured. Ship crew unharmed. First US-flagged vessel attacked in the conflict. Vessel had previously been harassed by IRGC fast boats in Feb 2026.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1071,6 +1119,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "US-flagged oil tanker Stena Imperative reportedly struck by two Iranian projectiles in the Port of Bahrain, causing a fire that was extinguished. Crew evacuated. Reported by Reuters and maritime security firm Vanguard Tech, cited by CBS News. UKMTO also reported a vessel struck by two unknown projectiles at port of Bahrain."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "US-flagged tanker Stena Imperative (MARAD Tanker Security Program vessel) struck by 2 projectiles at ~0300 local time while in Bahrain shipyard; fire broke out and was extinguished; 1 shipyard worker killed, 2 others injured; ship crew unharmed — first US-flagged vessel attacked in the conflict"
                     }
             ],
             "sources": [
@@ -1133,6 +1185,18 @@ const LOCATIONS = [
                     {
                             "name": "ARN News Centre",
                             "url": "https://www.arnnewscentre.ae/en/news/international/fire-from-missile-debris-kills-one-in-bahrain/"
+                    },
+                    {
+                            "name": "USNI News",
+                            "url": "https://news.usni.org/2026/03/02/shipyard-worker-dead-fire-breaks-out-on-u-s-flagged-tanker-after-iranian-attack-on-bahrain-port"
+                    },
+                    {
+                            "name": "gCaptain",
+                            "url": "https://gcaptain.com/u-s-flagged-tanker-security-program-ship-stena-imperative-hit-in-bahrain-shipyard-worker-killed/"
+                    },
+                    {
+                            "name": "Argus Media",
+                            "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2795180-us-flagged-tanker-hit-in-bahrain"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1962,7 +2026,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🎯",
             "type": "Military Aircraft Crash (Under Investigation)",
-            "detail": "Kuwait's Ministry of Defense confirmed 'several United States military aircraft crashed' on Monday March 2 with all crew surviving. CNN geolocated video of an F-15E Strike Eagle crashing within 10km of Ali Al Salem Air Base near Al Jahra. Crew ejected safely and were recovered by Kuwaiti forces. Cause remains under investigation — Iran claims shootdown, some analysts suspect friendly fire. Kuwait's Defence Ministry later confirmed 'several' US warplanes crashed in the country, with all crew surviving. This is an escalation from the initial single F-15E crash report. Kuwait MOD confirmed 'several' US warplanes crashed (not just one), all crew survived. Friendly fire confirmed for at least one F-15. Crews stable after hospital evaluation. CENTCOM confirmed 3 F-15E Strike Eagles (not 1) were shot down by Kuwaiti air defenses in friendly fire incident. Confirmed crash debris in Al Jahra district. All 6 crew survived. First confirmed air-to-air friendly fire incident of the conflict. CENTCOM officially confirmed 3 F-15Es downed by Kuwaiti air defenses in friendly fire at 11:03 PM ET Mar 1. All 6 crew ejected safely. Investigation underway. Mar 2: CENTCOM confirmed friendly fire — 3 F-15Es shot down by Kuwaiti air defenses during active combat. All 6 aircrew safe. Kuwait acknowledged incident. Shows chaotic nature of air defense operations under sustained Iranian barrage.",
+            "detail": "Kuwait's Ministry of Defense confirmed 'several United States military aircraft crashed' on Monday March 2 with all crew surviving. CNN geolocated video of an F-15E Strike Eagle crashing within 10km of Ali Al Salem Air Base near Al Jahra. Crew ejected safely and were recovered by Kuwaiti forces. Cause remains under investigation — Iran claims shootdown, some analysts suspect friendly fire. Kuwait's Defence Ministry later confirmed 'several' US warplanes crashed in the country, with all crew surviving. This is an escalation from the initial single F-15E crash report. Kuwait MOD confirmed 'several' US warplanes crashed (not just one), all crew survived. Friendly fire confirmed for at least one F-15. Crews stable after hospital evaluation. CENTCOM confirmed 3 F-15E Strike Eagles (not 1) were shot down by Kuwaiti air defenses in friendly fire incident. Confirmed crash debris in Al Jahra district. All 6 crew survived. First confirmed air-to-air friendly fire incident of the conflict. CENTCOM officially confirmed 3 F-15Es downed by Kuwaiti air defenses in friendly fire at 11:03 PM ET Mar 1. All 6 crew ejected safely. Investigation underway. Mar 2: CENTCOM confirmed friendly fire — 3 F-15Es shot down by Kuwaiti air defenses during active combat. All 6 aircrew safe. Kuwait acknowledged incident. Shows chaotic nature of air defense operations under sustained Iranian barrage. CENTCOM and Kuwait Defence Ministry confirmed 3 US fighter jets were mistakenly downed by Kuwaiti air defenses during Iranian attack on Sunday night. All 6 aircrew ejected safely and are in stable condition.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1987,6 +2051,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "CENTCOM confirms 3 US F-15E Strike Eagles 'mistakenly shot down by Kuwaiti air defenses' during active combat involving Iranian aircraft, ballistic missiles and drones. All 6 aircrew ejected safely, recovered in stable condition. Kuwait acknowledged the incident."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "CENTCOM confirmed 3 US fighter jets supporting Operation Epic Fury were mistakenly shot down by Kuwaiti air defenses Sunday night; all 6 aircrew ejected safely and are in stable condition"
                     }
             ],
             "sources": [
@@ -2086,11 +2154,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Direct Iranian strike on US military facility",
-            "detail": "Six US service members killed when an Iranian projectile scored a direct hit on a makeshift tactical operations center at the civilian port of Shuaiba on Sunday morning local time. Defense Secretary Hegseth confirmed one projectile penetrated air defenses and struck a fortified triple-wide trailer used as an operations center. No warning or siren preceded the strike. CENTCOM confirmed the death toll rose to 6 on Monday afternoon after two additional remains were recovered.",
+            "detail": "Six US service members killed when an Iranian projectile scored a direct hit on a makeshift tactical operations center at the civilian port of Shuaiba on Sunday morning local time. Defense Secretary Hegseth confirmed one projectile penetrated air defenses and struck a fortified triple-wide trailer used as an operations center. No warning or siren preceded the strike. CENTCOM confirmed the death toll rose to 6 on Monday afternoon after two additional remains were recovered. CENTCOM confirmed on Mar 2 that the death toll from the Mar 1 drone strike at Shuaiba Port has risen to 6 US service members killed. Remains of 2 additional personnel were recovered from the struck makeshift tactical operations center. 18 US troops seriously wounded total across Operation Epic Fury.",
             "incidents": [
                     {
                             "date": "2026-03-01",
                             "text": "Iranian projectile (suspected drone) directly struck a US Army sustainment unit's makeshift tactical operations center at Shuaiba Port. 6 US service members killed. Defense Secretary Hegseth confirmed one projectile got through air defenses."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "CENTCOM confirmed US death toll at Shuaiba rose to 6 after recovering remains of 2 additional previously unaccounted-for service members; total 18 US troops seriously wounded across Operation Epic Fury; Defense Secretary Hegseth confirmed a single projectile penetrated air defenses in direct hit on triple-wide trailer operations center"
                     }
             ],
             "sources": [
@@ -2105,6 +2177,14 @@ const LOCATIONS = [
                     {
                             "name": "KVIA (CNN Wire)",
                             "url": "https://kvia.com/politics/cnn-us-politics/2026/03/02/no-warning-no-siren-six-us-service-members-killed-in-iranian-strike-that-hit-makeshift-operations-center-in-kuwait/"
+                    },
+                    {
+                            "name": "CBS News",
+                            "url": "https://www.cbsnews.com/news/iran-military-operation-american-service-members-killed-centcom/"
+                    },
+                    {
+                            "name": "Axios",
+                            "url": "https://www.axios.com/2026/03/02/3-us-fighter-jets-friendly-fire-kuwait"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2324,6 +2404,38 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-02"
+    },
+    {
+            "name": "US Embassy in Riyadh (Diplomatic Quarter), Saudi Arabia",
+            "lat": 24.653,
+            "lng": 46.625,
+            "country": "Saudi Arabia",
+            "city": "Riyadh",
+            "severity": "critical",
+            "icon": "🏛️",
+            "type": "Drone Strike on US Embassy",
+            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region.",
+            "incidents": [
+                    {
+                            "date": "2026-03-02",
+                            "text": "Two Iranian Shahed-136 drones struck the US Embassy roof and perimeter; limited fire and minor material damage; no casualties (embassy had been evacuated); IRGC claimed responsibility"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "CNN Live Blog",
+                            "url": "https://edition.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
+                    },
+                    {
+                            "name": "BNO News (citing WSJ/State Dept)",
+                            "url": "https://bnonews.com/index.php/2026/03/fire-breaks-out-at-u-s-embassy-in-riyadh-following-reports-of-explosions/"
+                    },
+                    {
+                            "name": "Axios",
+                            "url": "https://www.axios.com/2026/03/03/iran-us-embassy-riyadh-saudi-arabia-drones"
+                    }
+            ],
+            "dateAdded": "2026-03-03"
     },
 
     // ═══════════════════════════════════════════════════════════
