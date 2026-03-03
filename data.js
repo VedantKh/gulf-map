@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T13:57:00.665Z",
+    "lastUpdated": "2026-03-03T15:41:50.250Z",
     "casualties": {
         "killed": 20,
         "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 of conflict (March 3). IRGC launched Waves 11-12 of Operation True Promise 4. Iran-backed militias in Iraq have opened a new front in Erbil with 23+ claimed drone strikes. US embassies in Saudi Arabia and Kuwait closed. US has ordered non-essential personnel evacuations from Gulf embassies. Six US service members KIA confirmed by CENTCOM. IRGC officially declared Strait of Hormuz closed, threatening to attack any passing vessel.",
-    "totalBarrage": "Updated regional interception counts as of March 3 (CNN/regional MODs): UAE — 182 missiles detected (169 intercepted), 689 drones (645 intercepted, 44 hit territory); Kuwait — 178 missiles, 384 drones intercepted; Bahrain — 70 missiles, 76 drones intercepted; Qatar — 104 missiles (101 intercepted), 39 drones (24 intercepted), 2 Iranian Su-24 aircraft shot down; Saudi Arabia — partial count of 8 drones intercepted near Riyadh/Al-Kharj. Total tracked across 5 states: ~1,457 projectiles.",
-    "intercepted": "Updated totals across Gulf: ~1,363 projectiles confirmed intercepted (UAE: 814, Kuwait: 562, Bahrain: 146, Qatar: 127, Saudi partial: 8). At least 44 drones confirmed hitting UAE territory. Multiple unintercepted strikes confirmed across all countries."
+    "summary": "Day 4 of conflict (Mar 3): Iran continues retaliatory strikes on Gulf energy infrastructure. Fujairah Oil Industry Zone hit by drone debris fire. Second attack on Oman's Duqm port hit fuel storage tank. IRGC officially confirms Strait of Hormuz closure. Iraqi militias sustain drone campaigns against US bases in Erbil and Baghdad. France deploys Rafale jets over UAE to protect its bases.",
+    "totalBarrage": "Updated totals as of Mar 3: UAE detected 182 missiles (169 intercepted) + 689 drones (645 intercepted, 44 hit territory). Kuwait intercepted 178 missiles + 384 drones. Bahrain intercepted 70 missiles + 76 drones. Qatar intercepted 101/104 missiles + 24/39 drones and shot down 2 Iranian Su-24 aircraft. Iran has launched 400+ ballistic missiles and ~1,000 drones at Gulf Arab states since Feb 28.",
+    "intercepted": "Gulf-wide interception operations ongoing. UAE reports 92.9% missile intercept rate. CNN reports updated UAE figures of 169 missiles intercepted out of 182 detected plus 645 drones intercepted out of 689 detected."
 };
 
 const LOCATIONS = [
@@ -841,6 +841,42 @@ const LOCATIONS = [
                     {
                             "name": "Al Mayadeen (IRGC Wave 12 claim)",
                             "url": "https://english.almayadeen.net/news/politics/wave-12-of-true-promise-4--enemy-naval-assets--fuel-tankers"
+                    }
+            ],
+            "dateAdded": "2026-03-03"
+    },
+    {
+            "name": "Fujairah Oil Industry Zone (FOIZ) — Drone Debris Fire",
+            "lat": 25.1224,
+            "lng": 56.358,
+            "country": "UAE",
+            "city": "Fujairah",
+            "severity": "high",
+            "icon": "🛢️",
+            "type": "Oil infrastructure debris fire",
+            "detail": "A major fire broke out at the Fujairah Oil Industry Zone on Tuesday March 3 after debris from a successfully intercepted Iranian drone fell inside the facility. The Fujairah Media Office confirmed no injuries were reported, the fire was contained, and normal operations resumed. Fujairah is the world's third-largest oil storage hub and a key bunker fuel supplier for ships transiting the Strait of Hormuz.",
+            "incidents": [
+                    {
+                            "date": "2026-03-03",
+                            "text": "Debris from intercepted Iranian drone caused fire at FOIZ oil storage facility. Fire contained, no injuries, operations resumed per Fujairah Media Office."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Al Arabiya",
+                            "url": "https://english.alarabiya.net/News/gulf/2026/03/03/drone-debris-caused-fire-at-uae-oil-industry-zone-operations-resume-media-office-"
+                    },
+                    {
+                            "name": "Arab News (AFP)",
+                            "url": "https://www.arabnews.com/node/2635089/middle-east"
+                    },
+                    {
+                            "name": "Anadolu Agency (via Sunday Guardian)",
+                            "url": "https://sundayguardianlive.com/world/us-iran-war-day-4-fire-erupts-at-fujairah-oil-storage-facility-in-uae-following-air-defense-drone-interception-watch-173785/"
+                    },
+                    {
+                            "name": "Argus Media",
+                            "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2795400-uae-s-fujairah-storage-tanks-hit-by-drones"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -2642,7 +2678,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "💥",
             "type": "Omani Port — Struck by 2 Iranian Drones",
-            "detail": "Major Omani port on the Arabian Sea coast. Targeted by 2 Iranian drones on Mar 1. One struck foreign workers' residences, injuring 1. Iran FM claimed 'not our choice.' This shatters Oman's traditional neutrality. Oman News Agency confirmed two drones hit Duqm port on March 1, injuring one expatriate worker. First attack on Oman. GCC condemned the strike on the mediator state. March 3: Second drone attack in three days. Multiple drones targeted fuel storage tanks; one hit a fuel tank with damage contained and no casualties (Oman News Agency via AFP).",
+            "detail": "Major Omani port on the Arabian Sea coast. Targeted by 2 Iranian drones on Mar 1. One struck foreign workers' residences, injuring 1. Iran FM claimed 'not our choice.' This shatters Oman's traditional neutrality. Oman News Agency confirmed two drones hit Duqm port on March 1, injuring one expatriate worker. First attack on Oman. GCC condemned the strike on the mediator state. March 3: Second drone attack in three days. Multiple drones targeted fuel storage tanks; one hit a fuel tank with damage contained and no casualties (Oman News Agency via AFP). On March 3, a second wave of drones targeted Duqm port, hitting a fuel storage tank. ONA confirmed damage was contained with no casualties.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -2655,6 +2691,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Second drone attack on Duqm Port. Multiple drones targeted fuel tanks; one drone hit a fuel tank causing contained damage. No casualties reported. Oman condemned the attack. This is the second strike on the port in three days."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Second attack on Duqm port: several Iranian drones targeted the port on Tuesday, one hitting a fuel storage tank. Damage contained and no casualties reported per Oman state news agency ONA. This is the second attack on the port since conflict began Feb 28."
                     }
             ],
             "sources": [
@@ -2689,6 +2729,10 @@ const LOCATIONS = [
                     {
                             "name": "Argus Media",
                             "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2795389-duqm-port-struck-in-latest-mideast-gulf-drone-attack"
+                    },
+                    {
+                            "name": "Argus Media",
+                            "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2795400-uae-s-fujairah-storage-tanks-hit-by-drones"
                     }
             ],
             "dateAdded": "2026-03-01"
