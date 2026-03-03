@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T20:26:32.815Z",
+    "lastUpdated": "2026-03-03T21:30:11.428Z",
     "casualties": {
         "killed": 20,
         "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 (March 3 local/Day 5 UTC): IRGC general threatens to hit 'all economic hubs in the Middle East.' Iran expands strikes to Oman's Port of Salalah and Fujairah energy bypass hub. UAE considering 'active defense measures against Iran' per Axios. Attacks in Iraq by Iranian-backed militias confirmed at Erbil and Baghdad. Port operations suspended at Duqm and Salalah in Oman.",
-    "totalBarrage": "Updated totals (as of March 3 per CNN/state media): UAE detected 182 missiles (169 intercepted) + 689 drones (645 intercepted, 44 hit territory); Bahrain intercepted 70 missiles + 76 drones; Qatar intercepted 101 of 104 missiles + 24 of 39 drones, shot down 2 Iranian Su-24 bombers; Kuwait intercepted 178 ballistic missiles + 384 drones.",
-    "intercepted": "Across all Gulf states, well over 500 ballistic missiles and 1,100+ drones tracked. Majority intercepted but dozens of drones and several missiles have struck targets across 9 countries."
+    "summary": "Day 4 (March 3) of Iranian retaliatory strikes (Operation True Promise IV). Iran continues to strike military bases, energy infrastructure, and civilian areas across the Gulf. IRGC has declared Strait of Hormuz closed; effectively no commercial traffic. Major gap identified: Iraq (Erbil) was missing from the map despite 70+ confirmed strikes by Iranian proxies on US assets there. Al Jazeera reports ongoing Iranian energy infrastructure strikes across the Gulf on March 3 evening. US embassies in Saudi Arabia and Kuwait closed. Gulf states reserve right to respond militarily per joint GCC statement.",
+    "totalBarrage": "As of March 3 — UAE targeted by 174 ballistic missiles (161 intercepted, 13 fell in sea), 8 cruise missiles (all intercepted), 689 drones (645 intercepted, 44 hit). Qatar: 104 missiles detected (101 intercepted), 39 drones (24 intercepted), 2 Iranian Su-24 aircraft shot down. Kuwait: 97 ballistic missiles, 283 drones. Bahrain: 70 missiles, 76 drones intercepted. Total across Gulf: 400+ ballistic missiles and ~1,000 drones per CNN citing regional governments.",
+    "intercepted": "UAE: 161/174 ballistic missiles, 8/8 cruise missiles, 645/689 drones. Qatar: 101/104 missiles, 24/39 drones, plus 2 Su-24 aircraft. Bahrain: 70 missiles, 76 drones. Kuwait: 97+ missiles, 283+ drones targeted. Jordan: 13 missiles, 49 drones intercepted."
 };
 
 const LOCATIONS = [
@@ -730,7 +730,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Projectile attacks on commercial vessels",
-            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit. JMIC elevated regional maritime threat level to 'critical' on March 1. At least five commercial vessels struck or targeted in 24 hours. Oil tanker Hercules Star struck near Mina Saqr; bulk carrier Ocean Electra near-miss off Sharjah.",
+            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit. JMIC elevated regional maritime threat level to 'critical' on March 1. At least five commercial vessels struck or targeted in 24 hours. Oil tanker Hercules Star struck near Mina Saqr; bulk carrier Ocean Electra near-miss off Sharjah. As of March 3, the Strait of Hormuz remains effectively closed to commercial shipping. JMIC upgraded risk assessment to Critical. P&I insurance withdrawn from March 5, making transit economically unviable. At least 5 tankers damaged, ~150 ships stranded.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -759,6 +759,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "JMIC raised regional maritime threat level to 'critical' (highest designation) after five commercial vessels struck or targeted in 24 hours across Gulf of Oman, Musandam approaches and UAE coastal waters. Oil tanker Hercules Star struck 17nm NW of Mina Saqr; fire extinguished, no injuries. Bulk carrier Ocean Electra near-miss 35nm W of Sharjah. (Maritime Telegraph, Argus Media)"
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Strait remains effectively closed. JMIC upgraded regional risk to Critical (highest level). P&I insurance withdrawn from March 5. At least 5 tankers damaged, 2 maritime personnel killed, ~150 ships stranded. Near-zero commercial traffic."
                     }
             ],
             "sources": [
@@ -813,6 +817,10 @@ const LOCATIONS = [
                     {
                             "name": "Argus Media (JMIC threat level critical)",
                             "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2795180-us-flagged-tanker-hit-in-bahrain"
+                    },
+                    {
+                            "name": "Seatrade Maritime (is Hormuz really closed?)",
+                            "url": "https://www.seatrade-maritime.com/security/is-the-strait-of-hormuz-really-closed-"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2602,11 +2610,15 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "✈️",
             "type": "International Airport — Missile Intercepted Nearby",
-            "detail": "Riyadh's main international airport. Saudi Arabia confirmed Iranian missiles targeted the capital region. Air defenses intercepted projectiles near the airport. No disruption to navigation or casualties reported.",
+            "detail": "Riyadh's main international airport. Saudi Arabia confirmed Iranian missiles targeted the capital region. Air defenses intercepted projectiles near the airport. No disruption to navigation or casualties reported. On March 3, Saudi Arabia intercepted 8 drones near Riyadh and Al Kharj (55 miles SE of Riyadh, near Prince Sultan Air Base). No damage or casualties reported.",
             "incidents": [
                     {
                             "date": "2026-02-28",
                             "text": "Iranian missiles targeted Riyadh region. Saudi air defenses intercepted projectiles near King Khalid International Airport."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Saudi military intercepted and destroyed 8 Iranian drones near Riyadh and Al Kharj early Tuesday local time, per Saudi Defense Ministry spokesman Maj-Gen Turki Al-Maliki. No damage or casualties reported."
                     }
             ],
             "sources": [
@@ -2621,6 +2633,10 @@ const LOCATIONS = [
                     {
                             "name": "Asharq Al-Awsat",
                             "url": "https://english.aawsat.com/gulf/5245738-saudi-arabia-strongly-condemns-failed-cowardly-iranian-attacks-targeting-riyadh-and"
+                    },
+                    {
+                            "name": "CNN (Day 3 liveblog)",
+                            "url": "https://www.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
                     }
             ],
             "dateAdded": "2026-02-28"
