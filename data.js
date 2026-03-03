@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T21:30:11.428Z",
+    "lastUpdated": "2026-03-03T22:22:31.065Z",
     "casualties": {
         "killed": 20,
-        "injured": 162
+        "injured": 172
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 (March 3) of Iranian retaliatory strikes (Operation True Promise IV). Iran continues to strike military bases, energy infrastructure, and civilian areas across the Gulf. IRGC has declared Strait of Hormuz closed; effectively no commercial traffic. Major gap identified: Iraq (Erbil) was missing from the map despite 70+ confirmed strikes by Iranian proxies on US assets there. Al Jazeera reports ongoing Iranian energy infrastructure strikes across the Gulf on March 3 evening. US embassies in Saudi Arabia and Kuwait closed. Gulf states reserve right to respond militarily per joint GCC statement.",
-    "totalBarrage": "As of March 3 — UAE targeted by 174 ballistic missiles (161 intercepted, 13 fell in sea), 8 cruise missiles (all intercepted), 689 drones (645 intercepted, 44 hit). Qatar: 104 missiles detected (101 intercepted), 39 drones (24 intercepted), 2 Iranian Su-24 aircraft shot down. Kuwait: 97 ballistic missiles, 283 drones. Bahrain: 70 missiles, 76 drones intercepted. Total across Gulf: 400+ ballistic missiles and ~1,000 drones per CNN citing regional governments.",
-    "intercepted": "UAE: 161/174 ballistic missiles, 8/8 cruise missiles, 645/689 drones. Qatar: 101/104 missiles, 24/39 drones, plus 2 Su-24 aircraft. Bahrain: 70 missiles, 76 drones. Kuwait: 97+ missiles, 283+ drones targeted. Jordan: 13 missiles, 49 drones intercepted."
+    "summary": "Day 4 of conflict: Iran continues retaliatory strikes across Gulf. US Consulate in Dubai struck by drone (no injuries). US embassies in Saudi Arabia, Kuwait, and Lebanon closed. Iran's FM Araghchi says Tehran targeting US assets, not Gulf neighbors. UAE updated interception figures. Sec. Rubio says US-Israeli strikes will increase in scope and intensity. Iraq emerges as active front with 70+ strikes on Erbil area.",
+    "totalBarrage": "UAE alone: 186 ballistic missiles, 812 drones, 8 cruise missiles detected (UAE MoD March 3). Kuwait: 178 ballistic missiles, 384 drones (KUNA). Bahrain: 73 missiles, 91 drones. Qatar: 104 missiles, 39 drones, 2 Su-24 aircraft shot down. Cross-Gulf total estimated at 1,000+ missiles and 1,300+ drones.",
+    "intercepted": "UAE: 172 of 186 ballistic missiles destroyed, 755 of 812 drones intercepted, 8 cruise missiles destroyed. 57 drones and 1 missile impacted UAE territory. Kuwait: 178 missiles and 384 drones intercepted. Bahrain: 73 missiles, 91 drones. Qatar: 101 of 104 missiles, 24 of 39 drones, plus 2 Iranian Su-24s."
 };
 
 const LOCATIONS = [
@@ -894,7 +894,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🛢️",
             "type": "Oil infrastructure debris fire",
-            "detail": "A major fire broke out at the Fujairah Oil Industry Zone on Tuesday March 3 after debris from a successfully intercepted Iranian drone fell inside the facility. The Fujairah Media Office confirmed no injuries were reported, the fire was contained, and normal operations resumed. Fujairah is the world's third-largest oil storage hub and a key bunker fuel supplier for ships transiting the Strait of Hormuz. On March 3, Fujairah authorities confirmed sounds heard were from successful air defense interceptions.",
+            "detail": "A major fire broke out at the Fujairah Oil Industry Zone on Tuesday March 3 after debris from a successfully intercepted Iranian drone fell inside the facility. The Fujairah Media Office confirmed no injuries were reported, the fire was contained, and normal operations resumed. Fujairah is the world's third-largest oil storage hub and a key bunker fuel supplier for ships transiting the Strait of Hormuz. On March 3, Fujairah authorities confirmed sounds heard were from successful air defense interceptions. On March 3, a new debris fire from a drone interception prompted the suspension of an ATP Challenger tennis tournament in Fujairah. The Fujairah press office confirmed ongoing interception operations.",
             "incidents": [
                     {
                             "date": "2026-03-03",
@@ -925,6 +925,46 @@ const LOCATIONS = [
                     {
                             "name": "The Peninsula Qatar",
                             "url": "https://thepeninsulaqatar.com/article/03/03/2026/live-updates-attack-by-two-drones-on-us-embassy-in-saudi-capital-sparks-limited-fire"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/3/uae-tennis-tournament-suspended-after-drone-interception-sparks-fire"
+                    }
+            ],
+            "dateAdded": "2026-03-03"
+    },
+    {
+            "name": "US Consulate General, Dubai (Drone Strike)",
+            "lat": 25.2517,
+            "lng": 55.2893,
+            "country": "UAE",
+            "city": "Dubai",
+            "severity": "critical",
+            "icon": "🏛️",
+            "type": "Diplomatic Facility Strike",
+            "detail": "An Iranian drone struck a parking lot adjacent to the US Consulate General chancellery building in Dubai, causing a fire. US Secretary of State Marco Rubio confirmed all personnel were accounted for. The Dubai Media Office confirmed the fire was extinguished with no injuries reported.",
+            "incidents": [
+                    {
+                            "date": "2026-03-03",
+                            "text": "Iranian drone struck parking lot adjacent to US Consulate chancellery building, causing fire. Consulate had been evacuated prior to strike. Fire contained, no injuries. Confirmed by Sec. Rubio and Dubai Media Office."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "CNN",
+                            "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-03-26"
+                    },
+                    {
+                            "name": "NBC News",
+                            "url": "https://www.nbcnews.com/world/iran/live-blog/iran-israel-us-attack-trump-live-updates-rcna261438"
+                    },
+                    {
+                            "name": "Al Arabiya",
+                            "url": "https://english.alarabiya.net/News/gulf/2026/03/04/iranian-drone-strike-targets-us-consulate-in-dubai-uae-says-no-injuries"
+                    },
+                    {
+                            "name": "CNN Video",
+                            "url": "https://edition.cnn.com/2026/03/03/world/video/dubai-us-consulate-drone-digvid"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -1130,7 +1170,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🎯",
             "type": "Bahrain Air Force / US Support Base",
-            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began.",
+            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1163,6 +1203,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Bahrain Defence Force reports updated total interceptions: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, ARN News)."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Bahrain Defence Force updated interception totals: 73 missiles and 91 drones intercepted since start of conflict (up from 70 missiles and 76 drones reported earlier)."
                     }
             ],
             "sources": [
