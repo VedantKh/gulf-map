@@ -8,14 +8,14 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T04:08:54.350Z",
+    "lastUpdated": "2026-03-03T05:46:03.592Z",
     "casualties": {
         "killed": 20,
         "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 (Tue Mar 3): Iran continues retaliatory strikes across the Gulf. IRGC formally declares Strait of Hormuz 'closed' and announces campaign to destroy 'American political centers.' US Embassy in Riyadh struck by drones. Explosions heard in Erbil, Dubai, Abu Dhabi, and Doha. Bahrain sirens activated. Qatar shoots down two Iranian Su-24 bombers. Trump says campaign could last ~4 weeks. IRGC threatens to attack oil pipelines and prevent any oil from leaving the region.",
-    "totalBarrage": "Updated interception totals as of Tue Mar 3 (CNN/state media): Kuwait: 178 ballistic missiles + 384 drones intercepted. UAE: 169/182 missiles intercepted + 645 drones (44 hit territory). Bahrain: 70 missiles + 76 drones intercepted. Qatar: 101/104 missiles + 24/39 drones intercepted + 2 Iranian Su-24 bombers shot down.",
+    "summary": "Day 4 (Mar 3): Iran continues retaliatory strikes across the Gulf entering fourth day. IRGC declares Strait of Hormuz closed. US Embassy in Riyadh hit by drones. New waves of missiles/drones detected over Kuwait and Bahrain early Tuesday. Explosions reported in Erbil, Iraq. 6 US service members confirmed KIA at Shuaiba port. QatarEnergy halts LNG production indefinitely. Iran-backed Iraqi militia attacks US Victory Base in Baghdad. Qatar shot down 2 Iranian Su-24 bomber aircraft.",
+    "totalBarrage": "Updated Gulf state interception tallies (as of Mar 3 per CNN/state media): Kuwait: 178 ballistic missiles + 384 drones; UAE: 169 of 182 missiles intercepted + 645 drones (44 hit territory); Bahrain: 70 missiles + 76 drones; Qatar: 101 of 104 missiles + 24 of 39 drones + 2 Iranian Su-24 bombers shot down; Saudi Arabia: 8 drones intercepted near Riyadh/Al-Kharj on Mar 3 (no cumulative total released)",
     "intercepted": "Combined confirmed interceptions across Gulf states exceed 1,300 missiles/drones. Significant leakage continues — UAE reports 44 drones penetrated territory, Qatar reports 15 drones reached territory, multiple confirmed impacts across all GCC states."
 };
 
@@ -2166,7 +2166,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Direct Iranian strike on US military facility",
-            "detail": "Six US service members killed when an Iranian projectile scored a direct hit on a makeshift tactical operations center at the civilian port of Shuaiba on Sunday morning local time. Defense Secretary Hegseth confirmed one projectile penetrated air defenses and struck a fortified triple-wide trailer used as an operations center. No warning or siren preceded the strike. CENTCOM confirmed the death toll rose to 6 on Monday afternoon after two additional remains were recovered. CENTCOM confirmed on Mar 2 that the death toll from the Mar 1 drone strike at Shuaiba Port has risen to 6 US service members killed. Remains of 2 additional personnel were recovered from the struck makeshift tactical operations center. 18 US troops seriously wounded total across Operation Epic Fury.",
+            "detail": "Six US service members killed when an Iranian projectile scored a direct hit on a makeshift tactical operations center at the civilian port of Shuaiba on Sunday morning local time. Defense Secretary Hegseth confirmed one projectile penetrated air defenses and struck a fortified triple-wide trailer used as an operations center. No warning or siren preceded the strike. CENTCOM confirmed the death toll rose to 6 on Monday afternoon after two additional remains were recovered. CENTCOM confirmed on Mar 2 that the death toll from the Mar 1 drone strike at Shuaiba Port has risen to 6 US service members killed. Remains of 2 additional personnel were recovered from the struck makeshift tactical operations center. 18 US troops seriously wounded total across Operation Epic Fury. US death toll confirmed at 6 after CENTCOM recovered remains of two additional service members. A CENTCOM spokesperson confirmed 18 troops seriously wounded across Operation Epic Fury.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -2175,6 +2175,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "CENTCOM confirmed US death toll at Shuaiba rose to 6 after recovering remains of 2 additional previously unaccounted-for service members; total 18 US troops seriously wounded across Operation Epic Fury; Defense Secretary Hegseth confirmed a single projectile penetrated air defenses in direct hit on triple-wide trailer operations center"
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "CENTCOM confirms US death toll from Shuaiba port strike rises to 6 after remains of two previously unaccounted-for service members recovered. All 6 were Army soldiers from the same logistics unit. CENTCOM also reports 18 troops seriously wounded across the operation."
                     }
             ],
             "sources": [
@@ -2197,6 +2201,10 @@ const LOCATIONS = [
                     {
                             "name": "Axios",
                             "url": "https://www.axios.com/2026/03/02/3-us-fighter-jets-friendly-fire-kuwait"
+                    },
+                    {
+                            "name": "AP / OPB",
+                            "url": "https://www.opb.org/article/2026/03/02/as-mideast-conflict-widens-us-says-attacks-on-iran-will-last-weeks-and-intensify/"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2214,7 +2222,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US/Saudi Air Base — Missile & Drone Strike",
-            "detail": "Major US military air base ~60 km south of Riyadh. Hosts US THAAD, Patriot, KC-135 tankers, E-3G AWACS. IRGC claimed they 'precisely hit' the base. Saudi Arabia said air defenses intercepted missiles near the base. Reports confirm impacts on base infrastructure.",
+            "detail": "Major US military air base ~60 km south of Riyadh. Hosts US THAAD, Patriot, KC-135 tankers, E-3G AWACS. IRGC claimed they 'precisely hit' the base. Saudi Arabia said air defenses intercepted missiles near the base. Reports confirm impacts on base infrastructure. On March 3, Saudi Defense Ministry reported intercepting 8 drones near Riyadh and Al-Kharj, in the vicinity of PSAB.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -2223,6 +2231,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "Saudi air defenses intercepted Iranian missiles near Prince Sultan Airbase in second wave."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Saudi military intercepted and destroyed 8 drones near Riyadh and Al-Kharj early Tuesday, per the Defense Ministry. Al-Kharj is near PSAB."
                     }
             ],
             "sources": [
@@ -2237,6 +2249,10 @@ const LOCATIONS = [
                     {
                             "name": "Asharq Al-Awsat",
                             "url": "https://english.aawsat.com/gulf/5245738-saudi-arabia-strongly-condemns-failed-cowardly-iranian-attacks-targeting-riyadh-and"
+                    },
+                    {
+                            "name": "CNN Live Blog (Mar 3)",
+                            "url": "https://www.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
                     }
             ],
             "dateAdded": "2026-02-28"
