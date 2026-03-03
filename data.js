@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T11:27:03.141Z",
+    "lastUpdated": "2026-03-03T13:57:00.665Z",
     "casualties": {
         "killed": 20,
         "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 of Iran retaliatory strikes. IRGC declares Strait of Hormuz closed. Iran continues striking energy infrastructure across the Gulf. Attacks expanding to Iraq with Iranian-backed militias targeting US bases in Erbil and Baghdad. 6 US service members confirmed KIA. Iran death toll from US-Israeli strikes rises to 787 per Al Jazeera.",
-    "totalBarrage": "Over 400 ballistic missiles and ~1,000 drones fired at Gulf Arab states since Feb 28 (CNN). Breakdown: UAE targeted with 182 ballistic missiles + 645+ drones; Qatar with 104 missiles + 39 drones; Bahrain with 70+ missiles + 76+ drones; Kuwait with 180+ missiles + 380+ drones (per CNN, Breaking Defense, regional defense ministries).",
-    "intercepted": "UAE: 169 of 182 missiles intercepted, 506 of 645 drones destroyed (35 fell in-country). Qatar: 101 of 104 missiles, 24 of 39 drones intercepted, plus 2 Iranian Su-24 bombers shot down. Bahrain: 70 missiles, 76 drones intercepted. Kuwait: majority intercepted per KUNA (per CNN, Breaking Defense, QNA)."
+    "summary": "Day 4 of conflict (March 3). IRGC launched Waves 11-12 of Operation True Promise 4. Iran-backed militias in Iraq have opened a new front in Erbil with 23+ claimed drone strikes. US embassies in Saudi Arabia and Kuwait closed. US has ordered non-essential personnel evacuations from Gulf embassies. Six US service members KIA confirmed by CENTCOM. IRGC officially declared Strait of Hormuz closed, threatening to attack any passing vessel.",
+    "totalBarrage": "Updated regional interception counts as of March 3 (CNN/regional MODs): UAE — 182 missiles detected (169 intercepted), 689 drones (645 intercepted, 44 hit territory); Kuwait — 178 missiles, 384 drones intercepted; Bahrain — 70 missiles, 76 drones intercepted; Qatar — 104 missiles (101 intercepted), 39 drones (24 intercepted), 2 Iranian Su-24 aircraft shot down; Saudi Arabia — partial count of 8 drones intercepted near Riyadh/Al-Kharj. Total tracked across 5 states: ~1,457 projectiles.",
+    "intercepted": "Updated totals across Gulf: ~1,363 projectiles confirmed intercepted (UAE: 814, Kuwait: 562, Bahrain: 146, Qatar: 127, Saudi partial: 8). At least 44 drones confirmed hitting UAE territory. Multiple unintercepted strikes confirmed across all countries."
 };
 
 const LOCATIONS = [
@@ -818,11 +818,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Military Base Drone Strike",
-            "detail": "Iranian drones struck Al Minhad Air Base, located 24km south of Dubai, which hosts US, Australian, and coalition military forces. Australian Defense Minister Richard Marles confirmed the base was hit on the first night of attacks (Feb 28). All Australian staff at the base were reported safe and accounted for. Al Minhad has hosted Australian forces since 2003 and serves as the primary hub for coalition operations in the Middle East.",
+            "detail": "Iranian drones struck Al Minhad Air Base, located 24km south of Dubai, which hosts US, Australian, and coalition military forces. Australian Defense Minister Richard Marles confirmed the base was hit on the first night of attacks (Feb 28). All Australian staff at the base were reported safe and accounted for. Al Minhad has hosted Australian forces since 2003 and serves as the primary hub for coalition operations in the Middle East. IRGC claimed in Wave 12 that Al Minhad base was struck by 6 drones and 5 ballistic missiles on March 2. Claim not independently verified by UAE MOD but consistent with updated UAE interception totals showing significantly increased targeting.",
             "incidents": [
                     {
                             "date": "2026-02-28",
                             "text": "Iranian drones struck Al Minhad Air Base on the first night of attacks; confirmed by Australian Defense Minister Marles; all coalition staff safe and accounted for"
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "IRGC Wave 12 of Operation True Promise 4 claimed the US military command and control center at Al Minhad was hit by 6 drones and 5 ballistic missiles, per Al Mayadeen citing IRGC statement. UAE updated total drone count: 689 detected (645 intercepted, 44 hitting within territory)."
                     }
             ],
             "sources": [
@@ -833,6 +837,10 @@ const LOCATIONS = [
                     {
                             "name": "Times of Israel",
                             "url": "https://www.timesofisrael.com/liveblog_entry/australia-says-its-mideast-military-hq-was-hit-by-iranian-drone-attack-over-weekend/"
+                    },
+                    {
+                            "name": "Al Mayadeen (IRGC Wave 12 claim)",
+                            "url": "https://english.almayadeen.net/news/politics/wave-12-of-true-promise-4--enemy-naval-assets--fuel-tankers"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -1038,7 +1046,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🎯",
             "type": "Bahrain Air Force / US Support Base",
-            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts.",
+            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1055,6 +1063,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Bahrain sirens activated again on Tuesday morning (March 3); air raid alerts continue per Interior Ministry"
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Bahrain air-raid sirens sounded again Tuesday morning (March 3). Bahrain Defence Force updated total interceptions to 70 missiles and 76 drones since start of conflict, a significant increase from earlier count of 45 missiles and 9 drones, indicating sustained targeting through March 2-3."
                     }
             ],
             "sources": [
@@ -2280,6 +2292,42 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-02"
+    },
+    {
+            "name": "Camp Arifjan (US Army Base), Kuwait",
+            "lat": 29.0619,
+            "lng": 48.1003,
+            "country": "Kuwait",
+            "city": "Al Ahmadi Governorate",
+            "severity": "critical",
+            "icon": "🎯",
+            "type": "US Military Base Strike",
+            "detail": "Camp Arifjan, a major US Army base in southern Kuwait housing logistics and sustainment troops, was targeted by Iranian drones. Anadolu Agency reported US officials confirmed a strike with casualties. IRGC claimed 12 drone strikes on the base as part of Operation True Promise 4 Wave 12. A halt-to-movement order was issued for Camp Arifjan along with other Kuwait bases.",
+            "incidents": [
+                    {
+                            "date": "2026-03-01",
+                            "text": "Anadolu Agency reported US officials confirmed an Iranian strike on Camp Arifjan with casualties (3 killed, 5 seriously injured initially reported). Halt-to-movement ordered at Camp Arifjan and other Kuwait bases."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "IRGC claimed 12 drone strikes on Camp Arifjan as part of Wave 12 of Operation True Promise 4, per TASS citing IRGC statement."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Anadolu Agency",
+                            "url": "https://www.aa.com.tr/en/middle-east/iran-hits-6-us-military-sites-across-gulf-report/3846334"
+                    },
+                    {
+                            "name": "CNN (Shuaiba/Kuwait casualties context)",
+                            "url": "https://www.cnn.com/2026/03/02/politics/six-soldiers-killed-in-iranian-strike-kuwait"
+                    },
+                    {
+                            "name": "CBS News (halt to movement)",
+                            "url": "https://www.cbs17.com/news/national-news/us-service-members-in-kuwait-were-killed-in-military-operation-against-iran/"
+                    }
+            ],
+            "dateAdded": "2026-03-03"
     },
 
     // ═══════════════════════════════════════════════════════════
