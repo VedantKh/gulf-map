@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T19:36:54.773Z",
+    "lastUpdated": "2026-03-03T20:26:32.815Z",
     "casualties": {
         "killed": 20,
         "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 of Iran's Operation True Promise IV retaliation. IRGC general threatens to hit 'all economic hubs in the Middle East' if strikes continue. Iraqi FM reports 70+ missile/drone attacks on Erbil alone. Iraq now confirmed as active theater with proxy militia strikes on US bases at Erbil and Baghdad. JMIC maritime threat level at CRITICAL across Strait of Hormuz.",
-    "totalBarrage": "Updated March 3 (Al Jazeera citing defense ministries): UAE targeted by 186 missiles (172 destroyed) and 812 drones (755 intercepted); Bahrain: 73 missiles and 91 drones destroyed; Qatar: 104 missiles (101 intercepted), 39 drones (24 intercepted), 2 Iranian Su-24 aircraft shot down; Kuwait: 97 missiles and 283 drones intercepted. Total across Gulf states exceeds 460 missiles and 1,225+ drones.",
-    "intercepted": "Updated March 3: UAE intercepted 172/186 missiles + 755/812 drones; Bahrain destroyed 73 missiles + 91 drones; Qatar intercepted 101/104 missiles + 24/39 drones; Kuwait intercepted 97 missiles + 283 drones. Some projectiles penetrating defenses across all states."
+    "summary": "Day 4 (March 3 local/Day 5 UTC): IRGC general threatens to hit 'all economic hubs in the Middle East.' Iran expands strikes to Oman's Port of Salalah and Fujairah energy bypass hub. UAE considering 'active defense measures against Iran' per Axios. Attacks in Iraq by Iranian-backed militias confirmed at Erbil and Baghdad. Port operations suspended at Duqm and Salalah in Oman.",
+    "totalBarrage": "Updated totals (as of March 3 per CNN/state media): UAE detected 182 missiles (169 intercepted) + 689 drones (645 intercepted, 44 hit territory); Bahrain intercepted 70 missiles + 76 drones; Qatar intercepted 101 of 104 missiles + 24 of 39 drones, shot down 2 Iranian Su-24 bombers; Kuwait intercepted 178 ballistic missiles + 384 drones.",
+    "intercepted": "Across all Gulf states, well over 500 ballistic missiles and 1,100+ drones tracked. Majority intercepted but dozens of drones and several missiles have struck targets across 9 countries."
 };
 
 const LOCATIONS = [
@@ -2666,7 +2666,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🛢️",
             "type": "World's Largest Oil Processing — Previously Attacked",
-            "detail": "Processes ~7 million bpd — roughly 7% of global supply. Previously attacked by Iran-linked drones in Sept 2019, temporarily halving Saudi oil output. A prime escalation target. March 3: IRGC general threatened to hit 'all economic hubs in the Middle East' if US-Israeli attacks continue. Abqaiq remains on elevated alert.",
+            "detail": "Processes ~7 million bpd — roughly 7% of global supply. Previously attacked by Iran-linked drones in Sept 2019, temporarily halving Saudi oil output. A prime escalation target. March 3: IRGC general threatened to hit 'all economic hubs in the Middle East' if US-Israeli attacks continue. Abqaiq remains on elevated alert. IRGC general explicitly threatened all economic hubs in the Middle East on March 3. Abqaiq remains at elevated risk.",
             "incidents": [
                     {
                             "date": "2019-09-14",
@@ -2679,6 +2679,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "IRGC general stated on March 3 that if joint US-Israeli attacks continue, Iran will hit 'all economic hubs in the Middle East.' Abqaiq remains a high-value target given 2019 precedent and proximity to ongoing Ras Tanura strikes. Elevated watchlist threat. (Wikipedia citing IRGC statement)"
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "IRGC general threatened to 'hit all economic hubs in the Middle East' if US-Israeli attacks continue, per Iranian state media. Abqaiq remains a high-value energy target under elevated threat."
                     }
             ],
             "sources": [
@@ -2786,7 +2790,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🏛️",
             "type": "Drone Strike on US Embassy",
-            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran.",
+            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran. On morning of March 3: After initial 2 drones hit US Embassy, 2 more drones struck the Diplomatic Quarter per Reuters sources. Saudi MoD confirmed.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -2803,6 +2807,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Embassy closed indefinitely following the drone strike. Saudi MoD intercepted and destroyed 8 additional drones near Riyadh and Al-Kharj after the embassy attack. US Mission issued shelter-in-place for Riyadh, Jeddah and Dhahran. Trump vowed retaliation."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Reuters reported a second wave: shortly after initial two drones struck the US Embassy, two more drones struck the Diplomatic Quarter area. Saudi MoD confirmed strikes."
                     }
             ],
             "sources": [
@@ -2837,6 +2845,10 @@ const LOCATIONS = [
                     {
                             "name": "Jerusalem Post",
                             "url": "https://www.jpost.com/middle-east/article-888595"
+                    },
+                    {
+                            "name": "Wikipedia (citing Reuters)",
+                            "url": "https://en.wikipedia.org/wiki/2026_Iran_conflict"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -2878,7 +2890,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "💥",
             "type": "Omani Port — Struck by 2 Iranian Drones",
-            "detail": "Major Omani port on the Arabian Sea coast. Targeted by 2 Iranian drones on Mar 1. One struck foreign workers' residences, injuring 1. Iran FM claimed 'not our choice.' This shatters Oman's traditional neutrality. Oman News Agency confirmed two drones hit Duqm port on March 1, injuring one expatriate worker. First attack on Oman. GCC condemned the strike on the mediator state. March 3: Second drone attack in three days. Multiple drones targeted fuel storage tanks; one hit a fuel tank with damage contained and no casualties (Oman News Agency via AFP). On March 3, a second wave of drones targeted Duqm port, hitting a fuel storage tank. ONA confirmed damage was contained with no casualties. On March 3, a fuel tank at the port was hit in a drone attack. No casualties; damage contained per Oman News Agency.",
+            "detail": "Major Omani port on the Arabian Sea coast. Targeted by 2 Iranian drones on Mar 1. One struck foreign workers' residences, injuring 1. Iran FM claimed 'not our choice.' This shatters Oman's traditional neutrality. Oman News Agency confirmed two drones hit Duqm port on March 1, injuring one expatriate worker. First attack on Oman. GCC condemned the strike on the mediator state. March 3: Second drone attack in three days. Multiple drones targeted fuel storage tanks; one hit a fuel tank with damage contained and no casualties (Oman News Agency via AFP). On March 3, a second wave of drones targeted Duqm port, hitting a fuel storage tank. ONA confirmed damage was contained with no casualties. On March 3, a fuel tank at the port was hit in a drone attack. No casualties; damage contained per Oman News Agency. Second attack on March 3: Iranian drones hit fuel storage tank at Duqm Port. Port and drydock operations suspended until further notice.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -2899,6 +2911,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Fuel tank at Duqm commercial port hit in a new drone attack. No casualties reported; material damage contained (Oman News Agency)."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Second wave: several drones targeted Duqm Port; one struck a fuel storage tank. Damage contained, no casualties reported per Oman News Agency. Port operations at Duqm, Asyad Drydock suspended until further notice."
                     }
             ],
             "sources": [
@@ -2941,6 +2957,18 @@ const LOCATIONS = [
                     {
                             "name": "The Peninsula Qatar (ONA)",
                             "url": "https://thepeninsulaqatar.com/article/03/03/2026/live-updates-attack-by-two-drones-on-us-embassy-in-saudi-capital-sparks-limited-fire"
+                    },
+                    {
+                            "name": "Argus Media (citing ONA)",
+                            "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2794546-oman-reports-first-drone-attack-amid-regional-tensions"
+                    },
+                    {
+                            "name": "The War Zone",
+                            "url": "https://www.twz.com/news-features/gulf-arab-states-under-pressure-as-iranian-attacks-grind-on"
+                    },
+                    {
+                            "name": "Seatrade Maritime",
+                            "url": "https://www.seatrade-maritime.com/security/oman-ports-targeted-by-drone-attacks"
                     }
             ],
             "dateAdded": "2026-03-01"
@@ -3012,6 +3040,38 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-02"
+    },
+    {
+            "name": "Port of Salalah (Drone Crash), Dhofar, Oman",
+            "lat": 16.9386,
+            "lng": 54.0069,
+            "country": "Oman",
+            "city": "Salalah",
+            "severity": "high",
+            "icon": "⚓",
+            "type": "Drone crash near major port",
+            "detail": "Oman News Agency confirmed that two drones were shot down over the Dhofar Governorate and a third crashed near the Port of Salalah on March 3. Video footage captured the moment of impact. Oman reported no casualties or material damage, but port operations at the Salalah General Cargo Terminal were suspended until further notice per Inchcape Shipping Services.",
+            "incidents": [
+                    {
+                            "date": "2026-03-03",
+                            "text": "Iranian drone crashed near Port of Salalah; two additional drones shot down over Dhofar Governorate. No casualties reported. Port General Cargo Terminal operations suspended."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Al Arabiya (citing Oman News Agency)",
+                            "url": "https://english.alarabiya.net/News/gulf/2026/03/03/drone-crashes-near-omani-port-two-others-downed-state-media-"
+                    },
+                    {
+                            "name": "Seatrade Maritime",
+                            "url": "https://www.seatrade-maritime.com/security/oman-ports-targeted-by-drone-attacks"
+                    },
+                    {
+                            "name": "The War Zone",
+                            "url": "https://www.twz.com/news-features/gulf-arab-states-under-pressure-as-iranian-attacks-grind-on"
+                    }
+            ],
+            "dateAdded": "2026-03-03"
     },
 
     // ═══════════════════════════════════════════════════════════
