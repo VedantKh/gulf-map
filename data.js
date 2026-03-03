@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T18:38:12.501Z",
+    "lastUpdated": "2026-03-03T19:36:54.773Z",
     "casualties": {
         "killed": 20,
         "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 of conflict. Iran continues strikes across 9+ countries. IRGC general threatens to target all economic hubs in the Gulf if US-Israeli attacks continue. US embassy warns of imminent attack on Dhahran. Iraqi militia attacks on Erbil intensifying. Iran's total barrage: 400+ ballistic missiles and ~1,000+ drones at Arab states (per CNN/regional governments). GCC states say they reserve the right to respond militarily.",
-    "totalBarrage": "Updated regional government figures (Mar 3): UAE reports 186 missiles tracked (172 intercepted) + 812 drones (755 intercepted). Kuwait: 178 missiles + 384 drones intercepted. Bahrain: 73 missiles + 91 drones destroyed. Qatar: 104 missiles (101 intercepted) + 39 drones (24 intercepted) + 2 Iranian Su-24 aircraft shot down. Total estimated: 400+ ballistic missiles and 1,000+ drones launched at Gulf states.",
-    "intercepted": "Updated interception figures (Mar 3): UAE: 172 of 186 missiles, 755 of 812 drones. Kuwait: 178 missiles, 384 drones. Bahrain: 73 missiles, 91 drones. Qatar: 101 of 104 missiles, 24 of 39 drones + 2 Su-24s. Saudi Arabia: 8+ drones near Riyadh/Al-Kharj on Mar 3 alone."
+    "summary": "Day 4 of Iran's Operation True Promise IV retaliation. IRGC general threatens to hit 'all economic hubs in the Middle East' if strikes continue. Iraqi FM reports 70+ missile/drone attacks on Erbil alone. Iraq now confirmed as active theater with proxy militia strikes on US bases at Erbil and Baghdad. JMIC maritime threat level at CRITICAL across Strait of Hormuz.",
+    "totalBarrage": "Updated March 3 (Al Jazeera citing defense ministries): UAE targeted by 186 missiles (172 destroyed) and 812 drones (755 intercepted); Bahrain: 73 missiles and 91 drones destroyed; Qatar: 104 missiles (101 intercepted), 39 drones (24 intercepted), 2 Iranian Su-24 aircraft shot down; Kuwait: 97 missiles and 283 drones intercepted. Total across Gulf states exceeds 460 missiles and 1,225+ drones.",
+    "intercepted": "Updated March 3: UAE intercepted 172/186 missiles + 755/812 drones; Bahrain destroyed 73 missiles + 91 drones; Qatar intercepted 101/104 missiles + 24/39 drones; Kuwait intercepted 97 missiles + 283 drones. Some projectiles penetrating defenses across all states."
 };
 
 const LOCATIONS = [
@@ -730,7 +730,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Projectile attacks on commercial vessels",
-            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit.",
+            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit. JMIC elevated regional maritime threat level to 'critical' on March 1. At least five commercial vessels struck or targeted in 24 hours. Oil tanker Hercules Star struck near Mina Saqr; bulk carrier Ocean Electra near-miss off Sharjah.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -755,6 +755,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "IRGC formally declared Strait of Hormuz closed; threatened to attack any vessel attempting transit. At least 5 tankers damaged, 2 crew killed, ~150 ships stranded per Al Jazeera."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "JMIC raised regional maritime threat level to 'critical' (highest designation) after five commercial vessels struck or targeted in 24 hours across Gulf of Oman, Musandam approaches and UAE coastal waters. Oil tanker Hercules Star struck 17nm NW of Mina Saqr; fire extinguished, no injuries. Bulk carrier Ocean Electra near-miss 35nm W of Sharjah. (Maritime Telegraph, Argus Media)"
                     }
             ],
             "sources": [
@@ -801,6 +805,14 @@ const LOCATIONS = [
                     {
                             "name": "CNBC",
                             "url": "https://www.cnbc.com/2026/03/03/strait-of-hormuz-closure-which-countries-will-be-hit-the-most.html"
+                    },
+                    {
+                            "name": "Maritime Telegraph (vessel attack summary)",
+                            "url": "https://www.maritimetelegraph.com/stena-imperative-hit/"
+                    },
+                    {
+                            "name": "Argus Media (JMIC threat level critical)",
+                            "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2795180-us-flagged-tanker-hit-in-bahrain"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1242,7 +1254,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Interceptor debris / vessel fire",
-            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2. Mar 2: UKMTO confirmed vessel struck by 2 projectiles. Bahrain Interior Ministry: 1 Asian worker killed, 2 seriously injured from interceptor debris falling on foreign ship at Salman Industrial City. On March 2, Bahrain's Ministry of Interior confirmed 1 Asian worker killed and 2 seriously injured from intercepted missile debris falling on a foreign vessel. Bahrain Defence Force reports total of 61 missiles and 34 drones intercepted since the start of the conflict. March 2: US-flagged tanker Stena Imperative struck by two projectiles in Port of Bahrain per Reuters/Vanguard Tech. Fire broke out and was extinguished; crew evacuated. UKMTO confirmed the vessel fire incident. US-flagged tanker Stena Imperative (part of US MARAD Tanker Security Program) struck by 2 projectiles at Bahrain port shipyard on Mar 2. One shoreside shipyard worker killed, two others injured. Ship crew unharmed. First US-flagged vessel attacked in the conflict. Vessel had previously been harassed by IRGC fast boats in Feb 2026.",
+            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2. Mar 2: UKMTO confirmed vessel struck by 2 projectiles. Bahrain Interior Ministry: 1 Asian worker killed, 2 seriously injured from interceptor debris falling on foreign ship at Salman Industrial City. On March 2, Bahrain's Ministry of Interior confirmed 1 Asian worker killed and 2 seriously injured from intercepted missile debris falling on a foreign vessel. Bahrain Defence Force reports total of 61 missiles and 34 drones intercepted since the start of the conflict. March 2: US-flagged tanker Stena Imperative struck by two projectiles in Port of Bahrain per Reuters/Vanguard Tech. Fire broke out and was extinguished; crew evacuated. UKMTO confirmed the vessel fire incident. US-flagged tanker Stena Imperative (part of US MARAD Tanker Security Program) struck by 2 projectiles at Bahrain port shipyard on Mar 2. One shoreside shipyard worker killed, two others injured. Ship crew unharmed. First US-flagged vessel attacked in the conflict. Vessel had previously been harassed by IRGC fast boats in Feb 2026. On March 2, US-flagged tanker MT Stena Imperative (part of US MARAD Tanker Security Program) was struck by two projectiles at Salman Industrial City. One shipyard worker killed, two injured. Fire extinguished; crew evacuated unharmed.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1279,6 +1291,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "US-flagged tanker Stena Imperative (MARAD Tanker Security Program vessel) struck by 2 projectiles at ~0300 local time while in Bahrain shipyard; fire broke out and was extinguished; 1 shipyard worker killed, 2 others injured; ship crew unharmed — first US-flagged vessel attacked in the conflict"
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "US-flagged tanker MT Stena Imperative struck by two aerial projectiles while berthed at Salman Industrial City. Fire broke out on board and was extinguished. One shipyard worker killed, two seriously injured. Crew safely evacuated. Bahrain Interior Ministry confirmed death of Asian worker from intercepted missile debris falling on vessel. (USNI News, Reuters, Crowley statement)"
                     }
             ],
             "sources": [
@@ -1353,6 +1369,14 @@ const LOCATIONS = [
                     {
                             "name": "Argus Media",
                             "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2795180-us-flagged-tanker-hit-in-bahrain"
+                    },
+                    {
+                            "name": "Reuters via Yahoo News (tanker hit confirmation)",
+                            "url": "https://www.yahoo.com/news/articles/us-flagged-tanker-hit-bahrain-131900134.html"
+                    },
+                    {
+                            "name": "Maritime Executive (detailed report)",
+                            "url": "https://maritime-executive.com/article/u-s-flagged-stena-tanker-hit-by-iranian-missiles-during-attack-on-bahrain"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2642,7 +2666,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🛢️",
             "type": "World's Largest Oil Processing — Previously Attacked",
-            "detail": "Processes ~7 million bpd — roughly 7% of global supply. Previously attacked by Iran-linked drones in Sept 2019, temporarily halving Saudi oil output. A prime escalation target.",
+            "detail": "Processes ~7 million bpd — roughly 7% of global supply. Previously attacked by Iran-linked drones in Sept 2019, temporarily halving Saudi oil output. A prime escalation target. March 3: IRGC general threatened to hit 'all economic hubs in the Middle East' if US-Israeli attacks continue. Abqaiq remains on elevated alert.",
             "incidents": [
                     {
                             "date": "2019-09-14",
@@ -2651,12 +2675,20 @@ const LOCATIONS = [
                     {
                             "date": "2026-02-28",
                             "text": "Saudi placed all critical energy infrastructure on highest alert."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "IRGC general stated on March 3 that if joint US-Israeli attacks continue, Iran will hit 'all economic hubs in the Middle East.' Abqaiq remains a high-value target given 2019 precedent and proximity to ongoing Ras Tanura strikes. Elevated watchlist threat. (Wikipedia citing IRGC statement)"
                     }
             ],
             "sources": [
                     {
                             "name": "NPR",
                             "url": "https://www.npr.org/2026/02/28/nx-s1-5678603/iran-strikes-oil-energy-markets"
+                    },
+                    {
+                            "name": "Wikipedia (IRGC economic hubs threat, March 3)",
+                            "url": "https://en.wikipedia.org/wiki/2026_Israeli%E2%80%93United_States_strikes_on_Iran"
                     }
             ],
             "dateAdded": "2026-02-28"
