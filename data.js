@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T15:41:50.250Z",
+    "lastUpdated": "2026-03-03T16:39:03.842Z",
     "casualties": {
         "killed": 20,
         "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 of conflict (Mar 3): Iran continues retaliatory strikes on Gulf energy infrastructure. Fujairah Oil Industry Zone hit by drone debris fire. Second attack on Oman's Duqm port hit fuel storage tank. IRGC officially confirms Strait of Hormuz closure. Iraqi militias sustain drone campaigns against US bases in Erbil and Baghdad. France deploys Rafale jets over UAE to protect its bases.",
-    "totalBarrage": "Updated totals as of Mar 3: UAE detected 182 missiles (169 intercepted) + 689 drones (645 intercepted, 44 hit territory). Kuwait intercepted 178 missiles + 384 drones. Bahrain intercepted 70 missiles + 76 drones. Qatar intercepted 101/104 missiles + 24/39 drones and shot down 2 Iranian Su-24 aircraft. Iran has launched 400+ ballistic missiles and ~1,000 drones at Gulf Arab states since Feb 28.",
-    "intercepted": "Gulf-wide interception operations ongoing. UAE reports 92.9% missile intercept rate. CNN reports updated UAE figures of 169 missiles intercepted out of 182 detected plus 645 drones intercepted out of 689 detected."
+    "summary": "Day 4 (March 3): Iran continues striking energy infrastructure across the Gulf; IRGC reaffirms closure of Strait of Hormuz. UAE government briefing confirms 186 total ballistic missiles launched at the country (172 intercepted, 13 fell in sea, 1 landed on territory March 3 with no casualties). On March 3 alone, UAE intercepted 11 BMs and 123 drones. Iran-backed militias expand attacks to Iraq (Erbil, Baghdad). AWS data centers directly struck in UAE and Bahrain, causing first-ever military disruption to a major US cloud provider. GCC emergency meeting invoked Article 51 of UN Charter, signaling readiness for collective self-defense.",
+    "totalBarrage": "400+ ballistic missiles and ~1,000+ drones at Gulf states since Feb 28 (CNN/regional tallies). By country as of Mar 3: UAE — 186 BMs + 689 drones; Kuwait — 178 BMs + 384 drones; Qatar — 104 BMs + 39 drones + 2 Su-24 aircraft; Bahrain — 70 BMs + 76 drones; Saudi Arabia — figures not fully disclosed; Iraq — 23+ drone strikes on Erbil alone.",
+    "intercepted": "UAE: 172/186 BMs + 645/689 drones (11 BMs + 123 drones on Mar 3 alone); Kuwait: 178 BMs + 384 drones; Bahrain: 70 BMs + 76 drones; Qatar: 101/104 BMs + 24/39 drones + 2 Su-24s shot down; Saudi Arabia: partial figures — 8 drones near Riyadh/Al-Kharj intercepted"
 };
 
 const LOCATIONS = [
@@ -441,14 +441,18 @@ const LOCATIONS = [
             "lng": 54.51,
             "country": "UAE",
             "city": "Abu Dhabi",
-            "severity": "high",
+            "severity": "critical",
             "icon": "🔥",
             "type": "Cloud Data Center — Struck, Fire, Power Cut",
-            "detail": "Amazon Web Services ME-CENTRAL-1 region. Availability Zone mec1-az2 knocked offline after 'objects' struck the data center, causing fire. All power cut. First major hyperscale cloud facility physically damaged during military conflict.",
+            "detail": "Amazon Web Services ME-CENTRAL-1 region. Availability Zone mec1-az2 knocked offline after 'objects' struck the data center, causing fire. All power cut. First major hyperscale cloud facility physically damaged during military conflict. AWS confirmed on March 3 that two UAE facilities were 'directly struck' by drones. A second availability zone (mec1-az3) is also significantly impaired. Strikes caused structural damage, power failures, and water damage from fire suppression. Abu Dhabi Commercial Bank and other financial institutions reported platform outages linked to regional IT disruption.",
             "incidents": [
                     {
                             "date": "2026-03-01",
                             "text": "Objects struck the mec1-az2 data center causing fire. All power cut. EC2 API errors. AWS declined to attribute to Iranian strikes."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "AWS officially confirmed two UAE facilities 'directly struck' by drones, causing structural damage, power disruption, and water damage from fire suppression. Second availability zone (mec1-az3) also significantly impaired. Banking apps and regional cloud services disrupted across UAE."
                     }
             ],
             "sources": [
@@ -463,6 +467,22 @@ const LOCATIONS = [
                     {
                             "name": "Jerusalem Post",
                             "url": "https://www.jpost.com/middle-east/iran-news/article-888442"
+                    },
+                    {
+                            "name": "CNBC",
+                            "url": "https://www.cnbc.com/2026/03/02/amazon-says-drone-strikes-damaged-3-facilities-in-uae-and-bahrain.html"
+                    },
+                    {
+                            "name": "The Register",
+                            "url": "https://www.theregister.com/2026/03/02/amazon_outages_middle_east/"
+                    },
+                    {
+                            "name": "BleepingComputer",
+                            "url": "https://www.bleepingcomputer.com/news/technology/amazon-drone-strikes-damaged-aws-data-centers-in-middle-east/"
+                    },
+                    {
+                            "name": "The National",
+                            "url": "https://www.thenationalnews.com/business/2026/03/03/drone-strikes-damage-amazon-data-centres-in-uae-and-bahrain-disrupting-services/"
                     }
             ],
             "dateAdded": "2026-03-01"
@@ -1082,7 +1102,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🎯",
             "type": "Bahrain Air Force / US Support Base",
-            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN.",
+            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1103,6 +1123,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Bahrain air-raid sirens sounded again Tuesday morning (March 3). Bahrain Defence Force updated total interceptions to 70 missiles and 76 drones since start of conflict, a significant increase from earlier count of 45 missiles and 9 drones, indicating sustained targeting through March 2-3."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Sirens continued sounding across Bahrain on Tuesday morning. Bahrain Defence Force reports total interceptions to date: 70 ballistic missiles and 76 drones (updated from earlier figures)."
                     }
             ],
             "sources": [
@@ -1308,6 +1332,50 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-02"
+    },
+    {
+            "name": "AWS ME-SOUTH-1 Data Center (mes1-az2), Bahrain",
+            "lat": 26.22,
+            "lng": 50.55,
+            "country": "Bahrain",
+            "city": "Bahrain",
+            "severity": "high",
+            "icon": "⚡",
+            "type": "Data Center / Infrastructure Damage",
+            "detail": "AWS confirmed that a drone strike in close proximity to one of its Bahrain facilities caused physical impacts to infrastructure, including structural damage and disrupted power delivery. The facility (mes1-az2) remains impaired. AWS warned of prolonged disruptions and advised customers to migrate workloads to unaffected regions.",
+            "incidents": [
+                    {
+                            "date": "2026-03-01",
+                            "text": "AWS reported investigating connectivity and power issues in Bahrain ME-SOUTH-1 region"
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "AWS officially confirmed drone strike in close proximity to Bahrain facility caused physical impacts, structural damage, and power disruption"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "CNBC",
+                            "url": "https://www.cnbc.com/2026/03/02/amazon-says-drone-strikes-damaged-3-facilities-in-uae-and-bahrain.html"
+                    },
+                    {
+                            "name": "The Register",
+                            "url": "https://www.theregister.com/2026/03/02/amazon_outages_middle_east/"
+                    },
+                    {
+                            "name": "CBS News",
+                            "url": "https://www.cbsnews.com/news/amazon-drone-strike-aws-data-center-uae-bahrain-iran/"
+                    },
+                    {
+                            "name": "Bloomberg",
+                            "url": "https://www.bloomberg.com/news/articles/2026-03-03/drone-strikes-damage-amazon-data-centers-in-the-uae-and-bahrain"
+                    },
+                    {
+                            "name": "The National",
+                            "url": "https://www.thenationalnews.com/business/2026/03/03/drone-strikes-damage-amazon-data-centres-in-uae-and-bahrain-disrupting-services/"
+                    }
+            ],
+            "dateAdded": "2026-03-03"
     },
 
     // ═══════════════════════════════════════════════════════════
