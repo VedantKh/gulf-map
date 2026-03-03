@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T06:41:22.260Z",
+    "lastUpdated": "2026-03-03T10:33:08.041Z",
     "casualties": {
         "killed": 20,
         "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 (March 3): Iran continues retaliatory strikes across the Gulf. US Embassy in Riyadh hit by drones; IRGC declares intent to target 'American political centers.' New waves of attacks on Bahrain, Kuwait, Saudi Arabia. Qatar shoots down 2 Iranian SU-24 aircraft — first Gulf-state downing of manned Iranian aircraft. Musaffah fuel tank terminal struck by drone in Abu Dhabi. Erbil, Iraq added to map as ongoing strike zone. 6 US service members confirmed KIA (Shuaiba Port, Kuwait). State Dept urges all Americans to DEPART NOW from 14 Middle East countries.",
-    "totalBarrage": "Updated interception totals as of March 3 — UAE: 182 missiles detected (169 intercepted), 645 drones intercepted (44 hit territory); Kuwait: 178 ballistic missiles, 384 drones; Bahrain: 70 ballistic missiles, 76 drones; Qatar: 2 Iranian SU-24 aircraft shot down plus multiple missiles/drones intercepted; Saudi Arabia: 8 drones intercepted near Riyadh/Al-Kharj on March 3 (no cumulative total released)",
-    "intercepted": "Combined confirmed interceptions across Gulf states exceed 1,300 missiles/drones. Significant leakage continues — UAE reports 44 drones penetrated territory, Qatar reports 15 drones reached territory, multiple confirmed impacts across all GCC states."
+    "summary": "Day 4 of Iran-US/Israel conflict. Iran continues retaliatory strikes across Gulf region, now targeting energy infrastructure and diplomatic facilities. IRGC reaffirms Strait of Hormuz closure. Iran death toll rises to 787 (Al Jazeera). US Embassy in Riyadh closed after drone strike. Duqm Port in Oman hit for second time. Iraq and Cyprus drawn into conflict. Qatar LNG production halted (~20% of global supply). Saudi Ras Tanura refinery offline. UK allows US to use its bases for defensive strikes.",
+    "totalBarrage": "Iran has fired 400+ ballistic missiles and ~1,000 drones at Gulf states since Feb 28 (CNN). Updated interception counts: UAE intercepted 169 of 182 missiles and 645 drones (44 hit territory); Kuwait intercepted 178 missiles and 384 drones; Bahrain intercepted 70 missiles and 76 drones; Qatar intercepted 101 of 104 missiles and 24 of 39 drones, plus shot down 2 Iranian Su-24 aircraft.",
+    "intercepted": "Updated totals (as of Mar 3): UAE 169 missiles + 645 drones; Kuwait 178 missiles + 384 drones; Bahrain 70 missiles + 76 drones; Qatar 101 missiles + 24 drones + 2 Su-24 jets. Combined: 518+ missiles and 1,129+ drones intercepted across four Gulf states."
 };
 
 const LOCATIONS = [
@@ -1026,7 +1026,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🎯",
             "type": "Bahrain Air Force / US Support Base",
-            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS.",
+            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1035,6 +1035,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "Bahrain's air defenses responded from Isa Air Base overnight to hostile Iranian missile attacks, intercepting 45 missiles and 9 drones. Bahraini state media confirmed limited debris across several areas."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "IRGC announced a 'large-scale drone and missile attack at dawn' on the US air base in the Sheikh Isa area of Bahrain, claiming 20 drones and 3 missiles were launched. IRGC claimed destruction of the base's main command headquarters (unverified). Bahrain Interior Ministry activated air raid alerts early Tuesday."
                     }
             ],
             "sources": [
@@ -1045,6 +1049,14 @@ const LOCATIONS = [
                     {
                             "name": "CNN",
                             "url": "https://www.cnn.com/world/live-news/israel-iran-attack-02-28-26-hnk-intl"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/3/us-embassy-in-saudi-capital-riyadh-hit-by-drones-fire-reported-ministry"
+                    },
+                    {
+                            "name": "CNN (Day 3 Live Updates)",
+                            "url": "https://www.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -2494,7 +2506,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🏛️",
             "type": "Drone Strike on US Embassy",
-            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran.",
+            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -2507,6 +2519,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Additional suspected Iranian drones struck 'at or near' the embassy after initial two-drone hit. IRGC declared intent to destroy 'American political centers,' naming Riyadh embassy specifically. US Mission issued shelter-in-place for Riyadh, Jeddah and Dhahran (CNN, Al Jazeera, The Hill)"
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Embassy closed indefinitely following the drone strike. Saudi MoD intercepted and destroyed 8 additional drones near Riyadh and Al-Kharj after the embassy attack. US Mission issued shelter-in-place for Riyadh, Jeddah and Dhahran. Trump vowed retaliation."
                     }
             ],
             "sources": [
@@ -2533,6 +2549,14 @@ const LOCATIONS = [
                     {
                             "name": "The Hill",
                             "url": "https://thehill.com/policy/international/5764037-riyadh-embassy-drone-strikes/"
+                    },
+                    {
+                            "name": "ABC News",
+                            "url": "https://abcnews.com/International/live-updates/iran-live-updates-israel-launches-preemptive-strike-iran/?id=130301492"
+                    },
+                    {
+                            "name": "Jerusalem Post",
+                            "url": "https://www.jpost.com/middle-east/article-888595"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -2550,7 +2574,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "💥",
             "type": "Omani Port — Struck by 2 Iranian Drones",
-            "detail": "Major Omani port on the Arabian Sea coast. Targeted by 2 Iranian drones on Mar 1. One struck foreign workers' residences, injuring 1. Iran FM claimed 'not our choice.' This shatters Oman's traditional neutrality. Oman News Agency confirmed two drones hit Duqm port on March 1, injuring one expatriate worker. First attack on Oman. GCC condemned the strike on the mediator state.",
+            "detail": "Major Omani port on the Arabian Sea coast. Targeted by 2 Iranian drones on Mar 1. One struck foreign workers' residences, injuring 1. Iran FM claimed 'not our choice.' This shatters Oman's traditional neutrality. Oman News Agency confirmed two drones hit Duqm port on March 1, injuring one expatriate worker. First attack on Oman. GCC condemned the strike on the mediator state. March 3: Second drone attack in three days. Multiple drones targeted fuel storage tanks; one hit a fuel tank with damage contained and no casualties (Oman News Agency via AFP).",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -2559,6 +2583,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "Oman News Agency confirmed Duqm commercial port was struck by two drones. One expatriate worker injured. First attack on Oman, which had been mediating US-Iran talks. Condemned by the Gulf Cooperation Council."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Second drone attack on Duqm Port. Multiple drones targeted fuel tanks; one drone hit a fuel tank causing contained damage. No casualties reported. Oman condemned the attack. This is the second strike on the port in three days."
                     }
             ],
             "sources": [
@@ -2577,6 +2605,22 @@ const LOCATIONS = [
                     {
                             "name": "Argus Media",
                             "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2794562-tanker-hit-near-hormuz-strait-as-iran-conflict-widens"
+                    },
+                    {
+                            "name": "Anadolu Agency",
+                            "url": "https://www.aa.com.tr/en/middle-east/drones-hit-fuel-tank-at-oman-s-duqm-port-amid-us-iran-war/3847774"
+                    },
+                    {
+                            "name": "AFP/BSS",
+                            "url": "https://www.bssnews.net/international/365498"
+                    },
+                    {
+                            "name": "Marine Link (Reuters)",
+                            "url": "https://www.marinelink.com/news/drone-attack-damages-fuel-tank-omans-duqm-536399"
+                    },
+                    {
+                            "name": "Argus Media",
+                            "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2795389-duqm-port-struck-in-latest-mideast-gulf-drone-attack"
                     }
             ],
             "dateAdded": "2026-03-01"
