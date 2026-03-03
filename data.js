@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T16:39:03.842Z",
+    "lastUpdated": "2026-03-03T17:38:52.214Z",
     "casualties": {
         "killed": 20,
         "injured": 162
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 (March 3): Iran continues striking energy infrastructure across the Gulf; IRGC reaffirms closure of Strait of Hormuz. UAE government briefing confirms 186 total ballistic missiles launched at the country (172 intercepted, 13 fell in sea, 1 landed on territory March 3 with no casualties). On March 3 alone, UAE intercepted 11 BMs and 123 drones. Iran-backed militias expand attacks to Iraq (Erbil, Baghdad). AWS data centers directly struck in UAE and Bahrain, causing first-ever military disruption to a major US cloud provider. GCC emergency meeting invoked Article 51 of UN Charter, signaling readiness for collective self-defense.",
-    "totalBarrage": "400+ ballistic missiles and ~1,000+ drones at Gulf states since Feb 28 (CNN/regional tallies). By country as of Mar 3: UAE — 186 BMs + 689 drones; Kuwait — 178 BMs + 384 drones; Qatar — 104 BMs + 39 drones + 2 Su-24 aircraft; Bahrain — 70 BMs + 76 drones; Saudi Arabia — figures not fully disclosed; Iraq — 23+ drone strikes on Erbil alone.",
-    "intercepted": "UAE: 172/186 BMs + 645/689 drones (11 BMs + 123 drones on Mar 3 alone); Kuwait: 178 BMs + 384 drones; Bahrain: 70 BMs + 76 drones; Qatar: 101/104 BMs + 24/39 drones + 2 Su-24s shot down; Saudi Arabia: partial figures — 8 drones near Riyadh/Al-Kharj intercepted"
+    "summary": "Day 4 of Iran's Operation True Promise IV. IRGC claims 11th wave of attacks targeting energy infrastructure across the Gulf. Iranian general threatens to hit all economic hubs if US-Israeli strikes continue. Strikes now confirmed across 9 countries + Cyprus. US State Dept urges Americans to DEPART NOW from 14 Middle Eastern countries.",
+    "totalBarrage": "Updated interception totals as of March 3 (CNN/state media): UAE — 182 missiles (169 intercepted, 13 into sea), 689 drones (645 intercepted, 44 hit territory); Kuwait — 178 missiles, 384 drones; Bahrain — 70 missiles, 76 drones; Qatar — 104 missiles (101 intercepted), 39 drones (24 intercepted), 2 Iranian Su-24 aircraft shot down. Estimated combined total across Gulf states exceeds 1,700 projectiles.",
+    "intercepted": "Gulf states report high interception rates: UAE ~93% missiles / ~94% drones; Kuwait majority intercepted; Qatar ~97% missiles; Bahrain intercepted 70 missiles and 76 drones. Despite high interception rates, volume ensures some penetrations — 44 drones confirmed hitting UAE territory, plus confirmed impacts in Bahrain, Kuwait, Qatar, Saudi Arabia, Oman."
 };
 
 const LOCATIONS = [
@@ -1102,7 +1102,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🎯",
             "type": "Bahrain Air Force / US Support Base",
-            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3.",
+            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1127,6 +1127,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Sirens continued sounding across Bahrain on Tuesday morning. Bahrain Defence Force reports total interceptions to date: 70 ballistic missiles and 76 drones (updated from earlier figures)."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Sirens sounded across Bahrain early Tuesday (March 3); Bahrain Defence Force reports intercepting 70 missiles and 76 drones total since conflict began — a significant increase from earlier tallies (CNN, Bahrain state media)"
                     }
             ],
             "sources": [
@@ -2354,7 +2358,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Direct Iranian strike on US military facility",
-            "detail": "Six US service members killed when an Iranian projectile scored a direct hit on a makeshift tactical operations center at the civilian port of Shuaiba on Sunday morning local time. Defense Secretary Hegseth confirmed one projectile penetrated air defenses and struck a fortified triple-wide trailer used as an operations center. No warning or siren preceded the strike. CENTCOM confirmed the death toll rose to 6 on Monday afternoon after two additional remains were recovered. CENTCOM confirmed on Mar 2 that the death toll from the Mar 1 drone strike at Shuaiba Port has risen to 6 US service members killed. Remains of 2 additional personnel were recovered from the struck makeshift tactical operations center. 18 US troops seriously wounded total across Operation Epic Fury. US death toll confirmed at 6 after CENTCOM recovered remains of two additional service members. A CENTCOM spokesperson confirmed 18 troops seriously wounded across Operation Epic Fury.",
+            "detail": "Six US service members killed when an Iranian projectile scored a direct hit on a makeshift tactical operations center at the civilian port of Shuaiba on Sunday morning local time. Defense Secretary Hegseth confirmed one projectile penetrated air defenses and struck a fortified triple-wide trailer used as an operations center. No warning or siren preceded the strike. CENTCOM confirmed the death toll rose to 6 on Monday afternoon after two additional remains were recovered. CENTCOM confirmed on Mar 2 that the death toll from the Mar 1 drone strike at Shuaiba Port has risen to 6 US service members killed. Remains of 2 additional personnel were recovered from the struck makeshift tactical operations center. 18 US troops seriously wounded total across Operation Epic Fury. US death toll confirmed at 6 after CENTCOM recovered remains of two additional service members. A CENTCOM spokesperson confirmed 18 troops seriously wounded across Operation Epic Fury. CBS News (Mar 3) reported the strike was a one-way Shahed-type drone direct hit dead-center on a triple-wide trailer used as a makeshift ops center. Sources said no counter-drone capability was present and no warning sirens sounded. 18 US service members total seriously wounded across Operation Epic Fury as of Monday per CENTCOM.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -2393,6 +2397,10 @@ const LOCATIONS = [
                     {
                             "name": "AP / OPB",
                             "url": "https://www.opb.org/article/2026/03/02/as-mideast-conflict-widens-us-says-attacks-on-iran-will-last-weeks-and-intensify/"
+                    },
+                    {
+                            "name": "CBS News — Makeshift Office Inadequacy Report",
+                            "url": "https://www.cbsnews.com/news/iran-strike-kuwait-officials-question-fortifications/"
                     }
             ],
             "dateAdded": "2026-03-02"
