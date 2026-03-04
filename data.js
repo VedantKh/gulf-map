@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-04T18:36:59.153Z",
+    "lastUpdated": "2026-03-04T19:35:12.280Z",
     "casualties": {
         "killed": 21,
         "injured": 176
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 5 of conflict: IRGC claims 'complete control' of Strait of Hormuz. Iran continues drone/missile strikes on US assets across Gulf and Iraq. Attack tempo decreasing per Al Jazeera correspondent in Doha, but strikes continue causing disruptions. US State Dept authorized nonemergency personnel evacuation. Qatari PM demanded 'immediate cessation' of attacks in call with Iranian FM. France confirms Rafale jets neutralizing Iranian drones targeting UAE.",
-    "totalBarrage": "Per CENTCOM Adm. Brad Cooper (March 4): Iran has launched more than 500 ballistic missiles and 2,000 drones total. IRGC claimed 230 drones fired in latest wave at US facilities including Erbil, Ali Al Salem, and Camp Arifjan.",
-    "intercepted": "UAE (as of March 4): 3 ballistic missiles and 121 drones downed, 8 drones landed inside country. Qatar: 10 drones and 2 cruise missiles intercepted. Bahrain cumulative: 73 missiles and 91 drones destroyed. UAE cumulative (as of March 3): 186 missiles (172 destroyed), 812 drones (755 intercepted)."
+    "summary": "Day 5 of Iran-US/Israel conflict. IRGC claimed 230-drone wave as 'first powerful steps.' Iran expands strikes to Baghdad and deepens Erbil attacks. Turkey reports NATO intercepted Iran-fired ballistic missile. Gen. Caine says Iran ballistic missile fire down 86% from Day 1. Qatari PM demands Iran stop Gulf attacks; Araghchi says strikes target US interests only. US says it has 'effectively neutralized' Iran's naval capacity.",
+    "totalBarrage": "500+ ballistic missiles and 2,000+ drones launched by Iran in retaliation (per CENTCOM Admiral Brad Cooper, cited by Al Jazeera March 4). UAE alone tracked 186 missiles (172 destroyed) and 812 drones (755 intercepted) as of March 3.",
+    "intercepted": "Bahrain: 73 missiles + 91 drones intercepted. Kuwait: 97 BMs + 283 drones. UAE: 172 missiles + 755 drones. Qatar: 10 drones + 2 cruise missiles intercepted on March 4. Gen. Caine: Iranian ballistic missile fire down 86% from Saturday, 23% drop in last 24 hours."
 };
 
 const LOCATIONS = [
@@ -1854,7 +1854,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Reported missile targeting of radar facility",
-            "detail": "A long-range early warning radar in northern Qatar was targeted by an Iranian missile, according to sources who spoke to Al Jazeera on Feb 28. No injuries were reported. The IRGC separately claimed destruction of the AN/FPS-132 Block 5 US missile warning radar in Qatar, though this claim has not been independently verified. UPGRADE: Qatari officials confirmed in joint briefing that 'a drone targeted an early warning radar system.' Reuters confirmed the $1B AN/FPS-132 Block 5 radar was struck and damaged. Satellite imagery analyzed by NPR shows possible burn scarring near the radar installation. Iran claimed the radar was destroyed; US has not publicly confirmed extent of damage.",
+            "detail": "A long-range early warning radar in northern Qatar was targeted by an Iranian missile, according to sources who spoke to Al Jazeera on Feb 28. No injuries were reported. The IRGC separately claimed destruction of the AN/FPS-132 Block 5 US missile warning radar in Qatar, though this claim has not been independently verified. UPGRADE: Qatari officials confirmed in joint briefing that 'a drone targeted an early warning radar system.' Reuters confirmed the $1B AN/FPS-132 Block 5 radar was struck and damaged. Satellite imagery analyzed by NPR shows possible burn scarring near the radar installation. Iran claimed the radar was destroyed; US has not publicly confirmed extent of damage. Satellite imagery on March 4 confirmed structural damage to the $1B+ AN/FPS-132 long-range early warning radar at Umm Dahal. Debris fell from one of the radar faces.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1863,6 +1863,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-02-28",
                             "text": "Qatari officials confirmed in joint defense/interior/foreign affairs briefing that a drone struck the AN/FPS-132 early warning radar system; Reuters source confirmed radar struck and damaged"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "CNN reports satellite imagery analyzed by James Martin Center shows confirmed structural damage to the AN/FPS-132 phased array radar at Umm Dahal; debris fell from radar face, water runoff from firefighting visible. System cost Qatar over $1 billion."
                     }
             ],
             "sources": [
@@ -1877,6 +1881,10 @@ const LOCATIONS = [
                     {
                             "name": "Reuters (via MarketScreener)",
                             "url": "https://uk.marketscreener.com/news/an-early-warning-radar-in-the-north-of-qatar-was-struck-and-damaged-by-an-iranian-attack-official-ce7e5cdcd988fe2c"
+                    },
+                    {
+                            "name": "CNN",
+                            "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-04-26"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2207,6 +2215,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC announced 230-drone operation (17th wave of True Promise 4) specifically targeting Ali Al Salem Air Base and Camp Arifjan in Kuwait and Erbil in Iraq (IRGC statement via Press TV, confirmed by Al Jazeera)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "IRGC claimed firing 230 drones at several US facilities including Ali Al Salem Air Base as part of its 'first powerful steps' in the war, per Al Jazeera."
                     }
             ],
             "sources": [
@@ -2674,7 +2686,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Direct Iranian strike on US military facility",
-            "detail": "Six US service members killed when an Iranian projectile scored a direct hit on a makeshift tactical operations center at the civilian port of Shuaiba on Sunday morning local time. Defense Secretary Hegseth confirmed one projectile penetrated air defenses and struck a fortified triple-wide trailer used as an operations center. No warning or siren preceded the strike. CENTCOM confirmed the death toll rose to 6 on Monday afternoon after two additional remains were recovered. CENTCOM confirmed on Mar 2 that the death toll from the Mar 1 drone strike at Shuaiba Port has risen to 6 US service members killed. Remains of 2 additional personnel were recovered from the struck makeshift tactical operations center. 18 US troops seriously wounded total across Operation Epic Fury. US death toll confirmed at 6 after CENTCOM recovered remains of two additional service members. A CENTCOM spokesperson confirmed 18 troops seriously wounded across Operation Epic Fury. CBS News (Mar 3) reported the strike was a one-way Shahed-type drone direct hit dead-center on a triple-wide trailer used as a makeshift ops center. Sources said no counter-drone capability was present and no warning sirens sounded. 18 US service members total seriously wounded across Operation Epic Fury as of Monday per CENTCOM.",
+            "detail": "Six US service members killed when an Iranian projectile scored a direct hit on a makeshift tactical operations center at the civilian port of Shuaiba on Sunday morning local time. Defense Secretary Hegseth confirmed one projectile penetrated air defenses and struck a fortified triple-wide trailer used as an operations center. No warning or siren preceded the strike. CENTCOM confirmed the death toll rose to 6 on Monday afternoon after two additional remains were recovered. CENTCOM confirmed on Mar 2 that the death toll from the Mar 1 drone strike at Shuaiba Port has risen to 6 US service members killed. Remains of 2 additional personnel were recovered from the struck makeshift tactical operations center. 18 US troops seriously wounded total across Operation Epic Fury. US death toll confirmed at 6 after CENTCOM recovered remains of two additional service members. A CENTCOM spokesperson confirmed 18 troops seriously wounded across Operation Epic Fury. CBS News (Mar 3) reported the strike was a one-way Shahed-type drone direct hit dead-center on a triple-wide trailer used as a makeshift ops center. Sources said no counter-drone capability was present and no warning sirens sounded. 18 US service members total seriously wounded across Operation Epic Fury as of Monday per CENTCOM. US death toll at Shuaiba confirmed at 6 service members (all Army Reserve, 103rd Sustainment Command). Pentagon released names of four on March 4.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -2687,6 +2699,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "CENTCOM confirms US death toll from Shuaiba port strike rises to 6 after remains of two previously unaccounted-for service members recovered. All 6 were Army soldiers from the same logistics unit. CENTCOM also reports 18 troops seriously wounded across the operation."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Pentagon confirms total of 6 US service members killed in the drone strike on the tactical operations center at Port Shuaiba (up from earlier reports of 3-4). Four identified as members of 103rd Sustainment Command, Army Reserve. CNN and NBC confirm all deaths occurred at this single facility."
                     }
             ],
             "sources": [
@@ -2717,6 +2733,18 @@ const LOCATIONS = [
                     {
                             "name": "CBS News — Makeshift Office Inadequacy Report",
                             "url": "https://www.cbsnews.com/news/iran-strike-kuwait-officials-question-fortifications/"
+                    },
+                    {
+                            "name": "NBC Washington",
+                            "url": "https://www.nbcwashington.com/news/national-international/iran-us-israel-middle-east-conflict-march-04-2026-live-updates/4070068/"
+                    },
+                    {
+                            "name": "CNN",
+                            "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-04-26"
+                    },
+                    {
+                            "name": "Fox DC / AP",
+                            "url": "https://www.fox5dc.com/news/iran-war-continues-march-4-2026"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2751,6 +2779,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC announced 230-drone operation (17th wave) specifically named Camp Arifjan as a target alongside Ali Al Salem and Erbil (IRGC statement via Press TV)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "IRGC claimed firing 230 drones at several US facilities including Camp Arifjan as part of its 'first powerful steps', per Al Jazeera."
                     }
             ],
             "sources": [
@@ -3034,7 +3066,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Oil Facility Strike",
-            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted. On March 4, a drone struck the already-shuttered Ras Tanura complex again per Reuters (4 sources). Saudi MOD confirmed the attack but said no damage resulted. The refinery (550,000 bpd capacity) has remained shut since the March 2 drone attack that caused a fire. On March 4, a projectile hit the refinery directly (Reuters), after the plant had already been shut down from an earlier debris-induced fire. March 4: Reuters sources report a projectile directly hit the refinery, which had already been shut down after earlier debris fire from intercepted drones. On March 4, a projectile directly hit the refinery per two Reuters sources. Operations had already been shut down as a precaution after an earlier debris-induced fire.",
+            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted. On March 4, a drone struck the already-shuttered Ras Tanura complex again per Reuters (4 sources). Saudi MOD confirmed the attack but said no damage resulted. The refinery (550,000 bpd capacity) has remained shut since the March 2 drone attack that caused a fire. On March 4, a projectile hit the refinery directly (Reuters), after the plant had already been shut down from an earlier debris-induced fire. March 4: Reuters sources report a projectile directly hit the refinery, which had already been shut down after earlier debris fire from intercepted drones. On March 4, a projectile directly hit the refinery per two Reuters sources. Operations had already been shut down as a precaution after an earlier debris-induced fire. Reuters sources report a new projectile hit the already-shuttered refinery later on March 4, beyond the earlier debris fire.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -3146,7 +3178,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🏛️",
             "type": "Drone Strike on US Embassy",
-            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran. On morning of March 3: After initial 2 drones hit US Embassy, 2 more drones struck the Diplomatic Quarter per Reuters sources. Saudi MoD confirmed.",
+            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran. On morning of March 3: After initial 2 drones hit US Embassy, 2 more drones struck the Diplomatic Quarter per Reuters sources. Saudi MoD confirmed. Washington Post confirmed the drone struck the CIA station within the embassy compound, causing structural damage and partial roof collapse. No CIA casualties reported.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -3167,6 +3199,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Reuters reported a second wave: shortly after initial two drones struck the US Embassy, two more drones struck the Diplomatic Quarter area. Saudi MoD confirmed strikes."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Washington Post reports that the Monday drone strike specifically hit the CIA station within the US Embassy compound in Riyadh, causing structural damage including partial roof collapse. No CIA personnel injured. Saudi Arabia also announced interception of two ballistic missiles in the nearby Al-Kharj area on Wednesday."
                     }
             ],
             "sources": [
@@ -3205,6 +3241,14 @@ const LOCATIONS = [
                     {
                             "name": "Wikipedia (citing Reuters)",
                             "url": "https://en.wikipedia.org/wiki/2026_Iran_conflict"
+                    },
+                    {
+                            "name": "Washington Post",
+                            "url": "https://www.washingtonpost.com/national-security/2026/03/03/cia-saudi-arabia-drone-attack-iran/"
+                    },
+                    {
+                            "name": "Reuters via TRT World",
+                            "url": "https://www.trtworld.com/article/73652619962d/amp"
                     }
             ],
             "dateAdded": "2026-03-03"
