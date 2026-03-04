@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-04T05:15:31.763Z",
+    "lastUpdated": "2026-03-04T06:37:58.088Z",
     "casualties": {
         "killed": 20,
         "injured": 172
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 5 (March 4): US-Israel strikes on Iran continue; Tehran retaliatory attacks persist for a fourth night across Gulf. Death toll in Iran surpasses 800 (Al Jazeera). Iran-backed Iraqi militias (Islamic Resistance in Iraq) have opened a new front with confirmed drone and missile attacks on US bases in Erbil and Baghdad. Updated defense ministry interception figures: UAE has tracked 186 missiles (172 destroyed) and 812 drones (755 intercepted); Bahrain has destroyed 73 missiles and 91 drones; Qatar intercepted 101 ballistic missiles, 3 cruise missiles, 39 drones, and shot down 2 Iranian Su-24 aircraft.",
-    "totalBarrage": "Across Gulf states (cumulative as of March 3): UAE — 186 ballistic missiles, 8 cruise missiles, 812 drones; Bahrain — 73 missiles, 91 drones; Qatar — 104 ballistic missiles, 3 cruise missiles, 39 drones; Kuwait — 178 ballistic missiles, 384 drones. Iran also launched drone/missile attacks against Iraq (70+ projectiles at Erbil alone per Iraqi FM), Jordan (49+ intercepted), Saudi Arabia (multiple waves), and Oman.",
-    "intercepted": "UAE: 172 of 186 missiles, 755 of 812 drones intercepted. Bahrain: 73 missiles, 91 drones destroyed. Qatar: 98 of 101 ballistic missiles, all 3 cruise missiles, 24 of 39 drones intercepted; 2 Iranian Su-24 aircraft shot down. Kuwait: 178 ballistic missiles, 384 drones intercepted."
+    "summary": "Day 5 (March 4): Iran continues drone and missile strikes across the Gulf. Mojtaba Khamenei, son of slain Ayatollah, reportedly named new Supreme Leader by Assembly of Experts under IRGC pressure (Iran International). CENTCOM reports destroying 17 Iranian ships and nearly 2,000 targets. UAE and Qatar deny reports of Patriot interceptor shortages. US ordered non-emergency personnel to depart Bahrain, Jordan, and Iraq. Asian stock markets plummeted (KOSPI -12.3%, Nikkei -4.7%). Brent crude at $82.76/bbl. Iraq now a confirmed active front with 70+ attacks on Erbil.",
+    "totalBarrage": "Updated interception totals (as of March 3 evening): UAE detected 186 ballistic missiles (172 destroyed), 8 cruise missiles, 812 drones (755 intercepted). Bahrain: 73 missiles, 91 drones destroyed. Qatar: 104 missiles detected (98 intercepted), 39 drones (24 intercepted), 2 Iranian SU-24 bombers shot down. Kuwait: 178 ballistic missiles, 384 drones intercepted.",
+    "intercepted": "Gulf states report intercepting the vast majority of Iranian projectiles. UAE: ~93% missile interception, ~93% drone interception. Qatar: ~94% missile interception. Bahrain and Kuwait report high interception rates. Total Iranian launches across all Gulf states estimated at 2,000+ projectiles."
 };
 
 const LOCATIONS = [
@@ -1186,7 +1186,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🎯",
             "type": "Bahrain Air Force / US Support Base",
-            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3).",
+            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3). March 4: US ordered non-emergency departure from Bahrain, upgrading from authorized departure. Embassy warned US citizens that hotels in Manama may be targeted.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1223,6 +1223,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Bahrain Defence Force updated interception totals: 73 missiles and 91 drones intercepted since start of conflict (up from 70 missiles and 76 drones reported earlier)."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "US Embassy in Bahrain ordered non-emergency personnel and family members to depart, upgrading from previous 'authorized departure' status, citing continuing drone and missile threat from Iran."
                     }
             ],
             "sources": [
@@ -1249,6 +1253,10 @@ const LOCATIONS = [
                     {
                             "name": "ARN News Centre",
                             "url": "https://www.arnnewscentre.ae/news/international/two-drones-target-us-embassy-in-saudi-arabia/"
+                    },
+                    {
+                            "name": "ABC7/AP",
+                            "url": "https://abc7news.com/live-updates/iran-live-updates-trump-says-major-combat-operations-have-begun/18660347/entry/18670232/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -2238,7 +2246,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🏛️",
             "type": "Embassy Area / Debris Zone",
-            "detail": "AFP photos show smoke rising from the area near the US Embassy in Kuwait City on March 2. Kuwait's air defenses intercepted hostile drones near Rumaithiya and Salwa neighborhoods in Hawalli Governorate where the embassy is located. US Embassy issued security alert urging people to stay away. Firefighters and ambulances were seen in the area. March 2: Reuters witness and AFP photos confirm smoke rising near US Embassy area. Active air defense interceptions ongoing over central Kuwait. March 2: Smoke seen near US Embassy. Kuwaiti air defenses intercepted hostile drones at dawn near Rumaithiya and Salwa neighborhoods in Hawalli Governorate. Kuwait Civil Defense confirmed explosions heard in residential areas were from successful interceptions. March 2: AP confirmed fire and smoke inside embassy compound after Iranian attack. No confirmed casualties. Embassy warned of continuing threat and ordered shelter-in-place. March 2: Fire and black smoke from inside US Embassy compound. CBS News reported 'apparent Iranian missile strike.' Embassy closed and issued emergency shelter-in-place. No immediate casualty reports but compound visibly damaged. March 2: Smoke confirmed near US Embassy compound. Embassy closed. US warned of 'continuing threat of missile and UAV attacks' and urged Americans to take cover. Mar 2: Large fire confirmed inside US Embassy compound from suspected Iranian drone. No injuries. Embassy had pre-emptively ordered staff to residences. All appointments canceled until further notice.",
+            "detail": "AFP photos show smoke rising from the area near the US Embassy in Kuwait City on March 2. Kuwait's air defenses intercepted hostile drones near Rumaithiya and Salwa neighborhoods in Hawalli Governorate where the embassy is located. US Embassy issued security alert urging people to stay away. Firefighters and ambulances were seen in the area. March 2: Reuters witness and AFP photos confirm smoke rising near US Embassy area. Active air defense interceptions ongoing over central Kuwait. March 2: Smoke seen near US Embassy. Kuwaiti air defenses intercepted hostile drones at dawn near Rumaithiya and Salwa neighborhoods in Hawalli Governorate. Kuwait Civil Defense confirmed explosions heard in residential areas were from successful interceptions. March 2: AP confirmed fire and smoke inside embassy compound after Iranian attack. No confirmed casualties. Embassy warned of continuing threat and ordered shelter-in-place. March 2: Fire and black smoke from inside US Embassy compound. CBS News reported 'apparent Iranian missile strike.' Embassy closed and issued emergency shelter-in-place. No immediate casualty reports but compound visibly damaged. March 2: Smoke confirmed near US Embassy compound. Embassy closed. US warned of 'continuing threat of missile and UAV attacks' and urged Americans to take cover. Mar 2: Large fire confirmed inside US Embassy compound from suspected Iranian drone. No injuries. Embassy had pre-emptively ordered staff to residences. All appointments canceled until further notice. On March 3, Iran struck the US Embassy compound in Kuwait directly. Kuwait state media condemned the attack. Embassy closed indefinitely; all visa and citizen services suspended.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -2263,6 +2271,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Smoke seen rising from near the US Embassy in Kuwait City on March 2 morning. AFP/Reuters photos confirm smoke. US Embassy closed and warned of 'continuing threat of missile and UAV attacks,' urging Americans to shelter in place."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Iran attacked the US Embassy compound in Kuwait. Smoke and fire rose from embassy area per AP/PBS. Kuwait News Agency condemned the 'brutal Iranian attack' on the embassy as 'a flagrant violation of all international norms.' Embassy closed indefinitely; non-emergency personnel ordered to depart."
                     }
             ],
             "sources": [
@@ -2325,6 +2337,14 @@ const LOCATIONS = [
                     {
                             "name": "ABC News",
                             "url": "https://abcnews.com/International/live-updates/iran-live-updates-israel-launches-preemptive-strike-iran/?id=130301492"
+                    },
+                    {
+                            "name": "PBS/AP",
+                            "url": "https://www.pbs.org/newshour/world/iranian-drones-strike-u-s-embassy-in-saudi-arabia-as-war-widens"
+                    },
+                    {
+                            "name": "NBC News",
+                            "url": "https://www.nbcnews.com/world/iran/live-blog/iran-israel-us-attack-trump-live-updates-rcna261438"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -3219,10 +3239,10 @@ const LOCATIONS = [
             "lng": 36.782,
             "country": "Jordan",
             "city": "Azraq",
-            "severity": "watchlist",
+            "severity": "high",
             "icon": "🎯",
             "type": "US/Jordanian Air Base — Targeted, Intercepted",
-            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage. Jordan confirmed intercepting 13 ballistic missiles and 49 drones. German troops in Jordan were also reportedly shelled by Iran.",
+            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage. Jordan confirmed intercepting 13 ballistic missiles and 49 drones. German troops in Jordan were also reportedly shelled by Iran. German military confirmed the multinational base at Al-Azraq was targeted by Iran over the weekend. US Embassy in Amman fully evacuated March 3 due to threats. Non-emergency US personnel in Jordan ordered to depart March 4.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -3239,6 +3259,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "Jordan reports intercepting 13 ballistic missiles and 49 drones entering its airspace; German troops in Jordan also shelled by Iran per Wikipedia timeline"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "US Embassy in Jordan ordered non-emergency personnel and family members to depart. German military confirmed the base was targeted over the weekend. US Embassy in Amman evacuated on March 3 due to threats."
                     }
             ],
             "sources": [
@@ -3265,6 +3289,10 @@ const LOCATIONS = [
                     {
                             "name": "Breaking Defense",
                             "url": "https://breakingdefense.com/2026/03/iran-attacks-uae-saudi-missiles-drones-gcc-air-defense/"
+                    },
+                    {
+                            "name": "ABC7/AP",
+                            "url": "https://abc7news.com/live-updates/iran-live-updates-trump-says-major-combat-operations-have-begun/18660347/entry/18670232/"
                     }
             ],
             "dateAdded": "2026-03-03"
