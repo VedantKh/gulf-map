@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-04T07:34:28.860Z",
+    "lastUpdated": "2026-03-04T08:29:55.100Z",
     "casualties": {
         "killed": 20,
         "injured": 172
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 5 of conflict (March 4): Explosions heard in Tehran at dawn as US-Israeli strikes continue. Iran's retaliatory strikes persist across the Gulf. IRGC announced Wave 15 and Wave 17 of 'True Promise 4.' Iraq's Erbil now confirmed as a major theater with 70+ drone/missile attacks on US assets by Iran and Iraqi militias. All Gulf state airspaces remain closed or restricted. Over 1 million travelers stranded.",
-    "totalBarrage": "Updated Gulf-wide interception tallies as of March 3 (Al Jazeera/CNN): UAE — 186 missiles (172 destroyed), 812 drones (755 intercepted); Bahrain — 73 missiles, 91 drones destroyed; Kuwait — 178 ballistic missiles, 384 drones intercepted; Qatar — 101 ballistic missiles (98 intercepted), 39 drones (24 intercepted), 3 cruise missiles intercepted, 2 Iranian SU-24 jets shot down.",
-    "intercepted": "Gulf states report intercepting the vast majority of Iranian projectiles. UAE: ~93% missile interception, ~93% drone interception. Qatar: ~94% missile interception. Bahrain and Kuwait report high interception rates. Total Iranian launches across all Gulf states estimated at 2,000+ projectiles."
+    "summary": "Day 5 of Iran's Operation True Promise IV. IRGC announced 17th wave of strikes (~40+ missiles at US/Israeli targets). Iran has struck 10+ countries. Updated UAE interception figures: 186 missiles tracked (172 destroyed), 812 drones monitored (755 intercepted). Bahrain has destroyed 73 missiles and 91 drones. Iraq's FM confirms 70+ attacks on Erbil alone. Six US service members KIA. IRGC claims ongoing operations with no ceasefire in sight.",
+    "totalBarrage": "UAE: 186 missiles / 812 drones; Bahrain: 73 missiles / 91 drones; Qatar: 3 cruise missiles, 101 ballistic missiles, 39 drones; Kuwait: 97 missiles / 283 drones; IRGC claims 17 waves of True Promise IV completed",
+    "intercepted": "UAE: 172 missiles + 755 drones intercepted; Bahrain: 73 missiles + 91 drones destroyed; Qatar: 98 of 101 BMs intercepted, 24 of 39 drones intercepted, 2 Iranian Su-24 shot down; Kuwait: 97 missiles + 283 drones intercepted"
 };
 
 const LOCATIONS = [
@@ -1186,7 +1186,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Bahrain Air Force / US Support Base",
-            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3). March 4: US ordered non-emergency departure from Bahrain, upgrading from authorized departure. Embassy warned US citizens that hotels in Manama may be targeted. On March 4, the IRGC claimed a major barrage (Wave 15 of True Promise 4) targeting Isa Air Base with 20 drones and 3 missiles, claiming the main US command building and fuel tanks were destroyed. Upgraded to CRITICAL based on IRGC official statement of confirmed projectile impacts; independent verification pending.",
+            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3). March 4: US ordered non-emergency departure from Bahrain, upgrading from authorized departure. Embassy warned US citizens that hotels in Manama may be targeted. On March 4, the IRGC claimed a major barrage (Wave 15 of True Promise 4) targeting Isa Air Base with 20 drones and 3 missiles, claiming the main US command building and fuel tanks were destroyed. Upgraded to CRITICAL based on IRGC official statement of confirmed projectile impacts; independent verification pending. On March 4, IRGC confirmed a dawn drone/missile attack on the US air base in Sheikh Isa/Sakhir area. This follows prior waves of attacks on the facility.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1231,6 +1231,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC claimed 'Wave 15 of True Promise 4' struck Isa Air Base with 20 drones and 3 missiles, claiming destruction of the main command HQ building and fuel tanks (IRNA). Bahrain/US have not independently confirmed the extent of damage. Kurdistan24 and The New Region reported the IRGC claim."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "IRGC announced its naval forces carried out a large-scale drone and missile attack at dawn on the US air base in the Sheikh Isa/Sakhir area of Bahrain (IRNA via Al Jazeera)"
                     }
             ],
             "sources": [
@@ -3204,6 +3208,30 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-03"
+    },
+    {
+            "name": "Vessel Struck 50nm North of Muscat (Projectile Attack, Gulf of Oman)",
+            "lat": 24.3,
+            "lng": 58.6,
+            "country": "Oman",
+            "city": "Off Muscat Coast",
+            "severity": "critical",
+            "icon": "⚓",
+            "type": "Maritime Projectile Strike",
+            "detail": "UKMTO reported on the night of March 3 that a vessel 50 nautical miles north of Muscat, Oman was struck by an unknown projectile above the waterline. The strike was broadcast over VHF Channel 16. An engine room fire broke out but was brought under control. This is a separate incident from the MKD VYOM attack on March 1-2.",
+            "incidents": [
+                    {
+                            "date": "2026-03-03",
+                            "text": "UKMTO reported a vessel struck by unknown projectile above the waterline 50nm north of Muscat; engine room fire brought under control"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Marine Insight (UKMTO warning)",
+                            "url": "https://www.marineinsight.com/shipping-news/unknown-projectiles-strike-ships-near-oman-and-uae-ukmto-issues-urgent-strait-of-hormuz-warning/"
+                    }
+            ],
+            "dateAdded": "2026-03-04"
     },
 
     // ═══════════════════════════════════════════════════════════
