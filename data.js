@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-04T11:27:37.298Z",
+    "lastUpdated": "2026-03-04T12:38:54.057Z",
     "casualties": {
         "killed": 21,
         "injured": 176
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 5 (March 4): Iran continued retaliatory strikes for fifth consecutive day. IRGC announced 230-drone barrage targeting US bases (Erbil, Ali Al Salem, Camp Arifjan). UAE has faced over 1,000 total Iranian attacks — highest of any targeted nation. France deployed Rafale jets to neutralize Iranian drones over UAE. Qatar airspace remains closed. IRIS Dena Iranian Navy frigate sunk off Sri Lanka with 100+ missing (major geographic expansion of conflict). Six US service members killed total; 18 seriously wounded. Gulf civilian death toll at 8+. Al Jazeera reports volume/frequency of Iranian attacks decreasing but low-level strikes sufficient to keep airspace closed and disrupt commerce.",
-    "totalBarrage": "UAE: 1,000+ total attacks (186+ BMs, 812+ drones as of March 3; March 4 adds 3 BMs + 121 drones detected). Kuwait: 178+ BMs, 384+ drones. Bahrain: 73+ missiles, 91+ drones. Qatar: 101+ BMs, 39+ drones, 3+ cruise missiles. Jordan: 13 BMs, 49 drones intercepted.",
-    "intercepted": "UAE March 4: 3 BMs + 121 drones downed (8 drones impacted inside country). Qatar March 4: 10 drones + 2 cruise missiles intercepted. France Rafale jets actively neutralizing drones over UAE."
+    "summary": "Day 5 (March 4): IRGC announced it fired 230 drones as 'first powerful steps' targeting Erbil (Iraq), Ali Al Salem and Camp Arifjan (Kuwait), and other US bases. Ras Tanura struck again by drone. UAE downed 3 ballistic missiles and 121 drones on March 4 (8 drones landed inside country). Qatar intercepted 10 drones and 2 cruise missiles. France Rafale jets neutralized Iranian drones targeting UAE. Al Jazeera reports volume/frequency of Gulf strikes decreasing but disruptions continue. Turkey/NATO intercepted an Iranian ballistic missile over eastern Mediterranean heading toward Turkish airspace — first time Iranian projectile threatened a NATO member.",
+    "totalBarrage": "Cumulative through March 4: UAE reports 186+ missiles and 812+ drones tracked; Bahrain 73 missiles and 91 drones; Kuwait 178+ missiles and 384+ drones; Qatar 104+ missiles, 39 drones, 2 Iranian SU-24 jets shot down. IRGC claims 230 drones in latest wave alone.",
+    "intercepted": "UAE: 172 of 186 missiles, 755 of 812 drones intercepted (plus March 4 wave: 3 missiles, 121 drones downed, 8 landed inside). Bahrain: 73 missiles, 91 drones destroyed. Kuwait: 178 missiles, 384 drones intercepted. Qatar: 101 of 104 missiles, 24 of 39 drones intercepted."
 };
 
 const LOCATIONS = [
@@ -2834,11 +2834,15 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🛢️",
             "type": "Oil Infrastructure — Confirmed Iranian Targeting",
-            "detail": "Home to virtually all major Aramco facilities. A Saudi official stated: 'missiles targeting Aramco come from the north, not Yemen' — directly attributing to Iran. Saudi MOD said air defenses intercepted the projectiles.",
+            "detail": "Home to virtually all major Aramco facilities. A Saudi official stated: 'missiles targeting Aramco come from the north, not Yemen' — directly attributing to Iran. Saudi MOD said air defenses intercepted the projectiles. On March 4, Saudi defense ministry confirmed interception and destruction of a drone over the Eastern Province.",
             "incidents": [
                     {
                             "date": "2026-02-28",
                             "text": "Iran launched missiles at Saudi Eastern Province. Saudi official attributed Aramco attacks to Iran. Air defenses engaged."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Saudi defense ministry said it intercepted and destroyed a drone in the Eastern Province. No further details on origin or damage provided."
                     }
             ],
             "sources": [
@@ -2853,6 +2857,10 @@ const LOCATIONS = [
                     {
                             "name": "Breaking Defense",
                             "url": "https://breakingdefense.com/2026/03/iran-attacks-uae-saudi-missiles-drones-gcc-air-defense/"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/4/hundreds-of-drones-target-kuwait-iraq-saudi-arabia-uae-amid-iran-war"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -2906,7 +2914,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Oil Facility Strike",
-            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted.",
+            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted. On March 4, a drone struck the already-shuttered Ras Tanura complex again per Reuters (4 sources). Saudi MOD confirmed the attack but said no damage resulted. The refinery (550,000 bpd capacity) has remained shut since the March 2 drone attack that caused a fire.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -2935,6 +2943,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Saudi state television confirmed authorities temporarily shut down the Ras Tanura refinery (550,000 bpd capacity) after a fire broke out from debris during interception of attacking drones. Saudi MOD said two drones were intercepted and destroyed, with a 'small' fire resulting from falling debris. No civilian casualties."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Ras Tanura struck again by unknown projectile (identified as drone by Saudi MOD). Four sources confirmed to Reuters the complex was hit. Saudi defense ministry said initial evaluation shows attack carried out by drone with no reported damage. Refinery already shut since March 2 drone attack."
                     }
             ],
             "sources": [
@@ -2977,6 +2989,18 @@ const LOCATIONS = [
                     {
                             "name": "ABC News (AP)",
                             "url": "https://abcnews.com/International/wireStory/saudi-arabia-intercepted-drones-targeting-ras-tanura-oil-130667464"
+                    },
+                    {
+                            "name": "Reuters (via Yahoo News)",
+                            "url": "https://ca.news.yahoo.com/saudi-aramcos-ras-tanura-struck-095152444.html"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/4/hundreds-of-drones-target-kuwait-iraq-saudi-arabia-uae-amid-iran-war"
+                    },
+                    {
+                            "name": "Republic World / Reuters",
+                            "url": "https://www.republicworld.com/world-news/saudi-aramco-s-key-refinery-ras-tanura-struck-again-by-drone-report"
                     }
             ],
             "dateAdded": "2026-03-02"
