@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-04T13:54:55.338Z",
+    "lastUpdated": "2026-03-04T15:38:03.141Z",
     "casualties": {
         "killed": 21,
         "injured": 176
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 5 of conflict (March 4): IRGC claims 230-drone wave fired at US facilities including Erbil (Iraq), Ali Al Salem and Camp Arifjan (Kuwait). Attack volume and frequency on Gulf states reported decreasing (Al Jazeera). UAE confirms over 1,000 total projectiles faced. Three major Iraq locations now confirmed as active strike zones: Erbil, Sulaimaniyah, Baghdad. Ras Tanura refinery hit by new projectile. Iranian frigate IRIS Dena sunk off Sri Lanka (outside map scope) — 100+ crew missing. Turkiye reports Iranian ballistic missile destroyed by NATO systems in eastern Mediterranean.",
-    "totalBarrage": "Updated March 4 intercept figures — UAE: 3 ballistic missiles + 121 drones intercepted (8 drones landed inside country) on Day 5 alone; cumulative UAE total exceeds 1,000 projectiles. Qatar: 10 drones + 2 cruise missiles intercepted on March 4. IRGC claims 230 drones in latest wave. Bahrain cumulative: 73 missiles + 91 drones intercepted.",
-    "intercepted": "UAE: 172 of 186 missiles, 755 of 812 drones intercepted (plus March 4 wave: 3 missiles, 121 drones downed, 8 landed inside). Bahrain: 73 missiles, 91 drones destroyed. Kuwait: 178 missiles, 384 drones intercepted. Qatar: 101 of 104 missiles, 24 of 39 drones intercepted."
+    "summary": "Day 5 (March 4): Iran's retaliatory strikes continue but at declining intensity per CENTCOM — BM launches down 86%, drone launches down 73% from opening day. IRGC claims complete control of Strait of Hormuz. Israel conducts 10th wave of airstrikes on Tehran. Gulf stock markets reopen to heavy sell-offs. US authorizes non-emergency personnel evacuations from Gulf embassies. France's Rafale jets neutralizing Iranian drones over UAE.",
+    "totalBarrage": "500+ ballistic missiles and 2,000+ drones launched by Iran total (CENTCOM Commander Admiral Brad Cooper, March 3). Iran's theater BM shots down 86% from opening day; drone launches down 73% (CENTCOM, March 4).",
+    "intercepted": "UAE: 186 BMs tracked (172 destroyed), 812 drones monitored (755 intercepted). Bahrain: 73 missiles + 91 drones destroyed. Kuwait: 178 BMs + 384 drones intercepted. Qatar: 101 BMs (98 intercepted), 39 drones (24 intercepted), 3 cruise missiles intercepted, 2 Iranian Su-24 jets shot down."
 };
 
 const LOCATIONS = [
@@ -738,7 +738,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Projectile attacks on commercial vessels",
-            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit. JMIC elevated regional maritime threat level to 'critical' on March 1. At least five commercial vessels struck or targeted in 24 hours. Oil tanker Hercules Star struck near Mina Saqr; bulk carrier Ocean Electra near-miss off Sharjah. As of March 3, the Strait of Hormuz remains effectively closed to commercial shipping. JMIC upgraded risk assessment to Critical. P&I insurance withdrawn from March 5, making transit economically unviable. At least 5 tankers damaged, ~150 ships stranded.",
+            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit. JMIC elevated regional maritime threat level to 'critical' on March 1. At least five commercial vessels struck or targeted in 24 hours. Oil tanker Hercules Star struck near Mina Saqr; bulk carrier Ocean Electra near-miss off Sharjah. As of March 3, the Strait of Hormuz remains effectively closed to commercial shipping. JMIC upgraded risk assessment to Critical. P&I insurance withdrawn from March 5, making transit economically unviable. At least 5 tankers damaged, ~150 ships stranded. March 4: IRGC Navy claims complete control of the strait. Deputy commander says 10+ tankers struck. UKMTO also reported a container ship struck in the strait. CENTCOM says no Iranian ships remain operational in the Arabian Gulf, Strait of Hormuz, or Gulf of Oman after US forces destroyed 17 Iranian vessels including a submarine.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -771,6 +771,14 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Strait remains effectively closed. JMIC upgraded regional risk to Critical (highest level). P&I insurance withdrawn from March 5. At least 5 tankers damaged, 2 maritime personnel killed, ~150 ships stranded. Near-zero commercial traffic."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "IRGC Navy deputy commander Mohammad Akbarzadeh claims 'complete control' of Strait of Hormuz; says 10+ oil tankers struck by missiles/drones after ignoring no-passage warnings (Fars via Al Jazeera)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Container ship struck in the Strait of Hormuz per UKMTO report (Argus Media)"
                     }
             ],
             "sources": [
@@ -829,6 +837,14 @@ const LOCATIONS = [
                     {
                             "name": "Seatrade Maritime (is Hormuz really closed?)",
                             "url": "https://www.seatrade-maritime.com/security/is-the-strait-of-hormuz-really-closed-"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/4/irgc-says-iran-in-complete-control-of-strait-of-hormuz-amid-trump-threats"
+                    },
+                    {
+                            "name": "Argus Media",
+                            "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2796119-another-vessel-attacked-off-fujairah-ukmto"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -992,6 +1008,42 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-03"
+    },
+    {
+            "name": "Vessels Struck 7-10nm East of Fujairah (Maritime Projectile Attacks)",
+            "lat": 25.135,
+            "lng": 56.47,
+            "country": "UAE",
+            "city": "Fujairah",
+            "severity": "critical",
+            "icon": "⚓",
+            "type": "Maritime Projectile Strikes",
+            "detail": "UKMTO confirmed two separate vessel attacks 7-10nm east of Fujairah on the night of March 3-4. One vessel struck by unknown projectile causing damage to steel plating (22:40 GMT). A tanker experienced a loud blast with projectile debris found on deck and minor funnel damage (22:30 GMT). All crew reported safe in both incidents.",
+            "incidents": [
+                    {
+                            "date": "2026-03-04",
+                            "text": "Vessel struck by unknown projectile 7nm east of Fujairah; steel plating damaged; crew safe (UKMTO via Reuters at 22:40 GMT Mar 3)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Tanker hit by debris from unknown projectile 10nm east of Fujairah; funnel sustained minor damage; crew safe (UKMTO via Al Arabiya)"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Reuters (via UKMTO)",
+                            "url": "https://www.usnews.com/news/world/articles/2026-03-03/uk-maritime-trade-operations-receives-a-report-of-an-incident-east-of-uaes-fujairah"
+                    },
+                    {
+                            "name": "Al Arabiya",
+                            "url": "https://english.alarabiya.net/News/middle-east/2026/03/04/tanker-struck-off-emirati-coast-by-unknown-projectile-debris-uk-maritime-agency"
+                    },
+                    {
+                            "name": "Middle East Eye",
+                            "url": "https://www.middleeasteye.net/live-blog/live-blog-update/sea-vessel-struck-seven-nautical-miles-east-uaes-fujairah"
+                    }
+            ],
+            "dateAdded": "2026-03-04"
     },
 
     // ═══════════════════════════════════════════════════════════
@@ -1562,7 +1614,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Largest US Base in ME — 2 Missiles Hit, Radar Destroyed",
-            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar. March 2: Explosions heard in Doha for third day. Qatar FM spokesperson: 'Iran has to pay a price for this blatant attack on our people. An attack like this cannot be left without retaliation.' On March 2, Qatar shot down two Iranian Su-24 fighter jets — the first shoot-down of manned aircraft in the conflict — and intercepted 7 missiles and 5 drones. Qatar MoD stated its armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar Emiri Air Force shot down two Iranian Su-24 fighter jets and intercepted 7 ballistic missiles + 5 drones — the first confirmed air-to-air engagement of the conflict. Qatar MOD stated threats were addressed immediately upon detection per operational plans. On March 2, Qatar Emiri Air Force shot down two Iranian Su-24 fighter-bombers — the first manned aircraft destroyed in combat during the conflict. Qatar also intercepted 7 ballistic missiles and 5 drones in the same engagement. Qatar MOD stressed armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar shot down two Iranian Su-24 bombers — the first manned Iranian aircraft downed since the conflict began — while intercepting 7 ballistic missiles and 5 drones. IRGC has claimed 12 waves of attacks since war began. Mar 2: Qatar Air Force shot down 2 Iranian Su-24 Fencer tactical bombers and intercepted 7 ballistic missiles and 5 drones — first confirmed aerial kill of Iranian aircraft by a Gulf state. QatarEnergy suspends all LNG production following drone strikes on Ras Laffan and Mesaieed facilities. March 2: Qatar Emiri Air Force confirmed shoot-down of two Iranian Su-24 Fencer bombers incoming from Iran — the first Gulf state to down Iranian manned aircraft. QEAF also intercepted 7 ballistic missiles and 5 drones on the same day. Qatar MOD now deploying fighter jets over Gulf waters rather than relying solely on ground-based Patriot systems. On March 3, Qatar's Emiri Air Force shot down two Iranian SU-24 aircraft approaching from Iran — the first confirmed shootdown of manned Iranian military aircraft by a Gulf state. Qatar also intercepted multiple additional missiles and drones. Updated totals: Qatar has intercepted 101 of 104 missiles, 24 of 39 drones, and shot down 2 Iranian Su-24 bomber aircraft per Qatar News Agency (via CNN). On March 3, Qatar's defence ministry reported intercepting two ballistic missiles early Tuesday morning. March 4: Qatar Defence Ministry intercepted 10 drones and 2 cruise missiles. Al Jazeera reports volume/frequency of attacks on Qatar decreasing but disruption continues with airspace still closed.",
+            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar. March 2: Explosions heard in Doha for third day. Qatar FM spokesperson: 'Iran has to pay a price for this blatant attack on our people. An attack like this cannot be left without retaliation.' On March 2, Qatar shot down two Iranian Su-24 fighter jets — the first shoot-down of manned aircraft in the conflict — and intercepted 7 missiles and 5 drones. Qatar MoD stated its armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar Emiri Air Force shot down two Iranian Su-24 fighter jets and intercepted 7 ballistic missiles + 5 drones — the first confirmed air-to-air engagement of the conflict. Qatar MOD stated threats were addressed immediately upon detection per operational plans. On March 2, Qatar Emiri Air Force shot down two Iranian Su-24 fighter-bombers — the first manned aircraft destroyed in combat during the conflict. Qatar also intercepted 7 ballistic missiles and 5 drones in the same engagement. Qatar MOD stressed armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar shot down two Iranian Su-24 bombers — the first manned Iranian aircraft downed since the conflict began — while intercepting 7 ballistic missiles and 5 drones. IRGC has claimed 12 waves of attacks since war began. Mar 2: Qatar Air Force shot down 2 Iranian Su-24 Fencer tactical bombers and intercepted 7 ballistic missiles and 5 drones — first confirmed aerial kill of Iranian aircraft by a Gulf state. QatarEnergy suspends all LNG production following drone strikes on Ras Laffan and Mesaieed facilities. March 2: Qatar Emiri Air Force confirmed shoot-down of two Iranian Su-24 Fencer bombers incoming from Iran — the first Gulf state to down Iranian manned aircraft. QEAF also intercepted 7 ballistic missiles and 5 drones on the same day. Qatar MOD now deploying fighter jets over Gulf waters rather than relying solely on ground-based Patriot systems. On March 3, Qatar's Emiri Air Force shot down two Iranian SU-24 aircraft approaching from Iran — the first confirmed shootdown of manned Iranian military aircraft by a Gulf state. Qatar also intercepted multiple additional missiles and drones. Updated totals: Qatar has intercepted 101 of 104 missiles, 24 of 39 drones, and shot down 2 Iranian Su-24 bomber aircraft per Qatar News Agency (via CNN). On March 3, Qatar's defence ministry reported intercepting two ballistic missiles early Tuesday morning. March 4: Qatar Defence Ministry intercepted 10 drones and 2 cruise missiles. Al Jazeera reports volume/frequency of attacks on Qatar decreasing but disruption continues with airspace still closed. Qatari Defense Ministry confirmed a ballistic missile struck the base in the latest wave; no casualties reported. Qatar also arrested 10 suspected IRGC spies on espionage and drone-sabotage charges.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1615,6 +1667,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "Qatar Defence Ministry reports intercepting 10 drones and 2 cruise missiles launched from Iran on Day 5 of conflict (Al Jazeera)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Qatari MoD confirms one Iranian ballistic missile intercepted, another struck Al Udeid Air Base with no casualties reported"
                     }
             ],
             "sources": [
@@ -1713,6 +1769,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera (March 4)",
                             "url": "https://www.aljazeera.com/news/2026/3/4/hundreds-of-drones-target-kuwait-iraq-saudi-arabia-uae-amid-iran-war"
+                    },
+                    {
+                            "name": "NCRI (citing QNA/Qatari MoD)",
+                            "url": "https://www.ncr-iran.org/en/news/iran-news-in-brief-news/iran-news-in-brief-march-4-2026/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -2123,6 +2183,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC announces 230-drone barrage targeting US facilities including Ali Al Salem Air Base as part of continuing Operation True Promise IV on Day 5 of conflict (Al Jazeera)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "IRGC announced firing 230 drones at multiple US troop facilities including Ali Al Salem Air Base, calling attacks its 'first powerful steps' in the war"
                     }
             ],
             "sources": [
@@ -2655,6 +2719,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC announces 230-drone barrage targeting US facilities including Camp Arifjan on Day 5 of conflict (Al Jazeera)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "IRGC claimed 230-drone barrage targeting US facilities including Camp Arifjan"
                     }
             ],
             "sources": [
@@ -2863,6 +2931,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "Saudi Arabia's defence ministry said it intercepted and destroyed a drone in the Eastern Province. No further details on origin, damage, or casualties were immediately provided."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Saudi defence ministry intercepted and destroyed a drone in the Eastern Province; no further details on origin or damage provided"
                     }
             ],
             "sources": [
