@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-04T10:29:22.056Z",
+    "lastUpdated": "2026-03-04T11:27:37.298Z",
     "casualties": {
         "killed": 21,
         "injured": 176
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 5 of conflict (March 4): Iran continued drone and missile strikes on Gulf states for a fifth consecutive day. CENTCOM reports Iran has launched more than 500 ballistic missiles and over 2,000 drones total. US says it has destroyed 17 Iranian ships and nearly 2,000 targets. UAE reports 186 missiles (172 destroyed) and 812 drones (755 intercepted). Bahrain reports 73 missiles and 91 drones destroyed. Kuwait has intercepted 178 ballistic missiles and 384 drones. An 'overwhelming' bigger wave of US-Israeli strikes on Iran expected in coming days per classified congressional briefings.",
-    "totalBarrage": "Iran has launched over 500 ballistic missiles and more than 2,000 drones across the region (CENTCOM, as of March 4). UAE alone: 186 missiles, 812 drones. Kuwait: 178 missiles, 384 drones. Bahrain: 73 missiles, 91 drones.",
-    "intercepted": "UAE: 172 of 186 missiles, 755 of 812 drones. Kuwait: 178 missiles, 384 drones (majority intercepted). Bahrain: 73 missiles, 91 drones destroyed. Qatar: 98 of 101 ballistic missiles, 3 cruise missiles, 24 of 39 drones intercepted."
+    "summary": "Day 5 (March 4): Iran continued retaliatory strikes for fifth consecutive day. IRGC announced 230-drone barrage targeting US bases (Erbil, Ali Al Salem, Camp Arifjan). UAE has faced over 1,000 total Iranian attacks — highest of any targeted nation. France deployed Rafale jets to neutralize Iranian drones over UAE. Qatar airspace remains closed. IRIS Dena Iranian Navy frigate sunk off Sri Lanka with 100+ missing (major geographic expansion of conflict). Six US service members killed total; 18 seriously wounded. Gulf civilian death toll at 8+. Al Jazeera reports volume/frequency of Iranian attacks decreasing but low-level strikes sufficient to keep airspace closed and disrupt commerce.",
+    "totalBarrage": "UAE: 1,000+ total attacks (186+ BMs, 812+ drones as of March 3; March 4 adds 3 BMs + 121 drones detected). Kuwait: 178+ BMs, 384+ drones. Bahrain: 73+ missiles, 91+ drones. Qatar: 101+ BMs, 39+ drones, 3+ cruise missiles. Jordan: 13 BMs, 49 drones intercepted.",
+    "intercepted": "UAE March 4: 3 BMs + 121 drones downed (8 drones impacted inside country). Qatar March 4: 10 drones + 2 cruise missiles intercepted. France Rafale jets actively neutralizing drones over UAE."
 };
 
 const LOCATIONS = [
@@ -1554,7 +1554,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Largest US Base in ME — 2 Missiles Hit, Radar Destroyed",
-            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar. March 2: Explosions heard in Doha for third day. Qatar FM spokesperson: 'Iran has to pay a price for this blatant attack on our people. An attack like this cannot be left without retaliation.' On March 2, Qatar shot down two Iranian Su-24 fighter jets — the first shoot-down of manned aircraft in the conflict — and intercepted 7 missiles and 5 drones. Qatar MoD stated its armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar Emiri Air Force shot down two Iranian Su-24 fighter jets and intercepted 7 ballistic missiles + 5 drones — the first confirmed air-to-air engagement of the conflict. Qatar MOD stated threats were addressed immediately upon detection per operational plans. On March 2, Qatar Emiri Air Force shot down two Iranian Su-24 fighter-bombers — the first manned aircraft destroyed in combat during the conflict. Qatar also intercepted 7 ballistic missiles and 5 drones in the same engagement. Qatar MOD stressed armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar shot down two Iranian Su-24 bombers — the first manned Iranian aircraft downed since the conflict began — while intercepting 7 ballistic missiles and 5 drones. IRGC has claimed 12 waves of attacks since war began. Mar 2: Qatar Air Force shot down 2 Iranian Su-24 Fencer tactical bombers and intercepted 7 ballistic missiles and 5 drones — first confirmed aerial kill of Iranian aircraft by a Gulf state. QatarEnergy suspends all LNG production following drone strikes on Ras Laffan and Mesaieed facilities. March 2: Qatar Emiri Air Force confirmed shoot-down of two Iranian Su-24 Fencer bombers incoming from Iran — the first Gulf state to down Iranian manned aircraft. QEAF also intercepted 7 ballistic missiles and 5 drones on the same day. Qatar MOD now deploying fighter jets over Gulf waters rather than relying solely on ground-based Patriot systems. On March 3, Qatar's Emiri Air Force shot down two Iranian SU-24 aircraft approaching from Iran — the first confirmed shootdown of manned Iranian military aircraft by a Gulf state. Qatar also intercepted multiple additional missiles and drones. Updated totals: Qatar has intercepted 101 of 104 missiles, 24 of 39 drones, and shot down 2 Iranian Su-24 bomber aircraft per Qatar News Agency (via CNN). On March 3, Qatar's defence ministry reported intercepting two ballistic missiles early Tuesday morning.",
+            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar. March 2: Explosions heard in Doha for third day. Qatar FM spokesperson: 'Iran has to pay a price for this blatant attack on our people. An attack like this cannot be left without retaliation.' On March 2, Qatar shot down two Iranian Su-24 fighter jets — the first shoot-down of manned aircraft in the conflict — and intercepted 7 missiles and 5 drones. Qatar MoD stated its armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar Emiri Air Force shot down two Iranian Su-24 fighter jets and intercepted 7 ballistic missiles + 5 drones — the first confirmed air-to-air engagement of the conflict. Qatar MOD stated threats were addressed immediately upon detection per operational plans. On March 2, Qatar Emiri Air Force shot down two Iranian Su-24 fighter-bombers — the first manned aircraft destroyed in combat during the conflict. Qatar also intercepted 7 ballistic missiles and 5 drones in the same engagement. Qatar MOD stressed armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar shot down two Iranian Su-24 bombers — the first manned Iranian aircraft downed since the conflict began — while intercepting 7 ballistic missiles and 5 drones. IRGC has claimed 12 waves of attacks since war began. Mar 2: Qatar Air Force shot down 2 Iranian Su-24 Fencer tactical bombers and intercepted 7 ballistic missiles and 5 drones — first confirmed aerial kill of Iranian aircraft by a Gulf state. QatarEnergy suspends all LNG production following drone strikes on Ras Laffan and Mesaieed facilities. March 2: Qatar Emiri Air Force confirmed shoot-down of two Iranian Su-24 Fencer bombers incoming from Iran — the first Gulf state to down Iranian manned aircraft. QEAF also intercepted 7 ballistic missiles and 5 drones on the same day. Qatar MOD now deploying fighter jets over Gulf waters rather than relying solely on ground-based Patriot systems. On March 3, Qatar's Emiri Air Force shot down two Iranian SU-24 aircraft approaching from Iran — the first confirmed shootdown of manned Iranian military aircraft by a Gulf state. Qatar also intercepted multiple additional missiles and drones. Updated totals: Qatar has intercepted 101 of 104 missiles, 24 of 39 drones, and shot down 2 Iranian Su-24 bomber aircraft per Qatar News Agency (via CNN). On March 3, Qatar's defence ministry reported intercepting two ballistic missiles early Tuesday morning. March 4: Qatar Defence Ministry intercepted 10 drones and 2 cruise missiles. Al Jazeera reports volume/frequency of attacks on Qatar decreasing but disruption continues with airspace still closed.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1603,6 +1603,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Qatar military intercepted two ballistic missiles early Tuesday morning (Qatar Defence Ministry via Peninsula Qatar, AFP)."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Qatar Defence Ministry reports intercepting 10 drones and 2 cruise missiles launched from Iran on Day 5 of conflict (Al Jazeera)"
                     }
             ],
             "sources": [
@@ -1697,6 +1701,10 @@ const LOCATIONS = [
                     {
                             "name": "AFP (via Tribune)",
                             "url": "https://tribune.com.pk/story/2595550/us-embassy-attack-in-riyadh-sparks-fire-as-saudi-arabia-intercepts-iran-drones"
+                    },
+                    {
+                            "name": "Al Jazeera (March 4)",
+                            "url": "https://www.aljazeera.com/news/2026/3/4/hundreds-of-drones-target-kuwait-iraq-saudi-arabia-uae-amid-iran-war"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -2062,7 +2070,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Coalition Air Base — Major Missile Strike",
-            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation). March 2: CENTCOM confirmed 4th US service member died from injuries sustained in Iran's initial attacks on Kuwait. 'Major combat operations continue.' New wave of missiles and drones targeted Kuwait airspace early March 3. Kuwait total interceptions: 178 ballistic missiles and 384 drones.",
+            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation). March 2: CENTCOM confirmed 4th US service member died from injuries sustained in Iran's initial attacks on Kuwait. 'Major combat operations continue.' New wave of missiles and drones targeted Kuwait airspace early March 3. Kuwait total interceptions: 178 ballistic missiles and 384 drones. March 4: IRGC claims 230-drone barrage targeted Ali Al Salem among other US bases. Kuwait defenses continue interceptions. Volume of attacks reportedly decreasing but disruption continues.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -2095,6 +2103,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Kuwait armed forces responding to 'wave of missiles and drones' detected in airspace early Tuesday. Updated totals since conflict began: 178 ballistic missiles and 384 drones intercepted (CNN, Kuwait News Agency)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "IRGC announces 230-drone barrage targeting US facilities including Ali Al Salem Air Base as part of continuing Operation True Promise IV on Day 5 of conflict (Al Jazeera)"
                     }
             ],
             "sources": [
@@ -2145,6 +2157,10 @@ const LOCATIONS = [
                     {
                             "name": "CNN",
                             "url": "https://www.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
+                    },
+                    {
+                            "name": "Al Jazeera (March 4)",
+                            "url": "https://www.aljazeera.com/news/2026/3/4/hundreds-of-drones-target-kuwait-iraq-saudi-arabia-uae-amid-iran-war"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -2610,7 +2626,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Military Base Strike",
-            "detail": "Camp Arifjan, a major US Army base in southern Kuwait housing logistics and sustainment troops, was targeted by Iranian drones. Anadolu Agency reported US officials confirmed a strike with casualties. IRGC claimed 12 drone strikes on the base as part of Operation True Promise 4 Wave 12. A halt-to-movement order was issued for Camp Arifjan along with other Kuwait bases.",
+            "detail": "Camp Arifjan, a major US Army base in southern Kuwait housing logistics and sustainment troops, was targeted by Iranian drones. Anadolu Agency reported US officials confirmed a strike with casualties. IRGC claimed 12 drone strikes on the base as part of Operation True Promise 4 Wave 12. A halt-to-movement order was issued for Camp Arifjan along with other Kuwait bases. March 4: IRGC claims Camp Arifjan targeted in 230-drone barrage aimed at US facilities across the region.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -2619,6 +2635,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "IRGC claimed 12 drone strikes on Camp Arifjan as part of Wave 12 of Operation True Promise 4, per TASS citing IRGC statement."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "IRGC announces 230-drone barrage targeting US facilities including Camp Arifjan on Day 5 of conflict (Al Jazeera)"
                     }
             ],
             "sources": [
@@ -2633,6 +2653,10 @@ const LOCATIONS = [
                     {
                             "name": "CBS News (halt to movement)",
                             "url": "https://www.cbs17.com/news/national-news/us-service-members-in-kuwait-were-killed-in-military-operation-against-iran/"
+                    },
+                    {
+                            "name": "Al Jazeera (March 4)",
+                            "url": "https://www.aljazeera.com/news/2026/3/4/hundreds-of-drones-target-kuwait-iraq-saudi-arabia-uae-amid-iran-war"
                     }
             ],
             "dateAdded": "2026-03-03"
