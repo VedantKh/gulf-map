@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-04T08:29:55.100Z",
+    "lastUpdated": "2026-03-04T09:34:20.137Z",
     "casualties": {
         "killed": 20,
         "injured": 172
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 5 of Iran's Operation True Promise IV. IRGC announced 17th wave of strikes (~40+ missiles at US/Israeli targets). Iran has struck 10+ countries. Updated UAE interception figures: 186 missiles tracked (172 destroyed), 812 drones monitored (755 intercepted). Bahrain has destroyed 73 missiles and 91 drones. Iraq's FM confirms 70+ attacks on Erbil alone. Six US service members KIA. IRGC claims ongoing operations with no ceasefire in sight.",
-    "totalBarrage": "UAE: 186 missiles / 812 drones; Bahrain: 73 missiles / 91 drones; Qatar: 3 cruise missiles, 101 ballistic missiles, 39 drones; Kuwait: 97 missiles / 283 drones; IRGC claims 17 waves of True Promise IV completed",
-    "intercepted": "UAE: 172 missiles + 755 drones intercepted; Bahrain: 73 missiles + 91 drones destroyed; Qatar: 98 of 101 BMs intercepted, 24 of 39 drones intercepted, 2 Iranian Su-24 shot down; Kuwait: 97 missiles + 283 drones intercepted"
+    "summary": "Day 5 of Iran conflict (March 4). IRGC announces 17th wave of Operation True Promise IV, firing 40+ missiles at US/Israeli targets. Iraq now a major front: Erbil hit by 70+ attacks (Iraqi FM), Baghdad Victory Base struck. Tehran continues retaliatory attacks on US targets across the Gulf for a fifth consecutive day. US death toll at 6 service members, 18 seriously wounded. Death toll in Iran surpasses 800.",
+    "totalBarrage": "UAE: 186 missiles fired (172 destroyed) + 812 drones (755 intercepted). Bahrain: 73 missiles + 91 drones destroyed. Kuwait: 178 ballistic missiles + 384 drones intercepted. Qatar: 101 ballistic missiles + 3 cruise missiles + 39 drones detected. IRGC has conducted 17 waves of Operation True Promise IV as of March 4.",
+    "intercepted": "UAE: 172 of 186 missiles, 755 of 812 drones. Bahrain: 73 missiles + 91 drones. Kuwait: 178 missiles + 384 drones. Qatar: 98 of 101 ballistic, 3 cruise, 24 of 39 drones. Jordan: 13 ballistic + 49 drones. Gulf-wide intercept rates remain high but drones continue penetrating defenses — UAE MOD confirmed 44 drones caused impact within its territory."
 };
 
 const LOCATIONS = [
@@ -1186,7 +1186,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Bahrain Air Force / US Support Base",
-            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3). March 4: US ordered non-emergency departure from Bahrain, upgrading from authorized departure. Embassy warned US citizens that hotels in Manama may be targeted. On March 4, the IRGC claimed a major barrage (Wave 15 of True Promise 4) targeting Isa Air Base with 20 drones and 3 missiles, claiming the main US command building and fuel tanks were destroyed. Upgraded to CRITICAL based on IRGC official statement of confirmed projectile impacts; independent verification pending. On March 4, IRGC confirmed a dawn drone/missile attack on the US air base in Sheikh Isa/Sakhir area. This follows prior waves of attacks on the facility.",
+            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3). March 4: US ordered non-emergency departure from Bahrain, upgrading from authorized departure. Embassy warned US citizens that hotels in Manama may be targeted. On March 4, the IRGC claimed a major barrage (Wave 15 of True Promise 4) targeting Isa Air Base with 20 drones and 3 missiles, claiming the main US command building and fuel tanks were destroyed. Upgraded to CRITICAL based on IRGC official statement of confirmed projectile impacts; independent verification pending. On March 4, IRGC confirmed a dawn drone/missile attack on the US air base in Sheikh Isa/Sakhir area. This follows prior waves of attacks on the facility. Ongoing March 4 attacks: Iranian drones continue targeting Bahraini military infrastructure in the Sakhir area as IRGC announces 17th wave of True Promise IV.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1235,6 +1235,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC announced its naval forces carried out a large-scale drone and missile attack at dawn on the US air base in the Sheikh Isa/Sakhir area of Bahrain (IRNA via Al Jazeera)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Iranian drone reported targeting the US-Bahraini military base in the Sakhir area (where Isa Air Base is located) on the morning of March 4, as part of IRGC's ongoing 17th wave of Operation True Promise IV."
                     }
             ],
             "sources": [
@@ -1273,6 +1277,10 @@ const LOCATIONS = [
                     {
                             "name": "The New Region",
                             "url": "https://thenewregion.com/posts/4736"
+                    },
+                    {
+                            "name": "Al Jazeera Live Blog (March 4)",
+                            "url": "https://www.aljazeera.com/news/liveblog/2026/3/4/iran-live-news-us-embassy-in-dubai-hit-israel-pounds-tehran-beirut"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -3336,6 +3344,46 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-03"
+    },
+
+    // ═══════════════════════════════════════════════════════════
+    // Iraq
+    // ═══════════════════════════════════════════════════════════
+    {
+            "name": "Jurf al-Sakhar (Jurf al-Nasr) — PMF Base, South of Baghdad, Iraq",
+            "lat": 32.95,
+            "lng": 44.1,
+            "country": "Iraq",
+            "city": "Jurf al-Sakhar",
+            "severity": "critical",
+            "icon": "💥",
+            "type": "US-Israeli Strike on Pro-Iran Militia Base",
+            "detail": "US-Israeli strikes targeted the Jurf al-Sakhar base housing Popular Mobilization Forces and Kataib Hezbollah. Iraqi state media and PMF confirmed two fighters killed and five wounded. Kataib Hezbollah warned it would 'soon begin attacking American bases in response.'",
+            "incidents": [
+                    {
+                            "date": "2026-02-28",
+                            "text": "US-Israeli airstrikes hit Jurf al-Sakhar area, targeting Kataib Hezbollah and PMF positions. Two PMF fighters killed, five wounded per Iraqi state media and PMF spokesperson."
+                    },
+                    {
+                            "date": "2026-03-01",
+                            "text": "Additional strikes reported at Jurf al-Nasr. Iraqi government security media cell confirmed targeting at 7:25 PM local time. Kataib Hezbollah warned of retaliatory attacks on US bases."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/2/28/multiple-gulf-arab-states-that-host-us-assets-targeted-in-iran-retaliation"
+                    },
+                    {
+                            "name": "Al Jazeera Death Toll Tracker",
+                            "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker"
+                    },
+                    {
+                            "name": "Wikipedia (2026 Iran conflict)",
+                            "url": "https://en.wikipedia.org/wiki/2026_Iran_conflict"
+                    }
+            ],
+            "dateAdded": "2026-03-04"
     },
 
 ];
