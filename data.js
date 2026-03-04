@@ -8,14 +8,14 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-04T19:35:12.280Z",
+    "lastUpdated": "2026-03-04T20:28:40.500Z",
     "casualties": {
         "killed": 21,
         "injured": 176
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 5 of Iran-US/Israel conflict. IRGC claimed 230-drone wave as 'first powerful steps.' Iran expands strikes to Baghdad and deepens Erbil attacks. Turkey reports NATO intercepted Iran-fired ballistic missile. Gen. Caine says Iran ballistic missile fire down 86% from Day 1. Qatari PM demands Iran stop Gulf attacks; Araghchi says strikes target US interests only. US says it has 'effectively neutralized' Iran's naval capacity.",
-    "totalBarrage": "500+ ballistic missiles and 2,000+ drones launched by Iran in retaliation (per CENTCOM Admiral Brad Cooper, cited by Al Jazeera March 4). UAE alone tracked 186 missiles (172 destroyed) and 812 drones (755 intercepted) as of March 3.",
+    "summary": "Day 5 (March 4): IRGC announced 230 drones fired at US facilities including Erbil, Ali Al Salem, Camp Arifjan. NATO intercepted Iranian ballistic missile heading toward Turkey — first NATO defensive engagement of the conflict. New Iraqi front expanding: Baghdad airport, Erbil base/hotel, Sulaimaniyah, Kurdish opposition sites all struck. Commercial shipping attacks continue in Strait of Hormuz (Safeen Prestige struck, 4th vessel in 24hrs). Attack frequency declining (62 waves on March 1 down to 7-8 on March 3-4 per Alma Research) but geographic scope widening. France's Rafale jets confirmed neutralizing Iranian drones over UAE. Qatar intercepted 10 drones and 2 cruise missiles on March 4.",
+    "totalBarrage": "IRGC announced 230-drone wave on March 4 targeting US facilities; Cumulative totals — UAE: 186 ballistic missiles, 812 drones tracked; Kuwait: 97 ballistic missiles, 283 drones; Bahrain: 73 missiles, 91 drones; Qatar: 101 ballistic missiles, 3 cruise missiles, 39 drones, 2 SU-24 jets intercepted; Jordan: 13 ballistic missiles, 49 drones intercepted",
     "intercepted": "Bahrain: 73 missiles + 91 drones intercepted. Kuwait: 97 BMs + 283 drones. UAE: 172 missiles + 755 drones. Qatar: 10 drones + 2 cruise missiles intercepted on March 4. Gen. Caine: Iranian ballistic missile fire down 86% from Saturday, 23% drop in last 24 hours."
 };
 
@@ -3066,7 +3066,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Oil Facility Strike",
-            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted. On March 4, a drone struck the already-shuttered Ras Tanura complex again per Reuters (4 sources). Saudi MOD confirmed the attack but said no damage resulted. The refinery (550,000 bpd capacity) has remained shut since the March 2 drone attack that caused a fire. On March 4, a projectile hit the refinery directly (Reuters), after the plant had already been shut down from an earlier debris-induced fire. March 4: Reuters sources report a projectile directly hit the refinery, which had already been shut down after earlier debris fire from intercepted drones. On March 4, a projectile directly hit the refinery per two Reuters sources. Operations had already been shut down as a precaution after an earlier debris-induced fire. Reuters sources report a new projectile hit the already-shuttered refinery later on March 4, beyond the earlier debris fire.",
+            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted. On March 4, a drone struck the already-shuttered Ras Tanura complex again per Reuters (4 sources). Saudi MOD confirmed the attack but said no damage resulted. The refinery (550,000 bpd capacity) has remained shut since the March 2 drone attack that caused a fire. On March 4, a projectile hit the refinery directly (Reuters), after the plant had already been shut down from an earlier debris-induced fire. March 4: Reuters sources report a projectile directly hit the refinery, which had already been shut down after earlier debris fire from intercepted drones. On March 4, a projectile directly hit the refinery per two Reuters sources. Operations had already been shut down as a precaution after an earlier debris-induced fire. Reuters sources report a new projectile hit the already-shuttered refinery later on March 4, beyond the earlier debris fire. On March 4, a projectile directly hit the refinery per two Reuters-cited sources, beyond the earlier debris fire that had already prompted a shutdown.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -3501,6 +3501,38 @@ const LOCATIONS = [
                     {
                             "name": "Marine Insight (UKMTO warning)",
                             "url": "https://www.marineinsight.com/shipping-news/unknown-projectiles-strike-ships-near-oman-and-uae-ukmto-issues-urgent-strait-of-hormuz-warning/"
+                    }
+            ],
+            "dateAdded": "2026-03-04"
+    },
+    {
+            "name": "Container Ship SAFEEN PRESTIGE (Projectile Strike, Strait of Hormuz off Oman)",
+            "lat": 26.35,
+            "lng": 56.4,
+            "country": "Oman",
+            "city": "Strait of Hormuz (2nm North of Oman)",
+            "severity": "critical",
+            "icon": "⚓",
+            "type": "Maritime Projectile Attack",
+            "detail": "Malta-flagged container ship Safeen Prestige (AD Ports Group/Safeen Feeders, UAE) struck by unknown projectile at 1109 UTC on March 4 while transiting eastbound in the Strait of Hormuz, 2nm north of Oman. Projectile hit just above the waterline causing engine room fire. Crew abandoned ship; no injuries or environmental damage reported. UKMTO confirmed the incident. Reported as the fourth commercial vessel attack in the region within 24 hours.",
+            "incidents": [
+                    {
+                            "date": "2026-03-04",
+                            "text": "Safeen Prestige struck by projectile 2nm north of Oman in Strait of Hormuz at 1109 UTC; engine room fire; crew abandoned ship (Reuters/UKMTO)"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Reuters (via US News)",
+                            "url": "https://www.usnews.com/news/world/articles/2026-03-04/malta-flagged-container-ship-hit-by-projectile-in-hormuz-vessel-abandoned-sources-say"
+                    },
+                    {
+                            "name": "Container News",
+                            "url": "https://container-news.com/malta-flagged-container-ship-struck-by-missile-in-strait-of-hormuz/"
+                    },
+                    {
+                            "name": "gCaptain",
+                            "url": "https://gcaptain.com/containership-hit-by-projectile-in-strait-of-hormuz-as-maritime-attacks-escalate/"
                     }
             ],
             "dateAdded": "2026-03-04"
