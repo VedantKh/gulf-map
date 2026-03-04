@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-04T09:34:20.137Z",
+    "lastUpdated": "2026-03-04T10:29:22.056Z",
     "casualties": {
-        "killed": 20,
-        "injured": 172
+        "killed": 21,
+        "injured": 176
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 5 of Iran conflict (March 4). IRGC announces 17th wave of Operation True Promise IV, firing 40+ missiles at US/Israeli targets. Iraq now a major front: Erbil hit by 70+ attacks (Iraqi FM), Baghdad Victory Base struck. Tehran continues retaliatory attacks on US targets across the Gulf for a fifth consecutive day. US death toll at 6 service members, 18 seriously wounded. Death toll in Iran surpasses 800.",
-    "totalBarrage": "UAE: 186 missiles fired (172 destroyed) + 812 drones (755 intercepted). Bahrain: 73 missiles + 91 drones destroyed. Kuwait: 178 ballistic missiles + 384 drones intercepted. Qatar: 101 ballistic missiles + 3 cruise missiles + 39 drones detected. IRGC has conducted 17 waves of Operation True Promise IV as of March 4.",
-    "intercepted": "UAE: 172 of 186 missiles, 755 of 812 drones. Bahrain: 73 missiles + 91 drones. Kuwait: 178 missiles + 384 drones. Qatar: 98 of 101 ballistic, 3 cruise, 24 of 39 drones. Jordan: 13 ballistic + 49 drones. Gulf-wide intercept rates remain high but drones continue penetrating defenses — UAE MOD confirmed 44 drones caused impact within its territory."
+    "summary": "Day 5 of conflict (March 4): Iran continued drone and missile strikes on Gulf states for a fifth consecutive day. CENTCOM reports Iran has launched more than 500 ballistic missiles and over 2,000 drones total. US says it has destroyed 17 Iranian ships and nearly 2,000 targets. UAE reports 186 missiles (172 destroyed) and 812 drones (755 intercepted). Bahrain reports 73 missiles and 91 drones destroyed. Kuwait has intercepted 178 ballistic missiles and 384 drones. An 'overwhelming' bigger wave of US-Israeli strikes on Iran expected in coming days per classified congressional briefings.",
+    "totalBarrage": "Iran has launched over 500 ballistic missiles and more than 2,000 drones across the region (CENTCOM, as of March 4). UAE alone: 186 missiles, 812 drones. Kuwait: 178 missiles, 384 drones. Bahrain: 73 missiles, 91 drones.",
+    "intercepted": "UAE: 172 of 186 missiles, 755 of 812 drones. Kuwait: 178 missiles, 384 drones (majority intercepted). Bahrain: 73 missiles, 91 drones destroyed. Qatar: 98 of 101 ballistic missiles, 3 cruise missiles, 24 of 39 drones intercepted."
 };
 
 const LOCATIONS = [
@@ -276,7 +276,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "City Port — Drone Strike + Missile Near-Miss",
-            "detail": "Abu Dhabi's main city port, cruise terminal, AND Al Salam Naval Base (French military). Directly struck by at least 2 Shahed-136 drones targeting the French naval base. A missile also landed in the water meters from the German cruise ship Mein Schiff 4 (2,500 passengers). Two Iranian drones struck warehouse at Al Salam Naval Base. French Defense Minister confirmed hangar hosting French forces was hit with limited damage. No casualties. On March 1, UAE MOD confirmed two Iranian drones hit a warehouse at the Al Salam Naval Base (Camp de la Paix), which hosts French forces. Fire in two containers; no casualties. French Defence Minister confirmed limited material damage.",
+            "detail": "Abu Dhabi's main city port, cruise terminal, AND Al Salam Naval Base (French military). Directly struck by at least 2 Shahed-136 drones targeting the French naval base. A missile also landed in the water meters from the German cruise ship Mein Schiff 4 (2,500 passengers). Two Iranian drones struck warehouse at Al Salam Naval Base. French Defense Minister confirmed hangar hosting French forces was hit with limited damage. No casualties. On March 1, UAE MOD confirmed two Iranian drones hit a warehouse at the Al Salam Naval Base (Camp de la Paix), which hosts French forces. Fire in two containers; no casualties. French Defence Minister confirmed limited material damage. French Camp de la Paix near the port was also struck; France deployed Rafale jets in response.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -289,6 +289,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "Two Iranian drones struck a warehouse at Al Salam Naval Base causing a fire in two containers. French Defense Minister confirmed a hangar hosting French forces was hit with limited damage. No casualties reported by either UAE or France."
+                    },
+                    {
+                            "date": "2026-03-01",
+                            "text": "French naval air base Camp de la Paix, located near Zayed Port, was also struck by Iranian drones. France subsequently deployed Rafale jets to protect its bases."
                     }
             ],
             "sources": [
@@ -315,6 +319,10 @@ const LOCATIONS = [
                     {
                             "name": "Wikipedia (citing UAE MOD, France Info)",
                             "url": "https://en.wikipedia.org/wiki/2026_Israeli%E2%80%93United_States_strikes_on_Iran"
+                    },
+                    {
+                            "name": "Wikipedia (2026 Iranian strikes on UAE)",
+                            "url": "https://en.wikipedia.org/wiki/2026_Iranian_strikes_on_the_United_Arab_Emirates"
                     }
             ],
             "dateAdded": "2026-03-01"
@@ -1186,7 +1194,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Bahrain Air Force / US Support Base",
-            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3). March 4: US ordered non-emergency departure from Bahrain, upgrading from authorized departure. Embassy warned US citizens that hotels in Manama may be targeted. On March 4, the IRGC claimed a major barrage (Wave 15 of True Promise 4) targeting Isa Air Base with 20 drones and 3 missiles, claiming the main US command building and fuel tanks were destroyed. Upgraded to CRITICAL based on IRGC official statement of confirmed projectile impacts; independent verification pending. On March 4, IRGC confirmed a dawn drone/missile attack on the US air base in Sheikh Isa/Sakhir area. This follows prior waves of attacks on the facility. Ongoing March 4 attacks: Iranian drones continue targeting Bahraini military infrastructure in the Sakhir area as IRGC announces 17th wave of True Promise IV.",
+            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3). March 4: US ordered non-emergency departure from Bahrain, upgrading from authorized departure. Embassy warned US citizens that hotels in Manama may be targeted. On March 4, the IRGC claimed a major barrage (Wave 15 of True Promise 4) targeting Isa Air Base with 20 drones and 3 missiles, claiming the main US command building and fuel tanks were destroyed. Upgraded to CRITICAL based on IRGC official statement of confirmed projectile impacts; independent verification pending. On March 4, IRGC confirmed a dawn drone/missile attack on the US air base in Sheikh Isa/Sakhir area. This follows prior waves of attacks on the facility. Ongoing March 4 attacks: Iranian drones continue targeting Bahraini military infrastructure in the Sakhir area as IRGC announces 17th wave of True Promise IV. Bahrain Defence Force reports 73 missiles and 91 drones destroyed since conflict began.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1239,6 +1247,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "Iranian drone reported targeting the US-Bahraini military base in the Sakhir area (where Isa Air Base is located) on the morning of March 4, as part of IRGC's ongoing 17th wave of Operation True Promise IV."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Bahrain said its air defence systems have destroyed 73 missiles and 91 drones launched by Iran since the start of the conflict (updated figures as of March 3). Sirens continued sounding across Bahrain."
                     }
             ],
             "sources": [
@@ -2648,6 +2660,34 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-03"
+    },
+    {
+            "name": "Kuwait City Residential Area (Child Shrapnel Fatality)",
+            "lat": 29.3759,
+            "lng": 47.9774,
+            "country": "Kuwait",
+            "city": "Kuwait City",
+            "severity": "critical",
+            "icon": "💥",
+            "type": "Interceptor Debris Fatality",
+            "detail": "An 11-year-old girl died on March 4 after shrapnel from an intercepted projectile fell on a residential area in Kuwait City. Kuwait's Ministry of Health announced the death on Wednesday. Four of her family members are undergoing medical evaluation. This is the second confirmed civilian fatality in Kuwait from the conflict.",
+            "incidents": [
+                    {
+                            "date": "2026-03-04",
+                            "text": "11-year-old girl killed by falling shrapnel in residential area; 4 family members injured. Kuwait Ministry of Health confirmed."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "CNN",
+                            "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-03-26"
+                    },
+                    {
+                            "name": "WorldNews",
+                            "url": "https://article.wn.com/view/2026/03/04/11yearold_girl_killed_in_Kuwait_after_drone_shrapnel_falls_i/"
+                    }
+            ],
+            "dateAdded": "2026-03-04"
     },
 
     // ═══════════════════════════════════════════════════════════
