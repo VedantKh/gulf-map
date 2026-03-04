@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-04T01:13:29.555Z",
+    "lastUpdated": "2026-03-04T04:02:28.946Z",
     "casualties": {
         "killed": 20,
         "injured": 172
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 5 (March 4): IRGC general threatened to hit 'all economic hubs in the Middle East' if US-Israeli strikes continue. Iran-backed Iraqi militias opened a new front with 70+ drone/missile attacks on US forces in Erbil. Israel launched new 'broad wave' of strikes on Iran overnight Mar 3-4. Iran carried out new wave of attacks on Israel overnight. US has identified 4 of 6 soldiers killed at Shuaiba port Kuwait. CENTCOM reports 18 troops seriously wounded total. Qatar shot down 2 Iranian SU-24 jets. Updated interception totals: UAE 174 BMs + 8 CMs + 689 drones; Kuwait 178 BMs + 384 drones; Bahrain 70 missiles + 76 drones; Qatar 104 missiles + 39 drones.",
-    "totalBarrage": "Through March 3: UAE tracked 174 BMs, 8 CMs, 689 drones (44 impacts); Kuwait tracked 178+ BMs, 384+ drones; Bahrain 70 missiles, 76 drones; Qatar 104 missiles, 39 drones, 2 Iranian SU-24 jets; Jordan 13 BMs, 49 drones. IRGC claims attacks on 27 US bases.",
-    "intercepted": "UAE: 161 BMs, 8 CMs, 645 drones intercepted; Kuwait: 178 BMs, 384 drones; Bahrain: 70 missiles, 76 drones; Qatar: 101 missiles, 24 drones, 2 SU-24 jets; Jordan: 13 BMs, 49 drones"
+    "summary": "Day 5 (March 4): US-Israel attacks continue hitting Iran (Assembly of Experts in Qom struck). Iran International reports Mojtaba Khamenei (son of slain leader) elected as new Supreme Leader under IRGC pressure. IRGC general threatens to hit ALL economic hubs in the Middle East if strikes continue. Iran bans all food/agricultural exports. Conflict has expanded to Lebanon (Hezbollah-Israel exchanges) and Iraq (70+ attacks on Erbil). Six US service members killed. Gulf airspace closures continue stranding 1M+ travelers.",
+    "totalBarrage": "UAE: 186 missiles launched (172 intercepted), 812 drones (755 intercepted); Bahrain: 74 missiles, 92 drones intercepted; Kuwait: 178 ballistic missiles, 384 drones intercepted; Qatar: 101 missiles (98 intercepted), 39 drones (24 intercepted), 2 Iranian Su-24 aircraft shot down",
+    "intercepted": "Updated cumulative across all Gulf states per defense ministry statements as of March 3 evening"
 };
 
 const LOCATIONS = [
@@ -2938,17 +2938,25 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🛢️",
             "type": "Energy Hub — Imminent Attack Warning",
-            "detail": "The US Embassy in Riyadh issued a warning on March 3 of an imminent attack in the eastern Saudi city of Dhahran, home to major energy installations along the Gulf coast. Dhahran is the headquarters of Saudi Aramco and a critical hub for the kingdom's oil industry. The warning came amid escalating Iranian targeting of energy infrastructure across the Gulf.",
+            "detail": "The US Embassy in Riyadh issued a warning on March 3 of an imminent attack in the eastern Saudi city of Dhahran, home to major energy installations along the Gulf coast. Dhahran is the headquarters of Saudi Aramco and a critical hub for the kingdom's oil industry. The warning came amid escalating Iranian targeting of energy infrastructure across the Gulf. US Embassy Riyadh issued a specific imminent attack warning for Dhahran on March 3, indicating continued elevated threat to eastern Saudi energy infrastructure.",
             "incidents": [
                     {
                             "date": "2026-03-03",
                             "text": "US Embassy in Riyadh warns of imminent attack in Dhahran; residents advised to shelter in place (Peninsula Qatar live updates)."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "US Embassy Riyadh issues 'Threat of Imminent Missile / UAV Attacks Over Dhahran' security alert"
                     }
             ],
             "sources": [
                     {
                             "name": "The Peninsula Qatar",
                             "url": "https://thepeninsulaqatar.com/article/03/03/2026/live-updates-attack-by-two-drones-on-us-embassy-in-saudi-capital-sparks-limited-fire"
+                    },
+                    {
+                            "name": "Euronews (US Embassy tweet cited)",
+                            "url": "https://www.euronews.com/2026/03/03/trump-says-iran-war-could-last-weeks-but-could-go-far-longer"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -3198,7 +3206,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🎯",
             "type": "US/Jordanian Air Base — Targeted, Intercepted",
-            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage.",
+            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage. Jordan confirmed intercepting 13 ballistic missiles and 49 drones. German troops in Jordan were also reportedly shelled by Iran.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -3211,6 +3219,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Jordan confirmed intercepting 49 drones and 13 ballistic missiles entering Jordanian airspace since Feb 28. Fragments caused localized property damage. Muwaffaq al-Salti was an intended Iranian target per Iranian media."
+                    },
+                    {
+                            "date": "2026-03-01",
+                            "text": "Jordan reports intercepting 13 ballistic missiles and 49 drones entering its airspace; German troops in Jordan also shelled by Iran per Wikipedia timeline"
                     }
             ],
             "sources": [
