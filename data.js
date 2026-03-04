@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-03T22:22:31.065Z",
+    "lastUpdated": "2026-03-04T01:13:29.555Z",
     "casualties": {
         "killed": 20,
         "injured": 172
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 4 of conflict: Iran continues retaliatory strikes across Gulf. US Consulate in Dubai struck by drone (no injuries). US embassies in Saudi Arabia, Kuwait, and Lebanon closed. Iran's FM Araghchi says Tehran targeting US assets, not Gulf neighbors. UAE updated interception figures. Sec. Rubio says US-Israeli strikes will increase in scope and intensity. Iraq emerges as active front with 70+ strikes on Erbil area.",
-    "totalBarrage": "UAE alone: 186 ballistic missiles, 812 drones, 8 cruise missiles detected (UAE MoD March 3). Kuwait: 178 ballistic missiles, 384 drones (KUNA). Bahrain: 73 missiles, 91 drones. Qatar: 104 missiles, 39 drones, 2 Su-24 aircraft shot down. Cross-Gulf total estimated at 1,000+ missiles and 1,300+ drones.",
-    "intercepted": "UAE: 172 of 186 ballistic missiles destroyed, 755 of 812 drones intercepted, 8 cruise missiles destroyed. 57 drones and 1 missile impacted UAE territory. Kuwait: 178 missiles and 384 drones intercepted. Bahrain: 73 missiles, 91 drones. Qatar: 101 of 104 missiles, 24 of 39 drones, plus 2 Iranian Su-24s."
+    "summary": "Day 5 (March 4): IRGC general threatened to hit 'all economic hubs in the Middle East' if US-Israeli strikes continue. Iran-backed Iraqi militias opened a new front with 70+ drone/missile attacks on US forces in Erbil. Israel launched new 'broad wave' of strikes on Iran overnight Mar 3-4. Iran carried out new wave of attacks on Israel overnight. US has identified 4 of 6 soldiers killed at Shuaiba port Kuwait. CENTCOM reports 18 troops seriously wounded total. Qatar shot down 2 Iranian SU-24 jets. Updated interception totals: UAE 174 BMs + 8 CMs + 689 drones; Kuwait 178 BMs + 384 drones; Bahrain 70 missiles + 76 drones; Qatar 104 missiles + 39 drones.",
+    "totalBarrage": "Through March 3: UAE tracked 174 BMs, 8 CMs, 689 drones (44 impacts); Kuwait tracked 178+ BMs, 384+ drones; Bahrain 70 missiles, 76 drones; Qatar 104 missiles, 39 drones, 2 Iranian SU-24 jets; Jordan 13 BMs, 49 drones. IRGC claims attacks on 27 US bases.",
+    "intercepted": "UAE: 161 BMs, 8 CMs, 645 drones intercepted; Kuwait: 178 BMs, 384 drones; Bahrain: 70 missiles, 76 drones; Qatar: 101 missiles, 24 drones, 2 SU-24 jets; Jordan: 13 BMs, 49 drones"
 };
 
 const LOCATIONS = [
@@ -1306,7 +1306,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Interceptor debris / vessel fire",
-            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2. Mar 2: UKMTO confirmed vessel struck by 2 projectiles. Bahrain Interior Ministry: 1 Asian worker killed, 2 seriously injured from interceptor debris falling on foreign ship at Salman Industrial City. On March 2, Bahrain's Ministry of Interior confirmed 1 Asian worker killed and 2 seriously injured from intercepted missile debris falling on a foreign vessel. Bahrain Defence Force reports total of 61 missiles and 34 drones intercepted since the start of the conflict. March 2: US-flagged tanker Stena Imperative struck by two projectiles in Port of Bahrain per Reuters/Vanguard Tech. Fire broke out and was extinguished; crew evacuated. UKMTO confirmed the vessel fire incident. US-flagged tanker Stena Imperative (part of US MARAD Tanker Security Program) struck by 2 projectiles at Bahrain port shipyard on Mar 2. One shoreside shipyard worker killed, two others injured. Ship crew unharmed. First US-flagged vessel attacked in the conflict. Vessel had previously been harassed by IRGC fast boats in Feb 2026. On March 2, US-flagged tanker MT Stena Imperative (part of US MARAD Tanker Security Program) was struck by two projectiles at Salman Industrial City. One shipyard worker killed, two injured. Fire extinguished; crew evacuated unharmed.",
+            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2. Mar 2: UKMTO confirmed vessel struck by 2 projectiles. Bahrain Interior Ministry: 1 Asian worker killed, 2 seriously injured from interceptor debris falling on foreign ship at Salman Industrial City. On March 2, Bahrain's Ministry of Interior confirmed 1 Asian worker killed and 2 seriously injured from intercepted missile debris falling on a foreign vessel. Bahrain Defence Force reports total of 61 missiles and 34 drones intercepted since the start of the conflict. March 2: US-flagged tanker Stena Imperative struck by two projectiles in Port of Bahrain per Reuters/Vanguard Tech. Fire broke out and was extinguished; crew evacuated. UKMTO confirmed the vessel fire incident. US-flagged tanker Stena Imperative (part of US MARAD Tanker Security Program) struck by 2 projectiles at Bahrain port shipyard on Mar 2. One shoreside shipyard worker killed, two others injured. Ship crew unharmed. First US-flagged vessel attacked in the conflict. Vessel had previously been harassed by IRGC fast boats in Feb 2026. On March 2, US-flagged tanker MT Stena Imperative (part of US MARAD Tanker Security Program) was struck by two projectiles at Salman Industrial City. One shipyard worker killed, two injured. Fire extinguished; crew evacuated unharmed. On March 3, Bahrain MOI confirmed one worker killed and two seriously injured by intercepted missile debris falling on a vessel in Salman Industrial City.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1347,6 +1347,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "US-flagged tanker MT Stena Imperative struck by two aerial projectiles while berthed at Salman Industrial City. Fire broke out on board and was extinguished. One shipyard worker killed, two seriously injured. Crew safely evacuated. Bahrain Interior Ministry confirmed death of Asian worker from intercepted missile debris falling on vessel. (USNI News, Reuters, Crowley statement)"
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "An Asian worker killed when debris from an intercepted missile fell onto a foreign vessel undergoing maintenance in Salman Industrial City. Two others seriously injured."
                     }
             ],
             "sources": [
@@ -1734,7 +1738,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "✈️",
             "type": "Airport — Targeted, Attacks Intercepted",
-            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded. March 2: Qatar FM confirmed airport was directly targeted by Iranian attacks; all intercepted. Qatar warned Iran must 'pay a price' and retaliation cannot be ruled out. Qatar FM spokesman confirmed on March 2 that Iranian attacks targeted civilian infrastructure including the international airport. Attacks intercepted but severity elevated given confirmed targeting. Flights remain suspended pending airspace reopening. On March 2, Qatar MOD confirmed shooting down 2 Iranian SU-24 Fencer bombers — the first time Qatar has downed manned aircraft. Also intercepted 7 ballistic missiles and 5 drones on the same day. All projectiles neutralized before reaching targets.",
+            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded. March 2: Qatar FM confirmed airport was directly targeted by Iranian attacks; all intercepted. Qatar warned Iran must 'pay a price' and retaliation cannot be ruled out. Qatar FM spokesman confirmed on March 2 that Iranian attacks targeted civilian infrastructure including the international airport. Attacks intercepted but severity elevated given confirmed targeting. Flights remain suspended pending airspace reopening. On March 2, Qatar MOD confirmed shooting down 2 Iranian SU-24 Fencer bombers — the first time Qatar has downed manned aircraft. Also intercepted 7 ballistic missiles and 5 drones on the same day. All projectiles neutralized before reaching targets. On March 3, Qatar confirmed intercepting Iranian missiles targeting Hamad airport. National totals updated: 101/104 missiles, 24/39 drones intercepted, 2 Iranian SU-24 jets shot down.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1751,6 +1755,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Qatar confirmed interception of Iranian attacks targeting civilian infrastructure including Doha International Airport. Qatar MOD reported shooting down 2 Iranian SU-24 bombers, 7 ballistic missiles, and 5 drones on March 2. All threats intercepted before reaching targets."
+                    },
+                    {
+                            "date": "2026-03-03",
+                            "text": "Qatar confirmed it intercepted Iranian missiles specifically targeting Hamad International Airport. Updated national figures: 101 of 104 missiles and 24 of 39 drones intercepted; 2 Iranian SU-24 bomber aircraft shot down."
                     }
             ],
             "sources": [
@@ -1789,6 +1797,14 @@ const LOCATIONS = [
                     {
                             "name": "JPost",
                             "url": "https://www.jpost.com/middle-east/article-888568"
+                    },
+                    {
+                            "name": "Al Jazeera (March 3 Live)",
+                            "url": "https://www.aljazeera.com/news/liveblog/2026/3/3/iran-live-news-israel-bombs-tehran-beirut-trump-says-war-to-last-4-weeks"
+                    },
+                    {
+                            "name": "CNN (Day 4 Live)",
+                            "url": "https://www.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -3182,7 +3198,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🎯",
             "type": "US/Jordanian Air Base — Targeted, Intercepted",
-            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom.",
+            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -3191,6 +3207,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-02",
                             "text": "Reports of continued strikes near the air base area; Jordan total interceptions reach 49 drones and ballistic missiles. Five injured, homes damaged across Jordan (CBS News)."
+                    },
+                    {
+                            "date": "2026-03-02",
+                            "text": "Jordan confirmed intercepting 49 drones and 13 ballistic missiles entering Jordanian airspace since Feb 28. Fragments caused localized property damage. Muwaffaq al-Salti was an intended Iranian target per Iranian media."
                     }
             ],
             "sources": [
@@ -3209,6 +3229,14 @@ const LOCATIONS = [
                     {
                             "name": "Alma Center",
                             "url": "https://israel-alma.org/irans-multi-front-missile-and-uav-offensive-across-the-middle-east-feb-28-mar-1-2026/"
+                    },
+                    {
+                            "name": "Al Jazeera (Casualty Tracker)",
+                            "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker"
+                    },
+                    {
+                            "name": "Breaking Defense",
+                            "url": "https://breakingdefense.com/2026/03/iran-attacks-uae-saudi-missiles-drones-gcc-air-defense/"
                     }
             ],
             "dateAdded": "2026-03-03"
