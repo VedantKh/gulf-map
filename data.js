@@ -8,14 +8,14 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-04T06:37:58.088Z",
+    "lastUpdated": "2026-03-04T07:34:28.860Z",
     "casualties": {
         "killed": 20,
         "injured": 172
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 5 (March 4): Iran continues drone and missile strikes across the Gulf. Mojtaba Khamenei, son of slain Ayatollah, reportedly named new Supreme Leader by Assembly of Experts under IRGC pressure (Iran International). CENTCOM reports destroying 17 Iranian ships and nearly 2,000 targets. UAE and Qatar deny reports of Patriot interceptor shortages. US ordered non-emergency personnel to depart Bahrain, Jordan, and Iraq. Asian stock markets plummeted (KOSPI -12.3%, Nikkei -4.7%). Brent crude at $82.76/bbl. Iraq now a confirmed active front with 70+ attacks on Erbil.",
-    "totalBarrage": "Updated interception totals (as of March 3 evening): UAE detected 186 ballistic missiles (172 destroyed), 8 cruise missiles, 812 drones (755 intercepted). Bahrain: 73 missiles, 91 drones destroyed. Qatar: 104 missiles detected (98 intercepted), 39 drones (24 intercepted), 2 Iranian SU-24 bombers shot down. Kuwait: 178 ballistic missiles, 384 drones intercepted.",
+    "summary": "Day 5 of conflict (March 4): Explosions heard in Tehran at dawn as US-Israeli strikes continue. Iran's retaliatory strikes persist across the Gulf. IRGC announced Wave 15 and Wave 17 of 'True Promise 4.' Iraq's Erbil now confirmed as a major theater with 70+ drone/missile attacks on US assets by Iran and Iraqi militias. All Gulf state airspaces remain closed or restricted. Over 1 million travelers stranded.",
+    "totalBarrage": "Updated Gulf-wide interception tallies as of March 3 (Al Jazeera/CNN): UAE — 186 missiles (172 destroyed), 812 drones (755 intercepted); Bahrain — 73 missiles, 91 drones destroyed; Kuwait — 178 ballistic missiles, 384 drones intercepted; Qatar — 101 ballistic missiles (98 intercepted), 39 drones (24 intercepted), 3 cruise missiles intercepted, 2 Iranian SU-24 jets shot down.",
     "intercepted": "Gulf states report intercepting the vast majority of Iranian projectiles. UAE: ~93% missile interception, ~93% drone interception. Qatar: ~94% missile interception. Bahrain and Kuwait report high interception rates. Total Iranian launches across all Gulf states estimated at 2,000+ projectiles."
 };
 
@@ -1183,10 +1183,10 @@ const LOCATIONS = [
             "lng": 50.5906,
             "country": "Bahrain",
             "city": "Isa Town",
-            "severity": "high",
+            "severity": "critical",
             "icon": "🎯",
             "type": "Bahrain Air Force / US Support Base",
-            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3). March 4: US ordered non-emergency departure from Bahrain, upgrading from authorized departure. Embassy warned US citizens that hotels in Manama may be targeted.",
+            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3). March 4: US ordered non-emergency departure from Bahrain, upgrading from authorized departure. Embassy warned US citizens that hotels in Manama may be targeted. On March 4, the IRGC claimed a major barrage (Wave 15 of True Promise 4) targeting Isa Air Base with 20 drones and 3 missiles, claiming the main US command building and fuel tanks were destroyed. Upgraded to CRITICAL based on IRGC official statement of confirmed projectile impacts; independent verification pending.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1227,6 +1227,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "US Embassy in Bahrain ordered non-emergency personnel and family members to depart, upgrading from previous 'authorized departure' status, citing continuing drone and missile threat from Iran."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "IRGC claimed 'Wave 15 of True Promise 4' struck Isa Air Base with 20 drones and 3 missiles, claiming destruction of the main command HQ building and fuel tanks (IRNA). Bahrain/US have not independently confirmed the extent of damage. Kurdistan24 and The New Region reported the IRGC claim."
                     }
             ],
             "sources": [
@@ -1257,6 +1261,14 @@ const LOCATIONS = [
                     {
                             "name": "ABC7/AP",
                             "url": "https://abc7news.com/live-updates/iran-live-updates-trump-says-major-combat-operations-have-begun/18660347/entry/18670232/"
+                    },
+                    {
+                            "name": "Kurdistan24",
+                            "url": "https://www.kurdistan24.net/en/story/897578/irans-revolutionary-guard-claims-missile-and-drone-strike-destroyed-us-command-building-in-bahrain"
+                    },
+                    {
+                            "name": "The New Region",
+                            "url": "https://thenewregion.com/posts/4736"
                     }
             ],
             "dateAdded": "2026-02-28"
