@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-05T10:31:47.833Z",
+    "lastUpdated": "2026-03-05T12:43:11.870Z",
     "casualties": {
         "killed": 21,
-        "injured": 176
+        "injured": 182
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 6 (March 5): Iran's retaliatory strike rate has dropped sharply — 86% decline in ballistic missile launches and 73% decline in drone strikes since Day 1, per US Joint Chiefs Chairman Gen. Dan Caine. IRGC revised Strait of Hormuz closure to target only US/Israel/Europe/Western allied shipping. Italy announced air defense aid deployment to Gulf states. Over 1,100 killed in Iran. Iran struck Azerbaijan's Nakhchivan airport with drones (outside Gulf theater). US has closed embassies in Saudi Arabia, Kuwait and Lebanon.",
-    "totalBarrage": "Iran has launched more than 500 ballistic missiles and 2,000+ drones in total retaliation (per US Admiral Brad Cooper, CENTCOM). Strike rate declining sharply — 86% drop in missile launches, 73% drop in drone strikes since Day 1.",
-    "intercepted": "UAE: 186 ballistic missiles tracked (172 destroyed), 812 drones monitored (755 intercepted). Kuwait: 178+ ballistic missiles and 384+ drones intercepted. Bahrain: 73 missiles and 91 drones destroyed. Qatar: 101 ballistic missiles detected (98 intercepted), 3 cruise missiles intercepted, 39 drones detected (24 intercepted). Qatar also downed 2 Iranian SU-24 fighter jets."
+    "summary": "Day 6 (March 5): War continues to escalate. Iran launched new wave of attacks Thursday morning on Israel, US bases, and Gulf countries (AP). One ballistic missile confirmed to have fallen inside UAE on March 5, injuring 6 in Abu Dhabi. Multiple rounds of interceptions over Doha. Iranian drones struck Nakhchivan Airport in Azerbaijan — first Iranian attack on Azerbaijan, marking geographic expansion of the conflict. Qatar evacuating residents near US Embassy. Italy announces plan to send air defense aid to Gulf nations. IRGC clarified Strait of Hormuz closure applies only to US, Israeli, European and Western allied vessels.",
+    "totalBarrage": "CENTCOM Admiral Brad Cooper: Iran has launched more than 500 ballistic missiles and 2,000+ drones total since Feb 28. UAE alone: 189 BMs, 941 drones, 3 cruise missiles by March 4 (UAE MoD). On March 5 alone: UAE detected 7 BMs (6 intercepted, 1 impact) and 125 drones intercepted.",
+    "intercepted": "Updated UAE figures (through March 5): 6 of 7 BMs intercepted, 125 drones intercepted on March 5 alone. Cumulative UAE: 172 of 186 BMs, 755 of 812 drones through March 3. Bahrain: 73 missiles, 91 drones destroyed. Kuwait: 97 BMs, 283 drones. Qatar: 98 of 101 BMs, 24 of 39 drones, 3 cruise missiles."
 };
 
 const LOCATIONS = [
@@ -76,11 +76,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "International Airport (AUH) — Drone Strike",
-            "detail": "Abu Dhabi's primary airport. Directly targeted by Iranian drones during the Feb 28 barrage. 1 killed, 7 injured from debris of intercepted drone. UAE airspace remains CLOSED as of Mar 2. All Etihad flights cancelled.",
+            "detail": "Abu Dhabi's primary airport. Directly targeted by Iranian drones during the Feb 28 barrage. 1 killed, 7 injured from debris of intercepted drone. UAE airspace remains CLOSED as of Mar 2. All Etihad flights cancelled. March 5: Six Pakistani and Nepali nationals injured in Iranian strike on Abu Dhabi (CNN/Abu Dhabi media office). UAE MoD reports 1 of 7 ballistic missiles detected on March 5 fell inside the country; 6 intercepted along with 125 drones.",
             "incidents": [
                     {
                             "date": "2026-02-28",
                             "text": "Iranian drone targeted airport. Interception debris killed 1 person (Asian national) and injured 7. Airport evacuated and all operations suspended indefinitely."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "Abu Dhabi's emirate media office confirmed six Pakistani and Nepali nationals were injured in an Iranian strike on Abu Dhabi on Thursday March 5. UAE MoD reported that of 7 ballistic missiles detected on March 5, one fell inside the country."
                     }
             ],
             "sources": [
@@ -91,6 +95,14 @@ const LOCATIONS = [
                     {
                             "name": "Anadolu Agency",
                             "url": "https://www.aa.com.tr/en/middle-east/1-killed-at-abu-dhabi-airport-after-drone-interceptions-debris-sparks-fires-at-dubai-sites/3844467"
+                    },
+                    {
+                            "name": "CNN (Day 6 Live Blog)",
+                            "url": "https://us.cnn.com/world/live-news/iran-war-us-israel-trump-03-05-26"
+                    },
+                    {
+                            "name": "Gulf News",
+                            "url": "https://gulfnews.com/world/americas/us-israel-iran-war-day-6-iran-israel-strikes-continue-uae-extends-limited-flights-1.500463753"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1966,7 +1978,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "✈️",
             "type": "Airport — Targeted, Attacks Intercepted",
-            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded. March 2: Qatar FM confirmed airport was directly targeted by Iranian attacks; all intercepted. Qatar warned Iran must 'pay a price' and retaliation cannot be ruled out. Qatar FM spokesman confirmed on March 2 that Iranian attacks targeted civilian infrastructure including the international airport. Attacks intercepted but severity elevated given confirmed targeting. Flights remain suspended pending airspace reopening. On March 2, Qatar MOD confirmed shooting down 2 Iranian SU-24 Fencer bombers — the first time Qatar has downed manned aircraft. Also intercepted 7 ballistic missiles and 5 drones on the same day. All projectiles neutralized before reaching targets. On March 3, Qatar confirmed intercepting Iranian missiles targeting Hamad airport. National totals updated: 101/104 missiles, 24/39 drones intercepted, 2 Iranian SU-24 jets shot down. On March 4, Qatar intercepted 10 drones and 2 cruise missiles from Iran. Qatar Airways flights remain suspended. Al Jazeera reports attack volume is decreasing.",
+            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded. March 2: Qatar FM confirmed airport was directly targeted by Iranian attacks; all intercepted. Qatar warned Iran must 'pay a price' and retaliation cannot be ruled out. Qatar FM spokesman confirmed on March 2 that Iranian attacks targeted civilian infrastructure including the international airport. Attacks intercepted but severity elevated given confirmed targeting. Flights remain suspended pending airspace reopening. On March 2, Qatar MOD confirmed shooting down 2 Iranian SU-24 Fencer bombers — the first time Qatar has downed manned aircraft. Also intercepted 7 ballistic missiles and 5 drones on the same day. All projectiles neutralized before reaching targets. On March 3, Qatar confirmed intercepting Iranian missiles targeting Hamad airport. National totals updated: 101/104 missiles, 24/39 drones intercepted, 2 Iranian SU-24 jets shot down. On March 4, Qatar intercepted 10 drones and 2 cruise missiles from Iran. Qatar Airways flights remain suspended. Al Jazeera reports attack volume is decreasing. March 5: Multiple rounds of missile interceptions over Doha confirmed by CNN journalists on the ground. Qatar Airways remains grounded; airspace remains closed.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -1991,6 +2003,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "Qatar Defence Ministry said it intercepted 10 drones and 2 cruise missiles launched from Iran on March 4. Qatar Airways confirmed flights remain suspended due to closure of Qatari airspace."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "Qatari air defense systems intercepted Iranian missiles over Doha at ~11:55 AM local time (07:55 UTC). CNN journalists on the ground reported intercepts rattled buildings as booms rang out; at least two additional rounds of interceptions followed shortly after. No confirmed debris/damage at airport."
                     }
             ],
             "sources": [
@@ -2041,6 +2057,14 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/4/hundreds-of-drones-target-kuwait-iraq-saudi-arabia-uae-amid-iran-war"
+                    },
+                    {
+                            "name": "CNN (Day 6 Live Blog)",
+                            "url": "https://us.cnn.com/world/live-news/iran-war-us-israel-trump-03-05-26"
+                    },
+                    {
+                            "name": "France 24",
+                            "url": "https://www.france24.com/en/middle-east/20260305-iran-launches-missiles-at-israel-as-middle-east-conflict-escalates"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2224,6 +2248,34 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-02"
+    },
+    {
+            "name": "US Embassy Area, Doha (Precautionary Evacuation), Qatar",
+            "lat": 25.3197,
+            "lng": 51.4857,
+            "country": "Qatar",
+            "city": "Doha",
+            "severity": "watchlist",
+            "icon": "🏛️",
+            "type": "Diplomatic Compound / Evacuation Zone",
+            "detail": "On March 5, Qatar's Ministry of Interior announced evacuation of residents living near the US Embassy in Doha as a precautionary measure. The US authorized non-emergency staff and families to depart several Middle Eastern countries. Iranian strikes this week have targeted US diplomatic compounds in the Gulf, including the US Consulate in Dubai and US Embassy in Riyadh.",
+            "incidents": [
+                    {
+                            "date": "2026-03-05",
+                            "text": "Qatar Ministry of Interior evacuating residents near US Embassy in Doha as precautionary measure. US authorizes non-emergency staff departure from Gulf posts."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "CNN (Day 6 Live Blog)",
+                            "url": "https://us.cnn.com/world/live-news/iran-war-us-israel-trump-03-05-26"
+                    },
+                    {
+                            "name": "France 24",
+                            "url": "https://www.france24.com/en/middle-east/20260305-iran-launches-missiles-at-israel-as-middle-east-conflict-escalates"
+                    }
+            ],
+            "dateAdded": "2026-03-05"
     },
 
     // ═══════════════════════════════════════════════════════════
