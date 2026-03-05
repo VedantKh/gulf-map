@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-05T01:15:03.351Z",
+    "lastUpdated": "2026-03-05T04:06:39.924Z",
     "casualties": {
         "killed": 21,
         "injured": 176
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 6 of Iran war (March 5, 2026). Iran continues retaliatory strikes but volume significantly decreasing. CENTCOM reports Iran has launched over 500 ballistic missiles and 2,000+ drones since start of conflict. Top US general reports 86% drop in missile launches and 73% drop in drone strikes since Day 1. Senate voted down war powers resolution. Iran warned it will target 'all economic centres in the region' if attacks continue. Pentagon chief says war 'just getting started.'",
-    "totalBarrage": "Over 500 ballistic missiles and 2,000+ drones launched by Iran (CENTCOM Admiral Brad Cooper as of Day 5). Individual country tallies: UAE tracked 186 missiles + 812 drones; Kuwait intercepted 97 missiles + 283 drones; Bahrain intercepted 73 missiles + 91 drones; Qatar intercepted 101 ballistic missiles + 39 drones + 3 cruise missiles.",
-    "intercepted": "Volume of Iranian attacks dropping significantly: 86% drop in missile launches and 73% drop in drone strikes since Day 1 (top US general, CNN). Individual intercept rates remain high but some projectiles and drones continue to penetrate defenses."
+    "summary": "Day 6 of conflict (March 5). Iranian missile launches dropped 86% and drone strikes dropped 73% from first day of war per Gen. Dan Caine (Chairman, Joint Chiefs). CENTCOM: Iran has launched over 500 ballistic missiles and 2,000+ drones in retaliation. At least one Gulf ally reportedly running low on interceptor munitions (CNN). P&I shipping insurance withdrawn for Strait of Hormuz effective March 5. Senate voted down war powers resolution to halt the war.",
+    "totalBarrage": "Over 500 ballistic missiles and 2,000+ drones launched by Iran (per CENTCOM Admiral Brad Cooper). UAE alone intercepted 175 ballistic missiles, 8 cruise missiles, and 876 drones (UAE MOD, March 4). Kuwait intercepted 97 ballistic missiles and 283+ drones. Bahrain intercepted 73 missiles and 91 drones. Qatar intercepted 101 ballistic missiles, 3 cruise missiles, and 39 drones.",
+    "intercepted": "Iranian missile volume down 86%, drone volume down 73% since Day 1 (Gen. Dan Caine, March 4). IDF destroyed 300 Iranian missile launchers. Combined force achieving degradation of Iran's ballistic missile capabilities."
 };
 
 const LOCATIONS = [
@@ -738,7 +738,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Projectile attacks on commercial vessels",
-            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit. JMIC elevated regional maritime threat level to 'critical' on March 1. At least five commercial vessels struck or targeted in 24 hours. Oil tanker Hercules Star struck near Mina Saqr; bulk carrier Ocean Electra near-miss off Sharjah. As of March 3, the Strait of Hormuz remains effectively closed to commercial shipping. JMIC upgraded risk assessment to Critical. P&I insurance withdrawn from March 5, making transit economically unviable. At least 5 tankers damaged, ~150 ships stranded. March 4: IRGC Navy claims complete control of the strait. Deputy commander says 10+ tankers struck. UKMTO also reported a container ship struck in the strait. CENTCOM says no Iranian ships remain operational in the Arabian Gulf, Strait of Hormuz, or Gulf of Oman after US forces destroyed 17 Iranian vessels including a submarine. On March 4, IRGC claimed 'complete control' of the strait. Trump ordered US Navy to escort tankers 'as soon as possible'. Only one tanker (Pola) managed a rare transit by switching off its AIS tracker. About 3,200 ships idle in the Gulf per Clarksons Research.",
+            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit. JMIC elevated regional maritime threat level to 'critical' on March 1. At least five commercial vessels struck or targeted in 24 hours. Oil tanker Hercules Star struck near Mina Saqr; bulk carrier Ocean Electra near-miss off Sharjah. As of March 3, the Strait of Hormuz remains effectively closed to commercial shipping. JMIC upgraded risk assessment to Critical. P&I insurance withdrawn from March 5, making transit economically unviable. At least 5 tankers damaged, ~150 ships stranded. March 4: IRGC Navy claims complete control of the strait. Deputy commander says 10+ tankers struck. UKMTO also reported a container ship struck in the strait. CENTCOM says no Iranian ships remain operational in the Arabian Gulf, Strait of Hormuz, or Gulf of Oman after US forces destroyed 17 Iranian vessels including a submarine. On March 4, IRGC claimed 'complete control' of the strait. Trump ordered US Navy to escort tankers 'as soon as possible'. Only one tanker (Pola) managed a rare transit by switching off its AIS tracker. About 3,200 ships idle in the Gulf per Clarksons Research. As of March 5, P&I insurance has been withdrawn for the strait, making commercial shipping economically impossible even if physically attempted.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -783,6 +783,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC Navy official Mohammad Akbarzadeh declared 'complete control' of Strait of Hormuz via Fars news agency; warned any vessel attempting transit risks damage from missiles or stray drones"
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "Protection & Indemnity (P&I) insurance coverage withdrawn for vessels transiting Strait of Hormuz effective March 5, making commercial transit economically unviable. Maritime traffic effectively at zero."
                     }
             ],
             "sources": [
@@ -853,6 +857,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Arabiya / AFP",
                             "url": "https://english.alarabiya.net/News/middle-east/2026/03/04/irgc-says-that-has-complete-control-of-hormuz-strait"
+                    },
+                    {
+                            "name": "Wikipedia — 2026 Strait of Hormuz crisis",
+                            "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -1319,6 +1327,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC claimed 17th wave (True Promise 4) struck Isa Air Base with drones and missiles, claiming destruction of command centres. IRGC also claimed earlier waves (14th/15th) used 20 drones and 3 missiles on the base. Bahrain Defense Force has not independently confirmed extent of damage."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "US air base at Sheikh Isa attacked again using drones and missiles per Alma Research Center day 4 report."
                     }
             ],
             "sources": [
@@ -1369,6 +1381,10 @@ const LOCATIONS = [
                     {
                             "name": "ANI / Press TV",
                             "url": "https://aninews.in/news/world/middle-east/irans-irgc-says-17th-wave-of-strikes-against-us-israel-launched-claims-major-damage-to-us-base-in-bahrain20260304130003/"
+                    },
+                    {
+                            "name": "Alma Research Center",
+                            "url": "https://israel-alma.org/daily-report-the-second-iran-war-march-4-2026/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1687,6 +1703,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "Qatari MoD confirms one Iranian ballistic missile intercepted, another struck Al Udeid Air Base with no casualties reported"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Two additional ballistic missiles fired toward Al Udeid base per Alma Research Center day 4 report. Qatar Defence Ministry confirmed interception of 10 drones and 2 cruise missiles from latest barrage."
                     }
             ],
             "sources": [
@@ -1789,6 +1809,10 @@ const LOCATIONS = [
                     {
                             "name": "NCRI (citing QNA/Qatari MoD)",
                             "url": "https://www.ncr-iran.org/en/news/iran-news-in-brief-news/iran-news-in-brief-march-4-2026/"
+                    },
+                    {
+                            "name": "Alma Research Center",
+                            "url": "https://israel-alma.org/daily-report-the-second-iran-war-march-4-2026/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -3151,6 +3175,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "A projectile hit Ras Tanura refinery according to two sources cited by Reuters, after the plant had already been shut down from an earlier drone debris fire. Saudi defense ministry also intercepted a drone in the Eastern Province."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Aramco oil facility attacked again per Alma Research Center day 4 report."
                     }
             ],
             "sources": [
@@ -3205,6 +3233,10 @@ const LOCATIONS = [
                     {
                             "name": "Republic World / Reuters",
                             "url": "https://www.republicworld.com/world-news/saudi-aramco-s-key-refinery-ras-tanura-struck-again-by-drone-report"
+                    },
+                    {
+                            "name": "Alma Research Center",
+                            "url": "https://israel-alma.org/daily-report-the-second-iran-war-march-4-2026/"
                     }
             ],
             "dateAdded": "2026-03-02"
