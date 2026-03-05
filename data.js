@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-05T12:43:11.870Z",
+    "lastUpdated": "2026-03-05T13:59:00.029Z",
     "casualties": {
         "killed": 21,
-        "injured": 182
+        "injured": 188
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 6 (March 5): War continues to escalate. Iran launched new wave of attacks Thursday morning on Israel, US bases, and Gulf countries (AP). One ballistic missile confirmed to have fallen inside UAE on March 5, injuring 6 in Abu Dhabi. Multiple rounds of interceptions over Doha. Iranian drones struck Nakhchivan Airport in Azerbaijan — first Iranian attack on Azerbaijan, marking geographic expansion of the conflict. Qatar evacuating residents near US Embassy. Italy announces plan to send air defense aid to Gulf nations. IRGC clarified Strait of Hormuz closure applies only to US, Israeli, European and Western allied vessels.",
-    "totalBarrage": "CENTCOM Admiral Brad Cooper: Iran has launched more than 500 ballistic missiles and 2,000+ drones total since Feb 28. UAE alone: 189 BMs, 941 drones, 3 cruise missiles by March 4 (UAE MoD). On March 5 alone: UAE detected 7 BMs (6 intercepted, 1 impact) and 125 drones intercepted.",
-    "intercepted": "Updated UAE figures (through March 5): 6 of 7 BMs intercepted, 125 drones intercepted on March 5 alone. Cumulative UAE: 172 of 186 BMs, 755 of 812 drones through March 3. Bahrain: 73 missiles, 91 drones destroyed. Kuwait: 97 BMs, 283 drones. Qatar: 98 of 101 BMs, 24 of 39 drones, 3 cruise missiles."
+    "summary": "Day 6: Iran's retaliatory strikes continue at reduced but persistent tempo. Maritime attacks widen to Iraqi port of Khor al-Zubair. Interceptor debris injures 6 in Abu Dhabi. New missile attacks on Qatar; cruise missiles intercepted near Saudi PSAB/Al-Kharj. Drones targeting Baghdad airport intercepted. Bahrain cumulative intercepts: 75 missiles, 123 drones. Iran's overall strike volume down ~86% for missiles and ~73% for drones vs Day 1 per CENTCOM.",
+    "totalBarrage": "Iran has launched over 500 ballistic missiles and 2,000+ drones since Feb 28 per US Admiral Brad Cooper (CENTCOM). UAE alone tracked 189 ballistic missiles, 941 drones, 3 cruise missiles through March 4.",
+    "intercepted": "Bahrain: 75 missiles, 123 drones. UAE: 161 of 174 ballistic missiles, 645 of 689 drones (as of Mar 3). Kuwait: 97 missiles, 283 drones. Qatar: 92+ ballistic missiles, 17+ drones. Jordan: 13 missiles, 49 drones."
 };
 
 const LOCATIONS = [
@@ -1109,6 +1109,34 @@ const LOCATIONS = [
             ],
             "dateAdded": "2026-03-04"
     },
+    {
+            "name": "ICAD-2, Musaffah Industrial City, Abu Dhabi (Interceptor Debris Injuries)",
+            "lat": 24.3607,
+            "lng": 54.5192,
+            "country": "UAE",
+            "city": "Abu Dhabi",
+            "severity": "high",
+            "icon": "💥",
+            "type": "Interceptor Debris Zone",
+            "detail": "Six people were injured by falling debris from drones successfully intercepted by air defence systems over Abu Dhabi. The Abu Dhabi media office confirmed debris fell in two locations in the ICAD-2 industrial district. The affected individuals were Pakistani and Nepalese nationals who sustained minor to moderate injuries.",
+            "incidents": [
+                    {
+                            "date": "2026-03-05",
+                            "text": "Six Pakistani and Nepalese nationals injured by falling debris from intercepted drones in two locations in ICAD-2 district, Abu Dhabi."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "The Peninsula Qatar (Live Updates, citing Abu Dhabi Media Office)",
+                            "url": "https://thepeninsulaqatar.com/article/05/03/2026/live-updates-qatar-evacuates-near-us-embassy-oil-spill-near-kuwait"
+                    },
+                    {
+                            "name": "CNN Live Updates March 5",
+                            "url": "https://edition.cnn.com/world/live-news/iran-war-us-israel-trump-03-05-26"
+                    }
+            ],
+            "dateAdded": "2026-03-05"
+    },
 
     // ═══════════════════════════════════════════════════════════
     // Bahrain
@@ -1122,7 +1150,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Naval Base — Missile & Drone Strike",
-            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted. March 2: Bahrain activated new air raid alerts, closed Shaikh Khalifa bridge. US Embassy closed, warned Americans to avoid Manama hotels. Bahrain repelled new wave of attacks on March 3. Total interceptions now 70 ballistic missiles and 76 drones (up from 45 missiles and 9 drones on Day 1). Sirens activated early Tuesday.",
+            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted. March 2: Bahrain activated new air raid alerts, closed Shaikh Khalifa bridge. US Embassy closed, warned Americans to avoid Manama hotels. Bahrain repelled new wave of attacks on March 3. Total interceptions now 70 ballistic missiles and 76 drones (up from 45 missiles and 9 drones on Day 1). Sirens activated early Tuesday. On March 5, Bahrain Defence Force updated its interception tally to 75 missiles and 123 drones destroyed since the start of the conflict, up from 73 missiles and 91 drones reported on March 3.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1167,6 +1195,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Bahrain Defence Force repelled new wave of Iranian aerial attacks on Tuesday. Updated total interceptions: 70 ballistic missiles and 76 drones. Air raid sirens activated early Tuesday (CNN, Gulf News, Dubai Eye/ARN)"
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "New explosions heard in Bahrain. Bahrain Defence Force updated cumulative interception count: 75 missiles and 123 drones destroyed since start of Iranian aggression."
                     }
             ],
             "sources": [
@@ -1229,6 +1261,10 @@ const LOCATIONS = [
                     {
                             "name": "CNN",
                             "url": "https://www.cnn.com/world/live-news/iran-israel-us-attack-03-02-26-intl-hnk"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/5/drone-targets-us-base-in-iraq-as-iran-attacks-hit-region-amid-us-israel-war"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1978,7 +2014,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "✈️",
             "type": "Airport — Targeted, Attacks Intercepted",
-            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded. March 2: Qatar FM confirmed airport was directly targeted by Iranian attacks; all intercepted. Qatar warned Iran must 'pay a price' and retaliation cannot be ruled out. Qatar FM spokesman confirmed on March 2 that Iranian attacks targeted civilian infrastructure including the international airport. Attacks intercepted but severity elevated given confirmed targeting. Flights remain suspended pending airspace reopening. On March 2, Qatar MOD confirmed shooting down 2 Iranian SU-24 Fencer bombers — the first time Qatar has downed manned aircraft. Also intercepted 7 ballistic missiles and 5 drones on the same day. All projectiles neutralized before reaching targets. On March 3, Qatar confirmed intercepting Iranian missiles targeting Hamad airport. National totals updated: 101/104 missiles, 24/39 drones intercepted, 2 Iranian SU-24 jets shot down. On March 4, Qatar intercepted 10 drones and 2 cruise missiles from Iran. Qatar Airways flights remain suspended. Al Jazeera reports attack volume is decreasing. March 5: Multiple rounds of missile interceptions over Doha confirmed by CNN journalists on the ground. Qatar Airways remains grounded; airspace remains closed.",
+            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded. March 2: Qatar FM confirmed airport was directly targeted by Iranian attacks; all intercepted. Qatar warned Iran must 'pay a price' and retaliation cannot be ruled out. Qatar FM spokesman confirmed on March 2 that Iranian attacks targeted civilian infrastructure including the international airport. Attacks intercepted but severity elevated given confirmed targeting. Flights remain suspended pending airspace reopening. On March 2, Qatar MOD confirmed shooting down 2 Iranian SU-24 Fencer bombers — the first time Qatar has downed manned aircraft. Also intercepted 7 ballistic missiles and 5 drones on the same day. All projectiles neutralized before reaching targets. On March 3, Qatar confirmed intercepting Iranian missiles targeting Hamad airport. National totals updated: 101/104 missiles, 24/39 drones intercepted, 2 Iranian SU-24 jets shot down. On March 4, Qatar intercepted 10 drones and 2 cruise missiles from Iran. Qatar Airways flights remain suspended. Al Jazeera reports attack volume is decreasing. March 5: Multiple rounds of missile interceptions over Doha confirmed by CNN journalists on the ground. Qatar Airways remains grounded; airspace remains closed. On March 5, Qatar MOD confirmed another missile attack with air defense systems actively intercepting. AFP journalists reported smoke rising over Doha after loud explosions.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -2007,6 +2043,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-05",
                             "text": "Qatari air defense systems intercepted Iranian missiles over Doha at ~11:55 AM local time (07:55 UTC). CNN journalists on the ground reported intercepts rattled buildings as booms rang out; at least two additional rounds of interceptions followed shortly after. No confirmed debris/damage at airport."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "Qatar MOD confirmed new missile attack at ~12:25pm Doha time. Air defense systems intercepting incoming missiles; multiple explosions heard over Doha with smoke rising over the city."
                     }
             ],
             "sources": [
@@ -2065,6 +2105,14 @@ const LOCATIONS = [
                     {
                             "name": "France 24",
                             "url": "https://www.france24.com/en/middle-east/20260305-iran-launches-missiles-at-israel-as-middle-east-conflict-escalates"
+                    },
+                    {
+                            "name": "The Peninsula Qatar",
+                            "url": "https://thepeninsulaqatar.com/article/05/03/2026/live-updates-qatar-evacuates-near-us-embassy-oil-spill-near-kuwait"
+                    },
+                    {
+                            "name": "AFP via Arab News PK",
+                            "url": "https://www.arabnews.pk/node/2635346/middle-east"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -3026,7 +3074,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Maritime Vessel Strike",
-            "detail": "On March 5, the IRGC claimed it struck a 'US oil tanker' in the northern Persian Gulf. Maritime security agency Vanguard confirmed the attack hit the Bahamas-flagged tanker Sonangol Namibe off the coast of Kuwait. UKMTO confirmed an explosion on the port side causing an oil leak from its cargo tank. IRGC claimed strike on vessel via state media on March 5. British marine tracking agency confirmed crew observed large explosion on port side and a small craft departing. IRGC misidentified the vessel as a 'US oil tanker.'",
+            "detail": "On March 5, the IRGC claimed it struck a 'US oil tanker' in the northern Persian Gulf. Maritime security agency Vanguard confirmed the attack hit the Bahamas-flagged tanker Sonangol Namibe off the coast of Kuwait. UKMTO confirmed an explosion on the port side causing an oil leak from its cargo tank. IRGC claimed strike on vessel via state media on March 5. British marine tracking agency confirmed crew observed large explosion on port side and a small craft departing. IRGC misidentified the vessel as a 'US oil tanker.' Seatrade Maritime confirmed the vessel is the Suezmax tanker Sonangol Namibe. The tanker was anchored in the Khor al-Zubair lightering zone (Iraq oil export corridor) when a small craft approached and a large explosion struck its port side, causing an oil spill. Crew is safe.",
             "incidents": [
                     {
                             "date": "2026-03-05",
@@ -3049,6 +3097,10 @@ const LOCATIONS = [
                     {
                             "name": "CNN",
                             "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-04-26"
+                    },
+                    {
+                            "name": "Seatrade Maritime News",
+                            "url": "https://www.seatrade-maritime.com/security/tanker-struck-off-kuwait-spilling-oil"
                     }
             ],
             "dateAdded": "2026-03-05"
@@ -3066,7 +3118,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US/Saudi Air Base — Missile & Drone Strike",
-            "detail": "Major US military air base ~60 km south of Riyadh. Hosts US THAAD, Patriot, KC-135 tankers, E-3G AWACS. IRGC claimed they 'precisely hit' the base. Saudi Arabia said air defenses intercepted missiles near the base. Reports confirm impacts on base infrastructure. On March 3, Saudi Defense Ministry reported intercepting 8 drones near Riyadh and Al-Kharj, in the vicinity of PSAB. On March 3, 8 drones intercepted and destroyed near Riyadh and Al-Kharj per Saudi MoD spokesman Maj-Gen Turki Al-Maliki. No damage or casualties reported from interceptions. On March 3, Saudi defense ministry confirmed 8 drones intercepted near Riyadh and Al-Kharj (near PSAB). CNN noted Prince Sultan Air Base is located close to Al-Kharj.",
+            "detail": "Major US military air base ~60 km south of Riyadh. Hosts US THAAD, Patriot, KC-135 tankers, E-3G AWACS. IRGC claimed they 'precisely hit' the base. Saudi Arabia said air defenses intercepted missiles near the base. Reports confirm impacts on base infrastructure. On March 3, Saudi Defense Ministry reported intercepting 8 drones near Riyadh and Al-Kharj, in the vicinity of PSAB. On March 3, 8 drones intercepted and destroyed near Riyadh and Al-Kharj per Saudi MoD spokesman Maj-Gen Turki Al-Maliki. No damage or casualties reported from interceptions. On March 3, Saudi defense ministry confirmed 8 drones intercepted near Riyadh and Al-Kharj (near PSAB). CNN noted Prince Sultan Air Base is located close to Al-Kharj. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial area near PSAB, according to MoD spokesperson Turki Al-Maliki via SPA.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -3087,6 +3139,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Saudi defense ministry reports 8 drones intercepted and destroyed near Riyadh and Al-Kharj (near PSAB). No damage or casualties reported from the interceptions (Saudi MoD, CNN, Al Arabiya)."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "Saudi air defenses intercepted three cruise missiles and three drones targeting the Al-Kharj governorate area (where PSAB is located). All projectiles destroyed before impact; no damage to critical infrastructure."
                     }
             ],
             "sources": [
@@ -3121,6 +3177,14 @@ const LOCATIONS = [
                     {
                             "name": "Qatar News Agency",
                             "url": "https://qna.org.qa/en/news/news-details?id=saudi-defense-ministry-intercepts-destroys-8-drones-near-riyadh-and-al-kharj&date=3/03/2026"
+                    },
+                    {
+                            "name": "Arab News",
+                            "url": "https://www.arabnews.com/node/2635226/saudi-arabia"
+                    },
+                    {
+                            "name": "Saudi Gazette",
+                            "url": "https://saudigazette.com.sa/article/659460/saudi-arabia/saudi-air-defenses-intercept-3-cruise-missiles-3-drones-near-al-kharj"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -3266,7 +3330,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Oil Facility Strike",
-            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted. On March 4, a drone struck the already-shuttered Ras Tanura complex again per Reuters (4 sources). Saudi MOD confirmed the attack but said no damage resulted. The refinery (550,000 bpd capacity) has remained shut since the March 2 drone attack that caused a fire. On March 4, a projectile hit the refinery directly (Reuters), after the plant had already been shut down from an earlier debris-induced fire. March 4: Reuters sources report a projectile directly hit the refinery, which had already been shut down after earlier debris fire from intercepted drones. On March 4, a projectile directly hit the refinery per two Reuters sources. Operations had already been shut down as a precaution after an earlier debris-induced fire. Reuters sources report a new projectile hit the already-shuttered refinery later on March 4, beyond the earlier debris fire. On March 4, a projectile directly hit the refinery per two Reuters-cited sources, beyond the earlier debris fire that had already prompted a shutdown. On March 4, Reuters (via two sources) reported a projectile hit the refinery again, after the plant had already been shut down following the initial drone debris fire earlier in the week. March 4: Reuters reports projectile hit refinery; operations remain suspended since earlier precautionary shutdown. On March 4, a projectile reportedly struck the refinery again according to Reuters sources, compounding earlier damage from drone debris fire that forced shutdown.",
+            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted. On March 4, a drone struck the already-shuttered Ras Tanura complex again per Reuters (4 sources). Saudi MOD confirmed the attack but said no damage resulted. The refinery (550,000 bpd capacity) has remained shut since the March 2 drone attack that caused a fire. On March 4, a projectile hit the refinery directly (Reuters), after the plant had already been shut down from an earlier debris-induced fire. March 4: Reuters sources report a projectile directly hit the refinery, which had already been shut down after earlier debris fire from intercepted drones. On March 4, a projectile directly hit the refinery per two Reuters sources. Operations had already been shut down as a precaution after an earlier debris-induced fire. Reuters sources report a new projectile hit the already-shuttered refinery later on March 4, beyond the earlier debris fire. On March 4, a projectile directly hit the refinery per two Reuters-cited sources, beyond the earlier debris fire that had already prompted a shutdown. On March 4, Reuters (via two sources) reported a projectile hit the refinery again, after the plant had already been shut down following the initial drone debris fire earlier in the week. March 4: Reuters reports projectile hit refinery; operations remain suspended since earlier precautionary shutdown. On March 4, a projectile reportedly struck the refinery again according to Reuters sources, compounding earlier damage from drone debris fire that forced shutdown. On March 5, Saudi forces intercepted another drone targeting Ras Tanura. The refinery remains shut down since earlier attacks this week.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -3327,6 +3391,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "A projectile hit Saudi Arabia's Ras Tanura refinery according to two sources cited by Reuters, days after it was shut down from earlier drone debris fire (Al Jazeera/Reuters)"
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "Saudi air defenses stopped a new drone attack targeting Ras Tanura refinery. Latest attempts thwarted without impact on critical infrastructure per Saudi MoD."
                     }
             ],
             "sources": [
@@ -3385,6 +3453,10 @@ const LOCATIONS = [
                     {
                             "name": "Alma Research Center",
                             "url": "https://israel-alma.org/daily-report-the-second-iran-war-march-4-2026/"
+                    },
+                    {
+                            "name": "Arab News",
+                            "url": "https://www.arabnews.com/node/2635226/saudi-arabia"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -3956,6 +4028,30 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-04"
+    },
+    {
+            "name": "Oil Tanker Struck at Khor al-Zubair Port, Basra, Iraq (Boat Attack)",
+            "lat": 30.19,
+            "lng": 47.95,
+            "country": "Iraq",
+            "city": "Basra",
+            "severity": "critical",
+            "icon": "⚓",
+            "type": "Maritime Boat Attack",
+            "detail": "A boat struck a Bahamas-flagged oil tanker at the Iraqi port of Khor al-Zubair on March 5, causing damage and an oil spill. An Iraqi security source confirmed the incident to Al Jazeera. This represents a widening of maritime attacks into Iraqi port waters, a major oil export corridor.",
+            "incidents": [
+                    {
+                            "date": "2026-03-05",
+                            "text": "A boat struck a Bahamas-flagged oil tanker at Khor al-Zubair port, Iraq, causing structural damage and an oil spill. No casualties reported."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/5/drone-targets-us-base-in-iraq-as-iran-attacks-hit-region-amid-us-israel-war"
+                    }
+            ],
+            "dateAdded": "2026-03-05"
     },
 
 ];
