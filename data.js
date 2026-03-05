@@ -8,14 +8,14 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-05T04:06:39.924Z",
+    "lastUpdated": "2026-03-05T05:43:23.627Z",
     "casualties": {
         "killed": 21,
         "injured": 176
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 6 of conflict (March 5). Iranian missile launches dropped 86% and drone strikes dropped 73% from first day of war per Gen. Dan Caine (Chairman, Joint Chiefs). CENTCOM: Iran has launched over 500 ballistic missiles and 2,000+ drones in retaliation. At least one Gulf ally reportedly running low on interceptor munitions (CNN). P&I shipping insurance withdrawn for Strait of Hormuz effective March 5. Senate voted down war powers resolution to halt the war.",
-    "totalBarrage": "Over 500 ballistic missiles and 2,000+ drones launched by Iran (per CENTCOM Admiral Brad Cooper). UAE alone intercepted 175 ballistic missiles, 8 cruise missiles, and 876 drones (UAE MOD, March 4). Kuwait intercepted 97 ballistic missiles and 283+ drones. Bahrain intercepted 73 missiles and 91 drones. Qatar intercepted 101 ballistic missiles, 3 cruise missiles, and 39 drones.",
+    "summary": "Day 6 (March 5): Iran's retaliatory strikes continue but frequency declining. IRGC has launched 500+ ballistic missiles and 2,000+ drones total (per CENTCOM Adm. Cooper). War-risk insurance cancelled effective today, completing the de facto closure of the Strait of Hormuz. Gulf states not allowing US to use their airspace for strikes on Iran (BBC). QatarEnergy declared Force Majeure on LNG contracts. US submarine sank Iranian warship IRIS Dena in Indian Ocean.",
+    "totalBarrage": "500+ ballistic missiles, 2,000+ drones launched by Iran (per CENTCOM Adm. Brad Cooper as of March 4)",
     "intercepted": "Iranian missile volume down 86%, drone volume down 73% since Day 1 (Gen. Dan Caine, March 4). IDF destroyed 300 Iranian missile launchers. Combined force achieving degradation of Iran's ballistic missile capabilities."
 };
 
@@ -738,7 +738,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Projectile attacks on commercial vessels",
-            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit. JMIC elevated regional maritime threat level to 'critical' on March 1. At least five commercial vessels struck or targeted in 24 hours. Oil tanker Hercules Star struck near Mina Saqr; bulk carrier Ocean Electra near-miss off Sharjah. As of March 3, the Strait of Hormuz remains effectively closed to commercial shipping. JMIC upgraded risk assessment to Critical. P&I insurance withdrawn from March 5, making transit economically unviable. At least 5 tankers damaged, ~150 ships stranded. March 4: IRGC Navy claims complete control of the strait. Deputy commander says 10+ tankers struck. UKMTO also reported a container ship struck in the strait. CENTCOM says no Iranian ships remain operational in the Arabian Gulf, Strait of Hormuz, or Gulf of Oman after US forces destroyed 17 Iranian vessels including a submarine. On March 4, IRGC claimed 'complete control' of the strait. Trump ordered US Navy to escort tankers 'as soon as possible'. Only one tanker (Pola) managed a rare transit by switching off its AIS tracker. About 3,200 ships idle in the Gulf per Clarksons Research. As of March 5, P&I insurance has been withdrawn for the strait, making commercial shipping economically impossible even if physically attempted.",
+            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit. JMIC elevated regional maritime threat level to 'critical' on March 1. At least five commercial vessels struck or targeted in 24 hours. Oil tanker Hercules Star struck near Mina Saqr; bulk carrier Ocean Electra near-miss off Sharjah. As of March 3, the Strait of Hormuz remains effectively closed to commercial shipping. JMIC upgraded risk assessment to Critical. P&I insurance withdrawn from March 5, making transit economically unviable. At least 5 tankers damaged, ~150 ships stranded. March 4: IRGC Navy claims complete control of the strait. Deputy commander says 10+ tankers struck. UKMTO also reported a container ship struck in the strait. CENTCOM says no Iranian ships remain operational in the Arabian Gulf, Strait of Hormuz, or Gulf of Oman after US forces destroyed 17 Iranian vessels including a submarine. On March 4, IRGC claimed 'complete control' of the strait. Trump ordered US Navy to escort tankers 'as soon as possible'. Only one tanker (Pola) managed a rare transit by switching off its AIS tracker. About 3,200 ships idle in the Gulf per Clarksons Research. As of March 5, P&I insurance has been withdrawn for the strait, making commercial shipping economically impossible even if physically attempted. Effective March 5, major P&I insurers cancelled war-risk coverage, making the strait economically unviable. War-risk premiums spiked to ~1% of ship value (from 0.2% pre-conflict). Over 150 vessels stranded; tanker traffic near zero.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -787,6 +787,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-05",
                             "text": "Protection & Indemnity (P&I) insurance coverage withdrawn for vessels transiting Strait of Hormuz effective March 5, making commercial transit economically unviable. Maritime traffic effectively at zero."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "War-risk insurance cancellation notices from major P&I clubs (Gard, Skuld, NorthStandard, London P&I Club, American Club) take effect March 5, making the strait economically unviable for commercial shipping. Strait remains technically open but effectively closed with near-zero traffic."
                     }
             ],
             "sources": [
@@ -861,6 +865,14 @@ const LOCATIONS = [
                     {
                             "name": "Wikipedia — 2026 Strait of Hormuz crisis",
                             "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/economy/2026/3/3/maritime-insurers-cancel-war-risk-cover-in-gulf-will-it-spike-energy-cost"
+                    },
+                    {
+                            "name": "Atlas Institute",
+                            "url": "https://atlasinstitute.org/the-strait-that-moves-the-market-the-2026-strait-of-hormuz-crisis-and-the-anatomy-of-a-global-energy-shock/"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2255,6 +2267,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC specifically claimed Ali Al Salem Air Base among targets in its 230-drone wave announced Wednesday; Kuwait military confirmed dealing with new wave of missiles and drones in airspace (CNBC, Al Jazeera)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "IRGC confirmed Ali Al Salem was among targets of 230-drone wave; attacks continuing with declining frequency."
                     }
             ],
             "sources": [
@@ -2835,6 +2851,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC specifically claimed Camp Arifjan among targets in its 230-drone wave, calling the attacks its 'first powerful steps' (Al Jazeera, IRGC statement)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "IRGC confirmed Camp Arifjan among targets of 230-drone barrage described as 'first powerful steps' in war."
                     }
             ],
             "sources": [
@@ -3126,7 +3146,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Oil Facility Strike",
-            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted. On March 4, a drone struck the already-shuttered Ras Tanura complex again per Reuters (4 sources). Saudi MOD confirmed the attack but said no damage resulted. The refinery (550,000 bpd capacity) has remained shut since the March 2 drone attack that caused a fire. On March 4, a projectile hit the refinery directly (Reuters), after the plant had already been shut down from an earlier debris-induced fire. March 4: Reuters sources report a projectile directly hit the refinery, which had already been shut down after earlier debris fire from intercepted drones. On March 4, a projectile directly hit the refinery per two Reuters sources. Operations had already been shut down as a precaution after an earlier debris-induced fire. Reuters sources report a new projectile hit the already-shuttered refinery later on March 4, beyond the earlier debris fire. On March 4, a projectile directly hit the refinery per two Reuters-cited sources, beyond the earlier debris fire that had already prompted a shutdown. On March 4, Reuters (via two sources) reported a projectile hit the refinery again, after the plant had already been shut down following the initial drone debris fire earlier in the week.",
+            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted. On March 4, a drone struck the already-shuttered Ras Tanura complex again per Reuters (4 sources). Saudi MOD confirmed the attack but said no damage resulted. The refinery (550,000 bpd capacity) has remained shut since the March 2 drone attack that caused a fire. On March 4, a projectile hit the refinery directly (Reuters), after the plant had already been shut down from an earlier debris-induced fire. March 4: Reuters sources report a projectile directly hit the refinery, which had already been shut down after earlier debris fire from intercepted drones. On March 4, a projectile directly hit the refinery per two Reuters sources. Operations had already been shut down as a precaution after an earlier debris-induced fire. Reuters sources report a new projectile hit the already-shuttered refinery later on March 4, beyond the earlier debris fire. On March 4, a projectile directly hit the refinery per two Reuters-cited sources, beyond the earlier debris fire that had already prompted a shutdown. On March 4, Reuters (via two sources) reported a projectile hit the refinery again, after the plant had already been shut down following the initial drone debris fire earlier in the week. March 4: Reuters reports projectile hit refinery; operations remain suspended since earlier precautionary shutdown.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -3179,6 +3199,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "Aramco oil facility attacked again per Alma Research Center day 4 report."
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Projectile hit Ras Tanura refinery per two Reuters sources; refinery had been shut down since earlier drone interception debris fire. Operations remain suspended."
                     }
             ],
             "sources": [
@@ -3758,7 +3782,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "💥",
             "type": "US-Israeli Strike on Pro-Iran Militia Base",
-            "detail": "US-Israeli strikes targeted the Jurf al-Sakhar base housing Popular Mobilization Forces and Kataib Hezbollah. Iraqi state media and PMF confirmed two fighters killed and five wounded. Kataib Hezbollah warned it would 'soon begin attacking American bases in response.' Additional airstrike on March 3 caused material damage (AFP). Total Iraqi militant casualties across all sites now exceed 10 killed since Feb 28. March 4: Another strike confirmed at the base; Kataib Hezbollah source says material damage only. Total fighter deaths across Iraq now exceeds 10 since Feb 28. More than 10 Kataib Hezbollah fighters killed across Iraq since Feb 28 per AFP. Tuesday's strike at Jurf al-Nasr caused only material damage per a faction source.",
+            "detail": "US-Israeli strikes targeted the Jurf al-Sakhar base housing Popular Mobilization Forces and Kataib Hezbollah. Iraqi state media and PMF confirmed two fighters killed and five wounded. Kataib Hezbollah warned it would 'soon begin attacking American bases in response.' Additional airstrike on March 3 caused material damage (AFP). Total Iraqi militant casualties across all sites now exceed 10 killed since Feb 28. March 4: Another strike confirmed at the base; Kataib Hezbollah source says material damage only. Total fighter deaths across Iraq now exceeds 10 since Feb 28. More than 10 Kataib Hezbollah fighters killed across Iraq since Feb 28 per AFP. Tuesday's strike at Jurf al-Nasr caused only material damage per a faction source. March 4: Another strike on base caused material damage. Over 10 pro-Iran militia fighters killed across Iraq since Feb 28 (AFP).",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -3779,6 +3803,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "Another airstrike hit the Jurf al-Nasr base housing Kataib Hezbollah on Tuesday; a source from the group said it caused only material damage (AFP)"
+                    },
+                    {
+                            "date": "2026-03-04",
+                            "text": "Additional airstrike on Jurf al-Nasr base caused material damage only (Kataeb Hezbollah source to AFP). Over 10 fighters from mostly Kataeb Hezbollah killed across Iraq since conflict began."
                     }
             ],
             "sources": [
