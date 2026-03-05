@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-05T20:32:27.040Z",
+    "lastUpdated": "2026-03-05T21:31:56.384Z",
     "casualties": {
         "killed": 21,
         "injured": 200
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 6 (March 5): Iran intensifies barrage — Qatar reports most intense wave yet (14 BMs, 4 drones). UAE intercepted 6 of 7 BMs and 125 of 131 drones on March 5 alone; 1 missile impacted inside territory. Saudi air defenses neutralized cruise missiles near Al-Kharj and new drone attempt on Ras Tanura. BAPCO refinery in Bahrain directly struck by Iranian missile Thursday night. US Embassy Kuwait operations formally suspended by State Dept. IRGC claims to have struck US oil tanker in northern Persian Gulf and asserts full control of Strait of Hormuz transit. Bahrain total intercepts since Feb 28: 75 missiles, 123 drones.",
-    "totalBarrage": "INSS estimates (as of Mar 5): 941 drones, 189 BMs, 8 cruise missiles at UAE alone. CENTCOM (Adm. Cooper): Iran has launched 500+ BMs and 2,000+ drones total across region. Qatar Mar 5: 14 BMs + 4 drones. UAE Mar 5: 7 BMs + 131 drones. Saudi Mar 5: 3 cruise missiles + 3 drones (Al-Kharj) + 1 drone (Ras Tanura) + 1 drone (Al-Jawf).",
-    "intercepted": "UAE Mar 5: 6/7 BMs, 125/131 drones intercepted. Qatar Mar 5: 13/14 BMs, 4/4 drones intercepted. Bahrain cumulative: 75 missiles, 123 drones. Saudi Mar 5: 3 cruise missiles + 3 drones near Al-Kharj, 1 drone near Al-Jawf — all intercepted."
+    "summary": "Day 6 (March 5): IRGC commander warns coming days will bring 'more intense and widespread' attacks (Fars/CBS). Israel declares 'next phase' of war after 2,500 strikes with 6,000+ weapons (CNN). War risk insurance withdrawn for Persian Gulf effective March 5. Strait of Hormuz, Gulf of Oman and Gulf designated 'warlike operations area' by maritime unions (Euronews). France authorizes US use of French bases (BFMTV). UK temporarily withdrawing some Bahrain embassy staff. Italy announces air-defense assistance to Gulf countries. Iran vows to target 'all economic centres in the region' if attacks continue.",
+    "totalBarrage": "Iran has fired over 500 ballistic/naval missiles and ~2,000 drones since Feb 28 (Fars News Agency via Wikipedia, March 5). INSS Israel estimates against UAE alone: 941 drones, 189 ballistic missiles, 8 cruise missiles. Bahrain Defence Force cumulative: 75 missiles and 123 drones destroyed. Qatar Defence Ministry March 5: 14 ballistic missiles and 4 drones detected.",
+    "intercepted": "UAE March 5 only: 6 of 7 ballistic missiles intercepted, 1 ballistic missile fell inside UAE territory; 125 of 131 drones intercepted, 6 drones penetrated (UAE Defense Ministry via CBS). Qatar March 5: 13 of 14 ballistic missiles intercepted, 1 fell in territorial waters; all 4 drones intercepted (Qatar Defence Ministry via Al Jazeera). Bahrain cumulative since Feb 28: 75 missiles, 123 drones destroyed (BDF). Saudi March 5: 3 cruise missiles intercepted near Al-Kharj; 1 drone shot down near Al-Jawf (Saudi MOD via Al Jazeera/Euronews)."
 };
 
 const LOCATIONS = [
@@ -4093,6 +4093,38 @@ const LOCATIONS = [
             ],
             "dateAdded": "2026-03-05"
     },
+    {
+            "name": "OOMCO Fuel Storage Facility (Muscat Area), Oman",
+            "lat": 23.582,
+            "lng": 58.422,
+            "country": "Oman",
+            "city": "Muscat",
+            "severity": "high",
+            "icon": "🛢️",
+            "type": "Fuel Storage — Confirmed Damage (Incident)",
+            "detail": "Oman Oil Marketing Company (OOMCO) disclosed to the Muscat Securities Exchange on March 4 that one of its fuel storage tanks sustained minor physical damage in an 'incident.' Operations at the affected site were temporarily suspended pending technical inspections. Reported by multiple credible outlets alongside Iranian strike reporting across Oman.",
+            "incidents": [
+                    {
+                            "date": "2026-03-05",
+                            "text": "OOMCO fuel storage tank damaged in 'incident'; minor physical damage confirmed, operations suspended pending safety evaluations (MSX filing March 4)"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/5/drone-targets-us-base-in-iraq-as-iran-attacks-hit-region-amid-us-israel-war"
+                    },
+                    {
+                            "name": "Muscat Daily",
+                            "url": "https://www.muscatdaily.com/2026/03/05/oomco-reports-minor-damage-following-storage-tank-attack/"
+                    },
+                    {
+                            "name": "Oman Observer",
+                            "url": "https://www.omanobserver.om/article/1185530/business/markets/a-fuel-tank-was-subject-to-an-incident-oomco"
+                    }
+            ],
+            "dateAdded": "2026-03-05"
+    },
 
     // ═══════════════════════════════════════════════════════════
     // International Waters (Strait of Hormuz)
@@ -4139,10 +4171,10 @@ const LOCATIONS = [
             "lng": 36.782,
             "country": "Jordan",
             "city": "Azraq",
-            "severity": "high",
+            "severity": "critical",
             "icon": "🎯",
             "type": "US/Jordanian Air Base — Targeted, Intercepted",
-            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage. Jordan confirmed intercepting 13 ballistic missiles and 49 drones. German troops in Jordan were also reportedly shelled by Iran. German military confirmed the multinational base at Al-Azraq was targeted by Iran over the weekend. US Embassy in Amman fully evacuated March 3 due to threats. Non-emergency US personnel in Jordan ordered to depart March 4. Stars and Stripes confirms US has deployed dozens of attack aircraft to the base, making it a key air power hub. Non-emergency US personnel ordered to depart Jordan.",
+            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage. Jordan confirmed intercepting 13 ballistic missiles and 49 drones. German troops in Jordan were also reportedly shelled by Iran. German military confirmed the multinational base at Al-Azraq was targeted by Iran over the weekend. US Embassy in Amman fully evacuated March 3 due to threats. Non-emergency US personnel in Jordan ordered to depart March 4. Stars and Stripes confirms US has deployed dozens of attack aircraft to the base, making it a key air power hub. Non-emergency US personnel ordered to depart Jordan. CNN satellite analysis confirms THAAD AN/TPY-2 radar was struck and apparently destroyed (image dated March 2). Iran assessed to be deliberately targeting US-made air defense radars across the Arabian Peninsula to degrade missile/drone interception capabilities. Buildings housing similar radar systems also hit at two UAE locations per CNN, though equipment status unclear.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -4167,6 +4199,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "Stars and Stripes reports US has sent 'dozens of attack aircraft' to Muwaffaq Salti, making it a key hub for US air power; US Embassy Amman ordered departure of non-emergency personnel; Jordan ended temporary airspace closure Wednesday (Stars and Stripes)"
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "CNN satellite imagery analysis (published March 5) confirms THAAD missile defense radar at the base was directly struck and apparently destroyed; March 2 satellite image shows debris field surrounding blackened AN/TPY-2 radar system"
                     }
             ],
             "sources": [
@@ -4201,6 +4237,10 @@ const LOCATIONS = [
                     {
                             "name": "Stars and Stripes",
                             "url": "https://www.stripes.com/theaters/middle_east/2026-03-01/bases-damaged-iran-attacks-20916010.html"
+                    },
+                    {
+                            "name": "CNN",
+                            "url": "https://edition.cnn.com/world/live-news/iran-war-us-israel-trump-03-05-26"
                     }
             ],
             "dateAdded": "2026-03-03"
