@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-05T09:35:36.494Z",
+    "lastUpdated": "2026-03-05T10:31:47.833Z",
     "casualties": {
         "killed": 21,
         "injured": 176
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 6 of conflict. Iranian ballistic missile launches down 86% from Day 1; OWA drone launches down 73% (Gen. Caine, CENTCOM). UAE MOD reports only 3 Iranian ballistic missiles on March 4 vs 137 on Feb 28. CENTCOM characterizes remaining threat as 'lingering launch capability.' Volume declining but drone and maritime threats persist.",
-    "totalBarrage": "Over 500 ballistic missiles and 2,000+ drones launched by Iran (per CENTCOM Admiral Brad Cooper, March 3). UAE cumulative: 189 BMs launched (175 destroyed), 941 drones detected (876 intercepted), 8 cruise missiles (all intercepted). Kuwait cumulative: 178 BMs and 384 drones intercepted. Bahrain cumulative: 73 missiles and 91 drones intercepted. Qatar cumulative: 101 BMs, 39 drones, 3 cruise missiles detected; 2 Su-24 jets shot down.",
-    "intercepted": "UAE: 175 of 189 BMs, 876 of 941 drones, 8/8 cruise missiles. Kuwait: 178 BMs, 384 drones. Bahrain: 73 missiles, 91 drones. Qatar: all missiles intercepted, 24 of 39 drones intercepted, 3 cruise missiles intercepted."
+    "summary": "Day 6 (March 5): Iran's retaliatory strike rate has dropped sharply — 86% decline in ballistic missile launches and 73% decline in drone strikes since Day 1, per US Joint Chiefs Chairman Gen. Dan Caine. IRGC revised Strait of Hormuz closure to target only US/Israel/Europe/Western allied shipping. Italy announced air defense aid deployment to Gulf states. Over 1,100 killed in Iran. Iran struck Azerbaijan's Nakhchivan airport with drones (outside Gulf theater). US has closed embassies in Saudi Arabia, Kuwait and Lebanon.",
+    "totalBarrage": "Iran has launched more than 500 ballistic missiles and 2,000+ drones in total retaliation (per US Admiral Brad Cooper, CENTCOM). Strike rate declining sharply — 86% drop in missile launches, 73% drop in drone strikes since Day 1.",
+    "intercepted": "UAE: 186 ballistic missiles tracked (172 destroyed), 812 drones monitored (755 intercepted). Kuwait: 178+ ballistic missiles and 384+ drones intercepted. Bahrain: 73 missiles and 91 drones destroyed. Qatar: 101 ballistic missiles detected (98 intercepted), 3 cruise missiles intercepted, 39 drones detected (24 intercepted). Qatar also downed 2 Iranian SU-24 fighter jets."
 };
 
 const LOCATIONS = [
@@ -738,7 +738,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Projectile attacks on commercial vessels",
-            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit. JMIC elevated regional maritime threat level to 'critical' on March 1. At least five commercial vessels struck or targeted in 24 hours. Oil tanker Hercules Star struck near Mina Saqr; bulk carrier Ocean Electra near-miss off Sharjah. As of March 3, the Strait of Hormuz remains effectively closed to commercial shipping. JMIC upgraded risk assessment to Critical. P&I insurance withdrawn from March 5, making transit economically unviable. At least 5 tankers damaged, ~150 ships stranded. March 4: IRGC Navy claims complete control of the strait. Deputy commander says 10+ tankers struck. UKMTO also reported a container ship struck in the strait. CENTCOM says no Iranian ships remain operational in the Arabian Gulf, Strait of Hormuz, or Gulf of Oman after US forces destroyed 17 Iranian vessels including a submarine. On March 4, IRGC claimed 'complete control' of the strait. Trump ordered US Navy to escort tankers 'as soon as possible'. Only one tanker (Pola) managed a rare transit by switching off its AIS tracker. About 3,200 ships idle in the Gulf per Clarksons Research. As of March 5, P&I insurance has been withdrawn for the strait, making commercial shipping economically impossible even if physically attempted. Effective March 5, major P&I insurers cancelled war-risk coverage, making the strait economically unviable. War-risk premiums spiked to ~1% of ship value (from 0.2% pre-conflict). Over 150 vessels stranded; tanker traffic near zero. As of March 5, P&I insurance cancellation notices took effect, making the strait economically impassable. War-risk premiums surged to 1% of ship value (from 0.2% pre-conflict). The strait remains technically open but is functionally closed to commercial traffic. P&I insurance removed for March 5 transit. IRGC Navy official Mohammad Akbarzadeh declared strait under 'complete control of the Islamic Republic's Navy.' Approximately 3,200 ships idle in the Gulf. P&I insurance removed for March 5, effectively making commercial transit economically unviable. IRGC Navy official Mohammad Akbarzadeh declared Strait under 'complete control of the Islamic Republic's Navy.' Trump pledged US Navy would escort tankers 'as soon as possible.' On March 5, P&I insurance was formally withdrawn for strait transits, effectively shutting down all remaining commercial traffic. Strait remains technically open but functionally closed.",
+            "detail": "UK Maritime Trade Operations (UKMTO) reported multiple maritime incidents on March 1: one vessel west of Sharjah rocked by explosion from unknown projectile; another tanker north of Muscat struck above the waterline sparking a fire; a third vessel northwest of Mina Saqr hit by projectile igniting a blaze aboard. Widespread GPS jamming also reported across Emirati, Qatari, Omani and Iranian waters. On March 2, IRGC commander General Jabbari declared the Strait closed and threatened to set passing vessels on fire. Maritime traffic has effectively ceased. IRGC struck tanker ATHE NOVA with drones. JMIC elevated regional maritime threat level to CRITICAL. HERCULES STAR struck 17nm NW of Mina Saqr (fire extinguished, no injuries). OCEAN ELECTRA near-miss 35nm W of Sharjah. Total 5+ commercial vessels now struck/targeted. 150+ ships stranded. Major insurers cancelling war-risk coverage. Norwegian Maritime Authority raised to MARSEC/ISPS Level 3. On March 3, IRGC senior adviser Jabari declared 'the strait is closed' and threatened to set ablaze any ship attempting passage. IRGC also threatened to attack oil pipelines. Tanker traffic through the strait has dropped approximately 70% with over 150 ships anchoring outside to avoid risks. IRGC senior adviser Ebrahim Jabari declared Strait closed: 'If anyone tries to pass, the heroes of the Revolutionary Guard will set those ships ablaze.' At least 5 tankers damaged, 2 personnel killed, ~150 ships stranded. All major shipping lines (Maersk, MSC, Hapag-Lloyd, CMA CGM) suspended Hormuz transit. JMIC elevated regional maritime threat level to 'critical' on March 1. At least five commercial vessels struck or targeted in 24 hours. Oil tanker Hercules Star struck near Mina Saqr; bulk carrier Ocean Electra near-miss off Sharjah. As of March 3, the Strait of Hormuz remains effectively closed to commercial shipping. JMIC upgraded risk assessment to Critical. P&I insurance withdrawn from March 5, making transit economically unviable. At least 5 tankers damaged, ~150 ships stranded. March 4: IRGC Navy claims complete control of the strait. Deputy commander says 10+ tankers struck. UKMTO also reported a container ship struck in the strait. CENTCOM says no Iranian ships remain operational in the Arabian Gulf, Strait of Hormuz, or Gulf of Oman after US forces destroyed 17 Iranian vessels including a submarine. On March 4, IRGC claimed 'complete control' of the strait. Trump ordered US Navy to escort tankers 'as soon as possible'. Only one tanker (Pola) managed a rare transit by switching off its AIS tracker. About 3,200 ships idle in the Gulf per Clarksons Research. As of March 5, P&I insurance has been withdrawn for the strait, making commercial shipping economically impossible even if physically attempted. Effective March 5, major P&I insurers cancelled war-risk coverage, making the strait economically unviable. War-risk premiums spiked to ~1% of ship value (from 0.2% pre-conflict). Over 150 vessels stranded; tanker traffic near zero. As of March 5, P&I insurance cancellation notices took effect, making the strait economically impassable. War-risk premiums surged to 1% of ship value (from 0.2% pre-conflict). The strait remains technically open but is functionally closed to commercial traffic. P&I insurance removed for March 5 transit. IRGC Navy official Mohammad Akbarzadeh declared strait under 'complete control of the Islamic Republic's Navy.' Approximately 3,200 ships idle in the Gulf. P&I insurance removed for March 5, effectively making commercial transit economically unviable. IRGC Navy official Mohammad Akbarzadeh declared Strait under 'complete control of the Islamic Republic's Navy.' Trump pledged US Navy would escort tankers 'as soon as possible.' On March 5, P&I insurance was formally withdrawn for strait transits, effectively shutting down all remaining commercial traffic. Strait remains technically open but functionally closed. On March 5, IRGC revised its Strait closure policy to target only Western-allied shipping. P&I insurance coverage removed for March 5, effectively shutting down commercial transit. Italy announced plans to send air defense aid to Gulf countries.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -807,6 +807,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-05",
                             "text": "Protection and indemnity insurance formally removed for March 5, making economic risk too high for ship owners to transit. IRGC claimed 'complete control' of the strait on March 4. Strait declared a high-risk zone with extra pay and right of refusal for crew."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "IRGC announced Strait of Hormuz is only closed to ships from US, Israel, Europe and other Western allies — effectively modifying its previous total closure threat. Protection and indemnity insurance was removed for March 5, making economic risk too high for most ship owners. Strait remains technically open but effectively closed to commercial traffic."
                     }
             ],
             "sources": [
@@ -889,6 +893,10 @@ const LOCATIONS = [
                     {
                             "name": "Atlas Institute",
                             "url": "https://atlasinstitute.org/the-strait-that-moves-the-market-the-2026-strait-of-hormuz-crisis-and-the-anatomy-of-a-global-energy-shock/"
+                    },
+                    {
+                            "name": "CNN",
+                            "url": "https://edition.cnn.com/world/live-news/iran-war-us-israel-trump-03-05-26"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2966,11 +2974,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Maritime Vessel Strike",
-            "detail": "On March 5, the IRGC claimed it struck a 'US oil tanker' in the northern Persian Gulf. Maritime security agency Vanguard confirmed the attack hit the Bahamas-flagged tanker Sonangol Namibe off the coast of Kuwait. UKMTO confirmed an explosion on the port side causing an oil leak from its cargo tank.",
+            "detail": "On March 5, the IRGC claimed it struck a 'US oil tanker' in the northern Persian Gulf. Maritime security agency Vanguard confirmed the attack hit the Bahamas-flagged tanker Sonangol Namibe off the coast of Kuwait. UKMTO confirmed an explosion on the port side causing an oil leak from its cargo tank. IRGC claimed strike on vessel via state media on March 5. British marine tracking agency confirmed crew observed large explosion on port side and a small craft departing. IRGC misidentified the vessel as a 'US oil tanker.'",
             "incidents": [
                     {
                             "date": "2026-03-05",
                             "text": "IRGC projectile struck the Bahamas-flagged tanker Sonangol Namibe approximately 30nm SE of Mubarak al Kabeer, Kuwait. UKMTO confirmed explosion on port side and oil leak from cargo tank."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "IRGC claimed via state media it struck a 'US oil tanker' in the northern Persian Gulf that was on fire. Maritime security agency Vanguard confirmed the attack actually hit the Bahamas-flagged Sonangol Namibe off the coast of Kuwait. Crew reported seeing a large explosion on the vessel's port side before a small craft left the area."
                     }
             ],
             "sources": [
@@ -2981,6 +2993,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Arabiya English",
                             "url": "https://english.alarabiya.net/News/middle-east/2026/03/05/passage-through-the-strait-of-hormuz-during-war-will-be-under-iran-s-control-irgc"
+                    },
+                    {
+                            "name": "CNN",
+                            "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-04-26"
                     }
             ],
             "dateAdded": "2026-03-05"
