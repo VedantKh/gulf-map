@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-05T17:58:35.932Z",
+    "lastUpdated": "2026-03-05T20:32:27.040Z",
     "casualties": {
         "killed": 21,
         "injured": 200
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 6 (Mar 5): Iran launched its largest single barrage against Qatar (14 BMs + 4 drones). An Iranian missile struck Bahrain's BAPCO Sitra refinery (fire contained, no casualties). UAE reports 1 of 7 ballistic missiles penetrated defenses. Saudi intercepted 3 cruise missiles near PSAB/Al-Kharj. Victoria Base near Baghdad airport repeatedly targeted. Bahrain total interceptions reach 75 missiles and 123 drones. Gulf states reportedly running low on interceptor stocks. Iran claims over 500 ballistic missiles and 2,000 drones launched since Feb 28.",
-    "totalBarrage": "Iran has launched more than 500 ballistic missiles and approximately 2,000 drones since Feb 28, per CENTCOM Adm. Brad Cooper. INSS (Israel) estimates 941 drones, 189 BMs and 8 cruise missiles at UAE alone.",
-    "intercepted": "Cumulative interceptions by Gulf states: UAE 189+ BMs and 900+ drones; Bahrain 75 missiles and 123 drones; Qatar 115+ BMs and 39+ drones; Kuwait 97 BMs and 283 drones; Saudi Arabia intercepting cruise missiles and drones near Al-Kharj, Ras Tanura and Al-Jawf."
+    "summary": "Day 6 (March 5): Iran intensifies barrage — Qatar reports most intense wave yet (14 BMs, 4 drones). UAE intercepted 6 of 7 BMs and 125 of 131 drones on March 5 alone; 1 missile impacted inside territory. Saudi air defenses neutralized cruise missiles near Al-Kharj and new drone attempt on Ras Tanura. BAPCO refinery in Bahrain directly struck by Iranian missile Thursday night. US Embassy Kuwait operations formally suspended by State Dept. IRGC claims to have struck US oil tanker in northern Persian Gulf and asserts full control of Strait of Hormuz transit. Bahrain total intercepts since Feb 28: 75 missiles, 123 drones.",
+    "totalBarrage": "INSS estimates (as of Mar 5): 941 drones, 189 BMs, 8 cruise missiles at UAE alone. CENTCOM (Adm. Cooper): Iran has launched 500+ BMs and 2,000+ drones total across region. Qatar Mar 5: 14 BMs + 4 drones. UAE Mar 5: 7 BMs + 131 drones. Saudi Mar 5: 3 cruise missiles + 3 drones (Al-Kharj) + 1 drone (Ras Tanura) + 1 drone (Al-Jawf).",
+    "intercepted": "UAE Mar 5: 6/7 BMs, 125/131 drones intercepted. Qatar Mar 5: 13/14 BMs, 4/4 drones intercepted. Bahrain cumulative: 75 missiles, 123 drones. Saudi Mar 5: 3 cruise missiles + 3 drones near Al-Kharj, 1 drone near Al-Jawf — all intercepted."
 };
 
 const LOCATIONS = [
@@ -1762,11 +1762,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Missile Strike on Oil Refinery",
-            "detail": "An Iranian ballistic missile struck Bahrain's BAPCO Sitra refinery on March 5, triggering large fires at the 400k b/d facility. Bahrain's Interior Ministry confirmed the fire was contained with limited material damage and no casualties. BAPCO confirmed refinery operations continue.",
+            "detail": "An Iranian ballistic missile struck Bahrain's BAPCO Sitra refinery on March 5, triggering large fires at the 400k b/d facility. Bahrain's Interior Ministry confirmed the fire was contained with limited material damage and no casualties. BAPCO confirmed refinery operations continue. Thursday night: Iranian missile confirmed to have directly struck the refinery in a separate incident. Bahrain authorities say fire extinguished, refinery operational, no casualties. Bahrain Defence Force total interceptions since Feb 28: 75 missiles and 123 drones.",
             "incidents": [
                     {
                             "date": "2026-03-05",
                             "text": "Iranian ballistic missile struck BAPCO Sitra refinery in Ma'ameer industrial zone. Fire broke out at one unit; contained by emergency crews. No casualties. BAPCO confirms operations ongoing. Bahrain Interior Ministry confirmed the strike on X."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "Iranian missile directly struck BAPCO state-run oil refinery on Thursday night. Bahrain confirmed fire was extinguished and refinery remained operational with no casualties reported."
                     }
             ],
             "sources": [
@@ -1789,6 +1793,10 @@ const LOCATIONS = [
                     {
                             "name": "OilPrice.com",
                             "url": "https://oilprice.com/Latest-Energy-News/World-News/Drone-Strike-Hits-Bahrain-Refinery-as-Crack-Spreads-Surge.html"
+                    },
+                    {
+                            "name": "Military.com / AP",
+                            "url": "https://www.military.com/daily-news/2026/03/05/state-department-announces-closure-of-us-embassy-kuwait-after-iranian-strikes.html"
                     }
             ],
             "dateAdded": "2026-03-05"
@@ -2090,7 +2098,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "✈️",
             "type": "Airport — Targeted, Attacks Intercepted",
-            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded. March 2: Qatar FM confirmed airport was directly targeted by Iranian attacks; all intercepted. Qatar warned Iran must 'pay a price' and retaliation cannot be ruled out. Qatar FM spokesman confirmed on March 2 that Iranian attacks targeted civilian infrastructure including the international airport. Attacks intercepted but severity elevated given confirmed targeting. Flights remain suspended pending airspace reopening. On March 2, Qatar MOD confirmed shooting down 2 Iranian SU-24 Fencer bombers — the first time Qatar has downed manned aircraft. Also intercepted 7 ballistic missiles and 5 drones on the same day. All projectiles neutralized before reaching targets. On March 3, Qatar confirmed intercepting Iranian missiles targeting Hamad airport. National totals updated: 101/104 missiles, 24/39 drones intercepted, 2 Iranian SU-24 jets shot down. On March 4, Qatar intercepted 10 drones and 2 cruise missiles from Iran. Qatar Airways flights remain suspended. Al Jazeera reports attack volume is decreasing. March 5: Multiple rounds of missile interceptions over Doha confirmed by CNN journalists on the ground. Qatar Airways remains grounded; airspace remains closed. On March 5, Qatar MOD confirmed another missile attack with air defense systems actively intercepting. AFP journalists reported smoke rising over Doha after loud explosions. On March 5, Qatar's MOD confirmed 14 ballistic missiles and 4 drones targeted the country. 13 BMs intercepted, 1 fell in territorial waters, all drones intercepted. Elevated emergency alert issued to residents. Qatar's interior ministry ordered evacuation of residents near the US Embassy in Doha as a precautionary measure. March 5: Qatar MoD confirmed 14 ballistic missiles and 4 drones intercepted. One missile fell in territorial waters. Doha rocked by explosion sounds from interceptions. Mar 5: Iran's biggest barrage against Qatar to date — 14 BMs + 4 drones over ~90 minutes. 13 of 14 missiles intercepted; 1 fell in territorial waters. All drones neutralized.",
+            "detail": "Qatar's Foreign Ministry spokesperson confirmed that Iran targeted civilian infrastructure including the international airport. All attacks were intercepted by Qatari armed forces; no confirmed ground impact at the airport. All aircraft movements suspended; 2,000+ flights cancelled. Qatar Airways operations remain grounded. March 2: Qatar FM confirmed airport was directly targeted by Iranian attacks; all intercepted. Qatar warned Iran must 'pay a price' and retaliation cannot be ruled out. Qatar FM spokesman confirmed on March 2 that Iranian attacks targeted civilian infrastructure including the international airport. Attacks intercepted but severity elevated given confirmed targeting. Flights remain suspended pending airspace reopening. On March 2, Qatar MOD confirmed shooting down 2 Iranian SU-24 Fencer bombers — the first time Qatar has downed manned aircraft. Also intercepted 7 ballistic missiles and 5 drones on the same day. All projectiles neutralized before reaching targets. On March 3, Qatar confirmed intercepting Iranian missiles targeting Hamad airport. National totals updated: 101/104 missiles, 24/39 drones intercepted, 2 Iranian SU-24 jets shot down. On March 4, Qatar intercepted 10 drones and 2 cruise missiles from Iran. Qatar Airways flights remain suspended. Al Jazeera reports attack volume is decreasing. March 5: Multiple rounds of missile interceptions over Doha confirmed by CNN journalists on the ground. Qatar Airways remains grounded; airspace remains closed. On March 5, Qatar MOD confirmed another missile attack with air defense systems actively intercepting. AFP journalists reported smoke rising over Doha after loud explosions. On March 5, Qatar's MOD confirmed 14 ballistic missiles and 4 drones targeted the country. 13 BMs intercepted, 1 fell in territorial waters, all drones intercepted. Elevated emergency alert issued to residents. Qatar's interior ministry ordered evacuation of residents near the US Embassy in Doha as a precautionary measure. March 5: Qatar MoD confirmed 14 ballistic missiles and 4 drones intercepted. One missile fell in territorial waters. Doha rocked by explosion sounds from interceptions. Mar 5: Iran's biggest barrage against Qatar to date — 14 BMs + 4 drones over ~90 minutes. 13 of 14 missiles intercepted; 1 fell in territorial waters. All drones neutralized. March 5: Qatar Defence Ministry confirmed most intense barrage yet — 14 ballistic missiles and 4 drones from Iran. 13 BMs intercepted, 1 fell in territorial waters. All 4 drones intercepted. Elevated emergency alert issued. AFP journalists described blasts as most intense since conflict began.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -2135,6 +2143,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-05",
                             "text": "Qatar defense ministry reports largest Iranian barrage yet: 14 ballistic missiles and 4 drones targeted the country. 13 missiles intercepted, 1 fell in territorial waters. All 4 drones intercepted. No casualties. Elevated emergency alert sent to all residents."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "Qatar targeted by 14 ballistic missiles and 4 drones — AFP described blasts as most intense since conflict began. 13 missiles intercepted, 1 fell in territorial waters. All 4 drones intercepted. Elevated emergency alert issued to residents. Black smoke column visible on Doha horizon."
                     }
             ],
             "sources": [
@@ -2213,6 +2225,10 @@ const LOCATIONS = [
                     {
                             "name": "Euronews",
                             "url": "https://www.euronews.com/2026/03/05/iran-claims-it-hit-us-tanker-as-israel-launches-fresh-strikes-on-tehran"
+                    },
+                    {
+                            "name": "Gulf News",
+                            "url": "https://gulfnews.com/world/americas/us-israel-iran-war-day-6-iran-israel-strikes-continue-uae-extends-limited-flights-1.500463753"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2718,7 +2734,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🏛️",
             "type": "Embassy Area / Debris Zone",
-            "detail": "AFP photos show smoke rising from the area near the US Embassy in Kuwait City on March 2. Kuwait's air defenses intercepted hostile drones near Rumaithiya and Salwa neighborhoods in Hawalli Governorate where the embassy is located. US Embassy issued security alert urging people to stay away. Firefighters and ambulances were seen in the area. March 2: Reuters witness and AFP photos confirm smoke rising near US Embassy area. Active air defense interceptions ongoing over central Kuwait. March 2: Smoke seen near US Embassy. Kuwaiti air defenses intercepted hostile drones at dawn near Rumaithiya and Salwa neighborhoods in Hawalli Governorate. Kuwait Civil Defense confirmed explosions heard in residential areas were from successful interceptions. March 2: AP confirmed fire and smoke inside embassy compound after Iranian attack. No confirmed casualties. Embassy warned of continuing threat and ordered shelter-in-place. March 2: Fire and black smoke from inside US Embassy compound. CBS News reported 'apparent Iranian missile strike.' Embassy closed and issued emergency shelter-in-place. No immediate casualty reports but compound visibly damaged. March 2: Smoke confirmed near US Embassy compound. Embassy closed. US warned of 'continuing threat of missile and UAV attacks' and urged Americans to take cover. Mar 2: Large fire confirmed inside US Embassy compound from suspected Iranian drone. No injuries. Embassy had pre-emptively ordered staff to residences. All appointments canceled until further notice. On March 3, Iran struck the US Embassy compound in Kuwait directly. Kuwait state media condemned the attack. Embassy closed indefinitely; all visa and citizen services suspended.",
+            "detail": "AFP photos show smoke rising from the area near the US Embassy in Kuwait City on March 2. Kuwait's air defenses intercepted hostile drones near Rumaithiya and Salwa neighborhoods in Hawalli Governorate where the embassy is located. US Embassy issued security alert urging people to stay away. Firefighters and ambulances were seen in the area. March 2: Reuters witness and AFP photos confirm smoke rising near US Embassy area. Active air defense interceptions ongoing over central Kuwait. March 2: Smoke seen near US Embassy. Kuwaiti air defenses intercepted hostile drones at dawn near Rumaithiya and Salwa neighborhoods in Hawalli Governorate. Kuwait Civil Defense confirmed explosions heard in residential areas were from successful interceptions. March 2: AP confirmed fire and smoke inside embassy compound after Iranian attack. No confirmed casualties. Embassy warned of continuing threat and ordered shelter-in-place. March 2: Fire and black smoke from inside US Embassy compound. CBS News reported 'apparent Iranian missile strike.' Embassy closed and issued emergency shelter-in-place. No immediate casualty reports but compound visibly damaged. March 2: Smoke confirmed near US Embassy compound. Embassy closed. US warned of 'continuing threat of missile and UAV attacks' and urged Americans to take cover. Mar 2: Large fire confirmed inside US Embassy compound from suspected Iranian drone. No injuries. Embassy had pre-emptively ordered staff to residences. All appointments canceled until further notice. On March 3, Iran struck the US Embassy compound in Kuwait directly. Kuwait state media condemned the attack. Embassy closed indefinitely; all visa and citizen services suspended. March 5: US State Department formally suspended all embassy operations. No US personnel injuries reported. Commercial flights remain grounded; Americans told to depart overland to Saudi Arabia or shelter in place.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -2747,6 +2763,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "Iran attacked the US Embassy compound in Kuwait. Smoke and fire rose from embassy area per AP/PBS. Kuwait News Agency condemned the 'brutal Iranian attack' on the embassy as 'a flagrant violation of all international norms.' Embassy closed indefinitely; non-emergency personnel ordered to depart."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "US State Department formally announced full suspension of operations at US Embassy Kuwait City, citing ongoing Iranian strike risk. Embassy had been hit multiple times by suspected Iranian drones. Americans urged to depart overland via Saudi Arabia or shelter in place."
                     }
             ],
             "sources": [
@@ -2817,6 +2837,18 @@ const LOCATIONS = [
                     {
                             "name": "NBC News",
                             "url": "https://www.nbcnews.com/world/iran/live-blog/iran-israel-us-attack-trump-live-updates-rcna261438"
+                    },
+                    {
+                            "name": "US State Department",
+                            "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/03/status-of-u-s-embassy-kuwait-city"
+                    },
+                    {
+                            "name": "CNN",
+                            "url": "https://edition.cnn.com/world/live-news/iran-war-us-israel-trump-03-05-26"
+                    },
+                    {
+                            "name": "Military.com / AP",
+                            "url": "https://www.military.com/daily-news/2026/03/05/state-department-announces-closure-of-us-embassy-kuwait-after-iranian-strikes.html"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -3462,7 +3494,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Oil Facility Strike",
-            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted. On March 4, a drone struck the already-shuttered Ras Tanura complex again per Reuters (4 sources). Saudi MOD confirmed the attack but said no damage resulted. The refinery (550,000 bpd capacity) has remained shut since the March 2 drone attack that caused a fire. On March 4, a projectile hit the refinery directly (Reuters), after the plant had already been shut down from an earlier debris-induced fire. March 4: Reuters sources report a projectile directly hit the refinery, which had already been shut down after earlier debris fire from intercepted drones. On March 4, a projectile directly hit the refinery per two Reuters sources. Operations had already been shut down as a precaution after an earlier debris-induced fire. Reuters sources report a new projectile hit the already-shuttered refinery later on March 4, beyond the earlier debris fire. On March 4, a projectile directly hit the refinery per two Reuters-cited sources, beyond the earlier debris fire that had already prompted a shutdown. On March 4, Reuters (via two sources) reported a projectile hit the refinery again, after the plant had already been shut down following the initial drone debris fire earlier in the week. March 4: Reuters reports projectile hit refinery; operations remain suspended since earlier precautionary shutdown. On March 4, a projectile reportedly struck the refinery again according to Reuters sources, compounding earlier damage from drone debris fire that forced shutdown. On March 5, Saudi forces intercepted another drone targeting Ras Tanura. The refinery remains shut down since earlier attacks this week. On March 5, Saudi air defenses thwarted another drone targeting Ras Tanura. Ministry of Energy confirmed no damage or supply disruption from the latest attempt. March 5: Latest drone attack on Ras Tanura thwarted by Saudi air defenses. No damage or supply disruption. Mar 5: Latest drone targeting Ras Tanura intercepted with no damage. Saudi MoE confirms no supply disruption.",
+            "detail": "An Iranian Shahed-136 drone struck Saudi Aramco's Ras Tanura refining facility on March 2 morning, sparking a fire that was described as small and contained. Aramco halted refinery operations as a precautionary measure. No casualties reported. Refinery shut down as precautionary measure Monday. Saudi MOD says two drones intercepted; debris caused small, contained fire. 550,000 bpd facility halted, impacting crude exports. Analysts call this a 'significant escalation' targeting Gulf energy infrastructure. March 2: Two drones intercepted targeting refinery; debris fire. Saudi Arabia shut down some operational units. Saudi state TV confirmed temporary refinery shutdown. March 2: Saudi energy ministry confirmed partial shutdown of refinery operations. Officials clarified the fire was caused by debris from an intercepted Iranian missile, not a direct drone strike as initially reported. Saudi state TV confirmed temporary shutdown of Ras Tanura refinery on March 2 after drone debris from interception caused a contained fire. Mar 2: Saudi state TV confirmed temporary shutdown of refinery following drone attack. MOD: 2 drones intercepted, debris caused small fire, no casualties. Saudi state TV confirmed Ras Tanura refinery (550,000 bpd capacity) temporarily shut down on March 2 after drone interception debris caused a fire. Saudi MOD confirmed 2 drones intercepted. On March 4, a drone struck the already-shuttered Ras Tanura complex again per Reuters (4 sources). Saudi MOD confirmed the attack but said no damage resulted. The refinery (550,000 bpd capacity) has remained shut since the March 2 drone attack that caused a fire. On March 4, a projectile hit the refinery directly (Reuters), after the plant had already been shut down from an earlier debris-induced fire. March 4: Reuters sources report a projectile directly hit the refinery, which had already been shut down after earlier debris fire from intercepted drones. On March 4, a projectile directly hit the refinery per two Reuters sources. Operations had already been shut down as a precaution after an earlier debris-induced fire. Reuters sources report a new projectile hit the already-shuttered refinery later on March 4, beyond the earlier debris fire. On March 4, a projectile directly hit the refinery per two Reuters-cited sources, beyond the earlier debris fire that had already prompted a shutdown. On March 4, Reuters (via two sources) reported a projectile hit the refinery again, after the plant had already been shut down following the initial drone debris fire earlier in the week. March 4: Reuters reports projectile hit refinery; operations remain suspended since earlier precautionary shutdown. On March 4, a projectile reportedly struck the refinery again according to Reuters sources, compounding earlier damage from drone debris fire that forced shutdown. On March 5, Saudi forces intercepted another drone targeting Ras Tanura. The refinery remains shut down since earlier attacks this week. On March 5, Saudi air defenses thwarted another drone targeting Ras Tanura. Ministry of Energy confirmed no damage or supply disruption from the latest attempt. March 5: Latest drone attack on Ras Tanura thwarted by Saudi air defenses. No damage or supply disruption. Mar 5: Latest drone targeting Ras Tanura intercepted with no damage. Saudi MoE confirms no supply disruption. March 5: Saudi MoD confirmed another drone attack attempt on Ras Tanura refinery was intercepted. Ministry of Energy stated no damage or disruption to supplies.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -3539,6 +3571,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-05",
                             "text": "Saudi MOD confirmed latest drone attack targeting Ras Tanura was thwarted. Ministry of Energy says no damage or disruption to supplies from latest attempt."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "New drone attack attempt on Ras Tanura refinery intercepted by Saudi air defenses. Saudi Ministry of Energy confirmed no damage or disruption to supplies."
                     }
             ],
             "sources": [
@@ -3601,6 +3637,10 @@ const LOCATIONS = [
                     {
                             "name": "Arab News",
                             "url": "https://www.arabnews.com/node/2635226/saudi-arabia"
+                    },
+                    {
+                            "name": "Saudi Gazette",
+                            "url": "https://saudigazette.com.sa/article/659460/saudi-arabia/saudi-air-defenses-intercept-3-cruise-missiles-3-drones-near-al-kharj"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -3741,6 +3781,38 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/5/drone-targets-us-base-in-iraq-as-iran-attacks-hit-region-amid-us-israel-war"
+                    }
+            ],
+            "dateAdded": "2026-03-05"
+    },
+    {
+            "name": "Al-Kharj Governorate (Cruise Missile & Drone Interceptions), Saudi Arabia",
+            "lat": 24.15,
+            "lng": 47.3,
+            "country": "Saudi Arabia",
+            "city": "Al-Kharj",
+            "severity": "watchlist",
+            "icon": "🎯",
+            "type": "Industrial Area — Cruise Missile & Drone Interceptions",
+            "detail": "Saudi air defenses intercepted and destroyed 3 cruise missiles and 3 drones outside Al-Kharj governorate, a major industrial center ~80km southeast of Riyadh. Saudi Defense Ministry spokesperson Maj. Gen. Turki Al-Maliki confirmed the interceptions in statements via SPA. No confirmed debris impacts or damage at this location.",
+            "incidents": [
+                    {
+                            "date": "2026-03-05",
+                            "text": "3 cruise missiles intercepted and destroyed outside Al-Kharj city; 3 drones intercepted and destroyed east of Al-Kharj governorate (Saudi MoD via SPA)"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Arab News",
+                            "url": "https://www.arabnews.com/node/2635226/saudi-arabia"
+                    },
+                    {
+                            "name": "Al Arabiya English",
+                            "url": "https://english.alarabiya.net/News/saudi-arabia/2026/03/05/saudi-arabia-intercepts-destroys-three-cruise-missiles-several-drones-"
+                    },
+                    {
+                            "name": "Saudi Gazette",
+                            "url": "https://saudigazette.com.sa/article/659460/saudi-arabia/saudi-air-defenses-intercept-3-cruise-missiles-3-drones-near-al-kharj"
                     }
             ],
             "dateAdded": "2026-03-05"
