@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-06T17:30:15.954Z",
+    "lastUpdated": "2026-03-06T18:35:32.912Z",
     "casualties": {
         "killed": 21,
         "injured": 232
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 7 of conflict: Iran continues missile and drone attacks across Gulf but at significantly reduced volume (US says 90% drop in ballistic missile attacks, 83% drop in drone attacks since Day 1). Gulf allies rapidly running low on interceptors per CBS News. Conflict has widened to Azerbaijan (Nakhchivan airport struck March 5) and continues in Kurdistan Region of Iraq. Iran threatened 'more intense and widespread' attacks. Trump demands 'unconditional surrender.' EU leaders expressed support for Gulf states.",
-    "totalBarrage": "As of March 5: UAE alone targeted by 941+ drones, 189 ballistic missiles, 8 cruise missiles (INSS data). Kuwait intercepted 97+ ballistic missiles and 283+ drones. Bahrain intercepted 75+ missiles and 123+ drones. Qatar targeted by 14+ ballistic missiles and 4+ drones on March 5. Iran launched 1,600+ drones total at Israel, Jordan, Gulf nations and Cyprus (INSS). IRGC claimed 230 drones in single wave at facilities in Erbil, Ali Al Salem, Camp Arifjan.",
-    "intercepted": "Gulf state air defense systems intercepting vast majority but leakers increasing concern. CBS News reports Gulf allies 'rapidly running out of interceptors.' France deployed Rafale jets to neutralize drones targeting UAE. UK Typhoon shot down drone directed at Qatar. NATO intercepted Iranian missile near Turkish airspace."
+    "summary": "Day 7 of conflict. US says Iran's ballistic missile attacks have fallen 90% and drone attacks 83% since day one. Iran continues lower-tempo strikes across Gulf. Bahrain Defence Force reports 78 missiles and 143 drones destroyed total. CENTCOM head: Iran has launched 500+ missiles and 2,000+ drones in first 4 days. Trump demands 'unconditional surrender' from Iran.",
+    "totalBarrage": "Iran total estimated: 500+ ballistic missiles, 2,000+ drones launched across region in first 4 days (per CENTCOM Adm. Cooper). UAE alone: 189 ballistic missiles, 941 drones, 3 cruise missiles through March 4 (per UAE MOD). Bahrain: 78 missiles, 143 drones intercepted (BDF March 6 update).",
+    "intercepted": "Bahrain: 78 missiles, 143 drones destroyed (BDF March 6). Saudi Arabia March 6: 3 ballistic missiles targeting PSAB, 3 drones east of Riyadh, 1 cruise missile + 1 drone in Al-Kharj, 1 drone in Eastern Province — all intercepted. Qatar March 6: drone targeting Al Udeid intercepted."
 };
 
 const LOCATIONS = [
@@ -1590,11 +1590,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "💥",
             "type": "Hotel — Confirmed Drone Strike",
-            "detail": "US Embassy in Bahrain confirmed the Crowne Plaza Hotel in Manama was struck on March 1, 2026, resulting in injuries. The hotel was hosting diplomats and US embassy personnel. Bahrain Interior Ministry confirmed material damage. US Embassy warned Americans to avoid all hotels in Manama.",
+            "detail": "US Embassy in Bahrain confirmed the Crowne Plaza Hotel in Manama was struck on March 1, 2026, resulting in injuries. The hotel was hosting diplomats and US embassy personnel. Bahrain Interior Ministry confirmed material damage. US Embassy warned Americans to avoid all hotels in Manama. Struck again on March 6 by IRGC missile and drone attack. Bahrain MOI confirmed material damage, no casualties. Bahrain Defence Force total interceptions now at 78 missiles and 143 drones destroyed since war began.",
             "incidents": [
                     {
                             "date": "2026-03-01",
                             "text": "Iranian drone struck Crowne Plaza Hotel. US Embassy confirmed strike resulting in injuries. Bahrain Interior Ministry confirmed material damage, no fatalities."
+                    },
+                    {
+                            "date": "2026-03-06",
+                            "text": "IRGC launched missile and drone attack against Crowne Plaza Manama in early hours of March 6. Bahrain MOI confirmed a hotel and two residential buildings in Manama struck; material damage sustained but no loss of life reported."
                     }
             ],
             "sources": [
@@ -1609,6 +1613,18 @@ const LOCATIONS = [
                     {
                             "name": "Stars and Stripes",
                             "url": "https://www.stripes.com/theaters/middle_east/2026-03-01/bases-damaged-iran-attacks-20916010.html"
+                    },
+                    {
+                            "name": "IranWire",
+                            "url": "https://iranwire.com/en/news/149968-irgc-strikes-hotel-and-residential-buildings-in-manama/"
+                    },
+                    {
+                            "name": "The National",
+                            "url": "https://www.thenationalnews.com/news/gulf/2026/03/06/iran-strikes-hotel-and-residential-buildings-in-manama-widening-gulf-retaliation-campaign/"
+                    },
+                    {
+                            "name": "Stars and Stripes",
+                            "url": "https://www.stripes.com/theaters/middle_east/2026-03-06/drone-strike-hotel-20969780.html"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -3758,7 +3774,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🛢️",
             "type": "Oil Infrastructure — Confirmed Iranian Targeting",
-            "detail": "Home to virtually all major Aramco facilities. A Saudi official stated: 'missiles targeting Aramco come from the north, not Yemen' — directly attributing to Iran. Saudi MOD said air defenses intercepted the projectiles. On March 4, Saudi defense ministry confirmed interception and destruction of a drone over the Eastern Province. Saudi defence ministry confirmed March 4 interception of a drone in the Eastern Province. On March 4, the Saudi defence ministry confirmed intercepting and destroying a drone in the Eastern Province.",
+            "detail": "Home to virtually all major Aramco facilities. A Saudi official stated: 'missiles targeting Aramco come from the north, not Yemen' — directly attributing to Iran. Saudi MOD said air defenses intercepted the projectiles. On March 4, Saudi defense ministry confirmed interception and destruction of a drone over the Eastern Province. Saudi defence ministry confirmed March 4 interception of a drone in the Eastern Province. On March 4, the Saudi defence ministry confirmed intercepting and destroying a drone in the Eastern Province. On March 6, Saudi defence ministry confirmed one drone intercepted and destroyed in the Eastern Province.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -3779,6 +3795,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "Saudi defence ministry confirmed it intercepted and destroyed a drone in the Eastern Province; no further details on damage or casualties provided (Al Jazeera)"
+                    },
+                    {
+                            "date": "2026-03-06",
+                            "text": "Saudi defence ministry announced one drone intercepted and destroyed in the Eastern Province on March 6."
                     }
             ],
             "sources": [
@@ -3797,6 +3817,14 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/4/hundreds-of-drones-target-kuwait-iraq-saudi-arabia-uae-amid-iran-war"
+                    },
+                    {
+                            "name": "Arab News",
+                            "url": "https://www.arabnews.com/node/2635432/saudi-arabia"
+                    },
+                    {
+                            "name": "Al Arabiya",
+                            "url": "https://english.alarabiya.net/News/saudi-arabia/2026/03/06/saudi-arabia-thwarts-multiple-iranian-drone-missile-attacks-in-riyadh-across-kingdom"
                     }
             ],
             "dateAdded": "2026-02-28"
