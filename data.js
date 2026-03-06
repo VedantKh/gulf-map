@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-06T05:42:33.792Z",
+    "lastUpdated": "2026-03-06T06:38:20.199Z",
     "casualties": {
         "killed": 21,
         "injured": 216
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 7 of Iran war (March 6): Iran continues Gulf-wide strikes. Bahrain reports new strikes on hotel and residential buildings in Manama. Qatar intercepts drone targeting Al Udeid. Video shows continued strikes near Ali Al Salem in Kuwait. Bahrain Defence Force cumulative total: 75 missiles and 123 drones intercepted. Iran's FM Araghchi rejects negotiations. CENTCOM strikes Iranian drone carrier. First US evacuation flights from Abu Dhabi arrived at Dulles. War risk insurance withdrawn for Persian Gulf effective March 5.",
-    "totalBarrage": "Cumulative estimated Iranian launches against Gulf states: 400+ ballistic missiles and nearly 1,000 drones (JINSA estimate as of March 5). UAE alone: 189 ballistic missiles, 941 drones, 3 cruise missiles by March 4 (Wikipedia citing UAE MoD). Bahrain: 75 missiles & 123 drones intercepted (BDF, March 5). Kuwait: 380+ drones & 180+ missiles intercepted (Kuwait MoD).",
-    "intercepted": "Cumulative interceptions: UAE 161 ballistic missiles + 755 drones; Bahrain 75 missiles + 123 drones; Kuwait 180+ missiles + 380+ drones; Qatar 101+ ballistic missiles + 39 drones + 3 cruise missiles. France deployed Rafale jets assisting UAE air defense."
+    "summary": "Day 7 of Iran war (March 6, 2026): Iran continues retaliatory strikes across the Gulf. Major developments include new strikes on hotel and residential buildings in Manama, Bahrain (no casualties). UAE resumed limited flights at Abu Dhabi airport. Qatar raised security to 'high'. Gulf allies reported running low on interceptors (CBS News). Erbil, Iraq confirmed as a major multi-day strike zone with 70+ attacks. Iran's Foreign Minister rejected negotiations. EU-GCC summit condemned 'unjustifiable Iranian attacks.'",
+    "totalBarrage": "Iran has launched 500+ missiles and 2,000+ drones during first 4 days (per CENTCOM Adm. Brad Cooper). By March 5-6: UAE alone faced 189+ ballistic missiles, 941+ drone attacks, 3+ cruise missiles (UAE MoD cumulative). Kuwait intercepted 212 ballistic missiles and 394 drones. Bahrain destroyed 75 missiles and 123 drones.",
+    "intercepted": "UAE: 6 of 7 ballistic missiles intercepted on March 5, 125 of 131 drones intercepted. Kuwait cumulative: 212 ballistic missiles, 394 drones intercepted. Bahrain cumulative: 75 missiles, 123 drones destroyed. Qatar: 13 of 14 ballistic missiles intercepted on March 5, all 4 drones intercepted."
 };
 
 const LOCATIONS = [
@@ -76,7 +76,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "International Airport (AUH) — Drone Strike",
-            "detail": "Abu Dhabi's primary airport. Directly targeted by Iranian drones during the Feb 28 barrage. 1 killed, 7 injured from debris of intercepted drone. UAE airspace remains CLOSED as of Mar 2. All Etihad flights cancelled. March 5: Six Pakistani and Nepali nationals injured in Iranian strike on Abu Dhabi (CNN/Abu Dhabi media office). UAE MoD reports 1 of 7 ballistic missiles detected on March 5 fell inside the country; 6 intercepted along with 125 drones. Mar 5: UAE MOD confirms 1 of 7 ballistic missiles fell inside UAE territory. 6 drones also penetrated defenses. Six Pakistani and Nepali nationals sustained minor-moderate injuries from debris at two Abu Dhabi locations. On March 5, UAE MoD reported detecting 7 ballistic missiles (6 intercepted, 1 fell inside UAE) and 131 drones (125 intercepted, 6 fell inside UAE). Cumulative totals since Feb 28: 196 ballistic missiles detected (181 destroyed, 13 fell to sea, 2 landed on territory), 1,072 drones detected (1,001 intercepted), 8 cruise missiles destroyed.",
+            "detail": "Abu Dhabi's primary airport. Directly targeted by Iranian drones during the Feb 28 barrage. 1 killed, 7 injured from debris of intercepted drone. UAE airspace remains CLOSED as of Mar 2. All Etihad flights cancelled. March 5: Six Pakistani and Nepali nationals injured in Iranian strike on Abu Dhabi (CNN/Abu Dhabi media office). UAE MoD reports 1 of 7 ballistic missiles detected on March 5 fell inside the country; 6 intercepted along with 125 drones. Mar 5: UAE MOD confirms 1 of 7 ballistic missiles fell inside UAE territory. 6 drones also penetrated defenses. Six Pakistani and Nepali nationals sustained minor-moderate injuries from debris at two Abu Dhabi locations. On March 5, UAE MoD reported detecting 7 ballistic missiles (6 intercepted, 1 fell inside UAE) and 131 drones (125 intercepted, 6 fell inside UAE). Cumulative totals since Feb 28: 196 ballistic missiles detected (181 destroyed, 13 fell to sea, 2 landed on territory), 1,072 drones detected (1,001 intercepted), 8 cruise missiles destroyed. Limited flight operations resumed March 6 in coordination with emergency authorities.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -93,6 +93,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-05",
                             "text": "UAE MoD confirmed one of seven ballistic missiles fell inside UAE territory on March 5; six drones also penetrated defenses. Limited flight operations resumed at Zayed International Airport in coordination with emergency management (Gulf News, CBS News, Emirates247)"
+                    },
+                    {
+                            "date": "2026-03-06",
+                            "text": "Limited flight operations resumed at Zayed International Airport in coordination with the Emergencies, Crises and Disasters Management Center."
                     }
             ],
             "sources": [
@@ -1138,7 +1142,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "💥",
             "type": "Interceptor Debris Zone",
-            "detail": "Six people were injured by falling debris from drones successfully intercepted by air defence systems over Abu Dhabi. The Abu Dhabi media office confirmed debris fell in two locations in the ICAD-2 industrial district. The affected individuals were Pakistani and Nepalese nationals who sustained minor to moderate injuries. On March 5, six additional Pakistani and Nepali nationals were injured by debris from an intercepted drone in Abu Dhabi. UAE MOD cumulative totals now show 189 ballistic missiles detected (175 destroyed, 13 into sea, 1 landed), 941 drones detected (876 intercepted, 65 fell within country), and 8 cruise missiles destroyed. Total UAE casualties now 3 killed, 78+ injured. March 5: 6 Pakistani and Nepali nationals injured by interceptor debris in ICAD-2 district. Khaleej Times reports 94 UAE residents have been injured since the start of Iranian attacks (up from 78 previously reported), with 6 new injuries on March 5 from interceptor debris in Abu Dhabi.",
+            "detail": "Six people were injured by falling debris from drones successfully intercepted by air defence systems over Abu Dhabi. The Abu Dhabi media office confirmed debris fell in two locations in the ICAD-2 industrial district. The affected individuals were Pakistani and Nepalese nationals who sustained minor to moderate injuries. On March 5, six additional Pakistani and Nepali nationals were injured by debris from an intercepted drone in Abu Dhabi. UAE MOD cumulative totals now show 189 ballistic missiles detected (175 destroyed, 13 into sea, 1 landed), 941 drones detected (876 intercepted, 65 fell within country), and 8 cruise missiles destroyed. Total UAE casualties now 3 killed, 78+ injured. March 5: 6 Pakistani and Nepali nationals injured by interceptor debris in ICAD-2 district. Khaleej Times reports 94 UAE residents have been injured since the start of Iranian attacks (up from 78 previously reported), with 6 new injuries on March 5 from interceptor debris in Abu Dhabi. Abu Dhabi Media Office confirmed debris fell at two locations on March 5; 6 Pakistani and Nepali nationals injured. UAE MoD: 7 ballistic missiles detected (6 intercepted, 1 landed), 131 drones detected (125 intercepted, 6 landed) on March 5.",
             "incidents": [
                     {
                             "date": "2026-03-05",
@@ -1151,6 +1155,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-05",
                             "text": "Six Pakistani and Nepali nationals sustained minor to moderate injuries from falling debris after successful drone interceptions over Abu Dhabi. Abu Dhabi media office confirmed debris fell in two locations in ICAD-2 district."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "Abu Dhabi Media Office confirmed debris falling in two locations following successful drone interceptions; 6 Pakistani and Nepali nationals sustained minor/moderate injuries. UAE MoD reported intercepting 6 of 7 ballistic missiles and 125 of 131 drones detected on March 5."
                     }
             ],
             "sources": [
@@ -1173,6 +1181,14 @@ const LOCATIONS = [
                     {
                             "name": "Khaleej Times",
                             "url": "https://www.khaleejtimes.com/world/mena/us-iran-tensions-israel-strikes-tehran-live-updates-day-6"
+                    },
+                    {
+                            "name": "NBC News",
+                            "url": "https://www.nbcnews.com/world/middle-east/live-blog/live-updates-iran-war-trump-israel-warship-attack-middle-east-rcna261866"
+                    },
+                    {
+                            "name": "CBS News",
+                            "url": "https://www.cbsnews.com/live-updates/iran-us-war-spreads-azerbaijan-israel-strikes-tehran-lebanon/"
                     }
             ],
             "dateAdded": "2026-03-05"
@@ -1190,7 +1206,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Naval Base — Missile & Drone Strike",
-            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted. March 2: Bahrain activated new air raid alerts, closed Shaikh Khalifa bridge. US Embassy closed, warned Americans to avoid Manama hotels. Bahrain repelled new wave of attacks on March 3. Total interceptions now 70 ballistic missiles and 76 drones (up from 45 missiles and 9 drones on Day 1). Sirens activated early Tuesday. On March 5, Bahrain Defence Force updated its interception tally to 75 missiles and 123 drones destroyed since the start of the conflict, up from 73 missiles and 91 drones reported on March 3. Bahrain Defence Force cumulative interception total updated to 75 missiles and 123 drones destroyed. Loud explosions continued on March 5, described by residents as the 'loudest so far during the war.' March 5: BDF reports total 75 missiles and 123 drones destroyed since start of conflict. New explosions heard. Mar 5: Bahrain Defence Force updates total interceptions to 75 missiles and 123 drones since conflict began. New explosions heard across the country. Bahrain Defence Force reports cumulative interception of 75 missiles and 123 drones since the start of Iranian aggression. UK temporarily withdrawing some Bahrain embassy staff citing serious security situation.",
+            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted. March 2: Bahrain activated new air raid alerts, closed Shaikh Khalifa bridge. US Embassy closed, warned Americans to avoid Manama hotels. Bahrain repelled new wave of attacks on March 3. Total interceptions now 70 ballistic missiles and 76 drones (up from 45 missiles and 9 drones on Day 1). Sirens activated early Tuesday. On March 5, Bahrain Defence Force updated its interception tally to 75 missiles and 123 drones destroyed since the start of the conflict, up from 73 missiles and 91 drones reported on March 3. Bahrain Defence Force cumulative interception total updated to 75 missiles and 123 drones destroyed. Loud explosions continued on March 5, described by residents as the 'loudest so far during the war.' March 5: BDF reports total 75 missiles and 123 drones destroyed since start of conflict. New explosions heard. Mar 5: Bahrain Defence Force updates total interceptions to 75 missiles and 123 drones since conflict began. New explosions heard across the country. Bahrain Defence Force reports cumulative interception of 75 missiles and 123 drones since the start of Iranian aggression. UK temporarily withdrawing some Bahrain embassy staff citing serious security situation. Bahrain Defence Force cumulative interception total: 75 missiles and 123 drones destroyed since start of conflict.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1255,6 +1271,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-05",
                             "text": "Bahrain Defence Force updated cumulative totals: 75 missiles and 123 drones destroyed since start of Iranian aggression. UK announced temporary withdrawal of some embassy staff from Bahrain (Al Jazeera, Gulf News)"
+                    },
+                    {
+                            "date": "2026-03-06",
+                            "text": "Bahrain Defence Force cumulative update: 75 missiles and 123 drones destroyed targeting the Kingdom since start of Iranian aggression. Stars and Stripes reports continued Iranian missiles raining down on Manama on March 5-6; unconfirmed reports of explosions in Riffa."
                     }
             ],
             "sources": [
@@ -1325,6 +1345,10 @@ const LOCATIONS = [
                     {
                             "name": "Gulf News",
                             "url": "https://gulfnews.com/world/americas/us-israel-iran-war-day-6-iran-israel-strikes-continue-uae-extends-limited-flights-1.500463753"
+                    },
+                    {
+                            "name": "Stars and Stripes",
+                            "url": "https://www.stripes.com/branches/navy/2026-03-05/missile-attack-iran-bahrain-sailors-navy-20961661.html"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -2482,7 +2506,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🏛️",
             "type": "Diplomatic Compound / Evacuation Zone",
-            "detail": "On March 5, Qatar's Ministry of Interior announced evacuation of residents living near the US Embassy in Doha as a precautionary measure. The US authorized non-emergency staff and families to depart several Middle Eastern countries. Iranian strikes this week have targeted US diplomatic compounds in the Gulf, including the US Consulate in Dubai and US Embassy in Riyadh. March 5: Qatar MoI ordered precautionary evacuation of residents near US Embassy compound as new Iranian missile barrage hit. Mar 5: Qatar interior ministry ordered evacuation of residents near the US Embassy following the largest single barrage yet from Iran.",
+            "detail": "On March 5, Qatar's Ministry of Interior announced evacuation of residents living near the US Embassy in Doha as a precautionary measure. The US authorized non-emergency staff and families to depart several Middle Eastern countries. Iranian strikes this week have targeted US diplomatic compounds in the Gulf, including the US Consulate in Dubai and US Embassy in Riyadh. March 5: Qatar MoI ordered precautionary evacuation of residents near US Embassy compound as new Iranian missile barrage hit. Mar 5: Qatar interior ministry ordered evacuation of residents near the US Embassy following the largest single barrage yet from Iran. Qatar Interior Ministry raised national security alert to 'high' on March 6, ordering all residents indoors.",
             "incidents": [
                     {
                             "date": "2026-03-05",
@@ -2495,6 +2519,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-05",
                             "text": "Qatar's interior ministry ordered evacuation of residents living near the US Embassy in Doha as a precautionary measure amid the largest Iranian missile barrage on Qatar to date."
+                    },
+                    {
+                            "date": "2026-03-06",
+                            "text": "Qatar Interior Ministry raised national security level to 'high'; ordered all residents to stay indoors, away from windows and open areas."
                     }
             ],
             "sources": [
@@ -2517,6 +2545,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/5/iran-war-what-is-happening-on-day-six-of-us-israel-attacks"
+                    },
+                    {
+                            "name": "NBC News",
+                            "url": "https://www.nbcnews.com/world/middle-east/live-blog/live-updates-iran-war-trump-israel-warship-attack-middle-east-rcna261866"
                     }
             ],
             "dateAdded": "2026-03-05"
@@ -2534,7 +2566,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Coalition Air Base — Major Missile Strike",
-            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation). March 2: CENTCOM confirmed 4th US service member died from injuries sustained in Iran's initial attacks on Kuwait. 'Major combat operations continue.' New wave of missiles and drones targeted Kuwait airspace early March 3. Kuwait total interceptions: 178 ballistic missiles and 384 drones. March 4: IRGC claims 230-drone barrage targeted Ali Al Salem among other US bases. Kuwait defenses continue interceptions. Volume of attacks reportedly decreasing but disruption continues. March 4: IRGC claimed 230-drone operation (17th wave) targeted Ali Al Salem and Camp Arifjan in Kuwait alongside bases in Erbil, Iraq. On March 4, the IRGC confirmed it had fired 230 drones at US facilities including Ali Al Salem, describing the attacks as its 'first powerful steps.' On March 4, IRGC claimed firing 230 drones at multiple US facilities including Ali Al Salem. Kuwait military confirmed intercepting an active new wave of missiles and drones in its airspace late on March 4. IRGC on March 4 specifically named Ali Al Salem as a target in its 230-drone launch. Kuwait military confirmed ongoing interceptions of a wave of missiles and drones. On March 4, the IRGC confirmed it fired 230 drones at several US facilities including Ali Al Salem, describing the attacks as among its 'first powerful steps' in the war. Late March 5 / early March 6: Kuwait faced continued barrage of Iranian attacks, with Kuwaiti army confirming air defenses intercepting projectiles in its airspace. Videos circulated showing a southern Kuwaiti air base in flames. On March 6, Al Jazeera verified video of a projectile exploding near the base. Continued waves of Iranian missiles and drones targeting the installation.",
+            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation). March 2: CENTCOM confirmed 4th US service member died from injuries sustained in Iran's initial attacks on Kuwait. 'Major combat operations continue.' New wave of missiles and drones targeted Kuwait airspace early March 3. Kuwait total interceptions: 178 ballistic missiles and 384 drones. March 4: IRGC claims 230-drone barrage targeted Ali Al Salem among other US bases. Kuwait defenses continue interceptions. Volume of attacks reportedly decreasing but disruption continues. March 4: IRGC claimed 230-drone operation (17th wave) targeted Ali Al Salem and Camp Arifjan in Kuwait alongside bases in Erbil, Iraq. On March 4, the IRGC confirmed it had fired 230 drones at US facilities including Ali Al Salem, describing the attacks as its 'first powerful steps.' On March 4, IRGC claimed firing 230 drones at multiple US facilities including Ali Al Salem. Kuwait military confirmed intercepting an active new wave of missiles and drones in its airspace late on March 4. IRGC on March 4 specifically named Ali Al Salem as a target in its 230-drone launch. Kuwait military confirmed ongoing interceptions of a wave of missiles and drones. On March 4, the IRGC confirmed it fired 230 drones at several US facilities including Ali Al Salem, describing the attacks as among its 'first powerful steps' in the war. Late March 5 / early March 6: Kuwait faced continued barrage of Iranian attacks, with Kuwaiti army confirming air defenses intercepting projectiles in its airspace. Videos circulated showing a southern Kuwaiti air base in flames. On March 6, Al Jazeera verified video of a projectile exploding near the base. Continued waves of Iranian missiles and drones targeting the installation. Kuwait MoD reported cumulative interceptions of 212 ballistic missiles and 394 drones as of March 6.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -2611,6 +2643,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-06",
                             "text": "Al Jazeera published verified video showing a projectile exploding near Ali Al Salem Air Base. Continued Iranian targeting of the base, with reports of a southern Kuwaiti air base in flames circulating online."
+                    },
+                    {
+                            "date": "2026-03-06",
+                            "text": "Kuwait MoD cumulative update: 212 ballistic missiles and 394 drones detected and intercepted since start of operations targeting Kuwaiti airspace."
                     }
             ],
             "sources": [
@@ -2685,6 +2721,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/video/newsfeed/2026/3/6/video-shows-projectile-exploding-near-ali-al-salem-air-base-in-kuwait"
+                    },
+                    {
+                            "name": "Gulf News",
+                            "url": "https://gulfnews.com/world/americas/us-israel-iran-war-day-6-iran-israel-strikes-continue-uae-extends-limited-flights-1.500463753"
                     }
             ],
             "dateAdded": "2026-02-28"
