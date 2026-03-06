@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-05T22:25:33.197Z",
+    "lastUpdated": "2026-03-06T01:18:55.974Z",
     "casualties": {
         "killed": 21,
         "injured": 216
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 6 of conflict (March 5): Iran fired its largest barrage at Qatar to date (14 ballistic missiles, 4 drones). UAE detected 7 ballistic missiles and 131 drones on March 5 alone. Iran's Fars News Agency reports 500+ ballistic/naval missiles and ~2,000 drones launched since Feb 28. IRGC declared Strait of Hormuz a restricted military zone. CENTCOM says Iran's ability to impact US forces is 'rapidly declining'. Multiple European nations (UK, France, Italy) deploying air defense assets to Gulf states.",
-    "totalBarrage": "Iran total launches since Feb 28: 500+ ballistic/naval missiles, ~2,000 drones (per Fars News Agency / CENTCOM Adm. Brad Cooper). Against UAE alone: 196 ballistic missiles, 1,072 drones, 8 cruise missiles detected (UAE MoD March 5). Against Bahrain: 75 missiles, 123 drones destroyed (Bahrain Defence Force). Against Qatar March 5: 14 ballistic missiles, 4 drones (Qatar Defence Ministry).",
-    "intercepted": "UAE cumulative: 181 of 196 ballistic missiles destroyed, 1,001 of 1,072 drones intercepted, all 8 cruise missiles destroyed (UAE MoD). Bahrain cumulative: 75 missiles, 123 drones destroyed (BDF). Qatar March 5: 13 of 14 missiles intercepted, all 4 drones intercepted. Kuwait cumulative: 97 ballistic missiles, 283 drones intercepted (Kuwait MoD earlier figure)."
+    "summary": "Day 7 of conflict (March 6). IRGC commander warns coming days will bring 'more intense and widespread' attacks (Fars News via CBS). US Defense Secretary Hegseth says campaign has 'only just begun.' Iran's volume of missile launches dropped 86% and drone strikes 73% from Day 1 (per Gen. Caine), but IRGC claims 19th wave of Operation True Promise IV launched. Bahrain Defence Force cumulative: 75 missiles and 123 drones destroyed. INSS estimates Iran has launched 941 drones, 189 ballistic missiles and 8 cruise missiles at UAE alone since the war began.",
+    "totalBarrage": "Iran has launched 500+ ballistic missiles and 2,000+ drones total across the region (per Adm. Brad Cooper, CENTCOM, March 5). INSS (Israel) estimates 1,600+ drones launched at Israel, Jordan, Gulf nations and Cyprus combined.",
+    "intercepted": "UAE cumulative as of March 5: 193 ballistic missiles tracked (178 intercepted), 8 cruise missiles (all intercepted), 941+ drones (majority intercepted, 44+ caused impact). Kuwait: 97 ballistic missiles and 283 drones intercepted. Bahrain: 75 missiles and 123 drones destroyed. Qatar: 65+ ballistic missiles and 12+ drones detected."
 };
 
 const LOCATIONS = [
@@ -2498,7 +2498,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Coalition Air Base — Major Missile Strike",
-            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation). March 2: CENTCOM confirmed 4th US service member died from injuries sustained in Iran's initial attacks on Kuwait. 'Major combat operations continue.' New wave of missiles and drones targeted Kuwait airspace early March 3. Kuwait total interceptions: 178 ballistic missiles and 384 drones. March 4: IRGC claims 230-drone barrage targeted Ali Al Salem among other US bases. Kuwait defenses continue interceptions. Volume of attacks reportedly decreasing but disruption continues. March 4: IRGC claimed 230-drone operation (17th wave) targeted Ali Al Salem and Camp Arifjan in Kuwait alongside bases in Erbil, Iraq. On March 4, the IRGC confirmed it had fired 230 drones at US facilities including Ali Al Salem, describing the attacks as its 'first powerful steps.' On March 4, IRGC claimed firing 230 drones at multiple US facilities including Ali Al Salem. Kuwait military confirmed intercepting an active new wave of missiles and drones in its airspace late on March 4. IRGC on March 4 specifically named Ali Al Salem as a target in its 230-drone launch. Kuwait military confirmed ongoing interceptions of a wave of missiles and drones.",
+            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation). March 2: CENTCOM confirmed 4th US service member died from injuries sustained in Iran's initial attacks on Kuwait. 'Major combat operations continue.' New wave of missiles and drones targeted Kuwait airspace early March 3. Kuwait total interceptions: 178 ballistic missiles and 384 drones. March 4: IRGC claims 230-drone barrage targeted Ali Al Salem among other US bases. Kuwait defenses continue interceptions. Volume of attacks reportedly decreasing but disruption continues. March 4: IRGC claimed 230-drone operation (17th wave) targeted Ali Al Salem and Camp Arifjan in Kuwait alongside bases in Erbil, Iraq. On March 4, the IRGC confirmed it had fired 230 drones at US facilities including Ali Al Salem, describing the attacks as its 'first powerful steps.' On March 4, IRGC claimed firing 230 drones at multiple US facilities including Ali Al Salem. Kuwait military confirmed intercepting an active new wave of missiles and drones in its airspace late on March 4. IRGC on March 4 specifically named Ali Al Salem as a target in its 230-drone launch. Kuwait military confirmed ongoing interceptions of a wave of missiles and drones. On March 4, the IRGC confirmed it fired 230 drones at several US facilities including Ali Al Salem, describing the attacks as among its 'first powerful steps' in the war.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -2563,6 +2563,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC confirmed Ali Al Salem was among targets of 230-drone wave; attacks continuing with declining frequency."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "IRGC confirmed it fired 230 drones at US facilities including Ali Al Salem Air Base on March 4 (Al Jazeera, March 5 report)."
                     }
             ],
             "sources": [
@@ -2625,6 +2629,10 @@ const LOCATIONS = [
                     {
                             "name": "CNBC",
                             "url": "https://www.cnbc.com/2026/03/04/us-iran-war-live-updates.html"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/5/drone-targets-us-base-in-iraq-as-iran-attacks-hit-region-amid-us-israel-war"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -3130,7 +3138,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Military Base Strike",
-            "detail": "Camp Arifjan, a major US Army base in southern Kuwait housing logistics and sustainment troops, was targeted by Iranian drones. Anadolu Agency reported US officials confirmed a strike with casualties. IRGC claimed 12 drone strikes on the base as part of Operation True Promise 4 Wave 12. A halt-to-movement order was issued for Camp Arifjan along with other Kuwait bases. March 4: IRGC claims Camp Arifjan targeted in 230-drone barrage aimed at US facilities across the region. IRGC confirmed Camp Arifjan was among the targets of its 230-drone barrage fired on Wednesday March 4. IRGC claimed Camp Arifjan as a target in a 230-drone barrage on March 4. Kuwait military confirmed ongoing intercept operations. IRGC on March 4 specifically named Camp Arifjan as a target, calling the attacks among its 'first powerful steps' in the war.",
+            "detail": "Camp Arifjan, a major US Army base in southern Kuwait housing logistics and sustainment troops, was targeted by Iranian drones. Anadolu Agency reported US officials confirmed a strike with casualties. IRGC claimed 12 drone strikes on the base as part of Operation True Promise 4 Wave 12. A halt-to-movement order was issued for Camp Arifjan along with other Kuwait bases. March 4: IRGC claims Camp Arifjan targeted in 230-drone barrage aimed at US facilities across the region. IRGC confirmed Camp Arifjan was among the targets of its 230-drone barrage fired on Wednesday March 4. IRGC claimed Camp Arifjan as a target in a 230-drone barrage on March 4. Kuwait military confirmed ongoing intercept operations. IRGC on March 4 specifically named Camp Arifjan as a target, calling the attacks among its 'first powerful steps' in the war. IRGC claimed Camp Arifjan was among US facilities targeted in its 230-drone barrage on March 4.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -3171,6 +3179,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "IRGC confirmed Camp Arifjan among targets of 230-drone barrage described as 'first powerful steps' in war."
+                    },
+                    {
+                            "date": "2026-03-05",
+                            "text": "IRGC confirmed Camp Arifjan was among facilities targeted in a 230-drone barrage on March 4 (Al Jazeera, March 5 report)."
                     }
             ],
             "sources": [
@@ -3193,6 +3205,10 @@ const LOCATIONS = [
                     {
                             "name": "CNBC",
                             "url": "https://www.cnbc.com/2026/03/04/us-iran-war-live-updates.html"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/5/drone-targets-us-base-in-iraq-as-iran-attacks-hit-region-amid-us-israel-war"
                     }
             ],
             "dateAdded": "2026-03-03"
