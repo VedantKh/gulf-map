@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-07T20:18:41.228Z",
+    "lastUpdated": "2026-03-07T21:18:02.392Z",
     "casualties": {
         "killed": 22,
         "injured": 296
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 8 (March 7): Iran President Pezeshkian announced halt to strikes on neighboring states, apologizing for attacks and citing 'miscommunication in the ranks.' However, analysts note IRGC — not the president — controls military decisions. Despite announcement, UAE intercepted 121 drones and 16 ballistic missiles Saturday; Qatar intercepted missile attack; Saudi Arabia intercepted drones at Shaybah and missiles at PSAB. One driver killed by interceptor debris in Al Barsha, Dubai. UAE toll now 4 killed, 112 injured.",
-    "totalBarrage": "UAE cumulative since Feb 28: 221 ballistic missiles detected (205 destroyed, 14 into sea, 2 landed in UAE); 1,305 drones detected (1,229 intercepted, 76 fell in UAE); 8 cruise missiles (all destroyed). Iran claims 500+ ballistic/naval missiles and ~2,000 drones fired since Feb 28 (Fars News, Mar 5).",
-    "intercepted": "UAE: 205 of 221 ballistic missiles, 1,229 of 1,305 drones, 8 of 8 cruise missiles. Bahrain: 78 missiles, 143 drones. Saudi Arabia: ongoing interceptions at PSAB, Shaybah, Riyadh. Qatar: multiple missile attacks intercepted Mar 7. Jordan: 108 of 119 projectiles intercepted (cumulative)."
+    "summary": "Week 2 begins: Iran President Pezeshkian apologized to Gulf neighbors and announced halt to strikes on neighboring states unless attacks originate from their territory. However, IRGC strikes continued across the Gulf within hours of the announcement. UAE MOD reported 16 ballistic missiles and 121 drones detected on March 7 alone. Saudi Arabia intercepted 16+ drones targeting Shaybah and multiple missiles at PSAB. Bahrain intercepted total of 86 rockets and 148 drones since conflict began. Qatar intercepted missile attack on March 7.",
+    "totalBarrage": "UAE cumulative: 221 ballistic missiles detected (205 destroyed, 14 into sea, 2 landed in UAE), 1,305 drones detected (1,229 intercepted, 76 fell in UAE). Bahrain cumulative: 86 rockets, 148 drones intercepted. Iran total estimated: 500+ ballistic/naval missiles and ~2,000 drones fired since Feb 28 (Fars News, March 5).",
+    "intercepted": "UAE: 205 of 221 BMs destroyed (93%), 1,229 of 1,305 drones intercepted (94%). Saudi Arabia: all incoming drones and most missiles intercepted on March 7; one ballistic missile fell in uninhabited area near PSAB. Bahrain: 86 rockets, 148 drones intercepted."
 };
 
 const LOCATIONS = [
@@ -184,7 +184,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "World's Busiest Intl Airport — Hit Twice",
-            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports. March 2: Third day of explosions heard across Dubai. UAE airspace remains closed. Etihad flights suspended until March 3. Dubai Airports announced limited flight resumption from DXB and DWC starting evening of March 2, three days after initial shutdown. Mar 2: Dubai Airports announced limited resumption of flights from DXB and DWC starting Monday evening after 3 days shutdown. Thousands of passengers remain stranded. March 2 evening: Dubai Airports announced limited flight resumption at DXB and DWC after 3 days of closure. Thousands of passengers remain stranded. March 7: Drone impact/debris incident near Concourse A. GDMO confirmed debris from interception. Emirates flights suspended again. Incident occurred shortly after Iran's President Pezeshkian apologized to neighboring countries and announced intent to stop attacks on Gulf states. On March 7, debris from an interception fell in Dubai (no injuries). Authorities denied airport incidents but flights briefly aborted landings. Emirates partially resumed operations from DXB and DWC. On Saturday March 7, DXB temporarily suspended, then partially resumed operations. GDMO confirmed debris from interception caused a minor incident. Emirates airline resumed flights Saturday afternoon. UAE MOD: 121 drones detected Saturday, 119 intercepted, 2 fell within UAE. March 7: Drone debris near Concourse A triggered shelter-in-place and brief suspension. No injuries. Operations partially resumed. March 7: Drone exploded next to Concourse A shortly after Iran's president apologized to neighbors. BBC-verified video shows explosion near terminal. Emirates suspended then resumed operations within 30 minutes. Mar 7 morning: Drone detonated adjacent to Concourse A. DXB suspended operations, diverted flights. Emirates resumed afternoon service. On March 7, a drone exploded next to Concourse A on the runway, narrowly missing the terminal and a parked aircraft. A fire was reported at Terminal 3. Flight operations were suspended and the airport evacuated. BBC verified video of the strike. No injuries reported. UAE MoD said 16 ballistic missiles were fired at the UAE on Saturday — all but one intercepted (one fell to sea). 121 drones were detected, 119 intercepted, 2 fell within UAE. March 7: DXB suspended operations Saturday morning after drone detonated near Concourse A. Emirates resumed limited flights in the afternoon. Dubai Media Office denied social media reports of direct airport strike, confirmed debris incident in the city.",
+            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports. March 2: Third day of explosions heard across Dubai. UAE airspace remains closed. Etihad flights suspended until March 3. Dubai Airports announced limited flight resumption from DXB and DWC starting evening of March 2, three days after initial shutdown. Mar 2: Dubai Airports announced limited resumption of flights from DXB and DWC starting Monday evening after 3 days shutdown. Thousands of passengers remain stranded. March 2 evening: Dubai Airports announced limited flight resumption at DXB and DWC after 3 days of closure. Thousands of passengers remain stranded. March 7: Drone impact/debris incident near Concourse A. GDMO confirmed debris from interception. Emirates flights suspended again. Incident occurred shortly after Iran's President Pezeshkian apologized to neighboring countries and announced intent to stop attacks on Gulf states. On March 7, debris from an interception fell in Dubai (no injuries). Authorities denied airport incidents but flights briefly aborted landings. Emirates partially resumed operations from DXB and DWC. On Saturday March 7, DXB temporarily suspended, then partially resumed operations. GDMO confirmed debris from interception caused a minor incident. Emirates airline resumed flights Saturday afternoon. UAE MOD: 121 drones detected Saturday, 119 intercepted, 2 fell within UAE. March 7: Drone debris near Concourse A triggered shelter-in-place and brief suspension. No injuries. Operations partially resumed. March 7: Drone exploded next to Concourse A shortly after Iran's president apologized to neighbors. BBC-verified video shows explosion near terminal. Emirates suspended then resumed operations within 30 minutes. Mar 7 morning: Drone detonated adjacent to Concourse A. DXB suspended operations, diverted flights. Emirates resumed afternoon service. On March 7, a drone exploded next to Concourse A on the runway, narrowly missing the terminal and a parked aircraft. A fire was reported at Terminal 3. Flight operations were suspended and the airport evacuated. BBC verified video of the strike. No injuries reported. UAE MoD said 16 ballistic missiles were fired at the UAE on Saturday — all but one intercepted (one fell to sea). 121 drones were detected, 119 intercepted, 2 fell within UAE. March 7: DXB suspended operations Saturday morning after drone detonated near Concourse A. Emirates resumed limited flights in the afternoon. Dubai Media Office denied social media reports of direct airport strike, confirmed debris incident in the city. March 7: Drone exploded near Concourse A, forcing another suspension of operations. Airport partially resumed flights later in the day. Emirates suspended all flights until further notice before lifting it shortly afterward.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -245,6 +245,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "DXB briefly suspended operations Saturday morning after air raid alerts at ~6:30am local. A drone reportedly exploded near Concourse A. Dubai Media Office described a 'minor incident resulting from the fall of debris after an interception.' Emirates and flydubai resumed limited operations later Saturday."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Iranian drone exploded near Concourse A at DXB, narrowly missing the terminal and a parked aircraft. Operations temporarily suspended again. AFP witnesses reported loud explosion and smoke near a concourse. Flights partially resumed later."
                     }
             ],
             "sources": [
@@ -339,6 +343,14 @@ const LOCATIONS = [
                     {
                             "name": "Euronews",
                             "url": "https://www.euronews.com/2026/03/07/iranian-drone-attack-suspends-flights-at-dubai-international-airport"
+                    },
+                    {
+                            "name": "Times of Israel / AFP",
+                            "url": "https://www.timesofisrael.com/israel-said-to-pause-uae-repatriation-efforts-as-dubai-airport-hit-by-drone-attack/"
+                    },
+                    {
+                            "name": "KNEWS Media",
+                            "url": "https://knews.media/2026/03/07/video-famous-skyscraper-in-dubai-hit-by-the-fragments-of-an-intercepted-projectile/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -4118,7 +4130,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US/Saudi Air Base — Missile & Drone Strike",
-            "detail": "Major US military air base ~60 km south of Riyadh. Hosts US THAAD, Patriot, KC-135 tankers, E-3G AWACS. IRGC claimed they 'precisely hit' the base. Saudi Arabia said air defenses intercepted missiles near the base. Reports confirm impacts on base infrastructure. On March 3, Saudi Defense Ministry reported intercepting 8 drones near Riyadh and Al-Kharj, in the vicinity of PSAB. On March 3, 8 drones intercepted and destroyed near Riyadh and Al-Kharj per Saudi MoD spokesman Maj-Gen Turki Al-Maliki. No damage or casualties reported from interceptions. On March 3, Saudi defense ministry confirmed 8 drones intercepted near Riyadh and Al-Kharj (near PSAB). CNN noted Prince Sultan Air Base is located close to Al-Kharj. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial area near PSAB, according to MoD spokesperson Turki Al-Maliki via SPA. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial/military area where PSAB is located. Saudi MOD spokesperson Maj. Gen. Turki Al-Maliki confirmed all threats were neutralized. March 5: 3 cruise missiles and 3 drones intercepted near Al-Kharj. March 4: 9 drones and 2 additional cruise missiles neutralized near Riyadh/Al-Kharj. On Mar 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones near Al-Kharj, defending PSAB and surrounding infrastructure. On March 6, three ballistic missiles targeting the base were intercepted before landing as part of a wider Iranian campaign against Gulf states. Three ballistic missiles targeting PSAB intercepted on March 6 as Iran widened its campaign. On March 6, Saudi MOD announced interception of 3 ballistic missiles targeting PSAB plus additional drone and cruise missile interceptions east of Al-Kharj. This is the continued targeting of the key US military installation. CNN satellite imagery from March 1 shows smoke rising from compound near PSAB where THAAD radar was previously stationed. Saudi MOD confirmed intercepting cruise missile and three drones on March 6. On March 7, Saudi air defenses intercepted a ballistic missile and a cruise missile targeting PSAB. On March 7, Saudi MOD confirmed intercepting a ballistic missile targeting PSAB. On March 7, Saudi air defenses intercepted a ballistic missile and a cruise missile targeting PSAB. Third consecutive day of strikes on Al-Kharj area. March 7: Ballistic missile and cruise missile targeting PSAB intercepted and destroyed. Ninth consecutive day of attacks on this base. On March 7, Saudi defenses intercepted an additional ballistic missile and cruise missile targeting the base, bringing total missiles intercepted at PSAB to at least 6 this week. On March 7, another ballistic missile was intercepted toward PSAB. Saudi MOD reports five missiles were intercepted toward PSAB on March 6 alone. Saturday March 7: Saudi MOD intercepted two ballistic missiles aimed at Prince Sultan Air Base. March 7: Two ballistic missiles and one cruise missile intercepted heading toward PSAB area. Saudi defence minister urges Iran to 'avoid miscalculation.' Mar 7: Saudi MOD confirmed intercepting 2 ballistic missiles targeting PSAB. Saudi MoD confirmed interception of two ballistic missiles aimed at PSAB on March 7. March 7: Saudi MOD intercepted 2 ballistic missiles plus 1 additional ballistic and 1 cruise missile targeting PSAB.",
+            "detail": "Major US military air base ~60 km south of Riyadh. Hosts US THAAD, Patriot, KC-135 tankers, E-3G AWACS. IRGC claimed they 'precisely hit' the base. Saudi Arabia said air defenses intercepted missiles near the base. Reports confirm impacts on base infrastructure. On March 3, Saudi Defense Ministry reported intercepting 8 drones near Riyadh and Al-Kharj, in the vicinity of PSAB. On March 3, 8 drones intercepted and destroyed near Riyadh and Al-Kharj per Saudi MoD spokesman Maj-Gen Turki Al-Maliki. No damage or casualties reported from interceptions. On March 3, Saudi defense ministry confirmed 8 drones intercepted near Riyadh and Al-Kharj (near PSAB). CNN noted Prince Sultan Air Base is located close to Al-Kharj. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial area near PSAB, according to MoD spokesperson Turki Al-Maliki via SPA. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial/military area where PSAB is located. Saudi MOD spokesperson Maj. Gen. Turki Al-Maliki confirmed all threats were neutralized. March 5: 3 cruise missiles and 3 drones intercepted near Al-Kharj. March 4: 9 drones and 2 additional cruise missiles neutralized near Riyadh/Al-Kharj. On Mar 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones near Al-Kharj, defending PSAB and surrounding infrastructure. On March 6, three ballistic missiles targeting the base were intercepted before landing as part of a wider Iranian campaign against Gulf states. Three ballistic missiles targeting PSAB intercepted on March 6 as Iran widened its campaign. On March 6, Saudi MOD announced interception of 3 ballistic missiles targeting PSAB plus additional drone and cruise missile interceptions east of Al-Kharj. This is the continued targeting of the key US military installation. CNN satellite imagery from March 1 shows smoke rising from compound near PSAB where THAAD radar was previously stationed. Saudi MOD confirmed intercepting cruise missile and three drones on March 6. On March 7, Saudi air defenses intercepted a ballistic missile and a cruise missile targeting PSAB. On March 7, Saudi MOD confirmed intercepting a ballistic missile targeting PSAB. On March 7, Saudi air defenses intercepted a ballistic missile and a cruise missile targeting PSAB. Third consecutive day of strikes on Al-Kharj area. March 7: Ballistic missile and cruise missile targeting PSAB intercepted and destroyed. Ninth consecutive day of attacks on this base. On March 7, Saudi defenses intercepted an additional ballistic missile and cruise missile targeting the base, bringing total missiles intercepted at PSAB to at least 6 this week. On March 7, another ballistic missile was intercepted toward PSAB. Saudi MOD reports five missiles were intercepted toward PSAB on March 6 alone. Saturday March 7: Saudi MOD intercepted two ballistic missiles aimed at Prince Sultan Air Base. March 7: Two ballistic missiles and one cruise missile intercepted heading toward PSAB area. Saudi defence minister urges Iran to 'avoid miscalculation.' Mar 7: Saudi MOD confirmed intercepting 2 ballistic missiles targeting PSAB. Saudi MoD confirmed interception of two ballistic missiles aimed at PSAB on March 7. March 7: Saudi MOD intercepted 2 ballistic missiles plus 1 additional ballistic and 1 cruise missile targeting PSAB. March 7: One ballistic missile fell in uninhabited area after targeting PSAB; two additional BMs and one cruise missile intercepted. Saudi Defence Minister met Pakistan army chief to discuss measures to halt Iranian attacks.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -4195,6 +4207,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Saudi Arabia's Ministry of Defense intercepted and destroyed two ballistic missiles launched towards Prince Sultan Air Base in al-Kharj. A cruise missile was also intercepted east of al-Kharj governorate. Saudi Defence Minister Prince Khalid bin Salman urged Iran to 'avoid miscalculation.'"
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Ballistic missile aimed at PSAB fell in uninhabited area nearby (not intercepted). Two additional ballistic missiles and one cruise missile targeting PSAB were successfully intercepted earlier. Attacks continued despite Iran president's announced halt to Gulf strikes."
                     }
             ],
             "sources": [
@@ -4301,6 +4317,14 @@ const LOCATIONS = [
                     {
                             "name": "ANI (citing Arab News/Saudi MOD)",
                             "url": "https://aninews.in/news/world/middle-east/dubai-authorities-confirm-minor-incident-successfully-contained-after-debris-falls-from-interception20260307110607/"
+                    },
+                    {
+                            "name": "Asharq Al-Awsat",
+                            "url": "https://english.aawsat.com/gulf/5248432-saudi-arabia-ballistic-missile-targeting-prince-sultan-base-falls-uninhabited-area"
+                    },
+                    {
+                            "name": "Saudi MOD via SPA (2 BM intercepts)",
+                            "url": "https://www.globalsecurity.org/wmd/library/news/saudi/2026/saudi-260307-spa01.htm"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -4827,10 +4851,10 @@ const LOCATIONS = [
             "lng": 47.3,
             "country": "Saudi Arabia",
             "city": "Al-Kharj",
-            "severity": "high",
+            "severity": "critical",
             "icon": "🎯",
             "type": "Industrial Area — Cruise Missile & Drone Interceptions",
-            "detail": "Saudi air defenses intercepted and destroyed 3 cruise missiles and 3 drones outside Al-Kharj governorate, a major industrial center ~80km southeast of Riyadh. Saudi Defense Ministry spokesperson Maj. Gen. Turki Al-Maliki confirmed the interceptions in statements via SPA. No confirmed debris impacts or damage at this location. Additional drone interceptions reported March 6 in Al-Kharj area. On March 6, continued interceptions of cruise missiles and drones in Al-Kharj area. Saudi air defenses reported destroying 4 drones over Riyadh region and a cruise missile east of Al-Kharj. On March 6, Saudi Defense Ministry confirmed intercepting three ballistic missiles targeting a base south of Riyadh and three drones east of Riyadh, confirming continued Iranian targeting of this area. March 6: Saudi MOD confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh region. On March 6, Saudi MOD confirmed intercepting a cruise missile east of al-Kharj and three ballistic missiles targeting a base south of Riyadh overnight, plus three drones east of the Riyadh region. Saudi MOD on Friday confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh. Saudi MoD confirmed intercepting a cruise missile east of al-Kharj on March 6. Saudi MOD confirmed cruise missile and three ballistic missiles intercepted near al-Kharj on March 6. On March 7, third straight day of strike attempts on Al-Kharj. Saudi MOD confirmed intercepts of missiles and a drone east of Riyadh.",
+            "detail": "Saudi air defenses intercepted and destroyed 3 cruise missiles and 3 drones outside Al-Kharj governorate, a major industrial center ~80km southeast of Riyadh. Saudi Defense Ministry spokesperson Maj. Gen. Turki Al-Maliki confirmed the interceptions in statements via SPA. No confirmed debris impacts or damage at this location. Additional drone interceptions reported March 6 in Al-Kharj area. On March 6, continued interceptions of cruise missiles and drones in Al-Kharj area. Saudi air defenses reported destroying 4 drones over Riyadh region and a cruise missile east of Al-Kharj. On March 6, Saudi Defense Ministry confirmed intercepting three ballistic missiles targeting a base south of Riyadh and three drones east of Riyadh, confirming continued Iranian targeting of this area. March 6: Saudi MOD confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh region. On March 6, Saudi MOD confirmed intercepting a cruise missile east of al-Kharj and three ballistic missiles targeting a base south of Riyadh overnight, plus three drones east of the Riyadh region. Saudi MOD on Friday confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh. Saudi MoD confirmed intercepting a cruise missile east of al-Kharj on March 6. Saudi MOD confirmed cruise missile and three ballistic missiles intercepted near al-Kharj on March 6. On March 7, third straight day of strike attempts on Al-Kharj. Saudi MOD confirmed intercepts of missiles and a drone east of Riyadh. On March 7 evening, Saudi MOD spokesperson confirmed a ballistic missile launched toward PSAB fell in an uninhabited area within the governorate — the first confirmed ground impact near the base. Earlier, two ballistic missiles and a cruise missile targeting PSAB were intercepted and destroyed.",
             "incidents": [
                     {
                             "date": "2026-03-05",
@@ -4937,6 +4961,18 @@ const LOCATIONS = [
                     {
                             "name": "Arab News",
                             "url": "https://www.arabnews.com/node/2635432/saudi-arabia"
+                    },
+                    {
+                            "name": "Asharq Al-Awsat",
+                            "url": "https://english.aawsat.com/gulf/5248432-saudi-arabia-ballistic-missile-targeting-prince-sultan-base-falls-uninhabited-area"
+                    },
+                    {
+                            "name": "Al Arabiya",
+                            "url": "https://english.alarabiya.net/News/saudi-arabia/2026/03/07/missile-targeting-saudi-base-falls-in-uninhabited-area-defense-ministry-says"
+                    },
+                    {
+                            "name": "Saudi MOD via SPA / GlobalSecurity",
+                            "url": "https://www.globalsecurity.org/wmd/library/news/saudi/2026/saudi-260307-spa06.htm"
                     }
             ],
             "dateAdded": "2026-03-05"
@@ -4950,7 +4986,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🛢️",
             "type": "Oil field — drone interception",
-            "detail": "Saudi air defenses intercepted and destroyed 16 drones in four waves targeting the strategic Shaybah oil field early Saturday March 7. This is the first attempted attack on Shaybah since the war began Feb 28. All drones were neutralized over the Empty Quarter with no confirmed damage to the facility. On March 7, Saudi MOD confirmed intercepting and destroying 16 drones heading toward Shaybah, the largest single wave targeting the oil field. On March 7, 16 drones were launched in four waves toward Shaybah — the first attack on the field since the war began. All 16 intercepted and destroyed in the Empty Quarter. March 7: Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the largest single-day drone barrage against this facility. On March 7, Saudi air defenses intercepted and destroyed 16-20 drones in 4-5 waves heading toward the strategic Shaybah field, the first direct attempted attack on this 1 million bpd upstream asset since the war began. On March 7, Saudi MOD reported intercepting 16 drones in four separate waves targeting Shaybah, a significant escalation in targeting of this field. On March 7, Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the most sustained aerial assault on the field to date. All drones destroyed before reaching the facility. March 7: Saudi MOD intercepted 6 drones heading towards Shaybah. Three separate attempts made despite Pezeshkian's announced halt. Facility under sustained targeting—remains under interception protection. March 7: Six drones intercepted heading towards Shaybah oilfield. Mar 7: Saudi MOD intercepted 6 drones heading toward Shaybah oilfield. Six drones intercepted heading toward Shaybah oilfield on March 7 per Saudi MoD. March 7: Saudi MOD Maj. Gen. Al-Maliki confirmed 16 drones in 4 waves intercepted heading toward Shaybah.",
+            "detail": "Saudi air defenses intercepted and destroyed 16 drones in four waves targeting the strategic Shaybah oil field early Saturday March 7. This is the first attempted attack on Shaybah since the war began Feb 28. All drones were neutralized over the Empty Quarter with no confirmed damage to the facility. On March 7, Saudi MOD confirmed intercepting and destroying 16 drones heading toward Shaybah, the largest single wave targeting the oil field. On March 7, 16 drones were launched in four waves toward Shaybah — the first attack on the field since the war began. All 16 intercepted and destroyed in the Empty Quarter. March 7: Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the largest single-day drone barrage against this facility. On March 7, Saudi air defenses intercepted and destroyed 16-20 drones in 4-5 waves heading toward the strategic Shaybah field, the first direct attempted attack on this 1 million bpd upstream asset since the war began. On March 7, Saudi MOD reported intercepting 16 drones in four separate waves targeting Shaybah, a significant escalation in targeting of this field. On March 7, Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the most sustained aerial assault on the field to date. All drones destroyed before reaching the facility. March 7: Saudi MOD intercepted 6 drones heading towards Shaybah. Three separate attempts made despite Pezeshkian's announced halt. Facility under sustained targeting—remains under interception protection. March 7: Six drones intercepted heading towards Shaybah oilfield. Mar 7: Saudi MOD intercepted 6 drones heading toward Shaybah oilfield. Six drones intercepted heading toward Shaybah oilfield on March 7 per Saudi MoD. March 7: Saudi MOD Maj. Gen. Al-Maliki confirmed 16 drones in 4 waves intercepted heading toward Shaybah. March 7: First confirmed targeting of Shaybah in the conflict. Saudi MOD intercepted 16+ drones in multiple waves in the Empty Quarter. Iran attempting to stretch Saudi air defenses across 800km by simultaneously targeting Shaybah and PSAB.",
             "incidents": [
                     {
                             "date": "2026-03-07",
@@ -4987,6 +5023,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Saudi MOD confirmed interception of six drones heading towards the Shaybah oilfield on Saturday."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Saudi MOD intercepted 16 drones in 4 waves targeting Shaybah oil field plus 6 additional drones in a subsequent wave. First confirmed targeting of Shaybah in the current conflict. CGTN reported explosion and fire, but Saudi authorities did not confirm ground impact. Argus Media confirmed 1M bpd production preserved."
                     }
             ],
             "sources": [
@@ -5041,6 +5081,38 @@ const LOCATIONS = [
                     {
                             "name": "ANI (citing Arab News/Saudi MOD)",
                             "url": "https://aninews.in/news/world/middle-east/dubai-authorities-confirm-minor-incident-successfully-contained-after-debris-falls-from-interception20260307110607/"
+                    },
+                    {
+                            "name": "Asharq Al-Awsat",
+                            "url": "https://english.aawsat.com/gulf/5248432-saudi-arabia-ballistic-missile-targeting-prince-sultan-base-falls-uninhabited-area"
+                    }
+            ],
+            "dateAdded": "2026-03-07"
+    },
+    {
+            "name": "Vessel Struck 10nm North of Jubail (IRGC Drone Strike, Persian Gulf off Saudi Arabia)",
+            "lat": 27.17,
+            "lng": 49.62,
+            "country": "Saudi Arabia",
+            "city": "Jubail (offshore)",
+            "severity": "critical",
+            "icon": "⚓",
+            "type": "Maritime Drone Strike",
+            "detail": "Iranian drones struck a vessel in the Persian Gulf approximately 10 nautical miles north of Jubail, Saudi Arabia. The vessel's crew has mostly evacuated. UKMTO issued a warning regarding the incident.",
+            "incidents": [
+                    {
+                            "date": "2026-03-07",
+                            "text": "IRGC drones struck a vessel 10nm north of Saudi port of Jubail. Crew mostly evacuated. UKMTO issued incident warning for the area."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "UKMTO Warning via Liveuamap",
+                            "url": "https://iran.liveuamap.com/en/2026/7-march-13-the-united-kingdom-maritime-trade-operations-center"
+                    },
+                    {
+                            "name": "Liveuamap (IRGC drone strike confirmed)",
+                            "url": "https://iran.liveuamap.com/en/2026/7-march-16-iranian-drones-hit-another-ship-in-the-persian"
                     }
             ],
             "dateAdded": "2026-03-07"
