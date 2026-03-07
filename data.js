@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-07T22:17:59.811Z",
+    "lastUpdated": "2026-03-07T23:18:09.847Z",
     "casualties": {
         "killed": 26,
         "injured": 330
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 8: Iran attacks continue despite Pezeshkian's halt announcement. IRGC contradicts civilian leadership; Ghalibaf says Gulf strikes will continue as long as US bases hosted. Two more tankers struck (PRIMA, LOUISE P). UAE intercepted 15 of 16 ballistic missiles and 119 of 121 drones on Saturday. Salvage tug MUSSAFAH 2 struck with 4+ killed. US Embassy Baghdad hit by rockets. Cumulative UAE toll now 205 ballistic missiles detected, 1,184 drones detected since Feb 28.",
-    "totalBarrage": "UAE cumulative since Feb 28: 205 ballistic missiles detected (190 destroyed), 1,184 drones detected (1,110 intercepted), 8 cruise missiles detected and destroyed. Saturday alone: 16 ballistic missiles (15 intercepted), 121 drones (119 intercepted). Bahrain cumulative: 78 missiles and 143 drones destroyed.",
-    "intercepted": "UAE Saturday (March 7): 15/16 ballistic missiles intercepted, 119/121 drones intercepted. Saudi Arabia Saturday: 2 ballistic missiles toward PSAB intercepted, 6 drones toward Shaybah intercepted, 1 drone east of Riyadh intercepted. Qatar: missile attack intercepted. Jordan: 2 missiles intercepted over Aqaba."
+    "summary": "DAY 8 (March 7): Iran's President Pezeshkian announced Iran would halt strikes on neighboring countries unless attacks originate from their territory, and apologized for recent strikes. However, parliament speaker Ghalibaf contradicted this, stating Gulf nations hosting US bases would continue to be targeted. Analysts note the IRGC — not civilian leadership — controls security decisions. Despite the announcement, Iranian drones struck Dubai International Airport and Dubai Marina on March 7, and the IRGC struck oil tanker PRIMA in the Strait of Hormuz. Trump demanded Iran's 'unconditional surrender' and attended the dignified transfer of six US soldiers killed in Kuwait. UAE cumulative totals as of March 7: 326 ballistic missiles detected (all but 3 intercepted or fell at sea), 8 cruise missiles destroyed, 1,305 UAVs detected (1,229 intercepted, 76 impacted UAE territory). 4 civilian deaths and 112 injuries in UAE alone.",
+    "totalBarrage": "UAE cumulative as of March 7: 326 ballistic missiles, 8 cruise missiles, 1,305 UAVs. Kuwait cumulative: 178+ ballistic missiles, 384+ drones. Bahrain: 75+ missiles, 123+ drones destroyed. Qatar: 101+ ballistic missiles, 3 cruise missiles, 39+ UAVs.",
+    "intercepted": "UAE: 323 of 326 ballistic missiles, all 8 cruise missiles, 1,229 of 1,305 UAVs. Qatar: all missiles intercepted (2 Su-24 bombers also shot down). Kuwait: majority intercepted. Bahrain: 75 missiles and 123 drones destroyed."
 };
 
 const LOCATIONS = [
@@ -5513,6 +5513,42 @@ const LOCATIONS = [
                     {
                             "name": "Wikipedia — 2026 Strait of Hormuz crisis",
                             "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis"
+                    }
+            ],
+            "dateAdded": "2026-03-07"
+    },
+    {
+            "name": "Oil Tanker PRIMA (Malta-flagged, IRGC Drone Strike, Strait of Hormuz)",
+            "lat": 26.55,
+            "lng": 56.3,
+            "country": "International Waters (Strait of Hormuz)",
+            "city": "Strait of Hormuz",
+            "severity": "critical",
+            "icon": "🛢️",
+            "type": "Maritime IRGC Drone Strike",
+            "detail": "On March 7, the IRGC announced it struck the Malta-flagged oil tanker PRIMA with a kamikaze drone after it ignored repeated IRGC Navy warnings about the transit ban through the Strait of Hormuz. The IRGC stated the strait has been under its control for eight consecutive days. No casualty information available.",
+            "incidents": [
+                    {
+                            "date": "2026-03-07",
+                            "text": "IRGC kamikaze drone struck oil tanker PRIMA after vessel ignored transit ban warnings in Strait of Hormuz"
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "IranWire",
+                            "url": "https://iranwire.com/en/news/150043-irgc-claims-drone-strike-on-oil-tanker-prima-in-strait-of-hormuz/"
+                    },
+                    {
+                            "name": "CGTN",
+                            "url": "https://news.cgtn.com/news/2026-03-07/news-1LjLu2ro9uE/p.html"
+                    },
+                    {
+                            "name": "Tasnim News Agency",
+                            "url": "https://www.tasnimnews.ir/en/news/2026/03/07/3533783/violating-tanker-struck-at-hormuz-strait"
+                    },
+                    {
+                            "name": "Türkiye Today",
+                            "url": "https://www.turkiyetoday.com/region/iran-says-malta-flagged-tanker-struck-near-hormuz-3215773"
                     }
             ],
             "dateAdded": "2026-03-07"
