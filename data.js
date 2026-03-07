@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-07T01:09:30.434Z",
+    "lastUpdated": "2026-03-07T05:01:09.531Z",
     "casualties": {
         "killed": 21,
         "injured": 232
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 8 (March 7): The US says Iran's ballistic missile attacks have fallen by 90% and drone attacks by 83% since Day 1. Israel claims near-complete air superiority with 2,500 strikes and 80% of Iran's air defenses destroyed. Iran rejects ceasefire — FM Araghchi told NBC News Iran has not asked for a ceasefire. Trump demands 'unconditional surrender.' Russia confirmed providing Iran intelligence on US forces. Gulf allies rapidly depleting interceptor stocks (800+ Patriot missiles used per Zelenskyy). At least 1,332 killed in Iran, 11 in Israel, 6 US soldiers, 9 in Gulf states per Al Jazeera tracker.",
-    "totalBarrage": "Iran has fired over 500 ballistic/naval missiles and nearly 2,000 drones since Feb 28 (CENTCOM/Fars News Agency figures through Day 4-5). Attack rate declining sharply — 90% reduction in missile launches, 83% in drone attacks from Day 1 levels.",
-    "intercepted": "UAE: 189 ballistic missiles, 941 drones, 3 cruise missiles tracked (by March 4). Kuwait: 97 ballistic missiles and 283 drones intercepted. Bahrain: 75 missiles and 123 drones destroyed. Qatar: intercepted 18+ ballistic missiles, cruise missiles and drones. Gulf states have used over 800 Patriot missiles total (per Zelenskyy)."
+    "summary": "Day 8 of the conflict. Trump demands Iran's 'unconditional surrender.' Iran continues drone and missile strikes on Gulf and Israel though at significantly reduced rates. CENTCOM head Brad Cooper accused Iran of deliberately firing 7 attack drones at civilian neighborhoods in Bahrain. Russia reportedly providing Iran intelligence on US troop positions. IRGC announced its 23rd wave of strikes. Qatar partially reopened airspace for evacuation/cargo flights. 10 suspected Iranian agents arrested in Qatar for planning sabotage. Iran's Foreign Minister rejected ceasefire or new talks.",
+    "totalBarrage": "Iran has fired over 500 ballistic/naval missiles and almost 2,000 drones since Feb 28 (per Fars News/CENTCOM as of March 5). Bahrain Defence Force total: 78 missiles and 143 drones destroyed. UAE total: 189+ ballistic missiles, 8 cruise missiles, 941+ drones detected (per INSS Israel).",
+    "intercepted": "US says Iran's ballistic missile attacks have fallen 90% and drone attacks dropped 83% since first day of conflict. Gulf state interceptor stockpiles under strain — Zelenskyy noted Gulf states have used over 800 Patriot missiles in one week, more than Ukraine received in four years."
 };
 
 const LOCATIONS = [
@@ -4980,6 +4980,34 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-05"
+    },
+    {
+            "name": "Halliburton/KBR Compound (Drone Attack Fire), Basra, Iraq",
+            "lat": 30.5085,
+            "lng": 47.7834,
+            "country": "Iraq",
+            "city": "Basra",
+            "severity": "critical",
+            "icon": "🔥",
+            "type": "Oil company compound drone strike",
+            "detail": "Fire broke out in offices and warehouses belonging to US firms Halliburton and KBR after a drone attack in Basra targeted a compound housing employees of foreign oil companies on March 6. The compound is in a separate location from the Khor al-Zubair port oil tanker strike already tracked.",
+            "incidents": [
+                    {
+                            "date": "2026-03-06",
+                            "text": "Drone attack caused fire at Halliburton and KBR offices and warehouses in Basra compound housing foreign oil company employees."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Yahoo News / CNN",
+                            "url": "https://www.yahoo.com/news/articles/erbil-hotel-hit-drone-attack-033618727.html"
+                    },
+                    {
+                            "name": "Wikipedia - 2026 Iran War",
+                            "url": "https://en.wikipedia.org/wiki/2026_Iran_war"
+                    }
+            ],
+            "dateAdded": "2026-03-07"
     },
 
 ];
