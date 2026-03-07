@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-07T21:18:02.392Z",
+    "lastUpdated": "2026-03-07T22:17:59.811Z",
     "casualties": {
-        "killed": 22,
-        "injured": 296
+        "killed": 26,
+        "injured": 330
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Week 2 begins: Iran President Pezeshkian apologized to Gulf neighbors and announced halt to strikes on neighboring states unless attacks originate from their territory. However, IRGC strikes continued across the Gulf within hours of the announcement. UAE MOD reported 16 ballistic missiles and 121 drones detected on March 7 alone. Saudi Arabia intercepted 16+ drones targeting Shaybah and multiple missiles at PSAB. Bahrain intercepted total of 86 rockets and 148 drones since conflict began. Qatar intercepted missile attack on March 7.",
-    "totalBarrage": "UAE cumulative: 221 ballistic missiles detected (205 destroyed, 14 into sea, 2 landed in UAE), 1,305 drones detected (1,229 intercepted, 76 fell in UAE). Bahrain cumulative: 86 rockets, 148 drones intercepted. Iran total estimated: 500+ ballistic/naval missiles and ~2,000 drones fired since Feb 28 (Fars News, March 5).",
-    "intercepted": "UAE: 205 of 221 BMs destroyed (93%), 1,229 of 1,305 drones intercepted (94%). Saudi Arabia: all incoming drones and most missiles intercepted on March 7; one ballistic missile fell in uninhabited area near PSAB. Bahrain: 86 rockets, 148 drones intercepted."
+    "summary": "Day 8: Iran attacks continue despite Pezeshkian's halt announcement. IRGC contradicts civilian leadership; Ghalibaf says Gulf strikes will continue as long as US bases hosted. Two more tankers struck (PRIMA, LOUISE P). UAE intercepted 15 of 16 ballistic missiles and 119 of 121 drones on Saturday. Salvage tug MUSSAFAH 2 struck with 4+ killed. US Embassy Baghdad hit by rockets. Cumulative UAE toll now 205 ballistic missiles detected, 1,184 drones detected since Feb 28.",
+    "totalBarrage": "UAE cumulative since Feb 28: 205 ballistic missiles detected (190 destroyed), 1,184 drones detected (1,110 intercepted), 8 cruise missiles detected and destroyed. Saturday alone: 16 ballistic missiles (15 intercepted), 121 drones (119 intercepted). Bahrain cumulative: 78 missiles and 143 drones destroyed.",
+    "intercepted": "UAE Saturday (March 7): 15/16 ballistic missiles intercepted, 119/121 drones intercepted. Saudi Arabia Saturday: 2 ballistic missiles toward PSAB intercepted, 6 drones toward Shaybah intercepted, 1 drone east of Riyadh intercepted. Qatar: missile attack intercepted. Jordan: 2 missiles intercepted over Aqaba."
 };
 
 const LOCATIONS = [
@@ -32,7 +32,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US/UAE Joint Air Base — Primary Target",
-            "detail": "Primary US military air base in the UAE. Hosts ~5,000 US troops, THAAD & Patriot batteries, F-22s, RQ-4 Global Hawks, U-2s, E-3 AWACS. Iran's explicit primary target — they conducted a full-scale simulation attack on a replica of this base on Feb 24, days before the real strike. On March 6, the IRGC claimed a new retaliatory strike on Al Dhafra using drones and precision missiles, citing the US strike on Minab school as justification. On March 7, IRGC Navy claimed drone attack hit US satellite communications and radars at the base (unverified by independent sources). UAE confirmed air defenses responding to incoming threats. On March 7, IRGC Navy claimed via Tasnim a drone attack on al-Dhafra targeting US satellite comms and fire control radars. UAE has not confirmed the claim. IRGC publicly claimed targeting Al Dhafra with drones and precision missiles in retaliation for Minab school strike, claiming hits on US radar and MQ-9/U-2 hangars. UAE confirmed air defense interceptions ongoing. IRGC damage claims not independently verified. March 7: IRGC Navy claims drone attack struck US satellite comm centre and radars at Al Dhafra (Tasnim). Unverified by UAE or Al Jazeera. UAE MOD confirms air defenses responded to incoming missile and drone threats Saturday. March 7: IRGC claims fresh drone/missile attack on Al Dhafra as retaliation for Minab school strike. UAE MOD detected 16 ballistic missiles and 121 drones on Saturday. UAE has not confirmed IRGC damage claims. March 7: IRGC navy drone unit claimed attack (Tasnim); UAE MOD confirmed 121 drones detected Saturday with 119 intercepted and 2 landing in UAE territory. Mar 7 dawn: IRGC claims mass drone swarm hit satellite comms, early warning & fire control radars. UAE confirmed 15/16 missiles and 119/121 drones intercepted on Saturday. 2 drones fell within UAE. On March 7, IRGC navy drone unit claimed strike on Al Dhafra, alleging hits on US satellite comms and radar systems (per Tasnim; not independently verified). UAE MoD confirmed detecting 121 UAVs Saturday, intercepting 119 with 2 falling within UAE. All 16 ballistic missiles intercepted (one fell to sea). March 7: IRGC navy claimed drone attack hitting US SATCOM center and radars (unverified by UAE). UAE MOD detected 121 drones Saturday, intercepted 119; 2 fell within UAE.",
+            "detail": "Primary US military air base in the UAE. Hosts ~5,000 US troops, THAAD & Patriot batteries, F-22s, RQ-4 Global Hawks, U-2s, E-3 AWACS. Iran's explicit primary target — they conducted a full-scale simulation attack on a replica of this base on Feb 24, days before the real strike. On March 6, the IRGC claimed a new retaliatory strike on Al Dhafra using drones and precision missiles, citing the US strike on Minab school as justification. On March 7, IRGC Navy claimed drone attack hit US satellite communications and radars at the base (unverified by independent sources). UAE confirmed air defenses responding to incoming threats. On March 7, IRGC Navy claimed via Tasnim a drone attack on al-Dhafra targeting US satellite comms and fire control radars. UAE has not confirmed the claim. IRGC publicly claimed targeting Al Dhafra with drones and precision missiles in retaliation for Minab school strike, claiming hits on US radar and MQ-9/U-2 hangars. UAE confirmed air defense interceptions ongoing. IRGC damage claims not independently verified. March 7: IRGC Navy claims drone attack struck US satellite comm centre and radars at Al Dhafra (Tasnim). Unverified by UAE or Al Jazeera. UAE MOD confirms air defenses responded to incoming missile and drone threats Saturday. March 7: IRGC claims fresh drone/missile attack on Al Dhafra as retaliation for Minab school strike. UAE MOD detected 16 ballistic missiles and 121 drones on Saturday. UAE has not confirmed IRGC damage claims. March 7: IRGC navy drone unit claimed attack (Tasnim); UAE MOD confirmed 121 drones detected Saturday with 119 intercepted and 2 landing in UAE territory. Mar 7 dawn: IRGC claims mass drone swarm hit satellite comms, early warning & fire control radars. UAE confirmed 15/16 missiles and 119/121 drones intercepted on Saturday. 2 drones fell within UAE. On March 7, IRGC navy drone unit claimed strike on Al Dhafra, alleging hits on US satellite comms and radar systems (per Tasnim; not independently verified). UAE MoD confirmed detecting 121 UAVs Saturday, intercepting 119 with 2 falling within UAE. All 16 ballistic missiles intercepted (one fell to sea). March 7: IRGC navy claimed drone attack hitting US SATCOM center and radars (unverified by UAE). UAE MOD detected 121 drones Saturday, intercepted 119; 2 fell within UAE. On March 7, IRGC Navy drone unit claimed strike hitting US satellite communication centre and radar systems. UAE detected 16 ballistic missiles (15 intercepted) and 121 drones (119 intercepted) on Saturday.",
             "incidents": [
                     {
                             "date": "2026-02-24",
@@ -77,6 +77,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "IRGC Navy claimed 'mass drone swarm attack' at dawn hitting US satellite communication center, early warning radars, and fire control radars. UAE MOD confirmed detecting 16 ballistic missiles (15 intercepted, 1 fell in sea) and 121 drones (119 intercepted, 2 fell in UAE) on Saturday. Chinese MizarVision satellite imagery reportedly shows multiple impact points."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "IRGC Navy drone unit claimed strike on Al Dhafra; Tasnim reported US satellite communication centre, early warning and fire control radars were hit. UAE MoD reported detecting 121 UAVs on Saturday, intercepting 119, with two falling within UAE territory."
                     }
             ],
             "sources": [
@@ -184,7 +188,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "World's Busiest Intl Airport — Hit Twice",
-            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports. March 2: Third day of explosions heard across Dubai. UAE airspace remains closed. Etihad flights suspended until March 3. Dubai Airports announced limited flight resumption from DXB and DWC starting evening of March 2, three days after initial shutdown. Mar 2: Dubai Airports announced limited resumption of flights from DXB and DWC starting Monday evening after 3 days shutdown. Thousands of passengers remain stranded. March 2 evening: Dubai Airports announced limited flight resumption at DXB and DWC after 3 days of closure. Thousands of passengers remain stranded. March 7: Drone impact/debris incident near Concourse A. GDMO confirmed debris from interception. Emirates flights suspended again. Incident occurred shortly after Iran's President Pezeshkian apologized to neighboring countries and announced intent to stop attacks on Gulf states. On March 7, debris from an interception fell in Dubai (no injuries). Authorities denied airport incidents but flights briefly aborted landings. Emirates partially resumed operations from DXB and DWC. On Saturday March 7, DXB temporarily suspended, then partially resumed operations. GDMO confirmed debris from interception caused a minor incident. Emirates airline resumed flights Saturday afternoon. UAE MOD: 121 drones detected Saturday, 119 intercepted, 2 fell within UAE. March 7: Drone debris near Concourse A triggered shelter-in-place and brief suspension. No injuries. Operations partially resumed. March 7: Drone exploded next to Concourse A shortly after Iran's president apologized to neighbors. BBC-verified video shows explosion near terminal. Emirates suspended then resumed operations within 30 minutes. Mar 7 morning: Drone detonated adjacent to Concourse A. DXB suspended operations, diverted flights. Emirates resumed afternoon service. On March 7, a drone exploded next to Concourse A on the runway, narrowly missing the terminal and a parked aircraft. A fire was reported at Terminal 3. Flight operations were suspended and the airport evacuated. BBC verified video of the strike. No injuries reported. UAE MoD said 16 ballistic missiles were fired at the UAE on Saturday — all but one intercepted (one fell to sea). 121 drones were detected, 119 intercepted, 2 fell within UAE. March 7: DXB suspended operations Saturday morning after drone detonated near Concourse A. Emirates resumed limited flights in the afternoon. Dubai Media Office denied social media reports of direct airport strike, confirmed debris incident in the city. March 7: Drone exploded near Concourse A, forcing another suspension of operations. Airport partially resumed flights later in the day. Emirates suspended all flights until further notice before lifting it shortly afterward.",
+            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports. March 2: Third day of explosions heard across Dubai. UAE airspace remains closed. Etihad flights suspended until March 3. Dubai Airports announced limited flight resumption from DXB and DWC starting evening of March 2, three days after initial shutdown. Mar 2: Dubai Airports announced limited resumption of flights from DXB and DWC starting Monday evening after 3 days shutdown. Thousands of passengers remain stranded. March 2 evening: Dubai Airports announced limited flight resumption at DXB and DWC after 3 days of closure. Thousands of passengers remain stranded. March 7: Drone impact/debris incident near Concourse A. GDMO confirmed debris from interception. Emirates flights suspended again. Incident occurred shortly after Iran's President Pezeshkian apologized to neighboring countries and announced intent to stop attacks on Gulf states. On March 7, debris from an interception fell in Dubai (no injuries). Authorities denied airport incidents but flights briefly aborted landings. Emirates partially resumed operations from DXB and DWC. On Saturday March 7, DXB temporarily suspended, then partially resumed operations. GDMO confirmed debris from interception caused a minor incident. Emirates airline resumed flights Saturday afternoon. UAE MOD: 121 drones detected Saturday, 119 intercepted, 2 fell within UAE. March 7: Drone debris near Concourse A triggered shelter-in-place and brief suspension. No injuries. Operations partially resumed. March 7: Drone exploded next to Concourse A shortly after Iran's president apologized to neighbors. BBC-verified video shows explosion near terminal. Emirates suspended then resumed operations within 30 minutes. Mar 7 morning: Drone detonated adjacent to Concourse A. DXB suspended operations, diverted flights. Emirates resumed afternoon service. On March 7, a drone exploded next to Concourse A on the runway, narrowly missing the terminal and a parked aircraft. A fire was reported at Terminal 3. Flight operations were suspended and the airport evacuated. BBC verified video of the strike. No injuries reported. UAE MoD said 16 ballistic missiles were fired at the UAE on Saturday — all but one intercepted (one fell to sea). 121 drones were detected, 119 intercepted, 2 fell within UAE. March 7: DXB suspended operations Saturday morning after drone detonated near Concourse A. Emirates resumed limited flights in the afternoon. Dubai Media Office denied social media reports of direct airport strike, confirmed debris incident in the city. March 7: Drone exploded near Concourse A, forcing another suspension of operations. Airport partially resumed flights later in the day. Emirates suspended all flights until further notice before lifting it shortly afterward. On March 7, despite Pezeshkian's announced halt to Gulf strikes, DXB was attacked by Iranian drones. Emirates flights suspended then partially resumed. Wikipedia noted attacks occurred after Pezeshkian's statement, underscoring IRGC operational independence.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -249,6 +253,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Iranian drone exploded near Concourse A at DXB, narrowly missing the terminal and a parked aircraft. Operations temporarily suspended again. AFP witnesses reported loud explosion and smoke near a concourse. Flights partially resumed later."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Despite Pezeshkian's halt announcement, DXB was attacked by Iranian drones on March 7. All Emirates flights were suspended then partially resumed. Flights were in holding pattern. Dubai Media Office initially reported minor debris incident, denied airport incident, then flights were suspended again."
                     }
             ],
             "sources": [
@@ -351,6 +359,14 @@ const LOCATIONS = [
                     {
                             "name": "KNEWS Media",
                             "url": "https://knews.media/2026/03/07/video-famous-skyscraper-in-dubai-hit-by-the-fragments-of-an-intercepted-projectile/"
+                    },
+                    {
+                            "name": "The Irish Times",
+                            "url": "https://www.irishtimes.com/world/middle-east/2026/03/07/iran-latest-live-updates-us-israel-trump-netanyahu-dubai/"
+                    },
+                    {
+                            "name": "Wikipedia — 2026 Iran war",
+                            "url": "https://en.wikipedia.org/wiki/2026_Iran_war"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1486,7 +1502,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Naval Base — Missile & Drone Strike",
-            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted. March 2: Bahrain activated new air raid alerts, closed Shaikh Khalifa bridge. US Embassy closed, warned Americans to avoid Manama hotels. Bahrain repelled new wave of attacks on March 3. Total interceptions now 70 ballistic missiles and 76 drones (up from 45 missiles and 9 drones on Day 1). Sirens activated early Tuesday. On March 5, Bahrain Defence Force updated its interception tally to 75 missiles and 123 drones destroyed since the start of the conflict, up from 73 missiles and 91 drones reported on March 3. Bahrain Defence Force cumulative interception total updated to 75 missiles and 123 drones destroyed. Loud explosions continued on March 5, described by residents as the 'loudest so far during the war.' March 5: BDF reports total 75 missiles and 123 drones destroyed since start of conflict. New explosions heard. Mar 5: Bahrain Defence Force updates total interceptions to 75 missiles and 123 drones since conflict began. New explosions heard across the country. Bahrain Defence Force reports cumulative interception of 75 missiles and 123 drones since the start of Iranian aggression. UK temporarily withdrawing some Bahrain embassy staff citing serious security situation. Bahrain Defence Force cumulative interception total: 75 missiles and 123 drones destroyed since start of conflict. Bahrain Defence Force reports cumulative intercepts of 75 missiles and 123 drones since conflict began. Bahrain Defence Force updated cumulative interception figures to 78 missiles and 143 drones destroyed as of March 6. Public urged to remain sheltered. Sirens sounded in Manama on March 6 with multiple explosions heard. CENTCOM head Cooper warned Iran's targeting of Bahrain civilians 'will not go unanswered.' March 7: Bahrain sirens sounded again early Saturday. BDF total interceptions now 84 missiles, 147 drones. IRGC claims Juffair targeted in 23rd wave. March 7: Bahrain Defense Force cumulative tally: 84 missiles and 147 drones intercepted since Feb 28. Sirens sounded again early Saturday. March 7: Sirens sounded early Saturday. Bahrain Defence Force total intercepts now 84 missiles and 147 drones. Sirens sounded again Saturday March 7. Bahrain Defence Force reports cumulative interceptions of 84 missiles and 147 drones—up 6 missiles and 4 drones in 12 hours. March 7: Multiple air raid sirens in Manama; Bahrain MOI urged shelter. AFP reported explosions. Bahrain total interceptions: 78 missiles, 143 drones. Mar 7 evening: Fresh explosions across Bahrain despite Iran's ceasefire pledge. Fars claims hits on US bases. Bahrain MOI issued second shelter warning. Strikes continue despite Pezeshkian apology. On the evening of March 7, IRGC claimed fresh targeting of US forces at Juffair. AFP journalists reported loud explosions and warning sirens in Manama. Bahrain's Ministry of Interior confirmed fire and material damage to a house and surrounding buildings from Iranian aggression. This occurred despite Iran's President Pezeshkian announcing earlier Saturday that Gulf neighbors would no longer be targeted.",
+            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted. March 2: Bahrain activated new air raid alerts, closed Shaikh Khalifa bridge. US Embassy closed, warned Americans to avoid Manama hotels. Bahrain repelled new wave of attacks on March 3. Total interceptions now 70 ballistic missiles and 76 drones (up from 45 missiles and 9 drones on Day 1). Sirens activated early Tuesday. On March 5, Bahrain Defence Force updated its interception tally to 75 missiles and 123 drones destroyed since the start of the conflict, up from 73 missiles and 91 drones reported on March 3. Bahrain Defence Force cumulative interception total updated to 75 missiles and 123 drones destroyed. Loud explosions continued on March 5, described by residents as the 'loudest so far during the war.' March 5: BDF reports total 75 missiles and 123 drones destroyed since start of conflict. New explosions heard. Mar 5: Bahrain Defence Force updates total interceptions to 75 missiles and 123 drones since conflict began. New explosions heard across the country. Bahrain Defence Force reports cumulative interception of 75 missiles and 123 drones since the start of Iranian aggression. UK temporarily withdrawing some Bahrain embassy staff citing serious security situation. Bahrain Defence Force cumulative interception total: 75 missiles and 123 drones destroyed since start of conflict. Bahrain Defence Force reports cumulative intercepts of 75 missiles and 123 drones since conflict began. Bahrain Defence Force updated cumulative interception figures to 78 missiles and 143 drones destroyed as of March 6. Public urged to remain sheltered. Sirens sounded in Manama on March 6 with multiple explosions heard. CENTCOM head Cooper warned Iran's targeting of Bahrain civilians 'will not go unanswered.' March 7: Bahrain sirens sounded again early Saturday. BDF total interceptions now 84 missiles, 147 drones. IRGC claims Juffair targeted in 23rd wave. March 7: Bahrain Defense Force cumulative tally: 84 missiles and 147 drones intercepted since Feb 28. Sirens sounded again early Saturday. March 7: Sirens sounded early Saturday. Bahrain Defence Force total intercepts now 84 missiles and 147 drones. Sirens sounded again Saturday March 7. Bahrain Defence Force reports cumulative interceptions of 84 missiles and 147 drones—up 6 missiles and 4 drones in 12 hours. March 7: Multiple air raid sirens in Manama; Bahrain MOI urged shelter. AFP reported explosions. Bahrain total interceptions: 78 missiles, 143 drones. Mar 7 evening: Fresh explosions across Bahrain despite Iran's ceasefire pledge. Fars claims hits on US bases. Bahrain MOI issued second shelter warning. Strikes continue despite Pezeshkian apology. On the evening of March 7, IRGC claimed fresh targeting of US forces at Juffair. AFP journalists reported loud explosions and warning sirens in Manama. Bahrain's Ministry of Interior confirmed fire and material damage to a house and surrounding buildings from Iranian aggression. This occurred despite Iran's President Pezeshkian announcing earlier Saturday that Gulf neighbors would no longer be targeted. On Saturday evening March 7, CNN confirmed fresh explosions in Bahrain. Bahrain MOI stated Iranian aggression caused fire and material damage to a house and surrounding buildings in Manama. Sirens sounded at least twice.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1591,6 +1607,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Saturday evening: IRGC claimed targeting US forces at Juffair base. Series of loud explosions heard across Manama (AFP, CNN witnesses). Bahrain Ministry of Interior confirmed 'Iranian aggression caused a fire and material damage to a house and several surrounding buildings in Manama.'"
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Saturday evening: Multiple explosions heard in Bahrain capital. Bahrain MOI confirmed 'Iranian aggression caused a fire and material damage to a house and several surrounding buildings in Manama.' Air raid sirens sounded multiple times."
                     }
             ],
             "sources": [
@@ -5461,6 +5481,42 @@ const LOCATIONS = [
             ],
             "dateAdded": "2026-03-02"
     },
+    {
+            "name": "Salvage Tug MUSSAFAH 2 (UAE-flagged, Missile Strike, 18nm off Khasab, Strait of Hormuz)",
+            "lat": 26.35,
+            "lng": 56.35,
+            "country": "International Waters (Strait of Hormuz)",
+            "city": "Off Khasab, Oman",
+            "severity": "critical",
+            "icon": "⚓",
+            "type": "Maritime Missile Strike — Fatalities",
+            "detail": "On March 6, the UAE-flagged salvage tug MUSSAFAH 2 was struck by two missiles approximately 18nm off Khasab, Oman, while en route to assist the abandoned container ship Safeen Prestige. The IMO confirmed at least 4 seafarers killed and 3 severely injured; some sources report up to 8 crew feared dead.",
+            "incidents": [
+                    {
+                            "date": "2026-03-06",
+                            "text": "Salvage tug MUSSAFAH 2 struck by two missiles 18nm off Khasab while attempting to assist drifting Safeen Prestige; IMO confirmed 4 seafarers killed, 3 severely injured."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Marine Insight",
+                            "url": "https://www.marineinsight.com/shipping-news/missile-hits-uae-salvage-tug-assisting-damaged-container-ship-in-strait-of-hormuz-4-seafarers-killed/"
+                    },
+                    {
+                            "name": "Seatrade Maritime",
+                            "url": "https://www.seatrade-maritime.com/security/tug-struck-assisting-abandoned-container-ship-in-strait-of-hormuz"
+                    },
+                    {
+                            "name": "Lloyd's List",
+                            "url": "https://www.lloydslist.com/LL1156545/Tug-hit-by-missile-while-assisting-stricken-boxship"
+                    },
+                    {
+                            "name": "Wikipedia — 2026 Strait of Hormuz crisis",
+                            "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis"
+                    }
+            ],
+            "dateAdded": "2026-03-07"
+    },
 
     // ═══════════════════════════════════════════════════════════
     // Jordan
@@ -5801,6 +5857,42 @@ const LOCATIONS = [
                     {
                             "name": "FDD Long War Journal",
                             "url": "https://www.longwarjournal.org/archives/2026/03/iran-and-proxy-militias-strike-energy-infrastructure-us-bases-and-gulf-capitals-on-march-6.php"
+                    }
+            ],
+            "dateAdded": "2026-03-07"
+    },
+
+    // ═══════════════════════════════════════════════════════════
+    // International Waters (Persian Gulf)
+    // ═══════════════════════════════════════════════════════════
+    {
+            "name": "Oil Tanker LOUISE P (Marshall Islands-flagged, IRGC Drone Strike, Central Persian Gulf)",
+            "lat": 27.5,
+            "lng": 51.5,
+            "country": "International Waters (Persian Gulf)",
+            "city": "Central Persian Gulf",
+            "severity": "critical",
+            "icon": "⚓",
+            "type": "Maritime Drone Strike",
+            "detail": "On March 7, the IRGC announced its naval forces conducted a kamikaze drone strike on the Marshall Islands-flagged oil tanker LOUISE P in the central Persian Gulf. The IRGC claimed the vessel was 'one of the assets of the terrorist America' and a legitimate target.",
+            "incidents": [
+                    {
+                            "date": "2026-03-07",
+                            "text": "IRGC suicide drone struck Marshall Islands-flagged oil tanker LOUISE P in central Persian Gulf; IRGC claimed it was a US-linked asset."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "IRGC Claims (via Alexa.ng)",
+                            "url": "https://www.alexa.ng/2026/03/irgc-claims-drone-strikes-on-us-linked.html"
+                    },
+                    {
+                            "name": "Caspian Post",
+                            "url": "https://caspianpost.com/iran/iranian-drone-hits-oil-tanker-louise-p-in-persian-gulf"
+                    },
+                    {
+                            "name": "Wikipedia — 2026 Strait of Hormuz crisis",
+                            "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis"
                     }
             ],
             "dateAdded": "2026-03-07"
