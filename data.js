@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-07T11:16:12.550Z",
+    "lastUpdated": "2026-03-07T13:37:39.769Z",
     "casualties": {
         "killed": 21,
         "injured": 250
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 8 of conflict. Iran's President Pezeshkian ordered forces to stop attacking Gulf neighbors unless attacks on Iran originate from their territory, but The National reports dozens of attacks have continued since the announcement, raising questions about whether the decentralized 'mosaic defence' doctrine allows local commanders to act independently. CENTCOM says over 3,000 Iranian targets struck in the first week.",
-    "totalBarrage": "UAE totals as of March 7: 205 ballistic missiles detected (190 destroyed, 13 to sea, 2 on land), 1,184 drones detected (1,110 intercepted, 74 impacts), 8 cruise missiles destroyed. Kuwait: 212 ballistic missiles, 394 drones intercepted. Iran claims over 500 missiles and nearly 2,000 drones launched since Feb 28.",
-    "intercepted": "UAE: 190 ballistic missiles, 1,110 drones, 8 cruise missiles destroyed. Kuwait: 212 missiles, 394 drones. Bahrain: 78 missiles, 143 drones. Saudi Arabia: multiple waves of missiles and drones intercepted at PSAB, Shaybah, Riyadh and al-Kharj."
+    "summary": "DAY 8 — Iran President Pezeshkian announced on March 7 that Iran's Interim Leadership Council has approved a conditional halt to strikes on neighboring countries, saying 'no more attacks on neighbouring countries and no missile launches, unless an attack originates from those countries against Iran.' He also publicly apologized to Gulf neighbors. However, Bloomberg reported no sign of Iranian forces actually easing off. Al Jazeera analyst noted the IRGC, not Pezeshkian, controls military decisions. Trump responded by calling Iran 'THE LOSER OF THE MIDDLE EAST' and warning Iran 'will be hit very hard' today. Six US service members killed in Kuwait to receive dignified transfer at Dover. Qatar Interior Ministry issued stay-at-home order for Saturday citing high threat level. Qatar Civil Aviation Authority announced partial resumption of air navigation for evacuation flights.",
+    "totalBarrage": "Iran has fired over 500 ballistic and naval missiles and almost 2,000 drones since Feb 28 (Fars News, March 5). Bahrain alone has intercepted 84 missiles and 147 drones. Saudi Arabia intercepted 16 drones targeting Shaybah and a ballistic missile targeting PSAB on March 7. US says Iran's ballistic missile launches down ~90% from Day 1, drone attacks down ~83%.",
+    "intercepted": "Updated tallies as of March 7 — Bahrain: 84 missiles, 147 drones. UAE (as of March 3): 174 ballistic missiles tracked (161 intercepted), 689 drones (645 intercepted), 8 cruise missiles intercepted. Kuwait: 97 ballistic missiles, 283 drones. Qatar (as of March 3): 101 ballistic missiles, 3 cruise missiles, 39 drones detected. Jordan: 49 drones and ballistic missiles intercepted."
 };
 
 const LOCATIONS = [
@@ -32,7 +32,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US/UAE Joint Air Base — Primary Target",
-            "detail": "Primary US military air base in the UAE. Hosts ~5,000 US troops, THAAD & Patriot batteries, F-22s, RQ-4 Global Hawks, U-2s, E-3 AWACS. Iran's explicit primary target — they conducted a full-scale simulation attack on a replica of this base on Feb 24, days before the real strike. On March 6, the IRGC claimed a new retaliatory strike on Al Dhafra using drones and precision missiles, citing the US strike on Minab school as justification. On March 7, IRGC Navy claimed drone attack hit US satellite communications and radars at the base (unverified by independent sources). UAE confirmed air defenses responding to incoming threats.",
+            "detail": "Primary US military air base in the UAE. Hosts ~5,000 US troops, THAAD & Patriot batteries, F-22s, RQ-4 Global Hawks, U-2s, E-3 AWACS. Iran's explicit primary target — they conducted a full-scale simulation attack on a replica of this base on Feb 24, days before the real strike. On March 6, the IRGC claimed a new retaliatory strike on Al Dhafra using drones and precision missiles, citing the US strike on Minab school as justification. On March 7, IRGC Navy claimed drone attack hit US satellite communications and radars at the base (unverified by independent sources). UAE confirmed air defenses responding to incoming threats. On March 7, IRGC Navy claimed via Tasnim a drone attack on al-Dhafra targeting US satellite comms and fire control radars. UAE has not confirmed the claim.",
             "incidents": [
                     {
                             "date": "2026-02-24",
@@ -53,6 +53,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "IRGC Navy claimed via Tasnim news agency that drones hit US satellite communication centre and fire control radars at Al Dhafra. Al Jazeera could not immediately verify; UAE has not commented. UAE Defence Ministry confirmed air defenses were responding to incoming threats from Iran."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "IRGC Navy claimed new drone attack on al-Dhafra airbase (per Tasnim). UAE Defence Ministry said air defences were responding to incoming missile and drone threats from Iran on Saturday."
                     }
             ],
             "sources": [
@@ -1326,7 +1330,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Naval Base — Missile & Drone Strike",
-            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted. March 2: Bahrain activated new air raid alerts, closed Shaikh Khalifa bridge. US Embassy closed, warned Americans to avoid Manama hotels. Bahrain repelled new wave of attacks on March 3. Total interceptions now 70 ballistic missiles and 76 drones (up from 45 missiles and 9 drones on Day 1). Sirens activated early Tuesday. On March 5, Bahrain Defence Force updated its interception tally to 75 missiles and 123 drones destroyed since the start of the conflict, up from 73 missiles and 91 drones reported on March 3. Bahrain Defence Force cumulative interception total updated to 75 missiles and 123 drones destroyed. Loud explosions continued on March 5, described by residents as the 'loudest so far during the war.' March 5: BDF reports total 75 missiles and 123 drones destroyed since start of conflict. New explosions heard. Mar 5: Bahrain Defence Force updates total interceptions to 75 missiles and 123 drones since conflict began. New explosions heard across the country. Bahrain Defence Force reports cumulative interception of 75 missiles and 123 drones since the start of Iranian aggression. UK temporarily withdrawing some Bahrain embassy staff citing serious security situation. Bahrain Defence Force cumulative interception total: 75 missiles and 123 drones destroyed since start of conflict. Bahrain Defence Force reports cumulative intercepts of 75 missiles and 123 drones since conflict began. Bahrain Defence Force updated cumulative interception figures to 78 missiles and 143 drones destroyed as of March 6. Public urged to remain sheltered. Sirens sounded in Manama on March 6 with multiple explosions heard. CENTCOM head Cooper warned Iran's targeting of Bahrain civilians 'will not go unanswered.' March 7: Bahrain sirens sounded again early Saturday. BDF total interceptions now 84 missiles, 147 drones. IRGC claims Juffair targeted in 23rd wave. March 7: Bahrain Defense Force cumulative tally: 84 missiles and 147 drones intercepted since Feb 28. Sirens sounded again early Saturday.",
+            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted. March 2: Bahrain activated new air raid alerts, closed Shaikh Khalifa bridge. US Embassy closed, warned Americans to avoid Manama hotels. Bahrain repelled new wave of attacks on March 3. Total interceptions now 70 ballistic missiles and 76 drones (up from 45 missiles and 9 drones on Day 1). Sirens activated early Tuesday. On March 5, Bahrain Defence Force updated its interception tally to 75 missiles and 123 drones destroyed since the start of the conflict, up from 73 missiles and 91 drones reported on March 3. Bahrain Defence Force cumulative interception total updated to 75 missiles and 123 drones destroyed. Loud explosions continued on March 5, described by residents as the 'loudest so far during the war.' March 5: BDF reports total 75 missiles and 123 drones destroyed since start of conflict. New explosions heard. Mar 5: Bahrain Defence Force updates total interceptions to 75 missiles and 123 drones since conflict began. New explosions heard across the country. Bahrain Defence Force reports cumulative interception of 75 missiles and 123 drones since the start of Iranian aggression. UK temporarily withdrawing some Bahrain embassy staff citing serious security situation. Bahrain Defence Force cumulative interception total: 75 missiles and 123 drones destroyed since start of conflict. Bahrain Defence Force reports cumulative intercepts of 75 missiles and 123 drones since conflict began. Bahrain Defence Force updated cumulative interception figures to 78 missiles and 143 drones destroyed as of March 6. Public urged to remain sheltered. Sirens sounded in Manama on March 6 with multiple explosions heard. CENTCOM head Cooper warned Iran's targeting of Bahrain civilians 'will not go unanswered.' March 7: Bahrain sirens sounded again early Saturday. BDF total interceptions now 84 missiles, 147 drones. IRGC claims Juffair targeted in 23rd wave. March 7: Bahrain Defense Force cumulative tally: 84 missiles and 147 drones intercepted since Feb 28. Sirens sounded again early Saturday. March 7: Sirens sounded early Saturday. Bahrain Defence Force total intercepts now 84 missiles and 147 drones.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1509,6 +1513,10 @@ const LOCATIONS = [
                     {
                             "name": "ANI (citing Press TV/IRGC)",
                             "url": "https://aninews.in/news/world/middle-east/flawless-execution-irgc-launches-23rd-wave-of-strikes-against-us-bases-and-occupied-territories20260307085645/"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/7/iranian-missiles-intercepted-over-saudi-jordan-drones-launched-at-qatar"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1667,6 +1675,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "CENTCOM head Brad Cooper accused Iran of deliberately firing seven attack drones at civilian neighborhoods in Bahrain; warned actions 'will not go unanswered' (Al Jazeera Day 7 summary)"
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Bahrain continued to intercept incoming threats Saturday morning; nationwide sirens activated."
                     }
             ],
             "sources": [
@@ -2178,7 +2190,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Largest US Base in ME — 2 Missiles Hit, Radar Destroyed",
-            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar. March 2: Explosions heard in Doha for third day. Qatar FM spokesperson: 'Iran has to pay a price for this blatant attack on our people. An attack like this cannot be left without retaliation.' On March 2, Qatar shot down two Iranian Su-24 fighter jets — the first shoot-down of manned aircraft in the conflict — and intercepted 7 missiles and 5 drones. Qatar MoD stated its armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar Emiri Air Force shot down two Iranian Su-24 fighter jets and intercepted 7 ballistic missiles + 5 drones — the first confirmed air-to-air engagement of the conflict. Qatar MOD stated threats were addressed immediately upon detection per operational plans. On March 2, Qatar Emiri Air Force shot down two Iranian Su-24 fighter-bombers — the first manned aircraft destroyed in combat during the conflict. Qatar also intercepted 7 ballistic missiles and 5 drones in the same engagement. Qatar MOD stressed armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar shot down two Iranian Su-24 bombers — the first manned Iranian aircraft downed since the conflict began — while intercepting 7 ballistic missiles and 5 drones. IRGC has claimed 12 waves of attacks since war began. Mar 2: Qatar Air Force shot down 2 Iranian Su-24 Fencer tactical bombers and intercepted 7 ballistic missiles and 5 drones — first confirmed aerial kill of Iranian aircraft by a Gulf state. QatarEnergy suspends all LNG production following drone strikes on Ras Laffan and Mesaieed facilities. March 2: Qatar Emiri Air Force confirmed shoot-down of two Iranian Su-24 Fencer bombers incoming from Iran — the first Gulf state to down Iranian manned aircraft. QEAF also intercepted 7 ballistic missiles and 5 drones on the same day. Qatar MOD now deploying fighter jets over Gulf waters rather than relying solely on ground-based Patriot systems. On March 3, Qatar's Emiri Air Force shot down two Iranian SU-24 aircraft approaching from Iran — the first confirmed shootdown of manned Iranian military aircraft by a Gulf state. Qatar also intercepted multiple additional missiles and drones. Updated totals: Qatar has intercepted 101 of 104 missiles, 24 of 39 drones, and shot down 2 Iranian Su-24 bomber aircraft per Qatar News Agency (via CNN). On March 3, Qatar's defence ministry reported intercepting two ballistic missiles early Tuesday morning. March 4: Qatar Defence Ministry intercepted 10 drones and 2 cruise missiles. Al Jazeera reports volume/frequency of attacks on Qatar decreasing but disruption continues with airspace still closed. Qatari Defense Ministry confirmed a ballistic missile struck the base in the latest wave; no casualties reported. Qatar also arrested 10 suspected IRGC spies on espionage and drone-sabotage charges. Additional March 4 ballistic missile impact confirmed by Qatari officials. Qatar targeted by two ballistic missiles; one successfully intercepted. On March 6, Qatar MoD confirmed interception of a drone attack targeting the base. No damage or casualties. Qatari jets shot down two Iranian bombers approaching Al Udeid in Qatar's first aerial combat operation, per CNN exclusive citing two briefed sources. On March 6 (Day 7), Qatari air defenses intercepted another drone attack targeting Al Udeid Air Base, according to the Qatari MOD. CENTCOM reports Iran's ballistic missile attacks are down 90% and drone attacks down 83% since day one. On March 6, Qatar MOD confirmed interception of drone attack targeting Al Udeid. Iran's army warned more attacks on Kuwait and regional US bases will follow. On March 6 overnight, Qatar MOD intercepted another drone attack targeting Al Udeid. Al Jazeera's Basravi reported explosions at ~01:00 GMT. Qatar Interior Ministry confirmed Al Udeid was the target. Daily pattern of drone attempts continues. Day 7: Overnight drone attack on Al Udeid intercepted by Qatar Emiri Air Defense Forces. Interior Ministry confirmed the base was the target. On Day 5, two ballistic missiles targeted the base (one hit, one intercepted). Overnight March 5-6: Qatari air defences intercepted drone attack targeting Al Udeid. On day 5, two ballistic missiles targeted the base (one hit, one intercepted). Qatar MOD confirmed overnight drone interception targeting Al Udeid. Two ballistic missiles targeted the base on day five, with one hitting and one intercepted per Al Jazeera correspondent. Qatar MoD confirmed intercepted drone attack on Al Udeid overnight March 5-6. IRGC announced start of 23rd wave of strikes on March 6. Iran continues missile and drone attacks across the Gulf though at significantly diminished rates per CENTCOM. March 7: Qatar Defence Ministry confirmed intercepting a missile attack targeting the country. Eighth consecutive day of Iranian aerial attacks on Qatar.",
+            "detail": "Largest US military installation in the Middle East. Hosts ~10,000 US personnel, CENTCOM forward HQ, Combined Air Operations Center (CAOC). Two Iranian ballistic missiles struck the base directly. An Iranian drone destroyed the AN/FPS-132 early warning radar ($1.1B asset, 5,000 km range). Qatar intercepted 65 missiles and 12 drones total. 8 injured. Qatar confirmed 66 missiles and 12 drones fired at the country, 114 reports of falling shrapnel nationwide, 16 injured (one serious). Day 3 (March 2): Explosions continued in Doha with CNN team filming apparent interceptions overhead. Al Jazeera reports third consecutive day of Iranian retaliatory strikes targeting Qatar. March 2: Explosions heard in Doha for third day. Qatar FM spokesperson: 'Iran has to pay a price for this blatant attack on our people. An attack like this cannot be left without retaliation.' On March 2, Qatar shot down two Iranian Su-24 fighter jets — the first shoot-down of manned aircraft in the conflict — and intercepted 7 missiles and 5 drones. Qatar MoD stated its armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar Emiri Air Force shot down two Iranian Su-24 fighter jets and intercepted 7 ballistic missiles + 5 drones — the first confirmed air-to-air engagement of the conflict. Qatar MOD stated threats were addressed immediately upon detection per operational plans. On March 2, Qatar Emiri Air Force shot down two Iranian Su-24 fighter-bombers — the first manned aircraft destroyed in combat during the conflict. Qatar also intercepted 7 ballistic missiles and 5 drones in the same engagement. Qatar MOD stressed armed forces possess 'full capabilities to safeguard the state's sovereignty.' March 2: Qatar shot down two Iranian Su-24 bombers — the first manned Iranian aircraft downed since the conflict began — while intercepting 7 ballistic missiles and 5 drones. IRGC has claimed 12 waves of attacks since war began. Mar 2: Qatar Air Force shot down 2 Iranian Su-24 Fencer tactical bombers and intercepted 7 ballistic missiles and 5 drones — first confirmed aerial kill of Iranian aircraft by a Gulf state. QatarEnergy suspends all LNG production following drone strikes on Ras Laffan and Mesaieed facilities. March 2: Qatar Emiri Air Force confirmed shoot-down of two Iranian Su-24 Fencer bombers incoming from Iran — the first Gulf state to down Iranian manned aircraft. QEAF also intercepted 7 ballistic missiles and 5 drones on the same day. Qatar MOD now deploying fighter jets over Gulf waters rather than relying solely on ground-based Patriot systems. On March 3, Qatar's Emiri Air Force shot down two Iranian SU-24 aircraft approaching from Iran — the first confirmed shootdown of manned Iranian military aircraft by a Gulf state. Qatar also intercepted multiple additional missiles and drones. Updated totals: Qatar has intercepted 101 of 104 missiles, 24 of 39 drones, and shot down 2 Iranian Su-24 bomber aircraft per Qatar News Agency (via CNN). On March 3, Qatar's defence ministry reported intercepting two ballistic missiles early Tuesday morning. March 4: Qatar Defence Ministry intercepted 10 drones and 2 cruise missiles. Al Jazeera reports volume/frequency of attacks on Qatar decreasing but disruption continues with airspace still closed. Qatari Defense Ministry confirmed a ballistic missile struck the base in the latest wave; no casualties reported. Qatar also arrested 10 suspected IRGC spies on espionage and drone-sabotage charges. Additional March 4 ballistic missile impact confirmed by Qatari officials. Qatar targeted by two ballistic missiles; one successfully intercepted. On March 6, Qatar MoD confirmed interception of a drone attack targeting the base. No damage or casualties. Qatari jets shot down two Iranian bombers approaching Al Udeid in Qatar's first aerial combat operation, per CNN exclusive citing two briefed sources. On March 6 (Day 7), Qatari air defenses intercepted another drone attack targeting Al Udeid Air Base, according to the Qatari MOD. CENTCOM reports Iran's ballistic missile attacks are down 90% and drone attacks down 83% since day one. On March 6, Qatar MOD confirmed interception of drone attack targeting Al Udeid. Iran's army warned more attacks on Kuwait and regional US bases will follow. On March 6 overnight, Qatar MOD intercepted another drone attack targeting Al Udeid. Al Jazeera's Basravi reported explosions at ~01:00 GMT. Qatar Interior Ministry confirmed Al Udeid was the target. Daily pattern of drone attempts continues. Day 7: Overnight drone attack on Al Udeid intercepted by Qatar Emiri Air Defense Forces. Interior Ministry confirmed the base was the target. On Day 5, two ballistic missiles targeted the base (one hit, one intercepted). Overnight March 5-6: Qatari air defences intercepted drone attack targeting Al Udeid. On day 5, two ballistic missiles targeted the base (one hit, one intercepted). Qatar MOD confirmed overnight drone interception targeting Al Udeid. Two ballistic missiles targeted the base on day five, with one hitting and one intercepted per Al Jazeera correspondent. Qatar MoD confirmed intercepted drone attack on Al Udeid overnight March 5-6. IRGC announced start of 23rd wave of strikes on March 6. Iran continues missile and drone attacks across the Gulf though at significantly diminished rates per CENTCOM. March 7: Qatar Defence Ministry confirmed intercepting a missile attack targeting the country. Eighth consecutive day of Iranian aerial attacks on Qatar. On March 7, Qatar intercepted missile attack. Interior Ministry ordered residents to stay home, threat level high.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -2283,6 +2295,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Qatar Defence Ministry confirmed armed forces intercepted a missile attack targeting the country on Saturday March 7. Target not specified but Al Udeid has been the primary target in previous waves."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Qatar Defence Ministry said armed forces intercepted a missile attack targeting the country on Saturday. Qatar Interior Ministry issued stay-at-home order citing high security threat level."
                     }
             ],
             "sources": [
@@ -2429,6 +2445,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/7/iranian-missiles-intercepted-over-saudi-jordan-drones-launched-at-qatar"
+                    },
+                    {
+                            "name": "NBC News",
+                            "url": "https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-war-trump-dignified-transfer-us-soldiers-rcna262207"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -4087,6 +4107,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Saudi MoD confirmed interception and destruction of a drone east of Riyadh city on Saturday morning."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Saudi MOD announced interception of one drone east of Riyadh city on Saturday."
                     }
             ],
             "sources": [
@@ -4591,6 +4615,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Saudi MoD confirmed interception of a cruise missile east of al-Kharj governorate on Saturday, in addition to the ballistic missile targeting PSAB in the same area."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Saudi MOD announced interception of a cruise missile east of Al-Kharj on Friday evening, plus additional drone interception east of Riyadh on Saturday."
                     }
             ],
             "sources": [
@@ -4637,6 +4665,14 @@ const LOCATIONS = [
                     {
                             "name": "Asharq Al-Awsat",
                             "url": "https://english.aawsat.com/gulf/5248449-uae-defenses-destroy-109-drones-9-ballistic-missiles-iran"
+                    },
+                    {
+                            "name": "Saudi Gazette",
+                            "url": "https://saudigazette.com.sa/article/659514/saudi-arabia/saudi-intercepts-16-drones-targeting-shaybah-field-missile-toward-prince-sultan-air-base"
+                    },
+                    {
+                            "name": "Arab News",
+                            "url": "https://www.arabnews.com/node/2635432/saudi-arabia"
                     }
             ],
             "dateAdded": "2026-03-05"
@@ -4650,7 +4686,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🛢️",
             "type": "Oil field — drone interception",
-            "detail": "Saudi air defenses intercepted and destroyed 16 drones in four waves targeting the strategic Shaybah oil field early Saturday March 7. This is the first attempted attack on Shaybah since the war began Feb 28. All drones were neutralized over the Empty Quarter with no confirmed damage to the facility. On March 7, Saudi MOD confirmed intercepting and destroying 16 drones heading toward Shaybah, the largest single wave targeting the oil field. On March 7, 16 drones were launched in four waves toward Shaybah — the first attack on the field since the war began. All 16 intercepted and destroyed in the Empty Quarter. March 7: Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the largest single-day drone barrage against this facility. On March 7, Saudi air defenses intercepted and destroyed 16-20 drones in 4-5 waves heading toward the strategic Shaybah field, the first direct attempted attack on this 1 million bpd upstream asset since the war began.",
+            "detail": "Saudi air defenses intercepted and destroyed 16 drones in four waves targeting the strategic Shaybah oil field early Saturday March 7. This is the first attempted attack on Shaybah since the war began Feb 28. All drones were neutralized over the Empty Quarter with no confirmed damage to the facility. On March 7, Saudi MOD confirmed intercepting and destroying 16 drones heading toward Shaybah, the largest single wave targeting the oil field. On March 7, 16 drones were launched in four waves toward Shaybah — the first attack on the field since the war began. All 16 intercepted and destroyed in the Empty Quarter. March 7: Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the largest single-day drone barrage against this facility. On March 7, Saudi air defenses intercepted and destroyed 16-20 drones in 4-5 waves heading toward the strategic Shaybah field, the first direct attempted attack on this 1 million bpd upstream asset since the war began. On March 7, Saudi MOD reported intercepting 16 drones in four separate waves targeting Shaybah, a significant escalation in targeting of this field.",
             "incidents": [
                     {
                             "date": "2026-03-07",
@@ -4671,6 +4707,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Saudi air defenses intercepted and destroyed 16-20 drones in 4-5 separate waves heading toward Shaybah oil field over the Empty Quarter, announced by MoD spokesperson Maj. Gen. Turki Al-Maliki. No impacts at the field. First direct attempted attack on a key upstream Saudi oil asset since the war began."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Saudi MOD announced interception of 16 drones in multiple waves (4+6+4+2) heading toward Shaybah oil field in the Empty Quarter throughout Saturday. All destroyed before reaching the facility."
                     }
             ],
             "sources": [
@@ -4701,6 +4741,14 @@ const LOCATIONS = [
                     {
                             "name": "BSS/AFP",
                             "url": "https://www.bssnews.net/international/366556"
+                    },
+                    {
+                            "name": "SANA",
+                            "url": "https://sana.sy/en/international/2300919/"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/7/iranian-missiles-intercepted-over-saudi-jordan-drones-launched-at-qatar"
                     }
             ],
             "dateAdded": "2026-03-07"
