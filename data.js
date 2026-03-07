@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-07T06:29:49.242Z",
+    "lastUpdated": "2026-03-07T07:24:59.101Z",
     "casualties": {
         "killed": 21,
         "injured": 232
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "War enters second week (Day 8). Trump demands Iran's 'unconditional surrender'. Iran continues drone/missile strikes on Gulf despite 90% drop in ballistic missile fire and 83% drop in drone attacks since Day 1. CENTCOM: US struck 3,000+ targets in Iran, destroyed 43 warships. Bahrain total: 84 missiles, 147 drones intercepted. Kuwait total: 212 missiles, 394 drones intercepted. UAE intercepted 9 ballistic missiles and 109 drones on Friday alone.",
-    "totalBarrage": "Iran has launched 500+ missiles and 2,000+ drones in first week per CENTCOM Adm. Cooper; IRGC announced 23rd wave of strikes on Friday",
-    "intercepted": "Bahrain: 84 missiles, 147 drones. Kuwait: 212 missiles, 394 drones. UAE: 186+ missiles, 812+ drones tracked. Qatar: 104 missiles, 39 drones tracked. US has struck/sunk 43 Iranian warships including drone carrier Shahid Bagheri."
+    "summary": "War enters second week (Day 8). Trump demands Iran's 'unconditional surrender.' IRGC announces 23rd wave of strikes. Iran-backed Iraqi militias expand attacks to oil fields and airports in Basra and Baghdad. Erbil hotels and airport under repeated drone fire after US embassy warning. Ballistic missile fire down 90% and drone attacks down 83% from Day 1 per CENTCOM, but attacks continue across the region.",
+    "totalBarrage": "As of March 6: UAE targeted by 1,184 drones + 205 missiles; Kuwait by 394 drones + 212 missiles; Qatar by 63 drones + 117 missiles + 2 aircraft; Bahrain by 147 drones + 84 missiles (per FDD Long War Journal citing government statements)",
+    "intercepted": "UAE intercepted 1,110 of 1,184 drones and 198 of 205 missiles. Qatar intercepted 47 drones, 113 missiles, 2 aircraft. Bahrain intercepted 147 drones + 84 missiles. CENTCOM reports ballistic missile attacks down 90% and drone attacks down 83% from Day 1."
 };
 
 const LOCATIONS = [
@@ -32,7 +32,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US/UAE Joint Air Base — Primary Target",
-            "detail": "Primary US military air base in the UAE. Hosts ~5,000 US troops, THAAD & Patriot batteries, F-22s, RQ-4 Global Hawks, U-2s, E-3 AWACS. Iran's explicit primary target — they conducted a full-scale simulation attack on a replica of this base on Feb 24, days before the real strike.",
+            "detail": "Primary US military air base in the UAE. Hosts ~5,000 US troops, THAAD & Patriot batteries, F-22s, RQ-4 Global Hawks, U-2s, E-3 AWACS. Iran's explicit primary target — they conducted a full-scale simulation attack on a replica of this base on Feb 24, days before the real strike. On March 6, the IRGC claimed a new retaliatory strike on Al Dhafra using drones and precision missiles, citing the US strike on Minab school as justification.",
             "incidents": [
                     {
                             "date": "2026-02-24",
@@ -45,6 +45,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-01",
                             "text": "Sixth wave of Iranian strikes continued targeting the base and surrounding areas."
+                    },
+                    {
+                            "date": "2026-03-06",
+                            "text": "IRGC claimed retaliatory strike on Al Dhafra Air Base 'using drones and precision missiles' in response to US strike on Minab girls' school. IRGC stated on state TV: 'Al-Dhafra air base, belonging to American terrorists in the region, was targeted.'"
                     }
             ],
             "sources": [
@@ -63,6 +67,10 @@ const LOCATIONS = [
                     {
                             "name": "The Week",
                             "url": "https://www.theweek.in/news/middle-east/2026/03/01/iran-launches-sixth-wave-of-strikes-on-dubai-bahrain-and-qatars-us-military-bases-uae-defence-intercepts-137-missiles.html"
+                    },
+                    {
+                            "name": "Times of Israel (citing IRGC state TV)",
+                            "url": "https://www.timesofisrael.com/liveblog_entry/irgc-claims-it-targeted-us-base-in-uae-over-school-strike/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -5114,11 +5122,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🔥",
             "type": "Oil company compound drone strike",
-            "detail": "Fire broke out in offices and warehouses belonging to US firms Halliburton and KBR after a drone attack in Basra targeted a compound housing employees of foreign oil companies on March 6. The compound is in a separate location from the Khor al-Zubair port oil tanker strike already tracked.",
+            "detail": "Fire broke out in offices and warehouses belonging to US firms Halliburton and KBR after a drone attack in Basra targeted a compound housing employees of foreign oil companies on March 6. The compound is in a separate location from the Khor al-Zubair port oil tanker strike already tracked. Additional drone attacks struck the broader Burjesia energy corridor on March 6. Reports indicate foreign oil company personnel evacuated the area.",
             "incidents": [
                     {
                             "date": "2026-03-06",
                             "text": "Drone attack caused fire at Halliburton and KBR offices and warehouses in Basra compound housing foreign oil company employees."
+                    },
+                    {
+                            "date": "2026-03-06",
+                            "text": "Broader Burjesia area saw second round of drone attacks on same day. Two drones intercepted over complex but third penetrated defenses. Foreign oil company staff reportedly evacuated compound under cover of darkness."
                     }
             ],
             "sources": [
@@ -5129,6 +5141,114 @@ const LOCATIONS = [
                     {
                             "name": "Wikipedia - 2026 Iran War",
                             "url": "https://en.wikipedia.org/wiki/2026_Iran_war"
+                    },
+                    {
+                            "name": "Jerusalem Post (citing Reuters)",
+                            "url": "https://www.jpost.com/middle-east/iran-news/article-889123"
+                    }
+            ],
+            "dateAdded": "2026-03-07"
+    },
+    {
+            "name": "Baker Hughes / Burjesia Energy City (Drone Strike), Zubair, Basra, Iraq",
+            "lat": 30.383,
+            "lng": 47.717,
+            "country": "Iraq",
+            "city": "Basra",
+            "severity": "critical",
+            "icon": "🛢️",
+            "type": "Energy Infrastructure Strike",
+            "detail": "A drone struck the Baker Hughes Energy City complex in the Burjesia area of Zubair district, west of Basra, on March 6. Two drones were shot down over the facility but a third penetrated defenses and hit the site. The facility is a specialized hub for solar energy, gas processing, and oil pipeline technology. No casualties reported but material damage is being assessed. This was the second strike on the Burjesia complex on the same day.",
+            "incidents": [
+                    {
+                            "date": "2026-03-06",
+                            "text": "First drone attack on Burjesia oil complex struck Baker Hughes Energy City facility. Separate from Halliburton/KBR compound fire nearby."
+                    },
+                    {
+                            "date": "2026-03-06",
+                            "text": "Second drone attack: two drones intercepted over Burjesia complex, third penetrated defenses and struck the site. No casualties; damage under assessment."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "AFP via BSS/Free Malaysia Today",
+                            "url": "https://www.freemalaysiatoday.com/category/world/2026/03/07/drones-hit-oil-sites-airports-in-iraq"
+                    },
+                    {
+                            "name": "Iraqi News",
+                            "url": "https://www.iraqinews.com/iraq/drone-strikes-target-u-s-energy-firm-and-international-airport-in-basra/"
+                    },
+                    {
+                            "name": "FDD Long War Journal",
+                            "url": "https://www.longwarjournal.org/archives/2026/03/iran-and-proxy-militias-strike-energy-infrastructure-us-bases-and-gulf-capitals-on-march-6.php"
+                    },
+                    {
+                            "name": "Times of Israel (citing AFP)",
+                            "url": "https://www.timesofisrael.com/liveblog_entry/drones-hit-oil-fields-airport-in-iraqs-basra-security-official-to-afp/"
+                    }
+            ],
+            "dateAdded": "2026-03-07"
+    },
+    {
+            "name": "Basra International Airport (Drone Strike on Cargo Terminal), Iraq",
+            "lat": 30.5491,
+            "lng": 47.6621,
+            "country": "Iraq",
+            "city": "Basra",
+            "severity": "critical",
+            "icon": "✈️",
+            "type": "Airport Strike",
+            "detail": "A drone crashed into the cargo terminal at Basra International Airport on March 6. The airport houses a military section which was also targeted. This was part of a broader pattern of drone strikes on Basra infrastructure including oil facilities on the same day.",
+            "incidents": [
+                    {
+                            "date": "2026-03-06",
+                            "text": "Drone crashed into cargo terminal at Basra International Airport. Part of coordinated drone attacks on Basra infrastructure."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "AFP via Times of Israel",
+                            "url": "https://www.timesofisrael.com/liveblog_entry/drones-hit-oil-fields-airport-in-iraqs-basra-security-official-to-afp/"
+                    },
+                    {
+                            "name": "AFP via BSS",
+                            "url": "https://www.bssnews.net/international/366535"
+                    },
+                    {
+                            "name": "FDD Long War Journal",
+                            "url": "https://www.longwarjournal.org/archives/2026/03/iran-and-proxy-militias-strike-energy-infrastructure-us-bases-and-gulf-capitals-on-march-6.php"
+                    }
+            ],
+            "dateAdded": "2026-03-07"
+    },
+    {
+            "name": "Rumaila Oil Field (Drone Strike), Basra, Iraq",
+            "lat": 30.45,
+            "lng": 47.33,
+            "country": "Iraq",
+            "city": "Basra",
+            "severity": "critical",
+            "icon": "🛢️",
+            "type": "Oil Field Strike",
+            "detail": "A drone struck the Rumaila oil field on March 6, one of Iraq's largest oil-producing sites operated by BP and Iraqi state oil agencies. The strike was part of a coordinated series of attacks by Iranian-backed militias on critical energy infrastructure in Basra province.",
+            "incidents": [
+                    {
+                            "date": "2026-03-06",
+                            "text": "Drone struck Rumaila oil field where BP operates. Part of coordinated militia drone attacks on Basra energy infrastructure."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "AFP via Times of Israel",
+                            "url": "https://www.timesofisrael.com/liveblog_entry/drones-hit-oil-fields-airport-in-iraqs-basra-security-official-to-afp/"
+                    },
+                    {
+                            "name": "AFP via New Arab",
+                            "url": "https://www.newarab.com/news/drones-hit-oil-sites-target-militants-iraq"
+                    },
+                    {
+                            "name": "FDD Long War Journal",
+                            "url": "https://www.longwarjournal.org/archives/2026/03/iran-and-proxy-militias-strike-energy-infrastructure-us-bases-and-gulf-capitals-on-march-6.php"
                     }
             ],
             "dateAdded": "2026-03-07"
