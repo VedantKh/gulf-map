@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-07T05:01:09.531Z",
+    "lastUpdated": "2026-03-07T05:48:20.056Z",
     "casualties": {
         "killed": 21,
         "injured": 232
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 8 of the conflict. Trump demands Iran's 'unconditional surrender.' Iran continues drone and missile strikes on Gulf and Israel though at significantly reduced rates. CENTCOM head Brad Cooper accused Iran of deliberately firing 7 attack drones at civilian neighborhoods in Bahrain. Russia reportedly providing Iran intelligence on US troop positions. IRGC announced its 23rd wave of strikes. Qatar partially reopened airspace for evacuation/cargo flights. 10 suspected Iranian agents arrested in Qatar for planning sabotage. Iran's Foreign Minister rejected ceasefire or new talks.",
-    "totalBarrage": "Iran has fired over 500 ballistic/naval missiles and almost 2,000 drones since Feb 28 (per Fars News/CENTCOM as of March 5). Bahrain Defence Force total: 78 missiles and 143 drones destroyed. UAE total: 189+ ballistic missiles, 8 cruise missiles, 941+ drones detected (per INSS Israel).",
-    "intercepted": "US says Iran's ballistic missile attacks have fallen 90% and drone attacks dropped 83% since first day of conflict. Gulf state interceptor stockpiles under strain — Zelenskyy noted Gulf states have used over 800 Patriot missiles in one week, more than Ukraine received in four years."
+    "summary": "Day 8 (March 7): War enters second week. IRGC launches 23rd wave of Operation True Promise 4 targeting US bases in Bahrain, Kuwait, and Jordan with new-generation missiles. Saudi Arabia intercepts 16 drones at Shaybah oil field and missiles at PSAB. Bahrain sirens sound again as BDF interception tally rises to 84 missiles and 147 drones. Iran-backed militia drone strikes Rotana hotel in Erbil. US CENTCOM says it has struck 3,000+ targets in Iran. Iran ballistic missile launches down 90% from war's first day per CENTCOM.",
+    "totalBarrage": "Iran has fired over 500 ballistic/naval missiles and ~2,000 drones since Feb 28 (per Fars News Agency, Mar 5). IRGC now on 23rd wave of strikes.",
+    "intercepted": "Bahrain BDF: 84 missiles, 147 drones intercepted. UAE within last 24h: 125+ drones and 6 ballistic missiles intercepted. Saudi: 16 drones at Shaybah + missiles at PSAB/Al-Kharj intercepted on Mar 7."
 };
 
 const LOCATIONS = [
@@ -1278,7 +1278,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US Naval Base — Missile & Drone Strike",
-            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted. March 2: Bahrain activated new air raid alerts, closed Shaikh Khalifa bridge. US Embassy closed, warned Americans to avoid Manama hotels. Bahrain repelled new wave of attacks on March 3. Total interceptions now 70 ballistic missiles and 76 drones (up from 45 missiles and 9 drones on Day 1). Sirens activated early Tuesday. On March 5, Bahrain Defence Force updated its interception tally to 75 missiles and 123 drones destroyed since the start of the conflict, up from 73 missiles and 91 drones reported on March 3. Bahrain Defence Force cumulative interception total updated to 75 missiles and 123 drones destroyed. Loud explosions continued on March 5, described by residents as the 'loudest so far during the war.' March 5: BDF reports total 75 missiles and 123 drones destroyed since start of conflict. New explosions heard. Mar 5: Bahrain Defence Force updates total interceptions to 75 missiles and 123 drones since conflict began. New explosions heard across the country. Bahrain Defence Force reports cumulative interception of 75 missiles and 123 drones since the start of Iranian aggression. UK temporarily withdrawing some Bahrain embassy staff citing serious security situation. Bahrain Defence Force cumulative interception total: 75 missiles and 123 drones destroyed since start of conflict. Bahrain Defence Force reports cumulative intercepts of 75 missiles and 123 drones since conflict began. Bahrain Defence Force updated cumulative interception figures to 78 missiles and 143 drones destroyed as of March 6. Public urged to remain sheltered. Sirens sounded in Manama on March 6 with multiple explosions heard. CENTCOM head Cooper warned Iran's targeting of Bahrain civilians 'will not go unanswered.'",
+            "detail": "Naval Support Activity Bahrain — HQ of US Naval Forces Central Command (NAVCENT) and US 5th Fleet. Hosts ~9,000 US military personnel. Iran struck with ballistic missiles and Shahed drones. Radar/satcom dome destroyed, warehouse damaged. NAVCENT concluded Juffair is 'no longer safe for US personnel.' US Embassy issued security alert. Bahrain Defense Force confirmed intercepting 45 missiles and 9 drones. Base sustained damage to large building. Sirens continued into Sunday afternoon. Bahrain intercepted 45 missiles and 9 drones. Satellite imagery published by WaPo showed smoke rising from damage at the US naval base. Breaking Defense confirmed video showing parts of 5th Fleet HQ were hit in initial attack. CNN verified video of Shahed drone directly hitting radar dome at the base. Bahrain confirmed intercepting 45 missiles and 9 drones total. DoDEA school on base canceled in-person classes for the week. On March 2, sirens sounded again over Bahrain. Al Jazeera reports 1 person killed in Bahrain from Iranian attacks — the first confirmed death in the country. Reports of new drone strikes overnight against the base. March 2: Bahrain Defence Force updated total interceptions to 61 missiles and 34 drones (up from 45/9). Ongoing Iranian targeting of the area. March 2: Bahrain MOI activated air raid alerts, closed Shaikh Khalifa bridge, and urged residents to shelter. US Embassy warned hotels in Manama could be targeted. March 2: Bahrain activated new air raid alerts, closed Shaikh Khalifa bridge. US Embassy closed, warned Americans to avoid Manama hotels. Bahrain repelled new wave of attacks on March 3. Total interceptions now 70 ballistic missiles and 76 drones (up from 45 missiles and 9 drones on Day 1). Sirens activated early Tuesday. On March 5, Bahrain Defence Force updated its interception tally to 75 missiles and 123 drones destroyed since the start of the conflict, up from 73 missiles and 91 drones reported on March 3. Bahrain Defence Force cumulative interception total updated to 75 missiles and 123 drones destroyed. Loud explosions continued on March 5, described by residents as the 'loudest so far during the war.' March 5: BDF reports total 75 missiles and 123 drones destroyed since start of conflict. New explosions heard. Mar 5: Bahrain Defence Force updates total interceptions to 75 missiles and 123 drones since conflict began. New explosions heard across the country. Bahrain Defence Force reports cumulative interception of 75 missiles and 123 drones since the start of Iranian aggression. UK temporarily withdrawing some Bahrain embassy staff citing serious security situation. Bahrain Defence Force cumulative interception total: 75 missiles and 123 drones destroyed since start of conflict. Bahrain Defence Force reports cumulative intercepts of 75 missiles and 123 drones since conflict began. Bahrain Defence Force updated cumulative interception figures to 78 missiles and 143 drones destroyed as of March 6. Public urged to remain sheltered. Sirens sounded in Manama on March 6 with multiple explosions heard. CENTCOM head Cooper warned Iran's targeting of Bahrain civilians 'will not go unanswered.' March 7: Bahrain sirens sounded again early Saturday. BDF total interceptions now 84 missiles, 147 drones. IRGC claims Juffair targeted in 23rd wave.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1359,6 +1359,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-06",
                             "text": "Air raid sirens sounded in Manama; multiple explosions heard. Interior ministry urged residents to shelter. CENTCOM warned Iran's actions 'will not go unanswered.'"
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Air-raid sirens sounded again early Saturday morning across Bahrain. Interior Ministry urged residents to head to nearest safe place. IRGC 23rd wave of Operation True Promise 4 claimed targeting Juffair and Isa AB. BDF reports cumulative interceptions now at 84 missiles and 147 drones since the war began (up from 78 missiles/143 drones on March 6)."
                     }
             ],
             "sources": [
@@ -1445,6 +1449,14 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/6/iran-war-what-is-happening-on-day-seven-of-us-israel-attacks"
+                    },
+                    {
+                            "name": "CNN",
+                            "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-06-26"
+                    },
+                    {
+                            "name": "ANI (citing Press TV/IRGC)",
+                            "url": "https://aninews.in/news/world/middle-east/flawless-execution-irgc-launches-23rd-wave-of-strikes-against-us-bases-and-occupied-territories20260307085645/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1526,7 +1538,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Bahrain Air Force / US Support Base",
-            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3). March 4: US ordered non-emergency departure from Bahrain, upgrading from authorized departure. Embassy warned US citizens that hotels in Manama may be targeted. On March 4, the IRGC claimed a major barrage (Wave 15 of True Promise 4) targeting Isa Air Base with 20 drones and 3 missiles, claiming the main US command building and fuel tanks were destroyed. Upgraded to CRITICAL based on IRGC official statement of confirmed projectile impacts; independent verification pending. On March 4, IRGC confirmed a dawn drone/missile attack on the US air base in Sheikh Isa/Sakhir area. This follows prior waves of attacks on the facility. Ongoing March 4 attacks: Iranian drones continue targeting Bahraini military infrastructure in the Sakhir area as IRGC announces 17th wave of True Promise IV. Bahrain Defence Force reports 73 missiles and 91 drones destroyed since conflict began. IRGC claimed large-scale attack with 20 drones and 3 missiles targeting the Sheikh Isa area US air base (IRNA). Al Jazeera published eyewitness video of the suspected attack. March 4: IRGC claims waves 14, 15, and 17 of True Promise 4 struck Isa Air Base with 20+ drones and 3+ missiles, claiming destruction of command centre and fuel tanks. Bahrain has not independently confirmed extent of damage.",
+            "detail": "Royal Bahraini Air Force headquarters. Hosts US military operations supporting 5th Fleet. Air defense activity reported during Iranian barrage. Bahrain air defenses actively engaged from Isa Air Base intercepting 45 missiles and 9 drones. Confirmed debris fell across multiple areas. Upgraded to FALLING DEBRIS. March 3: IRGC via IRNA claimed large-scale dawn attack (20 drones, 3 missiles) targeting the US air base. Bahrain sirens activated early Tuesday. Damage claims unverified independently. CNN reports sirens sounding over Bahrain early Tuesday March 3, with Interior Ministry activating air raid alerts. Updated Bahrain interception count: 70 missiles and 76 drones intercepted as of March 3, per Bahrain Defence Force via CNN. Bahrain Defence Force updated total interceptions to 70 ballistic missiles and 76 drones as of March 3. Updated Bahrain interception totals as of March 3: 70 missiles and 76 drones intercepted per Bahrain Defence Force (via CNN). Sirens continued Tuesday morning. Bahrain Defence Force updated interception tally on March 3: 73 missiles and 91 drones destroyed since conflict began. Bahrain's updated interception figures as of March 3: 73 missiles and 91 drones destroyed since Feb 28. Bahrain Defence Force updated interception figures: 73 missiles and 91 drones destroyed since start of conflict (Al Jazeera, March 3). March 4: US ordered non-emergency departure from Bahrain, upgrading from authorized departure. Embassy warned US citizens that hotels in Manama may be targeted. On March 4, the IRGC claimed a major barrage (Wave 15 of True Promise 4) targeting Isa Air Base with 20 drones and 3 missiles, claiming the main US command building and fuel tanks were destroyed. Upgraded to CRITICAL based on IRGC official statement of confirmed projectile impacts; independent verification pending. On March 4, IRGC confirmed a dawn drone/missile attack on the US air base in Sheikh Isa/Sakhir area. This follows prior waves of attacks on the facility. Ongoing March 4 attacks: Iranian drones continue targeting Bahraini military infrastructure in the Sakhir area as IRGC announces 17th wave of True Promise IV. Bahrain Defence Force reports 73 missiles and 91 drones destroyed since conflict began. IRGC claimed large-scale attack with 20 drones and 3 missiles targeting the Sheikh Isa area US air base (IRNA). Al Jazeera published eyewitness video of the suspected attack. March 4: IRGC claims waves 14, 15, and 17 of True Promise 4 struck Isa Air Base with 20+ drones and 3+ missiles, claiming destruction of command centre and fuel tanks. Bahrain has not independently confirmed extent of damage. March 7: IRGC 23rd wave of strikes claimed targeting Isa Air Base. Bahrain-wide sirens sounded early Saturday.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -1595,6 +1607,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "US air base at Sheikh Isa attacked again using drones and missiles per Alma Research Center day 4 report."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "IRGC announced 23rd wave of Operation True Promise 4 claiming strikes on 'Sheikh Isa' base in Bahrain using new-generation solid-fuel and liquid-fuel missiles. Bahrain sirens sounded early Saturday and BDF interception tally increased."
                     }
             ],
             "sources": [
@@ -1649,6 +1665,14 @@ const LOCATIONS = [
                     {
                             "name": "Alma Research Center",
                             "url": "https://israel-alma.org/daily-report-the-second-iran-war-march-4-2026/"
+                    },
+                    {
+                            "name": "Tribune India (ANI)",
+                            "url": "https://www.tribuneindia.com/news/world/flawless-execution-irgc-launches-23rd-wave-of-strikes-against-us-bases-and-occupied-territories/"
+                    },
+                    {
+                            "name": "CNN",
+                            "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-06-26"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -2842,7 +2866,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Coalition Air Base — Major Missile Strike",
-            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation). March 2: CENTCOM confirmed 4th US service member died from injuries sustained in Iran's initial attacks on Kuwait. 'Major combat operations continue.' New wave of missiles and drones targeted Kuwait airspace early March 3. Kuwait total interceptions: 178 ballistic missiles and 384 drones. March 4: IRGC claims 230-drone barrage targeted Ali Al Salem among other US bases. Kuwait defenses continue interceptions. Volume of attacks reportedly decreasing but disruption continues. March 4: IRGC claimed 230-drone operation (17th wave) targeted Ali Al Salem and Camp Arifjan in Kuwait alongside bases in Erbil, Iraq. On March 4, the IRGC confirmed it had fired 230 drones at US facilities including Ali Al Salem, describing the attacks as its 'first powerful steps.' On March 4, IRGC claimed firing 230 drones at multiple US facilities including Ali Al Salem. Kuwait military confirmed intercepting an active new wave of missiles and drones in its airspace late on March 4. IRGC on March 4 specifically named Ali Al Salem as a target in its 230-drone launch. Kuwait military confirmed ongoing interceptions of a wave of missiles and drones. On March 4, the IRGC confirmed it fired 230 drones at several US facilities including Ali Al Salem, describing the attacks as among its 'first powerful steps' in the war. Late March 5 / early March 6: Kuwait faced continued barrage of Iranian attacks, with Kuwaiti army confirming air defenses intercepting projectiles in its airspace. Videos circulated showing a southern Kuwaiti air base in flames. On March 6, Al Jazeera verified video of a projectile exploding near the base. Continued waves of Iranian missiles and drones targeting the installation. Kuwait MoD reported cumulative interceptions of 212 ballistic missiles and 394 drones as of March 6. On March 6, Iran's army explicitly confirmed ongoing large-scale drone attacks on US bases in Kuwait and vowed continued strikes 'in the coming hours.' On March 6, Iran's army announced further drone attacks on US bases in Kuwait, vowing continuation. Kuwait army confirmed ongoing interceptions of hostile attacks in national airspace. On March 6, Iran announced another wave of drones targeting US bases in Kuwait. Kuwait's army confirmed air defences engaging hostile attacks in its airspace. March 6: Iran army announced ongoing drone attacks on US bases in Kuwait. Kuwait army confirmed interceptions of hostile attacks breaching airspace. Kuwait MOD cumulative totals as of Day 6: 212 ballistic missiles and 394 drones detected and intercepted. On March 6, Iran's army confirmed via state TV launching 'various types of destructive drones' at US military bases in Kuwait 'in large numbers,' warning 'these attacks will continue in the coming hours.' Kuwait army confirmed active interceptions. Iran's army publicly confirmed ongoing large-scale drone attacks on US bases in Kuwait on March 6, with state TV warning attacks will continue. Iran's army confirmed on March 6 that it launched large-scale drone attacks on US bases in Kuwait, with the Kuwaiti army confirming ongoing interceptions. Kuwait's army confirmed ongoing interception of hostile attacks on March 6. Iran's army warned via state TV that large-scale drone attacks on US bases in Kuwait will continue in coming hours. Iran's army confirmed launching new wave of drones at US bases in Kuwait on March 6, vowing continued attacks. Kuwait reports 67 soldiers injured over the past week. On March 6, Iran's army announced continued drone strikes targeting US bases in Kuwait. Kuwait's army confirmed air defences were dealing with hostile missile and drone attacks breaching its airspace. IRGC confirmed Ali Al Salem was among targets in its 230-drone barrage on March 5. Iran announced another wave of drones targeting US bases in Kuwait on March 6.",
+            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation). March 2: CENTCOM confirmed 4th US service member died from injuries sustained in Iran's initial attacks on Kuwait. 'Major combat operations continue.' New wave of missiles and drones targeted Kuwait airspace early March 3. Kuwait total interceptions: 178 ballistic missiles and 384 drones. March 4: IRGC claims 230-drone barrage targeted Ali Al Salem among other US bases. Kuwait defenses continue interceptions. Volume of attacks reportedly decreasing but disruption continues. March 4: IRGC claimed 230-drone operation (17th wave) targeted Ali Al Salem and Camp Arifjan in Kuwait alongside bases in Erbil, Iraq. On March 4, the IRGC confirmed it had fired 230 drones at US facilities including Ali Al Salem, describing the attacks as its 'first powerful steps.' On March 4, IRGC claimed firing 230 drones at multiple US facilities including Ali Al Salem. Kuwait military confirmed intercepting an active new wave of missiles and drones in its airspace late on March 4. IRGC on March 4 specifically named Ali Al Salem as a target in its 230-drone launch. Kuwait military confirmed ongoing interceptions of a wave of missiles and drones. On March 4, the IRGC confirmed it fired 230 drones at several US facilities including Ali Al Salem, describing the attacks as among its 'first powerful steps' in the war. Late March 5 / early March 6: Kuwait faced continued barrage of Iranian attacks, with Kuwaiti army confirming air defenses intercepting projectiles in its airspace. Videos circulated showing a southern Kuwaiti air base in flames. On March 6, Al Jazeera verified video of a projectile exploding near the base. Continued waves of Iranian missiles and drones targeting the installation. Kuwait MoD reported cumulative interceptions of 212 ballistic missiles and 394 drones as of March 6. On March 6, Iran's army explicitly confirmed ongoing large-scale drone attacks on US bases in Kuwait and vowed continued strikes 'in the coming hours.' On March 6, Iran's army announced further drone attacks on US bases in Kuwait, vowing continuation. Kuwait army confirmed ongoing interceptions of hostile attacks in national airspace. On March 6, Iran announced another wave of drones targeting US bases in Kuwait. Kuwait's army confirmed air defences engaging hostile attacks in its airspace. March 6: Iran army announced ongoing drone attacks on US bases in Kuwait. Kuwait army confirmed interceptions of hostile attacks breaching airspace. Kuwait MOD cumulative totals as of Day 6: 212 ballistic missiles and 394 drones detected and intercepted. On March 6, Iran's army confirmed via state TV launching 'various types of destructive drones' at US military bases in Kuwait 'in large numbers,' warning 'these attacks will continue in the coming hours.' Kuwait army confirmed active interceptions. Iran's army publicly confirmed ongoing large-scale drone attacks on US bases in Kuwait on March 6, with state TV warning attacks will continue. Iran's army confirmed on March 6 that it launched large-scale drone attacks on US bases in Kuwait, with the Kuwaiti army confirming ongoing interceptions. Kuwait's army confirmed ongoing interception of hostile attacks on March 6. Iran's army warned via state TV that large-scale drone attacks on US bases in Kuwait will continue in coming hours. Iran's army confirmed launching new wave of drones at US bases in Kuwait on March 6, vowing continued attacks. Kuwait reports 67 soldiers injured over the past week. On March 6, Iran's army announced continued drone strikes targeting US bases in Kuwait. Kuwait's army confirmed air defences were dealing with hostile missile and drone attacks breaching its airspace. IRGC confirmed Ali Al Salem was among targets in its 230-drone barrage on March 5. Iran announced another wave of drones targeting US bases in Kuwait on March 6. March 7: IRGC 23rd wave claimed targeting Ali al-Salem with new-generation missiles and drones.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -2963,6 +2987,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-06",
                             "text": "Iran's armed forces announced on Friday a new wave of drones targeting US bases in Kuwait including Ali Al Salem, stating 'these attacks will continue in the coming hours' (Iranian state TV via Al Jazeera)."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "IRGC announced 23rd wave of Operation True Promise 4 claiming strikes on Ali al-Salem Air Base in Kuwait using combined drone and missile attacks."
                     }
             ],
             "sources": [
@@ -3057,6 +3085,10 @@ const LOCATIONS = [
                     {
                             "name": "Euronews",
                             "url": "https://www.euronews.com/2026/03/06/israel-launches-new-strikes-on-iran-and-lebanon-as-the-us-warns-of-intensifying-attacks"
+                    },
+                    {
+                            "name": "Tribune India (ANI)",
+                            "url": "https://www.tribuneindia.com/news/world/flawless-execution-irgc-launches-23rd-wave-of-strikes-against-us-bases-and-occupied-territories/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -3774,7 +3806,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US/Saudi Air Base — Missile & Drone Strike",
-            "detail": "Major US military air base ~60 km south of Riyadh. Hosts US THAAD, Patriot, KC-135 tankers, E-3G AWACS. IRGC claimed they 'precisely hit' the base. Saudi Arabia said air defenses intercepted missiles near the base. Reports confirm impacts on base infrastructure. On March 3, Saudi Defense Ministry reported intercepting 8 drones near Riyadh and Al-Kharj, in the vicinity of PSAB. On March 3, 8 drones intercepted and destroyed near Riyadh and Al-Kharj per Saudi MoD spokesman Maj-Gen Turki Al-Maliki. No damage or casualties reported from interceptions. On March 3, Saudi defense ministry confirmed 8 drones intercepted near Riyadh and Al-Kharj (near PSAB). CNN noted Prince Sultan Air Base is located close to Al-Kharj. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial area near PSAB, according to MoD spokesperson Turki Al-Maliki via SPA. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial/military area where PSAB is located. Saudi MOD spokesperson Maj. Gen. Turki Al-Maliki confirmed all threats were neutralized. March 5: 3 cruise missiles and 3 drones intercepted near Al-Kharj. March 4: 9 drones and 2 additional cruise missiles neutralized near Riyadh/Al-Kharj. On Mar 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones near Al-Kharj, defending PSAB and surrounding infrastructure. On March 6, three ballistic missiles targeting the base were intercepted before landing as part of a wider Iranian campaign against Gulf states. Three ballistic missiles targeting PSAB intercepted on March 6 as Iran widened its campaign. On March 6, Saudi MOD announced interception of 3 ballistic missiles targeting PSAB plus additional drone and cruise missile interceptions east of Al-Kharj. This is the continued targeting of the key US military installation. CNN satellite imagery from March 1 shows smoke rising from compound near PSAB where THAAD radar was previously stationed. Saudi MOD confirmed intercepting cruise missile and three drones on March 6.",
+            "detail": "Major US military air base ~60 km south of Riyadh. Hosts US THAAD, Patriot, KC-135 tankers, E-3G AWACS. IRGC claimed they 'precisely hit' the base. Saudi Arabia said air defenses intercepted missiles near the base. Reports confirm impacts on base infrastructure. On March 3, Saudi Defense Ministry reported intercepting 8 drones near Riyadh and Al-Kharj, in the vicinity of PSAB. On March 3, 8 drones intercepted and destroyed near Riyadh and Al-Kharj per Saudi MoD spokesman Maj-Gen Turki Al-Maliki. No damage or casualties reported from interceptions. On March 3, Saudi defense ministry confirmed 8 drones intercepted near Riyadh and Al-Kharj (near PSAB). CNN noted Prince Sultan Air Base is located close to Al-Kharj. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial area near PSAB, according to MoD spokesperson Turki Al-Maliki via SPA. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial/military area where PSAB is located. Saudi MOD spokesperson Maj. Gen. Turki Al-Maliki confirmed all threats were neutralized. March 5: 3 cruise missiles and 3 drones intercepted near Al-Kharj. March 4: 9 drones and 2 additional cruise missiles neutralized near Riyadh/Al-Kharj. On Mar 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones near Al-Kharj, defending PSAB and surrounding infrastructure. On March 6, three ballistic missiles targeting the base were intercepted before landing as part of a wider Iranian campaign against Gulf states. Three ballistic missiles targeting PSAB intercepted on March 6 as Iran widened its campaign. On March 6, Saudi MOD announced interception of 3 ballistic missiles targeting PSAB plus additional drone and cruise missile interceptions east of Al-Kharj. This is the continued targeting of the key US military installation. CNN satellite imagery from March 1 shows smoke rising from compound near PSAB where THAAD radar was previously stationed. Saudi MOD confirmed intercepting cruise missile and three drones on March 6. On March 7, Saudi air defenses intercepted a ballistic missile and a cruise missile targeting PSAB.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -3823,6 +3855,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-06",
                             "text": "CNN satellite imagery shows smoke rising from THAAD radar compound near PSAB on March 1; Saudi MOD confirmed intercepting cruise missile east of al-Kharj and 3 drones east of Riyadh on March 6"
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Saudi MOD confirmed interception and destruction of a ballistic missile and a cruise missile aimed at Prince Sultan Air Base in Al-Kharj early Saturday. Fifth consecutive missile intercepted heading toward PSAB in recent days."
                     }
             ],
             "sources": [
@@ -3897,6 +3933,10 @@ const LOCATIONS = [
                     {
                             "name": "CNN (Day 7 Summary)",
                             "url": "https://www.cnn.com/2026/03/05/middleeast/us-israel-iran-war-what-we-know-intl-hnk"
+                    },
+                    {
+                            "name": "Arab News",
+                            "url": "https://www.arabnews.com/node/2635545/saudi-arabia"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -4378,7 +4418,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🎯",
             "type": "Industrial Area — Cruise Missile & Drone Interceptions",
-            "detail": "Saudi air defenses intercepted and destroyed 3 cruise missiles and 3 drones outside Al-Kharj governorate, a major industrial center ~80km southeast of Riyadh. Saudi Defense Ministry spokesperson Maj. Gen. Turki Al-Maliki confirmed the interceptions in statements via SPA. No confirmed debris impacts or damage at this location. Additional drone interceptions reported March 6 in Al-Kharj area. On March 6, continued interceptions of cruise missiles and drones in Al-Kharj area. Saudi air defenses reported destroying 4 drones over Riyadh region and a cruise missile east of Al-Kharj. On March 6, Saudi Defense Ministry confirmed intercepting three ballistic missiles targeting a base south of Riyadh and three drones east of Riyadh, confirming continued Iranian targeting of this area. March 6: Saudi MOD confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh region. On March 6, Saudi MOD confirmed intercepting a cruise missile east of al-Kharj and three ballistic missiles targeting a base south of Riyadh overnight, plus three drones east of the Riyadh region. Saudi MOD on Friday confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh. Saudi MoD confirmed intercepting a cruise missile east of al-Kharj on March 6. Saudi MOD confirmed cruise missile and three ballistic missiles intercepted near al-Kharj on March 6.",
+            "detail": "Saudi air defenses intercepted and destroyed 3 cruise missiles and 3 drones outside Al-Kharj governorate, a major industrial center ~80km southeast of Riyadh. Saudi Defense Ministry spokesperson Maj. Gen. Turki Al-Maliki confirmed the interceptions in statements via SPA. No confirmed debris impacts or damage at this location. Additional drone interceptions reported March 6 in Al-Kharj area. On March 6, continued interceptions of cruise missiles and drones in Al-Kharj area. Saudi air defenses reported destroying 4 drones over Riyadh region and a cruise missile east of Al-Kharj. On March 6, Saudi Defense Ministry confirmed intercepting three ballistic missiles targeting a base south of Riyadh and three drones east of Riyadh, confirming continued Iranian targeting of this area. March 6: Saudi MOD confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh region. On March 6, Saudi MOD confirmed intercepting a cruise missile east of al-Kharj and three ballistic missiles targeting a base south of Riyadh overnight, plus three drones east of the Riyadh region. Saudi MOD on Friday confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh. Saudi MoD confirmed intercepting a cruise missile east of al-Kharj on March 6. Saudi MOD confirmed cruise missile and three ballistic missiles intercepted near al-Kharj on March 6. On March 7, third straight day of strike attempts on Al-Kharj. Saudi MOD confirmed intercepts of missiles and a drone east of Riyadh.",
             "incidents": [
                     {
                             "date": "2026-03-05",
@@ -4411,6 +4451,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-06",
                             "text": "Saudi MOD intercepted a cruise missile east of al-Kharj governorate on Friday. Separately, three ballistic missiles targeting a base south of the capital were intercepted the night before (CNN, Al Jazeera)."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "Third consecutive day of attempted strikes on Al-Kharj area. Saudi MOD confirmed interception and destruction of missiles targeting the industrial zone southeast of Riyadh. Also one additional drone intercepted east of Riyadh city."
                     }
             ],
             "sources": [
@@ -4449,9 +4493,45 @@ const LOCATIONS = [
                     {
                             "name": "Euronews",
                             "url": "https://www.euronews.com/2026/03/05/iran-claims-it-hit-us-tanker-as-israel-launches-fresh-strikes-on-tehran"
+                    },
+                    {
+                            "name": "Arab News",
+                            "url": "https://www.arabnews.com/node/2635545/saudi-arabia"
                     }
             ],
             "dateAdded": "2026-03-05"
+    },
+    {
+            "name": "Aramco Shaybah Oil Field (Drone Interceptions), Empty Quarter, Saudi Arabia",
+            "lat": 22.5253,
+            "lng": 54.1019,
+            "country": "Saudi Arabia",
+            "city": "Shaybah (Empty Quarter)",
+            "severity": "watchlist",
+            "icon": "🛢️",
+            "type": "Oil field — drone interception",
+            "detail": "Saudi air defenses intercepted and destroyed 16 drones in four waves targeting the strategic Shaybah oil field early Saturday March 7. This is the first attempted attack on Shaybah since the war began Feb 28. All drones were neutralized over the Empty Quarter with no confirmed damage to the facility.",
+            "incidents": [
+                    {
+                            "date": "2026-03-07",
+                            "text": "Saudi MOD confirmed 16 drones in four waves targeting Shaybah oil field intercepted and destroyed over the Empty Quarter. First attack on Shaybah since war began."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Arab News",
+                            "url": "https://www.arabnews.com/node/2635545/saudi-arabia"
+                    },
+                    {
+                            "name": "Saudi Gazette",
+                            "url": "https://saudigazette.com.sa/article/659514/saudi-arabia/saudi-intercepts-16-drones-targeting-shaybah-field-missile-toward-prince-sultan-air-base"
+                    },
+                    {
+                            "name": "Free Malaysia Today (AFP)",
+                            "url": "https://www.freemalaysiatoday.com/category/world/2026/03/07/saudi-arabia-says-intercepted-attacks-at-airbase-oil-field"
+                    }
+            ],
+            "dateAdded": "2026-03-07"
     },
 
     // ═══════════════════════════════════════════════════════════
@@ -4810,7 +4890,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US/Jordanian Air Base — Targeted, Intercepted",
-            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage. Jordan confirmed intercepting 13 ballistic missiles and 49 drones. German troops in Jordan were also reportedly shelled by Iran. German military confirmed the multinational base at Al-Azraq was targeted by Iran over the weekend. US Embassy in Amman fully evacuated March 3 due to threats. Non-emergency US personnel in Jordan ordered to depart March 4. Stars and Stripes confirms US has deployed dozens of attack aircraft to the base, making it a key air power hub. Non-emergency US personnel ordered to depart Jordan. CNN satellite analysis confirms THAAD AN/TPY-2 radar was struck and apparently destroyed (image dated March 2). Iran assessed to be deliberately targeting US-made air defense radars across the Arabian Peninsula to degrade missile/drone interception capabilities. Buildings housing similar radar systems also hit at two UAE locations per CNN, though equipment status unclear. CNN satellite imagery investigation (March 5) confirmed a THAAD AN/TPY-2 radar was struck and damaged at this base, showing debris surrounding a blackened radar unit in March 2 post-strike imagery. Iran appears to be systematically targeting US air defense radars across the region. CNN satellite imagery published March 6 confirms the AN/TPY-2 THAAD radar (~$500M) at the base was struck and appears destroyed. Two large craters visible near the blackened radar installation, indicating multiple strike attempts.",
+            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage. Jordan confirmed intercepting 13 ballistic missiles and 49 drones. German troops in Jordan were also reportedly shelled by Iran. German military confirmed the multinational base at Al-Azraq was targeted by Iran over the weekend. US Embassy in Amman fully evacuated March 3 due to threats. Non-emergency US personnel in Jordan ordered to depart March 4. Stars and Stripes confirms US has deployed dozens of attack aircraft to the base, making it a key air power hub. Non-emergency US personnel ordered to depart Jordan. CNN satellite analysis confirms THAAD AN/TPY-2 radar was struck and apparently destroyed (image dated March 2). Iran assessed to be deliberately targeting US-made air defense radars across the Arabian Peninsula to degrade missile/drone interception capabilities. Buildings housing similar radar systems also hit at two UAE locations per CNN, though equipment status unclear. CNN satellite imagery investigation (March 5) confirmed a THAAD AN/TPY-2 radar was struck and damaged at this base, showing debris surrounding a blackened radar unit in March 2 post-strike imagery. Iran appears to be systematically targeting US air defense radars across the region. CNN satellite imagery published March 6 confirms the AN/TPY-2 THAAD radar (~$500M) at the base was struck and appears destroyed. Two large craters visible near the blackened radar installation, indicating multiple strike attempts. March 7: IRGC 23rd wave claimed targeting al-Azraq base in Jordan.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -4843,6 +4923,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-06",
                             "text": "CNN satellite imagery confirms AN/TPY-2 THAAD radar at the base was struck and likely destroyed; two large craters visible near installation with debris and burn marks"
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "IRGC announced 23rd wave of Operation True Promise 4 claiming strikes on al-Azraq base in Jordan as part of combined drone and missile attack on regional US facilities."
                     }
             ],
             "sources": [
@@ -4889,6 +4973,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Mayadeen English",
                             "url": "https://english.almayadeen.net/news/politics/iranian-strikes-damage-us-missile-defense-radars-in-jordan"
+                    },
+                    {
+                            "name": "Tribune India (ANI)",
+                            "url": "https://www.tribuneindia.com/news/world/flawless-execution-irgc-launches-23rd-wave-of-strikes-against-us-bases-and-occupied-territories/"
                     }
             ],
             "dateAdded": "2026-03-03"
