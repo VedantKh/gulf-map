@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-08T20:19:23.738Z",
+    "lastUpdated": "2026-03-08T21:20:39.767Z",
     "casualties": {
         "killed": 35,
         "injured": 369
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 9 of Iran war: Despite President Pezeshkian's Saturday apology to Gulf neighbors, IRGC continued strikes Sunday. First Saudi civilian fatalities reported in Al-Kharj. Kuwait airport fuel tanks, Bahrain desalination plant struck. UAE reports cumulative totals since Feb 28: 238 ballistic missiles and 1,342 drones detected. Saudi Arabia intercepted 33 drones on March 8. AFP tallies 18 killed across Gulf states. 7th US service member killed per CENTCOM.",
-    "totalBarrage": "UAE cumulative: 238 ballistic missiles detected (221 destroyed, 15 into sea, 2 landed), 1,342 drones (1,262 intercepted, 80 fell in-country), 8 cruise missiles destroyed. Bahrain: 92 missiles and 151 drones intercepted. Iran claims 500+ ballistic/naval missiles and ~2,000 drones launched since Feb 28.",
-    "intercepted": "UAE March 8 alone: 16/17 ballistic missiles, 113/117 drones, 8 cruise missiles destroyed. Saudi March 8: 33 drones intercepted. Qatar March 8: 6 ballistic missiles intercepted (2 fell in territorial waters, 2 in uninhabited areas)."
+    "summary": "Day 9 of the Iran war: IRGC launched '27th wave of Operation True Promise' despite President Pezeshkian's apology and pledge to halt attacks on neighbors. IRGC contradicted the president, vowing continued strikes. Gulf states reported new attacks across Kuwait (airport fuel tanks, PIFSS HQ), Bahrain (desalination plant, Mina Salman), Saudi Arabia (first civilian deaths in Al-Kharj, Riyadh diplomatic quarter attack foiled), and UAE (4 drones penetrated defenses). Arab foreign ministers condemned Iran's attacks as 'grave threat to international peace.' 7th US service member confirmed killed in action.",
+    "totalBarrage": "UAE MOD cumulative (March 8): 238 ballistic missiles detected (221 destroyed, 15 fell in sea, 2 hit territory); 1,342 drones detected (majority intercepted, 80 fell in UAE); 8 cruise missiles destroyed. Iran claimed 500+ ballistic/naval missiles and ~2,000 drones launched since Feb 28.",
+    "intercepted": "UAE: 221/238 ballistic missiles, ~1,262/1,342 drones. Bahrain: 78 missiles, 143 drones (as of March 6). Kuwait: 97 ballistic missiles, 283 drones. Saudi Arabia: ongoing interceptions including 21 drones and 5 ballistic missiles on March 8 alone."
 };
 
 const LOCATIONS = [
@@ -2110,7 +2110,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Interceptor debris / vessel fire",
-            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2. Mar 2: UKMTO confirmed vessel struck by 2 projectiles. Bahrain Interior Ministry: 1 Asian worker killed, 2 seriously injured from interceptor debris falling on foreign ship at Salman Industrial City. On March 2, Bahrain's Ministry of Interior confirmed 1 Asian worker killed and 2 seriously injured from intercepted missile debris falling on a foreign vessel. Bahrain Defence Force reports total of 61 missiles and 34 drones intercepted since the start of the conflict. March 2: US-flagged tanker Stena Imperative struck by two projectiles in Port of Bahrain per Reuters/Vanguard Tech. Fire broke out and was extinguished; crew evacuated. UKMTO confirmed the vessel fire incident. US-flagged tanker Stena Imperative (part of US MARAD Tanker Security Program) struck by 2 projectiles at Bahrain port shipyard on Mar 2. One shoreside shipyard worker killed, two others injured. Ship crew unharmed. First US-flagged vessel attacked in the conflict. Vessel had previously been harassed by IRGC fast boats in Feb 2026. On March 2, US-flagged tanker MT Stena Imperative (part of US MARAD Tanker Security Program) was struck by two projectiles at Salman Industrial City. One shipyard worker killed, two injured. Fire extinguished; crew evacuated unharmed. On March 3, Bahrain MOI confirmed one worker killed and two seriously injured by intercepted missile debris falling on a vessel in Salman Industrial City.",
+            "detail": "Bahrain's Interior Ministry confirmed that falling debris from an intercepted Iranian missile caused a fire on a foreign vessel in the industrial zone near Mina Salman port. One Asian worker was killed and two others were seriously injured in what Bahrain described as 'Iranian aggression.' UPGRADED TO CRITICAL: Bahrain MOI confirmed 1 Asian worker killed and 2 seriously injured when intercepted missile debris struck a foreign vessel, causing fire. First confirmed death in Bahrain. Bahrain MOI confirmed first fatality in Bahrain: an Asian worker killed when intercepted missile debris fell onto a vessel in Salman Industrial City. Two others seriously injured. Fire brought under control. March 2: 1 worker killed and 2 seriously injured by debris from intercepted missile on foreign ship. US-flagged tanker Stena Imperative (Navy TSP vessel) also struck by projectiles while berthed, causing onboard fire. Bahrain confirmed one Asian worker killed by interceptor debris on a vessel in Salman Industrial City; two others seriously injured. On March 2, interceptor debris struck a foreign vessel in the Salman industrial zone, killing one worker and seriously injuring two. UKMTO reported a separate vessel struck by two projectiles at the port. On March 2, UKMTO reported a vessel struck by two projectiles at Bahrain port. Interceptor debris struck a foreign ship in Salman industrial zone, killing 1 worker and seriously injuring 2. Mar 2: UKMTO confirmed vessel struck by 2 projectiles. Bahrain Interior Ministry: 1 Asian worker killed, 2 seriously injured from interceptor debris falling on foreign ship at Salman Industrial City. On March 2, Bahrain's Ministry of Interior confirmed 1 Asian worker killed and 2 seriously injured from intercepted missile debris falling on a foreign vessel. Bahrain Defence Force reports total of 61 missiles and 34 drones intercepted since the start of the conflict. March 2: US-flagged tanker Stena Imperative struck by two projectiles in Port of Bahrain per Reuters/Vanguard Tech. Fire broke out and was extinguished; crew evacuated. UKMTO confirmed the vessel fire incident. US-flagged tanker Stena Imperative (part of US MARAD Tanker Security Program) struck by 2 projectiles at Bahrain port shipyard on Mar 2. One shoreside shipyard worker killed, two others injured. Ship crew unharmed. First US-flagged vessel attacked in the conflict. Vessel had previously been harassed by IRGC fast boats in Feb 2026. On March 2, US-flagged tanker MT Stena Imperative (part of US MARAD Tanker Security Program) was struck by two projectiles at Salman Industrial City. One shipyard worker killed, two injured. Fire extinguished; crew evacuated unharmed. On March 3, Bahrain MOI confirmed one worker killed and two seriously injured by intercepted missile debris falling on a vessel in Salman Industrial City. On March 8, a new fire erupted at a maritime facility near Mina Salman Port after what Bahrain's Interior Ministry described as 'Iranian aggression.' Civil defence teams worked to control the blaze.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -2155,6 +2155,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-03",
                             "text": "An Asian worker killed when debris from an intercepted missile fell onto a foreign vessel undergoing maintenance in Salman Industrial City. Two others seriously injured."
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "New fire at maritime facility near Mina Salman Port attributed to 'Iranian aggression' by Bahrain Interior Ministry. Civil defence teams deployed to control the blaze. Separate from the March 1/3 incidents."
                     }
             ],
             "sources": [
@@ -2237,6 +2241,14 @@ const LOCATIONS = [
                     {
                             "name": "Maritime Executive (detailed report)",
                             "url": "https://maritime-executive.com/article/u-s-flagged-stena-tanker-hit-by-iranian-missiles-during-attack-on-bahrain"
+                    },
+                    {
+                            "name": "CNN",
+                            "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-07-26"
+                    },
+                    {
+                            "name": "Saudi Gazette",
+                            "url": "https://saudigazette.com.sa/article/659551/world/iranian-strike-hits-facility-near-salman-port-in-bahrain-capital"
                     }
             ],
             "dateAdded": "2026-03-02"
@@ -2609,6 +2621,46 @@ const LOCATIONS = [
                     {
                             "name": "Gulf Daily News",
                             "url": "https://www.gdnonline.com/Details/1377891"
+                    }
+            ],
+            "dateAdded": "2026-03-08"
+    },
+    {
+            "name": "GCC Unified Maritime Operations Center (Naval Quarters Strike), Bahrain",
+            "lat": 26.218,
+            "lng": 50.601,
+            "country": "Bahrain",
+            "city": "Manama",
+            "severity": "critical",
+            "icon": "🎯",
+            "type": "Iranian strike on GCC naval quarters",
+            "detail": "Iranian attack struck buildings in various areas of Bahrain housing Qatari Amiri Naval Forces and Emirati naval personnel participating in the GCC Unified Maritime Operations Center. Qatar MFA confirmed all Qatari naval personnel were safe with no injuries. The GCC Secretary General condemned it as a 'treacherous Iranian aggression,' and Syria's MFA also condemned the attack.",
+            "incidents": [
+                    {
+                            "date": "2026-03-06",
+                            "text": "Iranian strike hit buildings in Bahrain housing Qatari and Emirati naval forces operating under GCC Unified Military Command. No GCC personnel injured. Condemned by Qatar MFA, GCC SG, and Syria MFA."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Qatar News Agency (QNA)",
+                            "url": "https://qna.org.qa/en/News-Area/News/2026-3/6/qatar-condemns-iranian-attack-on-buildings-in-bahrain-housing-qatari-amiri-naval-forces-personnel"
+                    },
+                    {
+                            "name": "The Peninsula Qatar",
+                            "url": "https://thepeninsulaqatar.com/article/06/03/2026/qatar-condemns-iranian-strike-on-bahrain-buildings-housing-elements-of-qatar-emiri-naval-forces"
+                    },
+                    {
+                            "name": "Iran International",
+                            "url": "https://www.iranintl.com/en/202603062903"
+                    },
+                    {
+                            "name": "GCC Secretary General (via GlobalSecurity)",
+                            "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/03/iran-260307-gcc01.htm"
+                    },
+                    {
+                            "name": "Gulf News",
+                            "url": "https://gulfnews.com/uae/usisrael-war-on-iran-enters-day-7-limited-gcc-flights-warning-over-sensitive-videos-1.500465016"
                     }
             ],
             "dateAdded": "2026-03-08"
@@ -3714,7 +3766,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "International Airport — Drone Strike, 12 Injured",
-            "detail": "Kuwait's primary international airport. Struck by Iranian Shahed drone causing injuries to 12 people and material damage to Terminal 1. A second drone also hit the Terminal 2 construction project. Airport operations suspended. Terminal 1 sustained damage. Kuwait Health Ministry reported 1 killed and 32 wounded nationwide from Iranian attacks. March 8: Two fuel depots struck by drone attack causing large fire; fire brought under control with no significant injuries. Kuwait national oil company announced precautionary crude production cut. March 8: Drone wave hit fuel tank depots at airport, sparking large fire. Two border guards killed. Kuwait National Oil Company announced precautionary crude production cut. On March 8 at dawn, drones directly targeted fuel storage tanks at the airport, causing a huge fire at one depot. Fire brought under control. Kuwait's national oil company announced a precautionary crude oil production cut. March 8 dawn: Drone attack hit two KAFCO fuel storage tanks causing major fire. Contained, no significant injuries. Kuwait cut crude oil production as precaution. On March 8, drones struck two fuel depots at KWI, causing a major fire at one tank. Kuwait PACA confirmed the strikes. Fire controlled after hours; no casualties. On March 8, Kuwait confirmed two fuel depots at the airport were hit by Iranian drones, causing a major fire at one facility. On March 8, hostile drones targeted fuel storage tanks at the airport. The resulting fire was brought under control with no significant injuries per Kuwait News Agency. Military described the attack as a direct strike on vital infrastructure.",
+            "detail": "Kuwait's primary international airport. Struck by Iranian Shahed drone causing injuries to 12 people and material damage to Terminal 1. A second drone also hit the Terminal 2 construction project. Airport operations suspended. Terminal 1 sustained damage. Kuwait Health Ministry reported 1 killed and 32 wounded nationwide from Iranian attacks. March 8: Two fuel depots struck by drone attack causing large fire; fire brought under control with no significant injuries. Kuwait national oil company announced precautionary crude production cut. March 8: Drone wave hit fuel tank depots at airport, sparking large fire. Two border guards killed. Kuwait National Oil Company announced precautionary crude production cut. On March 8 at dawn, drones directly targeted fuel storage tanks at the airport, causing a huge fire at one depot. Fire brought under control. Kuwait's national oil company announced a precautionary crude oil production cut. March 8 dawn: Drone attack hit two KAFCO fuel storage tanks causing major fire. Contained, no significant injuries. Kuwait cut crude oil production as precaution. On March 8, drones struck two fuel depots at KWI, causing a major fire at one tank. Kuwait PACA confirmed the strikes. Fire controlled after hours; no casualties. On March 8, Kuwait confirmed two fuel depots at the airport were hit by Iranian drones, causing a major fire at one facility. On March 8, hostile drones targeted fuel storage tanks at the airport. The resulting fire was brought under control with no significant injuries per Kuwait News Agency. Military described the attack as a direct strike on vital infrastructure. On March 8, drones directly targeted fuel storage tanks at the airport, causing a major fire at one of two fuel depots. Kuwait described it as 'a direct targeting of vital infrastructure.' Fire was brought under control.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -3751,6 +3803,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-08",
                             "text": "Drones targeted fuel storage tanks at Kuwait International Airport at dawn on Sunday March 8. Kuwait military described it as 'a direct targeting of vital infrastructure.' A fire broke out and was brought under control with no significant injuries. Kuwait News Agency confirmed."
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "Drone attack directly targeted fuel storage tanks at Kuwait International Airport, sparking a major fire at one of two fuel depots. Kuwait's Public Authority for Civil Aviation confirmed the attack. Fire was brought under control. Kuwait's defense ministry described it as 'a direct targeting of vital infrastructure.'"
                     }
             ],
             "sources": [
