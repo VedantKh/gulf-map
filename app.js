@@ -141,7 +141,8 @@
     function buildPopup(loc) {
         let incidentHtml = '';
         if (loc.incidents && loc.incidents.length > 0) {
-            const items = loc.incidents.map(inc => {
+            const sorted = [...loc.incidents].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+            const items = sorted.map(inc => {
                 const text = typeof inc === 'string' ? inc : `<strong>${inc.date}:</strong> ${inc.text}`;
                 return `<li>${text}</li>`;
             }).join('');
