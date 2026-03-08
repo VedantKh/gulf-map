@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-08T05:40:08.237Z",
+    "lastUpdated": "2026-03-08T07:28:51.672Z",
     "casualties": {
         "killed": 26,
-        "injured": 330
+        "injured": 333
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 9 of conflict. Iran's President Pezeshkian apologized to Gulf neighbors and pledged to halt strikes on neighbours unless attacked from their territory — but IRGC's Ghalibaf contradicted this, saying Gulf states hosting US bases remain targets. Despite the apology, attacks continued across the Gulf on March 8 with Kuwait and Saudi Arabia reporting more attacks. WSJ reports Iran has targeted radar and air defense sites across the Gulf. CENTCOM says Iran's ballistic missile launch rate is down ~90% from Day 1. NDTV reports Iran may have ~1,000 ballistic missiles remaining.",
+    "summary": "Day 9 of conflict (March 8): Iran continues Gulf strikes despite President Pezeshkian's March 7 pledge to halt attacks on neighbours. New drone strikes hit Kuwait airport fuel depots and Kuwait City's PIFSS government high-rise. First desalination plant targeted in Bahrain. Saudi Arabia intercepted 21+ drones including attempt on Riyadh Diplomatic Quarter. UAE air defences actively engaging incoming threats. IRGC vows it can sustain 'intense war' for six months. Kuwait national oil company announces precautionary crude production cut.",
     "totalBarrage": "Iran has fired 174+ ballistic missiles, 8 cruise missiles, and 812+ drones at the UAE alone (per UAE MOD as of March 3). Kuwait reports 97 ballistic missiles and 283 drones. Bahrain intercepted 75 missiles and 123 drones. Qatar targeted by 65+ ballistic missiles and 12+ drones. Additional waves reported through March 8.",
-    "intercepted": "UAE: 161 of 174 ballistic missiles, all 8 cruise missiles, 755 of 812 drones intercepted. Kuwait: majority intercepted. Bahrain: 75 missiles and 123 drones destroyed. Qatar: intercepted all missiles; 9 of 10 drones in Friday wave. Saudi: intercepted 2 ballistic missiles at PSAB, 6 drones at Shaybah, 1 drone near Riyadh."
+    "intercepted": "Saudi Arabia: 21+ drones intercepted on March 8 (13 east of Riyadh, 8 entering airspace). Bahrain: cumulative 92 missiles and 151 drones intercepted since start of conflict. Kuwait: ongoing interceptions of hostile drones and ballistic missiles."
 };
 
 const LOCATIONS = [
@@ -2441,6 +2441,86 @@ const LOCATIONS = [
             ],
             "dateAdded": "2026-03-06"
     },
+    {
+            "name": "Water Desalination Plant (Drone Strike), Bahrain",
+            "lat": 26.2239,
+            "lng": 50.6744,
+            "country": "Bahrain",
+            "city": "Bahrain",
+            "severity": "critical",
+            "icon": "⚡",
+            "type": "Infrastructure Drone Strike",
+            "detail": "An Iranian drone attack caused material damage to a water desalination plant in Bahrain, the first time a desalination facility has been targeted during the conflict. Bahrain's water authority said water supplies were unaffected. The Interior Ministry described it as Iran randomly bombing civilian targets.",
+            "incidents": [
+                    {
+                            "date": "2026-03-08",
+                            "text": "Iranian drone struck a water desalination plant causing structural/material damage. First desalination plant targeted in the war. No impact on water supply reported."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "AFP via France24",
+                            "url": "https://www.france24.com/en/middle-east/20260308-middle-east-war-live-deadly-strike-on-ramada-hotel-in-central-beirut-israel-bombs-iran-oil-facilities"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/liveblog/2026/3/8/iran-live-israel-bombs-tehran-oil-depots-attacks-on-gulf-states-continue"
+                    },
+                    {
+                            "name": "Middle East Eye",
+                            "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-attack-damages-water-desalination-plant-bahrain-ministry-says"
+                    },
+                    {
+                            "name": "News of Bahrain",
+                            "url": "https://www.newsofbahrain.com/bahrain/128072.html"
+                    },
+                    {
+                            "name": "GDN Online",
+                            "url": "https://www.gdnonline.com/Details/1377913/Drone-attack-causes-material-damage-to-water-desalination-plant"
+                    }
+            ],
+            "dateAdded": "2026-03-08"
+    },
+    {
+            "name": "University Building, Muharraq (Missile Fragment Debris), Bahrain",
+            "lat": 26.2569,
+            "lng": 50.6136,
+            "country": "Bahrain",
+            "city": "Muharraq",
+            "severity": "high",
+            "icon": "💥",
+            "type": "Interceptor Debris / Missile Fragments",
+            "detail": "Three people were injured and a university building in the Muharraq area sustained material damage after missile fragments fell as a result of aerial interceptions during Iranian aggression. Muharraq is an island area northwest of Manama.",
+            "incidents": [
+                    {
+                            "date": "2026-03-08",
+                            "text": "Missile fragments from interception fell on a university building in Muharraq, injuring 3 people and causing material damage."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Bahrain Interior Ministry (via Arab News)",
+                            "url": "https://www.arabnews.com/node/2635645/middle-east"
+                    },
+                    {
+                            "name": "France24",
+                            "url": "https://www.france24.com/en/middle-east/20260308-middle-east-war-live-deadly-strike-on-ramada-hotel-in-central-beirut-israel-bombs-iran-oil-facilities"
+                    },
+                    {
+                            "name": "Oman Observer",
+                            "url": "https://www.omanobserver.om/article/1185694/world/region/university-building-desalination-plant-attacked-in-bahrain"
+                    },
+                    {
+                            "name": "GDN Online",
+                            "url": "https://www.gdnonline.com/Details/1377912/Three-injured-after-missile-fragments-fall-on-university-building-in-Muharraq"
+                    },
+                    {
+                            "name": "Arab Times",
+                            "url": "https://www.arabtimesonline.com/news/three-injured-as-missile-fragments-strike-university-building-in-bahrain/"
+                    }
+            ],
+            "dateAdded": "2026-03-08"
+    },
 
     // ═══════════════════════════════════════════════════════════
     // Qatar
@@ -3254,7 +3334,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Coalition Air Base — Major Missile Strike",
-            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation). March 2: CENTCOM confirmed 4th US service member died from injuries sustained in Iran's initial attacks on Kuwait. 'Major combat operations continue.' New wave of missiles and drones targeted Kuwait airspace early March 3. Kuwait total interceptions: 178 ballistic missiles and 384 drones. March 4: IRGC claims 230-drone barrage targeted Ali Al Salem among other US bases. Kuwait defenses continue interceptions. Volume of attacks reportedly decreasing but disruption continues. March 4: IRGC claimed 230-drone operation (17th wave) targeted Ali Al Salem and Camp Arifjan in Kuwait alongside bases in Erbil, Iraq. On March 4, the IRGC confirmed it had fired 230 drones at US facilities including Ali Al Salem, describing the attacks as its 'first powerful steps.' On March 4, IRGC claimed firing 230 drones at multiple US facilities including Ali Al Salem. Kuwait military confirmed intercepting an active new wave of missiles and drones in its airspace late on March 4. IRGC on March 4 specifically named Ali Al Salem as a target in its 230-drone launch. Kuwait military confirmed ongoing interceptions of a wave of missiles and drones. On March 4, the IRGC confirmed it fired 230 drones at several US facilities including Ali Al Salem, describing the attacks as among its 'first powerful steps' in the war. Late March 5 / early March 6: Kuwait faced continued barrage of Iranian attacks, with Kuwaiti army confirming air defenses intercepting projectiles in its airspace. Videos circulated showing a southern Kuwaiti air base in flames. On March 6, Al Jazeera verified video of a projectile exploding near the base. Continued waves of Iranian missiles and drones targeting the installation. Kuwait MoD reported cumulative interceptions of 212 ballistic missiles and 394 drones as of March 6. On March 6, Iran's army explicitly confirmed ongoing large-scale drone attacks on US bases in Kuwait and vowed continued strikes 'in the coming hours.' On March 6, Iran's army announced further drone attacks on US bases in Kuwait, vowing continuation. Kuwait army confirmed ongoing interceptions of hostile attacks in national airspace. On March 6, Iran announced another wave of drones targeting US bases in Kuwait. Kuwait's army confirmed air defences engaging hostile attacks in its airspace. March 6: Iran army announced ongoing drone attacks on US bases in Kuwait. Kuwait army confirmed interceptions of hostile attacks breaching airspace. Kuwait MOD cumulative totals as of Day 6: 212 ballistic missiles and 394 drones detected and intercepted. On March 6, Iran's army confirmed via state TV launching 'various types of destructive drones' at US military bases in Kuwait 'in large numbers,' warning 'these attacks will continue in the coming hours.' Kuwait army confirmed active interceptions. Iran's army publicly confirmed ongoing large-scale drone attacks on US bases in Kuwait on March 6, with state TV warning attacks will continue. Iran's army confirmed on March 6 that it launched large-scale drone attacks on US bases in Kuwait, with the Kuwaiti army confirming ongoing interceptions. Kuwait's army confirmed ongoing interception of hostile attacks on March 6. Iran's army warned via state TV that large-scale drone attacks on US bases in Kuwait will continue in coming hours. Iran's army confirmed launching new wave of drones at US bases in Kuwait on March 6, vowing continued attacks. Kuwait reports 67 soldiers injured over the past week. On March 6, Iran's army announced continued drone strikes targeting US bases in Kuwait. Kuwait's army confirmed air defences were dealing with hostile missile and drone attacks breaching its airspace. IRGC confirmed Ali Al Salem was among targets in its 230-drone barrage on March 5. Iran announced another wave of drones targeting US bases in Kuwait on March 6. March 7: IRGC 23rd wave claimed targeting Ali al-Salem with new-generation missiles and drones. Kuwait MOD cumulative: 212 ballistic missiles and 394 drones intercepted. 2 military personnel + 1 child killed, 67 personnel injured across Kuwait operations.",
+            "detail": "Coalition air base hosting US, Kuwaiti, and Italian forces. Suffered the most visually confirmed damage outside the UAE. Chinese satellite imagery showed at least 4 direct impact sites, massive smoke plume visible from space. Hangars, runway, fuel depots extensively destroyed. Italy confirmed 'significant damage to the runway.' 3 Kuwaiti soldiers injured. Kuwait defense ministry confirmed 3 soldiers injured with minimal material damage. Kuwait intercepted 97 ballistic missiles and 283 drones total. On March 2, Kuwait air defenses engaged a new wave of hostile drones approaching from maritime routes. The majority were shot down per state media. Early March 2: Kuwait state media reported new drone interceptions approaching via maritime routes, suggesting evolving Iranian tactics. On March 2, a fighter jet crashed within 10km of the base (pilot ejected safely). Kuwait air defenses intercepted hostile drones at dawn approaching via maritime routes. March 2 dawn: Kuwait Army confirmed air defense forces intercepted hostile drones approaching centrally via maritime routes. Multiple US F-15E aircraft crashed nearby (cause under investigation). March 2: CENTCOM confirmed 4th US service member died from injuries sustained in Iran's initial attacks on Kuwait. 'Major combat operations continue.' New wave of missiles and drones targeted Kuwait airspace early March 3. Kuwait total interceptions: 178 ballistic missiles and 384 drones. March 4: IRGC claims 230-drone barrage targeted Ali Al Salem among other US bases. Kuwait defenses continue interceptions. Volume of attacks reportedly decreasing but disruption continues. March 4: IRGC claimed 230-drone operation (17th wave) targeted Ali Al Salem and Camp Arifjan in Kuwait alongside bases in Erbil, Iraq. On March 4, the IRGC confirmed it had fired 230 drones at US facilities including Ali Al Salem, describing the attacks as its 'first powerful steps.' On March 4, IRGC claimed firing 230 drones at multiple US facilities including Ali Al Salem. Kuwait military confirmed intercepting an active new wave of missiles and drones in its airspace late on March 4. IRGC on March 4 specifically named Ali Al Salem as a target in its 230-drone launch. Kuwait military confirmed ongoing interceptions of a wave of missiles and drones. On March 4, the IRGC confirmed it fired 230 drones at several US facilities including Ali Al Salem, describing the attacks as among its 'first powerful steps' in the war. Late March 5 / early March 6: Kuwait faced continued barrage of Iranian attacks, with Kuwaiti army confirming air defenses intercepting projectiles in its airspace. Videos circulated showing a southern Kuwaiti air base in flames. On March 6, Al Jazeera verified video of a projectile exploding near the base. Continued waves of Iranian missiles and drones targeting the installation. Kuwait MoD reported cumulative interceptions of 212 ballistic missiles and 394 drones as of March 6. On March 6, Iran's army explicitly confirmed ongoing large-scale drone attacks on US bases in Kuwait and vowed continued strikes 'in the coming hours.' On March 6, Iran's army announced further drone attacks on US bases in Kuwait, vowing continuation. Kuwait army confirmed ongoing interceptions of hostile attacks in national airspace. On March 6, Iran announced another wave of drones targeting US bases in Kuwait. Kuwait's army confirmed air defences engaging hostile attacks in its airspace. March 6: Iran army announced ongoing drone attacks on US bases in Kuwait. Kuwait army confirmed interceptions of hostile attacks breaching airspace. Kuwait MOD cumulative totals as of Day 6: 212 ballistic missiles and 394 drones detected and intercepted. On March 6, Iran's army confirmed via state TV launching 'various types of destructive drones' at US military bases in Kuwait 'in large numbers,' warning 'these attacks will continue in the coming hours.' Kuwait army confirmed active interceptions. Iran's army publicly confirmed ongoing large-scale drone attacks on US bases in Kuwait on March 6, with state TV warning attacks will continue. Iran's army confirmed on March 6 that it launched large-scale drone attacks on US bases in Kuwait, with the Kuwaiti army confirming ongoing interceptions. Kuwait's army confirmed ongoing interception of hostile attacks on March 6. Iran's army warned via state TV that large-scale drone attacks on US bases in Kuwait will continue in coming hours. Iran's army confirmed launching new wave of drones at US bases in Kuwait on March 6, vowing continued attacks. Kuwait reports 67 soldiers injured over the past week. On March 6, Iran's army announced continued drone strikes targeting US bases in Kuwait. Kuwait's army confirmed air defences were dealing with hostile missile and drone attacks breaching its airspace. IRGC confirmed Ali Al Salem was among targets in its 230-drone barrage on March 5. Iran announced another wave of drones targeting US bases in Kuwait on March 6. March 7: IRGC 23rd wave claimed targeting Ali al-Salem with new-generation missiles and drones. Kuwait MOD cumulative: 212 ballistic missiles and 394 drones intercepted. 2 military personnel + 1 child killed, 67 personnel injured across Kuwait operations. March 8: Kuwait armed forces responding to new wave of hostile drones; ballistic missiles also intercepted. Kuwaiti interior ministry reported 2 border guards killed 'while performing national duty' (cause unconfirmed).",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -3383,6 +3463,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Kuwait armed forces downed 12 Iranian drones and 14 missiles on Friday per state-run KUNA; Kuwait MOD cumulative tally: 212 ballistic missiles and 394 drones detected/intercepted (CNN, Gulf News)"
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "Kuwait military confirmed responding to 'a wave of hostile drones that penetrated the country's airspace' on Sunday morning. Air defences engaging hostile missile and drone attacks. Some civilian facilities sustained material damage from falling fragments and debris."
                     }
             ],
             "sources": [
@@ -3485,6 +3569,14 @@ const LOCATIONS = [
                     {
                             "name": "CNN (Day 7 live)",
                             "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-06-26"
+                    },
+                    {
+                            "name": "Euronews",
+                            "url": "https://www.euronews.com/2026/03/08/kuwait-city-tower-on-fire-as-iranian-air-strikes-continue-across-gulf-countries"
+                    },
+                    {
+                            "name": "Times Kuwait",
+                            "url": "https://timeskuwait.com/breaking-kuwait-security-update-march-8-2026/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -3498,7 +3590,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "International Airport — Drone Strike, 12 Injured",
-            "detail": "Kuwait's primary international airport. Struck by Iranian Shahed drone causing injuries to 12 people and material damage to Terminal 1. A second drone also hit the Terminal 2 construction project. Airport operations suspended. Terminal 1 sustained damage. Kuwait Health Ministry reported 1 killed and 32 wounded nationwide from Iranian attacks.",
+            "detail": "Kuwait's primary international airport. Struck by Iranian Shahed drone causing injuries to 12 people and material damage to Terminal 1. A second drone also hit the Terminal 2 construction project. Airport operations suspended. Terminal 1 sustained damage. Kuwait Health Ministry reported 1 killed and 32 wounded nationwide from Iranian attacks. March 8: Two fuel depots struck by drone attack causing large fire; fire brought under control with no significant injuries. Kuwait national oil company announced precautionary crude production cut.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -3511,6 +3603,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-02-28",
                             "text": "Drone struck Terminal 1, causing material damage and injuring several employees. Kuwait Health Ministry reported 1 civilian killed and 32 wounded nationwide from Iranian strikes on Sunday."
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "Two fuel depots at Kuwait International Airport targeted by Iranian drone attack, causing a huge fire at one facility. Fire brought under control. No significant injuries. Military called it 'a direct targeting of vital infrastructure'. Civilian facilities also sustained debris damage from interception operations."
                     }
             ],
             "sources": [
@@ -3533,6 +3629,22 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera Tracker",
                             "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker"
+                    },
+                    {
+                            "name": "Arab News / KUNA",
+                            "url": "https://www.arabnews.com/node/2635645/middle-east"
+                    },
+                    {
+                            "name": "France24 / AFP",
+                            "url": "https://www.france24.com/en/live-news/20260308-kuwait-airport-saudi-arabia-targeted-as-iran-presses-gulf-attacks"
+                    },
+                    {
+                            "name": "Middle East Eye",
+                            "url": "https://www.middleeasteye.net/live-blog/live-blog-update/drone-attack-targets-fuel-tanks-kuwait-airport-officials-say"
+                    },
+                    {
+                            "name": "CNN",
+                            "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-07-26"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -4806,7 +4918,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🏛️",
             "type": "Drone Strike on US Embassy",
-            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran. On morning of March 3: After initial 2 drones hit US Embassy, 2 more drones struck the Diplomatic Quarter per Reuters sources. Saudi MoD confirmed. Washington Post confirmed the drone struck the CIA station within the embassy compound, causing structural damage and partial roof collapse. No CIA casualties reported.",
+            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran. On morning of March 3: After initial 2 drones hit US Embassy, 2 more drones struck the Diplomatic Quarter per Reuters sources. Saudi MoD confirmed. Washington Post confirmed the drone struck the CIA station within the embassy compound, causing structural damage and partial roof collapse. No CIA casualties reported. March 8: Second attempted drone attack on Diplomatic Quarter thwarted; Saudi MoD intercepted 21 drones total including 13 east of Riyadh.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -4831,6 +4943,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-04",
                             "text": "Washington Post reports that the Monday drone strike specifically hit the CIA station within the US Embassy compound in Riyadh, causing structural damage including partial roof collapse. No CIA personnel injured. Saudi Arabia also announced interception of two ballistic missiles in the nearby Al-Kharj area on Wednesday."
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "Saudi defence ministry foiled a drone attack targeting Riyadh's Diplomatic Quarter. Drone intercepted; no damage or civilian casualties reported. Additionally, 13 drones intercepted east of Riyadh and 8 more shot down entering Saudi airspace."
                     }
             ],
             "sources": [
@@ -4877,6 +4993,18 @@ const LOCATIONS = [
                     {
                             "name": "Reuters via TRT World",
                             "url": "https://www.trtworld.com/article/73652619962d/amp"
+                    },
+                    {
+                            "name": "Saudi Gazette",
+                            "url": "https://saudigazette.com.sa/article/659548/saudi-arabia/saudi-air-defenses-intercept-drones-targeting-riyadh"
+                    },
+                    {
+                            "name": "Middle East Eye",
+                            "url": "https://www.middleeasteye.net/live-blog/live-blog-update/drone-attacks-saudi-arabia-continue-riyadhs-diplomatic-quarter-targeted"
+                    },
+                    {
+                            "name": "France24 / AFP",
+                            "url": "https://www.france24.com/en/live-news/20260308-kuwait-airport-saudi-arabia-targeted-as-iran-presses-gulf-attacks"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -5078,7 +5206,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🛢️",
             "type": "Oil field — drone interception",
-            "detail": "Saudi air defenses intercepted and destroyed 16 drones in four waves targeting the strategic Shaybah oil field early Saturday March 7. This is the first attempted attack on Shaybah since the war began Feb 28. All drones were neutralized over the Empty Quarter with no confirmed damage to the facility. On March 7, Saudi MOD confirmed intercepting and destroying 16 drones heading toward Shaybah, the largest single wave targeting the oil field. On March 7, 16 drones were launched in four waves toward Shaybah — the first attack on the field since the war began. All 16 intercepted and destroyed in the Empty Quarter. March 7: Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the largest single-day drone barrage against this facility. On March 7, Saudi air defenses intercepted and destroyed 16-20 drones in 4-5 waves heading toward the strategic Shaybah field, the first direct attempted attack on this 1 million bpd upstream asset since the war began. On March 7, Saudi MOD reported intercepting 16 drones in four separate waves targeting Shaybah, a significant escalation in targeting of this field. On March 7, Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the most sustained aerial assault on the field to date. All drones destroyed before reaching the facility. March 7: Saudi MOD intercepted 6 drones heading towards Shaybah. Three separate attempts made despite Pezeshkian's announced halt. Facility under sustained targeting—remains under interception protection. March 7: Six drones intercepted heading towards Shaybah oilfield. Mar 7: Saudi MOD intercepted 6 drones heading toward Shaybah oilfield. Six drones intercepted heading toward Shaybah oilfield on March 7 per Saudi MoD. March 7: Saudi MOD Maj. Gen. Al-Maliki confirmed 16 drones in 4 waves intercepted heading toward Shaybah. March 7: First confirmed targeting of Shaybah in the conflict. Saudi MOD intercepted 16+ drones in multiple waves in the Empty Quarter. Iran attempting to stretch Saudi air defenses across 800km by simultaneously targeting Shaybah and PSAB. Saudi MOD confirmed intercepting six Iranian drones heading toward Shaybah on March 7.",
+            "detail": "Saudi air defenses intercepted and destroyed 16 drones in four waves targeting the strategic Shaybah oil field early Saturday March 7. This is the first attempted attack on Shaybah since the war began Feb 28. All drones were neutralized over the Empty Quarter with no confirmed damage to the facility. On March 7, Saudi MOD confirmed intercepting and destroying 16 drones heading toward Shaybah, the largest single wave targeting the oil field. On March 7, 16 drones were launched in four waves toward Shaybah — the first attack on the field since the war began. All 16 intercepted and destroyed in the Empty Quarter. March 7: Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the largest single-day drone barrage against this facility. On March 7, Saudi air defenses intercepted and destroyed 16-20 drones in 4-5 waves heading toward the strategic Shaybah field, the first direct attempted attack on this 1 million bpd upstream asset since the war began. On March 7, Saudi MOD reported intercepting 16 drones in four separate waves targeting Shaybah, a significant escalation in targeting of this field. On March 7, Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the most sustained aerial assault on the field to date. All drones destroyed before reaching the facility. March 7: Saudi MOD intercepted 6 drones heading towards Shaybah. Three separate attempts made despite Pezeshkian's announced halt. Facility under sustained targeting—remains under interception protection. March 7: Six drones intercepted heading towards Shaybah oilfield. Mar 7: Saudi MOD intercepted 6 drones heading toward Shaybah oilfield. Six drones intercepted heading toward Shaybah oilfield on March 7 per Saudi MoD. March 7: Saudi MOD Maj. Gen. Al-Maliki confirmed 16 drones in 4 waves intercepted heading toward Shaybah. March 7: First confirmed targeting of Shaybah in the conflict. Saudi MOD intercepted 16+ drones in multiple waves in the Empty Quarter. Iran attempting to stretch Saudi air defenses across 800km by simultaneously targeting Shaybah and PSAB. Saudi MOD confirmed intercepting six Iranian drones heading toward Shaybah on March 7. March 8: Additional drone interceptions over Shaybah as Saudi air defences continue to engage incoming Iranian UAVs.",
             "incidents": [
                     {
                             "date": "2026-03-07",
@@ -5123,6 +5251,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Saudi MOD confirmed intercepting six drones heading towards Shaybah oilfield."
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "Saudi defence ministry reported intercepting and destroying drones targeting the Shaybah oil field as part of a continued wave of Iranian aerial attacks."
                     }
             ],
             "sources": [
@@ -5181,6 +5313,14 @@ const LOCATIONS = [
                     {
                             "name": "Asharq Al-Awsat",
                             "url": "https://english.aawsat.com/gulf/5248432-saudi-arabia-ballistic-missile-targeting-prince-sultan-base-falls-uninhabited-area"
+                    },
+                    {
+                            "name": "Saudi Gazette",
+                            "url": "https://saudigazette.com.sa/article/659548/saudi-arabia/saudi-air-defenses-intercept-drones-targeting-riyadh"
+                    },
+                    {
+                            "name": "Arab News",
+                            "url": "https://www.arabnews.com/node/2635645/middle-east"
                     }
             ],
             "dateAdded": "2026-03-07"
