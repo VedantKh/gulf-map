@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-08T16:23:46.711Z",
+    "lastUpdated": "2026-03-08T18:27:28.042Z",
     "casualties": {
-        "killed": 30,
-        "injured": 342
+        "killed": 33,
+        "injured": 357
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 9 (March 8): UAE declares 'state of defense' citing 1,400+ missiles and drones. Iran's president apologized to neighbors but IRGC continues strikes despite pledge. New Iranian supreme leader reportedly appointed but unnamed. GCC and Arab League issue fresh condemnations of Iran's 'dangerous acts of aggression'. 32,000+ Americans evacuated from Middle East since war began.",
-    "totalBarrage": "UAE cumulative as of March 8 per MOD: 238 ballistic missiles detected (221 destroyed, 15 fell into sea, 2 landed within country); 1,422 drones detected (1,342 intercepted, 80 fell within country); 8 cruise missiles (all intercepted). Bahrain: 86 missiles, 148 drones intercepted. Iran total estimated (Fars, March 5): >500 ballistic/naval missiles and ~2,000 drones since Feb 28.",
-    "intercepted": "UAE: 221/238 BMs (93%), 1,342/1,422 drones (94%). On March 8 alone: 16/17 BMs intercepted, 113/117 drones intercepted. Bahrain: 86 missiles, 148 drones total. Saudi Arabia: 15+ drones intercepted on March 8 including Diplomatic Quarter and Shaybah attempts."
+    "summary": "Day 9 of conflict. Iran continues drone and missile strikes despite President Pezeshkian's March 7 apology and pledge to stop attacks on neighbors. IRGC and Ghalibaf reverted the pledge, stating Gulf states hosting US bases remain targets. UAE MOD reports cumulative detection of 238 ballistic missiles, 1,422 drones, and 8 cruise missiles since Feb 28. Bahrain has intercepted 92 missiles and 151 drones. Saudi Arabia intercepted 33 drones on March 8 alone. Iran's Assembly of Experts selecting new Supreme Leader to replace Khamenei. AFP tallies 18 killed (10 civilians) across Gulf states since the war began.",
+    "totalBarrage": "UAE cumulative since Feb 28: 238 ballistic missiles (221 destroyed, 15 fell to sea, 2 landed), 1,422 drones (1,342 intercepted, 80 fell within country), 8 cruise missiles destroyed. Bahrain: 92 missiles, 151 drones intercepted. Saudi Arabia: 33 drones intercepted on March 8. Qatar: 6 ballistic missiles intercepted on March 8 (2 fell in territorial waters, 2 in uninhabited areas). Iran total (as of March 5 per Fars/CENTCOM): 500+ ballistic/naval missiles, ~2,000 drones.",
+    "intercepted": "UAE 8 March: 16 of 17 ballistic missiles intercepted (1 fell to sea), 113 of 117 drones intercepted (4 fell inside country). Saudi 8 March: 33 drones intercepted including 4 over Riyadh and 1 over Shaybah. Qatar 8 March: 6 ballistic missiles intercepted. Kuwait 8 March: 7 drones intercepted."
 };
 
 const LOCATIONS = [
@@ -2545,6 +2545,42 @@ const LOCATIONS = [
                     {
                             "name": "France24 (AFP)",
                             "url": "https://www.france24.com/en/live-news/20260308-kuwait-airport-saudi-arabia-targeted-as-iran-presses-gulf-attacks"
+                    }
+            ],
+            "dateAdded": "2026-03-08"
+    },
+    {
+            "name": "Manama Central Public Road (Missile Fragment Debris), Bahrain",
+            "lat": 26.22,
+            "lng": 50.5875,
+            "country": "Bahrain",
+            "city": "Manama",
+            "severity": "high",
+            "icon": "💥",
+            "type": "Missile Fragment Debris",
+            "detail": "Bahrain's Interior Ministry confirmed missile fragments fell on a public road in central Manama, injuring one person and causing damage to several shops. Civil Defence teams secured and evacuated the affected areas.",
+            "incidents": [
+                    {
+                            "date": "2026-03-08",
+                            "text": "Missile fragments fell on public road in Manama, injuring 1 person and damaging several shops. Civil Defense evacuated the area."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Stars and Stripes",
+                            "url": "https://www.stripes.com/theaters/middle_east/2026-03-08/bahrain-desalination-plant-water-20995370.html"
+                    },
+                    {
+                            "name": "Bernama / Anadolu Agency",
+                            "url": "https://www.bernama.com/en/news.php?id=2531684"
+                    },
+                    {
+                            "name": "The Week",
+                            "url": "https://www.theweek.in/news/middle-east/2026/03/08/bahrain-struck-by-iranian-missiles-after-manama-desalination-plant-three-injured-in-muharraq.html"
+                    },
+                    {
+                            "name": "Gulf Daily News",
+                            "url": "https://www.gdnonline.com/Details/1377891"
                     }
             ],
             "dateAdded": "2026-03-08"
@@ -5298,7 +5334,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "Industrial Area — Cruise Missile & Drone Interceptions",
-            "detail": "Saudi air defenses intercepted and destroyed 3 cruise missiles and 3 drones outside Al-Kharj governorate, a major industrial center ~80km southeast of Riyadh. Saudi Defense Ministry spokesperson Maj. Gen. Turki Al-Maliki confirmed the interceptions in statements via SPA. No confirmed debris impacts or damage at this location. Additional drone interceptions reported March 6 in Al-Kharj area. On March 6, continued interceptions of cruise missiles and drones in Al-Kharj area. Saudi air defenses reported destroying 4 drones over Riyadh region and a cruise missile east of Al-Kharj. On March 6, Saudi Defense Ministry confirmed intercepting three ballistic missiles targeting a base south of Riyadh and three drones east of Riyadh, confirming continued Iranian targeting of this area. March 6: Saudi MOD confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh region. On March 6, Saudi MOD confirmed intercepting a cruise missile east of al-Kharj and three ballistic missiles targeting a base south of Riyadh overnight, plus three drones east of the Riyadh region. Saudi MOD on Friday confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh. Saudi MoD confirmed intercepting a cruise missile east of al-Kharj on March 6. Saudi MOD confirmed cruise missile and three ballistic missiles intercepted near al-Kharj on March 6. On March 7, third straight day of strike attempts on Al-Kharj. Saudi MOD confirmed intercepts of missiles and a drone east of Riyadh. On March 7 evening, Saudi MOD spokesperson confirmed a ballistic missile launched toward PSAB fell in an uninhabited area within the governorate — the first confirmed ground impact near the base. Earlier, two ballistic missiles and a cruise missile targeting PSAB were intercepted and destroyed.",
+            "detail": "Saudi air defenses intercepted and destroyed 3 cruise missiles and 3 drones outside Al-Kharj governorate, a major industrial center ~80km southeast of Riyadh. Saudi Defense Ministry spokesperson Maj. Gen. Turki Al-Maliki confirmed the interceptions in statements via SPA. No confirmed debris impacts or damage at this location. Additional drone interceptions reported March 6 in Al-Kharj area. On March 6, continued interceptions of cruise missiles and drones in Al-Kharj area. Saudi air defenses reported destroying 4 drones over Riyadh region and a cruise missile east of Al-Kharj. On March 6, Saudi Defense Ministry confirmed intercepting three ballistic missiles targeting a base south of Riyadh and three drones east of Riyadh, confirming continued Iranian targeting of this area. March 6: Saudi MOD confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh region. On March 6, Saudi MOD confirmed intercepting a cruise missile east of al-Kharj and three ballistic missiles targeting a base south of Riyadh overnight, plus three drones east of the Riyadh region. Saudi MOD on Friday confirmed cruise missile intercepted east of al-Kharj and three drones intercepted east of Riyadh. Saudi MoD confirmed intercepting a cruise missile east of al-Kharj on March 6. Saudi MOD confirmed cruise missile and three ballistic missiles intercepted near al-Kharj on March 6. On March 7, third straight day of strike attempts on Al-Kharj. Saudi MOD confirmed intercepts of missiles and a drone east of Riyadh. On March 7 evening, Saudi MOD spokesperson confirmed a ballistic missile launched toward PSAB fell in an uninhabited area within the governorate — the first confirmed ground impact near the base. Earlier, two ballistic missiles and a cruise missile targeting PSAB were intercepted and destroyed. On March 8, a military projectile struck a residential compound in Al-Kharj, killing 2 foreign nationals and injuring 12. IRGC claimed targeting radar systems in the area.",
             "incidents": [
                     {
                             "date": "2026-03-05",
@@ -5351,6 +5387,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Continued interceptions east of Al-Kharj; Arab News reports Saudi defenses shot down one drone in Al-Kharj on Friday in addition to five missiles toward PSAB"
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "Military projectile struck a residential compound belonging to a maintenance company in Al-Kharj, killing 2 (Indian and Bangladeshi nationals) and injuring 12 Bangladeshi residents. IRGC claimed targeting radar systems in Al-Kharj. Saudi Civil Defense condemned targeting of civilian objects as a violation of international humanitarian law."
                     }
             ],
             "sources": [
@@ -5417,6 +5457,26 @@ const LOCATIONS = [
                     {
                             "name": "Saudi MOD via SPA / GlobalSecurity",
                             "url": "https://www.globalsecurity.org/wmd/library/news/saudi/2026/saudi-260307-spa06.htm"
+                    },
+                    {
+                            "name": "Saudi Gazette",
+                            "url": "https://saudigazette.com.sa/article/659572/saudi-arabia/military-projectile-hits-residential-site-in-al-kharj-two-dead"
+                    },
+                    {
+                            "name": "France24 / AFP",
+                            "url": "https://www.france24.com/en/live-news/20260308-kuwait-airport-saudi-arabia-targeted-as-iran-presses-gulf-attacks"
+                    },
+                    {
+                            "name": "Arab News",
+                            "url": "https://www.arabnews.pk/node/2635699/saudi-arabia"
+                    },
+                    {
+                            "name": "Al Arabiya",
+                            "url": "https://english.alarabiya.net/News/saudi-arabia/2026/03/08/two-killed-12-injured-after-projectile-falls-on-residential-location-in-saudi-arabia"
+                    },
+                    {
+                            "name": "Times of Israel",
+                            "url": "https://www.timesofisrael.com/liveblog_entry/2-killed-12-injured-after-projectile-falls-on-saudi-residential-location-civil-defense/"
                     }
             ],
             "dateAdded": "2026-03-05"
