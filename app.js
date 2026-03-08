@@ -25,17 +25,19 @@
         watchlist: 'WATCHLIST — Elevated threat'
     };
 
-    // ═══ "Last day" helper — relative to MAP_META.lastUpdated ═══
-    function isRecent(loc) {
+    // ═══ "Last day" helper — based on incident dates only ═══
+    const RECENT_CUTOFF = (() => {
         const ref = new Date(MAP_META.lastUpdated);
-        const yesterday = new Date(Date.UTC(ref.getUTCFullYear(), ref.getUTCMonth(), ref.getUTCDate() - 1));
-        const cutoff = yesterday.toISOString().slice(0, 10); // YYYY-MM-DD
+        return new Date(Date.UTC(ref.getUTCFullYear(), ref.getUTCMonth(), ref.getUTCDate() - 1))
+            .toISOString().slice(0, 10);
+    })();
 
-        if (loc.dateAdded && loc.dateAdded >= cutoff) return true;
-        if (loc.incidents && loc.incidents.length > 0) {
-            return loc.incidents.some(inc => inc.date && inc.date >= cutoff);
-        }
-        return false;
+    function isRecentIncident(dateStr) {
+        return dateStr && dateStr >= RECENT_CUTOFF;
+    }
+
+    function isRecent(loc) {
+        return loc.incidents && loc.incidents.some(inc => isRecentIncident(inc.date));
     }
 
     // ═══ State ═══
@@ -163,24 +165,76 @@
 
     // ═══ Build popup HTML ═══
     function buildPopup(loc) {
+        // ── Detail text: collapse if >200 chars ──
+        let detailHtml = '';
+        if (loc.detail) {
+            if (loc.detail.length > 200) {
+                const truncated = loc.detail.slice(0, 200).replace(/\s+\S*$/, '');
+                const id = 'detail-' + Math.random().toString(36).slice(2, 9);
+                detailHtml = `<div class="popup-detail" style="margin-top:6px">${truncated}<span id="${id}" style="display:none">${loc.detail.slice(truncated.length)}</span> <span class="popup-expand" onclick="var s=document.getElementById('${id}');if(s.style.display==='none'){s.style.display='inline';this.textContent='Show less'}else{s.style.display='none';this.textContent='Show more'}">Show more</span></div>`;
+            } else {
+                detailHtml = `<div class="popup-detail" style="margin-top:6px">${loc.detail}</div>`;
+            }
+        }
+
+        // ── Incidents: group by date ──
         let incidentHtml = '';
         if (loc.incidents && loc.incidents.length > 0) {
             const sorted = [...loc.incidents].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
-            const items = sorted.map(inc => {
-                const text = typeof inc === 'string' ? inc : `<strong>${inc.date}:</strong> ${inc.text}`;
-                return `<li>${text}</li>`;
-            }).join('');
-            incidentHtml = `<div class="popup-incidents"><strong>Incidents:</strong><ul>${items}</ul></div>`;
+            // Group by date
+            const groups = {};
+            sorted.forEach(inc => {
+                const d = inc.date || 'Unknown';
+                if (!groups[d]) groups[d] = [];
+                groups[d].push(inc);
+            });
+            const dateKeys = Object.keys(groups).sort((a, b) => b.localeCompare(a));
+            const totalCount = loc.incidents.length;
+            let groupsHtml = '';
+            dateKeys.forEach(date => {
+                const items = groups[date];
+                const dateRecent = isRecentIncident(date);
+                const groupClass = dateRecent ? ' popup-inc-new' : '';
+                const countLabel = items.length > 1 ? ` <span class="report-count">(${items.length} reports)</span>` : '';
+                // Show first 2 inline, rest behind toggle
+                const visibleItems = items.slice(0, 2);
+                const hiddenItems = items.slice(2);
+                let listHtml = visibleItems.map(inc => {
+                    const text = typeof inc === 'string' ? inc : inc.text;
+                    return `<li>${text}</li>`;
+                }).join('');
+                if (hiddenItems.length > 0) {
+                    const gid = 'inc-' + Math.random().toString(36).slice(2, 9);
+                    listHtml += `<li style="list-style:none;margin-left:-14px"><span class="popup-expand" onclick="var s=document.getElementById('${gid}');if(s.style.display==='none'){s.style.display='block';this.textContent='Show less'}else{s.style.display='none';this.textContent='Show ${hiddenItems.length} more'}">Show ${hiddenItems.length} more</span></li>`;
+                    listHtml += `<span id="${gid}" style="display:none">${hiddenItems.map(inc => {
+                        const text = typeof inc === 'string' ? inc : inc.text;
+                        return `<li>${text}</li>`;
+                    }).join('')}</span>`;
+                }
+                groupsHtml += `<div class="popup-date-group${groupClass}"><div class="popup-date-heading">${date}${countLabel}</div><ul>${listHtml}</ul></div>`;
+            });
+            incidentHtml = `<div class="popup-incidents"><strong>Incidents (${totalCount}):</strong>${groupsHtml}</div>`;
         }
 
+        // ── Sources: collapse after 5 ──
         let sourceHtml = '';
         if (loc.sources && loc.sources.length > 0) {
-            const links = loc.sources.map(s =>
+            const allLinks = loc.sources.map(s =>
                 s.url ? `<a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>` : s.name
-            ).join(' · ');
+            );
+            const totalSources = allLinks.length;
+            let linksHtml;
+            if (totalSources <= 5) {
+                linksHtml = allLinks.join(' · ');
+            } else {
+                const visible = allLinks.slice(0, 5).join(' · ');
+                const hidden = allLinks.slice(5).join(' · ');
+                const sid = 'src-' + Math.random().toString(36).slice(2, 9);
+                linksHtml = `${visible}<span id="${sid}" style="display:none"> · ${hidden}</span> <span class="popup-expand" onclick="var s=document.getElementById('${sid}');if(s.style.display==='none'){s.style.display='inline';this.textContent='Show less'}else{s.style.display='none';this.textContent='+${totalSources - 5} more'}">+${totalSources - 5} more</span>`;
+            }
             sourceHtml = `<div class="popup-sources">
-                <div class="popup-sources-label">Verified Sources</div>
-                <div class="popup-sources-list">${links}</div>
+                <div class="popup-sources-label">Verified Sources (${totalSources})</div>
+                <div class="popup-sources-list">${linksHtml}</div>
             </div>`;
         }
 
@@ -192,8 +246,7 @@
                 <span class="popup-category sev-${loc.severity}">${SEV_LABEL[loc.severity]}</span>
                 <div class="popup-detail"><strong>Type:</strong> ${loc.type}</div>
                 <div class="popup-detail"><strong>Country:</strong> ${loc.country}${loc.city ? ' — ' + loc.city : ''}</div>
-                <div class="popup-detail"><strong>Coordinates:</strong> ${loc.lat.toFixed(4)}°N, ${loc.lng.toFixed(4)}°E</div>
-                <div class="popup-detail" style="margin-top:6px">${loc.detail}</div>
+                ${detailHtml}
                 ${incidentHtml}
                 ${sourceHtml}
             </div>
@@ -294,7 +347,7 @@
             item.innerHTML = `
                 <div class="inc-dot" style="background:${color}"></div>
                 <div class="inc-info">
-                    <div class="inc-name">${loc.icon} ${loc.name}${badge}</div>
+                    <div class="inc-name" title="${loc.name}">${loc.icon} ${loc.name}${badge}</div>
                     <div class="inc-type">${latestDate} · ${loc.country}</div>
                 </div>
                 <div class="inc-sev" style="color:${color}">${SEV_LABEL[loc.severity]}</div>
@@ -511,7 +564,7 @@
             item.innerHTML = `
                 <div class="inc-dot" style="background:${color}"></div>
                 <div class="inc-info">
-                    <div class="inc-name">${loc.icon} ${loc.name}${badge}</div>
+                    <div class="inc-name" title="${loc.name}">${loc.icon} ${loc.name}${badge}</div>
                     <div class="inc-type">${latestDate} · ${loc.country}</div>
                 </div>
                 <div class="inc-sev" style="color:${color}">${SEV_LABEL[loc.severity]}</div>
