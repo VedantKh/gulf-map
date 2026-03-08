@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-08T09:24:08.681Z",
+    "lastUpdated": "2026-03-08T10:19:00.125Z",
     "casualties": {
         "killed": 30,
         "injured": 337
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 9 of the Iran war (March 8): Attacks continue despite Pezeshkian's March 7 apology. IRGC spokesman says Iran can wage 'intense war' for six months. Kuwait's PIFSS skyscraper and airport fuel tanks struck by drones. Kuwait oil production cut announced. Saudi Arabia intercepted 21+ drones over Riyadh. Bahrain reports further debris injuries. UAE air defenses responding to missile/drone threats. Qatar discloses 10 BMs and 2 cruise missiles targeted it on March 7.",
-    "totalBarrage": "Per Fars News Agency (March 5): Iran has fired over 500 ballistic and naval missiles and almost 2,000 drones since Feb 28. Bahrain reports intercepting 78 missiles and 143 drones total. UAE reports 186 missiles and 812 drones tracked. Kuwait reports 97 BMs and 283 drones intercepted.",
-    "intercepted": "Gulf-wide interception rates remain around 50% overall per ACLED analysis, with higher rates for ballistic missiles but lower for drones."
+    "summary": "Day 9 of the conflict (March 8). Despite Iranian President Pezeshkian's March 7 apology and pledge to halt attacks on Gulf neighbors, IRGC continued strikes — exposing a leadership rift. CENTCOM reports 3,000+ targets struck in Iran. Iraq drawn deeper into conflict with first rocket attack on US Embassy in Baghdad, multiple drone strikes on US/coalition assets in Erbil, and ongoing strikes on PMF bases in Nineveh. Gulf states continue intercepting Iranian drones and missiles.",
+    "totalBarrage": "Iran has fired over 500 ballistic and naval missiles and almost 2,000 drones since February 28, per Fars News Agency (March 5). ~40% aimed at Israel, ~60% at US targets in region.",
+    "intercepted": "UAE: 186 missiles (172 intercepted), 812 drones (755 intercepted). Kuwait: 97 ballistic missiles, 283 drones intercepted. Bahrain: 75 missiles, 123 drones destroyed. Qatar: 101 ballistic missiles, 39 drones, 3 cruise missiles tracked. Jordan: 49 drones/missiles intercepted. Multi-layered defense systems have intercepted roughly half of all attacks per ACLED assessment."
 };
 
 const LOCATIONS = [
@@ -93,6 +93,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-08",
                             "text": "CNBC/Iran state media reported Iran struck a US air base in the UAE shortly after Pezeshkian's apology to Gulf neighbors on March 7-8."
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "Countries across the Gulf reported further aerial attacks and interceptions early Sunday morning (March 8). UAE Defence Ministry continued reporting interceptions of Iranian drones and missiles."
                     }
             ],
             "sources": [
@@ -139,6 +143,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera (March 8 Live Blog)",
                             "url": "https://www.aljazeera.com/news/liveblog/2026/3/8/iran-live-israel-bombs-tehran-oil-depots-attacks-on-gulf-states-continue"
+                    },
+                    {
+                            "name": "CNN (Day 8 Live)",
+                            "url": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-07-26"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -5906,7 +5914,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US/Jordanian Air Base — Targeted, Intercepted",
-            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage. Jordan confirmed intercepting 13 ballistic missiles and 49 drones. German troops in Jordan were also reportedly shelled by Iran. German military confirmed the multinational base at Al-Azraq was targeted by Iran over the weekend. US Embassy in Amman fully evacuated March 3 due to threats. Non-emergency US personnel in Jordan ordered to depart March 4. Stars and Stripes confirms US has deployed dozens of attack aircraft to the base, making it a key air power hub. Non-emergency US personnel ordered to depart Jordan. CNN satellite analysis confirms THAAD AN/TPY-2 radar was struck and apparently destroyed (image dated March 2). Iran assessed to be deliberately targeting US-made air defense radars across the Arabian Peninsula to degrade missile/drone interception capabilities. Buildings housing similar radar systems also hit at two UAE locations per CNN, though equipment status unclear. CNN satellite imagery investigation (March 5) confirmed a THAAD AN/TPY-2 radar was struck and damaged at this base, showing debris surrounding a blackened radar unit in March 2 post-strike imagery. Iran appears to be systematically targeting US air defense radars across the region. CNN satellite imagery published March 6 confirms the AN/TPY-2 THAAD radar (~$500M) at the base was struck and appears destroyed. Two large craters visible near the blackened radar installation, indicating multiple strike attempts. March 7: IRGC 23rd wave claimed targeting al-Azraq base in Jordan. March 7: Jordanian MOD press conference confirmed 119 projectiles detected total (108 intercepted, 11 evaded), 73 debris incidents in 8 governorates with property damage only. CNN satellite imagery analysis confirmed the AN/TPY-2 THAAD radar at the base appears severely damaged or destroyed, with multiple craters visible. Munitions specialist called it 'an operationally significant event.'",
+            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage. Jordan confirmed intercepting 13 ballistic missiles and 49 drones. German troops in Jordan were also reportedly shelled by Iran. German military confirmed the multinational base at Al-Azraq was targeted by Iran over the weekend. US Embassy in Amman fully evacuated March 3 due to threats. Non-emergency US personnel in Jordan ordered to depart March 4. Stars and Stripes confirms US has deployed dozens of attack aircraft to the base, making it a key air power hub. Non-emergency US personnel ordered to depart Jordan. CNN satellite analysis confirms THAAD AN/TPY-2 radar was struck and apparently destroyed (image dated March 2). Iran assessed to be deliberately targeting US-made air defense radars across the Arabian Peninsula to degrade missile/drone interception capabilities. Buildings housing similar radar systems also hit at two UAE locations per CNN, though equipment status unclear. CNN satellite imagery investigation (March 5) confirmed a THAAD AN/TPY-2 radar was struck and damaged at this base, showing debris surrounding a blackened radar unit in March 2 post-strike imagery. Iran appears to be systematically targeting US air defense radars across the region. CNN satellite imagery published March 6 confirms the AN/TPY-2 THAAD radar (~$500M) at the base was struck and appears destroyed. Two large craters visible near the blackened radar installation, indicating multiple strike attempts. March 7: IRGC 23rd wave claimed targeting al-Azraq base in Jordan. March 7: Jordanian MOD press conference confirmed 119 projectiles detected total (108 intercepted, 11 evaded), 73 debris incidents in 8 governorates with property damage only. CNN satellite imagery analysis confirmed the AN/TPY-2 THAAD radar at the base appears severely damaged or destroyed, with multiple craters visible. Munitions specialist called it 'an operationally significant event.' A missile was also intercepted above Aqaba on March 7. Jordan has intercepted 49 drones and ballistic missiles total.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -5951,6 +5959,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "Continued targeting; IRGC attacks on Jordanian-hosted US assets ongoing. Satellite imagery (CNN) confirmed THAAD radar at the base was severely damaged or destroyed in earlier strikes, with multiple craters visible near the AN/TPY-2 radar system."
+                    },
+                    {
+                            "date": "2026-03-07",
+                            "text": "A missile was intercepted above the Jordanian city of Aqaba. Jordan reported intercepting 49 drones and ballistic missiles that entered its airspace during the conflict."
                     }
             ],
             "sources": [
@@ -6009,6 +6021,10 @@ const LOCATIONS = [
                     {
                             "name": "World Today Journal",
                             "url": "https://www.world-today-journal.com/iran-attacks-jordan-119-missiles-drones-intercepted-by-jordanian-armed-forces/"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/7/iranian-missiles-intercepted-over-saudi-jordan-drones-launched-at-qatar"
                     }
             ],
             "dateAdded": "2026-03-03"
