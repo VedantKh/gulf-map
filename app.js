@@ -25,6 +25,19 @@
         watchlist: 'WATCHLIST — Elevated threat'
     };
 
+    // ═══ "Last day" helper — relative to MAP_META.lastUpdated ═══
+    function isRecent(loc) {
+        const ref = new Date(MAP_META.lastUpdated);
+        const yesterday = new Date(Date.UTC(ref.getUTCFullYear(), ref.getUTCMonth(), ref.getUTCDate() - 1));
+        const cutoff = yesterday.toISOString().slice(0, 10); // YYYY-MM-DD
+
+        if (loc.dateAdded && loc.dateAdded >= cutoff) return true;
+        if (loc.incidents && loc.incidents.length > 0) {
+            return loc.incidents.some(inc => inc.date && inc.date >= cutoff);
+        }
+        return false;
+    }
+
     // ═══ State ═══
     const state = {
         map: null,
@@ -118,6 +131,17 @@
                 state.pulseGroup.addLayer(pulse);
             }
 
+            // Amber glow ring for recently updated locations
+            if (isRecent(loc)) {
+                const glowR = (loc.severity === 'critical' ? 11 : loc.severity === 'high' ? 9 : 6) + 8;
+                const glow = L.circleMarker([loc.lat, loc.lng], {
+                    radius: glowR, color: '#f59e0b', fillColor: '#f59e0b',
+                    fillOpacity: 0.18, weight: 2, opacity: 0.5,
+                    className: 'glow-recent'
+                });
+                state.pulseGroup.addLayer(glow);
+            }
+
             // Main marker
             const markerR = loc.severity === 'critical' ? 11 : loc.severity === 'high' ? 9 : 6;
             const fillOp = loc.severity === 'watchlist' ? 0.6 : 0.9;
@@ -160,9 +184,11 @@
             </div>`;
         }
 
+        const newBadge = isRecent(loc) ? ' <span class="badge-new">NEW</span>' : '';
+
         return `
             <div>
-                <div class="popup-title">${loc.icon} ${loc.name}</div>
+                <div class="popup-title">${loc.icon} ${loc.name}${newBadge}</div>
                 <span class="popup-category sev-${loc.severity}">${SEV_LABEL[loc.severity]}</span>
                 <div class="popup-detail"><strong>Type:</strong> ${loc.type}</div>
                 <div class="popup-detail"><strong>Country:</strong> ${loc.country}${loc.city ? ' — ' + loc.city : ''}</div>
@@ -261,12 +287,14 @@
         sorted.forEach(loc => {
             const color = SEV_COLOR[loc.severity];
             const latestDate = getLatestDate(loc);
+            const recent = isRecent(loc);
             const item = document.createElement('div');
-            item.className = 'inc-item';
+            item.className = 'inc-item' + (recent ? ' inc-item-recent' : '');
+            const badge = recent ? ' <span class="badge-new badge-new-sm">NEW</span>' : '';
             item.innerHTML = `
                 <div class="inc-dot" style="background:${color}"></div>
                 <div class="inc-info">
-                    <div class="inc-name">${loc.icon} ${loc.name}</div>
+                    <div class="inc-name">${loc.icon} ${loc.name}${badge}</div>
                     <div class="inc-type">${latestDate} · ${loc.country}</div>
                 </div>
                 <div class="inc-sev" style="color:${color}">${SEV_LABEL[loc.severity]}</div>
@@ -430,6 +458,8 @@
         style.textContent = `
             @keyframes pulse { 0% { opacity: 0.4; } 50% { opacity: 0.1; } 100% { opacity: 0.4; } }
             .pulse-ring { animation: pulse 2.5s ease-in-out infinite; }
+            @keyframes glowPulse { 0% { opacity: 0.5; } 50% { opacity: 0.2; } 100% { opacity: 0.5; } }
+            .glow-recent { animation: glowPulse 2s ease-in-out infinite; }
         `;
         document.head.appendChild(style);
     }
@@ -474,12 +504,14 @@
         sorted.forEach(loc => {
             const color = SEV_COLOR[loc.severity];
             const latestDate = getLatestDate(loc);
+            const recent = isRecent(loc);
             const item = document.createElement('div');
-            item.className = 'inc-item';
+            item.className = 'inc-item' + (recent ? ' inc-item-recent' : '');
+            const badge = recent ? ' <span class="badge-new badge-new-sm">NEW</span>' : '';
             item.innerHTML = `
                 <div class="inc-dot" style="background:${color}"></div>
                 <div class="inc-info">
-                    <div class="inc-name">${loc.icon} ${loc.name}</div>
+                    <div class="inc-name">${loc.icon} ${loc.name}${badge}</div>
                     <div class="inc-type">${latestDate} · ${loc.country}</div>
                 </div>
                 <div class="inc-sev" style="color:${color}">${SEV_LABEL[loc.severity]}</div>
