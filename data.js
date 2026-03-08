@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-08T15:20:28.124Z",
+    "lastUpdated": "2026-03-08T16:23:46.711Z",
     "casualties": {
         "killed": 30,
         "injured": 342
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 9 of war: Despite Iranian President Pezeshkian's apology to Gulf neighbors on Saturday and pledge to halt strikes, IRGC continued attacks across the region overnight. Iran announced a new Supreme Leader has been appointed (unnamed). UAE President MBZ declared the Emirates in 'a period of war.' Kuwait declared force majeure and began cutting oil production as Hormuz blockage fills storage to capacity. GCC condemned Iran's continued attacks as 'dangerous acts of aggression.'",
-    "totalBarrage": "UAE cumulative since Feb 28: 238 ballistic missiles detected (221 destroyed, 15 into sea, 2 landed), 1,342 drones (1,262 intercepted, 80 fell within territory), 8 cruise missiles (all destroyed). Bahrain cumulative: 92 missiles, 151 drones intercepted. On March 8 alone — UAE: 17 BM (16 intercepted), 117 drones (113 intercepted); Saudi Arabia: 5 BM at PSAB, 17 drones at Shaybah, 21 drones over Riyadh; Qatar: 6 BM intercepted.",
-    "intercepted": "Saturday March 7: UAE intercepted 15 ballistic missiles, 119 drones. Sunday March 8: Saudi intercepted 33 drones including 13 east of Riyadh, plus ballistic missiles at PSAB. Qatar intercepted 6 of 10 ballistic missiles and 2 cruise missiles Saturday. Bahrain total: 92 missiles, 151 drones since start."
+    "summary": "Day 9 (March 8): UAE declares 'state of defense' citing 1,400+ missiles and drones. Iran's president apologized to neighbors but IRGC continues strikes despite pledge. New Iranian supreme leader reportedly appointed but unnamed. GCC and Arab League issue fresh condemnations of Iran's 'dangerous acts of aggression'. 32,000+ Americans evacuated from Middle East since war began.",
+    "totalBarrage": "UAE cumulative as of March 8 per MOD: 238 ballistic missiles detected (221 destroyed, 15 fell into sea, 2 landed within country); 1,422 drones detected (1,342 intercepted, 80 fell within country); 8 cruise missiles (all intercepted). Bahrain: 86 missiles, 148 drones intercepted. Iran total estimated (Fars, March 5): >500 ballistic/naval missiles and ~2,000 drones since Feb 28.",
+    "intercepted": "UAE: 221/238 BMs (93%), 1,342/1,422 drones (94%). On March 8 alone: 16/17 BMs intercepted, 113/117 drones intercepted. Bahrain: 86 missiles, 148 drones total. Saudi Arabia: 15+ drones intercepted on March 8 including Diplomatic Quarter and Shaybah attempts."
 };
 
 const LOCATIONS = [
@@ -3650,7 +3650,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "International Airport — Drone Strike, 12 Injured",
-            "detail": "Kuwait's primary international airport. Struck by Iranian Shahed drone causing injuries to 12 people and material damage to Terminal 1. A second drone also hit the Terminal 2 construction project. Airport operations suspended. Terminal 1 sustained damage. Kuwait Health Ministry reported 1 killed and 32 wounded nationwide from Iranian attacks. March 8: Two fuel depots struck by drone attack causing large fire; fire brought under control with no significant injuries. Kuwait national oil company announced precautionary crude production cut. March 8: Drone wave hit fuel tank depots at airport, sparking large fire. Two border guards killed. Kuwait National Oil Company announced precautionary crude production cut. On March 8 at dawn, drones directly targeted fuel storage tanks at the airport, causing a huge fire at one depot. Fire brought under control. Kuwait's national oil company announced a precautionary crude oil production cut. March 8 dawn: Drone attack hit two KAFCO fuel storage tanks causing major fire. Contained, no significant injuries. Kuwait cut crude oil production as precaution. On March 8, drones struck two fuel depots at KWI, causing a major fire at one tank. Kuwait PACA confirmed the strikes. Fire controlled after hours; no casualties.",
+            "detail": "Kuwait's primary international airport. Struck by Iranian Shahed drone causing injuries to 12 people and material damage to Terminal 1. A second drone also hit the Terminal 2 construction project. Airport operations suspended. Terminal 1 sustained damage. Kuwait Health Ministry reported 1 killed and 32 wounded nationwide from Iranian attacks. March 8: Two fuel depots struck by drone attack causing large fire; fire brought under control with no significant injuries. Kuwait national oil company announced precautionary crude production cut. March 8: Drone wave hit fuel tank depots at airport, sparking large fire. Two border guards killed. Kuwait National Oil Company announced precautionary crude production cut. On March 8 at dawn, drones directly targeted fuel storage tanks at the airport, causing a huge fire at one depot. Fire brought under control. Kuwait's national oil company announced a precautionary crude oil production cut. March 8 dawn: Drone attack hit two KAFCO fuel storage tanks causing major fire. Contained, no significant injuries. Kuwait cut crude oil production as precaution. On March 8, drones struck two fuel depots at KWI, causing a major fire at one tank. Kuwait PACA confirmed the strikes. Fire controlled after hours; no casualties. On March 8, Kuwait confirmed two fuel depots at the airport were hit by Iranian drones, causing a major fire at one facility.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -3679,6 +3679,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-08",
                             "text": "Drone attack at dawn targeted two KAFCO fuel storage tanks at the airport, sparking a major fire at one depot. Fire brought under control with no significant injuries. Military called it 'a direct targeting of vital infrastructure.' Kuwait National Oil Company announced precautionary crude production cut."
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "CNBC reports two fuel depots at the international airport were hit by drones, causing a 'huge fire at one of them.' Fire response ongoing."
                     }
             ],
             "sources": [
@@ -3745,6 +3749,10 @@ const LOCATIONS = [
                     {
                             "name": "Bloomberg",
                             "url": "https://www.bloomberg.com/news/articles/2026-03-08/kuwait-pension-fund-hq-airport-hit-in-overnight-drone-attacks"
+                    },
+                    {
+                            "name": "CNBC",
+                            "url": "https://www.cnbc.com/2026/03/08/iranian-projectiles-continue-to-strike-gulf-countries-infrastructure.html"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -5106,7 +5114,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🏛️",
             "type": "Drone Strike on US Embassy",
-            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran. On morning of March 3: After initial 2 drones hit US Embassy, 2 more drones struck the Diplomatic Quarter per Reuters sources. Saudi MoD confirmed. Washington Post confirmed the drone struck the CIA station within the embassy compound, causing structural damage and partial roof collapse. No CIA casualties reported. March 8: Second attempted drone attack on Diplomatic Quarter thwarted; Saudi MoD intercepted 21 drones total including 13 east of Riyadh. On March 8, Saudi air defenses thwarted a drone attack targeting the Diplomatic Quarter — the second attempted strike on this area. No damage or casualties. Saudi Defense Ministry reported intercepting a total of 21+ drones in the Riyadh area on March 8. March 8: Drone targeting diplomatic quarter intercepted with no damage or casualties. On March 8, Saudi air defenses foiled a second drone attack on the Diplomatic Quarter (first was the March 3 US Embassy drone strike). No damage or casualties.",
+            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran. On morning of March 3: After initial 2 drones hit US Embassy, 2 more drones struck the Diplomatic Quarter per Reuters sources. Saudi MoD confirmed. Washington Post confirmed the drone struck the CIA station within the embassy compound, causing structural damage and partial roof collapse. No CIA casualties reported. March 8: Second attempted drone attack on Diplomatic Quarter thwarted; Saudi MoD intercepted 21 drones total including 13 east of Riyadh. On March 8, Saudi air defenses thwarted a drone attack targeting the Diplomatic Quarter — the second attempted strike on this area. No damage or casualties. Saudi Defense Ministry reported intercepting a total of 21+ drones in the Riyadh area on March 8. March 8: Drone targeting diplomatic quarter intercepted with no damage or casualties. On March 8, Saudi air defenses foiled a second drone attack on the Diplomatic Quarter (first was the March 3 US Embassy drone strike). No damage or casualties. On March 8 overnight, Saudi defense ministry foiled another drone attack targeting the Diplomatic Quarter. Three drones also shot down over Riyadh city.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -5147,6 +5155,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-08",
                             "text": "Saudi air defenses foiled a second drone attack targeting the Diplomatic Quarter in Riyadh. The drone was shot down with no material damage or civilian injuries reported. Saudi MoD spokesman confirmed."
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "Saudi defense ministry foiled drone attack targeting the Diplomatic Quarter in Riyadh. Drone intercepted with no material damage or civilian injuries. Three additional drones shot down over Riyadh."
                     }
             ],
             "sources": [
@@ -5209,6 +5221,14 @@ const LOCATIONS = [
                     {
                             "name": "Arab News",
                             "url": "https://www.arabnews.com/node/2635645/middle-east"
+                    },
+                    {
+                            "name": "Al Arabiya",
+                            "url": "https://english.alarabiya.net/News/saudi-arabia/2026/03/08/saudi-arabia-thwart-attempt-to-attack-diplomatic-quarter-area-in-riyadh-"
+                    },
+                    {
+                            "name": "NBC News",
+                            "url": "https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-war-trump-dignified-transfer-us-soldiers-rcna262207"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -5410,7 +5430,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🛢️",
             "type": "Oil field — drone interception",
-            "detail": "Saudi air defenses intercepted and destroyed 16 drones in four waves targeting the strategic Shaybah oil field early Saturday March 7. This is the first attempted attack on Shaybah since the war began Feb 28. All drones were neutralized over the Empty Quarter with no confirmed damage to the facility. On March 7, Saudi MOD confirmed intercepting and destroying 16 drones heading toward Shaybah, the largest single wave targeting the oil field. On March 7, 16 drones were launched in four waves toward Shaybah — the first attack on the field since the war began. All 16 intercepted and destroyed in the Empty Quarter. March 7: Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the largest single-day drone barrage against this facility. On March 7, Saudi air defenses intercepted and destroyed 16-20 drones in 4-5 waves heading toward the strategic Shaybah field, the first direct attempted attack on this 1 million bpd upstream asset since the war began. On March 7, Saudi MOD reported intercepting 16 drones in four separate waves targeting Shaybah, a significant escalation in targeting of this field. On March 7, Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the most sustained aerial assault on the field to date. All drones destroyed before reaching the facility. March 7: Saudi MOD intercepted 6 drones heading towards Shaybah. Three separate attempts made despite Pezeshkian's announced halt. Facility under sustained targeting—remains under interception protection. March 7: Six drones intercepted heading towards Shaybah oilfield. Mar 7: Saudi MOD intercepted 6 drones heading toward Shaybah oilfield. Six drones intercepted heading toward Shaybah oilfield on March 7 per Saudi MoD. March 7: Saudi MOD Maj. Gen. Al-Maliki confirmed 16 drones in 4 waves intercepted heading toward Shaybah. March 7: First confirmed targeting of Shaybah in the conflict. Saudi MOD intercepted 16+ drones in multiple waves in the Empty Quarter. Iran attempting to stretch Saudi air defenses across 800km by simultaneously targeting Shaybah and PSAB. Saudi MOD confirmed intercepting six Iranian drones heading toward Shaybah on March 7. March 8: Additional drone interceptions over Shaybah as Saudi air defences continue to engage incoming Iranian UAVs. March 7-8: Up to 22 drones intercepted heading toward Shaybah oilfield over two days. On March 8, a drone heading toward Shaybah was intercepted and destroyed by Saudi air defenses. March 7-8: Massive escalation — 21 drones intercepted Saturday, 17+ Sunday, all destroyed in Empty Quarter. Shaybah remains a primary Iranian target but all attacks intercepted. On March 8, Saudi MoD confirmed 17 drones intercepted and destroyed over Shaybah, the largest single interception event at this location since the war began.",
+            "detail": "Saudi air defenses intercepted and destroyed 16 drones in four waves targeting the strategic Shaybah oil field early Saturday March 7. This is the first attempted attack on Shaybah since the war began Feb 28. All drones were neutralized over the Empty Quarter with no confirmed damage to the facility. On March 7, Saudi MOD confirmed intercepting and destroying 16 drones heading toward Shaybah, the largest single wave targeting the oil field. On March 7, 16 drones were launched in four waves toward Shaybah — the first attack on the field since the war began. All 16 intercepted and destroyed in the Empty Quarter. March 7: Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the largest single-day drone barrage against this facility. On March 7, Saudi air defenses intercepted and destroyed 16-20 drones in 4-5 waves heading toward the strategic Shaybah field, the first direct attempted attack on this 1 million bpd upstream asset since the war began. On March 7, Saudi MOD reported intercepting 16 drones in four separate waves targeting Shaybah, a significant escalation in targeting of this field. On March 7, Saudi air defenses intercepted 16 drones in four waves targeting Shaybah, the most sustained aerial assault on the field to date. All drones destroyed before reaching the facility. March 7: Saudi MOD intercepted 6 drones heading towards Shaybah. Three separate attempts made despite Pezeshkian's announced halt. Facility under sustained targeting—remains under interception protection. March 7: Six drones intercepted heading towards Shaybah oilfield. Mar 7: Saudi MOD intercepted 6 drones heading toward Shaybah oilfield. Six drones intercepted heading toward Shaybah oilfield on March 7 per Saudi MoD. March 7: Saudi MOD Maj. Gen. Al-Maliki confirmed 16 drones in 4 waves intercepted heading toward Shaybah. March 7: First confirmed targeting of Shaybah in the conflict. Saudi MOD intercepted 16+ drones in multiple waves in the Empty Quarter. Iran attempting to stretch Saudi air defenses across 800km by simultaneously targeting Shaybah and PSAB. Saudi MOD confirmed intercepting six Iranian drones heading toward Shaybah on March 7. March 8: Additional drone interceptions over Shaybah as Saudi air defences continue to engage incoming Iranian UAVs. March 7-8: Up to 22 drones intercepted heading toward Shaybah oilfield over two days. On March 8, a drone heading toward Shaybah was intercepted and destroyed by Saudi air defenses. March 7-8: Massive escalation — 21 drones intercepted Saturday, 17+ Sunday, all destroyed in Empty Quarter. Shaybah remains a primary Iranian target but all attacks intercepted. On March 8, Saudi MoD confirmed 17 drones intercepted and destroyed over Shaybah, the largest single interception event at this location since the war began. Saudi defense ministry confirmed intercepting a drone targeting Shaybah on March 8.",
             "incidents": [
                     {
                             "date": "2026-03-07",
@@ -5475,6 +5495,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-08",
                             "text": "Saudi air defenses intercepted and destroyed 17 drones targeting the Shaybah oil field on Saturday. The Saudi Ministry of Defense confirmed the interceptions. No damage was reported to the facility."
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "Saudi defense ministry intercepted and destroyed a drone heading toward the Shaybah field in the Empty Quarter."
                     }
             ],
             "sources": [
@@ -5553,6 +5577,10 @@ const LOCATIONS = [
                     {
                             "name": "Arab News",
                             "url": "https://www.arabnews.com/node/2635639/saudi-arabia"
+                    },
+                    {
+                            "name": "Al Arabiya",
+                            "url": "https://english.alarabiya.net/News/saudi-arabia/2026/03/08/saudi-arabia-thwart-attempt-to-attack-diplomatic-quarter-area-in-riyadh-"
                     }
             ],
             "dateAdded": "2026-03-07"
