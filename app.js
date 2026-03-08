@@ -126,8 +126,13 @@
                 fillOpacity: fillOp, weight: 2, opacity: 1
             });
 
-            // Build popup
-            marker.bindPopup(buildPopup(loc), { maxWidth: 380 });
+            // Build popup with mobile-aware auto-pan padding
+            const isMobile = window.innerWidth <= 768;
+            marker.bindPopup(buildPopup(loc), {
+                maxWidth: isMobile ? 280 : 380,
+                autoPanPaddingTopLeft: isMobile ? L.point(10, 75) : L.point(10, 20),
+                autoPanPaddingBottomRight: isMobile ? L.point(10, 60) : L.point(10, 20)
+            });
             state.markerGroup.addLayer(marker);
         });
     }
@@ -438,8 +443,13 @@
             sheet.classList.toggle('open');
         });
 
-        // Close when map is tapped
+        // Close sheet when map is tapped (returns to peek state via CSS default)
         state.map.on('click', () => {
+            sheet.classList.remove('open');
+        });
+
+        // Close sheet when a popup opens so popup is fully visible
+        state.map.on('popupopen', () => {
             sheet.classList.remove('open');
         });
     }

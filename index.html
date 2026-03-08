@@ -139,7 +139,7 @@
             box-shadow: 0 4px 16px rgba(0,0,0,0.12) !important;
         }
         .leaflet-popup-tip { background: rgba(255, 255, 255, 0.98) !important; }
-        .leaflet-popup-content { margin: 14px 16px !important; font-size: 13px; line-height: 1.5; max-width: 360px; }
+        .leaflet-popup-content { margin: 14px 16px !important; font-size: 13px; line-height: 1.5; max-width: 360px; max-height: 350px; overflow-y: auto; }
         .popup-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; color: #111; }
         .popup-category { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; padding: 2px 8px; border-radius: 4px; display: inline-block; }
         .popup-detail { margin: 4px 0; font-size: 12px; color: #4b5563; }
@@ -240,14 +240,14 @@
                 border: 1.5px solid rgba(0,0,0,0.1);
             }
 
-            /* Mobile bottom sheet */
+            /* Mobile bottom sheet — peek handle by default */
             .mobile-sheet {
                 display: block; position: fixed; bottom: 46px; left: 0; right: 0;
                 z-index: 1001; background: #fff;
                 border-top-left-radius: 14px; border-top-right-radius: 14px;
                 box-shadow: 0 -2px 16px rgba(0,0,0,0.12);
                 max-height: 55vh;
-                transform: translateY(calc(100%));
+                transform: translateY(calc(100% - 44px));
                 transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             }
             .mobile-sheet.open {
@@ -255,9 +255,11 @@
             }
             .mobile-sheet-handle {
                 display: flex; align-items: center; justify-content: center;
-                gap: 8px; padding: 10px 16px; cursor: pointer;
+                gap: 8px; padding: 12px 16px; cursor: pointer;
                 border-bottom: 1px solid #f3f4f6;
                 -webkit-tap-highlight-color: transparent;
+                background: #fff;
+                border-top-left-radius: 14px; border-top-right-radius: 14px;
             }
             .mobile-sheet-bar {
                 width: 32px; height: 4px; border-radius: 2px;
@@ -281,8 +283,17 @@
                 width: 12px; height: 12px;
             }
 
-            /* Popup sizing */
-            .leaflet-popup-content { max-width: 80vw !important; font-size: 12px; }
+            /* Popup sizing & scrollability */
+            .leaflet-popup-content {
+                max-width: 80vw !important;
+                max-height: 45vh !important;
+                overflow-y: auto !important;
+                -webkit-overflow-scrolling: touch;
+                font-size: 12px;
+            }
+            .leaflet-popup-content-wrapper {
+                overflow: hidden !important;
+            }
             .popup-title { font-size: 14px; }
         }
     </style>
