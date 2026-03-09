@@ -8,14 +8,14 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-09T14:02:57.589Z",
+    "lastUpdated": "2026-03-09T15:09:49.941Z",
     "casualties": {
         "killed": 42,
         "injured": 497
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "DAY 10 — Mojtaba Khamenei (son of assassinated Ayatollah) named Iran's 3rd Supreme Leader on March 8, signaling hardliner continuity and likely escalation. Iran rules out immediate ceasefire. IRGC pledges 'complete obedience' to new leader. US orders mandatory departure of non-emergency staff from Saudi Arabia. Bahrain's BAPCO, Qatar's QatarEnergy, and Kuwait all declare force majeure on energy operations. Oil surpasses $110/barrel. Iran has fired 500+ ballistic missiles and ~2,000 drones since Feb 28 (IRGC/Fars News). Attacks on Gulf states declining in volume (~90% drop in ballistic missiles, ~83% drop in drones per US estimate) but continue daily with lethal effect.",
-    "totalBarrage": "Iran claims 500+ ballistic/naval missiles and ~2,000 drones launched since Feb 28 (Fars News Agency, March 5). UAE alone tracked 174 ballistic missiles, 8 cruise missiles, 689 drones as of March 3.",
+    "summary": "Day 10 (March 9): Iran launched fresh missile and drone attacks on Israel and Gulf states hours after naming Mojtaba Khamenei as new Supreme Leader. US ordered mandatory departure of non-emergency staff from Saudi Arabia — first such order since war began. Oil prices briefly neared $120/barrel. Iraqi front expanding with confirmed strikes on US Embassy Baghdad and repeated attacks on Erbil airport/US base. Arab foreign ministers condemned Iran's attacks as 'grave threat to international peace and security.'",
+    "totalBarrage": "Iran has fired over 500 ballistic/naval missiles and almost 2,000 drones since Feb 28 (Fars News Agency, March 5). UAE alone has tracked 941 drones, 189 ballistic missiles and 8 cruise missiles (INSS Israel data via CBS).",
     "intercepted": "UAE: 161 of 174 ballistic missiles, all 8 cruise missiles, 645 of 689 drones. Bahrain: 75+ missiles, 123+ drones. Qatar: 101 of 101 ballistic missiles detected as of March 3. Kuwait: ongoing interceptions. Saudi Arabia: multiple Shaybah/Eastern Province interceptions."
 };
 
@@ -2770,7 +2770,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "💥",
             "type": "Drone Strike — Residential Casualties",
-            "detail": "Overnight Iranian drone attack on Sitra Island injured 32 Bahraini civilians, with 4 in critical condition including a 17-year-old girl with severe head and eye injuries and a 2-month-old infant. All casualties are Bahraini nationals. This is separate from the BAPCO refinery fire nearby. March 9: At least 32 people injured, including children, in Iranian drone strike on residential areas of Sitra island per Bahrain state news agency and NPR. Bahrain Health Ministry confirmed 32 Bahraini citizens injured, 4 in serious/critical condition including children needing surgery. Youngest victim is a 2-month-old infant. Continued Iranian drone attacks on Sitra Island on March 9 caused injuries and damage in the residential area near the Bapco refinery.",
+            "detail": "Overnight Iranian drone attack on Sitra Island injured 32 Bahraini civilians, with 4 in critical condition including a 17-year-old girl with severe head and eye injuries and a 2-month-old infant. All casualties are Bahraini nationals. This is separate from the BAPCO refinery fire nearby. March 9: At least 32 people injured, including children, in Iranian drone strike on residential areas of Sitra island per Bahrain state news agency and NPR. Bahrain Health Ministry confirmed 32 Bahraini citizens injured, 4 in serious/critical condition including children needing surgery. Youngest victim is a 2-month-old infant. Continued Iranian drone attacks on Sitra Island on March 9 caused injuries and damage in the residential area near the Bapco refinery. Bahrain's Ministry of Health confirmed 4 of the 32 injured are in critical condition and include children requiring surgery (Bahrain News Agency via Al Jazeera, NPR).",
             "incidents": [
                     {
                             "date": "2026-03-09",
@@ -2829,6 +2829,10 @@ const LOCATIONS = [
                     {
                             "name": "Marine Link",
                             "url": "https://www.marinelink.com/news/bahrains-bapco-declares-force-majeure-536693"
+                    },
+                    {
+                            "name": "Al Jazeera Death Toll Tracker",
+                            "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker"
                     }
             ],
             "dateAdded": "2026-03-09"
@@ -5578,7 +5582,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🏛️",
             "type": "Drone Strike on US Embassy",
-            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran. On morning of March 3: After initial 2 drones hit US Embassy, 2 more drones struck the Diplomatic Quarter per Reuters sources. Saudi MoD confirmed. Washington Post confirmed the drone struck the CIA station within the embassy compound, causing structural damage and partial roof collapse. No CIA casualties reported. March 8: Second attempted drone attack on Diplomatic Quarter thwarted; Saudi MoD intercepted 21 drones total including 13 east of Riyadh. On March 8, Saudi air defenses thwarted a drone attack targeting the Diplomatic Quarter — the second attempted strike on this area. No damage or casualties. Saudi Defense Ministry reported intercepting a total of 21+ drones in the Riyadh area on March 8. March 8: Drone targeting diplomatic quarter intercepted with no damage or casualties. On March 8, Saudi air defenses foiled a second drone attack on the Diplomatic Quarter (first was the March 3 US Embassy drone strike). No damage or casualties. On March 8 overnight, Saudi defense ministry foiled another drone attack targeting the Diplomatic Quarter. Three drones also shot down over Riyadh city. On March 8, a drone aimed at Riyadh's diplomatic quarter was thwarted with no damage. Saudi MOD reported 26 drones targeted the capital area with 13 intercepted east of Riyadh. March 8: Saudi intercepted drone targeting diplomatic quarter. No damage. Riyadh and surroundings targeted by 26 drones total on Sunday, all intercepted. March 9: State Dept issued fresh security alert ordering non-emergency staff departure. Americans urged to depart on available commercial flights from Riyadh, Jeddah, or Dhahran. March 9: Saudi defense ministry foiled drone attack on Diplomatic Quarter; no damage or injuries. At least 8 drones intercepted and destroyed near Riyadh and Al-Kharj. March 8-9: State Dept ordered (not merely authorized) departure of non-emergency staff — first such departure order for Saudi Arabia since war began. All routine consular services suspended. Americans advised to shelter in place and avoid embassy/consulate facilities. On March 9, the State Department announced ordered departure (mandatory evacuation) of non-emergency personnel, escalating from authorized departure on March 3. Embassy warns all Americans in Kingdom to shelter in place and avoid embassy/consulate buildings. On March 8-9, the US State Department ordered mandatory departure of non-emergency personnel from Saudi Arabia, citing heightened risks. Saudi Arabia Travel Advisory elevated with language about Iranian drone/missile targeting of American interests.",
+            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran. On morning of March 3: After initial 2 drones hit US Embassy, 2 more drones struck the Diplomatic Quarter per Reuters sources. Saudi MoD confirmed. Washington Post confirmed the drone struck the CIA station within the embassy compound, causing structural damage and partial roof collapse. No CIA casualties reported. March 8: Second attempted drone attack on Diplomatic Quarter thwarted; Saudi MoD intercepted 21 drones total including 13 east of Riyadh. On March 8, Saudi air defenses thwarted a drone attack targeting the Diplomatic Quarter — the second attempted strike on this area. No damage or casualties. Saudi Defense Ministry reported intercepting a total of 21+ drones in the Riyadh area on March 8. March 8: Drone targeting diplomatic quarter intercepted with no damage or casualties. On March 8, Saudi air defenses foiled a second drone attack on the Diplomatic Quarter (first was the March 3 US Embassy drone strike). No damage or casualties. On March 8 overnight, Saudi defense ministry foiled another drone attack targeting the Diplomatic Quarter. Three drones also shot down over Riyadh city. On March 8, a drone aimed at Riyadh's diplomatic quarter was thwarted with no damage. Saudi MOD reported 26 drones targeted the capital area with 13 intercepted east of Riyadh. March 8: Saudi intercepted drone targeting diplomatic quarter. No damage. Riyadh and surroundings targeted by 26 drones total on Sunday, all intercepted. March 9: State Dept issued fresh security alert ordering non-emergency staff departure. Americans urged to depart on available commercial flights from Riyadh, Jeddah, or Dhahran. March 9: Saudi defense ministry foiled drone attack on Diplomatic Quarter; no damage or injuries. At least 8 drones intercepted and destroyed near Riyadh and Al-Kharj. March 8-9: State Dept ordered (not merely authorized) departure of non-emergency staff — first such departure order for Saudi Arabia since war began. All routine consular services suspended. Americans advised to shelter in place and avoid embassy/consulate facilities. On March 9, the State Department announced ordered departure (mandatory evacuation) of non-emergency personnel, escalating from authorized departure on March 3. Embassy warns all Americans in Kingdom to shelter in place and avoid embassy/consulate buildings. On March 8-9, the US State Department ordered mandatory departure of non-emergency personnel from Saudi Arabia, citing heightened risks. Saudi Arabia Travel Advisory elevated with language about Iranian drone/missile targeting of American interests. US State Dept issued ordered departure March 8 for non-emergency personnel — first mandatory departure from Saudi Arabia since war began. Saudi forces intercepted drone targeting diplomatic quarter early March 9. All consular services suspended.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -5651,6 +5655,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-09",
                             "text": "US State Department ordered (upgraded from authorized) non-emergency US government employees and family members to leave Saudi Arabia due to safety risks, the first mandatory departure order for Saudi Arabia since the war began. US Embassy issued updated Security Alert citing heightened risks from armed conflict, terrorism, and missile/drone attacks from Iran and Yemen (Bloomberg, CNBC, US State Dept)."
+                    },
+                    {
+                            "date": "2026-03-09",
+                            "text": "Saudi Defense Ministry shot down drone aimed at Riyadh diplomatic quarter early Sunday. US State Department issued ordered departure on March 8 for non-emergency government employees and families — first mandatory departure order in Saudi Arabia since the war began. Embassy and consular services suspended. Essential staff under modified shelter-in-place."
                     }
             ],
             "sources": [
@@ -5754,7 +5762,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🛢️",
             "type": "Energy Hub — Imminent Attack Warning",
-            "detail": "The US Embassy in Riyadh issued a warning on March 3 of an imminent attack in the eastern Saudi city of Dhahran, home to major energy installations along the Gulf coast. Dhahran is the headquarters of Saudi Aramco and a critical hub for the kingdom's oil industry. The warning came amid escalating Iranian targeting of energy infrastructure across the Gulf. US Embassy Riyadh issued a specific imminent attack warning for Dhahran on March 3, indicating continued elevated threat to eastern Saudi energy infrastructure. March 9: US Consulate Dhahran added to explicit avoidance advisory. All routine consular services suspended. March 9 security alert explicitly warns staff to avoid US Consulate Dhahran building. All routine consular services suspended until further notice. US State Dept updated Saudi Arabia Travel Advisory to Level 3 on March 9, explicitly citing risk of Iranian drone/missile targeting of American interests and armed conflict.",
+            "detail": "The US Embassy in Riyadh issued a warning on March 3 of an imminent attack in the eastern Saudi city of Dhahran, home to major energy installations along the Gulf coast. Dhahran is the headquarters of Saudi Aramco and a critical hub for the kingdom's oil industry. The warning came amid escalating Iranian targeting of energy infrastructure across the Gulf. US Embassy Riyadh issued a specific imminent attack warning for Dhahran on March 3, indicating continued elevated threat to eastern Saudi energy infrastructure. March 9: US Consulate Dhahran added to explicit avoidance advisory. All routine consular services suspended. March 9 security alert explicitly warns staff to avoid US Consulate Dhahran building. All routine consular services suspended until further notice. US State Dept updated Saudi Arabia Travel Advisory to Level 3 on March 9, explicitly citing risk of Iranian drone/missile targeting of American interests and armed conflict. US Consulate Dhahran employees instructed to prepare for possible ordered departures. Essential staff advised to avoid consulate. All routine consular services suspended.",
             "incidents": [
                     {
                             "date": "2026-03-03",
@@ -5775,6 +5783,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-09",
                             "text": "US State Department Travel Advisory for Saudi Arabia updated to Level 3 (Reconsider Travel) citing risk of Iranian drone and missile targeting of American interests. Commercial flights operating out of Dhahran but with significant cancellations (US State Dept)."
+                    },
+                    {
+                            "date": "2026-03-09",
+                            "text": "US Consulate Dhahran employees instructed to prepare for possible ordered departures per US Embassy Riyadh security alert. Consulate employees advised to avoid the building. Consular services suspended."
                     }
             ],
             "sources": [
@@ -5793,6 +5805,10 @@ const LOCATIONS = [
                     {
                             "name": "US State Dept Travel Advisory",
                             "url": "https://sa.usembassy.gov/travel-advisory-update-saudi-arabia-travel-advisory-level-3/"
+                    },
+                    {
+                            "name": "Israel National News",
+                            "url": "https://www.israelnationalnews.com/news/423602"
                     }
             ],
             "dateAdded": "2026-03-03"
