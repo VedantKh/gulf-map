@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-09T07:55:23.349Z",
+    "lastUpdated": "2026-03-09T08:36:57.858Z",
     "casualties": {
         "killed": 38,
-        "injured": 369
+        "injured": 401
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 10 (March 9): Mojtaba Khamenei named Iran's new Supreme Leader; IRGC and military pledged allegiance. Iran's president threatened to escalate attacks if Gulf territories are used against Iran. IRGC claims it has supplies to continue drone and missile attacks for up to 6 months. 7 US service members now confirmed KIA from Iranian strikes (7th died March 7 from injuries sustained March 1 in Saudi Arabia). Arab foreign ministers strongly condemned Iran's attacks as 'grave threat to international peace and security.' New Qatar missile intercept on March 9 early morning.",
-    "totalBarrage": "UAE: 246 BMs / 1,422 drones / 8 CMs detected (as of Mar 8). Kuwait: 219 BMs / 406 drones. Qatar: 129+ BMs / 63+ drones / 2 aircraft. Bahrain: 95 BMs / 164 drones. Iran claims 500+ BMs/naval missiles and ~2,000 drones fired since Feb 28 (Fars News, as of Mar 5).",
-    "intercepted": "UAE: 229 BMs intercepted, 14 fell in sea, 2 landed in UAE; 1,342 of 1,422 drones intercepted (76 fell in UAE). Kuwait: majority intercepted. Qatar: 121+ BMs intercepted. Bahrain: 95 BMs / 164 drones intercepted. Saudi Arabia: 33 drones intercepted on Mar 8 alone."
+    "summary": "Day 10 (Mar 9): Iranian drone strikes continue despite Pezeshkian apology. Major Sitra (Bahrain) residential drone strike injures 32 civilians including children. UAE reports renewed air defense interceptions Monday morning in Abu Dhabi with missile threat alerts issued. Saudi Arabia sharpens warnings to Iran, says Pezeshkian ceasefire pledge was 'not implemented in practice.' Mojtaba Khamenei named Iran's new supreme leader; IRGC pledges 'complete obedience.'",
+    "totalBarrage": "UAE cumulative as of Mar 8: 221 ballistic missiles, 1,422 drones, 8 cruise missiles detected. Iran claims 500+ ballistic/naval missiles and ~2,000 drones fired since Feb 28.",
+    "intercepted": "UAE cumulative as of Mar 8: 205/221 ballistic missiles destroyed, 1,342/1,422 drones intercepted, 8/8 cruise missiles destroyed. 2 ballistic missiles and 80 drones impacted UAE territory."
 };
 
 const LOCATIONS = [
@@ -2314,7 +2314,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Missile Strike on Oil Refinery",
-            "detail": "An Iranian ballistic missile struck Bahrain's BAPCO Sitra refinery on March 5, triggering large fires at the 400k b/d facility. Bahrain's Interior Ministry confirmed the fire was contained with limited material damage and no casualties. BAPCO confirmed refinery operations continue. Thursday night: Iranian missile confirmed to have directly struck the refinery in a separate incident. Bahrain authorities say fire extinguished, refinery operational, no casualties. Bahrain Defence Force total interceptions since Feb 28: 75 missiles and 123 drones. Second confirmed missile impact on Bapco refinery on March 5. Fire extinguished, no casualties.",
+            "detail": "An Iranian ballistic missile struck Bahrain's BAPCO Sitra refinery on March 5, triggering large fires at the 400k b/d facility. Bahrain's Interior Ministry confirmed the fire was contained with limited material damage and no casualties. BAPCO confirmed refinery operations continue. Thursday night: Iranian missile confirmed to have directly struck the refinery in a separate incident. Bahrain authorities say fire extinguished, refinery operational, no casualties. Bahrain Defence Force total interceptions since Feb 28: 75 missiles and 123 drones. Second confirmed missile impact on Bapco refinery on March 5. Fire extinguished, no casualties. March 9: Smoke reported rising from BAPCO refinery following renewed Iranian strike, concurrent with mass-casualty drone attack on nearby Sitra residential areas.",
             "incidents": [
                     {
                             "date": "2026-03-05",
@@ -2327,6 +2327,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-05",
                             "text": "Iranian missile struck Bapco Energies refinery on Sitra island, sparking a fire that was quickly brought under control. No injuries reported; operations continued while damage was assessed."
+                    },
+                    {
+                            "date": "2026-03-09",
+                            "text": "Smoke seen rising from BAPCO Sitra refinery on Monday March 9 following renewed Iranian strike, concurrent with drone attacks on nearby Sitra residential areas that injured 32 civilians."
                     }
             ],
             "sources": [
@@ -2357,6 +2361,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/5/iran-fires-more-missiles-drones-across-gulf-region-amid-us-israeli-attacks"
+                    },
+                    {
+                            "name": "Gulf Today",
+                            "url": "https://www.gulftoday.ae/news/2026/03/09/32-citizens-injured-in-iranian-drone-attack-bahrain"
                     }
             ],
             "dateAdded": "2026-03-05"
