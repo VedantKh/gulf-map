@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-09T11:33:20.442Z",
+    "lastUpdated": "2026-03-09T12:41:02.691Z",
     "casualties": {
-        "killed": 41,
+        "killed": 42,
         "injured": 497
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 10 (March 9): Iran names Mojtaba Khamenei as new Supreme Leader. IRGC continues strikes despite President Pezeshkian's apology to neighbors. BAPCO declares force majeure after Bahrain refinery strike. 32 Bahraini civilians including children injured in Sitra drone attack. US orders staff departure from Saudi Arabia. Kuwait and Qatar report new March 9 interceptions. Brent crude surged to $119.50/barrel. Saudi Arabia warned it retains 'full right to take all necessary measures' to deter aggression.",
-    "totalBarrage": "As of March 5: Iran reported firing over 500 ballistic/naval missiles and nearly 2,000 drones since Feb 28 (Fars News Agency via Wikipedia). UAE alone tracked 1,305+ UAVs and 300+ ballistic missiles by March 8.",
-    "intercepted": "Multi-layered Gulf defenses intercepting roughly half of all attacks (ACLED analysis). UAE: 1,229 of 1,305 UAVs intercepted. Qatar: 60+ ballistic missiles intercepted to date. Kuwait: 97 ballistic missiles and 283 drones (early figures). Bahrain: 73 missiles and 91 drones (early figures)."
+    "summary": "Day 10 of conflict. Iran's new Supreme Leader Mojtaba Khamenei named March 8. Despite Pezeshkian's pledge to halt Gulf strikes, IRGC attacks continue. Bapco (Bahrain), QatarEnergy, and Kuwait Petroleum have all declared force majeure. US orders mandatory departure from Saudi Arabia. Oil above $110/barrel. Iran's firepower reportedly declining but drone swarms continue across all GCC states.",
+    "totalBarrage": "As of March 8: Iran has fired over 500 ballistic/naval missiles and almost 2,000 drones since Feb 28 (Fars News Agency). UAE alone has tracked 238 ballistic missiles, 1,422 drones, and 8 cruise missiles. Kuwait intercepted 97+ ballistic missiles and 283+ drones. Bahrain intercepted 75+ missiles and 123+ drones.",
+    "intercepted": "UAE: 221 of 238 ballistic missiles intercepted (93%), 1,342 of 1,422 drones (94%), all 8 cruise missiles destroyed. Kuwait air defense: 97 ballistic missiles and 283 drones intercepted. Bahrain: 75 missiles and 123 drones destroyed. Jordan: 108 projectiles intercepted. Qatar: intercepted 6 of 10 ballistic missiles March 8; 2 fell in territorial waters, 2 in uninhabited areas."
 };
 
 const LOCATIONS = [
@@ -2318,7 +2318,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Missile Strike on Oil Refinery",
-            "detail": "An Iranian ballistic missile struck Bahrain's BAPCO Sitra refinery on March 5, triggering large fires at the 400k b/d facility. Bahrain's Interior Ministry confirmed the fire was contained with limited material damage and no casualties. BAPCO confirmed refinery operations continue. Thursday night: Iranian missile confirmed to have directly struck the refinery in a separate incident. Bahrain authorities say fire extinguished, refinery operational, no casualties. Bahrain Defence Force total interceptions since Feb 28: 75 missiles and 123 drones. Second confirmed missile impact on Bapco refinery on March 5. Fire extinguished, no casualties. March 9: Smoke reported rising from BAPCO refinery following renewed Iranian strike, concurrent with mass-casualty drone attack on nearby Sitra residential areas. On March 9, BAPCO declared force majeure on group operations after a new Iranian drone/missile strike caused fire at the refinery. Fire contained, no fatalities at the facility. Bahrain becomes second Gulf state to invoke force majeure after Qatar's LNG operations. March 9: BAPCO declares force majeure on all oil shipments after new Iranian drone strikes set refinery ablaze. Over 80% of BAPCO refined products and crude are exported globally. Fire contained with material damage, no casualties per BNA. On March 9, a new Iranian missile strike ignited a fire at a BAPCO refinery unit. The company declared force majeure on all group operations — a significant economic escalation for Bahrain's main energy asset.",
+            "detail": "An Iranian ballistic missile struck Bahrain's BAPCO Sitra refinery on March 5, triggering large fires at the 400k b/d facility. Bahrain's Interior Ministry confirmed the fire was contained with limited material damage and no casualties. BAPCO confirmed refinery operations continue. Thursday night: Iranian missile confirmed to have directly struck the refinery in a separate incident. Bahrain authorities say fire extinguished, refinery operational, no casualties. Bahrain Defence Force total interceptions since Feb 28: 75 missiles and 123 drones. Second confirmed missile impact on Bapco refinery on March 5. Fire extinguished, no casualties. March 9: Smoke reported rising from BAPCO refinery following renewed Iranian strike, concurrent with mass-casualty drone attack on nearby Sitra residential areas. On March 9, BAPCO declared force majeure on group operations after a new Iranian drone/missile strike caused fire at the refinery. Fire contained, no fatalities at the facility. Bahrain becomes second Gulf state to invoke force majeure after Qatar's LNG operations. March 9: BAPCO declares force majeure on all oil shipments after new Iranian drone strikes set refinery ablaze. Over 80% of BAPCO refined products and crude are exported globally. Fire contained with material damage, no casualties per BNA. On March 9, a new Iranian missile strike ignited a fire at a BAPCO refinery unit. The company declared force majeure on all group operations — a significant economic escalation for Bahrain's main energy asset. On March 9, Bapco Energies declared force majeure on group operations after the latest Iranian attack set the refinery ablaze. Thick smoke was visible from across Sitra Island. Bapco joins QatarEnergy and Kuwait Petroleum Corp in invoking force majeure due to the conflict.",
             "incidents": [
                     {
                             "date": "2026-03-05",
@@ -2347,6 +2347,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-09",
                             "text": "Iranian missile strike caused fire at refinery unit on Monday morning. Bahrain's National Communication Centre confirmed blaze was contained. BAPCO Energies declared force majeure on all group operations following the attack, a major economic escalation."
+                    },
+                    {
+                            "date": "2026-03-09",
+                            "text": "Bapco Energies declares force majeure on group operations following attack on refinery complex. Reuters photographs show thick smoke rising from Bapco refinery on Sitra Island. Bahrain News Agency reports fire at Al-Ma'ameer oil facility with material damage. Bapco says domestic fuel supply remains secured through contingency plans."
                     }
             ],
             "sources": [
@@ -2413,6 +2417,26 @@ const LOCATIONS = [
                     {
                             "name": "NPR",
                             "url": "https://www.npr.org/2026/03/09/nx-s1-5742327/us-israel-iran-war-new-supreme-leader"
+                    },
+                    {
+                            "name": "Euronews",
+                            "url": "https://www.euronews.com/business/2026/03/09/bapco-declares-force-majeure-as-iran-sets-bahrains-only-refinery-ablaze"
+                    },
+                    {
+                            "name": "Bloomberg",
+                            "url": "https://www.bloomberg.com/news/articles/2026-03-09/bahrain-s-bapco-energies-declares-force-majeure-on-operations-mmitmqq7"
+                    },
+                    {
+                            "name": "Reuters via MarineLink",
+                            "url": "https://www.marinelink.com/news/bahrains-bapco-declares-force-majeure-536693"
+                    },
+                    {
+                            "name": "Xinhua",
+                            "url": "https://english.news.cn/20260309/124f5b846cd5406ea777a18d2aca12f8/c.html"
+                    },
+                    {
+                            "name": "Al Arabiya",
+                            "url": "https://english.alarabiya.net/News/gulf/2026/03/09/bahrain-s-bapco-declares-force-majeure-after-iran-strikes-statement"
                     }
             ],
             "dateAdded": "2026-03-05"
@@ -4755,14 +4779,18 @@ const LOCATIONS = [
             "lng": 47.69,
             "country": "Kuwait",
             "city": "Kuwait (Border Area)",
-            "severity": "watchlist",
+            "severity": "critical",
             "icon": "🛂",
             "type": "Border Guard Fatalities (Circumstances Unclear)",
-            "detail": "Kuwait's Interior Ministry announced on March 8 that two officers from the General Directorate of Land Border Security were killed 'while performing their national duty.' Authorities did not elaborate on the circumstances. Multiple outlets including AFP, Arab News, and France24 note it was not confirmed whether the deaths resulted directly from an Iranian attack, though they are counted in broader Gulf conflict tallies.",
+            "detail": "Kuwait's Interior Ministry announced on March 8 that two officers from the General Directorate of Land Border Security were killed 'while performing their national duty.' Authorities did not elaborate on the circumstances. Multiple outlets including AFP, Arab News, and France24 note it was not confirmed whether the deaths resulted directly from an Iranian attack, though they are counted in broader Gulf conflict tallies. Kuwait Fire Force confirmed on X that two of its officers were killed 'while performing duties.' Al Jazeera Day 9 summary confirms two border security personnel killed. Upgraded to CRITICAL per rubric (confirmed fatalities at this location).",
             "incidents": [
                     {
                             "date": "2026-03-08",
                             "text": "Two Kuwaiti border guards killed 'while performing their national duty' per Interior Ministry. Circumstances not elaborated; unclear link to Iranian strikes."
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "Al Jazeera and Kuwait Fire Force confirm two officers killed while performing duties during the conflict. Wikipedia corroborates."
                     }
             ],
             "sources": [
@@ -4777,6 +4805,14 @@ const LOCATIONS = [
                     {
                             "name": "Arab News",
                             "url": "https://www.arabnews.com/node/2635645/middle-east"
+                    },
+                    {
+                            "name": "Al Jazeera (Day 9 Summary)",
+                            "url": "https://www.aljazeera.com/news/2026/3/8/iran-war-what-is-happening-on-day-nine-of-us-israel-attacks"
+                    },
+                    {
+                            "name": "Al Jazeera (Casualty Tracker)",
+                            "url": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker"
                     }
             ],
             "dateAdded": "2026-03-08"
@@ -5506,7 +5542,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🏛️",
             "type": "Drone Strike on US Embassy",
-            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran. On morning of March 3: After initial 2 drones hit US Embassy, 2 more drones struck the Diplomatic Quarter per Reuters sources. Saudi MoD confirmed. Washington Post confirmed the drone struck the CIA station within the embassy compound, causing structural damage and partial roof collapse. No CIA casualties reported. March 8: Second attempted drone attack on Diplomatic Quarter thwarted; Saudi MoD intercepted 21 drones total including 13 east of Riyadh. On March 8, Saudi air defenses thwarted a drone attack targeting the Diplomatic Quarter — the second attempted strike on this area. No damage or casualties. Saudi Defense Ministry reported intercepting a total of 21+ drones in the Riyadh area on March 8. March 8: Drone targeting diplomatic quarter intercepted with no damage or casualties. On March 8, Saudi air defenses foiled a second drone attack on the Diplomatic Quarter (first was the March 3 US Embassy drone strike). No damage or casualties. On March 8 overnight, Saudi defense ministry foiled another drone attack targeting the Diplomatic Quarter. Three drones also shot down over Riyadh city. On March 8, a drone aimed at Riyadh's diplomatic quarter was thwarted with no damage. Saudi MOD reported 26 drones targeted the capital area with 13 intercepted east of Riyadh. March 8: Saudi intercepted drone targeting diplomatic quarter. No damage. Riyadh and surroundings targeted by 26 drones total on Sunday, all intercepted. March 9: State Dept issued fresh security alert ordering non-emergency staff departure. Americans urged to depart on available commercial flights from Riyadh, Jeddah, or Dhahran. March 9: Saudi defense ministry foiled drone attack on Diplomatic Quarter; no damage or injuries. At least 8 drones intercepted and destroyed near Riyadh and Al-Kharj. March 8-9: State Dept ordered (not merely authorized) departure of non-emergency staff — first such departure order for Saudi Arabia since war began. All routine consular services suspended. Americans advised to shelter in place and avoid embassy/consulate facilities.",
+            "detail": "Two Iranian Shahed-136 kamikaze drones struck the US Embassy in Riyadh, hitting the roof and perimeter of the chancery building. Saudi Defense Ministry confirmed the attack caused a limited fire and minor material damage. The embassy was empty at the time with no casualties reported (Fox News). IRGC claimed the strike as part of efforts to destroy 'American political centers' in the region. On March 3, two Iranian drones struck the embassy roof and building, causing a limited fire. The IRGC stated it had begun targeting 'American political centers,' naming the Riyadh embassy specifically. A third drone was reported en route. Saudi air defenses intercepted additional drones over the Diplomatic Quarter. Follow-up drones targeted the embassy area after the initial strike. IRGC claimed it began destroying 'American political centers,' naming the Riyadh embassy. Embassy building reportedly empty at time of attack with no casualties. US Mission issued shelter-in-place for Riyadh, Jeddah, and Dhahran. Embassy closed indefinitely. Saudi MoD intercepted 8 more drones near Riyadh/Al-Kharj. US shelter-in-place alert issued for Riyadh, Jeddah & Dhahran. On morning of March 3: After initial 2 drones hit US Embassy, 2 more drones struck the Diplomatic Quarter per Reuters sources. Saudi MoD confirmed. Washington Post confirmed the drone struck the CIA station within the embassy compound, causing structural damage and partial roof collapse. No CIA casualties reported. March 8: Second attempted drone attack on Diplomatic Quarter thwarted; Saudi MoD intercepted 21 drones total including 13 east of Riyadh. On March 8, Saudi air defenses thwarted a drone attack targeting the Diplomatic Quarter — the second attempted strike on this area. No damage or casualties. Saudi Defense Ministry reported intercepting a total of 21+ drones in the Riyadh area on March 8. March 8: Drone targeting diplomatic quarter intercepted with no damage or casualties. On March 8, Saudi air defenses foiled a second drone attack on the Diplomatic Quarter (first was the March 3 US Embassy drone strike). No damage or casualties. On March 8 overnight, Saudi defense ministry foiled another drone attack targeting the Diplomatic Quarter. Three drones also shot down over Riyadh city. On March 8, a drone aimed at Riyadh's diplomatic quarter was thwarted with no damage. Saudi MOD reported 26 drones targeted the capital area with 13 intercepted east of Riyadh. March 8: Saudi intercepted drone targeting diplomatic quarter. No damage. Riyadh and surroundings targeted by 26 drones total on Sunday, all intercepted. March 9: State Dept issued fresh security alert ordering non-emergency staff departure. Americans urged to depart on available commercial flights from Riyadh, Jeddah, or Dhahran. March 9: Saudi defense ministry foiled drone attack on Diplomatic Quarter; no damage or injuries. At least 8 drones intercepted and destroyed near Riyadh and Al-Kharj. March 8-9: State Dept ordered (not merely authorized) departure of non-emergency staff — first such departure order for Saudi Arabia since war began. All routine consular services suspended. Americans advised to shelter in place and avoid embassy/consulate facilities. On March 9, the State Department announced ordered departure (mandatory evacuation) of non-emergency personnel, escalating from authorized departure on March 3. Embassy warns all Americans in Kingdom to shelter in place and avoid embassy/consulate buildings.",
             "incidents": [
                     {
                             "date": "2026-03-02",
@@ -5571,6 +5607,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-09",
                             "text": "US State Department ORDERED (upgraded from prior March 3 authorization) non-emergency government employees and family members to leave Saudi Arabia. Embassy and Consulate Dhahran suspended routine consular services. Remaining essential staff under modified shelter-in-place. Americans advised to avoid embassy and consulate facilities."
+                    },
+                    {
+                            "date": "2026-03-09",
+                            "text": "US State Department escalates from authorized to ORDERED departure of non-emergency personnel and family members from Saudi Arabia, citing sustained missile and drone threats. Essential staff under modified shelter-in-place. Embassy and Consulate Dhahran suspend routine consular services. First mandatory evacuation order for Saudi Arabia since war began."
                     }
             ],
             "sources": [
@@ -5657,6 +5697,10 @@ const LOCATIONS = [
                     {
                             "name": "CNBC",
                             "url": "https://www.cnbc.com/2026/03/09/iran-war-updates-oil-brent-wti-crude-110-gulf-gcc-uae-iraq-saudi-arabia-kurds.html"
+                    },
+                    {
+                            "name": "Reuters via Business Standard",
+                            "url": "https://www.business-standard.com/world-news/us-orders-non-essential-diplomats-to-leave-saudi-arabia-amid-iran-war-126030900086_1.html"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -5670,7 +5714,7 @@ const LOCATIONS = [
             "severity": "watchlist",
             "icon": "🛢️",
             "type": "Energy Hub — Imminent Attack Warning",
-            "detail": "The US Embassy in Riyadh issued a warning on March 3 of an imminent attack in the eastern Saudi city of Dhahran, home to major energy installations along the Gulf coast. Dhahran is the headquarters of Saudi Aramco and a critical hub for the kingdom's oil industry. The warning came amid escalating Iranian targeting of energy infrastructure across the Gulf. US Embassy Riyadh issued a specific imminent attack warning for Dhahran on March 3, indicating continued elevated threat to eastern Saudi energy infrastructure. March 9: US Consulate Dhahran added to explicit avoidance advisory. All routine consular services suspended.",
+            "detail": "The US Embassy in Riyadh issued a warning on March 3 of an imminent attack in the eastern Saudi city of Dhahran, home to major energy installations along the Gulf coast. Dhahran is the headquarters of Saudi Aramco and a critical hub for the kingdom's oil industry. The warning came amid escalating Iranian targeting of energy infrastructure across the Gulf. US Embassy Riyadh issued a specific imminent attack warning for Dhahran on March 3, indicating continued elevated threat to eastern Saudi energy infrastructure. March 9: US Consulate Dhahran added to explicit avoidance advisory. All routine consular services suspended. March 9 security alert explicitly warns staff to avoid US Consulate Dhahran building. All routine consular services suspended until further notice.",
             "incidents": [
                     {
                             "date": "2026-03-03",
@@ -5683,6 +5727,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-09",
                             "text": "US Embassy March 9 security alert explicitly warned Americans to avoid US Consulate Dhahran until further notice, alongside the embassy in Riyadh. All routine consular services suspended at Dhahran consulate."
+                    },
+                    {
+                            "date": "2026-03-09",
+                            "text": "US Embassy security alert advises remaining essential employees to avoid US Consulate Dhahran. All routine consular services suspended at Consulate Dhahran until further notice."
                     }
             ],
             "sources": [
