@@ -8,14 +8,14 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-09T16:51:11.638Z",
+    "lastUpdated": "2026-03-09T17:44:45.888Z",
     "casualties": {
         "killed": 42,
         "injured": 531
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 10 (Mar 9): Iran launched fresh missile/drone attacks overnight after naming Mojtaba Khamenei as new supreme leader. 32 Bahraini civilians injured in Sitra drone strike (largest single Gulf casualty event). Bapco declared force majeure. 7th US soldier confirmed killed. Iran ruled out ceasefire. US ordered non-emergency staff departure from Saudi Arabia. Crude oil briefly neared $120/bbl. UAE reported intercepting 12 ballistic missiles and 17 drones on March 9. UAE MoFA declared 'state of defence' after 1,400+ missiles/drones launched toward country.",
-    "totalBarrage": "Per Iran (Fars News, Mar 5): 500+ ballistic/naval missiles and ~2,000 drones fired since Feb 28. UAE alone has tracked 1,400+ projectiles. On Mar 9: UAE intercepted 12 BMs and 17 drones.",
+    "summary": "Day 10 (March 9): Iran launched fresh wave of attacks under newly appointed Supreme Leader Mojtaba Khamenei. BAPCO declares force majeure as Bahrain's only refinery burns. 32 Bahraini civilians including children injured in Sitra drone strike. 7th US combat death (Sgt. Pennington, PSAB) officially identified. Oil prices surged past $110/bbl. Iran signals willingness to continue Gulf attacks in long war strategy. NATO intercepts second Iranian ballistic missile over Turkish airspace.",
+    "totalBarrage": "Iran has fired over 500 ballistic/naval missiles and almost 2,000 drones since Feb 28 (per Fars News Agency, March 5). UAE alone tracked 174 ballistic missiles (161 intercepted) and 689 drones (645 intercepted) as of March 3.",
     "intercepted": "UAE: 12 BMs + 17 drones on Mar 9 alone. Cumulative UAE totals exceed 1,400 tracked projectiles. Saudi, Kuwait, Qatar, Bahrain continue daily interceptions."
 };
 
@@ -1246,7 +1246,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🛢️",
             "type": "Oil infrastructure debris fire",
-            "detail": "A major fire broke out at the Fujairah Oil Industry Zone on Tuesday March 3 after debris from a successfully intercepted Iranian drone fell inside the facility. The Fujairah Media Office confirmed no injuries were reported, the fire was contained, and normal operations resumed. Fujairah is the world's third-largest oil storage hub and a key bunker fuel supplier for ships transiting the Strait of Hormuz. On March 3, Fujairah authorities confirmed sounds heard were from successful air defense interceptions. On March 3, a new debris fire from a drone interception prompted the suspension of an ATP Challenger tennis tournament in Fujairah. The Fujairah press office confirmed ongoing interception operations. Al Jazeera reported on March 4 that Fujairah port was again targeted overnight as Tehran continued retaliatory strikes for a fourth night. Second interception-debris fire reported at Fujairah oil tanks on Day 9 of conflict. No injuries. Authorities responding. Fujairah authorities confirmed a fire broke out in the Fujairah Oil Tanks area after debris from successful air defence interceptions fell in the vicinity. No injuries reported. On March 9, Fujairah authorities confirmed a new fire in the Oil Tanks area from air defence interception debris. No injuries reported. March 9: Second fire at FOIZ from interception debris. Brought under control, no injuries.",
+            "detail": "A major fire broke out at the Fujairah Oil Industry Zone on Tuesday March 3 after debris from a successfully intercepted Iranian drone fell inside the facility. The Fujairah Media Office confirmed no injuries were reported, the fire was contained, and normal operations resumed. Fujairah is the world's third-largest oil storage hub and a key bunker fuel supplier for ships transiting the Strait of Hormuz. On March 3, Fujairah authorities confirmed sounds heard were from successful air defense interceptions. On March 3, a new debris fire from a drone interception prompted the suspension of an ATP Challenger tennis tournament in Fujairah. The Fujairah press office confirmed ongoing interception operations. Al Jazeera reported on March 4 that Fujairah port was again targeted overnight as Tehran continued retaliatory strikes for a fourth night. Second interception-debris fire reported at Fujairah oil tanks on Day 9 of conflict. No injuries. Authorities responding. Fujairah authorities confirmed a fire broke out in the Fujairah Oil Tanks area after debris from successful air defence interceptions fell in the vicinity. No injuries reported. On March 9, Fujairah authorities confirmed a new fire in the Oil Tanks area from air defence interception debris. No injuries reported. March 9: Second fire at FOIZ from interception debris. Brought under control, no injuries. New fire from intercepted drone debris hit the manifold and berth area overnight Mar 8-9. FOTT loading operations halted. Some Fujairah suppliers declared force majeure on bunker deliveries.",
             "incidents": [
                     {
                             "date": "2026-03-03",
@@ -1271,6 +1271,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-09",
                             "text": "New fire broke out in Fujairah Oil Tanks (FOIZ Petroleum) area after debris from successful air defense interceptions fell in vicinity. Fire brought under control, no injuries reported. Xinhua and Khaleej Times confirmed. This is the second major fire at FOIZ since the conflict began."
+                    },
+                    {
+                            "date": "2026-03-09",
+                            "text": "New fire at Fujairah Oil Tanks area from intercepted drone debris overnight (March 8-9). Fujairah Media Office confirmed fire brought under control with no injuries. Product loading at Fujairah Oil Tanker Terminal (FOTT) stopped following the attack. Some suppliers declared force majeure."
                     }
             ],
             "sources": [
@@ -1317,6 +1321,10 @@ const LOCATIONS = [
                     {
                             "name": "Gulf News",
                             "url": "https://gulfnews.com/uae/futhorities-responding-to-a-fire-that-broke-out-in-the-fujairah-oil-tanks-area-no-injuries-1.500467919"
+                    },
+                    {
+                            "name": "Ship & Bunker",
+                            "url": "https://shipandbunker.com/news/emea/899472-new-fujairah-attack-adds-more-turmoil-to-bunker-market"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -2350,7 +2358,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Missile Strike on Oil Refinery",
-            "detail": "An Iranian ballistic missile struck Bahrain's BAPCO Sitra refinery on March 5, triggering large fires at the 400k b/d facility. Bahrain's Interior Ministry confirmed the fire was contained with limited material damage and no casualties. BAPCO confirmed refinery operations continue. Thursday night: Iranian missile confirmed to have directly struck the refinery in a separate incident. Bahrain authorities say fire extinguished, refinery operational, no casualties. Bahrain Defence Force total interceptions since Feb 28: 75 missiles and 123 drones. Second confirmed missile impact on Bapco refinery on March 5. Fire extinguished, no casualties. March 9: Smoke reported rising from BAPCO refinery following renewed Iranian strike, concurrent with mass-casualty drone attack on nearby Sitra residential areas. On March 9, BAPCO declared force majeure on group operations after a new Iranian drone/missile strike caused fire at the refinery. Fire contained, no fatalities at the facility. Bahrain becomes second Gulf state to invoke force majeure after Qatar's LNG operations. March 9: BAPCO declares force majeure on all oil shipments after new Iranian drone strikes set refinery ablaze. Over 80% of BAPCO refined products and crude are exported globally. Fire contained with material damage, no casualties per BNA. On March 9, a new Iranian missile strike ignited a fire at a BAPCO refinery unit. The company declared force majeure on all group operations — a significant economic escalation for Bahrain's main energy asset. On March 9, Bapco Energies declared force majeure on group operations after the latest Iranian attack set the refinery ablaze. Thick smoke was visible from across Sitra Island. Bapco joins QatarEnergy and Kuwait Petroleum Corp in invoking force majeure due to the conflict. Bapco Energies declared force majeure on March 9 after a fresh Iranian attack set the refinery ablaze. Bahrain joins Qatar and Kuwait in invoking force majeure on energy operations due to the conflict. March 9: Bapco Energies declared force majeure, suspending contractual shipment obligations. Bahrain's only oil refinery set ablaze by Iranian strike.",
+            "detail": "An Iranian ballistic missile struck Bahrain's BAPCO Sitra refinery on March 5, triggering large fires at the 400k b/d facility. Bahrain's Interior Ministry confirmed the fire was contained with limited material damage and no casualties. BAPCO confirmed refinery operations continue. Thursday night: Iranian missile confirmed to have directly struck the refinery in a separate incident. Bahrain authorities say fire extinguished, refinery operational, no casualties. Bahrain Defence Force total interceptions since Feb 28: 75 missiles and 123 drones. Second confirmed missile impact on Bapco refinery on March 5. Fire extinguished, no casualties. March 9: Smoke reported rising from BAPCO refinery following renewed Iranian strike, concurrent with mass-casualty drone attack on nearby Sitra residential areas. On March 9, BAPCO declared force majeure on group operations after a new Iranian drone/missile strike caused fire at the refinery. Fire contained, no fatalities at the facility. Bahrain becomes second Gulf state to invoke force majeure after Qatar's LNG operations. March 9: BAPCO declares force majeure on all oil shipments after new Iranian drone strikes set refinery ablaze. Over 80% of BAPCO refined products and crude are exported globally. Fire contained with material damage, no casualties per BNA. On March 9, a new Iranian missile strike ignited a fire at a BAPCO refinery unit. The company declared force majeure on all group operations — a significant economic escalation for Bahrain's main energy asset. On March 9, Bapco Energies declared force majeure on group operations after the latest Iranian attack set the refinery ablaze. Thick smoke was visible from across Sitra Island. Bapco joins QatarEnergy and Kuwait Petroleum Corp in invoking force majeure due to the conflict. Bapco Energies declared force majeure on March 9 after a fresh Iranian attack set the refinery ablaze. Bahrain joins Qatar and Kuwait in invoking force majeure on energy operations due to the conflict. March 9: Bapco Energies declared force majeure, suspending contractual shipment obligations. Bahrain's only oil refinery set ablaze by Iranian strike. Bapco Energies declared force majeure on March 9, suspending contractual shipment obligations. This marks the second confirmed attack affecting the Sitra refinery complex since the war began.",
             "incidents": [
                     {
                             "date": "2026-03-05",
@@ -2489,6 +2497,18 @@ const LOCATIONS = [
                     {
                             "name": "CNN",
                             "url": "https://edition.cnn.com/2026/03/09/world/video/aftermath-of-iranian-drone-strikes-in-bahrain-vrtc"
+                    },
+                    {
+                            "name": "Argus Media",
+                            "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2798255-bahrain-s-bapco-issues-force-majeure-after-refinery-hit"
+                    },
+                    {
+                            "name": "Al Jazeera",
+                            "url": "https://www.aljazeera.com/news/2026/3/9/reprehensible-new-wave-of-iranian-missiles-drones-target-gulf-nations"
+                    },
+                    {
+                            "name": "CNN",
+                            "url": "https://www.cnn.com/2026/03/09/world/video/aftermath-of-iranian-drone-strikes-in-bahrain-digvid"
                     }
             ],
             "dateAdded": "2026-03-05"
@@ -2814,7 +2834,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "💥",
             "type": "Drone Strike — Residential Casualties",
-            "detail": "Overnight Iranian drone attack on Sitra Island injured 32 Bahraini civilians, with 4 in critical condition including a 17-year-old girl with severe head and eye injuries and a 2-month-old infant. All casualties are Bahraini nationals. This is separate from the BAPCO refinery fire nearby. March 9: At least 32 people injured, including children, in Iranian drone strike on residential areas of Sitra island per Bahrain state news agency and NPR. Bahrain Health Ministry confirmed 32 Bahraini citizens injured, 4 in serious/critical condition including children needing surgery. Youngest victim is a 2-month-old infant. Continued Iranian drone attacks on Sitra Island on March 9 caused injuries and damage in the residential area near the Bapco refinery. Bahrain's Ministry of Health confirmed 4 of the 32 injured are in critical condition and include children requiring surgery (Bahrain News Agency via Al Jazeera, NPR). March 9 update: 32 Bahraini civilians injured (4 critical including children, youngest a 2-month-old). UPI called it the largest single casualty toll for a Gulf nation since Iran began attacks.",
+            "detail": "Overnight Iranian drone attack on Sitra Island injured 32 Bahraini civilians, with 4 in critical condition including a 17-year-old girl with severe head and eye injuries and a 2-month-old infant. All casualties are Bahraini nationals. This is separate from the BAPCO refinery fire nearby. March 9: At least 32 people injured, including children, in Iranian drone strike on residential areas of Sitra island per Bahrain state news agency and NPR. Bahrain Health Ministry confirmed 32 Bahraini citizens injured, 4 in serious/critical condition including children needing surgery. Youngest victim is a 2-month-old infant. Continued Iranian drone attacks on Sitra Island on March 9 caused injuries and damage in the residential area near the Bapco refinery. Bahrain's Ministry of Health confirmed 4 of the 32 injured are in critical condition and include children requiring surgery (Bahrain News Agency via Al Jazeera, NPR). March 9 update: 32 Bahraini civilians injured (4 critical including children, youngest a 2-month-old). UPI called it the largest single casualty toll for a Gulf nation since Iran began attacks. Bahrain MOH confirmed all 32 injured are Bahraini citizens, with 4 in serious condition including children requiring surgery. Youngest victim is a 2-month-old infant.",
             "incidents": [
                     {
                             "date": "2026-03-09",
@@ -2835,6 +2855,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-09",
                             "text": "Bahrain Ministry of Health confirmed 32 civilians injured in early morning Iranian drone strike on Sitra. Four in critical condition requiring surgery: a 17-year-old girl with severe head/eye injuries, two children aged 7 and 8 with serious lower-limb injuries. Youngest victim is a 2-month-old infant. All injured are Bahraini nationals. Described as largest single-incident casualty toll for a Gulf nation in this conflict."
+                    },
+                    {
+                            "date": "2026-03-09",
+                            "text": "Bahrain Ministry of Health confirmed 32 Bahraini civilians injured (all nationals) in early-morning Iranian drone attack on Sitra, including 4 in serious condition: a 17-year-old girl with head and eye injuries, two children aged 7 and 8 with serious lower-limb injuries, and the youngest victim a 2-month-old infant. All receiving medical care from specialized teams."
                     }
             ],
             "sources": [
@@ -2893,6 +2917,10 @@ const LOCATIONS = [
                     {
                             "name": "CNN",
                             "url": "https://edition.cnn.com/2026/03/09/world/video/aftermath-of-iranian-drone-strikes-in-bahrain-vrtc"
+                    },
+                    {
+                            "name": "Xinhua",
+                            "url": "https://english.news.cn/20260309/0ede1c4435604aa19ff1bdc947462599/c.html"
                     }
             ],
             "dateAdded": "2026-03-09"
@@ -4930,7 +4958,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US/Saudi Air Base — Missile & Drone Strike",
-            "detail": "Major US military air base ~60 km south of Riyadh. Hosts US THAAD, Patriot, KC-135 tankers, E-3G AWACS. IRGC claimed they 'precisely hit' the base. Saudi Arabia said air defenses intercepted missiles near the base. Reports confirm impacts on base infrastructure. On March 3, Saudi Defense Ministry reported intercepting 8 drones near Riyadh and Al-Kharj, in the vicinity of PSAB. On March 3, 8 drones intercepted and destroyed near Riyadh and Al-Kharj per Saudi MoD spokesman Maj-Gen Turki Al-Maliki. No damage or casualties reported from interceptions. On March 3, Saudi defense ministry confirmed 8 drones intercepted near Riyadh and Al-Kharj (near PSAB). CNN noted Prince Sultan Air Base is located close to Al-Kharj. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial area near PSAB, according to MoD spokesperson Turki Al-Maliki via SPA. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial/military area where PSAB is located. Saudi MOD spokesperson Maj. Gen. Turki Al-Maliki confirmed all threats were neutralized. March 5: 3 cruise missiles and 3 drones intercepted near Al-Kharj. March 4: 9 drones and 2 additional cruise missiles neutralized near Riyadh/Al-Kharj. On Mar 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones near Al-Kharj, defending PSAB and surrounding infrastructure. On March 6, three ballistic missiles targeting the base were intercepted before landing as part of a wider Iranian campaign against Gulf states. Three ballistic missiles targeting PSAB intercepted on March 6 as Iran widened its campaign. On March 6, Saudi MOD announced interception of 3 ballistic missiles targeting PSAB plus additional drone and cruise missile interceptions east of Al-Kharj. This is the continued targeting of the key US military installation. CNN satellite imagery from March 1 shows smoke rising from compound near PSAB where THAAD radar was previously stationed. Saudi MOD confirmed intercepting cruise missile and three drones on March 6. On March 7, Saudi air defenses intercepted a ballistic missile and a cruise missile targeting PSAB. On March 7, Saudi MOD confirmed intercepting a ballistic missile targeting PSAB. On March 7, Saudi air defenses intercepted a ballistic missile and a cruise missile targeting PSAB. Third consecutive day of strikes on Al-Kharj area. March 7: Ballistic missile and cruise missile targeting PSAB intercepted and destroyed. Ninth consecutive day of attacks on this base. On March 7, Saudi defenses intercepted an additional ballistic missile and cruise missile targeting the base, bringing total missiles intercepted at PSAB to at least 6 this week. On March 7, another ballistic missile was intercepted toward PSAB. Saudi MOD reports five missiles were intercepted toward PSAB on March 6 alone. Saturday March 7: Saudi MOD intercepted two ballistic missiles aimed at Prince Sultan Air Base. March 7: Two ballistic missiles and one cruise missile intercepted heading toward PSAB area. Saudi defence minister urges Iran to 'avoid miscalculation.' Mar 7: Saudi MOD confirmed intercepting 2 ballistic missiles targeting PSAB. Saudi MoD confirmed interception of two ballistic missiles aimed at PSAB on March 7. March 7: Saudi MOD intercepted 2 ballistic missiles plus 1 additional ballistic and 1 cruise missile targeting PSAB. March 7: One ballistic missile fell in uninhabited area after targeting PSAB; two additional BMs and one cruise missile intercepted. Saudi Defence Minister met Pakistan army chief to discuss measures to halt Iranian attacks. March 8: Saudi Arabia reports continued Iranian attacks despite ceasefire pledge. Saudi MOD confirmed intercepting two ballistic missiles launched toward PSAB on March 7-8. March 8: Ballistic missile aimed at PSAB fell in uninhabited area. Additional missiles intercepted near al-Kharj. March 7-8: 5 ballistic missiles intercepted Saturday, 3 more Sunday. One missile fell in uninhabited area (confirmed Saudi MOD). Third consecutive day targeting PSAB. On March 7-8, 5 ballistic missiles intercepted targeting PSAB; one fell in uninhabited area. Third consecutive day of attempted strikes on the base. CENTCOM confirmed March 8 that a 7th US service member (Army soldier) died Saturday night from injuries sustained during Iran's initial March 1 attacks in Saudi Arabia. Total US KIA in Operation Epic Fury now 7. On March 8, CENTCOM confirmed a 7th US service member has died from injuries sustained during Iran's initial attack on US troops in Saudi Arabia on March 1. All seven US fatalities in Operation Epic Fury were Army soldiers. Nine additional US service members have been seriously wounded across the region. CENTCOM announced March 9 that a 7th US service member died March 8 from wounds sustained in Iranian attack at this location on March 1. Total US KIA in Operation Epic Fury now seven. March 8: 7th US service member KIA — wounded March 1, died March 8 night. CENTCOM confirmed this is the first US combat death from the Saudi Arabia theater. Saudi MOD also intercepted 5 ballistic missiles and continued drone waves targeting PSAB. March 9: Pentagon confirmed 7th US soldier death. Sgt. Benjamin Pennington (1st Space Brigade) died March 8 from injuries sustained during March 1 Iranian strike on PSAB.",
+            "detail": "Major US military air base ~60 km south of Riyadh. Hosts US THAAD, Patriot, KC-135 tankers, E-3G AWACS. IRGC claimed they 'precisely hit' the base. Saudi Arabia said air defenses intercepted missiles near the base. Reports confirm impacts on base infrastructure. On March 3, Saudi Defense Ministry reported intercepting 8 drones near Riyadh and Al-Kharj, in the vicinity of PSAB. On March 3, 8 drones intercepted and destroyed near Riyadh and Al-Kharj per Saudi MoD spokesman Maj-Gen Turki Al-Maliki. No damage or casualties reported from interceptions. On March 3, Saudi defense ministry confirmed 8 drones intercepted near Riyadh and Al-Kharj (near PSAB). CNN noted Prince Sultan Air Base is located close to Al-Kharj. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial area near PSAB, according to MoD spokesperson Turki Al-Maliki via SPA. On March 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones targeting the Al-Kharj industrial/military area where PSAB is located. Saudi MOD spokesperson Maj. Gen. Turki Al-Maliki confirmed all threats were neutralized. March 5: 3 cruise missiles and 3 drones intercepted near Al-Kharj. March 4: 9 drones and 2 additional cruise missiles neutralized near Riyadh/Al-Kharj. On Mar 5, Saudi air defenses intercepted 3 cruise missiles and 3 drones near Al-Kharj, defending PSAB and surrounding infrastructure. On March 6, three ballistic missiles targeting the base were intercepted before landing as part of a wider Iranian campaign against Gulf states. Three ballistic missiles targeting PSAB intercepted on March 6 as Iran widened its campaign. On March 6, Saudi MOD announced interception of 3 ballistic missiles targeting PSAB plus additional drone and cruise missile interceptions east of Al-Kharj. This is the continued targeting of the key US military installation. CNN satellite imagery from March 1 shows smoke rising from compound near PSAB where THAAD radar was previously stationed. Saudi MOD confirmed intercepting cruise missile and three drones on March 6. On March 7, Saudi air defenses intercepted a ballistic missile and a cruise missile targeting PSAB. On March 7, Saudi MOD confirmed intercepting a ballistic missile targeting PSAB. On March 7, Saudi air defenses intercepted a ballistic missile and a cruise missile targeting PSAB. Third consecutive day of strikes on Al-Kharj area. March 7: Ballistic missile and cruise missile targeting PSAB intercepted and destroyed. Ninth consecutive day of attacks on this base. On March 7, Saudi defenses intercepted an additional ballistic missile and cruise missile targeting the base, bringing total missiles intercepted at PSAB to at least 6 this week. On March 7, another ballistic missile was intercepted toward PSAB. Saudi MOD reports five missiles were intercepted toward PSAB on March 6 alone. Saturday March 7: Saudi MOD intercepted two ballistic missiles aimed at Prince Sultan Air Base. March 7: Two ballistic missiles and one cruise missile intercepted heading toward PSAB area. Saudi defence minister urges Iran to 'avoid miscalculation.' Mar 7: Saudi MOD confirmed intercepting 2 ballistic missiles targeting PSAB. Saudi MoD confirmed interception of two ballistic missiles aimed at PSAB on March 7. March 7: Saudi MOD intercepted 2 ballistic missiles plus 1 additional ballistic and 1 cruise missile targeting PSAB. March 7: One ballistic missile fell in uninhabited area after targeting PSAB; two additional BMs and one cruise missile intercepted. Saudi Defence Minister met Pakistan army chief to discuss measures to halt Iranian attacks. March 8: Saudi Arabia reports continued Iranian attacks despite ceasefire pledge. Saudi MOD confirmed intercepting two ballistic missiles launched toward PSAB on March 7-8. March 8: Ballistic missile aimed at PSAB fell in uninhabited area. Additional missiles intercepted near al-Kharj. March 7-8: 5 ballistic missiles intercepted Saturday, 3 more Sunday. One missile fell in uninhabited area (confirmed Saudi MOD). Third consecutive day targeting PSAB. On March 7-8, 5 ballistic missiles intercepted targeting PSAB; one fell in uninhabited area. Third consecutive day of attempted strikes on the base. CENTCOM confirmed March 8 that a 7th US service member (Army soldier) died Saturday night from injuries sustained during Iran's initial March 1 attacks in Saudi Arabia. Total US KIA in Operation Epic Fury now 7. On March 8, CENTCOM confirmed a 7th US service member has died from injuries sustained during Iran's initial attack on US troops in Saudi Arabia on March 1. All seven US fatalities in Operation Epic Fury were Army soldiers. Nine additional US service members have been seriously wounded across the region. CENTCOM announced March 9 that a 7th US service member died March 8 from wounds sustained in Iranian attack at this location on March 1. Total US KIA in Operation Epic Fury now seven. March 8: 7th US service member KIA — wounded March 1, died March 8 night. CENTCOM confirmed this is the first US combat death from the Saudi Arabia theater. Saudi MOD also intercepted 5 ballistic missiles and continued drone waves targeting PSAB. March 9: Pentagon confirmed 7th US soldier death. Sgt. Benjamin Pennington (1st Space Brigade) died March 8 from injuries sustained during March 1 Iranian strike on PSAB. Sgt. Benjamin N. Pennington (1st Space Brigade) became the 7th US combat death in the Iran war, dying March 8 from wounds sustained in the March 1 attack on PSAB.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -5051,6 +5079,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-09",
                             "text": "Pentagon confirmed 7th US soldier killed in war: Sgt. Benjamin N. Pennington, 26, of Glendale, KY, assigned to 1st Space Battalion, 1st Space Brigade, died March 8 from injuries sustained during March 1 Iranian strike on PSAB. Six other US troops were killed in Kuwait drone attack."
+                    },
+                    {
+                            "date": "2026-03-08",
+                            "text": "7th US combat death confirmed: Sgt. Benjamin N. Pennington, 26, of Glendale, Kentucky (1st Space Battalion, 1st Space Brigade, Fort Carson, CO), died March 8 from wounds sustained in the March 1 Iranian attack on PSAB. Pentagon officially identified him on March 9."
                     }
             ],
             "sources": [
@@ -5221,6 +5253,10 @@ const LOCATIONS = [
                     {
                             "name": "OPB/AP",
                             "url": "https://www.opb.org/article/2026/03/09/iran-attacks-israel-gulf-states-after-naming-new-leader-on-day-10-of-war/"
+                    },
+                    {
+                            "name": "The Hill",
+                            "url": "https://thehill.com/policy/defense/5774881-us-soldier-identified-killed-iran-saudi-arabia/"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -6734,11 +6770,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Maritime Missile Strike — Fatalities",
-            "detail": "On March 6, the UAE-flagged salvage tug MUSSAFAH 2 was struck by two missiles approximately 18nm off Khasab, Oman, while en route to assist the abandoned container ship Safeen Prestige. The IMO confirmed at least 4 seafarers killed and 3 severely injured; some sources report up to 8 crew feared dead.",
+            "detail": "On March 6, the UAE-flagged salvage tug MUSSAFAH 2 was struck by two missiles approximately 18nm off Khasab, Oman, while en route to assist the abandoned container ship Safeen Prestige. The IMO confirmed at least 4 seafarers killed and 3 severely injured; some sources report up to 8 crew feared dead. The vessel sank after being struck by two missiles (per Vanguard security firm). 3 Indonesian crew remain missing and presumed dead. One Indonesian survivor was treated for burns at a hospital in Khasab, Oman.",
             "incidents": [
                     {
                             "date": "2026-03-06",
                             "text": "Salvage tug MUSSAFAH 2 struck by two missiles 18nm off Khasab while attempting to assist drifting Safeen Prestige; IMO confirmed 4 seafarers killed, 3 severely injured."
+                    },
+                    {
+                            "date": "2026-03-06",
+                            "text": "MUSSAFAH 2 confirmed sunk after missile strike. Indonesian Foreign Ministry confirmed 3 Indonesian crew members missing; 1 Indonesian survivor with burn injuries treated in Khasab, Oman. Security firm Vanguard said tugboat was struck by two missiles while attempting to assist Malta-flagged Safeen Prestige. Vessel had 7 crew (Indonesian, Indian, Filipino nationals); 4 survived."
                     }
             ],
             "sources": [
@@ -6757,6 +6797,18 @@ const LOCATIONS = [
                     {
                             "name": "Wikipedia — 2026 Strait of Hormuz crisis",
                             "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis"
+                    },
+                    {
+                            "name": "Times of Israel / AFP",
+                            "url": "https://www.timesofisrael.com/uae-tugboat-hit-by-explosion-sinks-in-strait-of-hormuz-3-indonesian-crew-missing/"
+                    },
+                    {
+                            "name": "ANTARA News (Indonesian state news agency)",
+                            "url": "https://en.antaranews.com/news/407583/three-indonesians-missing-after-tugboat-explodes-in-hormuz-strait"
+                    },
+                    {
+                            "name": "Baird Maritime",
+                            "url": "https://www.bairdmaritime.com/security/incidents/three-missing-after-tug-hit-by-explosion-sinks-in-strait-of-hormuz"
                     }
             ],
             "dateAdded": "2026-03-07"
