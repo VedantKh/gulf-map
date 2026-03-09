@@ -8,14 +8,14 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-09T01:16:09.983Z",
+    "lastUpdated": "2026-03-09T04:10:38.048Z",
     "casualties": {
         "killed": 37,
         "injured": 369
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 10 (March 9): Mojtaba Khamenei named new Supreme Leader by Assembly of Experts; IRGC and military leaders pledge allegiance. 7th US service member KIA announced by CENTCOM. Gulf strikes continue despite Pezeshkian's apology — IRGC overrides president, vows continued attacks. Oil above $100/barrel. Arab foreign ministers condemn Iran's attacks as 'grave threat to international peace and security.' Russia reportedly sharing intelligence with Iran on US military targets.",
-    "totalBarrage": "March 8 intercepts — UAE: 17 ballistic missiles (16 intercepted, 1 into sea), 117 drones (113 intercepted, 4 impacted). Saudi Arabia: 33 drones intercepted incl. targeting Shaybah oilfield and Riyadh diplomatic quarter. Kuwait: drone attacks on airport fuel tanks and PIFSS HQ.",
+    "summary": "Day 10 of the conflict. Iran named Mojtaba Khamenei as new supreme leader (CNBC/CNN). Iranian strikes on Gulf states continue despite President Pezeshkian's apology, with IRGC overriding his pledge to halt attacks. Gulf countries report ongoing interceptions. Oman Air cancels all regional flights March 9–15.",
+    "totalBarrage": "UAE MOD cumulative stats as of March 8: 238 ballistic missiles tracked (221 destroyed, 15 fell into sea, 2 landed), 8 cruise missiles (all intercepted), 1,342 drones detected in UAE territory. Iran claims over 500 ballistic/naval missiles and nearly 2,000 drones launched total since Feb 28 (Fars News, March 5).",
     "intercepted": "UAE March 8 alone: 16/17 BMs destroyed (1 to sea), 113/117 drones intercepted (4 inside country), 8 cruise missiles destroyed. Bahrain cumulative: 92 missiles, 151 drones. Saudi March 8: 33 drones intercepted including 26 targeting Riyadh area."
 };
 
@@ -4914,7 +4914,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "✈️",
             "type": "International Airport — Missile Intercepted Nearby",
-            "detail": "Riyadh's main international airport. Saudi Arabia confirmed Iranian missiles targeted the capital region. Air defenses intercepted projectiles near the airport. No disruption to navigation or casualties reported. On March 3, Saudi Arabia intercepted 8 drones near Riyadh and Al Kharj (55 miles SE of Riyadh, near Prince Sultan Air Base). No damage or casualties reported. On March 6, Saudi MOD confirmed interception of three additional drones east of the Riyadh region. Saudi MoD confirmed intercepting a total of 4 Iranian drones targeting Riyadh area on March 6 (3 east, 1 northeast of capital). Three drones intercepted east of Riyadh on March 6 per Saudi MOD. On March 7, one drone was intercepted and destroyed east of Riyadh. March 7: Iranian missiles intercepted near Riyadh airport per AFP Gulf source. Drone also intercepted east of Riyadh. No disruption or losses. March 7: Saudi MOD intercepted drone east of Riyadh. Ongoing interception activity in Riyadh vicinity. March 7: Drone intercepted and destroyed east of Riyadh city. Mar 7: Saudi MOD intercepted drone east of Riyadh. Saudi MoD confirmed interception and destruction of a drone east of Riyadh city on March 7. March 7: Saudi MOD intercepted and destroyed a drone east of Riyadh. March 8: Saudi MoD intercepted 21 drones, 13 near Riyadh city. March 8: 13 drones intercepted east of Riyadh, 8 more entering airspace. Diplomatic quarter drone thwarted. 33 drones total intercepted Sunday across Saudi Arabia. On March 8, Saudi MoD reported 13 drones intercepted east of Riyadh and 8 more shot down entering Saudi airspace — 21 drones total in a single day.",
+            "detail": "Riyadh's main international airport. Saudi Arabia confirmed Iranian missiles targeted the capital region. Air defenses intercepted projectiles near the airport. No disruption to navigation or casualties reported. On March 3, Saudi Arabia intercepted 8 drones near Riyadh and Al Kharj (55 miles SE of Riyadh, near Prince Sultan Air Base). No damage or casualties reported. On March 6, Saudi MOD confirmed interception of three additional drones east of the Riyadh region. Saudi MoD confirmed intercepting a total of 4 Iranian drones targeting Riyadh area on March 6 (3 east, 1 northeast of capital). Three drones intercepted east of Riyadh on March 6 per Saudi MOD. On March 7, one drone was intercepted and destroyed east of Riyadh. March 7: Iranian missiles intercepted near Riyadh airport per AFP Gulf source. Drone also intercepted east of Riyadh. No disruption or losses. March 7: Saudi MOD intercepted drone east of Riyadh. Ongoing interception activity in Riyadh vicinity. March 7: Drone intercepted and destroyed east of Riyadh city. Mar 7: Saudi MOD intercepted drone east of Riyadh. Saudi MoD confirmed interception and destruction of a drone east of Riyadh city on March 7. March 7: Saudi MOD intercepted and destroyed a drone east of Riyadh. March 8: Saudi MoD intercepted 21 drones, 13 near Riyadh city. March 8: 13 drones intercepted east of Riyadh, 8 more entering airspace. Diplomatic quarter drone thwarted. 33 drones total intercepted Sunday across Saudi Arabia. On March 8, Saudi MoD reported 13 drones intercepted east of Riyadh and 8 more shot down entering Saudi airspace — 21 drones total in a single day. On March 9, Saudi air defenses intercepted and destroyed two drones north of Riyadh, continuing a pattern of daily Iranian drone incursions toward the capital area.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -4979,6 +4979,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-08",
                             "text": "Saudi air defenses intercepted 21 drones targeting the Riyadh area on Sunday: 13 destroyed east of Riyadh city, 8 shot down shortly after entering Saudi airspace. Saudi MoD spokesman Maj. Gen. Turki Al-Maliki confirmed on X."
+                    },
+                    {
+                            "date": "2026-03-09",
+                            "text": "Saudi Ministry of Defense announced two drone attacks were foiled after being shot down north of Riyadh, per Saudi Press Agency (SPA). No damage or casualties reported."
                     }
             ],
             "sources": [
@@ -5045,6 +5049,10 @@ const LOCATIONS = [
                     {
                             "name": "Saudi Gazette",
                             "url": "https://saudigazette.com.sa/article/659548/saudi-arabia/saudi-air-defenses-intercept-drones-targeting-riyadh"
+                    },
+                    {
+                            "name": "The Peninsula Qatar (SPA)",
+                            "url": "http://thepeninsulaqatar.com/article/09/03/2026/saudi-ministry-of-defense-two-drone-attacks-foiled-north-of-riyadh"
                     }
             ],
             "dateAdded": "2026-02-28"
