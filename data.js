@@ -8,13 +8,13 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-09T08:36:57.858Z",
+    "lastUpdated": "2026-03-09T09:40:27.516Z",
     "casualties": {
         "killed": 38,
-        "injured": 401
+        "injured": 433
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 10 (Mar 9): Iranian drone strikes continue despite Pezeshkian apology. Major Sitra (Bahrain) residential drone strike injures 32 civilians including children. UAE reports renewed air defense interceptions Monday morning in Abu Dhabi with missile threat alerts issued. Saudi Arabia sharpens warnings to Iran, says Pezeshkian ceasefire pledge was 'not implemented in practice.' Mojtaba Khamenei named Iran's new supreme leader; IRGC pledges 'complete obedience.'",
+    "summary": "Day 10: Iran's new Supreme Leader Mojtaba Khamenei named by Assembly of Experts on March 9. IRGC launched 'first wave' of strikes under his leadership, targeting Israel and Gulf states. IRGC spokesman stated Iran has used only first- and second-generation missiles and has supplies for up to 6 months. BAPCO (Bahrain) declares force majeure — second Gulf energy firm after Qatar's LNG operations. US State Department ordered non-emergency personnel to depart Saudi Arabia. Oil prices surging above $115/barrel.",
     "totalBarrage": "UAE cumulative as of Mar 8: 221 ballistic missiles, 1,422 drones, 8 cruise missiles detected. Iran claims 500+ ballistic/naval missiles and ~2,000 drones fired since Feb 28.",
     "intercepted": "UAE cumulative as of Mar 8: 205/221 ballistic missiles destroyed, 1,342/1,422 drones intercepted, 8/8 cruise missiles destroyed. 2 ballistic missiles and 80 drones impacted UAE territory."
 };
@@ -1230,7 +1230,7 @@ const LOCATIONS = [
             "severity": "high",
             "icon": "🛢️",
             "type": "Oil infrastructure debris fire",
-            "detail": "A major fire broke out at the Fujairah Oil Industry Zone on Tuesday March 3 after debris from a successfully intercepted Iranian drone fell inside the facility. The Fujairah Media Office confirmed no injuries were reported, the fire was contained, and normal operations resumed. Fujairah is the world's third-largest oil storage hub and a key bunker fuel supplier for ships transiting the Strait of Hormuz. On March 3, Fujairah authorities confirmed sounds heard were from successful air defense interceptions. On March 3, a new debris fire from a drone interception prompted the suspension of an ATP Challenger tennis tournament in Fujairah. The Fujairah press office confirmed ongoing interception operations. Al Jazeera reported on March 4 that Fujairah port was again targeted overnight as Tehran continued retaliatory strikes for a fourth night. Second interception-debris fire reported at Fujairah oil tanks on Day 9 of conflict. No injuries. Authorities responding. Fujairah authorities confirmed a fire broke out in the Fujairah Oil Tanks area after debris from successful air defence interceptions fell in the vicinity. No injuries reported.",
+            "detail": "A major fire broke out at the Fujairah Oil Industry Zone on Tuesday March 3 after debris from a successfully intercepted Iranian drone fell inside the facility. The Fujairah Media Office confirmed no injuries were reported, the fire was contained, and normal operations resumed. Fujairah is the world's third-largest oil storage hub and a key bunker fuel supplier for ships transiting the Strait of Hormuz. On March 3, Fujairah authorities confirmed sounds heard were from successful air defense interceptions. On March 3, a new debris fire from a drone interception prompted the suspension of an ATP Challenger tennis tournament in Fujairah. The Fujairah press office confirmed ongoing interception operations. Al Jazeera reported on March 4 that Fujairah port was again targeted overnight as Tehran continued retaliatory strikes for a fourth night. Second interception-debris fire reported at Fujairah oil tanks on Day 9 of conflict. No injuries. Authorities responding. Fujairah authorities confirmed a fire broke out in the Fujairah Oil Tanks area after debris from successful air defence interceptions fell in the vicinity. No injuries reported. On March 9, Fujairah authorities confirmed a new fire in the Oil Tanks area from air defence interception debris. No injuries reported.",
             "incidents": [
                     {
                             "date": "2026-03-03",
@@ -1247,6 +1247,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-09",
                             "text": "New fire broke out in Fujairah Oil Tanks area after debris from successful air defence interceptions fell in the vicinity. No injuries reported. Authorities responding."
+                    },
+                    {
+                            "date": "2026-03-09",
+                            "text": "Fujairah authorities confirm fire in Fujairah Oil Tanks area after debris from air defence interceptions fell in the vicinity. No injuries reported. Emergency teams responding."
                     }
             ],
             "sources": [
@@ -2314,7 +2318,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🛢️",
             "type": "Missile Strike on Oil Refinery",
-            "detail": "An Iranian ballistic missile struck Bahrain's BAPCO Sitra refinery on March 5, triggering large fires at the 400k b/d facility. Bahrain's Interior Ministry confirmed the fire was contained with limited material damage and no casualties. BAPCO confirmed refinery operations continue. Thursday night: Iranian missile confirmed to have directly struck the refinery in a separate incident. Bahrain authorities say fire extinguished, refinery operational, no casualties. Bahrain Defence Force total interceptions since Feb 28: 75 missiles and 123 drones. Second confirmed missile impact on Bapco refinery on March 5. Fire extinguished, no casualties. March 9: Smoke reported rising from BAPCO refinery following renewed Iranian strike, concurrent with mass-casualty drone attack on nearby Sitra residential areas.",
+            "detail": "An Iranian ballistic missile struck Bahrain's BAPCO Sitra refinery on March 5, triggering large fires at the 400k b/d facility. Bahrain's Interior Ministry confirmed the fire was contained with limited material damage and no casualties. BAPCO confirmed refinery operations continue. Thursday night: Iranian missile confirmed to have directly struck the refinery in a separate incident. Bahrain authorities say fire extinguished, refinery operational, no casualties. Bahrain Defence Force total interceptions since Feb 28: 75 missiles and 123 drones. Second confirmed missile impact on Bapco refinery on March 5. Fire extinguished, no casualties. March 9: Smoke reported rising from BAPCO refinery following renewed Iranian strike, concurrent with mass-casualty drone attack on nearby Sitra residential areas. On March 9, BAPCO declared force majeure on group operations after a new Iranian drone/missile strike caused fire at the refinery. Fire contained, no fatalities at the facility. Bahrain becomes second Gulf state to invoke force majeure after Qatar's LNG operations.",
             "incidents": [
                     {
                             "date": "2026-03-05",
@@ -2331,6 +2335,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-09",
                             "text": "Smoke seen rising from BAPCO Sitra refinery on Monday March 9 following renewed Iranian strike, concurrent with drone attacks on nearby Sitra residential areas that injured 32 civilians."
+                    },
+                    {
+                            "date": "2026-03-09",
+                            "text": "BAPCO declares force majeure on group operations after new Iranian drone/missile strike causes fire at refinery unit. Fire contained, no fatalities at refinery. Domestic fuel supply secured via contingency plans. BAPCO confirms refinery still operational but suspends supply obligations."
                     }
             ],
             "sources": [
@@ -2365,6 +2373,18 @@ const LOCATIONS = [
                     {
                             "name": "Gulf Today",
                             "url": "https://www.gulftoday.ae/news/2026/03/09/32-citizens-injured-in-iranian-drone-attack-bahrain"
+                    },
+                    {
+                            "name": "Türkiye Today",
+                            "url": "https://www.turkiyetoday.com/region/bahrains-bapco-refinery-hit-by-iranian-strikes-declares-force-majeure-3215869"
+                    },
+                    {
+                            "name": "Middle East Eye",
+                            "url": "https://www.middleeasteye.net/live-blog/live-blog-update/video-drones-hit-bahrains-bapco-refinery"
+                    },
+                    {
+                            "name": "Al Bawaba",
+                            "url": "https://www.albawaba.com/news/fire-erupts-bapco-oil-refinery-bahrain-1623460"
                     }
             ],
             "dateAdded": "2026-03-05"
@@ -2680,6 +2700,42 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-08"
+    },
+    {
+            "name": "Sitra Island Residential Area (Iranian Drone Strike Injuries), Bahrain",
+            "lat": 26.1503,
+            "lng": 50.5822,
+            "country": "Bahrain",
+            "city": "Sitra",
+            "severity": "critical",
+            "icon": "💥",
+            "type": "Drone Strike — Residential Casualties",
+            "detail": "Overnight Iranian drone attack on Sitra Island injured 32 Bahraini civilians, with 4 in critical condition including a 17-year-old girl with severe head and eye injuries and a 2-month-old infant. All casualties are Bahraini nationals. This is separate from the BAPCO refinery fire nearby.",
+            "incidents": [
+                    {
+                            "date": "2026-03-09",
+                            "text": "Iranian drone attack on Sitra residential area injures 32 Bahraini civilians (4 critical, including children). Bahrain Health Ministry confirms casualties; government attributes attack to 'Iranian aggression'."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Reuters (via Times of Israel)",
+                            "url": "https://www.timesofisrael.com/liveblog_entry/smoke-rises-from-bahrains-bapco-oil-refinery-after-iranian-drone-attack/"
+                    },
+                    {
+                            "name": "Republic World",
+                            "url": "https://www.republicworld.com/world-news/iran-targets-bahrain-s-biggest-oil-refinery-bapco-company-declares-force-majeure-watch"
+                    },
+                    {
+                            "name": "Indrastra",
+                            "url": "https://www.indrastra.com/2026/03/bahrain-oil-firm-declares-force-majeure.html"
+                    },
+                    {
+                            "name": "The Diplomatic Insight",
+                            "url": "https://thediplomaticinsight.com/bahrains-bapco-oil-refinery-iran-drone-strike/"
+                    }
+            ],
+            "dateAdded": "2026-03-09"
     },
 
     // ═══════════════════════════════════════════════════════════
