@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-10T22:22:21.797Z",
+    "lastUpdated": "2026-03-10T23:21:39.224Z",
     "casualties": {
         "killed": 60,
         "injured": 757
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 11 (March 10): Iran continued drone/missile strikes across the Gulf. Bahrain reported 3 missiles and 1 drone (1 woman killed, 8 injured in Manama residential building). UAE intercepted 8 of 9 ballistic missiles and 26 of 35 drones; 9 drones impacted, 2 additional deaths reported. Saudi Arabia destroyed 2 drones over Eastern Province. Kuwait shot down 6 drones. Qatar intercepted 5 ballistic missiles. Drone debris damaged UAE Consulate in Erbil, Iraq. US Embassy in Riyadh hit by 2 drones and closed. ADNOC shut Ruwais refinery after drone-caused fire. US Defense Secretary Hegseth warned of 'most intense day of strikes inside Iran.' Iran's IRGC vowed 'not a single liter of oil' would leave the Persian Gulf.",
-    "totalBarrage": "UAE cumulative since Feb 28: 262 ballistic missiles detected (241 destroyed, 19 fell in sea, 2 impacted), 1,475 drones detected (1,385 intercepted, 90 impacted), 8 cruise missiles destroyed. Kuwait: 6 drones intercepted on March 10. Qatar: 5 ballistic missiles intercepted on March 10.",
-    "intercepted": "UAE: 241 of 262 ballistic missiles destroyed (92%), 1,385 of 1,475 drones intercepted (94%). Bahrain: 105 missiles, 176 drones intercepted total. Hegseth noted Iran's ballistic missile launch rate is now down ~90% from Day 1 of the war."
+    "summary": "Day 11 (March 10): UAE reports cumulative 262 ballistic missiles and 1,475 drones detected since Feb 28, with 241 missiles and 1,385 drones intercepted. Nine drones made impact on UAE territory on March 10 alone. Bahrain reports intercepting 176 drones and 106 missiles total. Qatar intercepted 5+ ballistic missiles on March 10. Kuwait reports 407 drones and 221 missiles total launched at it. Pentagon says ~140 US service members wounded; 8 severely injured. UN Security Council vote on GCC-sponsored resolution condemning Iran attacks scheduled for Wednesday.",
+    "totalBarrage": "As of March 10 — UAE: 262 ballistic missiles, 1,475 drones, 8 cruise missiles detected. Kuwait: 407 drones, 221 missiles. Qatar: 151 missiles, 69 drones, 2 aircraft. Bahrain: 106 missiles, 176 drones. Jordan: 60 missiles, 59 drones.",
+    "intercepted": "UAE: 241 missiles, 1,385 drones intercepted (19 missiles fell in sea, 2 hit territory). Kuwait: most intercepted. Qatar: 143 missiles, 53 drones, 2 aircraft intercepted. Bahrain: 106 missiles, 176 drones intercepted."
 };
 
 const LOCATIONS = [
@@ -5385,6 +5385,38 @@ const LOCATIONS = [
             ],
             "dateAdded": "2026-03-08"
     },
+    {
+            "name": "Subiya (Sabiya) Thermal Power Plant (Drone Debris Fire), Al Jahra, Kuwait",
+            "lat": 29.65,
+            "lng": 47.9167,
+            "country": "Kuwait",
+            "city": "Shumaymah",
+            "severity": "high",
+            "icon": "⚡",
+            "type": "Interceptor Debris Fire — Power Plant",
+            "detail": "Debris from an intercepted Iranian drone ignited a fire in a fuel tank at the Subiya Thermal Power and Water Distillation Plant on March 9. Kuwait's Ministry of Electricity confirmed drone fragments were found at the fire's origin. No casualties reported; fire was contained and power/water supply remained unaffected.",
+            "incidents": [
+                    {
+                            "date": "2026-03-09",
+                            "text": "Drone debris ignited fire in fuel tank at Subiya Power Plant. Kuwait Ministry of Electricity confirmed drone fragments at fire origin. No casualties; fire contained."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Arab Times Kuwait",
+                            "url": "https://www.arabtimesonline.com/news/no-casualties-subiya-power-plant-fire-contained-drone-parts-discovered/"
+                    },
+                    {
+                            "name": "Times Kuwait",
+                            "url": "https://timeskuwait.com/electricity-ministry-subiya-fire-caused-by-drone-debris/"
+                    },
+                    {
+                            "name": "FDD Long War Journal",
+                            "url": "https://www.longwarjournal.org/archives/2026/03/iranian-drone-and-missile-barrages-strike-arab-states-across-the-region-march-9-10-updates.php"
+                    }
+            ],
+            "dateAdded": "2026-03-10"
+    },
 
     // ═══════════════════════════════════════════════════════════
     // Saudi Arabia
@@ -7121,6 +7153,38 @@ const LOCATIONS = [
             ],
             "dateAdded": "2026-03-08"
     },
+    {
+            "name": "Al Zulfi Residential Area (Drone Crash), Riyadh Province, Saudi Arabia",
+            "lat": 26.2967,
+            "lng": 44.8,
+            "country": "Saudi Arabia",
+            "city": "Al Zulfi",
+            "severity": "critical",
+            "icon": "💥",
+            "type": "Drone Impact — Residential Area",
+            "detail": "Saudi Civil Defense confirmed an Iranian drone crashed in a residential area of Al Zulfi Governorate, north of Riyadh, on the morning of March 10. Limited material damage was reported but no injuries. Emergency teams responded to the scene.",
+            "incidents": [
+                    {
+                            "date": "2026-03-10",
+                            "text": "Iranian drone crashed in residential area of Al Zulfi Governorate, causing limited material damage but no injuries (Saudi Civil Defense)."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Al Arabiya",
+                            "url": "https://english.alarabiya.net/News/saudi-arabia/2026/03/10/drone-falls-on-residential-sites-in-saudi-alzulfi-governorate-no-injuries-reported-"
+                    },
+                    {
+                            "name": "Saudi Gazette / WAM",
+                            "url": "https://saudigazette.com.sa/article/659637/saudi-arabia/saudi-air-defenses-intercept-drones-and-ballistic-missile-drone-falls-in-al-zulfi"
+                    },
+                    {
+                            "name": "FDD Long War Journal",
+                            "url": "https://www.longwarjournal.org/archives/2026/03/iranian-drone-and-missile-barrages-strike-arab-states-across-the-region-march-9-10-updates.php"
+                    }
+            ],
+            "dateAdded": "2026-03-10"
+    },
 
     // ═══════════════════════════════════════════════════════════
     // Oman
@@ -7566,7 +7630,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "🎯",
             "type": "US/Jordanian Air Base — Targeted, Intercepted",
-            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage. Jordan confirmed intercepting 13 ballistic missiles and 49 drones. German troops in Jordan were also reportedly shelled by Iran. German military confirmed the multinational base at Al-Azraq was targeted by Iran over the weekend. US Embassy in Amman fully evacuated March 3 due to threats. Non-emergency US personnel in Jordan ordered to depart March 4. Stars and Stripes confirms US has deployed dozens of attack aircraft to the base, making it a key air power hub. Non-emergency US personnel ordered to depart Jordan. CNN satellite analysis confirms THAAD AN/TPY-2 radar was struck and apparently destroyed (image dated March 2). Iran assessed to be deliberately targeting US-made air defense radars across the Arabian Peninsula to degrade missile/drone interception capabilities. Buildings housing similar radar systems also hit at two UAE locations per CNN, though equipment status unclear. CNN satellite imagery investigation (March 5) confirmed a THAAD AN/TPY-2 radar was struck and damaged at this base, showing debris surrounding a blackened radar unit in March 2 post-strike imagery. Iran appears to be systematically targeting US air defense radars across the region. CNN satellite imagery published March 6 confirms the AN/TPY-2 THAAD radar (~$500M) at the base was struck and appears destroyed. Two large craters visible near the blackened radar installation, indicating multiple strike attempts. March 7: IRGC 23rd wave claimed targeting al-Azraq base in Jordan. March 7: Jordanian MOD press conference confirmed 119 projectiles detected total (108 intercepted, 11 evaded), 73 debris incidents in 8 governorates with property damage only. CNN satellite imagery analysis confirmed the AN/TPY-2 THAAD radar at the base appears severely damaged or destroyed, with multiple craters visible. Munitions specialist called it 'an operationally significant event.' A missile was also intercepted above Aqaba on March 7. Jordan has intercepted 49 drones and ballistic missiles total.",
+            "detail": "Key US air power hub in Jordan targeted repeatedly by Iranian missiles. Jordan's armed forces reported intercepting 49 drones and ballistic missiles since Feb 28. The US deployed dozens of attack aircraft and THAAD systems here prior to the strikes. Iranian media claimed the base as an intended target. All attacks on the base reported intercepted by Jordanian forces, though a missile reportedly fell on Al-Hashemi Street in Irbid. Jordan reported five injured and homes damaged across the kingdom. Jordan has now intercepted 49 drones and 13 ballistic missiles. Iranian media identified Muwaffaq al-Salti as an intended target. Fragments caused localized property damage. Jordan confirmed intercepting 13 ballistic missiles and 49 drones. German troops in Jordan were also reportedly shelled by Iran. German military confirmed the multinational base at Al-Azraq was targeted by Iran over the weekend. US Embassy in Amman fully evacuated March 3 due to threats. Non-emergency US personnel in Jordan ordered to depart March 4. Stars and Stripes confirms US has deployed dozens of attack aircraft to the base, making it a key air power hub. Non-emergency US personnel ordered to depart Jordan. CNN satellite analysis confirms THAAD AN/TPY-2 radar was struck and apparently destroyed (image dated March 2). Iran assessed to be deliberately targeting US-made air defense radars across the Arabian Peninsula to degrade missile/drone interception capabilities. Buildings housing similar radar systems also hit at two UAE locations per CNN, though equipment status unclear. CNN satellite imagery investigation (March 5) confirmed a THAAD AN/TPY-2 radar was struck and damaged at this base, showing debris surrounding a blackened radar unit in March 2 post-strike imagery. Iran appears to be systematically targeting US air defense radars across the region. CNN satellite imagery published March 6 confirms the AN/TPY-2 THAAD radar (~$500M) at the base was struck and appears destroyed. Two large craters visible near the blackened radar installation, indicating multiple strike attempts. March 7: IRGC 23rd wave claimed targeting al-Azraq base in Jordan. March 7: Jordanian MOD press conference confirmed 119 projectiles detected total (108 intercepted, 11 evaded), 73 debris incidents in 8 governorates with property damage only. CNN satellite imagery analysis confirmed the AN/TPY-2 THAAD radar at the base appears severely damaged or destroyed, with multiple craters visible. Munitions specialist called it 'an operationally significant event.' A missile was also intercepted above Aqaba on March 7. Jordan has intercepted 49 drones and ballistic missiles total. March 10: Iranian missiles struck the base again, hitting section used by German and American personnel per European sources.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -7615,6 +7679,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-07",
                             "text": "A missile was intercepted above the Jordanian city of Aqaba. Jordan reported intercepting 49 drones and ballistic missiles that entered its airspace during the conflict."
+                    },
+                    {
+                            "date": "2026-03-10",
+                            "text": "Iranian missiles struck Muwaffaq al-Salti Air Base, hitting section used by German and American personnel, according to European sources (FDD Long War Journal)."
                     }
             ],
             "sources": [
@@ -7677,6 +7745,10 @@ const LOCATIONS = [
                     {
                             "name": "Al Jazeera",
                             "url": "https://www.aljazeera.com/news/2026/3/7/iranian-missiles-intercepted-over-saudi-jordan-drones-launched-at-qatar"
+                    },
+                    {
+                            "name": "FDD Long War Journal",
+                            "url": "https://www.longwarjournal.org/archives/2026/03/iranian-drone-and-missile-barrages-strike-arab-states-across-the-region-march-9-10-updates.php"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -7908,6 +7980,30 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-07"
+    },
+    {
+            "name": "Majnoon Oil Field (Drone Strikes), Basra, Iraq",
+            "lat": 31.25,
+            "lng": 47.4,
+            "country": "Iraq",
+            "city": "Basra",
+            "severity": "critical",
+            "icon": "🛢️",
+            "type": "Drone Strike — Oil Field",
+            "detail": "Drones struck Iraq's Majnoon Oil Field in Basra province on March 10, with at least two reportedly falling inside the oil installation. The Majnoon field is a major Iraqi oil production site near the Kuwaiti border.",
+            "incidents": [
+                    {
+                            "date": "2026-03-10",
+                            "text": "Drones struck Majnoon Oil Field in Basra, with at least two falling inside the oil installation (FDD Long War Journal)."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "FDD Long War Journal",
+                            "url": "https://www.longwarjournal.org/archives/2026/03/iranian-drone-and-missile-barrages-strike-arab-states-across-the-region-march-9-10-updates.php"
+                    }
+            ],
+            "dateAdded": "2026-03-10"
     },
 
     // ═══════════════════════════════════════════════════════════
