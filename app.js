@@ -152,16 +152,20 @@
                 fillOpacity: fillOp, weight: 2, opacity: 1
             });
 
-            // Build popup with mobile-aware auto-pan padding
             const isMobile = window.innerWidth <= 768;
-            marker.bindPopup(buildPopup(loc), {
-                maxWidth: isMobile ? 280 : 380,
-                autoPanPaddingTopLeft: isMobile ? L.point(10, 75) : L.point(10, 20),
-                autoPanPaddingBottomRight: isMobile ? L.point(10, 60) : L.point(10, 20)
-            });
-            marker.on('popupopen', function() {
-                window.location.hash = encodeURIComponent(loc.name);
-            });
+            if (isMobile) {
+                // On mobile, use detail panel instead of Leaflet popup
+                marker.on('click', () => showMobileDetail(loc));
+            } else {
+                marker.bindPopup(buildPopup(loc), {
+                    maxWidth: 380,
+                    autoPanPaddingTopLeft: L.point(10, 20),
+                    autoPanPaddingBottomRight: L.point(10, 20)
+                });
+                marker.on('popupopen', function() {
+                    window.location.hash = encodeURIComponent(loc.name);
+                });
+            }
             state.markerGroup.addLayer(marker);
         });
     }
@@ -531,15 +535,28 @@
             sheet.classList.toggle('open');
         });
 
-        // Close sheet when map is tapped (returns to peek state via CSS default)
+        // Swipe gestures on sheet handle
+        addSwipeGesture(handle,
+            () => sheet.classList.remove('open'),
+            () => sheet.classList.add('open')
+        );
+
+        // Close sheet when map is tapped
         state.map.on('click', () => {
             sheet.classList.remove('open');
+            closeMobileDetail();
         });
 
-        // Close sheet when a popup opens so popup is fully visible
+        // Close sheet when a popup opens
         state.map.on('popupopen', () => {
             sheet.classList.remove('open');
         });
+
+        // Initialize mobile sub-features
+        initMobileFilters();
+        initMobileLegendToggles();
+        initMobileResetView();
+        initMobileDetail();
     }
 
     function updateMobileSheet(locations) {
@@ -578,11 +595,7 @@
                 document.getElementById('mobile-sheet').classList.remove('open');
                 const zoom = loc.severity === 'watchlist' ? 10 : 12;
                 state.map.flyTo([loc.lat, loc.lng], zoom);
-                state.markerGroup.eachLayer(layer => {
-                    if (layer.getLatLng && layer.getLatLng().lat === loc.lat && layer.getLatLng().lng === loc.lng) {
-                        layer.openPopup();
-                    }
-                });
+                showMobileDetail(loc);
             });
             content.appendChild(item);
         });
@@ -592,6 +605,153 @@
     function updateMobileTopbar() {
         const el = document.getElementById('mobile-updated');
         if (el) el.textContent = formatLastUpdated(MAP_META.lastUpdated) + ' GMT';
+    }
+
+    // ═══ Swipe gesture helper ═══
+    function addSwipeGesture(el, onSwipeDown, onSwipeUp) {
+        let startY = 0;
+        let startTime = 0;
+
+        el.addEventListener('touchstart', (e) => {
+            startY = e.touches[0].clientY;
+            startTime = Date.now();
+        }, { passive: true });
+
+        el.addEventListener('touchend', (e) => {
+            const deltaY = e.changedTouches[0].clientY - startY;
+            const deltaTime = Date.now() - startTime;
+            const velocity = Math.abs(deltaY) / deltaTime;
+
+            if ((deltaY > 50) || (deltaY > 25 && velocity > 0.3)) {
+                if (onSwipeDown) onSwipeDown();
+            } else if ((deltaY < -50) || (deltaY < -25 && velocity > 0.3)) {
+                if (onSwipeUp) onSwipeUp();
+            }
+        }, { passive: true });
+    }
+
+    // ═══ Mobile detail panel (replaces popups on mobile) ═══
+    function showMobileDetail(loc) {
+        const title = document.getElementById('mobile-detail-title');
+        const content = document.getElementById('mobile-detail-content');
+        const panel = document.getElementById('mobile-detail');
+        const overlay = document.getElementById('mobile-detail-overlay');
+        if (!panel || !content) return;
+
+        const newBadge = isRecent(loc) ? ' <span class="badge-new">NEW</span>' : '';
+        if (title) title.innerHTML = loc.icon + ' ' + loc.name + newBadge;
+        content.innerHTML = buildPopup(loc);
+        content.scrollTop = 0;
+
+        // Update hash for deep linking
+        window.location.hash = encodeURIComponent(loc.name);
+
+        // Close bottom sheet
+        const sheet = document.getElementById('mobile-sheet');
+        if (sheet) sheet.classList.remove('open');
+
+        panel.classList.add('open');
+        if (overlay) overlay.classList.add('open');
+    }
+
+    function closeMobileDetail() {
+        const panel = document.getElementById('mobile-detail');
+        const overlay = document.getElementById('mobile-detail-overlay');
+        if (panel) panel.classList.remove('open');
+        if (overlay) overlay.classList.remove('open');
+    }
+
+    function initMobileDetail() {
+        const closeBtn = document.getElementById('mobile-detail-close');
+        const overlay = document.getElementById('mobile-detail-overlay');
+
+        if (closeBtn) closeBtn.addEventListener('click', closeMobileDetail);
+        if (overlay) overlay.addEventListener('click', closeMobileDetail);
+
+        // Swipe down to close detail panel
+        const handle = document.getElementById('mobile-detail-handle');
+        if (handle) {
+            addSwipeGesture(handle, closeMobileDetail, null);
+        }
+    }
+
+    // ═══ Mobile filters ═══
+    function initMobileFilters() {
+        const countrySelect = document.getElementById('mobile-filter-country');
+        const sevSelect = document.getElementById('mobile-filter-severity');
+        if (!countrySelect) return;
+
+        // Populate country dropdown
+        const countries = ['all', ...new Set(LOCATIONS.map(l => l.country))].sort((a, b) => {
+            if (a === 'all') return -1;
+            if (b === 'all') return 1;
+            return a.localeCompare(b);
+        });
+        countrySelect.innerHTML = '';
+        countries.forEach(c => {
+            const opt = document.createElement('option');
+            opt.value = c;
+            opt.textContent = c === 'all' ? 'All Countries' : c;
+            countrySelect.appendChild(opt);
+        });
+
+        countrySelect.addEventListener('change', () => {
+            state.countryFilter = countrySelect.value;
+            // Sync desktop filter
+            const desktopFilter = document.getElementById('filter-country');
+            if (desktopFilter) desktopFilter.value = countrySelect.value;
+            applyFilters();
+        });
+
+        if (sevSelect) {
+            sevSelect.addEventListener('change', () => {
+                state.severityFilter = sevSelect.value;
+                const desktopFilter = document.getElementById('filter-severity');
+                if (desktopFilter) desktopFilter.value = sevSelect.value;
+                applyFilters();
+            });
+        }
+    }
+
+    // ═══ Mobile legend toggles ═══
+    function initMobileLegendToggles() {
+        const legend = document.getElementById('mobile-legend');
+        if (!legend) return;
+
+        legend.querySelectorAll('.mobile-legend-item').forEach(item => {
+            const sev = item.dataset.severity;
+            if (!sev) return;
+
+            item.addEventListener('click', () => {
+                state.legendToggles[sev] = !state.legendToggles[sev];
+                item.classList.toggle('disabled', !state.legendToggles[sev]);
+                // Sync desktop legend
+                const desktopItem = document.querySelector('.legend-item[data-severity="' + sev + '"]');
+                if (desktopItem) desktopItem.classList.toggle('disabled', !state.legendToggles[sev]);
+                applyFilters();
+            });
+        });
+    }
+
+    // ═══ Mobile reset view ═══
+    function initMobileResetView() {
+        const btn = document.getElementById('mobile-reset-view');
+        if (!btn) return;
+
+        btn.addEventListener('click', () => {
+            state.map.flyTo([25.5, 51.5], 6);
+            btn.classList.remove('visible');
+            closeMobileDetail();
+        });
+
+        // Show/hide based on zoom level
+        state.map.on('zoomend', () => {
+            if (state.map.getZoom() > 7) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
     }
 
     // ═══ Share button ═══
@@ -638,15 +798,19 @@
         if (!hash) return;
         var loc = state.allLocations.find(function(l) { return l.name === hash; });
         if (loc) {
+            var isMobile = window.innerWidth <= 768;
             state.map.flyTo([loc.lat, loc.lng], 12);
-            state.markerGroup.eachLayer(function(layer) {
-                if (layer.getLatLng && layer.getLatLng().lat === loc.lat && layer.getLatLng().lng === loc.lng) {
-                    layer.openPopup();
-                }
-            });
+            if (isMobile) {
+                showMobileDetail(loc);
+            } else {
+                state.markerGroup.eachLayer(function(layer) {
+                    if (layer.getLatLng && layer.getLatLng().lat === loc.lat && layer.getLatLng().lng === loc.lng) {
+                        layer.openPopup();
+                    }
+                });
+            }
         }
     }
-
     // ═══ Boot ═══
     initMap();
     initMobileSheet();
