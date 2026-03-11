@@ -8,15 +8,15 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-11T19:04:43.071Z",
+    "lastUpdated": "2026-03-11T20:46:22.272Z",
     "casualties": {
         "killed": 64,
         "injured": 795
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 12 (March 11): IRGC announced 37th wave and 'most intense and heaviest operation' since war began. UNSC to vote on GCC resolution demanding Iran halt attacks on neighbors. IRGC Navy Commander Tangsiri declared all vessels must obtain Iranian permission to transit Strait of Hormuz. Iran escalated attacks on Oman for first time since early March, hitting fuel tanks at Salalah Port. IEA proposed largest-ever release of oil reserves (400M barrels). At least 14 vessels struck in Gulf since Feb 28. Iran reportedly deployed about a dozen mines in Strait of Hormuz (Reuters, citing 2 sources).",
-    "totalBarrage": "UAE: 1,475 Iranian drones detected since Feb 28, 1,385 intercepted, 90 land impacts (UAE Defence Ministry via The National, as of March 10). Saudi Arabia on March 11: intercepted 7 ballistic missiles (6 at PSAB, 1 Eastern Province), destroyed 16+ drones (7 at Shaybah, others at Al-Kharj, Hafar al-Batin, Eastern Province) per Saudi Defence Ministry via Al Arabiya/Arab News. Kuwait: 8 drones downed March 11 (National Guard). UKMTO: 17 maritime incident reports since Feb 28 (13 attacks, 4 suspicious activity) per CNBC.",
-    "intercepted": "March 11: Saudi intercepted 6 missiles (PSAB) + 5 drones (Shaybah) + 2 drones (Eastern Province). Kuwait downed 8 drones. Qatar intercepted multiple missile attacks. Oman downed 2 drones at sea. Bahrain activated air defense sirens."
+    "summary": "Day 12 (March 11): UNSC passed resolution 13-2 (two abstentions) demanding Iran immediately cease all attacks on Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, UAE, and Jordan. Iran's Khatam al-Anbiya military command threatened to target banks and financial institutions linked to US/Israel in the Gulf, warning civilians to stay 1km from banks — putting DIFC Dubai, Bahrain Financial Harbour, and Saudi banking centers at elevated risk. IEA announced record 400-million-barrel strategic oil reserve release. Three commercial ships struck in one day — heaviest day of maritime attacks since war began. IRGC naval commander declared all vessels must obtain Iranian permission to transit Strait of Hormuz.",
+    "totalBarrage": "As of March 10: UAE reports 1,475 drones and 270 missiles launched at its territory. Kuwait: 407 drones, 221 missiles. Qatar: 69 drones, 151 missiles. Bahrain intercepted 176 drones, 106 missiles. Jordan targeted by 59 drones, 60 missiles. IRGC announced its 37th wave of attacks on March 11. UKMTO has received 17 reports of vessel incidents since Feb 28.",
+    "intercepted": "UAE intercepted 1,385 of 1,475 drones and 249 of 270 missiles. Qatar intercepted 53 of 69 drones, 143 of 151 missiles. Saudi Arabia intercepted 6 ballistic missiles near PSAB and 5+ drones toward Shaybah on March 11. Kuwait National Guard downed 8 drones on March 11."
 };
 
 const LOCATIONS = [
@@ -276,7 +276,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "World's Busiest Intl Airport — Hit Twice",
-            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports. March 2: Third day of explosions heard across Dubai. UAE airspace remains closed. Etihad flights suspended until March 3. Dubai Airports announced limited flight resumption from DXB and DWC starting evening of March 2, three days after initial shutdown. Mar 2: Dubai Airports announced limited resumption of flights from DXB and DWC starting Monday evening after 3 days shutdown. Thousands of passengers remain stranded. March 2 evening: Dubai Airports announced limited flight resumption at DXB and DWC after 3 days of closure. Thousands of passengers remain stranded. March 7: Drone impact/debris incident near Concourse A. GDMO confirmed debris from interception. Emirates flights suspended again. Incident occurred shortly after Iran's President Pezeshkian apologized to neighboring countries and announced intent to stop attacks on Gulf states. On March 7, debris from an interception fell in Dubai (no injuries). Authorities denied airport incidents but flights briefly aborted landings. Emirates partially resumed operations from DXB and DWC. On Saturday March 7, DXB temporarily suspended, then partially resumed operations. GDMO confirmed debris from interception caused a minor incident. Emirates airline resumed flights Saturday afternoon. UAE MOD: 121 drones detected Saturday, 119 intercepted, 2 fell within UAE. March 7: Drone debris near Concourse A triggered shelter-in-place and brief suspension. No injuries. Operations partially resumed. March 7: Drone exploded next to Concourse A shortly after Iran's president apologized to neighbors. BBC-verified video shows explosion near terminal. Emirates suspended then resumed operations within 30 minutes. Mar 7 morning: Drone detonated adjacent to Concourse A. DXB suspended operations, diverted flights. Emirates resumed afternoon service. On March 7, a drone exploded next to Concourse A on the runway, narrowly missing the terminal and a parked aircraft. A fire was reported at Terminal 3. Flight operations were suspended and the airport evacuated. BBC verified video of the strike. No injuries reported. UAE MoD said 16 ballistic missiles were fired at the UAE on Saturday — all but one intercepted (one fell to sea). 121 drones were detected, 119 intercepted, 2 fell within UAE. March 7: DXB suspended operations Saturday morning after drone detonated near Concourse A. Emirates resumed limited flights in the afternoon. Dubai Media Office denied social media reports of direct airport strike, confirmed debris incident in the city. March 7: Drone exploded near Concourse A, forcing another suspension of operations. Airport partially resumed flights later in the day. Emirates suspended all flights until further notice before lifting it shortly afterward. On March 7, despite Pezeshkian's announced halt to Gulf strikes, DXB was attacked by Iranian drones. Emirates flights suspended then partially resumed. Wikipedia noted attacks occurred after Pezeshkian's statement, underscoring IRGC operational independence. On March 7-8, a drone approached near Concourse A, forcing a brief suspension of operations. AFP-verified footage showed an explosion and smoke near a terminal building. Passengers were evacuated to underground tunnels. Emirates resumed flights shortly after. Missile sirens activated in Dubai on Tuesday morning March 10; UAE MOD confirmed air defences responding to incoming Iranian threats. March 10: Air raid sirens again over Dubai; flights briefly suspended. UAE reported 15 ballistic missiles tracked (12 intercepted, 3 into coastline) and 18 drones (17 intercepted) in latest wave. UAE's National Emergency Authority lowered overnight alert volume (10:30 PM–9 AM) from klaxon to standard text chime after days of sleep disruption. March 10: Sirens at ~04:30 GMT forced passengers to bomb shelters; all incoming flights held. Emirates suspended and then partially resumed operations. March 10: Sirens and flight suspension recurred as UAE MOD reported 9 ballistic missiles and 35 drones fired at UAE today (8 missiles destroyed, 1 fell in sea; 26 of 35 drones intercepted, 9 fell within UAE territory). March 11: Two Iranian drones fell in the vicinity of DXB, wounding 4 foreign nationals. Airport remained operational. UAE Interior Ministry issued shelter warnings via mobile alert. March 11: Two drones struck near DXB injuring 4 foreign nationals. UAE Defence Ministry reports 1,475 drones detected since Feb 28, with 1,385 intercepted and 90 impacting on land. March 11: Two drones confirmed down near DXB, 4 people wounded (2 Ghanaians, 1 Bangladeshi, 1 Indian). UAE MOD reports total of 1,475 drones detected since Feb 28 with 1,385 intercepted and 90 impacts. March 11 AM: Two Iranian drones fell near DXB, injuring 4 (2 Ghanaians, 1 Bangladeshi, 1 Indian). Concourse sustained minor structural damage. Airport briefly halted, then resumed. Dubai Media Office confirmed. Total UAE drone detections since Feb 28: 1,475 (1,385 intercepted, 90 impacts). March 11: Two Iranian drones fell near DXB injuring 4 foreign nationals (2 Ghanaians, 1 Bangladeshi — minor; 1 Indian — moderate). Air traffic continued as normal per Dubai Media Office.",
+            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports. March 2: Third day of explosions heard across Dubai. UAE airspace remains closed. Etihad flights suspended until March 3. Dubai Airports announced limited flight resumption from DXB and DWC starting evening of March 2, three days after initial shutdown. Mar 2: Dubai Airports announced limited resumption of flights from DXB and DWC starting Monday evening after 3 days shutdown. Thousands of passengers remain stranded. March 2 evening: Dubai Airports announced limited flight resumption at DXB and DWC after 3 days of closure. Thousands of passengers remain stranded. March 7: Drone impact/debris incident near Concourse A. GDMO confirmed debris from interception. Emirates flights suspended again. Incident occurred shortly after Iran's President Pezeshkian apologized to neighboring countries and announced intent to stop attacks on Gulf states. On March 7, debris from an interception fell in Dubai (no injuries). Authorities denied airport incidents but flights briefly aborted landings. Emirates partially resumed operations from DXB and DWC. On Saturday March 7, DXB temporarily suspended, then partially resumed operations. GDMO confirmed debris from interception caused a minor incident. Emirates airline resumed flights Saturday afternoon. UAE MOD: 121 drones detected Saturday, 119 intercepted, 2 fell within UAE. March 7: Drone debris near Concourse A triggered shelter-in-place and brief suspension. No injuries. Operations partially resumed. March 7: Drone exploded next to Concourse A shortly after Iran's president apologized to neighbors. BBC-verified video shows explosion near terminal. Emirates suspended then resumed operations within 30 minutes. Mar 7 morning: Drone detonated adjacent to Concourse A. DXB suspended operations, diverted flights. Emirates resumed afternoon service. On March 7, a drone exploded next to Concourse A on the runway, narrowly missing the terminal and a parked aircraft. A fire was reported at Terminal 3. Flight operations were suspended and the airport evacuated. BBC verified video of the strike. No injuries reported. UAE MoD said 16 ballistic missiles were fired at the UAE on Saturday — all but one intercepted (one fell to sea). 121 drones were detected, 119 intercepted, 2 fell within UAE. March 7: DXB suspended operations Saturday morning after drone detonated near Concourse A. Emirates resumed limited flights in the afternoon. Dubai Media Office denied social media reports of direct airport strike, confirmed debris incident in the city. March 7: Drone exploded near Concourse A, forcing another suspension of operations. Airport partially resumed flights later in the day. Emirates suspended all flights until further notice before lifting it shortly afterward. On March 7, despite Pezeshkian's announced halt to Gulf strikes, DXB was attacked by Iranian drones. Emirates flights suspended then partially resumed. Wikipedia noted attacks occurred after Pezeshkian's statement, underscoring IRGC operational independence. On March 7-8, a drone approached near Concourse A, forcing a brief suspension of operations. AFP-verified footage showed an explosion and smoke near a terminal building. Passengers were evacuated to underground tunnels. Emirates resumed flights shortly after. Missile sirens activated in Dubai on Tuesday morning March 10; UAE MOD confirmed air defences responding to incoming Iranian threats. March 10: Air raid sirens again over Dubai; flights briefly suspended. UAE reported 15 ballistic missiles tracked (12 intercepted, 3 into coastline) and 18 drones (17 intercepted) in latest wave. UAE's National Emergency Authority lowered overnight alert volume (10:30 PM–9 AM) from klaxon to standard text chime after days of sleep disruption. March 10: Sirens at ~04:30 GMT forced passengers to bomb shelters; all incoming flights held. Emirates suspended and then partially resumed operations. March 10: Sirens and flight suspension recurred as UAE MOD reported 9 ballistic missiles and 35 drones fired at UAE today (8 missiles destroyed, 1 fell in sea; 26 of 35 drones intercepted, 9 fell within UAE territory). March 11: Two Iranian drones fell in the vicinity of DXB, wounding 4 foreign nationals. Airport remained operational. UAE Interior Ministry issued shelter warnings via mobile alert. March 11: Two drones struck near DXB injuring 4 foreign nationals. UAE Defence Ministry reports 1,475 drones detected since Feb 28, with 1,385 intercepted and 90 impacting on land. March 11: Two drones confirmed down near DXB, 4 people wounded (2 Ghanaians, 1 Bangladeshi, 1 Indian). UAE MOD reports total of 1,475 drones detected since Feb 28 with 1,385 intercepted and 90 impacts. March 11 AM: Two Iranian drones fell near DXB, injuring 4 (2 Ghanaians, 1 Bangladeshi, 1 Indian). Concourse sustained minor structural damage. Airport briefly halted, then resumed. Dubai Media Office confirmed. Total UAE drone detections since Feb 28: 1,475 (1,385 intercepted, 90 impacts). March 11: Two Iranian drones fell near DXB injuring 4 foreign nationals (2 Ghanaians, 1 Bangladeshi — minor; 1 Indian — moderate). Air traffic continued as normal per Dubai Media Office. March 11: Two Iranian drones struck near DXB, injuring 4 foreign nationals (3 minor, 1 moderate injuries). Dubai Media Office confirmed. Flights continued normally. UAE military states Iran has fired over 1,400 drones at UAE since Feb 28.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -389,6 +389,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-11",
                             "text": "Two Iranian drones fell in vicinity of Dubai International Airport. 4 foreign nationals injured: 2 Ghanaians and 1 Bangladeshi sustained minor injuries; 1 Indian national sustained moderate injuries. Dubai Media Office confirmed air traffic continued operating normally. This was the second drone strike near DXB since the war began."
+                    },
+                    {
+                            "date": "2026-03-11",
+                            "text": "Two Iranian drones fell in the vicinity of Dubai International Airport on Wednesday morning, injuring four foreign nationals (3 minor, 1 moderate). Dubai Media Office confirmed. Flights continued as normal. Second DXB drone incident after Feb 28 strike."
                     }
             ],
             "sources": [
@@ -579,6 +583,10 @@ const LOCATIONS = [
                     {
                             "name": "Newsweek",
                             "url": "https://www.newsweek.com/iran-war-latest-live-updates-cargo-ships-struck-strait-hormuz-minelayer-destroyed-donald-trump-11656673"
+                    },
+                    {
+                            "name": "PBS / AP",
+                            "url": "https://www.pbs.org/newshour/world/iran-targets-commercial-ships-dubai-airport-and-oil-facilities-as-concerns-grow-over-global-energy"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -8426,7 +8434,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Maritime Projectile Strike / Ship Fire",
-            "detail": "A cargo ship in the Strait of Hormuz caught fire after being hit by an unknown projectile on Wednesday March 11, according to UKMTO and CBS News. The vessel was located approximately 11 nautical miles north of Oman's Musandam Peninsula. The crew requested assistance and began evacuating. UKMTO advised vessels to transit with caution. Vessel confirmed as Thai-flagged bulk carrier Mayuree Naree (Precious Shipping), departed Khalifa Port UAE bound for Kandla, India. Struck by two projectiles. Three Thai crew missing/trapped in engine room; 20 evacuated to Khasab, Oman. IRGC Navy Commander Tangsiri claimed the vessel was 'fired upon by Iranian fighters.' UKMTO confirmed fire extinguished, skeleton crew remaining. Vessel identified as Mayuree Naree (Thai-flagged, Precious Shipping). IRGC claimed responsibility. 3 Thai crew remain trapped in engine room. 20 crew evacuated by Oman Royal Navy with injuries of varying severity. Oman News Agency confirmed fire in main engine room. Thai Navy coordinating SAR via Combined Maritime Forces in Bahrain.",
+            "detail": "A cargo ship in the Strait of Hormuz caught fire after being hit by an unknown projectile on Wednesday March 11, according to UKMTO and CBS News. The vessel was located approximately 11 nautical miles north of Oman's Musandam Peninsula. The crew requested assistance and began evacuating. UKMTO advised vessels to transit with caution. Vessel confirmed as Thai-flagged bulk carrier Mayuree Naree (Precious Shipping), departed Khalifa Port UAE bound for Kandla, India. Struck by two projectiles. Three Thai crew missing/trapped in engine room; 20 evacuated to Khasab, Oman. IRGC Navy Commander Tangsiri claimed the vessel was 'fired upon by Iranian fighters.' UKMTO confirmed fire extinguished, skeleton crew remaining. Vessel identified as Mayuree Naree (Thai-flagged, Precious Shipping). IRGC claimed responsibility. 3 Thai crew remain trapped in engine room. 20 crew evacuated by Oman Royal Navy with injuries of varying severity. Oman News Agency confirmed fire in main engine room. Thai Navy coordinating SAR via Combined Maritime Forces in Bahrain. Vessel confirmed as Mayuree Naree (IMO 9323649), Thai-flagged bulk carrier owned by Precious Shipping Plc. IRGC claimed responsibility via ISNA. 3 of 23 crew missing; 20 rescued by Omani navy. Fire extinguished; UKMTO confirmed no environmental impact.",
             "incidents": [
                     {
                             "date": "2026-03-11",
@@ -8489,6 +8497,10 @@ const LOCATIONS = [
                     {
                             "name": "ABC News",
                             "url": "https://abcnews.com/International/live-updates/iran-live-updates?id=130893022&entryId=130964692"
+                    },
+                    {
+                            "name": "France 24 (AFP)",
+                            "url": "https://www.france24.com/en/middle-east/20260311-thai-navy-says-cargo-ship-attacked-in-strait-of-hormuz"
                     }
             ],
             "dateAdded": "2026-03-11"
@@ -8926,7 +8938,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Maritime Near-Miss",
-            "detail": "A bulk carrier likely came under attack in the Persian Gulf on Tuesday off the coast of the UAE. The captain reported a splash and a loud bang nearby, according to the British military's UKMTO monitoring center. No damage or casualties confirmed. This adds to the ongoing pattern of maritime threats as ~1,000 vessels with 20,000 seafarers remain unable to transit the Strait of Hormuz. March 11: UKMTO reported another vessel struck by projectile in the Persian Gulf. Crew safe. Active threat zone. CONFIRMED STRIKE: Marshall Islands-flagged Star Gwyneth struck by projectile 50nm NW of Dubai on March 11. Owner Star Bulk Carriers confirmed hull damage in hold area while at anchor. Crew safe. Upgraded from near-miss to confirmed strike per UKMTO and maritime risk firm Vanguard.",
+            "detail": "A bulk carrier likely came under attack in the Persian Gulf on Tuesday off the coast of the UAE. The captain reported a splash and a loud bang nearby, according to the British military's UKMTO monitoring center. No damage or casualties confirmed. This adds to the ongoing pattern of maritime threats as ~1,000 vessels with 20,000 seafarers remain unable to transit the Strait of Hormuz. March 11: UKMTO reported another vessel struck by projectile in the Persian Gulf. Crew safe. Active threat zone. CONFIRMED STRIKE: Marshall Islands-flagged Star Gwyneth struck by projectile 50nm NW of Dubai on March 11. Owner Star Bulk Carriers confirmed hull damage in hold area while at anchor. Crew safe. Upgraded from near-miss to confirmed strike per UKMTO and maritime risk firm Vanguard. Vessel identified as Star Gwyneth (Marshall Islands-flagged, 83,000 DWT, Star Bulk fleet). CONFIRMED projectile strike with 2-metre hull hole — not a near-miss. Ballast tank damage caused listing. Crew safe; vessel proceeding to Mina Rashid for repair.",
             "incidents": [
                     {
                             "date": "2026-03-10",
@@ -8939,6 +8951,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-11",
                             "text": "Marshall Islands-flagged bulk carrier Star Gwyneth confirmed STRUCK by unknown projectile 50nm NW of Dubai. Star Bulk Carriers confirmed hull damage in hold area while anchored. Crew safe, no injuries, no listing. Severity upgraded from near-miss to confirmed strike."
+                    },
+                    {
+                            "date": "2026-03-11",
+                            "text": "Vessel confirmed as Marshall Islands-flagged Star Gwyneth (Star Bulk fleet, Greek-owned). Struck by unknown projectile 50nm NW of Dubai causing 2-metre hull breach in cargo hold, ballast tank damage, and vessel listing. All crew safe. Proceeding to Mina Rashid under own power for repair. CONFIRMED strike — not a near-miss."
                     }
             ],
             "sources": [
@@ -8961,6 +8977,22 @@ const LOCATIONS = [
                     {
                             "name": "The Nation Thailand",
                             "url": "https://www.nationthailand.com/news/general/40063637"
+                    },
+                    {
+                            "name": "Seatrade Maritime",
+                            "url": "https://www.seatrade-maritime.com/security/ship-on-fire-in-strait-of-hormuz-two-more-struck"
+                    },
+                    {
+                            "name": "Cyprus Mail",
+                            "url": "https://cyprus-mail.com/2026/03/11/greek-owned-bulker-among-three-vessels-hit-near-hormuz"
+                    },
+                    {
+                            "name": "UPI",
+                            "url": "https://www.upi.com/Top_News/World-News/2026/03/11/UAE-vessels-attacked-near-hormuz-strait/4941773227965"
+                    },
+                    {
+                            "name": "Seatrade Maritime (Star Bulk confirmation)",
+                            "url": "https://www.seatrade-maritime.com/security/struck-star-bulk-ship-to-sail-for-repair-under-own-power"
                     }
             ],
             "dateAdded": "2026-03-10"
@@ -8978,11 +9010,15 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Maritime Projectile Strike",
-            "detail": "UKMTO Warning 018-26: A container vessel sustained damage from a suspected projectile 25 nautical miles northwest of Ras Al Khaimah on March 11. All crew members are safe and accounted for. Damage extent under investigation. Separate from the cargo ship fire in the Strait of Hormuz on the same day.",
+            "detail": "UKMTO Warning 018-26: A container vessel sustained damage from a suspected projectile 25 nautical miles northwest of Ras Al Khaimah on March 11. All crew members are safe and accounted for. Damage extent under investigation. Separate from the cargo ship fire in the Strait of Hormuz on the same day. Vessel identified as ONE Majesty (Japan-flagged, 6,700-TEU, MOL-owned, ONE-chartered). Hit at anchor near Sharjah; 10cm hull breach above waterline. No injuries. Diverted to Mundra, India. First confirmed container ship strike inside the Persian Gulf (west of Strait of Hormuz).",
             "incidents": [
                     {
                             "date": "2026-03-11",
                             "text": "UKMTO reports container vessel hit by suspected projectile 25nm NW of Ras Al Khaimah; all crew safe, damage being assessed"
+                    },
+                    {
+                            "date": "2026-03-11",
+                            "text": "Vessel confirmed as Japan-flagged ONE Majesty (6,700-TEU container ship, owned by MOL, chartered by Ocean Network Express). Hit by unknown projectile while at anchor near port of Sharjah. Sustained 10cm hull hole above waterline. All crew safe, no injuries or pollution. Diverted to Mundra, India for inspection."
                     }
             ],
             "sources": [
@@ -8997,6 +9033,58 @@ const LOCATIONS = [
                     {
                             "name": "Manila Times (AFP)",
                             "url": "https://www.manilatimes.net/2026/03/11/world/americas-emea/container-ship-hit-off-uae-coast-by-unknown-projectile-uk-maritime-agency/2297656"
+                    },
+                    {
+                            "name": "FreightWaves",
+                            "url": "https://www.freightwaves.com/news/one-vessel-in-u-s-service-attacked-in-persian-gulf"
+                    },
+                    {
+                            "name": "Reuters via US News",
+                            "url": "https://www.usnews.com/news/world/articles/2026-03-11/cargo-ship-hit-by-projectile-in-strait-of-hormuz-crew-evacuates"
+                    },
+                    {
+                            "name": "Riviera Maritime Media",
+                            "url": "https://www.rivieramm.com/news-content-hub/escalating-attacks-on-commercial-vessels-leave-three-seafarers-missing-88091"
+                    }
+            ],
+            "dateAdded": "2026-03-11"
+    },
+
+    // ═══════════════════════════════════════════════════════════
+    // Strait of Hormuz
+    // ═══════════════════════════════════════════════════════════
+    {
+            "name": "Bulk Carrier MAYUREE NAREE (Thai-flagged, IRGC Strike, Strait of Hormuz off Khasab, Oman)",
+            "lat": 26.22,
+            "lng": 56.35,
+            "country": "Strait of Hormuz",
+            "city": "Off Khasab, Oman",
+            "severity": "critical",
+            "icon": "⚓",
+            "type": "Vessel Strike (IRGC Confirmed) — 3 Crew Missing",
+            "detail": "Thai-flagged bulk carrier Mayuree Naree (IMO 9323649, Precious Shipping Plc) struck by two IRGC projectiles 11nm N of Oman while transiting Strait of Hormuz after departing Khalifa Port, UAE en route to Kandla, India. Engine room fire; 20 of 23 Thai crew rescued by Omani navy, 3 crew missing believed trapped in engine room. IRGC confirmed responsibility via ISNA, saying vessel ignored warnings.",
+            "incidents": [
+                    {
+                            "date": "2026-03-11",
+                            "text": "Two IRGC projectiles struck hull above waterline, triggering engine room fire. 20 crew evacuated to Khasab, Oman; 3 crew missing. IRGC confirmed attack via ISNA."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "France 24 (AFP)",
+                            "url": "https://www.france24.com/en/middle-east/20260311-thai-navy-says-cargo-ship-attacked-in-strait-of-hormuz"
+                    },
+                    {
+                            "name": "Bangkok Post",
+                            "url": "https://www.bangkokpost.com/thailand/general/3214728/thai-cargo-ship-attacked-near-strait-of-hormuz"
+                    },
+                    {
+                            "name": "NPR / AP",
+                            "url": "https://www.npr.org/2026/03/11/nx-s1-5744029/us-iran-war"
+                    },
+                    {
+                            "name": "CNBC (UKMTO)",
+                            "url": "https://www.cnbc.com/2026/03/11/cargo-ship-struck-strait-of-hormuz-uk-iran-war.html"
                     }
             ],
             "dateAdded": "2026-03-11"
