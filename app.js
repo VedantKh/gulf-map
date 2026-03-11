@@ -124,10 +124,10 @@
 
             // Pulse ring (not for watchlist)
             if (loc.severity !== 'watchlist') {
-                const pulseR = loc.severity === 'critical' ? 20 : 16;
+                const pulseR = loc.severity === 'critical' ? 14 : 11;
                 const pulse = L.circleMarker([loc.lat, loc.lng], {
                     radius: pulseR, color: color, fillColor: color,
-                    fillOpacity: 0.15, weight: 1.5, opacity: 0.4,
+                    fillOpacity: 0.10, weight: 1, opacity: 0.3,
                     className: 'pulse-ring'
                 });
                 state.pulseGroup.addLayer(pulse);
@@ -135,18 +135,18 @@
 
             // Amber glow ring for recently updated locations
             if (isRecent(loc)) {
-                const glowR = (loc.severity === 'critical' ? 11 : loc.severity === 'high' ? 9 : 6) + 8;
+                const glowR = (loc.severity === 'critical' ? 11 : loc.severity === 'high' ? 9 : 6) + 4;
                 const glow = L.circleMarker([loc.lat, loc.lng], {
                     radius: glowR, color: '#f59e0b', fillColor: '#f59e0b',
-                    fillOpacity: 0.18, weight: 2, opacity: 0.5,
+                    fillOpacity: 0.12, weight: 1.5, opacity: 0.4,
                     className: 'glow-recent'
                 });
                 state.pulseGroup.addLayer(glow);
             }
 
             // Main marker
-            const markerR = loc.severity === 'critical' ? 11 : loc.severity === 'high' ? 9 : 6;
-            const fillOp = loc.severity === 'watchlist' ? 0.6 : 0.9;
+            const markerR = loc.severity === 'critical' ? 8 : loc.severity === 'high' ? 7 : 5;
+            const fillOp = loc.severity === 'watchlist' ? 0.6 : 0.85;
             const marker = L.circleMarker([loc.lat, loc.lng], {
                 radius: markerR, color: color, fillColor: color,
                 fillOpacity: fillOp, weight: 2, opacity: 1
