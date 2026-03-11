@@ -1,7 +1,7 @@
 name: Auto-update strike data
 on:
   schedule:
-    - cron: '*/55 * * * *'
+    - cron: '0 */2 * * *'  
   workflow_dispatch:
     inputs:
       dry_run:

@@ -11,16 +11,22 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Gulf Conflict Updates — Live Strike Map">
-    <meta property="og:description" content="Live map of verified Iranian strikes across Gulf states. Auto-updated every 30 minutes with sourced data.">
+    <meta property="og:description" content="Live map of verified Iranian strikes across Gulf states. Auto-updated every 2 hours with sourced data.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gulf-map.vercel.app/">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Gulf Conflict Updates">
+    <meta property="og:image" content="https://gulf-map.vercel.app/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Gulf Conflict Updates — Live Strike Map">
     <meta name="twitter:description" content="Live map of verified Iranian strikes across Gulf states. Auto-updated every 30 min.">
+    <meta name="twitter:image" content="https://gulf-map.vercel.app/og-image.png">
+
+    <meta name="author" content="Vedant Khanna">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -429,9 +435,46 @@
             }
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Gulf Conflict Updates — Live Strike Map",
+      "url": "https://gulf-map.vercel.app/",
+      "description": "Live, auto-updated map tracking verified Iranian missile strikes, drone attacks, and debris impacts across UAE, Bahrain, Qatar, Kuwait, Saudi Arabia, and Oman.",
+      "applicationCategory": "NewsApplication",
+      "operatingSystem": "Web",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Person",
+        "name": "Vedant Khanna"
+      },
+      "about": {
+        "@type": "Event",
+        "name": "Iran strikes on Gulf states",
+        "startDate": "2026-02-28",
+        "location": {
+          "@type": "Place",
+          "name": "Persian Gulf Region"
+        }
+      }
+    }
+    </script>
 </head>
 <body>
     <div id="map"></div>
+
+    <noscript>
+      <div style="padding:20px;max-width:800px;margin:auto">
+        <h1>Gulf Conflict Updates — Live Map of Iranian Strikes &amp; Threats</h1>
+        <p>Real-time tracking of 50+ verified Iranian missile strikes, drone attacks, and debris impacts across UAE, Bahrain, Qatar, Kuwait, Saudi Arabia, and Oman since February 28, 2026.</p>
+        <p><strong>Casualties:</strong> 64 killed, 787+ injured</p>
+        <p><strong>Key locations:</strong> Al Dhafra Air Base, Dubai International Airport (DXB), Abu Dhabi International Airport, Jebel Ali Port, Palm Jumeirah, Burj Al Arab, Sheikh Isa Air Base (Bahrain), Al Udeid Air Base (Qatar), Camp Arifjan (Kuwait), and more.</p>
+        <p>Data sourced from Reuters, AP, Al Jazeera, CENTCOM, UAE MOD, and government statements. Auto-updated every 55 minutes using AI-powered verification.</p>
+        <p><a href="https://gulf-map.vercel.app/">Enable JavaScript to view the interactive map.</a></p>
+      </div>
+    </noscript>
 
     <div class="title-overlay">
         <h1>GULF CONFLICT UPDATES</h1>
