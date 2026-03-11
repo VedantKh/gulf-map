@@ -159,6 +159,9 @@
                 autoPanPaddingTopLeft: isMobile ? L.point(10, 75) : L.point(10, 20),
                 autoPanPaddingBottomRight: isMobile ? L.point(10, 60) : L.point(10, 20)
             });
+            marker.on('popupopen', function() {
+                window.location.hash = encodeURIComponent(loc.name);
+            });
             state.markerGroup.addLayer(marker);
         });
     }
@@ -353,6 +356,7 @@
                 <div class="inc-sev" style="color:${color}">${SEV_LABEL[loc.severity]}</div>
             `;
             item.addEventListener('click', () => {
+                window.location.hash = encodeURIComponent(loc.name);
                 const zoom = loc.severity === 'watchlist' ? 10 : 12;
                 state.map.flyTo([loc.lat, loc.lng], zoom);
                 state.markerGroup.eachLayer(layer => {
@@ -570,6 +574,7 @@
                 <div class="inc-sev" style="color:${color}">${SEV_LABEL[loc.severity]}</div>
             `;
             item.addEventListener('click', () => {
+                window.location.hash = encodeURIComponent(loc.name);
                 document.getElementById('mobile-sheet').classList.remove('open');
                 const zoom = loc.severity === 'watchlist' ? 10 : 12;
                 state.map.flyTo([loc.lat, loc.lng], zoom);
@@ -589,9 +594,64 @@
         if (el) el.textContent = formatLastUpdated(MAP_META.lastUpdated) + ' GMT';
     }
 
+    // ═══ Share button ═══
+    function addShareButton() {
+        // Mobile share button
+        const topbar = document.querySelector('.mobile-topbar');
+        if (topbar) {
+            const btn = document.createElement('button');
+            btn.textContent = '\u2197 Share';
+            btn.style.cssText = 'background:#b91c1c;color:#fff;border:none;border-radius:6px;padding:5px 10px;font-size:11px;font-weight:600;cursor:pointer';
+            btn.addEventListener('click', shareMap);
+            topbar.appendChild(btn);
+        }
+        // Desktop share button in title overlay
+        const overlay = document.querySelector('.title-overlay');
+        if (overlay) {
+            overlay.style.pointerEvents = 'auto';
+            const btn = document.createElement('button');
+            btn.textContent = '\u2197 Share this map';
+            btn.style.cssText = 'background:#b91c1c;color:#fff;border:none;border-radius:6px;padding:4px 12px;font-size:11px;font-weight:600;cursor:pointer;margin-top:4px';
+            btn.addEventListener('click', shareMap);
+            overlay.appendChild(btn);
+        }
+    }
+
+    function shareMap() {
+        var shareData = {
+            title: 'Gulf Conflict Updates \u2014 Live Strike Map',
+            text: 'Live map tracking Iranian strikes across Gulf states. Auto-updated every 55 minutes.',
+            url: 'https://gulf-map.vercel.app/'
+        };
+        if (navigator.share) {
+            navigator.share(shareData).catch(function() {});
+        } else {
+            navigator.clipboard.writeText(shareData.url).then(function() {
+                alert('Link copied to clipboard!');
+            });
+        }
+    }
+
+    // ═══ Deep links ═══
+    function openLocationFromHash() {
+        var hash = decodeURIComponent(window.location.hash.slice(1));
+        if (!hash) return;
+        var loc = state.allLocations.find(function(l) { return l.name === hash; });
+        if (loc) {
+            state.map.flyTo([loc.lat, loc.lng], 12);
+            state.markerGroup.eachLayer(function(layer) {
+                if (layer.getLatLng && layer.getLatLng().lat === loc.lat && layer.getLatLng().lng === loc.lng) {
+                    layer.openPopup();
+                }
+            });
+        }
+    }
+
     // ═══ Boot ═══
     initMap();
     initMobileSheet();
     updateMobileTopbar();
+    addShareButton();
+    openLocationFromHash();
 
 })();
