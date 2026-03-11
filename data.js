@@ -8,14 +8,14 @@
 
 const MAP_META = {
     "title": "Gulf Region — Iranian Strikes & Threats",
-    "lastUpdated": "2026-03-11T17:02:49.223Z",
+    "lastUpdated": "2026-03-11T19:04:43.071Z",
     "casualties": {
         "killed": 64,
-        "injured": 791
+        "injured": 795
     },
     "conflict": "Iran strikes on Gulf states, Feb 28 – Mar 2, 2026",
-    "summary": "Day 12 (March 11): IRGC declared its 'most intense and heaviest operation' since start of war. Three merchant vessels struck in Strait of Hormuz/Persian Gulf (Mayuree Naree, Star Gwyneth, ONE Majesty). IRGC navy stopped two additional vessels. Bahrain evacuated 17 aircraft. Two drones fell near Dubai airport injuring 4. Saudi intercepted 6 missiles near PSAB. Kuwait downed 8 drones. IEA agreed to release record 400M barrels of emergency oil reserves. UNSC to vote on GCC resolution demanding Iran halt attacks on Arab neighbors. Pentagon confirmed ~140 US troops wounded since start of conflict. UKMTO reports 17 maritime incidents since Feb 28.",
-    "totalBarrage": "IRGC 37th wave of attacks since Feb 28. UAE alone has detected 1,475 drones (1,385 intercepted, 90 impacts). UKMTO: 17 maritime incidents (13 confirmed attacks, 4 suspicious activity) Feb 28-Mar 11.",
+    "summary": "Day 12 (March 11): IRGC announced 37th wave and 'most intense and heaviest operation' since war began. UNSC to vote on GCC resolution demanding Iran halt attacks on neighbors. IRGC Navy Commander Tangsiri declared all vessels must obtain Iranian permission to transit Strait of Hormuz. Iran escalated attacks on Oman for first time since early March, hitting fuel tanks at Salalah Port. IEA proposed largest-ever release of oil reserves (400M barrels). At least 14 vessels struck in Gulf since Feb 28. Iran reportedly deployed about a dozen mines in Strait of Hormuz (Reuters, citing 2 sources).",
+    "totalBarrage": "UAE: 1,475 Iranian drones detected since Feb 28, 1,385 intercepted, 90 land impacts (UAE Defence Ministry via The National, as of March 10). Saudi Arabia on March 11: intercepted 7 ballistic missiles (6 at PSAB, 1 Eastern Province), destroyed 16+ drones (7 at Shaybah, others at Al-Kharj, Hafar al-Batin, Eastern Province) per Saudi Defence Ministry via Al Arabiya/Arab News. Kuwait: 8 drones downed March 11 (National Guard). UKMTO: 17 maritime incident reports since Feb 28 (13 attacks, 4 suspicious activity) per CNBC.",
     "intercepted": "March 11: Saudi intercepted 6 missiles (PSAB) + 5 drones (Shaybah) + 2 drones (Eastern Province). Kuwait downed 8 drones. Qatar intercepted multiple missile attacks. Oman downed 2 drones at sea. Bahrain activated air defense sirens."
 };
 
@@ -276,7 +276,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "✈️",
             "type": "World's Busiest Intl Airport — Hit Twice",
-            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports. March 2: Third day of explosions heard across Dubai. UAE airspace remains closed. Etihad flights suspended until March 3. Dubai Airports announced limited flight resumption from DXB and DWC starting evening of March 2, three days after initial shutdown. Mar 2: Dubai Airports announced limited resumption of flights from DXB and DWC starting Monday evening after 3 days shutdown. Thousands of passengers remain stranded. March 2 evening: Dubai Airports announced limited flight resumption at DXB and DWC after 3 days of closure. Thousands of passengers remain stranded. March 7: Drone impact/debris incident near Concourse A. GDMO confirmed debris from interception. Emirates flights suspended again. Incident occurred shortly after Iran's President Pezeshkian apologized to neighboring countries and announced intent to stop attacks on Gulf states. On March 7, debris from an interception fell in Dubai (no injuries). Authorities denied airport incidents but flights briefly aborted landings. Emirates partially resumed operations from DXB and DWC. On Saturday March 7, DXB temporarily suspended, then partially resumed operations. GDMO confirmed debris from interception caused a minor incident. Emirates airline resumed flights Saturday afternoon. UAE MOD: 121 drones detected Saturday, 119 intercepted, 2 fell within UAE. March 7: Drone debris near Concourse A triggered shelter-in-place and brief suspension. No injuries. Operations partially resumed. March 7: Drone exploded next to Concourse A shortly after Iran's president apologized to neighbors. BBC-verified video shows explosion near terminal. Emirates suspended then resumed operations within 30 minutes. Mar 7 morning: Drone detonated adjacent to Concourse A. DXB suspended operations, diverted flights. Emirates resumed afternoon service. On March 7, a drone exploded next to Concourse A on the runway, narrowly missing the terminal and a parked aircraft. A fire was reported at Terminal 3. Flight operations were suspended and the airport evacuated. BBC verified video of the strike. No injuries reported. UAE MoD said 16 ballistic missiles were fired at the UAE on Saturday — all but one intercepted (one fell to sea). 121 drones were detected, 119 intercepted, 2 fell within UAE. March 7: DXB suspended operations Saturday morning after drone detonated near Concourse A. Emirates resumed limited flights in the afternoon. Dubai Media Office denied social media reports of direct airport strike, confirmed debris incident in the city. March 7: Drone exploded near Concourse A, forcing another suspension of operations. Airport partially resumed flights later in the day. Emirates suspended all flights until further notice before lifting it shortly afterward. On March 7, despite Pezeshkian's announced halt to Gulf strikes, DXB was attacked by Iranian drones. Emirates flights suspended then partially resumed. Wikipedia noted attacks occurred after Pezeshkian's statement, underscoring IRGC operational independence. On March 7-8, a drone approached near Concourse A, forcing a brief suspension of operations. AFP-verified footage showed an explosion and smoke near a terminal building. Passengers were evacuated to underground tunnels. Emirates resumed flights shortly after. Missile sirens activated in Dubai on Tuesday morning March 10; UAE MOD confirmed air defences responding to incoming Iranian threats. March 10: Air raid sirens again over Dubai; flights briefly suspended. UAE reported 15 ballistic missiles tracked (12 intercepted, 3 into coastline) and 18 drones (17 intercepted) in latest wave. UAE's National Emergency Authority lowered overnight alert volume (10:30 PM–9 AM) from klaxon to standard text chime after days of sleep disruption. March 10: Sirens at ~04:30 GMT forced passengers to bomb shelters; all incoming flights held. Emirates suspended and then partially resumed operations. March 10: Sirens and flight suspension recurred as UAE MOD reported 9 ballistic missiles and 35 drones fired at UAE today (8 missiles destroyed, 1 fell in sea; 26 of 35 drones intercepted, 9 fell within UAE territory). March 11: Two Iranian drones fell in the vicinity of DXB, wounding 4 foreign nationals. Airport remained operational. UAE Interior Ministry issued shelter warnings via mobile alert. March 11: Two drones struck near DXB injuring 4 foreign nationals. UAE Defence Ministry reports 1,475 drones detected since Feb 28, with 1,385 intercepted and 90 impacting on land. March 11: Two drones confirmed down near DXB, 4 people wounded (2 Ghanaians, 1 Bangladeshi, 1 Indian). UAE MOD reports total of 1,475 drones detected since Feb 28 with 1,385 intercepted and 90 impacts. March 11 AM: Two Iranian drones fell near DXB, injuring 4 (2 Ghanaians, 1 Bangladeshi, 1 Indian). Concourse sustained minor structural damage. Airport briefly halted, then resumed. Dubai Media Office confirmed. Total UAE drone detections since Feb 28: 1,475 (1,385 intercepted, 90 impacts).",
+            "detail": "World's busiest airport by international passengers. Terminal 3 directly hit by an Iranian drone. 4 staff injured. Hit again in a SECOND attack early Mar 1. Fully evacuated, all 3,400+ flights cancelled. Emirates, Flydubai suspended all operations. Day 3 (March 2): Fresh explosions heard in Dubai for third consecutive day. CNN team reported back-to-back blasts and jets overhead. March 2: Third consecutive day of explosions in Dubai. Airport remains closed; Flightradar24 reports 2,000+ flights cancelled across seven key Gulf airports. March 2: Third day of explosions heard across Dubai. UAE airspace remains closed. Etihad flights suspended until March 3. Dubai Airports announced limited flight resumption from DXB and DWC starting evening of March 2, three days after initial shutdown. Mar 2: Dubai Airports announced limited resumption of flights from DXB and DWC starting Monday evening after 3 days shutdown. Thousands of passengers remain stranded. March 2 evening: Dubai Airports announced limited flight resumption at DXB and DWC after 3 days of closure. Thousands of passengers remain stranded. March 7: Drone impact/debris incident near Concourse A. GDMO confirmed debris from interception. Emirates flights suspended again. Incident occurred shortly after Iran's President Pezeshkian apologized to neighboring countries and announced intent to stop attacks on Gulf states. On March 7, debris from an interception fell in Dubai (no injuries). Authorities denied airport incidents but flights briefly aborted landings. Emirates partially resumed operations from DXB and DWC. On Saturday March 7, DXB temporarily suspended, then partially resumed operations. GDMO confirmed debris from interception caused a minor incident. Emirates airline resumed flights Saturday afternoon. UAE MOD: 121 drones detected Saturday, 119 intercepted, 2 fell within UAE. March 7: Drone debris near Concourse A triggered shelter-in-place and brief suspension. No injuries. Operations partially resumed. March 7: Drone exploded next to Concourse A shortly after Iran's president apologized to neighbors. BBC-verified video shows explosion near terminal. Emirates suspended then resumed operations within 30 minutes. Mar 7 morning: Drone detonated adjacent to Concourse A. DXB suspended operations, diverted flights. Emirates resumed afternoon service. On March 7, a drone exploded next to Concourse A on the runway, narrowly missing the terminal and a parked aircraft. A fire was reported at Terminal 3. Flight operations were suspended and the airport evacuated. BBC verified video of the strike. No injuries reported. UAE MoD said 16 ballistic missiles were fired at the UAE on Saturday — all but one intercepted (one fell to sea). 121 drones were detected, 119 intercepted, 2 fell within UAE. March 7: DXB suspended operations Saturday morning after drone detonated near Concourse A. Emirates resumed limited flights in the afternoon. Dubai Media Office denied social media reports of direct airport strike, confirmed debris incident in the city. March 7: Drone exploded near Concourse A, forcing another suspension of operations. Airport partially resumed flights later in the day. Emirates suspended all flights until further notice before lifting it shortly afterward. On March 7, despite Pezeshkian's announced halt to Gulf strikes, DXB was attacked by Iranian drones. Emirates flights suspended then partially resumed. Wikipedia noted attacks occurred after Pezeshkian's statement, underscoring IRGC operational independence. On March 7-8, a drone approached near Concourse A, forcing a brief suspension of operations. AFP-verified footage showed an explosion and smoke near a terminal building. Passengers were evacuated to underground tunnels. Emirates resumed flights shortly after. Missile sirens activated in Dubai on Tuesday morning March 10; UAE MOD confirmed air defences responding to incoming Iranian threats. March 10: Air raid sirens again over Dubai; flights briefly suspended. UAE reported 15 ballistic missiles tracked (12 intercepted, 3 into coastline) and 18 drones (17 intercepted) in latest wave. UAE's National Emergency Authority lowered overnight alert volume (10:30 PM–9 AM) from klaxon to standard text chime after days of sleep disruption. March 10: Sirens at ~04:30 GMT forced passengers to bomb shelters; all incoming flights held. Emirates suspended and then partially resumed operations. March 10: Sirens and flight suspension recurred as UAE MOD reported 9 ballistic missiles and 35 drones fired at UAE today (8 missiles destroyed, 1 fell in sea; 26 of 35 drones intercepted, 9 fell within UAE territory). March 11: Two Iranian drones fell in the vicinity of DXB, wounding 4 foreign nationals. Airport remained operational. UAE Interior Ministry issued shelter warnings via mobile alert. March 11: Two drones struck near DXB injuring 4 foreign nationals. UAE Defence Ministry reports 1,475 drones detected since Feb 28, with 1,385 intercepted and 90 impacting on land. March 11: Two drones confirmed down near DXB, 4 people wounded (2 Ghanaians, 1 Bangladeshi, 1 Indian). UAE MOD reports total of 1,475 drones detected since Feb 28 with 1,385 intercepted and 90 impacts. March 11 AM: Two Iranian drones fell near DXB, injuring 4 (2 Ghanaians, 1 Bangladeshi, 1 Indian). Concourse sustained minor structural damage. Airport briefly halted, then resumed. Dubai Media Office confirmed. Total UAE drone detections since Feb 28: 1,475 (1,385 intercepted, 90 impacts). March 11: Two Iranian drones fell near DXB injuring 4 foreign nationals (2 Ghanaians, 1 Bangladeshi — minor; 1 Indian — moderate). Air traffic continued as normal per Dubai Media Office.",
             "incidents": [
                     {
                             "date": "2026-02-28",
@@ -385,6 +385,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-11",
                             "text": "Two Iranian drones fell in the vicinity of DXB on Wednesday morning, injuring four people (2 Ghanaians, 1 Bangladeshi, 1 Indian — moderate injuries). Concourse sustained minor structural damage. Airport briefly halted operations before resuming. Dubai Media Office confirmed via X at 11:38am local time. UAE air defenses had detected 1,475 drones since Feb 28, with 1,385 intercepted and 90 impacts on land."
+                    },
+                    {
+                            "date": "2026-03-11",
+                            "text": "Two Iranian drones fell in vicinity of Dubai International Airport. 4 foreign nationals injured: 2 Ghanaians and 1 Bangladeshi sustained minor injuries; 1 Indian national sustained moderate injuries. Dubai Media Office confirmed air traffic continued operating normally. This was the second drone strike near DXB since the war began."
                     }
             ],
             "sources": [
@@ -563,6 +567,18 @@ const LOCATIONS = [
                     {
                             "name": "Euronews",
                             "url": "https://www.euronews.com/2026/03/11/iran-unleashes-intense-waves-of-strikes-across-gulf-as-hormuz-crisis-deepens"
+                    },
+                    {
+                            "name": "NPR",
+                            "url": "https://www.npr.org/2026/03/11/nx-s1-5744029/us-iran-war"
+                    },
+                    {
+                            "name": "Khaleej Times",
+                            "url": "https://www.khaleejtimes.com/uae/abu-dhabi-controls-fire-at-old-airport-after-interception-by-air-defence"
+                    },
+                    {
+                            "name": "Newsweek",
+                            "url": "https://www.newsweek.com/iran-war-latest-live-updates-cargo-ships-struck-strait-hormuz-minelayer-destroyed-donald-trump-11656673"
                     }
             ],
             "dateAdded": "2026-02-28"
@@ -1932,6 +1948,42 @@ const LOCATIONS = [
                     }
             ],
             "dateAdded": "2026-03-10"
+    },
+    {
+            "name": "Al Bateen Executive Airport (Abu Dhabi Old Airport), Interceptor Debris Fire",
+            "lat": 24.4283,
+            "lng": 54.4581,
+            "country": "UAE",
+            "city": "Abu Dhabi",
+            "severity": "high",
+            "icon": "💥",
+            "type": "Interceptor Debris Fire",
+            "detail": "A fire broke out at Abu Dhabi's old airport (Al Bateen Executive Airport) on the evening of March 11 after air defense systems successfully intercepted an aerial threat in the vicinity. Abu Dhabi Media Office confirmed the fire was brought under control with no injuries reported. This is a separate location from Zayed International Airport (the main Abu Dhabi airport already on the map).",
+            "incidents": [
+                    {
+                            "date": "2026-03-11",
+                            "text": "Fire at Abu Dhabi old airport (Al Bateen) from interceptor debris following successful air defense interception of Iranian aerial threat. No injuries reported. Fire brought under control."
+                    }
+            ],
+            "sources": [
+                    {
+                            "name": "Khaleej Times",
+                            "url": "https://www.khaleejtimes.com/uae/abu-dhabi-controls-fire-at-old-airport-after-interception-by-air-defence"
+                    },
+                    {
+                            "name": "Gulf News",
+                            "url": "https://gulfnews.com/uae/fire-at-abu-dhabis-old-airport-contained-after-defence-ops-against-iranian-aggression-1.500471297"
+                    },
+                    {
+                            "name": "Middle East Eye",
+                            "url": "https://www.middleeasteye.net/live-blog/live-blog-update/fire-abu-dhabi-airport-under-control-after-interception"
+                    },
+                    {
+                            "name": "The National (UAE)",
+                            "url": "https://www.thenationalnews.com/news/uae/2026/03/11/four-injured-after-iranian-drone-strike-near-dubai-airport/"
+                    }
+            ],
+            "dateAdded": "2026-03-11"
     },
 
     // ═══════════════════════════════════════════════════════════
@@ -7890,7 +7942,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "💥",
             "type": "Omani Port — Struck by 2 Iranian Drones",
-            "detail": "Major Omani port on the Arabian Sea coast. Targeted by 2 Iranian drones on Mar 1. One struck foreign workers' residences, injuring 1. Iran FM claimed 'not our choice.' This shatters Oman's traditional neutrality. Oman News Agency confirmed two drones hit Duqm port on March 1, injuring one expatriate worker. First attack on Oman. GCC condemned the strike on the mediator state. March 3: Second drone attack in three days. Multiple drones targeted fuel storage tanks; one hit a fuel tank with damage contained and no casualties (Oman News Agency via AFP). On March 3, a second wave of drones targeted Duqm port, hitting a fuel storage tank. ONA confirmed damage was contained with no casualties. On March 3, a fuel tank at the port was hit in a drone attack. No casualties; damage contained per Oman News Agency. Second attack on March 3: Iranian drones hit fuel storage tank at Duqm Port. Port and drydock operations suspended until further notice. March 11: Oman intercepted one drone and another fell into the sea north of Duqm port. No casualties. March 11: Two Iranian drones downed at sea north of Al Duqm port (Euronews). Oman continues to face targeting despite neutrality efforts.",
+            "detail": "Major Omani port on the Arabian Sea coast. Targeted by 2 Iranian drones on Mar 1. One struck foreign workers' residences, injuring 1. Iran FM claimed 'not our choice.' This shatters Oman's traditional neutrality. Oman News Agency confirmed two drones hit Duqm port on March 1, injuring one expatriate worker. First attack on Oman. GCC condemned the strike on the mediator state. March 3: Second drone attack in three days. Multiple drones targeted fuel storage tanks; one hit a fuel tank with damage contained and no casualties (Oman News Agency via AFP). On March 3, a second wave of drones targeted Duqm port, hitting a fuel storage tank. ONA confirmed damage was contained with no casualties. On March 3, a fuel tank at the port was hit in a drone attack. No casualties; damage contained per Oman News Agency. Second attack on March 3: Iranian drones hit fuel storage tank at Duqm Port. Port and drydock operations suspended until further notice. March 11: Oman intercepted one drone and another fell into the sea north of Duqm port. No casualties. March 11: Two Iranian drones downed at sea north of Al Duqm port (Euronews). Oman continues to face targeting despite neutrality efforts. March 11: Drone intercepted, another crashed to sea north of Duqm. No damage. Iran resumed attacks on Oman after a lull since early March.",
             "incidents": [
                     {
                             "date": "2026-03-01",
@@ -7923,6 +7975,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-11",
                             "text": "Oman reported two Iranian drones downed at sea north of Al Duqm commercial port on Wednesday morning (Euronews)."
+                    },
+                    {
+                            "date": "2026-03-11",
+                            "text": "One drone intercepted and another crashed into the sea north of Duqm. No casualties or material losses reported. Oman News Agency confirmed. Part of a two-wave Iranian attack on Oman — first wave (Duqm) failed; second wave (Salalah) struck fuel tanks."
                     }
             ],
             "sources": [
@@ -7985,6 +8041,14 @@ const LOCATIONS = [
                     {
                             "name": "The Arabian Stories News",
                             "url": "https://www.thearabianstories.com/2026/03/11/oman-intercepts-drone-another-falls-into-sea-north-of-duqm-no-casualties-reported/"
+                    },
+                    {
+                            "name": "Anadolu Agency",
+                            "url": "https://www.aa.com.tr/en/middle-east/oman-says-drone-downed-another-crashes-into-sea-amid-us-iran-war/3859636"
+                    },
+                    {
+                            "name": "Oman Observer",
+                            "url": "https://www.omanobserver.om/article/1185928/oman/community/drone-downed-near-duqm-no-casualties-reported"
                     }
             ],
             "dateAdded": "2026-03-01"
@@ -8063,14 +8127,18 @@ const LOCATIONS = [
             "lng": 54.0069,
             "country": "Oman",
             "city": "Salalah",
-            "severity": "high",
+            "severity": "critical",
             "icon": "⚓",
             "type": "Drone crash near major port",
-            "detail": "Oman News Agency confirmed that two drones were shot down over the Dhofar Governorate and a third crashed near the Port of Salalah on March 3. Video footage captured the moment of impact. Oman reported no casualties or material damage, but port operations at the Salalah General Cargo Terminal were suspended until further notice per Inchcape Shipping Services.",
+            "detail": "Oman News Agency confirmed that two drones were shot down over the Dhofar Governorate and a third crashed near the Port of Salalah on March 3. Video footage captured the moment of impact. Oman reported no casualties or material damage, but port operations at the Salalah General Cargo Terminal were suspended until further notice per Inchcape Shipping Services. March 11: Major escalation — Iranian drones directly struck fuel tanks at Port of Salalah, causing fires in at least 3 tanks. APM Terminals suspended all container terminal operations. This is the first confirmed direct strike on Salalah causing significant infrastructure damage and operational disruption, breaking a relative lull in attacks on Oman since early March. Oman condemned the targeting and reaffirmed measures to protect national security.",
             "incidents": [
                     {
                             "date": "2026-03-03",
                             "text": "Iranian drone crashed near Port of Salalah; two additional drones shot down over Dhofar Governorate. No casualties reported. Port General Cargo Terminal operations suspended."
+                    },
+                    {
+                            "date": "2026-03-11",
+                            "text": "Major escalation: Iranian drones struck fuel storage tanks at Port of Salalah, setting at least 3 tanks ablaze with thick smoke spreading across the port. Oman News Agency confirmed the strike with no casualties. APM Terminals confirmed all operations paused until further notice. Several other drones were intercepted over Dhofar Governorate. Vanguard Tech reported full suspension of port operations. This was part of a two-wave attack on Oman — the first (Duqm) was intercepted; the second (Salalah) caused significant damage."
                     }
             ],
             "sources": [
@@ -8085,6 +8153,30 @@ const LOCATIONS = [
                     {
                             "name": "The War Zone",
                             "url": "https://www.twz.com/news-features/gulf-arab-states-under-pressure-as-iranian-attacks-grind-on"
+                    },
+                    {
+                            "name": "Al Jazeera (Video)",
+                            "url": "https://www.aljazeera.com/video/newsfeed/2026/3/11/oil-facilities-in-omans-salalah-port-ablaze-after-drone-strikes"
+                    },
+                    {
+                            "name": "Lloyd's List",
+                            "url": "https://www.lloydslist.com/LL1156584/Port-of-Salalah-attacked-and-operations-suspended"
+                    },
+                    {
+                            "name": "Oman Observer",
+                            "url": "https://www.omanobserver.om/article/1185938/oman/drones-downed-fuel-tanks-struck-at-salalah-port-no-casualties"
+                    },
+                    {
+                            "name": "Bloomberg",
+                            "url": "https://www.bloomberg.com/news/articles/2026-03-11/operations-suspended-at-oman-port-as-drones-hit-fuel-tanks"
+                    },
+                    {
+                            "name": "Washington Examiner",
+                            "url": "https://www.washingtonexaminer.com/news/world/4487941/iranian-drones-strike-oman-oil-depot-despite-countries-friendly-relations/"
+                    },
+                    {
+                            "name": "CNBC",
+                            "url": "https://www.cnbc.com/2026/03/11/cargo-ship-struck-strait-of-hormuz-uk-iran-war.html"
                     }
             ],
             "dateAdded": "2026-03-03"
@@ -8334,7 +8426,7 @@ const LOCATIONS = [
             "severity": "critical",
             "icon": "⚓",
             "type": "Maritime Projectile Strike / Ship Fire",
-            "detail": "A cargo ship in the Strait of Hormuz caught fire after being hit by an unknown projectile on Wednesday March 11, according to UKMTO and CBS News. The vessel was located approximately 11 nautical miles north of Oman's Musandam Peninsula. The crew requested assistance and began evacuating. UKMTO advised vessels to transit with caution. Vessel confirmed as Thai-flagged bulk carrier Mayuree Naree (Precious Shipping), departed Khalifa Port UAE bound for Kandla, India. Struck by two projectiles. Three Thai crew missing/trapped in engine room; 20 evacuated to Khasab, Oman. IRGC Navy Commander Tangsiri claimed the vessel was 'fired upon by Iranian fighters.' UKMTO confirmed fire extinguished, skeleton crew remaining.",
+            "detail": "A cargo ship in the Strait of Hormuz caught fire after being hit by an unknown projectile on Wednesday March 11, according to UKMTO and CBS News. The vessel was located approximately 11 nautical miles north of Oman's Musandam Peninsula. The crew requested assistance and began evacuating. UKMTO advised vessels to transit with caution. Vessel confirmed as Thai-flagged bulk carrier Mayuree Naree (Precious Shipping), departed Khalifa Port UAE bound for Kandla, India. Struck by two projectiles. Three Thai crew missing/trapped in engine room; 20 evacuated to Khasab, Oman. IRGC Navy Commander Tangsiri claimed the vessel was 'fired upon by Iranian fighters.' UKMTO confirmed fire extinguished, skeleton crew remaining. Vessel identified as Mayuree Naree (Thai-flagged, Precious Shipping). IRGC claimed responsibility. 3 Thai crew remain trapped in engine room. 20 crew evacuated by Oman Royal Navy with injuries of varying severity. Oman News Agency confirmed fire in main engine room. Thai Navy coordinating SAR via Combined Maritime Forces in Bahrain.",
             "incidents": [
                     {
                             "date": "2026-03-11",
@@ -8343,6 +8435,10 @@ const LOCATIONS = [
                     {
                             "date": "2026-03-11",
                             "text": "Vessel identified as Thai-flagged Mayuree Naree (Precious Shipping). Struck by two projectiles above waterline. 3 Thai crew missing/trapped in engine room, 20 crew evacuated to Khasab, Oman by Omani navy. IRGC claimed responsibility via Tasnim, stating ship was 'fired upon by Iranian fighters'. Fire was extinguished; skeleton crew remains aboard."
+                    },
+                    {
+                            "date": "2026-03-11",
+                            "text": "Vessel identified as Thai-flagged bulk carrier Mayuree Naree (IMO 9323649, Precious Shipping). Hit by 2 projectiles in stern and engine room while transiting Strait of Hormuz en route from Khalifa Port, UAE to Kandla, India. 20 of 23 Thai crew evacuated by Omani Royal Navy with injuries of varying severity. 3 crew members believed trapped in engine room. IRGC claimed responsibility, saying vessel ignored transit warnings. Search and rescue ongoing via Royal Thai Navy coordinating with Combined Maritime Forces HQ in Bahrain."
                     }
             ],
             "sources": [
@@ -8377,6 +8473,22 @@ const LOCATIONS = [
                     {
                             "name": "Daily Caller",
                             "url": "https://dailycaller.com/2026/03/11/iran-strikes-civilian-ship-strait-of-hormuz/"
+                    },
+                    {
+                            "name": "Reuters (via US News)",
+                            "url": "https://www.usnews.com/news/world/articles/2026-03-11/cargo-ship-hit-by-projectile-in-strait-of-hormuz-crew-evacuates"
+                    },
+                    {
+                            "name": "Bangkok Post",
+                            "url": "https://www.bangkokpost.com/thailand/general/3214728/thai-cargo-ship-attacked-near-strait-of-hormuz"
+                    },
+                    {
+                            "name": "Seatrade Maritime",
+                            "url": "https://www.seatrade-maritime.com/security/three-crew-believed-trapped-on-precious-ship-hit-in-strait-of-hormuz"
+                    },
+                    {
+                            "name": "ABC News",
+                            "url": "https://abcnews.com/International/live-updates/iran-live-updates?id=130893022&entryId=130964692"
                     }
             ],
             "dateAdded": "2026-03-11"
